@@ -1,0 +1,16 @@
+language,family,mutations
+cuda,identity_fragmentation,3811
+cuda,literal_corruption,934
+cuda,operator_inversion,1190
+cuda,semantic_cue_erasure,255
+cuda,semantic_identifier_masking,3873
+java,identity_fragmentation,1786
+java,literal_corruption,301
+java,operator_inversion,235
+java,semantic_cue_erasure,47
+java,semantic_identifier_masking,1833
+python,identity_fragmentation,3100
+python,literal_corruption,1242
+python,operator_inversion,397
+python,semantic_cue_erasure,224
+python,semantic_identifier_masking,3150

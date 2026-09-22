@@ -1,0 +1,23 @@
+language,benchmark_pool,difficulty,n_pairs,n_raters,split_half_agreement_mean,split_half_agreement_ci_low,split_half_agreement_ci_high,half_vs_all_agreement_mean,half_vs_all_agreement_ci_low,half_vs_all_agreement_ci_high,median_abs_half_to_half_dz_diff,prop_pairs_in_noise_band,notes
+python,Dorn,easy,1000,4965.0,1.0,1.0,1.0,1.0,1.0,1.0,0.3052,0.0,"All 3,000 pairs mapped"
+python,Dorn,medium,1000,4965.0,0.9994,0.997,1.0,0.9997,0.9985,1.0,0.3113,0.0,"All 3,000 pairs mapped"
+python,Dorn,hard,1000,4965.0,0.9297,0.887,0.963,0.9648,0.9435,0.9815,0.3092,0.084,"All 3,000 pairs mapped"
+python,Dorn,pooled,3000,4965.0,0.9764,0.9613,0.9877,0.9882,0.9807,0.9938,0.3086,0.0273,"All 3,000 pairs mapped"
+cuda,Dorn,easy,1000,4961.0,1.0,1.0,1.0,1.0,1.0,1.0,0.2106,0.0,"All 3,000 pairs mapped"
+cuda,Dorn,medium,1000,4961.0,0.9992,0.996,1.0,0.9996,0.998,1.0,0.2187,0.0,"All 3,000 pairs mapped"
+cuda,Dorn,hard,1000,4961.0,0.9224,0.878,0.958,0.9612,0.939,0.979,0.2182,0.113,"All 3,000 pairs mapped"
+cuda,Dorn,pooled,3000,4961.0,0.9739,0.959,0.9857,0.9869,0.9795,0.9928,0.2158,0.0347,"All 3,000 pairs mapped"
+java,Buse,easy,106,121.0,1.0,1.0,1.0,1.0,1.0,1.0,0.244,0.0,Within-Buse pairs (299 pairs)
+java,Buse,medium,94,121.0,0.9985,0.9894,1.0,0.9992,0.9947,1.0,0.2489,0.0,Within-Buse pairs (299 pairs)
+java,Buse,hard,99,121.0,0.8989,0.8182,0.9596,0.9494,0.9091,0.9798,0.2479,0.1212,Within-Buse pairs (299 pairs)
+java,Buse,pooled,299,121.0,0.966,0.9398,0.9866,0.983,0.9699,0.9933,0.2468,0.0401,Within-Buse pairs (299 pairs)
+java,Scalabrino,easy,159,9.0,0.9359,0.8805,0.9811,0.968,0.9403,0.9906,0.8266,0.0,Within-Scalabrino pairs (430 pairs)
+java,Scalabrino,medium,190,9.0,0.5214,0.4079,0.6184,0.7584,0.7026,0.8079,0.838,0.6789,Within-Scalabrino pairs (430 pairs)
+java,Scalabrino,hard,81,9.0,0.229,0.1235,0.3457,0.5941,0.5432,0.6481,0.787,1.0,Within-Scalabrino pairs (430 pairs)
+java,Scalabrino,pooled,430,9.0,0.6196,0.5512,0.6781,0.8049,0.7721,0.836,0.8189,0.4884,Within-Scalabrino pairs (430 pairs)
+java,Dorn,easy,77,4959.0,1.0,1.0,1.0,1.0,1.0,1.0,0.3013,0.0,Within-Dorn available pairs (266 mapped; 9 with snippet 101 excluded)
+java,Dorn,medium,98,4959.0,0.9946,0.9793,1.0,0.9973,0.9897,1.0,0.3052,0.0,Within-Dorn available pairs (266 mapped; 9 with snippet 101 excluded)
+java,Dorn,hard,91,4959.0,0.82,0.7143,0.9121,0.91,0.8571,0.956,0.3085,0.3956,Within-Dorn available pairs (266 mapped; 9 with snippet 101 excluded)
+java,Dorn,pooled,266,4959.0,0.9364,0.8985,0.9699,0.9682,0.9492,0.985,0.3052,0.1316,Within-Dorn available pairs (266 mapped; 9 with snippet 101 excluded)
+java,cross-dataset,pooled,1996,,,,,,,,,,Undefined: ratings from distinct benchmark panels cannot define shared ceiling
+java,all_pooled,pooled,3000,,,,,,,,,,Undefined per Section 5 constraints (cross-dataset ceiling cannot be claimed)

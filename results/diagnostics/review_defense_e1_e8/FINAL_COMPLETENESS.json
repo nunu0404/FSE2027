@@ -1,0 +1,11 @@
+{
+  "status": "complete",
+  "artifact_count_excluding_sha_file": 155,
+  "e1_conclusion": "b",
+  "e4c_threshold_pass_cells": 15,
+  "e4c_total_cells": 15,
+  "e5a_pairs_attempted": 3600,
+  "e5a_reportable_cells": 1,
+  "e5a_failed_cells": 1,
+  "e5b_pairs": 3000
+}

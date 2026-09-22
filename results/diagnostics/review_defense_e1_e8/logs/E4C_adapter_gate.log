@@ -1,0 +1,42 @@
+Loading weights:   0%|          | 0/729 [00:00<?, ?it/s]Loading weights:   0%|          | 1/729 [00:00<01:47,  6.78it/s]Loading weights:   0%|          | 2/729 [00:00<02:54,  4.16it/s]Loading weights:   2%|▏         | 17/729 [00:00<00:18, 38.67it/s]Loading weights:   4%|▍         | 29/729 [00:00<00:12, 55.63it/s]Loading weights:   6%|▌         | 42/729 [00:00<00:09, 69.62it/s]Loading weights:   7%|▋         | 52/729 [00:00<00:09, 67.97it/s]Loading weights:   9%|▉         | 66/729 [00:01<00:07, 85.04it/s]Loading weights:  11%|█         | 78/729 [00:01<00:06, 93.18it/s]Loading weights:  12%|█▏        | 90/729 [00:01<00:06, 95.95it/s]Loading weights:  14%|█▍        | 101/729 [00:01<00:06, 95.10it/s]Loading weights:  16%|█▌        | 113/729 [00:01<00:06, 96.77it/s]Loading weights:  17%|█▋        | 123/729 [00:01<00:07, 84.99it/s]Loading weights:  19%|█▉        | 138/729 [00:01<00:06, 94.36it/s]Loading weights:  20%|██        | 148/729 [00:01<00:06, 92.27it/s]Loading weights:  22%|██▏       | 161/729 [00:02<00:05, 96.05it/s]Loading weights:  23%|██▎       | 171/729 [00:02<00:05, 94.74it/s]Loading weights:  26%|██▌       | 186/729 [00:02<00:05, 105.79it/s]Loading weights:  27%|██▋       | 198/729 [00:02<00:05, 98.69it/s] Loading weights:  29%|██▉       | 210/729 [00:02<00:05, 94.06it/s]Loading weights:  30%|███       | 222/729 [00:02<00:05, 94.34it/s]Loading weights:  32%|███▏      | 232/729 [00:02<00:05, 92.45it/s]Loading weights:  34%|███▍      | 250/729 [00:02<00:04, 112.77it/s]Loading weights:  36%|███▌      | 262/729 [00:03<00:04, 110.74it/s]Loading weights:  38%|███▊      | 274/729 [00:03<00:04, 102.76it/s]Loading weights:  39%|███▉      | 285/729 [00:03<00:04, 95.75it/s] Loading weights:  40%|████      | 295/729 [00:03<00:04, 94.21it/s]Loading weights:  42%|████▏     | 306/729 [00:03<00:04, 98.09it/s]Loading weights:  45%|████▍     | 328/729 [00:03<00:03, 119.14it/s]Loading weights:  61%|██████    | 445/729 [00:03<00:00, 391.66it/s]Loading weights:  85%|████████▍ | 618/729 [00:03<00:00, 751.40it/s]Loading weights: 100%|██████████| 729/729 [00:03<00:00, 184.59it/s]
+qwen adapter 1/2 parsed=A argmax=A
+qwen adapter 2/2 parsed=B argmax=B
+{
+  "status": "complete",
+  "protocol_id": "rq1-grounded-model-battery-3lang-20260723-v1",
+  "approval_commit": "2c6a439",
+  "model": "Qwen/Qwen2.5-VL-7B-Instruct",
+  "model_revision": "cc594898137f460bfe9f0759e9844b3ce807cfb5",
+  "snapshot": "/ANON/home/.cache/huggingface/hub/models--Qwen--Qwen2.5-VL-7B-Instruct/snapshots/cc594898137f460bfe9f0759e9844b3ce807cfb5",
+  "adapter": "legacy_qwen",
+  "attention_backend": "model_native",
+  "phase": "adapter",
+  "pairs": 1,
+  "orders": [
+    "AB",
+    "BA"
+  ],
+  "calls_expected": 2,
+  "calls_planned": 2,
+  "prompt_path": "results/grounded_protocol_3lang_20260721/config/prompt_B_template.txt",
+  "prompt_sha256": "1eb486ba7a7f1908b4279446aec106117fd209d410f7309ca2c5a64bcb978ae1",
+  "runner_sha256": "42e290d89d5c75954d756f0083b33bcfd0e0af98a79d4d0ef98e3ad3d7f7a5b8",
+  "environment_audit_sha256": "d207b5e61d392469b3fd66fa3cd478b68abb0cf078fbcffa234bd62e9d188dc6",
+  "modality": "image_only",
+  "packaging": "two_separately_labeled_images",
+  "dtype": "bfloat16",
+  "decoding": {
+    "do_sample": false,
+    "temperature": 0.0,
+    "top_p_inactive": 1.0,
+    "max_new_tokens": 24
+  },
+  "seed": 42,
+  "cuda_visible_devices": "0",
+  "gpu_name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "concurrency_group": "gate",
+  "python": "3.13.11",
+  "created_at_utc": "2026-07-30T05:35:01.805481+00:00",
+  "calls_completed": 2,
+  "completed_at_utc": "2026-07-30T05:35:13.767158+00:00"
+}

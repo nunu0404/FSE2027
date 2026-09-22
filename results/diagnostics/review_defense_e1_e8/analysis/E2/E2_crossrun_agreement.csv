@@ -1,0 +1,7 @@
+model,left_run_id,right_run_id,left_n,right_n,intersection_n,state_disagreement_n,state_disagreement_rate,both_valid_n,decision_disagreement_both_valid_n,decision_disagreement_both_valid_rate,changed_pair_available_abs_margin_median,margin_source_note
+Qwen/Qwen2.5-VL-7B-Instruct,battery,clean_default,3000,3000,3000,792,0.264,1340,30,0.022388059701492536,0.4375,Median pools available |content margin| values from logit runs only; clean_default did not store verdict logits.
+Qwen/Qwen2.5-VL-7B-Instruct,battery,grid,3000,3000,1000,36,0.036,501,0,0.0,0.5,Median pools available |content margin| values from logit runs only; clean_default did not store verdict logits.
+Qwen/Qwen2.5-VL-7B-Instruct,clean_default,grid,3000,3000,1000,266,0.266,442,13,0.029411764705882353,0.4375,Median pools available |content margin| values from logit runs only; clean_default did not store verdict logits.
+OpenGVLab/InternVL3-8B,battery,clean_default,3000,3000,3000,1205,0.40166666666666667,1081,89,0.08233117483811286,0.8125,Median pools available |content margin| values from logit runs only; clean_default did not store verdict logits.
+OpenGVLab/InternVL3-8B,battery,grid,3000,3000,1000,84,0.084,598,0,0.0,0.4375,Median pools available |content margin| values from logit runs only; clean_default did not store verdict logits.
+OpenGVLab/InternVL3-8B,clean_default,grid,3000,3000,1000,411,0.411,351,28,0.07977207977207977,0.8125,Median pools available |content margin| values from logit runs only; clean_default did not store verdict logits.

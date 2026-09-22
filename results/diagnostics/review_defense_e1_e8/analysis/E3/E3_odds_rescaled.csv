@@ -1,0 +1,4 @@
+analysis,contrast,coefficient,cluster_robust_se,odds_ratio,or_ci_low,or_ci_high,p_value,observations,pair_clusters,odds_ratio_per_plus_0_1_abs_z
+within_difficulty_continuous_condition_FE_pair_clustered,+1 abs human z gap within hard,-0.0239735276980159,0.3355721351700692,0.976311554630126,0.5057651606335934,1.8846380215477847,0.943046972272496,8000,1000,0.9976055185853411
+within_difficulty_continuous_condition_FE_pair_clustered,+1 abs human z gap within medium,-0.5967908758055255,0.2165430425827077,0.5505756697813129,0.360159806037094,0.8416640698765829,0.0058514442350076,8000,1000,0.942066806018166
+within_difficulty_continuous_condition_FE_pair_clustered,+1 abs human z gap within easy,-0.109473649052727,0.048920632957952,0.8963057825573433,0.8143570866766485,0.9865009698929752,0.0252353585549117,8000,1000,0.9891123394269297

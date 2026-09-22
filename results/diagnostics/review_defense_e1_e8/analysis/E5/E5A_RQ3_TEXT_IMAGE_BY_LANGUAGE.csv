@@ -1,0 +1,7 @@
+model,language,n,valid_n,target_correct_n,effective_target_preference,valid_conditional_target_preference,strict_swap_error,parse_failure_pairs,debiased_ties,debiased_target_main_tie_incorrect,debiased_target_excluding_ties,debiased_target_half_credit,boundary_abs_c_eq_abs_b,completeness_status,reportable,failure_reason
+OpenGVLab/InternVL3-8B,cuda,600,,,,,,,,,,,,fail,False,one deterministic call emitted FINAL_VERD without an explicit A/B; full GA0 parse_failures=1
+OpenGVLab/InternVL3-8B,java,600,,,,,,,,,,,,fail,False,one deterministic call emitted FINAL_VERD without an explicit A/B; full GA0 parse_failures=1
+OpenGVLab/InternVL3-8B,python,600,,,,,,,,,,,,fail,False,one deterministic call emitted FINAL_VERD without an explicit A/B; full GA0 parse_failures=1
+Qwen/Qwen2.5-VL-7B-Instruct,cuda,600,424.0,424.0,0.7066666666666667,1.0,0.29333333333333333,0.0,3.0,0.99,0.9949748743718593,0.9925,11.0,pass,True,
+Qwen/Qwen2.5-VL-7B-Instruct,java,600,489.0,489.0,0.815,1.0,0.18500000000000005,0.0,1.0,0.99,0.991652754590985,0.9908333333333333,9.0,pass,True,
+Qwen/Qwen2.5-VL-7B-Instruct,python,600,479.0,479.0,0.7983333333333333,1.0,0.20166666666666666,0.0,1.0,0.9983333333333333,1.0,0.9991666666666666,9.0,pass,True,

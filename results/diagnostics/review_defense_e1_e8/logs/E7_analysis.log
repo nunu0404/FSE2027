@@ -1,0 +1,13 @@
+  model_generation               reasoning_effort  max_output_tokens       condition   n  valid_n  valid_accuracy  effective_accuracy  strict_swap_error  parse_failure_rate  rho_valid_only
+      gpt-5.4-mini API default/not explicitly set                 24      image_only 300      229        0.637555            0.486667           0.236667            0.000000        0.340929
+      gpt-5.4-mini API default/not explicitly set                 24 text_plus_image 300      166        0.674699            0.373333           0.446667            0.000000        0.296928
+           gpt-5.4 API default/not explicitly set                 24      image_only 300      249        0.606426            0.503333           0.170000            0.000000        0.282509
+           gpt-5.4 API default/not explicitly set                 24 text_plus_image 300      220        0.672727            0.493333           0.266667            0.000000        0.387581
+           gpt-5.5 API default/not explicitly set                 24      image_only 300      244        0.684426            0.556667           0.186667            0.048333        0.420225
+           gpt-5.5 API default/not explicitly set                 24 text_plus_image 300      224        0.669643            0.500000           0.253333            0.036667        0.366433
+gpt-5.4-2026-03-05                            low               4096      image_only 300      256        0.609375            0.520000           0.146667            0.000000        0.296748
+gpt-5.4-2026-03-05                            low               4096 text_plus_image 300      219        0.662100            0.483333           0.270000            0.000000        0.341646
+gpt-5.4-2026-03-05                           high               4096      image_only 300      266        0.635338            0.563333           0.113333            0.000000        0.328571
+gpt-5.4-2026-03-05                           high               4096 text_plus_image 300      213        0.694836            0.493333           0.290000            0.000000        0.410051
+             model reasoning_effort  max_output_tokens  image_only_swap_error  text_plus_image_swap_error  image_invalid_text_valid  image_valid_text_invalid  exact_mcnemar_p
+gpt-5.4-2026-03-05             high               4096               0.113333                        0.29                        24                        77     1.180680e-07

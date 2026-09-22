@@ -1,0 +1,28 @@
+language,model,expected_pairs,observed_pairs,missing_pairs,extra_pairs,exact_match
+java,Logistic Regression,3000,3000,0,0,True
+java,Multilayer Perceptron,3000,3000,0,0,True
+java,Naive Bayes,3000,3000,0,0,True
+java,"Scalabrino-LR (replicated, not official tool)",3000,3000,0,0,True
+java,Voting ensemble (LR+NB+RF),3000,3000,0,0,True
+java,gradient_boosting_regressor,3000,3000,0,0,True
+java,linear_regression,3000,3000,0,0,True
+java,random_forest_regressor,3000,3000,0,0,True
+java,svr,3000,3000,0,0,True
+python,Logistic Regression,3000,3000,0,0,True
+python,Multilayer Perceptron,3000,3000,0,0,True
+python,Naive Bayes,3000,3000,0,0,True
+python,"Scalabrino-LR (replicated, not official tool)",3000,3000,0,0,True
+python,Voting ensemble (LR+NB+RF),3000,3000,0,0,True
+python,gradient_boosting_regressor,3000,3000,0,0,True
+python,linear_regression,3000,3000,0,0,True
+python,random_forest_regressor,3000,3000,0,0,True
+python,svr,3000,3000,0,0,True
+cuda,Logistic Regression,3000,3000,0,0,True
+cuda,Multilayer Perceptron,3000,3000,0,0,True
+cuda,Naive Bayes,3000,3000,0,0,True
+cuda,"Scalabrino-LR (replicated, not official tool)",3000,3000,0,0,True
+cuda,Voting ensemble (LR+NB+RF),3000,3000,0,0,True
+cuda,gradient_boosting_regressor,3000,3000,0,0,True
+cuda,linear_regression,3000,3000,0,0,True
+cuda,random_forest_regressor,3000,3000,0,0,True
+cuda,svr,3000,3000,0,0,True

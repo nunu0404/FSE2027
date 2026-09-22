@@ -1,0 +1,49 @@
+{
+  "captured_at_utc": "2026-07-30T04:37:23.095148+00:00",
+  "python": "3.13.11",
+  "packages": {
+    "torch": "2.11.0+cu130",
+    "torchvision": "0.26.0+cu130",
+    "transformers": "5.9.0",
+    "accelerate": "1.14.0",
+    "pandas": "3.0.1"
+  },
+  "pillow": "12.1.1",
+  "gpu_csv": [
+    "0, GPU-98933e9f-5143-2ea9-2508-16c4aea693f4, NVIDIA RTX PRO 6000 Blackwell Server Edition, 580.95.05, 97887 MiB",
+    "1, GPU-197872ce-acfb-6713-7aaa-5858ad3e8d59, NVIDIA RTX PRO 6000 Blackwell Server Edition, 580.95.05, 97887 MiB"
+  ],
+  "cuda_runtime": "13.0",
+  "cudnn_version": 91900,
+  "runners": {
+    "battery": {
+      "path": "/ANON/experiment_root/results/rq1_model_battery_3lang_20260723/code/run_rq1_vlm.py",
+      "sha256": "42e290d89d5c75954d756f0083b33bcfd0e0af98a79d4d0ef98e3ad3d7f7a5b8"
+    },
+    "grid": {
+      "path": "/ANON/experiment_root/results/grounded_protocol_3lang_20260721/code/run_grounded_vlm.py",
+      "sha256": "2dff7c33875177599f0a77241c4e17e6852b0b029bf26c34466991d4b8dd4008"
+    },
+    "rq3": {
+      "path": "/ANON/experiment_root/results/grounded_protocol_3lang_20260721/code/run_rq3_vlm.py",
+      "sha256": "a706669cb1c6c8e445feeb3d689045fe8dabf469d2e0b2a7f9213ed518982d20"
+    }
+  },
+  "prompt": {
+    "path": "/ANON/experiment_root/results/grounded_protocol_3lang_20260721/config/prompt_B_template.txt",
+    "sha256": "1eb486ba7a7f1908b4279446aec106117fd209d410f7309ca2c5a64bcb978ae1"
+  },
+  "source_environment": {
+    "path": "/ANON/experiment_root/results/rq1_model_battery_3lang_20260723/audit/EXECUTION_ENVIRONMENT.json",
+    "sha256": "d207b5e61d392469b3fd66fa3cd478b68abb0cf078fbcffa234bd62e9d188dc6"
+  },
+  "frozen_policy": {
+    "seed": 42,
+    "dtype": "bfloat16",
+    "do_sample": false,
+    "temperature": 0.0,
+    "top_p_inactive": 1.0,
+    "max_new_tokens": 24,
+    "packaging": "two_separately_labeled_images"
+  }
+}

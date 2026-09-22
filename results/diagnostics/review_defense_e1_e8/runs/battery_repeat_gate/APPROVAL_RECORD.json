@@ -1,0 +1,17 @@
+{
+  "protocol_id": "rq1-grounded-model-battery-3lang-20260723-v1",
+  "status": "author_approved",
+  "preregistration_commit": "d8f8c6f99ae7e0dec8fe96760129e8fc4ff7d066",
+  "approved_at_utc": "2026-07-23T05:39:00Z",
+  "approved_scope": "Five frozen models; Java, Python, and CUDA with 3,000 pairs per language; corrected grounded baseline PNGs; image_only; separate two-image input; Prompt B; AB/BA; 18,000 calls per model and 90,000 calls total. GA0 qualification is mandatory. text_plus_image is excluded pending separate approval.",
+  "execution_authorized": true,
+  "amendments": [
+    {
+      "id": "A1-concurrent-two-models-one-gpu",
+      "approved_at_utc": "2026-07-23T06:28:00Z",
+      "author_instruction": "Stop the sequential run and execute two models at a time because the sequential run is too slow.",
+      "scope": "Run Qwen with InternVL concurrently on physical GPU 0, then Gemma with Ministral concurrently on physical GPU 0, then Phi alone. Archive and exclude the 3,296-call sequential Qwen partial run; restart Qwen from zero under the amended condition.",
+      "post_output_change": true
+    }
+  ]
+}

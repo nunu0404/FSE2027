@@ -1,0 +1,5 @@
+pair_id,order_ab_output,order_ba_output,parse_failures
+full_rq0_seed42__rq0_0100__rq0_0249,FINAL_VERDDICT: B,FINAL_VERDICT: B,1
+full_rq0_seed42__rq0_0188__rq0_0249,FINAL_VERDDICT: A,FINAL_VERDD: B,2
+full_rq0_seed42__rq0_0214__rq0_0237,FINAL_VERDD: A,FINAL_VERDICT: B,1
+full_rq0_seed42__rq0_0217__rq0_0286,FINAL_VERDDIC: B,FINAL_VERDD: B,2

@@ -1,0 +1,28 @@
+{
+  "generated_at_utc": "2026-07-30T06:19:00.322293+00:00",
+  "model": "OpenGVLab/InternVL3-8B",
+  "model_kind": "vlm",
+  "input_setting": "combined_labeled_text_plus_image",
+  "modality": "text_plus_image",
+  "packaging": "combined_labeled",
+  "prompt_variant": "B",
+  "languages": [
+    "java"
+  ],
+  "pairs": "/ANON/experiment_root/experiments/rq0_viability/data/pairs/full_pair_set_rq0.csv",
+  "limit_pairs": 3000,
+  "max_pairs": 50,
+  "resume": false,
+  "cuda_visible_devices": "1",
+  "nvidia_smi_before": "0, NVIDIA RTX PRO 6000 Blackwell Server Edition, 35154 MiB, 97887 MiB, 77 %\n1, NVIDIA RTX PRO 6000 Blackwell Server Edition, 3 MiB, 97887 MiB, 0 %\n",
+  "dtype": "bf16",
+  "device_map": "auto",
+  "temperature": 0.0,
+  "top_p": 1.0,
+  "max_new_tokens": 24,
+  "seed": 42,
+  "outputs": {
+    "raw": "/ANON/experiment_root/results/fse2027_review_defense_e1_e8_20260730/runs/e5_internvl_combined_text_plus_image/ga0/e5b_ga0_20260730.jsonl",
+    "metrics": "/ANON/experiment_root/results/fse2027_review_defense_e1_e8_20260730/runs/e5_internvl_combined_text_plus_image/ga0/e5b_ga0_20260730.metrics.json"
+  }
+}

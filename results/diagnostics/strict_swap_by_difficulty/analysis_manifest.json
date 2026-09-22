@@ -1,0 +1,24 @@
+{
+  "cases": 50,
+  "pair_run_rows": 46560,
+  "families": {
+    "gpt54_reasoning_budget": 8,
+    "max_token_300": 16,
+    "ocr_text_llm_full3000": 4,
+    "openai_standard_300": 12,
+    "primary_clean_full3000": 8,
+    "protocol_sanity_300": 2
+  },
+  "difficulty_definition": {
+    "easy": "abs human z gap >= 1.0",
+    "medium": "0.5 <= abs human z gap < 1.0",
+    "hard": "0.2 <= abs human z gap < 0.5"
+  },
+  "excluded": [
+    "pre-clean/stale/corrupted-render runs",
+    "smoke and duplicate result-tree copies",
+    "failed partial GPT-5.5 run (422 rows); fixed complete run used",
+    "presentation perturbation cases without score-gap difficulty strata",
+    "classical ML swap error, structurally zero by score-difference construction"
+  ]
+}

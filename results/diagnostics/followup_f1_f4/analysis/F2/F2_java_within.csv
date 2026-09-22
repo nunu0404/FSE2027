@@ -1,0 +1,25 @@
+run_id,benchmark,difficulty,estimator,agreement_probability,ci_lo,ci_hi,n_pairs,n_unique_snippets,mean_tie_probability,tie_credit,panel_draws_per_snippet,cluster_bootstrap_reps,cluster_unit,n_pairs_requested,n_pairs_unavailable
+rq1_java_within_seed42,Buse,easy,k=1,0.778684632068384,0.7525681589624097,0.8047261636095463,106,85,0.1823381741375022,0.5,0,10000,both snippet endpoints (two-way multiplicity bootstrap),106,0
+rq1_java_within_seed42,Buse,easy,k=panel,1.0,1.0,1.0,106,85,0.0,0.5,10000,10000,both snippet endpoints (two-way multiplicity bootstrap),106,0
+rq1_java_within_seed42,Buse,hard,k=1,0.5585276989552654,0.5526876681608206,0.5645419929119563,99,90,0.26985792630215827,0.5,0,10000,both snippet endpoints (two-way multiplicity bootstrap),99,0
+rq1_java_within_seed42,Buse,hard,k=panel,0.9366717171717173,0.9204727058995328,0.9512438293269232,99,90,0.007244444444444447,0.5,10000,10000,both snippet endpoints (two-way multiplicity bootstrap),99,0
+rq1_java_within_seed42,Buse,medium,k=1,0.619745337706557,0.6104279320862953,0.6289988846906609,94,79,0.2581543813859941,0.5,0,10000,both snippet endpoints (two-way multiplicity bootstrap),94,0
+rq1_java_within_seed42,Buse,medium,k=panel,0.9983856382978721,0.9972095930232556,0.999150904420045,94,79,0.0002946808510638297,0.5,10000,10000,both snippet endpoints (two-way multiplicity bootstrap),94,0
+rq1_java_within_seed42,Dorn,easy,k=1,0.6922444518757117,0.6704256359616235,0.7175892835870198,77,65,0.21616600028150373,0.5,0,10000,both snippet endpoints (two-way multiplicity bootstrap),79,2
+rq1_java_within_seed42,Dorn,easy,k=panel,0.9999987012987013,0.9999924026290167,1.0,77,65,0.0,0.5,10000,10000,both snippet endpoints (two-way multiplicity bootstrap),79,2
+rq1_java_within_seed42,Dorn,hard,k=1,0.5388969532153975,0.534802885796922,0.5427649899716155,91,71,0.2552394946486086,0.5,0,10000,both snippet endpoints (two-way multiplicity bootstrap),96,5
+rq1_java_within_seed42,Dorn,hard,k=panel,0.9101873626373624,0.8905646718790056,0.9290640381903643,91,71,0.00011318681318681319,0.5,10000,10000,both snippet endpoints (two-way multiplicity bootstrap),96,5
+rq1_java_within_seed42,Dorn,medium,k=1,0.58748065972788,0.5809140461282597,0.5939184224890591,98,80,0.2525460451385376,0.5,0,10000,both snippet endpoints (two-way multiplicity bootstrap),100,2
+rq1_java_within_seed42,Dorn,medium,k=panel,0.9973357142857144,0.9954690176767678,0.9987085416173335,98,80,1.0204081632653061e-05,0.5,10000,10000,both snippet endpoints (two-way multiplicity bootstrap),100,2
+rq1_java_within_seed42,Scalabrino,easy,k=1,0.8038667598416027,0.7762513049201162,0.8293863419522566,159,115,0.2017237363149313,0.5,0,10000,both snippet endpoints (two-way multiplicity bootstrap),159,0
+rq1_java_within_seed42,Scalabrino,easy,k=panel,0.9837647798742136,0.9752519277486313,0.9903591792401932,159,115,0.008069182389937106,0.5,10000,10000,both snippet endpoints (two-way multiplicity bootstrap),159,0
+rq1_java_within_seed42,Scalabrino,hard,k=1,0.5688919372046943,0.5586866447547408,0.5787731057189685,81,90,0.3211400701112635,0.5,0,10000,both snippet endpoints (two-way multiplicity bootstrap),81,0
+rq1_java_within_seed42,Scalabrino,hard,k=panel,0.7054382716049382,0.6900240797413795,0.7241520129161881,81,90,0.09191604938271605,0.5,10000,10000,both snippet endpoints (two-way multiplicity bootstrap),81,0
+rq1_java_within_seed42,Scalabrino,medium,k=1,0.6303118908382067,0.6197808928007146,0.6405587489416854,190,116,0.3088369070825211,0.5,0,10000,both snippet endpoints (two-way multiplicity bootstrap),190,0
+rq1_java_within_seed42,Scalabrino,medium,k=panel,0.8476050000000002,0.82899116050543,0.8658237563131315,190,116,0.05979526315789474,0.5,10000,10000,both snippet endpoints (two-way multiplicity bootstrap),190,0
+rq1_java_within_seed42,Buse,all,k=1,0.6558223242148373,0.6339293780961901,0.6809097857586861,299,98,0.23515148164806807,0.5,0,10000,both snippet endpoints (two-way multiplicity bootstrap),299,0
+rq1_java_within_seed42,Buse,all,k=panel,0.9785242474916388,0.970680412202381,0.9851923009744438,299,98,0.0024913043478260876,0.5,10000,10000,both snippet endpoints (two-way multiplicity bootstrap),299,0
+rq1_java_within_seed42,Dorn,all,k=1,0.60118627891114,0.5851288508437389,0.6199524866313226,266,89,0.24293642277547317,0.5,0,10000,both snippet endpoints (two-way multiplicity bootstrap),275,9
+rq1_java_within_seed42,Dorn,all,k=panel,0.9682926691729323,0.9564520409556724,0.9785912919431976,266,89,4.2481203007518804e-05,0.5,10000,10000,both snippet endpoints (two-way multiplicity bootstrap),275,9
+rq1_java_within_seed42,Scalabrino,all,k=1,0.6829170255526844,0.6609665742467161,0.7068918051442776,430,124,0.2715475165087568,0.5,0,10000,both snippet endpoints (two-way multiplicity bootstrap),430,0
+rq1_java_within_seed42,Scalabrino,all,k=panel,0.8711722093023255,0.84913278802521,0.8924677794088863,430,124,0.0467193023255814,0.5,10000,10000,both snippet endpoints (two-way multiplicity bootstrap),430,0

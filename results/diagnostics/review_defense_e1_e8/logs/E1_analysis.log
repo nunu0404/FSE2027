@@ -1,0 +1,49 @@
+{
+  "conclusion": "b",
+  "rule": "at least one exceeds a baseline, but no positive difference excludes zero",
+  "comparisons": 30,
+  "holm_family": "15 model-language cells x 2 baselines",
+  "exceeding_comparisons": [
+    {
+      "model": "qwen",
+      "language": "python",
+      "baseline": "rf",
+      "diff": 0.04033333333333333,
+      "ci_low": -0.0431205606181352,
+      "ci_high": 0.1204155789434585,
+      "ci_excludes_zero": false,
+      "holm_p": 0.004036303151143547
+    },
+    {
+      "model": "qwen",
+      "language": "python",
+      "baseline": "language_best",
+      "diff": 0.021666666666666612,
+      "ci_low": -0.06178517046843957,
+      "ci_high": 0.10233781896983053,
+      "ci_excludes_zero": false,
+      "holm_p": 0.2306133809909353
+    }
+  ],
+  "language_best": {
+    "cuda": "svr",
+    "java": "Multilayer Perceptron",
+    "python": "Voting ensemble (LR+NB+RF)"
+  }
+}
+model_key language  debiased_main_tie_incorrect  rf_accuracy  diff_vs_rf  diff_vs_rf_ci_low  diff_vs_rf_ci_high         language_best_name  language_best_accuracy  diff_vs_language_best  diff_vs_language_best_ci_low  diff_vs_language_best_ci_high
+    gemma     cuda                     0.629333     0.733667   -0.104333          -0.174577           -0.032903                        svr                0.758000              -0.128667                     -0.197643                      -0.059626
+    gemma     java                     0.607667     0.623333   -0.015667          -0.063079            0.030174      Multilayer Perceptron                0.631667              -0.024000                     -0.078663                       0.029249
+    gemma   python                     0.623333     0.627333   -0.004000          -0.100734            0.090554 Voting ensemble (LR+NB+RF)                0.646000              -0.022667                     -0.119696                       0.071475
+ internvl     cuda                     0.557667     0.733667   -0.176000          -0.251812           -0.097267                        svr                0.758000              -0.200333                     -0.270977                      -0.126586
+ internvl     java                     0.462667     0.623333   -0.160667          -0.224542           -0.096580      Multilayer Perceptron                0.631667              -0.169000                     -0.232228                      -0.105228
+ internvl   python                     0.509667     0.627333   -0.117667          -0.224328           -0.010505 Voting ensemble (LR+NB+RF)                0.646000              -0.136333                     -0.242077                      -0.028588
+ministral     cuda                     0.564667     0.733667   -0.169000          -0.244982           -0.092349                        svr                0.758000              -0.193333                     -0.262730                      -0.121047
+ministral     java                     0.540000     0.623333   -0.083333          -0.144583           -0.021858      Multilayer Perceptron                0.631667              -0.091667                     -0.154489                      -0.029256
+ministral   python                     0.524333     0.627333   -0.103000          -0.213255            0.005819 Voting ensemble (LR+NB+RF)                0.646000              -0.121667                     -0.231849                      -0.011970
+      phi     cuda                     0.378333     0.733667   -0.355333          -0.433106           -0.275688                        svr                0.758000              -0.379667                     -0.451706                      -0.305094
+      phi     java                     0.378667     0.623333   -0.244667          -0.308527           -0.179468      Multilayer Perceptron                0.631667              -0.253000                     -0.319072                      -0.186978
+      phi   python                     0.378000     0.627333   -0.249333          -0.356291           -0.138541 Voting ensemble (LR+NB+RF)                0.646000              -0.268000                     -0.375332                      -0.155077
+     qwen     cuda                     0.671667     0.733667   -0.062000          -0.126862            0.000668                        svr                0.758000              -0.086333                     -0.148787                      -0.025812
+     qwen     java                     0.585333     0.623333   -0.038000          -0.090329            0.013540      Multilayer Perceptron                0.631667              -0.046333                     -0.102905                       0.009701
+     qwen   python                     0.667667     0.627333    0.040333          -0.043121            0.120416 Voting ensemble (LR+NB+RF)                0.646000               0.021667                     -0.061785                       0.102338

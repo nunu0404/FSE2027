@@ -1,0 +1,5 @@
+family,number_of_families,tests_per_family,total_tests,adjustment
+rendering_grid_within_model_language,6,11,66,Holm within each model-language family
+perturbation_within_model_language,6,5,30,Holm within each model-language family
+RQ3_direct_contrasts_within_model,2,6,12,Holm within model
+E1_VLM_vs_baseline,1,30,30,global Holm over 15 cells x 2 baselines

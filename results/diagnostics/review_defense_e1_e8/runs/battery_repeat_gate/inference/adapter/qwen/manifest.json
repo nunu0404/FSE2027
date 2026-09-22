@@ -1,0 +1,39 @@
+{
+  "status": "complete",
+  "protocol_id": "rq1-grounded-model-battery-3lang-20260723-v1",
+  "approval_commit": "2c6a439",
+  "model": "Qwen/Qwen2.5-VL-7B-Instruct",
+  "model_revision": "cc594898137f460bfe9f0759e9844b3ce807cfb5",
+  "snapshot": "/ANON/home/.cache/huggingface/hub/models--Qwen--Qwen2.5-VL-7B-Instruct/snapshots/cc594898137f460bfe9f0759e9844b3ce807cfb5",
+  "adapter": "legacy_qwen",
+  "attention_backend": "model_native",
+  "phase": "adapter",
+  "pairs": 1,
+  "orders": [
+    "AB",
+    "BA"
+  ],
+  "calls_expected": 2,
+  "calls_planned": 2,
+  "prompt_path": "results/grounded_protocol_3lang_20260721/config/prompt_B_template.txt",
+  "prompt_sha256": "1eb486ba7a7f1908b4279446aec106117fd209d410f7309ca2c5a64bcb978ae1",
+  "runner_sha256": "42e290d89d5c75954d756f0083b33bcfd0e0af98a79d4d0ef98e3ad3d7f7a5b8",
+  "environment_audit_sha256": "d207b5e61d392469b3fd66fa3cd478b68abb0cf078fbcffa234bd62e9d188dc6",
+  "modality": "image_only",
+  "packaging": "two_separately_labeled_images",
+  "dtype": "bfloat16",
+  "decoding": {
+    "do_sample": false,
+    "temperature": 0.0,
+    "top_p_inactive": 1.0,
+    "max_new_tokens": 24
+  },
+  "seed": 42,
+  "cuda_visible_devices": "0",
+  "gpu_name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "concurrency_group": "gate",
+  "python": "3.13.11",
+  "created_at_utc": "2026-07-30T05:35:01.805481+00:00",
+  "calls_completed": 2,
+  "completed_at_utc": "2026-07-30T05:35:13.767158+00:00"
+}

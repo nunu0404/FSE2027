@@ -1,0 +1,33 @@
+{
+  "conclusion": "b",
+  "rule": "at least one exceeds a baseline, but no positive difference excludes zero",
+  "comparisons": 30,
+  "holm_family": "15 model-language cells x 2 baselines",
+  "exceeding_comparisons": [
+    {
+      "model": "qwen",
+      "language": "python",
+      "baseline": "rf",
+      "diff": 0.04033333333333333,
+      "ci_low": -0.0431205606181352,
+      "ci_high": 0.1204155789434585,
+      "ci_excludes_zero": false,
+      "holm_p": 0.004036303151143547
+    },
+    {
+      "model": "qwen",
+      "language": "python",
+      "baseline": "language_best",
+      "diff": 0.021666666666666612,
+      "ci_low": -0.06178517046843957,
+      "ci_high": 0.10233781896983053,
+      "ci_excludes_zero": false,
+      "holm_p": 0.2306133809909353
+    }
+  ],
+  "language_best": {
+    "cuda": "svr",
+    "java": "Multilayer Perceptron",
+    "python": "Voting ensemble (LR+NB+RF)"
+  }
+}

@@ -1,0 +1,7 @@
+family,cases,mean_hard_swap,mean_medium_swap,mean_easy_swap,hard_greater_easy_cases,expected_monotonic_cases
+gpt54_reasoning_budget,8,0.30916666666666665,0.2966666666666667,0.32666666666666666,3,0
+max_token_300,16,0.43625,0.405,0.33125,14,10
+ocr_text_llm_full3000,4,0.5117499999999999,0.54525,0.55,0,0
+openai_standard_300,12,0.26,0.26,0.25833333333333336,6,1
+primary_clean_full3000,8,0.40912499999999996,0.417,0.395,4,2
+protocol_sanity_300,2,0.43,0.385,0.385,2,1

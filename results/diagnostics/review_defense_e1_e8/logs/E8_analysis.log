@@ -1,0 +1,10 @@
+contrast inventory=96; compact rows=4
+dominant_component
+valid_coverage/consistency    70
+valid-only_accuracy           26
+                                      max       min
+slice               method_type                    
+easy_all_languages  ML           0.919000  0.614000
+                    VLM          0.634000  0.209000
+java_within_dataset ML           0.639442  0.584661
+                    VLM          0.524900  0.245020

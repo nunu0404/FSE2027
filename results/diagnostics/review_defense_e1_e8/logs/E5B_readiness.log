@@ -1,0 +1,13 @@
+{
+  "status": "valid",
+  "model_loaded": false,
+  "pairs": 3000,
+  "snippets_referenced": 313,
+  "languages": [
+    "java"
+  ],
+  "input_setting": "combined_labeled_text_plus_image",
+  "individual_render_references_checked": 6000,
+  "combined_render_references_checked": 6000,
+  "extra_combined_metadata_rows": 0
+}

@@ -1,0 +1,23 @@
+{
+  "new_model_calls": 0,
+  "runs_kept_separate": true,
+  "A": {
+    "matrix_rows": 1188,
+    "condition_pairs_per_model_language": 66,
+    "repeat_run_baseline": "not measurable"
+  },
+  "B": {
+    "decile_rows": 200,
+    "summary_rows": 20
+  },
+  "C": {
+    "joint_rows": 45000,
+    "nonboundary_violations": 0,
+    "boundary_pairs": 5577,
+    "boundary_inclusive_mismatches": 2576
+  },
+  "D": {
+    "rows": 60,
+    "language_rows": 15
+  }
+}

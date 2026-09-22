@@ -1,0 +1,13 @@
+run_id,language,difficulty,estimator,agreement_probability,ci_lo,ci_hi,n_pairs,n_unique_snippets,mean_tie_probability,tie_credit,panel_draws_per_snippet,cluster_bootstrap_reps,cluster_unit
+rq1_pairs_9000_seed42,cuda,easy,k=1,0.758950202329012,0.7436803268833024,0.7738579070602378,1000,120,0.18720265083303292,0.5,0,10000,both snippet endpoints (two-way multiplicity bootstrap)
+rq1_pairs_9000_seed42,cuda,easy,k=panel,1.0,1.0,1.0,1000,120,0.0,0.5,10000,10000,both snippet endpoints (two-way multiplicity bootstrap)
+rq1_pairs_9000_seed42,cuda,hard,k=1,0.5539244583061429,0.552046948277692,0.556044031739477,1000,119,0.25699425956612854,0.5,0,10000,both snippet endpoints (two-way multiplicity bootstrap)
+rq1_pairs_9000_seed42,cuda,hard,k=panel,0.9619338499999999,0.9571195366317607,0.9666869455420461,1000,119,8.07e-05,0.5,10000,10000,both snippet endpoints (two-way multiplicity bootstrap)
+rq1_pairs_9000_seed42,cuda,medium,k=1,0.613092063862134,0.6096799144850525,0.6168060156445114,1000,120,0.24671231645289537,0.5,0,10000,both snippet endpoints (two-way multiplicity bootstrap)
+rq1_pairs_9000_seed42,cuda,medium,k=panel,0.9996559500000001,0.9995113069612154,0.9997590230144171,1000,120,1.1e-06,0.5,10000,10000,both snippet endpoints (two-way multiplicity bootstrap)
+rq1_pairs_9000_seed42,python,easy,k=1,0.7267348056139338,0.7147996773924225,0.7381576196796342,1000,119,0.21388243752163394,0.5,0,10000,both snippet endpoints (two-way multiplicity bootstrap)
+rq1_pairs_9000_seed42,python,easy,k=panel,1.0,1.0,1.0,1000,119,0.0,0.5,10000,10000,both snippet endpoints (two-way multiplicity bootstrap)
+rq1_pairs_9000_seed42,python,hard,k=1,0.5564328690772092,0.5540556729659284,0.5588655881700738,1000,119,0.27320826585747443,0.5,0,10000,both snippet endpoints (two-way multiplicity bootstrap)
+rq1_pairs_9000_seed42,python,hard,k=panel,0.96533875,0.9597225029944721,0.9702498667650884,1000,119,6.489999999999999e-05,0.5,10000,10000,both snippet endpoints (two-way multiplicity bootstrap)
+rq1_pairs_9000_seed42,python,medium,k=1,0.6168848800001483,0.613084158769328,0.6206779925779602,1000,119,0.25832859740193914,0.5,0,10000,both snippet endpoints (two-way multiplicity bootstrap)
+rq1_pairs_9000_seed42,python,medium,k=panel,0.9997440000000001,0.9996420354244953,0.999827085664823,1000,119,1.4e-06,0.5,10000,10000,both snippet endpoints (two-way multiplicity bootstrap)

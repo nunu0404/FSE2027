@@ -1,0 +1,25 @@
+language,benchmark_pool,difficulty,n_pairs,half_vs_all_ceiling_mean,half_vs_all_ceiling_95ci,split_half_ceiling_mean,split_half_ceiling_95ci,prop_pairs_in_noise_band,qwen25_vl_7b_valid_acc,gemma4_12b_valid_acc,best_source_baseline_name,best_source_baseline_acc,rf_baseline_acc,notes
+python,Dorn,easy,1000,1.0,"[1.0000, 1.0000]",1.0,"[1.0000, 1.0000]",0.0,0.8444,0.7915,Voting ensemble (LR+NB+RF),0.746,0.729,"Full 3,000-pair battery comparison"
+python,Dorn,medium,1000,0.9997,"[0.9985, 1.0000]",0.9994,"[0.9970, 1.0000]",0.0,0.7372,0.6675,Voting ensemble (LR+NB+RF),0.609,0.593,"Full 3,000-pair battery comparison"
+python,Dorn,hard,1000,0.9648,"[0.9435, 0.9815]",0.9297,"[0.8870, 0.9630]",0.084,0.6582,0.5998,Voting ensemble (LR+NB+RF),0.585,0.562,"Full 3,000-pair battery comparison"
+python,Dorn,pooled,3000,0.9882,"[0.9807, 0.9938]",0.9764,"[0.9613, 0.9877]",0.0273,0.7592,0.6876,Voting ensemble (LR+NB+RF),0.646,0.6273,"Full 3,000-pair battery comparison"
+cuda,Dorn,easy,1000,1.0,"[1.0000, 1.0000]",1.0,"[1.0000, 1.0000]",0.0,0.8799,0.8172,svr,0.919,0.886,"Full 3,000-pair battery comparison"
+cuda,Dorn,medium,1000,0.9996,"[0.9980, 1.0000]",0.9992,"[0.9960, 1.0000]",0.0,0.7357,0.687,svr,0.731,0.708,"Full 3,000-pair battery comparison"
+cuda,Dorn,hard,1000,0.9612,"[0.9390, 0.9790]",0.9224,"[0.8780, 0.9580]",0.113,0.6027,0.5911,svr,0.624,0.608,"Full 3,000-pair battery comparison"
+cuda,Dorn,pooled,3000,0.9869,"[0.9795, 0.9928]",0.9739,"[0.9590, 0.9857]",0.0347,0.7495,0.7013,svr,0.758,0.7337,"Full 3,000-pair battery comparison"
+java (Buse),Buse,easy,106,1.0,"[1.0000, 1.0000]",1.0,"[1.0000, 1.0000]",0.0,0.8594,,Multilayer Perceptron,,,Within-dataset Java pool (Buse); Gemma4/classical within-pool marked missing
+java (Buse),Buse,medium,94,0.9992,"[0.9947, 1.0000]",0.9985,"[0.9894, 1.0000]",0.0,0.6727,,Multilayer Perceptron,,,Within-dataset Java pool (Buse); Gemma4/classical within-pool marked missing
+java (Buse),Buse,hard,99,0.9494,"[0.9091, 0.9798]",0.8989,"[0.8182, 0.9596]",0.1212,0.6296,,Multilayer Perceptron,,,Within-dataset Java pool (Buse); Gemma4/classical within-pool marked missing
+java (Buse),Buse,pooled,299,0.983,"[0.9699, 0.9933]",0.966,"[0.9398, 0.9866]",0.0401,0.7283,,Multilayer Perceptron,,,Within-dataset Java pool (Buse); Gemma4/classical within-pool marked missing
+java (Dorn),Dorn,easy,77,1.0,"[1.0000, 1.0000]",1.0,"[1.0000, 1.0000]",0.0,0.4068,,Multilayer Perceptron,,,Within-dataset Java pool (Dorn); Gemma4/classical within-pool marked missing
+java (Dorn),Dorn,medium,98,0.9973,"[0.9897, 1.0000]",0.9946,"[0.9793, 1.0000]",0.0,0.3676,,Multilayer Perceptron,,,Within-dataset Java pool (Dorn); Gemma4/classical within-pool marked missing
+java (Dorn),Dorn,hard,91,0.91,"[0.8571, 0.9560]",0.82,"[0.7143, 0.9121]",0.3956,0.431,,Multilayer Perceptron,,,Within-dataset Java pool (Dorn); Gemma4/classical within-pool marked missing
+java (Dorn),Dorn,pooled,266,0.9682,"[0.9492, 0.9850]",0.9364,"[0.8985, 0.9699]",0.1316,0.4,,Multilayer Perceptron,,,Within-dataset Java pool (Dorn); Gemma4/classical within-pool marked missing
+java (Scalabrino),Scalabrino,easy,159,0.968,"[0.9403, 0.9906]",0.9359,"[0.8805, 0.9811]",0.0,0.9655,,Multilayer Perceptron,,,Within-dataset Java pool (Scalabrino); Gemma4/classical within-pool marked missing
+java (Scalabrino),Scalabrino,medium,190,0.7584,"[0.7026, 0.8079]",0.5214,"[0.4079, 0.6184]",0.6789,0.8113,,Multilayer Perceptron,,,Within-dataset Java pool (Scalabrino); Gemma4/classical within-pool marked missing
+java (Scalabrino),Scalabrino,hard,81,0.5941,"[0.5432, 0.6481]",0.229,"[0.1235, 0.3457]",1.0,0.6818,,Multilayer Perceptron,,,Within-dataset Java pool (Scalabrino); Gemma4/classical within-pool marked missing
+java (Scalabrino),Scalabrino,pooled,430,0.8049,"[0.7721, 0.8360]",0.6196,"[0.5512, 0.6781]",0.4884,0.8571,,Multilayer Perceptron,,,Within-dataset Java pool (Scalabrino); Gemma4/classical within-pool marked missing
+java (3000 pairs),pooled_across_benchmarks,easy,1000,,N/A,,N/A,,0.7015,0.7132,Multilayer Perceptron,0.703,0.72,Java pooled ceiling undefined (cross-dataset pairs have no shared rater panel)
+java (3000 pairs),pooled_across_benchmarks,medium,1000,,N/A,,N/A,,0.6126,0.6082,Multilayer Perceptron,0.652,0.608,Java pooled ceiling undefined (cross-dataset pairs have no shared rater panel)
+java (3000 pairs),pooled_across_benchmarks,hard,1000,,N/A,,N/A,,0.5526,0.5333,Multilayer Perceptron,0.54,0.542,Java pooled ceiling undefined (cross-dataset pairs have no shared rater panel)
+java (3000 pairs),pooled_across_benchmarks,pooled,3000,,N/A,,N/A,,0.6235,0.6189,Multilayer Perceptron,0.6317,0.6233,Java pooled ceiling undefined (cross-dataset pairs have no shared rater panel)

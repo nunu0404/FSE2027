@@ -1,0 +1,5 @@
+model,run_id,n,valid_coverage_recomputed,valid_accuracy_recomputed,valid_accuracy_manuscript,effective_recomputed,effective_manuscript,swap_recomputed,swap_manuscript
+Qwen/Qwen2.5-VL-7B-Instruct,battery,3000,0.525,0.6234920634920635,0.6235,0.3273333333333333,0.3273,0.475,0.4751
+Qwen/Qwen2.5-VL-7B-Instruct,clean_default,3000,0.6223333333333333,0.6213176218532405,0.6213,0.38666666666666666,0.3867,0.3776666666666667,0.3777
+OpenGVLab/InternVL3-8B,battery,3000,0.6406666666666667,0.46878251821019773,,0.30033333333333334,0.3003,0.3593333333333333,0.3594
+OpenGVLab/InternVL3-8B,clean_default,3000,0.452,0.5545722713864307,0.5546,0.25066666666666665,0.2507,0.548,0.548

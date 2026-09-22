@@ -1,0 +1,7 @@
+run_id,model,language,n_pairs,n_calls,call_verdict_agreement,pair_state_agreement,pair_state_disagreement,both_valid_n,decision_agreement_both_valid,changed_pair_original_abs_content_margin_median,logit_pair_bit_exact_rate,logit_max_absolute_difference,original_valid_accuracy,repeat_valid_accuracy,original_effective_accuracy,repeat_effective_accuracy,original_swap_error,repeat_swap_error
+E4A_same_environment,Qwen/Qwen2.5-VL-7B-Instruct,cuda,1000,2000,0.969,0.942,0.05800000000000005,599,1.0,0.4375,0.0905,1.125,0.7687400318979266,0.753577106518283,0.482,0.474,0.373,0.371
+E4A_same_environment,Qwen/Qwen2.5-VL-7B-Instruct,java,1000,2000,0.97,0.942,0.05800000000000005,484,1.0,0.5,0.103,1.0,0.6439688715953308,0.642578125,0.331,0.329,0.486,0.488
+E4A_same_environment,Qwen/Qwen2.5-VL-7B-Instruct,python,1000,2000,0.9625,0.926,0.07399999999999995,393,0.9974554707379135,0.6875,0.0965,1.0,0.7604651162790698,0.7622377622377622,0.327,0.327,0.5700000000000001,0.571
+E4A_same_environment,OpenGVLab/InternVL3-8B,cuda,1000,2000,0.9635,0.929,0.07099999999999995,270,1.0,0.6875,0.021,4.0,0.5326797385620915,0.5377049180327869,0.163,0.164,0.694,0.6950000000000001
+E4A_same_environment,OpenGVLab/InternVL3-8B,java,1000,2000,0.9565,0.913,0.08699999999999997,593,1.0,0.5,0.025,4.0,0.4628751974723539,0.4796875,0.293,0.307,0.367,0.36
+E4A_same_environment,OpenGVLab/InternVL3-8B,python,1000,2000,0.965,0.932,0.06799999999999995,429,0.9953379953379954,0.6875,0.024,4.0,0.4617067833698031,0.45610278372591007,0.211,0.213,0.5429999999999999,0.5329999999999999

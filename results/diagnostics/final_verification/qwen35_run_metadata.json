@@ -1,0 +1,182 @@
+{
+  "audit_status": "partially_reconstructable_hosted_api_run",
+  "exact_model_id": "qwen/qwen3.5-122b-a10b",
+  "recommended_table_name": "Qwen3.5-122B-A10B (MoE, 10B active; non-thinking, NVIDIA API)",
+  "architecture": {
+    "type": "Mixture-of-Experts multimodal causal language model with vision encoder",
+    "total_parameters": "122B per Qwen model card; NVIDIA page also displays a rounded/inconsistent 125B parameter label",
+    "activated_parameters": "10B",
+    "official_sources": [
+      "https://huggingface.co/Qwen/Qwen3.5-122B-A10B",
+      "https://build.nvidia.com/qwen/qwen3.5-122b-a10b"
+    ]
+  },
+  "execution": {
+    "endpoint": "https://integrate.api.nvidia.com/v1/chat/completions",
+    "provider": "NVIDIA hosted NIM/API",
+    "first_successful_call_utc": "2026-07-13T11:08:39.659675+00:00",
+    "last_successful_call_utc": "2026-07-13T14:43:14.292811+00:00",
+    "manifest_created_utc": "2026-07-13T11:15:07.163070+00:00",
+    "checkpoint_revision": null,
+    "checkpoint_revision_status": "not recorded by hosted endpoint",
+    "server_inference_engine": null,
+    "server_inference_engine_version": null,
+    "server_transformers_version": null,
+    "dtype": null,
+    "quantization": null,
+    "server_chat_template": null,
+    "unavailable_fields_reason": "The NVIDIA hosted API response and local manifest do not expose backend checkpoint revision, engine/library versions, dtype, quantization, or the rendered server chat template."
+  },
+  "decoding": {
+    "thinking": false,
+    "chat_template_kwargs": {
+      "enable_thinking": false
+    },
+    "temperature": 0,
+    "max_tokens": 64,
+    "seed": 42,
+    "stream": false,
+    "top_p": null,
+    "top_p_status": "not sent; provider default not recorded"
+  },
+  "prompt": {
+    "system_prompt": null,
+    "message_roles": [
+      "user"
+    ],
+    "template_source": "/ANON/experiment_root/experiments/rq0_viability/scripts/run_nvidia_qwen_extension_pilot.py",
+    "template_function": "prompt_for",
+    "description": "Prompt B-like readability rubric with language substituted and exact FINAL_VERDICT: A/B output instruction"
+  },
+  "images": {
+    "pair_file": "/ANON/experiment_root/results/nvidia_qwen35_extension_pilot_20260713/pilot_pairs.csv",
+    "upstream_pair_file": "/ANON/experiment_root/results/dataset_extension_20260713/data/pairs_seed42.csv",
+    "render_directory": "/ANON/experiment_root/results/dataset_extension_20260713/rendered/default",
+    "preprocessing": "No client-side resize/crop/normalization. Existing PNG bytes were sent as base64 data URLs when all files were <=180,000 bytes; otherwise uploaded as NVIDIA assets."
+  },
+  "sample": {
+    "total_pairs": 300,
+    "claim_300_java_pairs": false,
+    "explanation": "The 300-pair sample contains 150 Java, 75 Python, and 75 CUDA pairs; it is not 300 Java pairs.",
+    "counts_by_dataset_language_difficulty": [
+      {
+        "dataset_name": "Dorn",
+        "language": "cuda",
+        "difficulty": "easy",
+        "pairs": 25
+      },
+      {
+        "dataset_name": "Dorn",
+        "language": "cuda",
+        "difficulty": "hard",
+        "pairs": 25
+      },
+      {
+        "dataset_name": "Dorn",
+        "language": "cuda",
+        "difficulty": "medium",
+        "pairs": 25
+      },
+      {
+        "dataset_name": "Dorn",
+        "language": "java",
+        "difficulty": "easy",
+        "pairs": 25
+      },
+      {
+        "dataset_name": "Dorn",
+        "language": "java",
+        "difficulty": "hard",
+        "pairs": 25
+      },
+      {
+        "dataset_name": "Dorn",
+        "language": "java",
+        "difficulty": "medium",
+        "pairs": 25
+      },
+      {
+        "dataset_name": "Dorn",
+        "language": "python",
+        "difficulty": "easy",
+        "pairs": 25
+      },
+      {
+        "dataset_name": "Dorn",
+        "language": "python",
+        "difficulty": "hard",
+        "pairs": 25
+      },
+      {
+        "dataset_name": "Dorn",
+        "language": "python",
+        "difficulty": "medium",
+        "pairs": 25
+      },
+      {
+        "dataset_name": "Sergeyuk2024",
+        "language": "java",
+        "difficulty": "easy",
+        "pairs": 25
+      },
+      {
+        "dataset_name": "Sergeyuk2024",
+        "language": "java",
+        "difficulty": "hard",
+        "pairs": 25
+      },
+      {
+        "dataset_name": "Sergeyuk2024",
+        "language": "java",
+        "difficulty": "medium",
+        "pairs": 25
+      }
+    ],
+    "conditions": [
+      "image_only",
+      "text_plus_image"
+    ],
+    "orders": [
+      "AB",
+      "BA"
+    ],
+    "successful_final_calls": 1200,
+    "required_calls": 1200
+  },
+  "image_only_raw_metrics": {
+    "pairs": 300,
+    "valid_pairs": 105,
+    "correct_pairs": 69,
+    "effective_accuracy": 0.23,
+    "strict_swap_error": 0.65,
+    "parse_failed_calls": 65,
+    "parse_failure_denominator_calls": 600,
+    "parse_failure_rate": 0.10833333333333334,
+    "paper_23_percent_reproduced": true,
+    "paper_65_percent_reproduced": true,
+    "paper_11_percent_exactly_reproduced": false,
+    "parse_rate_note": "Image-only is 65/600 = 10.8333%, not exactly 11.00%. Across both modalities it is 131/1200 = 10.9167%, which rounds to 10.92% (or 10.9% at one decimal), not 11.00% at two decimals."
+  },
+  "source_files": {
+    "manifest.json": {
+      "absolute_path": "/ANON/experiment_root/results/nvidia_qwen35_extension_pilot_20260713/manifest.json",
+      "sha256": "c675dabbbf6966e4007ab2096018d26b4c6f4cf0ece044bb0baf9e6188f9a423"
+    },
+    "calls.jsonl": {
+      "absolute_path": "/ANON/experiment_root/results/nvidia_qwen35_extension_pilot_20260713/calls.jsonl",
+      "sha256": "4f298ebf997904ee1b7eb59a1fcf7f576d8a78c0c3246bb4eaadc23c57cf801e"
+    },
+    "pilot_pairs.csv": {
+      "absolute_path": "/ANON/experiment_root/results/nvidia_qwen35_extension_pilot_20260713/pilot_pairs.csv",
+      "sha256": "c0cd0e537e48316e4f96e4bb5329de3ff594eec998dca3ede65547f9d33b167c"
+    },
+    "summary.csv": {
+      "absolute_path": "/ANON/experiment_root/results/nvidia_qwen35_extension_pilot_20260713/summary.csv",
+      "sha256": "5e3ba0185246cb76b4f47d0f266d5d709fdadab7e5899196cd498368a52bf211"
+    },
+    "run_stats.json": {
+      "absolute_path": "/ANON/experiment_root/results/nvidia_qwen35_extension_pilot_20260713/run_stats.json",
+      "sha256": "b39237d8f82f7f1c95f8dbdbc95e04c8317b30453c0463520037539d7e0a7f75"
+    }
+  }
+}

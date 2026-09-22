@@ -1,0 +1,3 @@
+model,n,valid_n,target_correct_n,effective_target_preference,valid_conditional_target_preference,strict_swap_error,parse_failure_pairs,debiased_ties,debiased_target_main_tie_incorrect,debiased_target_excluding_ties,debiased_target_half_credit,boundary_abs_c_eq_abs_b,completeness_status,reportable,failure_reason
+OpenGVLab/InternVL3-8B,1800,,,,,,,,,,,,fail,False,one deterministic call emitted FINAL_VERD without an explicit A/B; full GA0 parse_failures=1
+Qwen/Qwen2.5-VL-7B-Instruct,1800,1392.0,1392.0,0.7733333333333333,1.0,0.22666666666666668,0.0,5.0,0.9927777777777778,0.9955431754874652,0.9941666666666666,29.0,pass,True,

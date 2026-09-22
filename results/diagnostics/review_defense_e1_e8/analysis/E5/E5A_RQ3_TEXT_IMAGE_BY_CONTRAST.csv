@@ -1,0 +1,13 @@
+model,contrast_type,variant_i,variant_j,n,valid_n,target_correct_n,effective_target_preference,valid_conditional_target_preference,strict_swap_error,parse_failure_pairs,debiased_ties,debiased_target_main_tie_incorrect,debiased_target_excluding_ties,debiased_target_half_credit,boundary_abs_c_eq_abs_b,completeness_status,reportable,failure_reason
+OpenGVLab/InternVL3-8B,semantic_and_visual_aligned,golden,beautiful_trash,300,,,,,,,,,,,,fail,False,one deterministic call emitted FINAL_VERD without an explicit A/B; full GA0 parse_failures=1
+OpenGVLab/InternVL3-8B,semantic_and_visual_aligned,golden,ugly_trash,300,,,,,,,,,,,,fail,False,one deterministic call emitted FINAL_VERD without an explicit A/B; full GA0 parse_failures=1
+OpenGVLab/InternVL3-8B,semantic_only_under_ugly,ugly_gold,ugly_trash,300,,,,,,,,,,,,fail,False,one deterministic call emitted FINAL_VERD without an explicit A/B; full GA0 parse_failures=1
+OpenGVLab/InternVL3-8B,semantic_visual_conflict_primary,ugly_gold,beautiful_trash,300,,,,,,,,,,,,fail,False,one deterministic call emitted FINAL_VERD without an explicit A/B; full GA0 parse_failures=1
+OpenGVLab/InternVL3-8B,visual_only_gold,golden,ugly_gold,300,,,,,,,,,,,,fail,False,one deterministic call emitted FINAL_VERD without an explicit A/B; full GA0 parse_failures=1
+OpenGVLab/InternVL3-8B,visual_only_trash,beautiful_trash,ugly_trash,300,,,,,,,,,,,,fail,False,one deterministic call emitted FINAL_VERD without an explicit A/B; full GA0 parse_failures=1
+Qwen/Qwen2.5-VL-7B-Instruct,semantic_and_visual_aligned,golden,beautiful_trash,300,293.0,293.0,0.9766666666666667,1.0,0.023333333333333317,0.0,0.0,1.0,1.0,1.0,0.0,pass,True,
+Qwen/Qwen2.5-VL-7B-Instruct,semantic_and_visual_aligned,golden,ugly_trash,300,294.0,294.0,0.98,1.0,0.020000000000000018,0.0,0.0,1.0,1.0,1.0,1.0,pass,True,
+Qwen/Qwen2.5-VL-7B-Instruct,semantic_only_under_ugly,ugly_gold,ugly_trash,300,292.0,292.0,0.9733333333333334,1.0,0.026666666666666616,0.0,0.0,1.0,1.0,1.0,1.0,pass,True,
+Qwen/Qwen2.5-VL-7B-Instruct,semantic_visual_conflict_primary,ugly_gold,beautiful_trash,300,291.0,291.0,0.97,1.0,0.030000000000000027,0.0,0.0,1.0,1.0,1.0,1.0,pass,True,
+Qwen/Qwen2.5-VL-7B-Instruct,visual_only_gold,golden,ugly_gold,300,198.0,198.0,0.66,1.0,0.33999999999999997,0.0,2.0,0.9833333333333333,0.9899328859060402,0.9866666666666667,18.0,pass,True,
+Qwen/Qwen2.5-VL-7B-Instruct,visual_only_trash,beautiful_trash,ugly_trash,300,24.0,24.0,0.08,1.0,0.92,0.0,3.0,0.9733333333333334,0.9831649831649831,0.9783333333333334,8.0,pass,True,

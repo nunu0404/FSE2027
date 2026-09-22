@@ -1,0 +1,10 @@
+language,row,E,V,S,D_main,ocrml_E,measurement_status
+java,Direct Qwen image-only,0.3866666666666666,0.6213176218532405,0.3776666666666667,,0.5296666666666666,unavailable_no_verdict_logits
+java,Source-text Qwen2.5-Coder,0.333,0.5562360801781737,0.4013333333333333,,0.5296666666666666,unavailable_no_verdict_logits
+java,Best OCR-text LLM (RapidOCR),0.2846666666666667,0.5581699346405229,0.49,,0.5296666666666666,unavailable_no_verdict_logits
+python,Direct Qwen image-only,0.3526666666666667,0.7182620502376104,0.509,,0.5953333333333334,unavailable_no_verdict_logits
+python,Source-text Qwen2.5-Coder,0.2606666666666666,0.5741556534508077,0.546,,0.5953333333333334,unavailable_no_verdict_logits
+python,Best OCR-text LLM (RapidOCR),0.0986666666666666,0.6271186440677966,0.8426666666666667,,0.5953333333333334,unavailable_no_verdict_logits
+cuda,Direct Qwen image-only,0.4996666666666666,0.7144899904671115,0.3006666666666667,,0.6073333333333333,unavailable_no_verdict_logits
+cuda,Source-text Qwen2.5-Coder,0.332,0.5777262180974478,0.4253333333333333,,0.6073333333333333,unavailable_no_verdict_logits
+cuda,Best OCR-text LLM (RapidOCR),0.2156666666666666,0.6018604651162791,0.6416666666666667,,0.6073333333333333,unavailable_no_verdict_logits

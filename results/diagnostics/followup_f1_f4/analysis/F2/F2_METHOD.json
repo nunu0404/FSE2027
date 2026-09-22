@@ -1,0 +1,9 @@
+{
+  "run_id": "F2_stored_rater_reaggregation_20260731",
+  "seed": 42,
+  "panel_draws": 10000,
+  "cluster_bootstrap_reps": 10000,
+  "new_model_inference_calls": 0,
+  "pair_asset": "results/rq1_model_battery_3lang_20260723/data/rq1_pairs_9000.csv",
+  "pair_asset_sha256": "e41fc9896dc927b98d35eb57e44a4f7139d2013353d061fbac854470d3733183"
+}

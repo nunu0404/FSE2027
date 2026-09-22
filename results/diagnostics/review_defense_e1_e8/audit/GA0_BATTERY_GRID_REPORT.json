@@ -1,0 +1,242 @@
+{
+  "gate": "GA0",
+  "status": "passed",
+  "new_model_calls": 0,
+  "rules": {
+    "grid_files": "Only complete full_20260721 files; pilots and GA0 files excluded",
+    "battery_files": "Only five complete inference/full model directories; partial Qwen attempt excluded",
+    "checks": [
+      "expected call count",
+      "unique condition/pair/order or pair/order keys",
+      "complete AB/BA allocation",
+      "parsed verdict in {A,B}",
+      "stored verdict equals captured-logit argmax",
+      "finite A/B logits and margin",
+      "verified image mapping when field is present"
+    ]
+  },
+  "assets": [
+    {
+      "path": "/ANON/experiment_root/results/grounded_protocol_3lang_20260721/inference/grid/raw/OpenGVLab__InternVL3-8B__image_only__promptB__seed42__full_20260721.jsonl",
+      "sha256": "a519097b23372cf51e5c33320c7a56144cb0e4355afde55f28f61e81530f811f",
+      "status": "passed",
+      "expected_calls": 72000,
+      "observed_calls": 72000,
+      "unique_keys": 72000,
+      "duplicate_keys": 0,
+      "pair_groups": 36000,
+      "incomplete_pair_groups": 0,
+      "parse_failures": 0,
+      "verdict_logit_argmax_mismatches": 0,
+      "missing_or_nonfinite_logits": 0,
+      "image_mapping_failures": 0,
+      "models": [
+        "OpenGVLab/InternVL3-8B"
+      ],
+      "language_call_counts": {
+        "cuda": 24000,
+        "java": 24000,
+        "python": 24000
+      },
+      "condition_call_counts": {
+        "friendly_light__fs20__wrap60__lnon": 6000,
+        "friendly_light__fs20__wrap80__lnon": 6000,
+        "friendly_light__fs24__wrap60__lnon": 6000,
+        "friendly_light__fs24__wrap80__lnon": 6000,
+        "mono_light__fs20__wrap60__lnon": 6000,
+        "mono_light__fs20__wrap80__lnon": 6000,
+        "mono_light__fs24__wrap60__lnon": 6000,
+        "mono_light__fs24__wrap80__lnon": 6000,
+        "monokai_dark__fs20__wrap60__lnon": 6000,
+        "monokai_dark__fs20__wrap80__lnon": 6000,
+        "monokai_dark__fs24__wrap60__lnon": 6000,
+        "monokai_dark__fs24__wrap80__lnon": 6000
+      },
+      "run": "grounded_protocol_3lang_20260721",
+      "asset": "grid",
+      "manifest": "/ANON/experiment_root/results/grounded_protocol_3lang_20260721/inference/grid/raw/OpenGVLab__InternVL3-8B__image_only__promptB__seed42__full_20260721.manifest.json",
+      "manifest_sha256": "187f91432ab29f0d4401fa187a4b0d7c0a0ef2140f8c6e3d6ab97de3b5fa8d72"
+    },
+    {
+      "path": "/ANON/experiment_root/results/grounded_protocol_3lang_20260721/inference/grid/raw/Qwen__Qwen2.5-VL-7B-Instruct__image_only__promptB__seed42__full_20260721.jsonl",
+      "sha256": "0dc95facd7f33cd2e4b4a4f5e1c7fe285a693fad535623b1efb5c615200965a9",
+      "status": "passed",
+      "expected_calls": 72000,
+      "observed_calls": 72000,
+      "unique_keys": 72000,
+      "duplicate_keys": 0,
+      "pair_groups": 36000,
+      "incomplete_pair_groups": 0,
+      "parse_failures": 0,
+      "verdict_logit_argmax_mismatches": 0,
+      "missing_or_nonfinite_logits": 0,
+      "image_mapping_failures": 0,
+      "models": [
+        "Qwen/Qwen2.5-VL-7B-Instruct"
+      ],
+      "language_call_counts": {
+        "cuda": 24000,
+        "java": 24000,
+        "python": 24000
+      },
+      "condition_call_counts": {
+        "friendly_light__fs20__wrap60__lnon": 6000,
+        "friendly_light__fs20__wrap80__lnon": 6000,
+        "friendly_light__fs24__wrap60__lnon": 6000,
+        "friendly_light__fs24__wrap80__lnon": 6000,
+        "mono_light__fs20__wrap60__lnon": 6000,
+        "mono_light__fs20__wrap80__lnon": 6000,
+        "mono_light__fs24__wrap60__lnon": 6000,
+        "mono_light__fs24__wrap80__lnon": 6000,
+        "monokai_dark__fs20__wrap60__lnon": 6000,
+        "monokai_dark__fs20__wrap80__lnon": 6000,
+        "monokai_dark__fs24__wrap60__lnon": 6000,
+        "monokai_dark__fs24__wrap80__lnon": 6000
+      },
+      "run": "grounded_protocol_3lang_20260721",
+      "asset": "grid",
+      "manifest": "/ANON/experiment_root/results/grounded_protocol_3lang_20260721/inference/grid/raw/Qwen__Qwen2.5-VL-7B-Instruct__image_only__promptB__seed42__full_20260721.manifest.json",
+      "manifest_sha256": "42e5c1df270a2390a72075c65b50bdff1982f4fcebe21e015a0b0df850d47825"
+    },
+    {
+      "path": "/ANON/experiment_root/results/rq1_model_battery_3lang_20260723/inference/full/qwen/raw.jsonl",
+      "sha256": "6bf6f31d076ed89b92d2552a5ebc3093f4804790b69b90e5db2787b29ee10e4c",
+      "status": "passed",
+      "expected_calls": 18000,
+      "observed_calls": 18000,
+      "unique_keys": 18000,
+      "duplicate_keys": 0,
+      "pair_groups": 9000,
+      "incomplete_pair_groups": 0,
+      "parse_failures": 0,
+      "verdict_logit_argmax_mismatches": 0,
+      "missing_or_nonfinite_logits": 0,
+      "image_mapping_failures": 0,
+      "models": [
+        "Qwen/Qwen2.5-VL-7B-Instruct"
+      ],
+      "language_call_counts": {
+        "cuda": 6000,
+        "java": 6000,
+        "python": 6000
+      },
+      "condition_call_counts": {},
+      "run": "rq1_model_battery_3lang_20260723",
+      "asset": "battery_qwen",
+      "manifest": "/ANON/experiment_root/results/rq1_model_battery_3lang_20260723/inference/full/qwen/manifest.json",
+      "manifest_sha256": "c10400dccbd9674f5a46b3ab4e3a258efdb8309aa28ba5dacd4a9f3099e448b3"
+    },
+    {
+      "path": "/ANON/experiment_root/results/rq1_model_battery_3lang_20260723/inference/full/internvl/raw.jsonl",
+      "sha256": "492a36f455ddc4d3d3edeaa42cc50ac2876c6558e13864a86f4257b99fe7e00d",
+      "status": "passed",
+      "expected_calls": 18000,
+      "observed_calls": 18000,
+      "unique_keys": 18000,
+      "duplicate_keys": 0,
+      "pair_groups": 9000,
+      "incomplete_pair_groups": 0,
+      "parse_failures": 0,
+      "verdict_logit_argmax_mismatches": 0,
+      "missing_or_nonfinite_logits": 0,
+      "image_mapping_failures": 0,
+      "models": [
+        "OpenGVLab/InternVL3-8B"
+      ],
+      "language_call_counts": {
+        "cuda": 6000,
+        "java": 6000,
+        "python": 6000
+      },
+      "condition_call_counts": {},
+      "run": "rq1_model_battery_3lang_20260723",
+      "asset": "battery_internvl",
+      "manifest": "/ANON/experiment_root/results/rq1_model_battery_3lang_20260723/inference/full/internvl/manifest.json",
+      "manifest_sha256": "9e5e754386b89b07487df796a19c8b59243cdc890fddb05e7e852e259982e32a"
+    },
+    {
+      "path": "/ANON/experiment_root/results/rq1_model_battery_3lang_20260723/inference/full/gemma/raw.jsonl",
+      "sha256": "90bf3e7bc6202cbfda626dbfd63b270f35879646017757efd36fcaa949045257",
+      "status": "passed",
+      "expected_calls": 18000,
+      "observed_calls": 18000,
+      "unique_keys": 18000,
+      "duplicate_keys": 0,
+      "pair_groups": 9000,
+      "incomplete_pair_groups": 0,
+      "parse_failures": 0,
+      "verdict_logit_argmax_mismatches": 0,
+      "missing_or_nonfinite_logits": 0,
+      "image_mapping_failures": 0,
+      "models": [
+        "google/gemma-3-12b-it"
+      ],
+      "language_call_counts": {
+        "cuda": 6000,
+        "java": 6000,
+        "python": 6000
+      },
+      "condition_call_counts": {},
+      "run": "rq1_model_battery_3lang_20260723",
+      "asset": "battery_gemma",
+      "manifest": "/ANON/experiment_root/results/rq1_model_battery_3lang_20260723/inference/full/gemma/manifest.json",
+      "manifest_sha256": "9454d4b66ff9fae3a89cd5e243703f2114ca0a3ed6d7ad43da2a36edbbb7f7dc"
+    },
+    {
+      "path": "/ANON/experiment_root/results/rq1_model_battery_3lang_20260723/inference/full/ministral/raw.jsonl",
+      "sha256": "cd9261c53aeba5366e7b6358590cca2b08c302645750cde1695f94e7c6e65299",
+      "status": "passed",
+      "expected_calls": 18000,
+      "observed_calls": 18000,
+      "unique_keys": 18000,
+      "duplicate_keys": 0,
+      "pair_groups": 9000,
+      "incomplete_pair_groups": 0,
+      "parse_failures": 0,
+      "verdict_logit_argmax_mismatches": 0,
+      "missing_or_nonfinite_logits": 0,
+      "image_mapping_failures": 0,
+      "models": [
+        "mistralai/Ministral-3-8B-Instruct-2512-BF16"
+      ],
+      "language_call_counts": {
+        "cuda": 6000,
+        "java": 6000,
+        "python": 6000
+      },
+      "condition_call_counts": {},
+      "run": "rq1_model_battery_3lang_20260723",
+      "asset": "battery_ministral",
+      "manifest": "/ANON/experiment_root/results/rq1_model_battery_3lang_20260723/inference/full/ministral/manifest.json",
+      "manifest_sha256": "bf1cf9fc9032963b155d973b8b27301f69f13f1fa02187859fefe31a408be075"
+    },
+    {
+      "path": "/ANON/experiment_root/results/rq1_model_battery_3lang_20260723/inference/full/phi/raw.jsonl",
+      "sha256": "dc6d55c6a76b725a63a21b61f75d0ecddc481a583ffbb41f99c645d4a050a366",
+      "status": "passed",
+      "expected_calls": 18000,
+      "observed_calls": 18000,
+      "unique_keys": 18000,
+      "duplicate_keys": 0,
+      "pair_groups": 9000,
+      "incomplete_pair_groups": 0,
+      "parse_failures": 0,
+      "verdict_logit_argmax_mismatches": 0,
+      "missing_or_nonfinite_logits": 0,
+      "image_mapping_failures": 0,
+      "models": [
+        "microsoft/Phi-4-multimodal-instruct"
+      ],
+      "language_call_counts": {
+        "cuda": 6000,
+        "java": 6000,
+        "python": 6000
+      },
+      "condition_call_counts": {},
+      "run": "rq1_model_battery_3lang_20260723",
+      "asset": "battery_phi",
+      "manifest": "/ANON/experiment_root/results/rq1_model_battery_3lang_20260723/inference/full/phi/manifest.json",
+      "manifest_sha256": "4c3e759ff760524f78c9559039e800f74e0dee2f723c054294f709a31f447779"
+    }
+  ]
+}

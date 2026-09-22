@@ -1,0 +1,17 @@
+{
+  "gate": "GA0",
+  "raw_path": "results/fse2027_review_defense_e1_e8_20260730/runs/e5_rq3_text_plus_image/rq3/inference/raw/OpenGVLab__InternVL3-8B__text_plus_image__promptB__seed42__e5_retry2_ga0_20260730.jsonl",
+  "calls": 100,
+  "item_column": "contrast_id",
+  "pairs": 50,
+  "orders": [
+    "AB",
+    "BA"
+  ],
+  "missing_columns": [],
+  "duplicate_calls": 0,
+  "parse_failures": 0,
+  "argmax_mismatches": 0,
+  "max_generated_tokens": 8,
+  "gate_pass": true
+}

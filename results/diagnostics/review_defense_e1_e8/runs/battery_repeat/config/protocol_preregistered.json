@@ -1,0 +1,104 @@
+{
+  "protocol_id": "rq1-grounded-model-battery-3lang-20260723-v1",
+  "status": "awaiting_author_approval",
+  "scope": {
+    "languages": ["java", "python", "cuda"],
+    "pairs_per_language": 3000,
+    "pairs_total": 9000,
+    "modalities": ["image_only"],
+    "orders": ["AB", "BA"],
+    "calls_per_model": 18000,
+    "models": 5,
+    "calls_total": 90000,
+    "text_plus_image": "not_authorized"
+  },
+  "models": [
+    {
+      "model_id": "Qwen/Qwen2.5-VL-7B-Instruct",
+      "revision": "cc594898137f460bfe9f0759e9844b3ce807cfb5",
+      "role": "existing_model_grounded_rerun"
+    },
+    {
+      "model_id": "OpenGVLab/InternVL3-8B",
+      "revision": "853e3a797a661694b1b8ece0cb72dc2b23e3dac9",
+      "role": "existing_model_grounded_rerun"
+    },
+    {
+      "model_id": "microsoft/Phi-4-multimodal-instruct",
+      "revision": "93f923e1a7727d1c4f446756212d9d3e8fcc5d81",
+      "role": "prospective_extension"
+    },
+    {
+      "model_id": "google/gemma-3-12b-it",
+      "revision": "96b6f1eccf38110c56df3a15bffe176da04bfd80",
+      "role": "prospective_extension",
+      "access": "manual_gated"
+    },
+    {
+      "model_id": "mistralai/Ministral-3-8B-Instruct-2512-BF16",
+      "revision": "f6fae9795746f63c9be8344932f01275f3c63734",
+      "role": "prospective_extension"
+    }
+  ],
+  "data": {
+    "pair_manifest": "data/rq1_pairs_9000.csv",
+    "gold": "higher within-benchmark human-score z value",
+    "primary_difficulty": "continuous abs_z_diff",
+    "legacy_difficulty_bins": "sampling and reproducibility only",
+    "primary_reporting": "separate by language",
+    "cross_language_pooling": "appendix only"
+  },
+  "rendering": {
+    "source_metadata": "../grounded_protocol_3lang_20260721/rendered/metadata/grid_render_metadata.csv",
+    "condition": "monokai_dark__fs20__wrap80__lnon",
+    "font": "DejaVu Sans Mono",
+    "font_size_px": 20,
+    "wrap_columns": 80,
+    "line_numbers": true,
+    "packaging": "two separate ordered PNG images",
+    "combined_image": false
+  },
+  "inference": {
+    "prompt": "../grounded_protocol_3lang_20260721/config/prompt_B_template.txt",
+    "prompt_variant": "B",
+    "model_specific_prompt_changes": false,
+    "dtype": "bfloat16",
+    "quantization": "none",
+    "batch_size": 1,
+    "do_sample": false,
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_p_active": false,
+    "max_new_tokens": 24,
+    "seed": 42,
+    "strict_swap": true,
+    "capture_verdict_logits": true
+  },
+  "ga0": {
+    "pairs": 50,
+    "calls": 100,
+    "sample": "data/ga0_pairs_50_seed42.csv",
+    "selection": "frozen language/difficulty-stratified seed-42 sample",
+    "parse_success_required": 1.0,
+    "parsed_verdict_logit_argmax_agreement_required": 1.0,
+    "truncations_allowed": 0,
+    "pair_image_mapping_errors_allowed": 0,
+    "prompt_changes_after_failure": "forbidden",
+    "allowed_fixes": ["adapter", "native_chat_template", "verdict_token_alignment"]
+  },
+  "outcomes": {
+    "primary": ["effective_accuracy", "strict_swap_error"],
+    "secondary": ["valid_accuracy", "spearman_valid_only"],
+    "diagnostic": ["position_content_logit_decomposition", "debiased_accuracy"]
+  },
+  "analysis": {
+    "ml_predictions": "data/ml_predictions_9models_9000.csv",
+    "paired_join_key": ["language", "pair_id"],
+    "primary_uncertainty": "crossed snippet-clustered",
+    "paired_sensitivity": "exact McNemar",
+    "proportion_interval": "Wilson 95%",
+    "multiplicity": "Holm within prespecified language-endpoint family",
+    "historical_results": "appendix only; never pooled with this run"
+  },
+  "execution_gate": "No GA0 or full inference before author approval of the committed preregistration artifacts."
+}

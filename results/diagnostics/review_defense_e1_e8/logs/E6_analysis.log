@@ -1,0 +1,16 @@
+language                       system  n_total_pairs  n_valid_pairs  n_correct_pairs  effective_accuracy  valid_accuracy  strict_swap_error  parse_failure_rate
+    java             Source-access RF           3000           3000             1870            0.623333        0.623333           0.000000                 0.0
+    java           RapidOCR + best ML           3000           3000             1589            0.529667        0.529667           0.000000                 0.0
+    java       Direct Qwen image-only           3000           1867             1160            0.386667        0.621318           0.377667                 0.0
+    java    Source-text Qwen2.5-Coder           3000           1796              999            0.333000        0.556236           0.401333                 0.0
+    java Best OCR-text LLM (RapidOCR)           3000           1530              854            0.284667        0.558170           0.490000                 0.0
+  python             Source-access RF           3000           3000             1884            0.628000        0.628000           0.000000                 0.0
+  python           RapidOCR + best ML           3000           3000             1786            0.595333        0.595333           0.000000                 0.0
+  python       Direct Qwen image-only           3000           1473             1058            0.352667        0.718262           0.509000                 0.0
+  python    Source-text Qwen2.5-Coder           3000           1362              782            0.260667        0.574156           0.546000                 0.0
+  python Best OCR-text LLM (RapidOCR)           3000            472              296            0.098667        0.627119           0.842667                 0.0
+    cuda             Source-access RF           3000           3000             2202            0.734000        0.734000           0.000000                 0.0
+    cuda           RapidOCR + best ML           3000           3000             1822            0.607333        0.607333           0.000000                 0.0
+    cuda       Direct Qwen image-only           3000           2098             1499            0.499667        0.714490           0.300667                 0.0
+    cuda    Source-text Qwen2.5-Coder           3000           1724              996            0.332000        0.577726           0.425333                 0.0
+    cuda Best OCR-text LLM (RapidOCR)           3000           1075              647            0.215667        0.601860           0.641667                 0.0

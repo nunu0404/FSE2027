@@ -1,0 +1,2 @@
+run_id,language,scope,n_pairs,status,reason
+rq1_java_cross_seed42,java,cross-dataset,1996,undefined,ratings from distinct benchmark panels/scales cannot define a single-rater or same-panel agreement ceiling; no interpolation used

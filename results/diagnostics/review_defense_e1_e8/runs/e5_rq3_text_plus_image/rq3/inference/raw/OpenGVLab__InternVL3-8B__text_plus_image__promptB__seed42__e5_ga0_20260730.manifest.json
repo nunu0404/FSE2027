@@ -1,0 +1,49 @@
+{
+  "status": "pilot_complete",
+  "created_at_utc": "2026-07-30T05:58:08.824186+00:00",
+  "experiment": "C_RQ3",
+  "model": "OpenGVLab/InternVL3-8B",
+  "model_revision": "853e3a797a661694b1b8ece0cb72dc2b23e3dac9",
+  "model_snapshot": "/ANON/home/.cache/huggingface/hub/models--OpenGVLab--InternVL3-8B/snapshots/853e3a797a661694b1b8ece0cb72dc2b23e3dac9",
+  "modality": "text_plus_image",
+  "packaging": "two_separately_labeled_images",
+  "prompt_variant": "B",
+  "prompt_path": "results/grounded_protocol_3lang_20260721/config/prompt_B_template.txt",
+  "prompt_sha256": "1eb486ba7a7f1908b4279446aec106117fd209d410f7309ca2c5a64bcb978ae1",
+  "languages": [
+    "java",
+    "python",
+    "cuda"
+  ],
+  "bases": 300,
+  "contrasts": 1800,
+  "contrasts_by_language": {
+    "cuda": 600,
+    "java": 600,
+    "python": 600
+  },
+  "orders": [
+    "AB",
+    "BA"
+  ],
+  "expected_full_calls": 3600,
+  "planned_calls": 100,
+  "dtype": "bfloat16",
+  "decoding": {
+    "do_sample": false,
+    "temperature": 0.0,
+    "top_p_inactive": 1.0,
+    "max_new_tokens": 24
+  },
+  "seed": 42,
+  "capture_verdict_logits": true,
+  "strict_swap": true,
+  "automatic_audit_sha256": "e7331c76b718d44f4e26bf23f9dd24637750a3a1cf924d86360b34ef16de9ffa",
+  "gc1_authorized": true,
+  "gc1_approval_sha256": "5f491367b1475bd7cecca52fc75df1ec11e5ee09f052808369c5b601c61e61ea",
+  "resume_completed_calls": 0,
+  "cuda_visible_devices": "1",
+  "python": "3.13.11",
+  "completed_calls": 100,
+  "completed_at_utc": "2026-07-30T05:59:15.503518+00:00"
+}

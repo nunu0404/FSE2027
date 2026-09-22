@@ -1,0 +1,6 @@
+benchmark,language,rating_asset,rating_asset_sha256,mapped_snippets,unmapped_snippets,mapping,unmapped_ids
+Dorn,python,data/raw_ratings/official_20260713/extracted/DatasetDorn/dataset/scores/python.csv,cb45cd959caa39a8aae568dbea3a50a435b9f212153b3f214e72b3d71334279a,119,0,rating column = original_snippet_id; participant-id first column,
+Dorn,cuda,data/raw_ratings/official_20260713/extracted/DatasetDorn/dataset/scores/cuda.csv,cb2879996d27abfd99502188c4f4f729ff089667cd68885893521ffb4e61160d,120,0,rating column = original_snippet_id; participant-id first column,
+Buse,java,data/raw_ratings/official_20260713/extracted/DatasetBW/oracle.csv,77fcd144bb9bb992f66566b9c08246eb01c085bd71777b3eed1a338b53b0091b,99,0,100 score columns map to snippet_id 1..100; two metadata columns,
+Scalabrino,java,data/raw_ratings/official_20260713/extracted/Dataset/Dataset/scores.csv,9f08bc15a5b4adbf567f67d93b73a1447f865d86a2a363b1fd08bd65986b7ae1,124,0,Snippet1..Snippet200 columns map to snippet_id 1..200,
+Dorn,java,data/raw_ratings/official_20260713/extracted/DatasetDorn/dataset/scores/java.csv,7fec71b7f97bd330d9cc3f830dc3b020612da9c7751b7aae118e16b2c6e649ef,89,1,"for proxy IDs 102..221, zero-based rating column = snippet_id-102; rq0_0099/snippet 101 has no reproducible public-rating column",rq0_0099

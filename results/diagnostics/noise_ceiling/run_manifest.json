@@ -1,0 +1,79 @@
+{
+  "task": "estimate_noise_ceiling",
+  "timestamp_kst": "2026-09-11 22:35:00 KST",
+  "random_seed": 42,
+  "n_splits": 1000,
+  "split_policy": "disjoint halves of equal size; drop 1 rater at random if count is odd",
+  "rater_counts": {
+    "python": {
+      "benchmark": "Dorn",
+      "active_raters": 4965,
+      "total_rows": 5468,
+      "half_size": 2482
+    },
+    "cuda": {
+      "benchmark": "Dorn",
+      "active_raters": 4961,
+      "total_rows": 5468,
+      "half_size": 2480
+    },
+    "java_buse": {
+      "benchmark": "Buse",
+      "active_raters": 121,
+      "total_rows": 121,
+      "half_size": 60
+    },
+    "java_scalabrino": {
+      "benchmark": "Scalabrino",
+      "active_raters": 9,
+      "total_rows": 9,
+      "half_size": 4
+    },
+    "java_dorn": {
+      "benchmark": "Dorn",
+      "active_raters": 4959,
+      "total_rows": 5468,
+      "half_size": 2479
+    }
+  },
+  "pair_counts": {
+    "python_pairs": 3000,
+    "cuda_pairs": 3000,
+    "java_buse_within": 299,
+    "java_scalabrino_within": 430,
+    "java_dorn_within_available": 266,
+    "java_dorn_within_unmapped_snippet101": 9,
+    "java_cross_dataset_undefined": 1996,
+    "java_total_pairs": 3000
+  },
+  "input_files": {
+    "rq1_pairs_9000": {
+      "path": "/ANON/experiment_root/results/rq1_model_battery_3lang_20260723/data/rq1_pairs_9000.csv",
+      "sha256": "e41fc9896dc927b98d35eb57e44a4f7139d2013353d061fbac854470d3733183"
+    },
+    "python_ratings": {
+      "path": "/ANON/experiment_root/data/raw_ratings/official_20260713/extracted/DatasetDorn/dataset/scores/python.csv",
+      "sha256": "cb45cd959caa39a8aae568dbea3a50a435b9f212153b3f214e72b3d71334279a"
+    },
+    "cuda_ratings": {
+      "path": "/ANON/experiment_root/data/raw_ratings/official_20260713/extracted/DatasetDorn/dataset/scores/cuda.csv",
+      "sha256": "cb2879996d27abfd99502188c4f4f729ff089667cd68885893521ffb4e61160d"
+    },
+    "buse_ratings": {
+      "path": "/ANON/experiment_root/data/raw_ratings/official_20260713/extracted/DatasetBW/oracle.csv",
+      "sha256": "77fcd144bb9bb992f66566b9c08246eb01c085bd71777b3eed1a338b53b0091b"
+    },
+    "scalabrino_ratings": {
+      "path": "/ANON/experiment_root/data/raw_ratings/official_20260713/extracted/Dataset/Dataset/scores.csv",
+      "sha256": "9f08bc15a5b4adbf567f67d93b73a1447f865d86a2a363b1fd08bd65986b7ae1"
+    },
+    "dorn_java_ratings": {
+      "path": "/ANON/experiment_root/data/raw_ratings/official_20260713/extracted/DatasetDorn/dataset/scores/java.csv",
+      "sha256": "7fec71b7f97bd330d9cc3f830dc3b020612da9c7751b7aae118e16b2c6e649ef"
+    }
+  },
+  "output_files": {
+    "ceiling_by_language_bin_csv": "/ANON/home/fse2027_noise_ceiling/ceiling_by_language_bin.csv",
+    "comparison_table_csv": "/ANON/home/fse2027_noise_ceiling/comparison_table.csv"
+  }
+}

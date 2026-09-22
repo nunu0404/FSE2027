@@ -1,0 +1,4 @@
+record,pipeline,language,correct,total,effective_accuracy,display_percent_2dp,source_file,fields
+source_access_rf_java,random_forest_regressor,java,1870,3000,0.6233333333333333,62.33,/ANON/experiment_root/results/rq1_model_battery_3lang_20260723/data/ml_predictions_9models_9000.csv,"language,model,is_correct"
+rapidocr_ml_java,RapidOCR+SVR,java,1589,3000,0.5296666666666666,52.97,/ANON/scratch_rq1/deploy_v2_logit_20260731/data/F5_OCRML_GATE.csv,"language,ocr_engine,model,correct,n,effective_accuracy"
+ocr_loss_source_minus_ocrml,RF minus RapidOCR+SVR,java,281,3000,0.09366666666666668,9.37,/ANON/experiment_root/results/rq1_model_battery_3lang_20260723/data/ml_predictions_9models_9000.csv;/ANON/scratch_rq1/deploy_v2_logit_20260731/data/F5_OCRML_GATE.csv,difference of unrounded effective_accuracy

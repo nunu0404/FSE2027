@@ -1,0 +1,188 @@
+{
+  "gpu": [
+    {
+      "index": 0,
+      "uuid": "GPU-98933e9f-5143-2ea9-2508-16c4aea693f4",
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "driver_version": "580.95.05",
+      "memory_total_mib": 97887
+    },
+    {
+      "index": 1,
+      "uuid": "GPU-197872ce-acfb-6713-7aaa-5858ad3e8d59",
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "driver_version": "580.95.05",
+      "memory_total_mib": 97887
+    }
+  ],
+  "base_environment": {
+    "python": "3.13.11",
+    "torch": "2.11.0",
+    "torchvision": "0.26.0",
+    "transformers": "5.9.0",
+    "accelerate": "1.14.0",
+    "pillow": "12.1.1",
+    "pandas": "3.0.1",
+    "huggingface-hub": "1.5.0",
+    "safetensors": "0.7.0",
+    "tokenizers": "0.22.2",
+    "torch_cuda": "13.0",
+    "cuda_arch_list": [
+      "sm_75",
+      "sm_80",
+      "sm_86",
+      "sm_90",
+      "sm_100",
+      "sm_120"
+    ]
+  },
+  "phi_environment": {
+    "python": "3.10.12",
+    "torch": "2.9.1+cu130",
+    "torchvision": "0.24.1+cu130",
+    "transformers": "4.48.2",
+    "accelerate": "1.3.0",
+    "pillow": "11.1.0",
+    "pandas": "2.3.3",
+    "huggingface-hub": "0.36.2",
+    "safetensors": "0.8.0",
+    "tokenizers": "0.21.4",
+    "torch_cuda": "13.0",
+    "cuda_arch_list": [
+      "sm_75",
+      "sm_80",
+      "sm_86",
+      "sm_90",
+      "sm_100",
+      "sm_120",
+      "compute_120"
+    ]
+  },
+  "phi_attention_backend": "sdpa",
+  "ministral_fix_mistral_regex": true,
+  "processor_image_mode": "native processor, original PNG bytes, RGB conversion only",
+  "runner_sha256": "205b6138bfc4c2f695060637bba5185d77dfb7775f2904b6d6f8af9d26b0ea28",
+  "snapshots": {
+    "qwen": {
+      "path": "/ANON/home/.cache/huggingface/hub/models--Qwen--Qwen2.5-VL-7B-Instruct/snapshots/cc594898137f460bfe9f0759e9844b3ce807cfb5",
+      "files": {
+        "config.json": {
+          "sha256": "77d9ec7321cc572e3579e2c84799c9cadaded63c49ce93b101733349fc330c43",
+          "bytes": 1374
+        },
+        "preprocessor_config.json": {
+          "sha256": "f2058c716eef96ccaed1cc1e2d0c08306b62586d535b28d9d08e691b2fab7ca0",
+          "bytes": 350
+        },
+        "tokenizer_config.json": {
+          "sha256": "4abd3520120e266da84c0864fee064d1fb10806f02225911a47253dd38dc5f56",
+          "bytes": 5702
+        },
+        "chat_template.json": {
+          "sha256": "ad60d90252ed0b0705ba14e2d0ad0fec0beac1ea955642b54059b36052d8bc96",
+          "bytes": 1050
+        },
+        "generation_config.json": {
+          "sha256": "0a3aea82869fe29f20dc95ccf3e2bcff380eca1f5ad6447a4a4b37110b08e43e",
+          "bytes": 216
+        }
+      }
+    },
+    "internvl": {
+      "path": "/ANON/home/.cache/huggingface/hub/models--OpenGVLab--InternVL3-8B/snapshots/853e3a797a661694b1b8ece0cb72dc2b23e3dac9",
+      "files": {
+        "config.json": {
+          "sha256": "cd0c54d0aa85fcd979cd2af524c0c08e26cdca278f05e96b635f298e34afae39",
+          "bytes": 6329
+        },
+        "preprocessor_config.json": {
+          "sha256": "0658115064c561026539aeeead9ed3b1a8e0cc90967df8c142849199f955d2b4",
+          "bytes": 287
+        },
+        "tokenizer_config.json": {
+          "sha256": "705d8fbba57dae6bff1e6a1d695ba116fbf27761a4e8373bb68f5d4f0d88f19d",
+          "bytes": 7330
+        },
+        "generation_config.json": {
+          "sha256": "6491445090a6da66e04609497396c9d18942e1f0962664d481e8e03e8ae8479b",
+          "bytes": 69
+        }
+      }
+    },
+    "phi": {
+      "path": "/ANON/scratch_rq1/hf/hub/models--microsoft--Phi-4-multimodal-instruct/snapshots/93f923e1a7727d1c4f446756212d9d3e8fcc5d81",
+      "files": {
+        "config.json": {
+          "sha256": "49e1c05f93d43d7f17715b779a2576235b019f587285d7d914e5b05156253f62",
+          "bytes": 4631
+        },
+        "preprocessor_config.json": {
+          "sha256": "9db19b9663fb86f04c0f11d3a9b7f65a19f13d4543fb4a15bd33f82b0c92d64f",
+          "bytes": 482
+        },
+        "processor_config.json": {
+          "sha256": "798fc4cd09c067053af27f07f0d2b329b471c5b2eb923ceb06efa41dee660c05",
+          "bytes": 121
+        },
+        "tokenizer_config.json": {
+          "sha256": "a5da2e45718db78924ad5135a58a80b0303596acf54a1dc5c912c98436ddcaf3",
+          "bytes": 3248
+        },
+        "generation_config.json": {
+          "sha256": "757daa0d0e89171fe48fc3286341833e95b90bdb7dd3b02a2f8920fb09f85a38",
+          "bytes": 190
+        }
+      }
+    },
+    "gemma": {
+      "path": "/ANON/scratch_rq1/hf/hub/models--google--gemma-3-12b-it/snapshots/96b6f1eccf38110c56df3a15bffe176da04bfd80",
+      "files": {
+        "config.json": {
+          "sha256": "39172c4124d3470341bbbb25f2926fd97edf68f0fe3a9fa4cde6acb9b7ed2cc6",
+          "bytes": 916
+        },
+        "preprocessor_config.json": {
+          "sha256": "f688d6bb20c5017601c4011de7ca656da8485b540b05013efdaf986c0fcc918d",
+          "bytes": 570
+        },
+        "processor_config.json": {
+          "sha256": "3ffd5f11778dc73e2b69b3c00535e4121e1badf7018136263cd17b5b34fbaa53",
+          "bytes": 70
+        },
+        "tokenizer_config.json": {
+          "sha256": "bfe25c2735e395407beb78456ea9a6984a1f00d8c16fa04a8b75f2a614cf53e1",
+          "bytes": 1156999
+        },
+        "chat_template.json": {
+          "sha256": "fe16baf728db49457cde32802cd7efc0ac8a7a9877dbe22fe3322b2d9dc6ccd9",
+          "bytes": 1615
+        },
+        "generation_config.json": {
+          "sha256": "fd9324becc53c4be610db39e13a613006f09fd6ef71a95fb6320dc33157490a3",
+          "bytes": 215
+        }
+      }
+    },
+    "ministral": {
+      "path": "/ANON/scratch_rq1/hf/hub/models--mistralai--Ministral-3-8B-Instruct-2512-BF16/snapshots/f6fae9795746f63c9be8344932f01275f3c63734",
+      "files": {
+        "config.json": {
+          "sha256": "3953b565385881fe1e80980fa8f797ffef5dbcc170851b5f90d60ddcb1905f58",
+          "bytes": 1579
+        },
+        "processor_config.json": {
+          "sha256": "ece2373c2ae391bce18785a1810543bc6173a1f28b6767cffab2c35dbea5f002",
+          "bytes": 976
+        },
+        "tokenizer_config.json": {
+          "sha256": "f59f7294e4f26383d0ea93840fe21cf197784be0842a8301a0343e8c34ed0d6d",
+          "bytes": 198094
+        },
+        "generation_config.json": {
+          "sha256": "e0923390059f84a9180b00e5501778acc45ea9856cd7f2fd68208b360927c677",
+          "bytes": 131
+        }
+      }
+    }
+  }
+}

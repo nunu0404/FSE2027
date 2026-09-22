@@ -1,0 +1,57 @@
+slice,method_type,model,language,n,accuracy_main,definition
+easy_all_languages,VLM,OpenGVLab/InternVL3-8B,cuda,1000,0.267,effective accuracy; invalid pairs incorrect
+easy_all_languages,VLM,OpenGVLab/InternVL3-8B,java,1000,0.297,effective accuracy; invalid pairs incorrect
+easy_all_languages,VLM,OpenGVLab/InternVL3-8B,python,1000,0.209,effective accuracy; invalid pairs incorrect
+easy_all_languages,VLM,Qwen/Qwen2.5-VL-7B-Instruct,cuda,1000,0.63,effective accuracy; invalid pairs incorrect
+easy_all_languages,VLM,Qwen/Qwen2.5-VL-7B-Instruct,java,1000,0.383,effective accuracy; invalid pairs incorrect
+easy_all_languages,VLM,Qwen/Qwen2.5-VL-7B-Instruct,python,1000,0.494,effective accuracy; invalid pairs incorrect
+easy_all_languages,VLM,google/gemma-3-12b-it,cuda,1000,0.634,effective accuracy; invalid pairs incorrect
+easy_all_languages,VLM,google/gemma-3-12b-it,java,1000,0.585,effective accuracy; invalid pairs incorrect
+easy_all_languages,VLM,google/gemma-3-12b-it,python,1000,0.552,effective accuracy; invalid pairs incorrect
+easy_all_languages,VLM,microsoft/Phi-4-multimodal-instruct,cuda,1000,0.286,effective accuracy; invalid pairs incorrect
+easy_all_languages,VLM,microsoft/Phi-4-multimodal-instruct,java,1000,0.283,effective accuracy; invalid pairs incorrect
+easy_all_languages,VLM,microsoft/Phi-4-multimodal-instruct,python,1000,0.267,effective accuracy; invalid pairs incorrect
+easy_all_languages,VLM,mistralai/Ministral-3-8B-Instruct-2512-BF16,cuda,1000,0.396,effective accuracy; invalid pairs incorrect
+easy_all_languages,VLM,mistralai/Ministral-3-8B-Instruct-2512-BF16,java,1000,0.413,effective accuracy; invalid pairs incorrect
+easy_all_languages,VLM,mistralai/Ministral-3-8B-Instruct-2512-BF16,python,1000,0.346,effective accuracy; invalid pairs incorrect
+easy_all_languages,ML,Logistic Regression,cuda,1000,0.823,deterministic pair accuracy
+easy_all_languages,ML,Logistic Regression,java,1000,0.653,deterministic pair accuracy
+easy_all_languages,ML,Logistic Regression,python,1000,0.747,deterministic pair accuracy
+easy_all_languages,ML,Multilayer Perceptron,cuda,1000,0.839,deterministic pair accuracy
+easy_all_languages,ML,Multilayer Perceptron,java,1000,0.703,deterministic pair accuracy
+easy_all_languages,ML,Multilayer Perceptron,python,1000,0.713,deterministic pair accuracy
+easy_all_languages,ML,Naive Bayes,cuda,1000,0.767,deterministic pair accuracy
+easy_all_languages,ML,Naive Bayes,java,1000,0.614,deterministic pair accuracy
+easy_all_languages,ML,Naive Bayes,python,1000,0.744,deterministic pair accuracy
+easy_all_languages,ML,"Scalabrino-LR (replicated, not official tool)",cuda,1000,0.824,deterministic pair accuracy
+easy_all_languages,ML,"Scalabrino-LR (replicated, not official tool)",java,1000,0.655,deterministic pair accuracy
+easy_all_languages,ML,"Scalabrino-LR (replicated, not official tool)",python,1000,0.748,deterministic pair accuracy
+easy_all_languages,ML,Voting ensemble (LR+NB+RF),cuda,1000,0.867,deterministic pair accuracy
+easy_all_languages,ML,Voting ensemble (LR+NB+RF),java,1000,0.682,deterministic pair accuracy
+easy_all_languages,ML,Voting ensemble (LR+NB+RF),python,1000,0.746,deterministic pair accuracy
+easy_all_languages,ML,gradient_boosting_regressor,cuda,1000,0.877,deterministic pair accuracy
+easy_all_languages,ML,gradient_boosting_regressor,java,1000,0.706,deterministic pair accuracy
+easy_all_languages,ML,gradient_boosting_regressor,python,1000,0.716,deterministic pair accuracy
+easy_all_languages,ML,linear_regression,cuda,1000,0.895,deterministic pair accuracy
+easy_all_languages,ML,linear_regression,java,1000,0.671,deterministic pair accuracy
+easy_all_languages,ML,linear_regression,python,1000,0.71,deterministic pair accuracy
+easy_all_languages,ML,random_forest_regressor,cuda,1000,0.886,deterministic pair accuracy
+easy_all_languages,ML,random_forest_regressor,java,1000,0.72,deterministic pair accuracy
+easy_all_languages,ML,random_forest_regressor,python,1000,0.729,deterministic pair accuracy
+easy_all_languages,ML,svr,cuda,1000,0.919,deterministic pair accuracy
+easy_all_languages,ML,svr,java,1000,0.692,deterministic pair accuracy
+easy_all_languages,ML,svr,python,1000,0.676,deterministic pair accuracy
+java_within_dataset,VLM,OpenGVLab/InternVL3-8B,java,1004,0.2729083665338645,effective accuracy; invalid pairs incorrect
+java_within_dataset,VLM,Qwen/Qwen2.5-VL-7B-Instruct,java,1004,0.31274900398406374,effective accuracy; invalid pairs incorrect
+java_within_dataset,VLM,google/gemma-3-12b-it,java,1004,0.5249003984063745,effective accuracy; invalid pairs incorrect
+java_within_dataset,VLM,microsoft/Phi-4-multimodal-instruct,java,1004,0.2450199203187251,effective accuracy; invalid pairs incorrect
+java_within_dataset,VLM,mistralai/Ministral-3-8B-Instruct-2512-BF16,java,1004,0.38645418326693226,effective accuracy; invalid pairs incorrect
+java_within_dataset,ML,Logistic Regression,java,1004,0.6095617529880478,deterministic pair accuracy
+java_within_dataset,ML,Multilayer Perceptron,java,1004,0.6394422310756972,deterministic pair accuracy
+java_within_dataset,ML,Naive Bayes,java,1004,0.5846613545816733,deterministic pair accuracy
+java_within_dataset,ML,"Scalabrino-LR (replicated, not official tool)",java,1004,0.6155378486055777,deterministic pair accuracy
+java_within_dataset,ML,Voting ensemble (LR+NB+RF),java,1004,0.6314741035856574,deterministic pair accuracy
+java_within_dataset,ML,gradient_boosting_regressor,java,1004,0.6334661354581673,deterministic pair accuracy
+java_within_dataset,ML,linear_regression,java,1004,0.6354581673306773,deterministic pair accuracy
+java_within_dataset,ML,random_forest_regressor,java,1004,0.6374501992031872,deterministic pair accuracy
+java_within_dataset,ML,svr,java,1004,0.6334661354581673,deterministic pair accuracy
