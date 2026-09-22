@@ -1,0 +1,4 @@
+model,language,median_within_condition_swap_error,swap_error_range,median_rendering_flip_rate,flip_rate_range,median_flip_rate_valid_both,order_exceeds_rendering
+Gemma4-12B,cuda,0.16050000000000003,14.5% - 17.2%,0.12456228114057029,9.9% - 16.3%,0.031496062992125984,True
+Gemma4-12B,java,0.125,12.0% - 12.7%,0.10005002501250625,8.5% - 20.5%,0.029666254635352288,True
+Gemma4-12B,python,0.16550000000000004,15.6% - 17.2%,0.12725450901803606,10.1% - 23.6%,0.03773584905660377,True

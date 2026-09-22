@@ -1,0 +1,32 @@
+{
+  "protocol": "grounded-3lang-20260721-v2",
+  "a_b_preparation_ready": true,
+  "rq3_inference_ready": false,
+  "rq3_blocker": "variants must be generated, automatically audited, and pass author gate GC1",
+  "missing_core_files": [],
+  "pairs": 3000,
+  "pairs_by_language": {
+    "cuda": 1000,
+    "java": 1000,
+    "python": 1000
+  },
+  "render_gate": true,
+  "ocr_gate": "complete",
+  "dry_run_manifests": 4,
+  "dry_run_passed": 4,
+  "core_sha256": {
+    "results/grounded_protocol_3lang_20260721/config/protocol_grounded.json": "e1cd462c177fae5a57e5c96f4952d39b7a02a3bdfad872e29e451718f6c5a417",
+    "results/grounded_protocol_3lang_20260721/config/prompt_B_template.txt": "1eb486ba7a7f1908b4279446aec106117fd209d410f7309ca2c5a64bcb978ae1",
+    "results/grounded_protocol_3lang_20260721/data/pairs_seed42_grounded.csv": "ce2fb868a23ea4fb2a7b7413fccf70ec60a388563553d0b9b97791ae73f29403",
+    "results/grounded_protocol_3lang_20260721/data/render_snippets.csv": "a0ce3eaecd294fe73a772984d66ac192b6ec61bc71141861869ba90676757fdc",
+    "results/grounded_protocol_3lang_20260721/data/render_conditions.csv": "d5f0029583310c0eb343aacf11295229a5c77e609a1adee79b578f1ba38d4721",
+    "results/grounded_protocol_3lang_20260721/rendered/RENDER_MANIFEST.json": "fc33636b485da5f84bc7b8d2714c23a81fbb7d1bff2166c31bfabf8eca706d22",
+    "results/grounded_protocol_3lang_20260721/audit/GROUNDED_RENDER_AUDIT.json": "371c2a807b8ea36f19613127ac25e923e15d7e996c77c86f7803d2faf57f16d4",
+    "results/grounded_protocol_3lang_20260721/audit/BLUR_OCR_MANIFEST.json": "270b0c2af30de952ecf3abffdc3e4eadcfffd05394ea43f1d03d4e74b0b73492",
+    "results/grounded_protocol_3lang_20260721/audit/blur_ocr_summary.csv": "bb22283cc246e7cfdc55a5c8c0e2f66e6e7e84a43fe3d54f1418fe1572811ba6",
+    "results/grounded_protocol_3lang_20260721/code/run_grounded_vlm.py": "4d6d40419b61b51d7a3ea6b38d2e72af11b3cadbe3cf903a24758a0157c3284b",
+    "results/grounded_protocol_3lang_20260721/EXPERIMENT_CONDITION_REGISTER.md": "ced48c7e2cd4ae2307bcbb19c3ebafdc5ac3242fe04311910948f82f3a4cdf92",
+    "results/grounded_protocol_3lang_20260721/GROUNDED_PROTOCOL_AMENDMENT.md": "aa7c1d2585a1743fd5e8c5142e05264edf9319d311d48b861c9f4d842c5ff6d2",
+    "results/grounded_protocol_3lang_20260721/RQ3_VARIANT_RULES_AND_GATE.md": "2c34c11f931aac271dcdcdced91b470d955f18f2365e5ba1104e359042bf4074"
+  }
+}

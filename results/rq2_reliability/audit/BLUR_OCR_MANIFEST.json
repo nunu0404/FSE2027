@@ -1,0 +1,18 @@
+{
+  "status": "complete",
+  "sample_rule": "10 deterministic source-length quantiles per language",
+  "snippets": 30,
+  "conditions": [
+    "baseline",
+    "gaussian_sigma_1",
+    "gaussian_sigma_2",
+    "gaussian_sigma_4"
+  ],
+  "engines": [
+    "rapidocr",
+    "easyocr"
+  ],
+  "expected_rows": 240,
+  "rows": 240,
+  "comparison": "each engine's blurred OCR against that engine's clean-baseline OCR"
+}

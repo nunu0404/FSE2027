@@ -1,0 +1,23 @@
+{
+  "generated_at_utc": "2026-07-06T12:45:42.060843+00:00",
+  "outputs": "/ANON/experiment_root/results/complementarity_mechanism_clean_internvl_combined_image_only_20260706",
+  "command": "python experiments/rq0_viability/scripts/run_complementarity_mechanism_analysis.py --vlm-raw /ANON/experiment_root/experiments/rq0_viability/outputs/vlm_judges/full_factorial_clean_20260703/OpenGVLab__InternVL3-8B__combined_labeled_image_only__promptB__seed42.jsonl --output-dir /ANON/experiment_root/results/complementarity_mechanism_clean_internvl_combined_image_only_20260706",
+  "inputs": {
+    "rq0_dir": "/ANON/experiment_root/experiments/rq0_viability",
+    "dataset": "/ANON/experiment_root/experiments/rq0_viability/data/processed/pooled_313_processed.csv",
+    "source_features": "/ANON/experiment_root/experiments/rq0_viability/data/processed/features_313.csv",
+    "render_metadata": "/ANON/experiment_root/experiments/rq0_viability/outputs/render_metadata/default_render_metadata.csv",
+    "rf_pair_level": "/ANON/experiment_root/experiments/rq0_viability/outputs/pair_level_results/full_pair_classical_baseline_pair_level.csv",
+    "best_vlm_raw": "/ANON/experiment_root/experiments/rq0_viability/outputs/vlm_judges/full_factorial_clean_20260703/OpenGVLab__InternVL3-8B__combined_labeled_image_only__promptB__seed42.jsonl"
+  },
+  "vlm_condition": "OpenGVLab/InternVL3-8B / combined_labeled_image_only / promptB",
+  "num_pairs": 3000,
+  "outcome_counts": {
+    "RF_correct__VLM_invalid": 1135,
+    "RF_wrong__VLM_invalid": 667,
+    "RF_correct__VLM_correct": 414,
+    "RF_correct__VLM_wrong": 321,
+    "RF_wrong__VLM_correct": 248,
+    "RF_wrong__VLM_wrong": 215
+  }
+}

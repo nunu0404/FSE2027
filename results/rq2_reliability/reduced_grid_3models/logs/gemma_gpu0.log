@@ -1,0 +1,1333 @@
+2026-09-11 08:48:02.286454: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-09-11 08:48:02.330959: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 AVX512_FP16 AVX_VNNI AMX_TILE AMX_INT8 AMX_BF16 AMX_FP16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-09-11 08:48:03.571619: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+=======================================================
+[GEMMA-RUN] Initializing google/gemma-3-12b-it on cuda:0...
+=======================================================
+[GEMMA-RUN] Total planned calls: 42000 | Already done: 0
+[GEMMA-RUN] Candidate tokens: ' A'=562, ' B'=603
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:02<00:08,  2.16s/it]Loading checkpoint shards:  40%|████      | 2/5 [00:03<00:05,  1.94s/it]Loading checkpoint shards:  60%|██████    | 3/5 [00:05<00:03,  1.98s/it]Loading checkpoint shards:  80%|████████  | 4/5 [00:07<00:01,  1.66s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:08<00:00,  1.43s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:08<00:00,  1.63s/it]
+The following generation flags are not valid and may be ignored: ['top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+[GEMMA-RUN] Model loaded on GPU.
+
+[GEMMA-RUN] Starting condition: monokai_dark__fs20__wrap80__lnon (grid)
+[GEMMA-RUN] Progress: 50/42000 (0.1%) | Speed: 1.94 calls/s | ETA: 360.5 min | Mismatches: 0
+[GEMMA-RUN] Progress: 100/42000 (0.2%) | Speed: 2.02 calls/s | ETA: 346.5 min | Mismatches: 0
+[GEMMA-RUN] Progress: 150/42000 (0.4%) | Speed: 2.02 calls/s | ETA: 345.5 min | Mismatches: 0
+[GEMMA-RUN] Progress: 200/42000 (0.5%) | Speed: 1.96 calls/s | ETA: 355.3 min | Mismatches: 0
+[GEMMA-RUN] Progress: 250/42000 (0.6%) | Speed: 1.97 calls/s | ETA: 353.7 min | Mismatches: 0
+[GEMMA-RUN] Progress: 300/42000 (0.7%) | Speed: 1.98 calls/s | ETA: 350.3 min | Mismatches: 0
+[GEMMA-RUN] Progress: 350/42000 (0.8%) | Speed: 1.97 calls/s | ETA: 352.6 min | Mismatches: 0
+[GEMMA-RUN] Progress: 400/42000 (1.0%) | Speed: 1.96 calls/s | ETA: 353.3 min | Mismatches: 0
+[GEMMA-RUN] Progress: 450/42000 (1.1%) | Speed: 1.96 calls/s | ETA: 354.0 min | Mismatches: 0
+[GEMMA-RUN] Progress: 500/42000 (1.2%) | Speed: 1.94 calls/s | ETA: 356.0 min | Mismatches: 0
+[GEMMA-RUN] Progress: 550/42000 (1.3%) | Speed: 1.94 calls/s | ETA: 356.5 min | Mismatches: 0
+[GEMMA-RUN] Progress: 600/42000 (1.4%) | Speed: 1.93 calls/s | ETA: 356.6 min | Mismatches: 0
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 650/42000 (1.5%) | Speed: 1.93 calls/s | ETA: 356.8 min | Mismatches: 1
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 700/42000 (1.7%) | Speed: 1.93 calls/s | ETA: 356.0 min | Mismatches: 2
+[GEMMA-RUN] Progress: 750/42000 (1.8%) | Speed: 1.93 calls/s | ETA: 355.6 min | Mismatches: 2
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 800/42000 (1.9%) | Speed: 1.94 calls/s | ETA: 354.8 min | Mismatches: 3
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 850/42000 (2.0%) | Speed: 1.94 calls/s | ETA: 354.2 min | Mismatches: 5
+[GEMMA-RUN] Progress: 900/42000 (2.1%) | Speed: 1.94 calls/s | ETA: 353.7 min | Mismatches: 5
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 950/42000 (2.3%) | Speed: 1.94 calls/s | ETA: 352.7 min | Mismatches: 6
+[GEMMA-RUN] Progress: 1000/42000 (2.4%) | Speed: 1.94 calls/s | ETA: 351.9 min | Mismatches: 6
+[GEMMA-RUN] Progress: 1050/42000 (2.5%) | Speed: 1.94 calls/s | ETA: 351.5 min | Mismatches: 6
+[GEMMA-RUN] Progress: 1100/42000 (2.6%) | Speed: 1.95 calls/s | ETA: 350.5 min | Mismatches: 6
+[GEMMA-RUN] Progress: 1150/42000 (2.7%) | Speed: 1.94 calls/s | ETA: 350.2 min | Mismatches: 6
+[GEMMA-RUN] Progress: 1200/42000 (2.9%) | Speed: 1.94 calls/s | ETA: 349.6 min | Mismatches: 6
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 1250/42000 (3.0%) | Speed: 1.95 calls/s | ETA: 348.9 min | Mismatches: 7
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 1300/42000 (3.1%) | Speed: 1.95 calls/s | ETA: 348.1 min | Mismatches: 8
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 1350/42000 (3.2%) | Speed: 1.95 calls/s | ETA: 347.6 min | Mismatches: 9
+[GEMMA-RUN] Progress: 1400/42000 (3.3%) | Speed: 1.95 calls/s | ETA: 346.4 min | Mismatches: 9
+[GEMMA-RUN] Progress: 1450/42000 (3.5%) | Speed: 1.96 calls/s | ETA: 345.3 min | Mismatches: 9
+[GEMMA-RUN] Progress: 1500/42000 (3.6%) | Speed: 1.96 calls/s | ETA: 344.2 min | Mismatches: 9
+[GEMMA-RUN] Progress: 1550/42000 (3.7%) | Speed: 1.96 calls/s | ETA: 343.3 min | Mismatches: 9
+[GEMMA-RUN] Progress: 1600/42000 (3.8%) | Speed: 1.96 calls/s | ETA: 342.8 min | Mismatches: 9
+[GEMMA-RUN] Progress: 1650/42000 (3.9%) | Speed: 1.97 calls/s | ETA: 342.0 min | Mismatches: 9
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 1700/42000 (4.0%) | Speed: 1.97 calls/s | ETA: 341.2 min | Mismatches: 10
+[GEMMA-RUN] Progress: 1750/42000 (4.2%) | Speed: 1.97 calls/s | ETA: 340.5 min | Mismatches: 10
+[GEMMA-RUN] Progress: 1800/42000 (4.3%) | Speed: 1.96 calls/s | ETA: 341.6 min | Mismatches: 10
+[GEMMA-RUN] Progress: 1850/42000 (4.4%) | Speed: 1.92 calls/s | ETA: 348.0 min | Mismatches: 10
+[GEMMA-RUN] Progress: 1900/42000 (4.5%) | Speed: 1.85 calls/s | ETA: 361.1 min | Mismatches: 10
+[GEMMA-RUN] Progress: 1950/42000 (4.6%) | Speed: 1.79 calls/s | ETA: 373.9 min | Mismatches: 10
+[GEMMA-RUN] Progress: 2000/42000 (4.8%) | Speed: 1.71 calls/s | ETA: 389.6 min | Mismatches: 10
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 2050/42000 (4.9%) | Speed: 1.66 calls/s | ETA: 400.9 min | Mismatches: 11
+[GEMMA-RUN] Progress: 2100/42000 (5.0%) | Speed: 1.61 calls/s | ETA: 413.4 min | Mismatches: 11
+[GEMMA-RUN] Progress: 2150/42000 (5.1%) | Speed: 1.57 calls/s | ETA: 423.1 min | Mismatches: 11
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 2200/42000 (5.2%) | Speed: 1.52 calls/s | ETA: 437.0 min | Mismatches: 12
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 2250/42000 (5.4%) | Speed: 1.49 calls/s | ETA: 445.8 min | Mismatches: 14
+[GEMMA-RUN] Progress: 2300/42000 (5.5%) | Speed: 1.47 calls/s | ETA: 449.9 min | Mismatches: 14
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 2350/42000 (5.6%) | Speed: 1.46 calls/s | ETA: 453.3 min | Mismatches: 17
+[GEMMA-RUN] Progress: 2400/42000 (5.7%) | Speed: 1.45 calls/s | ETA: 456.4 min | Mismatches: 17
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 2450/42000 (5.8%) | Speed: 1.44 calls/s | ETA: 458.8 min | Mismatches: 18
+[GEMMA-RUN] Progress: 2500/42000 (6.0%) | Speed: 1.43 calls/s | ETA: 459.9 min | Mismatches: 18
+[GEMMA-RUN] Progress: 2550/42000 (6.1%) | Speed: 1.42 calls/s | ETA: 463.4 min | Mismatches: 18
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 2600/42000 (6.2%) | Speed: 1.41 calls/s | ETA: 465.6 min | Mismatches: 19
+[GEMMA-RUN] Progress: 2650/42000 (6.3%) | Speed: 1.40 calls/s | ETA: 468.2 min | Mismatches: 19
+[GEMMA-RUN] Progress: 2700/42000 (6.4%) | Speed: 1.39 calls/s | ETA: 470.8 min | Mismatches: 19
+[GEMMA-RUN] Progress: 2750/42000 (6.5%) | Speed: 1.39 calls/s | ETA: 471.9 min | Mismatches: 19
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 2800/42000 (6.7%) | Speed: 1.38 calls/s | ETA: 474.5 min | Mismatches: 20
+[GEMMA-RUN] Progress: 2850/42000 (6.8%) | Speed: 1.37 calls/s | ETA: 476.7 min | Mismatches: 20
+[GEMMA-RUN] Progress: 2900/42000 (6.9%) | Speed: 1.36 calls/s | ETA: 478.3 min | Mismatches: 20
+[GEMMA-RUN] Progress: 2950/42000 (7.0%) | Speed: 1.36 calls/s | ETA: 480.2 min | Mismatches: 20
+[GEMMA-RUN] Progress: 3000/42000 (7.1%) | Speed: 1.35 calls/s | ETA: 479.8 min | Mismatches: 20
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 3050/42000 (7.3%) | Speed: 1.36 calls/s | ETA: 478.7 min | Mismatches: 21
+[GEMMA-RUN] Progress: 3100/42000 (7.4%) | Speed: 1.36 calls/s | ETA: 478.3 min | Mismatches: 21
+[GEMMA-RUN] Progress: 3150/42000 (7.5%) | Speed: 1.35 calls/s | ETA: 479.6 min | Mismatches: 21
+[GEMMA-RUN] Progress: 3200/42000 (7.6%) | Speed: 1.35 calls/s | ETA: 478.2 min | Mismatches: 21
+[GEMMA-RUN] Progress: 3250/42000 (7.7%) | Speed: 1.36 calls/s | ETA: 476.5 min | Mismatches: 21
+[GEMMA-RUN] Progress: 3300/42000 (7.9%) | Speed: 1.35 calls/s | ETA: 478.0 min | Mismatches: 21
+[GEMMA-RUN] Progress: 3350/42000 (8.0%) | Speed: 1.35 calls/s | ETA: 478.3 min | Mismatches: 21
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 3400/42000 (8.1%) | Speed: 1.35 calls/s | ETA: 477.8 min | Mismatches: 22
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 3450/42000 (8.2%) | Speed: 1.35 calls/s | ETA: 477.2 min | Mismatches: 24
+[GEMMA-RUN] Progress: 3500/42000 (8.3%) | Speed: 1.35 calls/s | ETA: 476.4 min | Mismatches: 24
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 3550/42000 (8.5%) | Speed: 1.35 calls/s | ETA: 475.6 min | Mismatches: 25
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 3600/42000 (8.6%) | Speed: 1.34 calls/s | ETA: 475.9 min | Mismatches: 26
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 3650/42000 (8.7%) | Speed: 1.34 calls/s | ETA: 475.6 min | Mismatches: 27
+[GEMMA-RUN] Progress: 3700/42000 (8.8%) | Speed: 1.35 calls/s | ETA: 473.7 min | Mismatches: 27
+[GEMMA-RUN] Progress: 3750/42000 (8.9%) | Speed: 1.35 calls/s | ETA: 473.8 min | Mismatches: 27
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 3800/42000 (9.0%) | Speed: 1.35 calls/s | ETA: 472.9 min | Mismatches: 28
+[GEMMA-RUN] Progress: 3850/42000 (9.2%) | Speed: 1.35 calls/s | ETA: 471.1 min | Mismatches: 28
+[GEMMA-RUN] Progress: 3900/42000 (9.3%) | Speed: 1.35 calls/s | ETA: 471.2 min | Mismatches: 28
+[GEMMA-RUN] Progress: 3950/42000 (9.4%) | Speed: 1.35 calls/s | ETA: 470.8 min | Mismatches: 28
+[GEMMA-RUN] Progress: 4000/42000 (9.5%) | Speed: 1.35 calls/s | ETA: 470.5 min | Mismatches: 28
+[GEMMA-RUN] Progress: 4050/42000 (9.6%) | Speed: 1.35 calls/s | ETA: 468.8 min | Mismatches: 28
+[GEMMA-RUN] Progress: 4100/42000 (9.8%) | Speed: 1.35 calls/s | ETA: 468.3 min | Mismatches: 28
+[GEMMA-RUN] Progress: 4150/42000 (9.9%) | Speed: 1.35 calls/s | ETA: 467.1 min | Mismatches: 28
+[GEMMA-RUN] Progress: 4200/42000 (10.0%) | Speed: 1.35 calls/s | ETA: 466.5 min | Mismatches: 28
+[GEMMA-RUN] Progress: 4250/42000 (10.1%) | Speed: 1.35 calls/s | ETA: 464.5 min | Mismatches: 28
+[GEMMA-RUN] Progress: 4300/42000 (10.2%) | Speed: 1.36 calls/s | ETA: 462.4 min | Mismatches: 28
+[GEMMA-RUN] Progress: 4350/42000 (10.4%) | Speed: 1.36 calls/s | ETA: 460.3 min | Mismatches: 28
+[GEMMA-RUN] Progress: 4400/42000 (10.5%) | Speed: 1.37 calls/s | ETA: 458.2 min | Mismatches: 28
+[GEMMA-RUN] Progress: 4450/42000 (10.6%) | Speed: 1.37 calls/s | ETA: 456.1 min | Mismatches: 28
+[GEMMA-RUN] Progress: 4500/42000 (10.7%) | Speed: 1.38 calls/s | ETA: 453.9 min | Mismatches: 28
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 4550/42000 (10.8%) | Speed: 1.38 calls/s | ETA: 451.8 min | Mismatches: 29
+[GEMMA-RUN] Progress: 4600/42000 (11.0%) | Speed: 1.39 calls/s | ETA: 450.0 min | Mismatches: 29
+[GEMMA-RUN] Progress: 4650/42000 (11.1%) | Speed: 1.39 calls/s | ETA: 448.0 min | Mismatches: 29
+[GEMMA-RUN] Progress: 4700/42000 (11.2%) | Speed: 1.39 calls/s | ETA: 446.2 min | Mismatches: 29
+[GEMMA-RUN] Progress: 4750/42000 (11.3%) | Speed: 1.40 calls/s | ETA: 444.4 min | Mismatches: 29
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 4800/42000 (11.4%) | Speed: 1.40 calls/s | ETA: 442.5 min | Mismatches: 30
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 4850/42000 (11.5%) | Speed: 1.41 calls/s | ETA: 440.6 min | Mismatches: 31
+[GEMMA-RUN] Progress: 4900/42000 (11.7%) | Speed: 1.41 calls/s | ETA: 438.6 min | Mismatches: 31
+[GEMMA-RUN] Progress: 4950/42000 (11.8%) | Speed: 1.41 calls/s | ETA: 436.6 min | Mismatches: 31
+[GEMMA-RUN] Progress: 5000/42000 (11.9%) | Speed: 1.42 calls/s | ETA: 434.9 min | Mismatches: 31
+[GEMMA-RUN] Progress: 5050/42000 (12.0%) | Speed: 1.42 calls/s | ETA: 433.1 min | Mismatches: 31
+[GEMMA-RUN] Progress: 5100/42000 (12.1%) | Speed: 1.43 calls/s | ETA: 431.4 min | Mismatches: 31
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 5150/42000 (12.3%) | Speed: 1.43 calls/s | ETA: 429.7 min | Mismatches: 32
+[GEMMA-RUN] Progress: 5200/42000 (12.4%) | Speed: 1.43 calls/s | ETA: 428.1 min | Mismatches: 32
+[GEMMA-RUN] Progress: 5250/42000 (12.5%) | Speed: 1.44 calls/s | ETA: 426.5 min | Mismatches: 32
+[GEMMA-RUN] Progress: 5300/42000 (12.6%) | Speed: 1.44 calls/s | ETA: 424.7 min | Mismatches: 32
+[GEMMA-RUN] Progress: 5350/42000 (12.7%) | Speed: 1.44 calls/s | ETA: 423.0 min | Mismatches: 32
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 5400/42000 (12.9%) | Speed: 1.45 calls/s | ETA: 421.3 min | Mismatches: 33
+[GEMMA-RUN] Progress: 5450/42000 (13.0%) | Speed: 1.45 calls/s | ETA: 419.6 min | Mismatches: 33
+[GEMMA-RUN] Progress: 5500/42000 (13.1%) | Speed: 1.46 calls/s | ETA: 417.9 min | Mismatches: 33
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 5550/42000 (13.2%) | Speed: 1.46 calls/s | ETA: 416.2 min | Mismatches: 34
+[GEMMA-RUN] Progress: 5600/42000 (13.3%) | Speed: 1.46 calls/s | ETA: 414.6 min | Mismatches: 34
+[GEMMA-RUN] Progress: 5650/42000 (13.5%) | Speed: 1.47 calls/s | ETA: 413.0 min | Mismatches: 34
+[GEMMA-RUN] Progress: 5700/42000 (13.6%) | Speed: 1.47 calls/s | ETA: 411.5 min | Mismatches: 34
+[GEMMA-RUN] Progress: 5750/42000 (13.7%) | Speed: 1.47 calls/s | ETA: 410.0 min | Mismatches: 34
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 5800/42000 (13.8%) | Speed: 1.48 calls/s | ETA: 408.5 min | Mismatches: 35
+[GEMMA-RUN] Progress: 5850/42000 (13.9%) | Speed: 1.48 calls/s | ETA: 407.0 min | Mismatches: 35
+[GEMMA-RUN] Progress: 5900/42000 (14.0%) | Speed: 1.48 calls/s | ETA: 405.5 min | Mismatches: 35
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 5950/42000 (14.2%) | Speed: 1.49 calls/s | ETA: 404.0 min | Mismatches: 37
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 6000/42000 (14.3%) | Speed: 1.49 calls/s | ETA: 402.6 min | Mismatches: 38
+
+[GEMMA-RUN] Starting condition: monokai_dark__fs20__wrap60__lnon (grid)
+[GEMMA-RUN] Progress: 6050/42000 (14.4%) | Speed: 1.49 calls/s | ETA: 401.2 min | Mismatches: 38
+[GEMMA-RUN] Progress: 6100/42000 (14.5%) | Speed: 1.50 calls/s | ETA: 399.7 min | Mismatches: 38
+[GEMMA-RUN] Progress: 6150/42000 (14.6%) | Speed: 1.50 calls/s | ETA: 398.4 min | Mismatches: 38
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 6200/42000 (14.8%) | Speed: 1.50 calls/s | ETA: 397.0 min | Mismatches: 39
+[GEMMA-RUN] Progress: 6250/42000 (14.9%) | Speed: 1.51 calls/s | ETA: 395.7 min | Mismatches: 39
+[GEMMA-RUN] Progress: 6300/42000 (15.0%) | Speed: 1.51 calls/s | ETA: 394.3 min | Mismatches: 39
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 6350/42000 (15.1%) | Speed: 1.51 calls/s | ETA: 393.0 min | Mismatches: 41
+[GEMMA-RUN] Progress: 6400/42000 (15.2%) | Speed: 1.51 calls/s | ETA: 391.7 min | Mismatches: 41
+[GEMMA-RUN] Progress: 6450/42000 (15.4%) | Speed: 1.52 calls/s | ETA: 390.4 min | Mismatches: 41
+[GEMMA-RUN] Progress: 6500/42000 (15.5%) | Speed: 1.52 calls/s | ETA: 389.2 min | Mismatches: 41
+[GEMMA-RUN] Progress: 6550/42000 (15.6%) | Speed: 1.52 calls/s | ETA: 388.0 min | Mismatches: 41
+[GEMMA-RUN] Progress: 6600/42000 (15.7%) | Speed: 1.53 calls/s | ETA: 386.9 min | Mismatches: 41
+[GEMMA-RUN] Progress: 6650/42000 (15.8%) | Speed: 1.53 calls/s | ETA: 385.7 min | Mismatches: 41
+[GEMMA-RUN] Progress: 6700/42000 (16.0%) | Speed: 1.53 calls/s | ETA: 384.5 min | Mismatches: 41
+[GEMMA-RUN] Progress: 6750/42000 (16.1%) | Speed: 1.53 calls/s | ETA: 383.3 min | Mismatches: 41
+[GEMMA-RUN] Progress: 6800/42000 (16.2%) | Speed: 1.54 calls/s | ETA: 382.2 min | Mismatches: 41
+[GEMMA-RUN] Progress: 6850/42000 (16.3%) | Speed: 1.54 calls/s | ETA: 381.1 min | Mismatches: 41
+[GEMMA-RUN] Progress: 6900/42000 (16.4%) | Speed: 1.54 calls/s | ETA: 380.0 min | Mismatches: 41
+[GEMMA-RUN] Progress: 6950/42000 (16.5%) | Speed: 1.54 calls/s | ETA: 379.0 min | Mismatches: 41
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 7000/42000 (16.7%) | Speed: 1.54 calls/s | ETA: 378.0 min | Mismatches: 42
+[GEMMA-RUN] Progress: 7050/42000 (16.8%) | Speed: 1.55 calls/s | ETA: 377.0 min | Mismatches: 42
+[GEMMA-RUN] Progress: 7100/42000 (16.9%) | Speed: 1.55 calls/s | ETA: 375.9 min | Mismatches: 42
+[GEMMA-RUN] Progress: 7150/42000 (17.0%) | Speed: 1.55 calls/s | ETA: 374.9 min | Mismatches: 42
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 7200/42000 (17.1%) | Speed: 1.55 calls/s | ETA: 373.8 min | Mismatches: 43
+[GEMMA-RUN] Progress: 7250/42000 (17.3%) | Speed: 1.55 calls/s | ETA: 372.8 min | Mismatches: 43
+[GEMMA-RUN] Progress: 7300/42000 (17.4%) | Speed: 1.56 calls/s | ETA: 371.8 min | Mismatches: 43
+[GEMMA-RUN] Progress: 7350/42000 (17.5%) | Speed: 1.56 calls/s | ETA: 370.8 min | Mismatches: 43
+[GEMMA-RUN] Progress: 7400/42000 (17.6%) | Speed: 1.56 calls/s | ETA: 369.9 min | Mismatches: 43
+[GEMMA-RUN] Progress: 7450/42000 (17.7%) | Speed: 1.56 calls/s | ETA: 368.9 min | Mismatches: 43
+[GEMMA-RUN] Progress: 7500/42000 (17.9%) | Speed: 1.56 calls/s | ETA: 367.9 min | Mismatches: 43
+[GEMMA-RUN] Progress: 7550/42000 (18.0%) | Speed: 1.57 calls/s | ETA: 366.8 min | Mismatches: 43
+[GEMMA-RUN] Progress: 7600/42000 (18.1%) | Speed: 1.57 calls/s | ETA: 365.7 min | Mismatches: 43
+[GEMMA-RUN] Progress: 7650/42000 (18.2%) | Speed: 1.57 calls/s | ETA: 364.6 min | Mismatches: 43
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 7700/42000 (18.3%) | Speed: 1.57 calls/s | ETA: 363.5 min | Mismatches: 44
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 7750/42000 (18.5%) | Speed: 1.57 calls/s | ETA: 362.5 min | Mismatches: 45
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 7800/42000 (18.6%) | Speed: 1.58 calls/s | ETA: 361.6 min | Mismatches: 46
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 7850/42000 (18.7%) | Speed: 1.58 calls/s | ETA: 360.5 min | Mismatches: 47
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 7900/42000 (18.8%) | Speed: 1.58 calls/s | ETA: 359.5 min | Mismatches: 49
+[GEMMA-RUN] Progress: 7950/42000 (18.9%) | Speed: 1.58 calls/s | ETA: 358.5 min | Mismatches: 49
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 8000/42000 (19.0%) | Speed: 1.59 calls/s | ETA: 357.5 min | Mismatches: 50
+[GEMMA-RUN] Progress: 8050/42000 (19.2%) | Speed: 1.59 calls/s | ETA: 356.5 min | Mismatches: 50
+[GEMMA-RUN] Progress: 8100/42000 (19.3%) | Speed: 1.59 calls/s | ETA: 355.5 min | Mismatches: 50
+[GEMMA-RUN] Progress: 8150/42000 (19.4%) | Speed: 1.59 calls/s | ETA: 354.5 min | Mismatches: 50
+[GEMMA-RUN] Progress: 8200/42000 (19.5%) | Speed: 1.59 calls/s | ETA: 353.5 min | Mismatches: 50
+[GEMMA-RUN] Progress: 8250/42000 (19.6%) | Speed: 1.60 calls/s | ETA: 352.5 min | Mismatches: 50
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 8300/42000 (19.8%) | Speed: 1.60 calls/s | ETA: 351.5 min | Mismatches: 51
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 8350/42000 (19.9%) | Speed: 1.60 calls/s | ETA: 350.6 min | Mismatches: 52
+[GEMMA-RUN] Progress: 8400/42000 (20.0%) | Speed: 1.60 calls/s | ETA: 349.6 min | Mismatches: 52
+[GEMMA-RUN] Progress: 8450/42000 (20.1%) | Speed: 1.60 calls/s | ETA: 349.0 min | Mismatches: 52
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 8500/42000 (20.2%) | Speed: 1.60 calls/s | ETA: 349.3 min | Mismatches: 53
+[GEMMA-RUN] Progress: 8550/42000 (20.4%) | Speed: 1.59 calls/s | ETA: 351.1 min | Mismatches: 53
+[GEMMA-RUN] Progress: 8600/42000 (20.5%) | Speed: 1.58 calls/s | ETA: 353.0 min | Mismatches: 53
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 8650/42000 (20.6%) | Speed: 1.57 calls/s | ETA: 354.7 min | Mismatches: 54
+[GEMMA-RUN] Progress: 8700/42000 (20.7%) | Speed: 1.56 calls/s | ETA: 356.7 min | Mismatches: 54
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 8750/42000 (20.8%) | Speed: 1.55 calls/s | ETA: 358.5 min | Mismatches: 55
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 8800/42000 (21.0%) | Speed: 1.54 calls/s | ETA: 360.2 min | Mismatches: 57
+[GEMMA-RUN] Progress: 8850/42000 (21.1%) | Speed: 1.53 calls/s | ETA: 362.1 min | Mismatches: 57
+[GEMMA-RUN] Progress: 8900/42000 (21.2%) | Speed: 1.52 calls/s | ETA: 362.4 min | Mismatches: 57
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 8950/42000 (21.3%) | Speed: 1.52 calls/s | ETA: 362.6 min | Mismatches: 58
+[GEMMA-RUN] Progress: 9000/42000 (21.4%) | Speed: 1.52 calls/s | ETA: 363.0 min | Mismatches: 58
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 9050/42000 (21.5%) | Speed: 1.51 calls/s | ETA: 363.2 min | Mismatches: 59
+[GEMMA-RUN] Progress: 9100/42000 (21.7%) | Speed: 1.51 calls/s | ETA: 363.2 min | Mismatches: 59
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 9150/42000 (21.8%) | Speed: 1.51 calls/s | ETA: 363.5 min | Mismatches: 60
+[GEMMA-RUN] Progress: 9200/42000 (21.9%) | Speed: 1.50 calls/s | ETA: 363.9 min | Mismatches: 60
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 9250/42000 (22.0%) | Speed: 1.50 calls/s | ETA: 364.3 min | Mismatches: 61
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 9300/42000 (22.1%) | Speed: 1.50 calls/s | ETA: 364.1 min | Mismatches: 62
+[GEMMA-RUN] Progress: 9350/42000 (22.3%) | Speed: 1.50 calls/s | ETA: 363.6 min | Mismatches: 62
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 9400/42000 (22.4%) | Speed: 1.50 calls/s | ETA: 363.4 min | Mismatches: 63
+[GEMMA-RUN] Progress: 9450/42000 (22.5%) | Speed: 1.49 calls/s | ETA: 363.6 min | Mismatches: 63
+[GEMMA-RUN] Progress: 9500/42000 (22.6%) | Speed: 1.49 calls/s | ETA: 363.9 min | Mismatches: 63
+[GEMMA-RUN] Progress: 9550/42000 (22.7%) | Speed: 1.48 calls/s | ETA: 364.4 min | Mismatches: 63
+[GEMMA-RUN] Progress: 9600/42000 (22.9%) | Speed: 1.48 calls/s | ETA: 364.4 min | Mismatches: 63
+[GEMMA-RUN] Progress: 9650/42000 (23.0%) | Speed: 1.48 calls/s | ETA: 364.4 min | Mismatches: 63
+[GEMMA-RUN] Progress: 9700/42000 (23.1%) | Speed: 1.48 calls/s | ETA: 364.5 min | Mismatches: 63
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 9750/42000 (23.2%) | Speed: 1.47 calls/s | ETA: 364.4 min | Mismatches: 64
+[GEMMA-RUN] Progress: 9800/42000 (23.3%) | Speed: 1.47 calls/s | ETA: 364.6 min | Mismatches: 64
+[GEMMA-RUN] Progress: 9850/42000 (23.5%) | Speed: 1.47 calls/s | ETA: 364.3 min | Mismatches: 64
+[GEMMA-RUN] Progress: 9900/42000 (23.6%) | Speed: 1.47 calls/s | ETA: 364.4 min | Mismatches: 64
+[GEMMA-RUN] Progress: 9950/42000 (23.7%) | Speed: 1.47 calls/s | ETA: 364.3 min | Mismatches: 64
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 10000/42000 (23.8%) | Speed: 1.47 calls/s | ETA: 363.9 min | Mismatches: 65
+[GEMMA-RUN] Progress: 10050/42000 (23.9%) | Speed: 1.46 calls/s | ETA: 363.6 min | Mismatches: 65
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 10100/42000 (24.0%) | Speed: 1.46 calls/s | ETA: 363.0 min | Mismatches: 68
+[GEMMA-RUN] Progress: 10150/42000 (24.2%) | Speed: 1.46 calls/s | ETA: 362.5 min | Mismatches: 68
+[GEMMA-RUN] Progress: 10200/42000 (24.3%) | Speed: 1.46 calls/s | ETA: 362.1 min | Mismatches: 68
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 10250/42000 (24.4%) | Speed: 1.46 calls/s | ETA: 362.0 min | Mismatches: 71
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 10300/42000 (24.5%) | Speed: 1.46 calls/s | ETA: 361.8 min | Mismatches: 73
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 10350/42000 (24.6%) | Speed: 1.46 calls/s | ETA: 360.8 min | Mismatches: 74
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 10400/42000 (24.8%) | Speed: 1.46 calls/s | ETA: 359.9 min | Mismatches: 76
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 10450/42000 (24.9%) | Speed: 1.46 calls/s | ETA: 359.5 min | Mismatches: 77
+[GEMMA-RUN] Progress: 10500/42000 (25.0%) | Speed: 1.46 calls/s | ETA: 359.0 min | Mismatches: 77
+[GEMMA-RUN] Progress: 10550/42000 (25.1%) | Speed: 1.46 calls/s | ETA: 358.8 min | Mismatches: 77
+[GEMMA-RUN] Progress: 10600/42000 (25.2%) | Speed: 1.46 calls/s | ETA: 358.6 min | Mismatches: 77
+[GEMMA-RUN] Progress: 10650/42000 (25.4%) | Speed: 1.46 calls/s | ETA: 358.1 min | Mismatches: 77
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 10700/42000 (25.5%) | Speed: 1.46 calls/s | ETA: 357.8 min | Mismatches: 79
+[GEMMA-RUN] Progress: 10750/42000 (25.6%) | Speed: 1.46 calls/s | ETA: 357.4 min | Mismatches: 79
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 10800/42000 (25.7%) | Speed: 1.46 calls/s | ETA: 356.8 min | Mismatches: 80
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 10850/42000 (25.8%) | Speed: 1.46 calls/s | ETA: 356.1 min | Mismatches: 81
+[GEMMA-RUN] Progress: 10900/42000 (26.0%) | Speed: 1.46 calls/s | ETA: 355.5 min | Mismatches: 81
+[GEMMA-RUN] Progress: 10950/42000 (26.1%) | Speed: 1.46 calls/s | ETA: 355.1 min | Mismatches: 81
+[GEMMA-RUN] Progress: 11000/42000 (26.2%) | Speed: 1.46 calls/s | ETA: 354.4 min | Mismatches: 81
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 11050/42000 (26.3%) | Speed: 1.46 calls/s | ETA: 353.5 min | Mismatches: 82
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 11100/42000 (26.4%) | Speed: 1.46 calls/s | ETA: 352.5 min | Mismatches: 83
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 11150/42000 (26.5%) | Speed: 1.46 calls/s | ETA: 351.6 min | Mismatches: 84
+[GEMMA-RUN] Progress: 11200/42000 (26.7%) | Speed: 1.46 calls/s | ETA: 350.6 min | Mismatches: 84
+[GEMMA-RUN] Progress: 11250/42000 (26.8%) | Speed: 1.47 calls/s | ETA: 349.7 min | Mismatches: 84
+[GEMMA-RUN] Progress: 11300/42000 (26.9%) | Speed: 1.47 calls/s | ETA: 348.8 min | Mismatches: 84
+[GEMMA-RUN] Progress: 11350/42000 (27.0%) | Speed: 1.47 calls/s | ETA: 347.9 min | Mismatches: 84
+[GEMMA-RUN] Progress: 11400/42000 (27.1%) | Speed: 1.47 calls/s | ETA: 346.9 min | Mismatches: 84
+[GEMMA-RUN] Progress: 11450/42000 (27.3%) | Speed: 1.47 calls/s | ETA: 346.0 min | Mismatches: 84
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 11500/42000 (27.4%) | Speed: 1.47 calls/s | ETA: 345.1 min | Mismatches: 85
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 11550/42000 (27.5%) | Speed: 1.47 calls/s | ETA: 344.2 min | Mismatches: 86
+[GEMMA-RUN] Progress: 11600/42000 (27.6%) | Speed: 1.48 calls/s | ETA: 343.2 min | Mismatches: 86
+[GEMMA-RUN] Progress: 11650/42000 (27.7%) | Speed: 1.48 calls/s | ETA: 342.3 min | Mismatches: 86
+[GEMMA-RUN] Progress: 11700/42000 (27.9%) | Speed: 1.48 calls/s | ETA: 341.3 min | Mismatches: 86
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 11750/42000 (28.0%) | Speed: 1.48 calls/s | ETA: 340.3 min | Mismatches: 87
+[GEMMA-RUN] Progress: 11800/42000 (28.1%) | Speed: 1.48 calls/s | ETA: 339.3 min | Mismatches: 87
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 11850/42000 (28.2%) | Speed: 1.49 calls/s | ETA: 338.3 min | Mismatches: 88
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 11900/42000 (28.3%) | Speed: 1.49 calls/s | ETA: 337.4 min | Mismatches: 89
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 11950/42000 (28.5%) | Speed: 1.49 calls/s | ETA: 336.5 min | Mismatches: 90
+[GEMMA-RUN] Progress: 12000/42000 (28.6%) | Speed: 1.49 calls/s | ETA: 335.6 min | Mismatches: 90
+
+[GEMMA-RUN] Starting condition: monokai_dark__fs24__wrap80__lnon (grid)
+[GEMMA-RUN] Progress: 12050/42000 (28.7%) | Speed: 1.49 calls/s | ETA: 334.6 min | Mismatches: 90
+[GEMMA-RUN] Progress: 12100/42000 (28.8%) | Speed: 1.49 calls/s | ETA: 333.7 min | Mismatches: 90
+[GEMMA-RUN] Progress: 12150/42000 (28.9%) | Speed: 1.50 calls/s | ETA: 332.8 min | Mismatches: 90
+[GEMMA-RUN] Progress: 12200/42000 (29.0%) | Speed: 1.50 calls/s | ETA: 331.8 min | Mismatches: 90
+[GEMMA-RUN] Progress: 12250/42000 (29.2%) | Speed: 1.50 calls/s | ETA: 330.9 min | Mismatches: 90
+[GEMMA-RUN] Progress: 12300/42000 (29.3%) | Speed: 1.50 calls/s | ETA: 330.1 min | Mismatches: 90
+[GEMMA-RUN] Progress: 12350/42000 (29.4%) | Speed: 1.50 calls/s | ETA: 329.1 min | Mismatches: 90
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 12400/42000 (29.5%) | Speed: 1.50 calls/s | ETA: 328.2 min | Mismatches: 91
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 12450/42000 (29.6%) | Speed: 1.50 calls/s | ETA: 327.3 min | Mismatches: 92
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 12500/42000 (29.8%) | Speed: 1.51 calls/s | ETA: 326.4 min | Mismatches: 93
+[GEMMA-RUN] Progress: 12550/42000 (29.9%) | Speed: 1.51 calls/s | ETA: 325.5 min | Mismatches: 93
+[GEMMA-RUN] Progress: 12600/42000 (30.0%) | Speed: 1.51 calls/s | ETA: 324.6 min | Mismatches: 93
+[GEMMA-RUN] Progress: 12650/42000 (30.1%) | Speed: 1.51 calls/s | ETA: 323.7 min | Mismatches: 93
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 12700/42000 (30.2%) | Speed: 1.51 calls/s | ETA: 322.8 min | Mismatches: 95
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 12750/42000 (30.4%) | Speed: 1.51 calls/s | ETA: 321.9 min | Mismatches: 96
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 12800/42000 (30.5%) | Speed: 1.52 calls/s | ETA: 321.0 min | Mismatches: 97
+[GEMMA-RUN] Progress: 12850/42000 (30.6%) | Speed: 1.52 calls/s | ETA: 320.1 min | Mismatches: 97
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 12900/42000 (30.7%) | Speed: 1.52 calls/s | ETA: 319.3 min | Mismatches: 98
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 12950/42000 (30.8%) | Speed: 1.52 calls/s | ETA: 318.4 min | Mismatches: 99
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 13000/42000 (31.0%) | Speed: 1.52 calls/s | ETA: 317.6 min | Mismatches: 100
+[GEMMA-RUN] Progress: 13050/42000 (31.1%) | Speed: 1.52 calls/s | ETA: 316.7 min | Mismatches: 100
+[GEMMA-RUN] Progress: 13100/42000 (31.2%) | Speed: 1.52 calls/s | ETA: 315.9 min | Mismatches: 100
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 13150/42000 (31.3%) | Speed: 1.53 calls/s | ETA: 315.0 min | Mismatches: 101
+[GEMMA-RUN] Progress: 13200/42000 (31.4%) | Speed: 1.53 calls/s | ETA: 314.2 min | Mismatches: 101
+[GEMMA-RUN] Progress: 13250/42000 (31.5%) | Speed: 1.53 calls/s | ETA: 313.3 min | Mismatches: 101
+[GEMMA-RUN] Progress: 13300/42000 (31.7%) | Speed: 1.53 calls/s | ETA: 312.5 min | Mismatches: 101
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 13350/42000 (31.8%) | Speed: 1.53 calls/s | ETA: 311.7 min | Mismatches: 102
+[GEMMA-RUN] Progress: 13400/42000 (31.9%) | Speed: 1.53 calls/s | ETA: 310.8 min | Mismatches: 102
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 13450/42000 (32.0%) | Speed: 1.53 calls/s | ETA: 310.0 min | Mismatches: 103
+[GEMMA-RUN] Progress: 13500/42000 (32.1%) | Speed: 1.54 calls/s | ETA: 309.2 min | Mismatches: 103
+[GEMMA-RUN] Progress: 13550/42000 (32.3%) | Speed: 1.54 calls/s | ETA: 308.3 min | Mismatches: 103
+[GEMMA-RUN] Progress: 13600/42000 (32.4%) | Speed: 1.54 calls/s | ETA: 307.5 min | Mismatches: 103
+[GEMMA-RUN] Progress: 13650/42000 (32.5%) | Speed: 1.54 calls/s | ETA: 306.7 min | Mismatches: 103
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 13700/42000 (32.6%) | Speed: 1.54 calls/s | ETA: 305.9 min | Mismatches: 104
+[GEMMA-RUN] Progress: 13750/42000 (32.7%) | Speed: 1.54 calls/s | ETA: 305.0 min | Mismatches: 104
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 13800/42000 (32.9%) | Speed: 1.54 calls/s | ETA: 304.3 min | Mismatches: 105
+[GEMMA-RUN] Progress: 13850/42000 (33.0%) | Speed: 1.55 calls/s | ETA: 303.5 min | Mismatches: 105
+[GEMMA-RUN] Progress: 13900/42000 (33.1%) | Speed: 1.55 calls/s | ETA: 302.8 min | Mismatches: 105
+[GEMMA-RUN] Progress: 13950/42000 (33.2%) | Speed: 1.55 calls/s | ETA: 302.0 min | Mismatches: 105
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 14000/42000 (33.3%) | Speed: 1.55 calls/s | ETA: 301.2 min | Mismatches: 107
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 14050/42000 (33.5%) | Speed: 1.55 calls/s | ETA: 300.5 min | Mismatches: 108
+[GEMMA-RUN] Progress: 14100/42000 (33.6%) | Speed: 1.55 calls/s | ETA: 299.7 min | Mismatches: 108
+[GEMMA-RUN] Progress: 14150/42000 (33.7%) | Speed: 1.55 calls/s | ETA: 298.9 min | Mismatches: 108
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 14200/42000 (33.8%) | Speed: 1.55 calls/s | ETA: 298.1 min | Mismatches: 109
+[GEMMA-RUN] Progress: 14250/42000 (33.9%) | Speed: 1.56 calls/s | ETA: 297.3 min | Mismatches: 109
+[GEMMA-RUN] Progress: 14300/42000 (34.0%) | Speed: 1.56 calls/s | ETA: 296.5 min | Mismatches: 109
+[GEMMA-RUN] Progress: 14350/42000 (34.2%) | Speed: 1.56 calls/s | ETA: 295.8 min | Mismatches: 109
+[GEMMA-RUN] Progress: 14400/42000 (34.3%) | Speed: 1.56 calls/s | ETA: 295.0 min | Mismatches: 109
+[GEMMA-RUN] Progress: 14450/42000 (34.4%) | Speed: 1.56 calls/s | ETA: 294.2 min | Mismatches: 109
+[GEMMA-RUN] Progress: 14500/42000 (34.5%) | Speed: 1.56 calls/s | ETA: 293.4 min | Mismatches: 109
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 14550/42000 (34.6%) | Speed: 1.56 calls/s | ETA: 292.7 min | Mismatches: 110
+[GEMMA-RUN] Progress: 14600/42000 (34.8%) | Speed: 1.56 calls/s | ETA: 291.9 min | Mismatches: 110
+[GEMMA-RUN] Progress: 14650/42000 (34.9%) | Speed: 1.57 calls/s | ETA: 291.1 min | Mismatches: 110
+[GEMMA-RUN] Progress: 14700/42000 (35.0%) | Speed: 1.57 calls/s | ETA: 290.4 min | Mismatches: 110
+[GEMMA-RUN] Progress: 14750/42000 (35.1%) | Speed: 1.57 calls/s | ETA: 289.6 min | Mismatches: 110
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 14800/42000 (35.2%) | Speed: 1.57 calls/s | ETA: 288.9 min | Mismatches: 112
+[GEMMA-RUN] Progress: 14850/42000 (35.4%) | Speed: 1.57 calls/s | ETA: 288.1 min | Mismatches: 112
+[GEMMA-RUN] Progress: 14900/42000 (35.5%) | Speed: 1.57 calls/s | ETA: 287.4 min | Mismatches: 112
+[GEMMA-RUN] Progress: 14950/42000 (35.6%) | Speed: 1.57 calls/s | ETA: 286.6 min | Mismatches: 112
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 15000/42000 (35.7%) | Speed: 1.57 calls/s | ETA: 285.9 min | Mismatches: 114
+[GEMMA-RUN] Progress: 15050/42000 (35.8%) | Speed: 1.58 calls/s | ETA: 285.1 min | Mismatches: 114
+[GEMMA-RUN] Progress: 15100/42000 (36.0%) | Speed: 1.58 calls/s | ETA: 284.4 min | Mismatches: 114
+[GEMMA-RUN] Progress: 15150/42000 (36.1%) | Speed: 1.58 calls/s | ETA: 283.6 min | Mismatches: 114
+[GEMMA-RUN] Progress: 15200/42000 (36.2%) | Speed: 1.58 calls/s | ETA: 282.9 min | Mismatches: 114
+[GEMMA-RUN] Progress: 15250/42000 (36.3%) | Speed: 1.58 calls/s | ETA: 282.2 min | Mismatches: 114
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 15300/42000 (36.4%) | Speed: 1.58 calls/s | ETA: 281.4 min | Mismatches: 115
+[GEMMA-RUN] Progress: 15350/42000 (36.5%) | Speed: 1.58 calls/s | ETA: 280.7 min | Mismatches: 115
+[GEMMA-RUN] Progress: 15400/42000 (36.7%) | Speed: 1.58 calls/s | ETA: 280.0 min | Mismatches: 115
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 15450/42000 (36.8%) | Speed: 1.58 calls/s | ETA: 279.2 min | Mismatches: 116
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 15500/42000 (36.9%) | Speed: 1.59 calls/s | ETA: 278.5 min | Mismatches: 117
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 15550/42000 (37.0%) | Speed: 1.59 calls/s | ETA: 277.8 min | Mismatches: 118
+[GEMMA-RUN] Progress: 15600/42000 (37.1%) | Speed: 1.59 calls/s | ETA: 277.1 min | Mismatches: 118
+[GEMMA-RUN] Progress: 15650/42000 (37.3%) | Speed: 1.59 calls/s | ETA: 276.4 min | Mismatches: 118
+[GEMMA-RUN] Progress: 15700/42000 (37.4%) | Speed: 1.59 calls/s | ETA: 275.7 min | Mismatches: 118
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 15750/42000 (37.5%) | Speed: 1.59 calls/s | ETA: 275.0 min | Mismatches: 119
+[GEMMA-RUN] Progress: 15800/42000 (37.6%) | Speed: 1.59 calls/s | ETA: 274.3 min | Mismatches: 119
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 15850/42000 (37.7%) | Speed: 1.59 calls/s | ETA: 273.5 min | Mismatches: 122
+[GEMMA-RUN] Progress: 15900/42000 (37.9%) | Speed: 1.59 calls/s | ETA: 272.8 min | Mismatches: 122
+[GEMMA-RUN] Progress: 15950/42000 (38.0%) | Speed: 1.60 calls/s | ETA: 272.1 min | Mismatches: 122
+[GEMMA-RUN] Progress: 16000/42000 (38.1%) | Speed: 1.60 calls/s | ETA: 271.4 min | Mismatches: 122
+[GEMMA-RUN] Progress: 16050/42000 (38.2%) | Speed: 1.60 calls/s | ETA: 270.7 min | Mismatches: 122
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 16100/42000 (38.3%) | Speed: 1.60 calls/s | ETA: 270.1 min | Mismatches: 123
+[GEMMA-RUN] Progress: 16150/42000 (38.5%) | Speed: 1.60 calls/s | ETA: 269.4 min | Mismatches: 123
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 16200/42000 (38.6%) | Speed: 1.60 calls/s | ETA: 268.7 min | Mismatches: 124
+[GEMMA-RUN] Progress: 16250/42000 (38.7%) | Speed: 1.60 calls/s | ETA: 268.0 min | Mismatches: 124
+[GEMMA-RUN] Progress: 16300/42000 (38.8%) | Speed: 1.60 calls/s | ETA: 267.3 min | Mismatches: 124
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 16350/42000 (38.9%) | Speed: 1.60 calls/s | ETA: 266.6 min | Mismatches: 126
+[GEMMA-RUN] Progress: 16400/42000 (39.0%) | Speed: 1.60 calls/s | ETA: 265.9 min | Mismatches: 126
+[GEMMA-RUN] Progress: 16450/42000 (39.2%) | Speed: 1.61 calls/s | ETA: 265.2 min | Mismatches: 126
+[GEMMA-RUN] Progress: 16500/42000 (39.3%) | Speed: 1.61 calls/s | ETA: 264.5 min | Mismatches: 126
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 16550/42000 (39.4%) | Speed: 1.61 calls/s | ETA: 263.9 min | Mismatches: 128
+[GEMMA-RUN] Progress: 16600/42000 (39.5%) | Speed: 1.61 calls/s | ETA: 263.2 min | Mismatches: 128
+[GEMMA-RUN] Progress: 16650/42000 (39.6%) | Speed: 1.61 calls/s | ETA: 262.5 min | Mismatches: 128
+[GEMMA-RUN] Progress: 16700/42000 (39.8%) | Speed: 1.61 calls/s | ETA: 261.8 min | Mismatches: 128
+[GEMMA-RUN] Progress: 16750/42000 (39.9%) | Speed: 1.61 calls/s | ETA: 261.1 min | Mismatches: 128
+[GEMMA-RUN] Progress: 16800/42000 (40.0%) | Speed: 1.61 calls/s | ETA: 260.5 min | Mismatches: 128
+[GEMMA-RUN] Progress: 16850/42000 (40.1%) | Speed: 1.61 calls/s | ETA: 259.8 min | Mismatches: 128
+[GEMMA-RUN] Progress: 16900/42000 (40.2%) | Speed: 1.61 calls/s | ETA: 259.1 min | Mismatches: 128
+[GEMMA-RUN] Progress: 16950/42000 (40.4%) | Speed: 1.62 calls/s | ETA: 258.4 min | Mismatches: 128
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 17000/42000 (40.5%) | Speed: 1.62 calls/s | ETA: 257.8 min | Mismatches: 129
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 17050/42000 (40.6%) | Speed: 1.62 calls/s | ETA: 257.1 min | Mismatches: 130
+[GEMMA-RUN] Progress: 17100/42000 (40.7%) | Speed: 1.62 calls/s | ETA: 256.4 min | Mismatches: 130
+[GEMMA-RUN] Progress: 17150/42000 (40.8%) | Speed: 1.62 calls/s | ETA: 255.7 min | Mismatches: 130
+[GEMMA-RUN] Progress: 17200/42000 (41.0%) | Speed: 1.62 calls/s | ETA: 255.1 min | Mismatches: 130
+[GEMMA-RUN] Progress: 17250/42000 (41.1%) | Speed: 1.62 calls/s | ETA: 254.4 min | Mismatches: 130
+[GEMMA-RUN] Progress: 17300/42000 (41.2%) | Speed: 1.62 calls/s | ETA: 253.7 min | Mismatches: 130
+[GEMMA-RUN] Progress: 17350/42000 (41.3%) | Speed: 1.62 calls/s | ETA: 253.1 min | Mismatches: 130
+[GEMMA-RUN] Progress: 17400/42000 (41.4%) | Speed: 1.62 calls/s | ETA: 252.4 min | Mismatches: 130
+[GEMMA-RUN] Progress: 17450/42000 (41.5%) | Speed: 1.63 calls/s | ETA: 251.8 min | Mismatches: 130
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 17500/42000 (41.7%) | Speed: 1.63 calls/s | ETA: 251.1 min | Mismatches: 131
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 17550/42000 (41.8%) | Speed: 1.63 calls/s | ETA: 250.4 min | Mismatches: 132
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 17600/42000 (41.9%) | Speed: 1.63 calls/s | ETA: 249.8 min | Mismatches: 133
+[GEMMA-RUN] Progress: 17650/42000 (42.0%) | Speed: 1.63 calls/s | ETA: 249.1 min | Mismatches: 133
+[GEMMA-RUN] Progress: 17700/42000 (42.1%) | Speed: 1.63 calls/s | ETA: 248.5 min | Mismatches: 133
+[GEMMA-RUN] Progress: 17750/42000 (42.3%) | Speed: 1.63 calls/s | ETA: 247.8 min | Mismatches: 133
+[GEMMA-RUN] Progress: 17800/42000 (42.4%) | Speed: 1.63 calls/s | ETA: 247.2 min | Mismatches: 133
+[GEMMA-RUN] Progress: 17850/42000 (42.5%) | Speed: 1.63 calls/s | ETA: 246.6 min | Mismatches: 133
+[GEMMA-RUN] Progress: 17900/42000 (42.6%) | Speed: 1.63 calls/s | ETA: 245.9 min | Mismatches: 133
+[GEMMA-RUN] Progress: 17950/42000 (42.7%) | Speed: 1.63 calls/s | ETA: 245.3 min | Mismatches: 133
+[GEMMA-RUN] Progress: 18000/42000 (42.9%) | Speed: 1.64 calls/s | ETA: 244.6 min | Mismatches: 133
+
+[GEMMA-RUN] Starting condition: mono_light__fs20__wrap80__lnon (grid)
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 18050/42000 (43.0%) | Speed: 1.64 calls/s | ETA: 244.0 min | Mismatches: 134
+[GEMMA-RUN] Progress: 18100/42000 (43.1%) | Speed: 1.64 calls/s | ETA: 243.3 min | Mismatches: 134
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 18150/42000 (43.2%) | Speed: 1.64 calls/s | ETA: 242.7 min | Mismatches: 135
+[GEMMA-RUN] Progress: 18200/42000 (43.3%) | Speed: 1.64 calls/s | ETA: 242.0 min | Mismatches: 135
+[GEMMA-RUN] Progress: 18250/42000 (43.5%) | Speed: 1.64 calls/s | ETA: 241.4 min | Mismatches: 135
+[GEMMA-RUN] Progress: 18300/42000 (43.6%) | Speed: 1.64 calls/s | ETA: 240.7 min | Mismatches: 135
+[GEMMA-RUN] Progress: 18350/42000 (43.7%) | Speed: 1.64 calls/s | ETA: 240.1 min | Mismatches: 135
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 18400/42000 (43.8%) | Speed: 1.64 calls/s | ETA: 239.5 min | Mismatches: 136
+[GEMMA-RUN] Progress: 18450/42000 (43.9%) | Speed: 1.64 calls/s | ETA: 238.8 min | Mismatches: 136
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 18500/42000 (44.0%) | Speed: 1.64 calls/s | ETA: 238.2 min | Mismatches: 137
+[GEMMA-RUN] Progress: 18550/42000 (44.2%) | Speed: 1.65 calls/s | ETA: 237.6 min | Mismatches: 137
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 18600/42000 (44.3%) | Speed: 1.65 calls/s | ETA: 236.9 min | Mismatches: 138
+[GEMMA-RUN] Progress: 18650/42000 (44.4%) | Speed: 1.65 calls/s | ETA: 236.3 min | Mismatches: 138
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 18700/42000 (44.5%) | Speed: 1.65 calls/s | ETA: 235.7 min | Mismatches: 139
+[GEMMA-RUN] Progress: 18750/42000 (44.6%) | Speed: 1.65 calls/s | ETA: 235.1 min | Mismatches: 139
+[GEMMA-RUN] Progress: 18800/42000 (44.8%) | Speed: 1.65 calls/s | ETA: 234.4 min | Mismatches: 139
+[GEMMA-RUN] Progress: 18850/42000 (44.9%) | Speed: 1.65 calls/s | ETA: 233.8 min | Mismatches: 139
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 18900/42000 (45.0%) | Speed: 1.65 calls/s | ETA: 233.2 min | Mismatches: 140
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 18950/42000 (45.1%) | Speed: 1.65 calls/s | ETA: 232.6 min | Mismatches: 141
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 19000/42000 (45.2%) | Speed: 1.65 calls/s | ETA: 231.9 min | Mismatches: 142
+[GEMMA-RUN] Progress: 19050/42000 (45.4%) | Speed: 1.65 calls/s | ETA: 231.3 min | Mismatches: 142
+[GEMMA-RUN] Progress: 19100/42000 (45.5%) | Speed: 1.65 calls/s | ETA: 230.7 min | Mismatches: 142
+[GEMMA-RUN] Progress: 19150/42000 (45.6%) | Speed: 1.66 calls/s | ETA: 230.1 min | Mismatches: 142
+[GEMMA-RUN] Progress: 19200/42000 (45.7%) | Speed: 1.66 calls/s | ETA: 229.4 min | Mismatches: 142
+[GEMMA-RUN] Progress: 19250/42000 (45.8%) | Speed: 1.66 calls/s | ETA: 228.8 min | Mismatches: 142
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 19300/42000 (46.0%) | Speed: 1.66 calls/s | ETA: 228.2 min | Mismatches: 143
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 19350/42000 (46.1%) | Speed: 1.66 calls/s | ETA: 227.6 min | Mismatches: 144
+[GEMMA-RUN] Progress: 19400/42000 (46.2%) | Speed: 1.66 calls/s | ETA: 227.0 min | Mismatches: 144
+[GEMMA-RUN] Progress: 19450/42000 (46.3%) | Speed: 1.66 calls/s | ETA: 226.4 min | Mismatches: 144
+[GEMMA-RUN] Progress: 19500/42000 (46.4%) | Speed: 1.66 calls/s | ETA: 225.8 min | Mismatches: 144
+[GEMMA-RUN] Progress: 19550/42000 (46.5%) | Speed: 1.66 calls/s | ETA: 225.2 min | Mismatches: 144
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 19600/42000 (46.7%) | Speed: 1.66 calls/s | ETA: 224.6 min | Mismatches: 146
+[GEMMA-RUN] Progress: 19650/42000 (46.8%) | Speed: 1.66 calls/s | ETA: 224.0 min | Mismatches: 146
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 19700/42000 (46.9%) | Speed: 1.66 calls/s | ETA: 223.4 min | Mismatches: 147
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 19750/42000 (47.0%) | Speed: 1.66 calls/s | ETA: 222.8 min | Mismatches: 148
+[GEMMA-RUN] Progress: 19800/42000 (47.1%) | Speed: 1.67 calls/s | ETA: 222.2 min | Mismatches: 148
+[GEMMA-RUN] Progress: 19850/42000 (47.3%) | Speed: 1.67 calls/s | ETA: 221.6 min | Mismatches: 148
+[GEMMA-RUN] Progress: 19900/42000 (47.4%) | Speed: 1.67 calls/s | ETA: 221.0 min | Mismatches: 148
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 19950/42000 (47.5%) | Speed: 1.67 calls/s | ETA: 220.3 min | Mismatches: 149
+[GEMMA-RUN] Progress: 20000/42000 (47.6%) | Speed: 1.67 calls/s | ETA: 219.8 min | Mismatches: 149
+[GEMMA-RUN] Progress: 20050/42000 (47.7%) | Speed: 1.67 calls/s | ETA: 219.2 min | Mismatches: 149
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 20100/42000 (47.9%) | Speed: 1.67 calls/s | ETA: 218.6 min | Mismatches: 150
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 20150/42000 (48.0%) | Speed: 1.67 calls/s | ETA: 218.0 min | Mismatches: 151
+[GEMMA-RUN] Progress: 20200/42000 (48.1%) | Speed: 1.67 calls/s | ETA: 217.4 min | Mismatches: 151
+[GEMMA-RUN] Progress: 20250/42000 (48.2%) | Speed: 1.67 calls/s | ETA: 216.8 min | Mismatches: 151
+[GEMMA-RUN] Progress: 20300/42000 (48.3%) | Speed: 1.67 calls/s | ETA: 216.2 min | Mismatches: 151
+[GEMMA-RUN] Progress: 20350/42000 (48.5%) | Speed: 1.67 calls/s | ETA: 215.6 min | Mismatches: 151
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 20400/42000 (48.6%) | Speed: 1.67 calls/s | ETA: 215.0 min | Mismatches: 152
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 20450/42000 (48.7%) | Speed: 1.67 calls/s | ETA: 214.4 min | Mismatches: 153
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 20500/42000 (48.8%) | Speed: 1.68 calls/s | ETA: 213.8 min | Mismatches: 154
+[GEMMA-RUN] Progress: 20550/42000 (48.9%) | Speed: 1.68 calls/s | ETA: 213.3 min | Mismatches: 154
+[GEMMA-RUN] Progress: 20600/42000 (49.0%) | Speed: 1.68 calls/s | ETA: 212.7 min | Mismatches: 154
+[GEMMA-RUN] Progress: 20650/42000 (49.2%) | Speed: 1.68 calls/s | ETA: 212.1 min | Mismatches: 154
+[GEMMA-RUN] Progress: 20700/42000 (49.3%) | Speed: 1.68 calls/s | ETA: 211.5 min | Mismatches: 154
+[GEMMA-RUN] Progress: 20750/42000 (49.4%) | Speed: 1.68 calls/s | ETA: 210.9 min | Mismatches: 154
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 20800/42000 (49.5%) | Speed: 1.68 calls/s | ETA: 210.3 min | Mismatches: 155
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 20850/42000 (49.6%) | Speed: 1.68 calls/s | ETA: 209.8 min | Mismatches: 157
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 20900/42000 (49.8%) | Speed: 1.68 calls/s | ETA: 209.2 min | Mismatches: 158
+[GEMMA-RUN] Progress: 20950/42000 (49.9%) | Speed: 1.68 calls/s | ETA: 208.6 min | Mismatches: 158
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 21000/42000 (50.0%) | Speed: 1.68 calls/s | ETA: 208.0 min | Mismatches: 159
+[GEMMA-RUN] Progress: 21050/42000 (50.1%) | Speed: 1.68 calls/s | ETA: 207.5 min | Mismatches: 159
+[GEMMA-RUN] Progress: 21100/42000 (50.2%) | Speed: 1.68 calls/s | ETA: 206.9 min | Mismatches: 159
+[GEMMA-RUN] Progress: 21150/42000 (50.4%) | Speed: 1.68 calls/s | ETA: 206.3 min | Mismatches: 159
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 21200/42000 (50.5%) | Speed: 1.68 calls/s | ETA: 205.7 min | Mismatches: 161
+[GEMMA-RUN] Progress: 21250/42000 (50.6%) | Speed: 1.69 calls/s | ETA: 205.2 min | Mismatches: 161
+[GEMMA-RUN] Progress: 21300/42000 (50.7%) | Speed: 1.69 calls/s | ETA: 204.6 min | Mismatches: 161
+[GEMMA-RUN] Progress: 21350/42000 (50.8%) | Speed: 1.69 calls/s | ETA: 204.0 min | Mismatches: 161
+[GEMMA-RUN] Progress: 21400/42000 (51.0%) | Speed: 1.69 calls/s | ETA: 203.5 min | Mismatches: 161
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 21450/42000 (51.1%) | Speed: 1.69 calls/s | ETA: 202.9 min | Mismatches: 162
+[GEMMA-RUN] Progress: 21500/42000 (51.2%) | Speed: 1.69 calls/s | ETA: 202.3 min | Mismatches: 162
+[GEMMA-RUN] Progress: 21550/42000 (51.3%) | Speed: 1.69 calls/s | ETA: 201.8 min | Mismatches: 162
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 21600/42000 (51.4%) | Speed: 1.69 calls/s | ETA: 201.2 min | Mismatches: 163
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 21650/42000 (51.5%) | Speed: 1.69 calls/s | ETA: 200.6 min | Mismatches: 164
+[GEMMA-RUN] Progress: 21700/42000 (51.7%) | Speed: 1.69 calls/s | ETA: 200.1 min | Mismatches: 164
+[GEMMA-RUN] Progress: 21750/42000 (51.8%) | Speed: 1.69 calls/s | ETA: 199.5 min | Mismatches: 164
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 21800/42000 (51.9%) | Speed: 1.69 calls/s | ETA: 198.9 min | Mismatches: 165
+[GEMMA-RUN] Progress: 21850/42000 (52.0%) | Speed: 1.69 calls/s | ETA: 198.4 min | Mismatches: 165
+[GEMMA-RUN] Progress: 21900/42000 (52.1%) | Speed: 1.69 calls/s | ETA: 197.8 min | Mismatches: 165
+[GEMMA-RUN] Progress: 21950/42000 (52.3%) | Speed: 1.69 calls/s | ETA: 197.2 min | Mismatches: 165
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 22000/42000 (52.4%) | Speed: 1.70 calls/s | ETA: 196.6 min | Mismatches: 166
+[GEMMA-RUN] Progress: 22050/42000 (52.5%) | Speed: 1.70 calls/s | ETA: 196.1 min | Mismatches: 166
+[GEMMA-RUN] Progress: 22100/42000 (52.6%) | Speed: 1.70 calls/s | ETA: 195.5 min | Mismatches: 166
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 22150/42000 (52.7%) | Speed: 1.70 calls/s | ETA: 195.0 min | Mismatches: 167
+[GEMMA-RUN] Progress: 22200/42000 (52.9%) | Speed: 1.70 calls/s | ETA: 194.4 min | Mismatches: 167
+[GEMMA-RUN] Progress: 22250/42000 (53.0%) | Speed: 1.70 calls/s | ETA: 193.8 min | Mismatches: 167
+[GEMMA-RUN] Progress: 22300/42000 (53.1%) | Speed: 1.70 calls/s | ETA: 193.3 min | Mismatches: 167
+[GEMMA-RUN] Progress: 22350/42000 (53.2%) | Speed: 1.70 calls/s | ETA: 192.7 min | Mismatches: 167
+[GEMMA-RUN] Progress: 22400/42000 (53.3%) | Speed: 1.70 calls/s | ETA: 192.2 min | Mismatches: 167
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 22450/42000 (53.5%) | Speed: 1.70 calls/s | ETA: 191.6 min | Mismatches: 168
+[GEMMA-RUN] Progress: 22500/42000 (53.6%) | Speed: 1.70 calls/s | ETA: 191.0 min | Mismatches: 168
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 22550/42000 (53.7%) | Speed: 1.70 calls/s | ETA: 190.5 min | Mismatches: 169
+[GEMMA-RUN] Progress: 22600/42000 (53.8%) | Speed: 1.70 calls/s | ETA: 189.9 min | Mismatches: 169
+[GEMMA-RUN] Progress: 22650/42000 (53.9%) | Speed: 1.70 calls/s | ETA: 189.4 min | Mismatches: 169
+[GEMMA-RUN] Progress: 22700/42000 (54.0%) | Speed: 1.70 calls/s | ETA: 188.8 min | Mismatches: 169
+[GEMMA-RUN] Progress: 22750/42000 (54.2%) | Speed: 1.70 calls/s | ETA: 188.3 min | Mismatches: 169
+[GEMMA-RUN] Progress: 22800/42000 (54.3%) | Speed: 1.70 calls/s | ETA: 187.7 min | Mismatches: 169
+[GEMMA-RUN] Progress: 22850/42000 (54.4%) | Speed: 1.71 calls/s | ETA: 187.1 min | Mismatches: 169
+[GEMMA-RUN] Progress: 22900/42000 (54.5%) | Speed: 1.71 calls/s | ETA: 186.6 min | Mismatches: 169
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 22950/42000 (54.6%) | Speed: 1.71 calls/s | ETA: 186.0 min | Mismatches: 170
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 23000/42000 (54.8%) | Speed: 1.71 calls/s | ETA: 185.5 min | Mismatches: 171
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 23050/42000 (54.9%) | Speed: 1.71 calls/s | ETA: 184.9 min | Mismatches: 173
+[GEMMA-RUN] Progress: 23100/42000 (55.0%) | Speed: 1.71 calls/s | ETA: 184.4 min | Mismatches: 173
+[GEMMA-RUN] Progress: 23150/42000 (55.1%) | Speed: 1.71 calls/s | ETA: 183.8 min | Mismatches: 173
+[GEMMA-RUN] Progress: 23200/42000 (55.2%) | Speed: 1.71 calls/s | ETA: 183.3 min | Mismatches: 173
+[GEMMA-RUN] Progress: 23250/42000 (55.4%) | Speed: 1.71 calls/s | ETA: 182.7 min | Mismatches: 173
+[GEMMA-RUN] Progress: 23300/42000 (55.5%) | Speed: 1.71 calls/s | ETA: 182.2 min | Mismatches: 173
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 23350/42000 (55.6%) | Speed: 1.71 calls/s | ETA: 181.6 min | Mismatches: 174
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 23400/42000 (55.7%) | Speed: 1.71 calls/s | ETA: 181.1 min | Mismatches: 175
+[GEMMA-RUN] Progress: 23450/42000 (55.8%) | Speed: 1.71 calls/s | ETA: 180.5 min | Mismatches: 175
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 23500/42000 (56.0%) | Speed: 1.71 calls/s | ETA: 180.0 min | Mismatches: 176
+[GEMMA-RUN] Progress: 23550/42000 (56.1%) | Speed: 1.71 calls/s | ETA: 179.4 min | Mismatches: 176
+[GEMMA-RUN] Progress: 23600/42000 (56.2%) | Speed: 1.71 calls/s | ETA: 178.9 min | Mismatches: 176
+[GEMMA-RUN] Progress: 23650/42000 (56.3%) | Speed: 1.71 calls/s | ETA: 178.4 min | Mismatches: 176
+[GEMMA-RUN] Progress: 23700/42000 (56.4%) | Speed: 1.72 calls/s | ETA: 177.8 min | Mismatches: 176
+[GEMMA-RUN] Progress: 23750/42000 (56.5%) | Speed: 1.72 calls/s | ETA: 177.3 min | Mismatches: 176
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 23800/42000 (56.7%) | Speed: 1.72 calls/s | ETA: 176.7 min | Mismatches: 177
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 23850/42000 (56.8%) | Speed: 1.72 calls/s | ETA: 176.2 min | Mismatches: 178
+[GEMMA-RUN] Progress: 23900/42000 (56.9%) | Speed: 1.72 calls/s | ETA: 175.6 min | Mismatches: 178
+[GEMMA-RUN] Progress: 23950/42000 (57.0%) | Speed: 1.72 calls/s | ETA: 175.1 min | Mismatches: 178
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 24000/42000 (57.1%) | Speed: 1.72 calls/s | ETA: 174.6 min | Mismatches: 179
+
+[GEMMA-RUN] Starting condition: no_indent (perturbation)
+[GEMMA-RUN] Progress: 24050/42000 (57.3%) | Speed: 1.72 calls/s | ETA: 174.0 min | Mismatches: 179
+[GEMMA-RUN] Progress: 24100/42000 (57.4%) | Speed: 1.72 calls/s | ETA: 173.5 min | Mismatches: 179
+[GEMMA-RUN] Progress: 24150/42000 (57.5%) | Speed: 1.72 calls/s | ETA: 172.9 min | Mismatches: 179
+[GEMMA-RUN] Progress: 24200/42000 (57.6%) | Speed: 1.72 calls/s | ETA: 172.4 min | Mismatches: 179
+[GEMMA-RUN] Progress: 24250/42000 (57.7%) | Speed: 1.72 calls/s | ETA: 171.9 min | Mismatches: 179
+[GEMMA-RUN] Progress: 24300/42000 (57.9%) | Speed: 1.72 calls/s | ETA: 171.3 min | Mismatches: 179
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 24350/42000 (58.0%) | Speed: 1.72 calls/s | ETA: 170.8 min | Mismatches: 180
+[GEMMA-RUN] Progress: 24400/42000 (58.1%) | Speed: 1.72 calls/s | ETA: 170.2 min | Mismatches: 180
+[GEMMA-RUN] Progress: 24450/42000 (58.2%) | Speed: 1.72 calls/s | ETA: 169.7 min | Mismatches: 180
+[GEMMA-RUN] Progress: 24500/42000 (58.3%) | Speed: 1.72 calls/s | ETA: 169.2 min | Mismatches: 180
+[GEMMA-RUN] Progress: 24550/42000 (58.5%) | Speed: 1.72 calls/s | ETA: 168.6 min | Mismatches: 180
+[GEMMA-RUN] Progress: 24600/42000 (58.6%) | Speed: 1.73 calls/s | ETA: 168.1 min | Mismatches: 180
+[GEMMA-RUN] Progress: 24650/42000 (58.7%) | Speed: 1.73 calls/s | ETA: 167.6 min | Mismatches: 180
+[GEMMA-RUN] Progress: 24700/42000 (58.8%) | Speed: 1.73 calls/s | ETA: 167.0 min | Mismatches: 180
+[GEMMA-RUN] Progress: 24750/42000 (58.9%) | Speed: 1.73 calls/s | ETA: 166.5 min | Mismatches: 180
+[GEMMA-RUN] Progress: 24800/42000 (59.0%) | Speed: 1.73 calls/s | ETA: 166.0 min | Mismatches: 180
+[GEMMA-RUN] Progress: 24850/42000 (59.2%) | Speed: 1.73 calls/s | ETA: 165.4 min | Mismatches: 180
+[GEMMA-RUN] Progress: 24900/42000 (59.3%) | Speed: 1.73 calls/s | ETA: 164.9 min | Mismatches: 180
+[GEMMA-RUN] Progress: 24950/42000 (59.4%) | Speed: 1.73 calls/s | ETA: 164.4 min | Mismatches: 180
+[GEMMA-RUN] Progress: 25000/42000 (59.5%) | Speed: 1.73 calls/s | ETA: 163.8 min | Mismatches: 180
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 25050/42000 (59.6%) | Speed: 1.73 calls/s | ETA: 163.3 min | Mismatches: 181
+[GEMMA-RUN] Progress: 25100/42000 (59.8%) | Speed: 1.73 calls/s | ETA: 162.8 min | Mismatches: 181
+[GEMMA-RUN] Progress: 25150/42000 (59.9%) | Speed: 1.73 calls/s | ETA: 162.2 min | Mismatches: 181
+[GEMMA-RUN] Progress: 25200/42000 (60.0%) | Speed: 1.73 calls/s | ETA: 161.7 min | Mismatches: 181
+[GEMMA-RUN] Progress: 25250/42000 (60.1%) | Speed: 1.73 calls/s | ETA: 161.2 min | Mismatches: 181
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 25300/42000 (60.2%) | Speed: 1.73 calls/s | ETA: 160.6 min | Mismatches: 183
+[GEMMA-RUN] Progress: 25350/42000 (60.4%) | Speed: 1.73 calls/s | ETA: 160.1 min | Mismatches: 183
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 25400/42000 (60.5%) | Speed: 1.73 calls/s | ETA: 159.6 min | Mismatches: 184
+[GEMMA-RUN] Progress: 25450/42000 (60.6%) | Speed: 1.73 calls/s | ETA: 159.1 min | Mismatches: 184
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 25500/42000 (60.7%) | Speed: 1.73 calls/s | ETA: 158.5 min | Mismatches: 185
+[GEMMA-RUN] Progress: 25550/42000 (60.8%) | Speed: 1.74 calls/s | ETA: 158.0 min | Mismatches: 185
+[GEMMA-RUN] Progress: 25600/42000 (61.0%) | Speed: 1.74 calls/s | ETA: 157.5 min | Mismatches: 185
+[GEMMA-RUN] Progress: 25650/42000 (61.1%) | Speed: 1.74 calls/s | ETA: 156.9 min | Mismatches: 185
+[GEMMA-RUN] Progress: 25700/42000 (61.2%) | Speed: 1.74 calls/s | ETA: 156.4 min | Mismatches: 185
+[GEMMA-RUN] Progress: 25750/42000 (61.3%) | Speed: 1.74 calls/s | ETA: 155.9 min | Mismatches: 185
+[GEMMA-RUN] Progress: 25800/42000 (61.4%) | Speed: 1.74 calls/s | ETA: 155.4 min | Mismatches: 185
+[GEMMA-RUN] Progress: 25850/42000 (61.5%) | Speed: 1.74 calls/s | ETA: 154.8 min | Mismatches: 185
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 25900/42000 (61.7%) | Speed: 1.74 calls/s | ETA: 154.3 min | Mismatches: 186
+[GEMMA-RUN] Progress: 25950/42000 (61.8%) | Speed: 1.74 calls/s | ETA: 153.8 min | Mismatches: 186
+[GEMMA-RUN] Progress: 26000/42000 (61.9%) | Speed: 1.74 calls/s | ETA: 153.3 min | Mismatches: 186
+[GEMMA-RUN] Progress: 26050/42000 (62.0%) | Speed: 1.74 calls/s | ETA: 152.8 min | Mismatches: 186
+[GEMMA-RUN] Progress: 26100/42000 (62.1%) | Speed: 1.74 calls/s | ETA: 152.2 min | Mismatches: 186
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 26150/42000 (62.3%) | Speed: 1.74 calls/s | ETA: 151.7 min | Mismatches: 187
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 26200/42000 (62.4%) | Speed: 1.74 calls/s | ETA: 151.2 min | Mismatches: 188
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 26250/42000 (62.5%) | Speed: 1.74 calls/s | ETA: 150.7 min | Mismatches: 189
+[GEMMA-RUN] Progress: 26300/42000 (62.6%) | Speed: 1.74 calls/s | ETA: 150.2 min | Mismatches: 189
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 26350/42000 (62.7%) | Speed: 1.74 calls/s | ETA: 149.6 min | Mismatches: 190
+[GEMMA-RUN] Progress: 26400/42000 (62.9%) | Speed: 1.74 calls/s | ETA: 149.1 min | Mismatches: 190
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 26450/42000 (63.0%) | Speed: 1.74 calls/s | ETA: 148.6 min | Mismatches: 191
+[GEMMA-RUN] Progress: 26500/42000 (63.1%) | Speed: 1.74 calls/s | ETA: 148.1 min | Mismatches: 191
+[GEMMA-RUN] Progress: 26550/42000 (63.2%) | Speed: 1.75 calls/s | ETA: 147.6 min | Mismatches: 191
+[GEMMA-RUN] Progress: 26600/42000 (63.3%) | Speed: 1.75 calls/s | ETA: 147.0 min | Mismatches: 191
+[GEMMA-RUN] Progress: 26650/42000 (63.5%) | Speed: 1.75 calls/s | ETA: 146.5 min | Mismatches: 191
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 26700/42000 (63.6%) | Speed: 1.75 calls/s | ETA: 146.0 min | Mismatches: 193
+[GEMMA-RUN] Progress: 26750/42000 (63.7%) | Speed: 1.75 calls/s | ETA: 145.5 min | Mismatches: 193
+[GEMMA-RUN] Progress: 26800/42000 (63.8%) | Speed: 1.75 calls/s | ETA: 145.0 min | Mismatches: 193
+[GEMMA-RUN] Progress: 26850/42000 (63.9%) | Speed: 1.75 calls/s | ETA: 144.5 min | Mismatches: 193
+[GEMMA-RUN] Progress: 26900/42000 (64.0%) | Speed: 1.75 calls/s | ETA: 144.0 min | Mismatches: 193
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 26950/42000 (64.2%) | Speed: 1.75 calls/s | ETA: 143.5 min | Mismatches: 194
+[GEMMA-RUN] Progress: 27000/42000 (64.3%) | Speed: 1.75 calls/s | ETA: 142.9 min | Mismatches: 194
+[GEMMA-RUN] Progress: 27050/42000 (64.4%) | Speed: 1.75 calls/s | ETA: 142.4 min | Mismatches: 194
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 27100/42000 (64.5%) | Speed: 1.75 calls/s | ETA: 141.9 min | Mismatches: 195
+[GEMMA-RUN] Progress: 27150/42000 (64.6%) | Speed: 1.75 calls/s | ETA: 141.4 min | Mismatches: 195
+[GEMMA-RUN] Progress: 27200/42000 (64.8%) | Speed: 1.75 calls/s | ETA: 140.9 min | Mismatches: 195
+[GEMMA-RUN] Progress: 27250/42000 (64.9%) | Speed: 1.75 calls/s | ETA: 140.4 min | Mismatches: 195
+[GEMMA-RUN] Progress: 27300/42000 (65.0%) | Speed: 1.75 calls/s | ETA: 139.9 min | Mismatches: 195
+[GEMMA-RUN] Progress: 27350/42000 (65.1%) | Speed: 1.75 calls/s | ETA: 139.3 min | Mismatches: 195
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 27400/42000 (65.2%) | Speed: 1.75 calls/s | ETA: 138.8 min | Mismatches: 196
+[GEMMA-RUN] Progress: 27450/42000 (65.4%) | Speed: 1.75 calls/s | ETA: 138.3 min | Mismatches: 196
+[GEMMA-RUN] Progress: 27500/42000 (65.5%) | Speed: 1.75 calls/s | ETA: 137.8 min | Mismatches: 196
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 27550/42000 (65.6%) | Speed: 1.75 calls/s | ETA: 137.3 min | Mismatches: 197
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 27600/42000 (65.7%) | Speed: 1.75 calls/s | ETA: 136.8 min | Mismatches: 198
+[GEMMA-RUN] Progress: 27650/42000 (65.8%) | Speed: 1.75 calls/s | ETA: 136.3 min | Mismatches: 198
+[GEMMA-RUN] Progress: 27700/42000 (66.0%) | Speed: 1.76 calls/s | ETA: 135.8 min | Mismatches: 198
+[GEMMA-RUN] Progress: 27750/42000 (66.1%) | Speed: 1.76 calls/s | ETA: 135.3 min | Mismatches: 198
+[GEMMA-RUN] Progress: 27800/42000 (66.2%) | Speed: 1.76 calls/s | ETA: 134.8 min | Mismatches: 198
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 27850/42000 (66.3%) | Speed: 1.76 calls/s | ETA: 134.2 min | Mismatches: 199
+[GEMMA-RUN] Progress: 27900/42000 (66.4%) | Speed: 1.76 calls/s | ETA: 133.7 min | Mismatches: 199
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 27950/42000 (66.5%) | Speed: 1.76 calls/s | ETA: 133.2 min | Mismatches: 200
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 28000/42000 (66.7%) | Speed: 1.76 calls/s | ETA: 132.7 min | Mismatches: 201
+[GEMMA-RUN] Progress: 28050/42000 (66.8%) | Speed: 1.76 calls/s | ETA: 132.2 min | Mismatches: 201
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 28100/42000 (66.9%) | Speed: 1.76 calls/s | ETA: 131.7 min | Mismatches: 202
+[GEMMA-RUN] Progress: 28150/42000 (67.0%) | Speed: 1.76 calls/s | ETA: 131.2 min | Mismatches: 202
+[GEMMA-RUN] Progress: 28200/42000 (67.1%) | Speed: 1.76 calls/s | ETA: 130.7 min | Mismatches: 202
+[GEMMA-RUN] Progress: 28250/42000 (67.3%) | Speed: 1.76 calls/s | ETA: 130.2 min | Mismatches: 202
+[GEMMA-RUN] Progress: 28300/42000 (67.4%) | Speed: 1.76 calls/s | ETA: 129.7 min | Mismatches: 202
+[GEMMA-RUN] Progress: 28350/42000 (67.5%) | Speed: 1.76 calls/s | ETA: 129.2 min | Mismatches: 202
+[GEMMA-RUN] Progress: 28400/42000 (67.6%) | Speed: 1.76 calls/s | ETA: 128.7 min | Mismatches: 202
+[GEMMA-RUN] Progress: 28450/42000 (67.7%) | Speed: 1.76 calls/s | ETA: 128.2 min | Mismatches: 202
+[GEMMA-RUN] Progress: 28500/42000 (67.9%) | Speed: 1.76 calls/s | ETA: 127.7 min | Mismatches: 202
+[GEMMA-RUN] Progress: 28550/42000 (68.0%) | Speed: 1.76 calls/s | ETA: 127.2 min | Mismatches: 202
+[GEMMA-RUN] Progress: 28600/42000 (68.1%) | Speed: 1.76 calls/s | ETA: 126.7 min | Mismatches: 202
+[GEMMA-RUN] Progress: 28650/42000 (68.2%) | Speed: 1.76 calls/s | ETA: 126.2 min | Mismatches: 202
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 28700/42000 (68.3%) | Speed: 1.76 calls/s | ETA: 125.7 min | Mismatches: 203
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 28750/42000 (68.5%) | Speed: 1.76 calls/s | ETA: 125.2 min | Mismatches: 204
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 28800/42000 (68.6%) | Speed: 1.76 calls/s | ETA: 124.7 min | Mismatches: 205
+[GEMMA-RUN] Progress: 28850/42000 (68.7%) | Speed: 1.76 calls/s | ETA: 124.2 min | Mismatches: 205
+[GEMMA-RUN] Progress: 28900/42000 (68.8%) | Speed: 1.76 calls/s | ETA: 123.7 min | Mismatches: 205
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 28950/42000 (68.9%) | Speed: 1.76 calls/s | ETA: 123.3 min | Mismatches: 206
+[GEMMA-RUN] Progress: 29000/42000 (69.0%) | Speed: 1.76 calls/s | ETA: 122.8 min | Mismatches: 206
+[GEMMA-RUN] Progress: 29050/42000 (69.2%) | Speed: 1.77 calls/s | ETA: 122.3 min | Mismatches: 206
+[GEMMA-RUN] Progress: 29100/42000 (69.3%) | Speed: 1.77 calls/s | ETA: 121.8 min | Mismatches: 206
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 29150/42000 (69.4%) | Speed: 1.77 calls/s | ETA: 121.3 min | Mismatches: 207
+[GEMMA-RUN] Progress: 29200/42000 (69.5%) | Speed: 1.77 calls/s | ETA: 120.8 min | Mismatches: 207
+[GEMMA-RUN] Progress: 29250/42000 (69.6%) | Speed: 1.77 calls/s | ETA: 120.3 min | Mismatches: 207
+[GEMMA-RUN] Progress: 29300/42000 (69.8%) | Speed: 1.77 calls/s | ETA: 119.8 min | Mismatches: 207
+[GEMMA-RUN] Progress: 29350/42000 (69.9%) | Speed: 1.77 calls/s | ETA: 119.3 min | Mismatches: 207
+[GEMMA-RUN] Progress: 29400/42000 (70.0%) | Speed: 1.77 calls/s | ETA: 118.9 min | Mismatches: 207
+[GEMMA-RUN] Progress: 29450/42000 (70.1%) | Speed: 1.77 calls/s | ETA: 118.4 min | Mismatches: 207
+[GEMMA-RUN] Progress: 29500/42000 (70.2%) | Speed: 1.77 calls/s | ETA: 117.9 min | Mismatches: 207
+[GEMMA-RUN] Progress: 29550/42000 (70.4%) | Speed: 1.77 calls/s | ETA: 117.4 min | Mismatches: 207
+[GEMMA-RUN] Progress: 29600/42000 (70.5%) | Speed: 1.77 calls/s | ETA: 116.9 min | Mismatches: 207
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 29650/42000 (70.6%) | Speed: 1.77 calls/s | ETA: 116.4 min | Mismatches: 208
+[GEMMA-RUN] Progress: 29700/42000 (70.7%) | Speed: 1.77 calls/s | ETA: 115.9 min | Mismatches: 208
+[GEMMA-RUN] Progress: 29750/42000 (70.8%) | Speed: 1.77 calls/s | ETA: 115.4 min | Mismatches: 208
+[GEMMA-RUN] Progress: 29800/42000 (71.0%) | Speed: 1.77 calls/s | ETA: 114.9 min | Mismatches: 208
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 29850/42000 (71.1%) | Speed: 1.77 calls/s | ETA: 114.5 min | Mismatches: 210
+[GEMMA-RUN] Progress: 29900/42000 (71.2%) | Speed: 1.77 calls/s | ETA: 114.0 min | Mismatches: 210
+[GEMMA-RUN] Progress: 29950/42000 (71.3%) | Speed: 1.77 calls/s | ETA: 113.5 min | Mismatches: 210
+[GEMMA-RUN] Progress: 30000/42000 (71.4%) | Speed: 1.77 calls/s | ETA: 113.0 min | Mismatches: 210
+
+[GEMMA-RUN] Starting condition: no_blank_lines (perturbation)
+[GEMMA-RUN] Progress: 30050/42000 (71.5%) | Speed: 1.77 calls/s | ETA: 112.5 min | Mismatches: 210
+[GEMMA-RUN] Progress: 30100/42000 (71.7%) | Speed: 1.77 calls/s | ETA: 112.0 min | Mismatches: 210
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 30150/42000 (71.8%) | Speed: 1.77 calls/s | ETA: 111.5 min | Mismatches: 211
+[GEMMA-RUN] Progress: 30200/42000 (71.9%) | Speed: 1.77 calls/s | ETA: 111.0 min | Mismatches: 211
+[GEMMA-RUN] Progress: 30250/42000 (72.0%) | Speed: 1.77 calls/s | ETA: 110.5 min | Mismatches: 211
+[GEMMA-RUN] Progress: 30300/42000 (72.1%) | Speed: 1.77 calls/s | ETA: 110.0 min | Mismatches: 211
+[GEMMA-RUN] Progress: 30350/42000 (72.3%) | Speed: 1.77 calls/s | ETA: 109.5 min | Mismatches: 211
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 30400/42000 (72.4%) | Speed: 1.77 calls/s | ETA: 109.0 min | Mismatches: 213
+[GEMMA-RUN] Progress: 30450/42000 (72.5%) | Speed: 1.77 calls/s | ETA: 108.6 min | Mismatches: 213
+[GEMMA-RUN] Progress: 30500/42000 (72.6%) | Speed: 1.77 calls/s | ETA: 108.1 min | Mismatches: 213
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 30550/42000 (72.7%) | Speed: 1.77 calls/s | ETA: 107.6 min | Mismatches: 214
+[GEMMA-RUN] Progress: 30600/42000 (72.9%) | Speed: 1.77 calls/s | ETA: 107.1 min | Mismatches: 214
+[GEMMA-RUN] Progress: 30650/42000 (73.0%) | Speed: 1.77 calls/s | ETA: 106.6 min | Mismatches: 214
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 30700/42000 (73.1%) | Speed: 1.78 calls/s | ETA: 106.1 min | Mismatches: 216
+[GEMMA-RUN] Progress: 30750/42000 (73.2%) | Speed: 1.78 calls/s | ETA: 105.6 min | Mismatches: 216
+[GEMMA-RUN] Progress: 30800/42000 (73.3%) | Speed: 1.78 calls/s | ETA: 105.2 min | Mismatches: 216
+[GEMMA-RUN] Progress: 30850/42000 (73.5%) | Speed: 1.77 calls/s | ETA: 104.9 min | Mismatches: 216
+[GEMMA-RUN] Progress: 30900/42000 (73.6%) | Speed: 1.77 calls/s | ETA: 104.7 min | Mismatches: 216
+[GEMMA-RUN] Progress: 30950/42000 (73.7%) | Speed: 1.76 calls/s | ETA: 104.5 min | Mismatches: 216
+[GEMMA-RUN] Progress: 31000/42000 (73.8%) | Speed: 1.76 calls/s | ETA: 104.3 min | Mismatches: 216
+[GEMMA-RUN] Progress: 31050/42000 (73.9%) | Speed: 1.75 calls/s | ETA: 104.1 min | Mismatches: 216
+[GEMMA-RUN] Progress: 31100/42000 (74.0%) | Speed: 1.75 calls/s | ETA: 103.9 min | Mismatches: 216
+[GEMMA-RUN] Progress: 31150/42000 (74.2%) | Speed: 1.74 calls/s | ETA: 103.7 min | Mismatches: 216
+[GEMMA-RUN] Progress: 31200/42000 (74.3%) | Speed: 1.74 calls/s | ETA: 103.5 min | Mismatches: 216
+[GEMMA-RUN] Progress: 31250/42000 (74.4%) | Speed: 1.74 calls/s | ETA: 103.2 min | Mismatches: 216
+[GEMMA-RUN] Progress: 31300/42000 (74.5%) | Speed: 1.73 calls/s | ETA: 102.8 min | Mismatches: 216
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 31350/42000 (74.6%) | Speed: 1.73 calls/s | ETA: 102.5 min | Mismatches: 217
+[GEMMA-RUN] Progress: 31400/42000 (74.8%) | Speed: 1.73 calls/s | ETA: 102.1 min | Mismatches: 217
+[GEMMA-RUN] Progress: 31450/42000 (74.9%) | Speed: 1.73 calls/s | ETA: 101.8 min | Mismatches: 217
+[GEMMA-RUN] Progress: 31500/42000 (75.0%) | Speed: 1.73 calls/s | ETA: 101.4 min | Mismatches: 217
+[GEMMA-RUN] Progress: 31550/42000 (75.1%) | Speed: 1.72 calls/s | ETA: 101.0 min | Mismatches: 217
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 31600/42000 (75.2%) | Speed: 1.72 calls/s | ETA: 100.6 min | Mismatches: 218
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 31650/42000 (75.4%) | Speed: 1.72 calls/s | ETA: 100.2 min | Mismatches: 219
+[GEMMA-RUN] Progress: 31700/42000 (75.5%) | Speed: 1.72 calls/s | ETA: 99.8 min | Mismatches: 219
+[GEMMA-RUN] Progress: 31750/42000 (75.6%) | Speed: 1.72 calls/s | ETA: 99.4 min | Mismatches: 219
+[GEMMA-RUN] Progress: 31800/42000 (75.7%) | Speed: 1.72 calls/s | ETA: 99.0 min | Mismatches: 219
+[GEMMA-RUN] Progress: 31850/42000 (75.8%) | Speed: 1.72 calls/s | ETA: 98.6 min | Mismatches: 219
+[GEMMA-RUN] Progress: 31900/42000 (76.0%) | Speed: 1.71 calls/s | ETA: 98.2 min | Mismatches: 219
+[GEMMA-RUN] Progress: 31950/42000 (76.1%) | Speed: 1.71 calls/s | ETA: 97.8 min | Mismatches: 219
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 32000/42000 (76.2%) | Speed: 1.71 calls/s | ETA: 97.4 min | Mismatches: 220
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 32050/42000 (76.3%) | Speed: 1.71 calls/s | ETA: 97.0 min | Mismatches: 221
+[GEMMA-RUN] Progress: 32100/42000 (76.4%) | Speed: 1.71 calls/s | ETA: 96.6 min | Mismatches: 221
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 32150/42000 (76.5%) | Speed: 1.71 calls/s | ETA: 96.2 min | Mismatches: 222
+[GEMMA-RUN] Progress: 32200/42000 (76.7%) | Speed: 1.71 calls/s | ETA: 95.7 min | Mismatches: 222
+[GEMMA-RUN] Progress: 32250/42000 (76.8%) | Speed: 1.71 calls/s | ETA: 95.3 min | Mismatches: 222
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 32300/42000 (76.9%) | Speed: 1.70 calls/s | ETA: 94.9 min | Mismatches: 223
+[GEMMA-RUN] Progress: 32350/42000 (77.0%) | Speed: 1.70 calls/s | ETA: 94.5 min | Mismatches: 223
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 32400/42000 (77.1%) | Speed: 1.70 calls/s | ETA: 94.0 min | Mismatches: 224
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 32450/42000 (77.3%) | Speed: 1.70 calls/s | ETA: 93.6 min | Mismatches: 225
+[GEMMA-RUN] Progress: 32500/42000 (77.4%) | Speed: 1.70 calls/s | ETA: 93.2 min | Mismatches: 225
+[GEMMA-RUN] Progress: 32550/42000 (77.5%) | Speed: 1.70 calls/s | ETA: 92.7 min | Mismatches: 225
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 32600/42000 (77.6%) | Speed: 1.70 calls/s | ETA: 92.3 min | Mismatches: 226
+[GEMMA-RUN] Progress: 32650/42000 (77.7%) | Speed: 1.70 calls/s | ETA: 91.8 min | Mismatches: 226
+[GEMMA-RUN] Progress: 32700/42000 (77.9%) | Speed: 1.70 calls/s | ETA: 91.4 min | Mismatches: 226
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 32750/42000 (78.0%) | Speed: 1.70 calls/s | ETA: 90.9 min | Mismatches: 227
+[GEMMA-RUN] Progress: 32800/42000 (78.1%) | Speed: 1.69 calls/s | ETA: 90.5 min | Mismatches: 227
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 32850/42000 (78.2%) | Speed: 1.69 calls/s | ETA: 90.1 min | Mismatches: 228
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 32900/42000 (78.3%) | Speed: 1.69 calls/s | ETA: 89.7 min | Mismatches: 229
+[GEMMA-RUN] Progress: 32950/42000 (78.5%) | Speed: 1.69 calls/s | ETA: 89.2 min | Mismatches: 229
+[GEMMA-RUN] Progress: 33000/42000 (78.6%) | Speed: 1.69 calls/s | ETA: 88.8 min | Mismatches: 229
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 33050/42000 (78.7%) | Speed: 1.69 calls/s | ETA: 88.3 min | Mismatches: 230
+[GEMMA-RUN] Progress: 33100/42000 (78.8%) | Speed: 1.69 calls/s | ETA: 87.9 min | Mismatches: 230
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 33150/42000 (78.9%) | Speed: 1.69 calls/s | ETA: 87.4 min | Mismatches: 231
+[GEMMA-RUN] Progress: 33200/42000 (79.0%) | Speed: 1.69 calls/s | ETA: 86.9 min | Mismatches: 231
+[GEMMA-RUN] Progress: 33250/42000 (79.2%) | Speed: 1.69 calls/s | ETA: 86.4 min | Mismatches: 231
+[GEMMA-RUN] Progress: 33300/42000 (79.3%) | Speed: 1.69 calls/s | ETA: 85.9 min | Mismatches: 231
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 33350/42000 (79.4%) | Speed: 1.69 calls/s | ETA: 85.4 min | Mismatches: 233
+[GEMMA-RUN] Progress: 33400/42000 (79.5%) | Speed: 1.69 calls/s | ETA: 84.8 min | Mismatches: 233
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 33450/42000 (79.6%) | Speed: 1.69 calls/s | ETA: 84.3 min | Mismatches: 234
+[GEMMA-RUN] Progress: 33500/42000 (79.8%) | Speed: 1.69 calls/s | ETA: 83.8 min | Mismatches: 234
+[GEMMA-RUN] Progress: 33550/42000 (79.9%) | Speed: 1.69 calls/s | ETA: 83.3 min | Mismatches: 234
+[GEMMA-RUN] Progress: 33600/42000 (80.0%) | Speed: 1.69 calls/s | ETA: 82.8 min | Mismatches: 234
+[GEMMA-RUN] Progress: 33650/42000 (80.1%) | Speed: 1.69 calls/s | ETA: 82.3 min | Mismatches: 234
+[GEMMA-RUN] Progress: 33700/42000 (80.2%) | Speed: 1.69 calls/s | ETA: 81.8 min | Mismatches: 234
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 33750/42000 (80.4%) | Speed: 1.69 calls/s | ETA: 81.3 min | Mismatches: 235
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 33800/42000 (80.5%) | Speed: 1.69 calls/s | ETA: 80.8 min | Mismatches: 236
+[GEMMA-RUN] Progress: 33850/42000 (80.6%) | Speed: 1.69 calls/s | ETA: 80.3 min | Mismatches: 236
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 33900/42000 (80.7%) | Speed: 1.69 calls/s | ETA: 79.8 min | Mismatches: 237
+[GEMMA-RUN] Progress: 33950/42000 (80.8%) | Speed: 1.69 calls/s | ETA: 79.2 min | Mismatches: 237
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 34000/42000 (81.0%) | Speed: 1.69 calls/s | ETA: 78.7 min | Mismatches: 239
+[GEMMA-RUN] Progress: 34050/42000 (81.1%) | Speed: 1.69 calls/s | ETA: 78.2 min | Mismatches: 239
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 34100/42000 (81.2%) | Speed: 1.69 calls/s | ETA: 77.7 min | Mismatches: 240
+[GEMMA-RUN] Progress: 34150/42000 (81.3%) | Speed: 1.69 calls/s | ETA: 77.2 min | Mismatches: 240
+[GEMMA-RUN] Progress: 34200/42000 (81.4%) | Speed: 1.70 calls/s | ETA: 76.7 min | Mismatches: 240
+[GEMMA-RUN] Progress: 34250/42000 (81.5%) | Speed: 1.70 calls/s | ETA: 76.2 min | Mismatches: 240
+[GEMMA-RUN] Progress: 34300/42000 (81.7%) | Speed: 1.70 calls/s | ETA: 75.7 min | Mismatches: 240
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 34350/42000 (81.8%) | Speed: 1.70 calls/s | ETA: 75.2 min | Mismatches: 241
+[GEMMA-RUN] Progress: 34400/42000 (81.9%) | Speed: 1.70 calls/s | ETA: 74.6 min | Mismatches: 241
+[GEMMA-RUN] Progress: 34450/42000 (82.0%) | Speed: 1.70 calls/s | ETA: 74.1 min | Mismatches: 241
+[GEMMA-RUN] Progress: 34500/42000 (82.1%) | Speed: 1.70 calls/s | ETA: 73.6 min | Mismatches: 241
+[GEMMA-RUN] Progress: 34550/42000 (82.3%) | Speed: 1.70 calls/s | ETA: 73.1 min | Mismatches: 241
+[GEMMA-RUN] Progress: 34600/42000 (82.4%) | Speed: 1.70 calls/s | ETA: 72.6 min | Mismatches: 241
+[GEMMA-RUN] Progress: 34650/42000 (82.5%) | Speed: 1.70 calls/s | ETA: 72.1 min | Mismatches: 241
+[GEMMA-RUN] Progress: 34700/42000 (82.6%) | Speed: 1.70 calls/s | ETA: 71.6 min | Mismatches: 241
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 34750/42000 (82.7%) | Speed: 1.70 calls/s | ETA: 71.1 min | Mismatches: 242
+[GEMMA-RUN] Progress: 34800/42000 (82.9%) | Speed: 1.70 calls/s | ETA: 70.6 min | Mismatches: 242
+[GEMMA-RUN] Progress: 34850/42000 (83.0%) | Speed: 1.70 calls/s | ETA: 70.1 min | Mismatches: 242
+[GEMMA-RUN] Progress: 34900/42000 (83.1%) | Speed: 1.70 calls/s | ETA: 69.6 min | Mismatches: 242
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 34950/42000 (83.2%) | Speed: 1.70 calls/s | ETA: 69.1 min | Mismatches: 243
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 35000/42000 (83.3%) | Speed: 1.70 calls/s | ETA: 68.5 min | Mismatches: 244
+[GEMMA-RUN] Progress: 35050/42000 (83.5%) | Speed: 1.70 calls/s | ETA: 68.0 min | Mismatches: 244
+[GEMMA-RUN] Progress: 35100/42000 (83.6%) | Speed: 1.70 calls/s | ETA: 67.5 min | Mismatches: 244
+[GEMMA-RUN] Progress: 35150/42000 (83.7%) | Speed: 1.70 calls/s | ETA: 67.0 min | Mismatches: 244
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 35200/42000 (83.8%) | Speed: 1.70 calls/s | ETA: 66.5 min | Mismatches: 245
+[GEMMA-RUN] Progress: 35250/42000 (83.9%) | Speed: 1.70 calls/s | ETA: 66.0 min | Mismatches: 245
+[GEMMA-RUN] Progress: 35300/42000 (84.0%) | Speed: 1.70 calls/s | ETA: 65.5 min | Mismatches: 245
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 35350/42000 (84.2%) | Speed: 1.70 calls/s | ETA: 65.0 min | Mismatches: 247
+[GEMMA-RUN] Progress: 35400/42000 (84.3%) | Speed: 1.70 calls/s | ETA: 64.5 min | Mismatches: 247
+[GEMMA-RUN] Progress: 35450/42000 (84.4%) | Speed: 1.70 calls/s | ETA: 64.0 min | Mismatches: 247
+[GEMMA-RUN] Progress: 35500/42000 (84.5%) | Speed: 1.71 calls/s | ETA: 63.5 min | Mismatches: 247
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 35550/42000 (84.6%) | Speed: 1.71 calls/s | ETA: 63.0 min | Mismatches: 249
+[GEMMA-RUN] Progress: 35600/42000 (84.8%) | Speed: 1.71 calls/s | ETA: 62.5 min | Mismatches: 249
+[GEMMA-RUN] Progress: 35650/42000 (84.9%) | Speed: 1.71 calls/s | ETA: 62.1 min | Mismatches: 249
+[GEMMA-RUN] Progress: 35700/42000 (85.0%) | Speed: 1.70 calls/s | ETA: 61.6 min | Mismatches: 249
+[GEMMA-RUN] Progress: 35750/42000 (85.1%) | Speed: 1.70 calls/s | ETA: 61.1 min | Mismatches: 249
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 35800/42000 (85.2%) | Speed: 1.70 calls/s | ETA: 60.7 min | Mismatches: 250
+[GEMMA-RUN] Progress: 35850/42000 (85.4%) | Speed: 1.70 calls/s | ETA: 60.3 min | Mismatches: 250
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 35900/42000 (85.5%) | Speed: 1.70 calls/s | ETA: 59.8 min | Mismatches: 251
+[GEMMA-RUN] Progress: 35950/42000 (85.6%) | Speed: 1.70 calls/s | ETA: 59.4 min | Mismatches: 251
+[GEMMA-RUN] Progress: 36000/42000 (85.7%) | Speed: 1.70 calls/s | ETA: 58.9 min | Mismatches: 251
+
+[GEMMA-RUN] Starting condition: gaussian_sigma_4 (perturbation)
+[GEMMA-RUN] Progress: 36050/42000 (85.8%) | Speed: 1.70 calls/s | ETA: 58.4 min | Mismatches: 251
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 36100/42000 (86.0%) | Speed: 1.70 calls/s | ETA: 58.0 min | Mismatches: 252
+[GEMMA-RUN] Progress: 36150/42000 (86.1%) | Speed: 1.69 calls/s | ETA: 57.5 min | Mismatches: 252
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 36200/42000 (86.2%) | Speed: 1.69 calls/s | ETA: 57.1 min | Mismatches: 255
+[GEMMA-RUN] Progress: 36250/42000 (86.3%) | Speed: 1.69 calls/s | ETA: 56.6 min | Mismatches: 255
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 36300/42000 (86.4%) | Speed: 1.69 calls/s | ETA: 56.2 min | Mismatches: 256
+[GEMMA-RUN] Progress: 36350/42000 (86.5%) | Speed: 1.69 calls/s | ETA: 55.7 min | Mismatches: 256
+[GEMMA-RUN] Progress: 36400/42000 (86.7%) | Speed: 1.69 calls/s | ETA: 55.2 min | Mismatches: 256
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 36450/42000 (86.8%) | Speed: 1.69 calls/s | ETA: 54.7 min | Mismatches: 257
+[GEMMA-RUN] Progress: 36500/42000 (86.9%) | Speed: 1.69 calls/s | ETA: 54.2 min | Mismatches: 257
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 36550/42000 (87.0%) | Speed: 1.69 calls/s | ETA: 53.7 min | Mismatches: 258
+[GEMMA-RUN] Progress: 36600/42000 (87.1%) | Speed: 1.69 calls/s | ETA: 53.2 min | Mismatches: 258
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 36650/42000 (87.3%) | Speed: 1.69 calls/s | ETA: 52.7 min | Mismatches: 259
+[GEMMA-RUN] Progress: 36700/42000 (87.4%) | Speed: 1.69 calls/s | ETA: 52.2 min | Mismatches: 259
+[GEMMA-RUN] Progress: 36750/42000 (87.5%) | Speed: 1.69 calls/s | ETA: 51.7 min | Mismatches: 259
+[GEMMA-RUN] Progress: 36800/42000 (87.6%) | Speed: 1.69 calls/s | ETA: 51.2 min | Mismatches: 259
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 36850/42000 (87.7%) | Speed: 1.69 calls/s | ETA: 50.7 min | Mismatches: 260
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 36900/42000 (87.9%) | Speed: 1.69 calls/s | ETA: 50.2 min | Mismatches: 261
+[GEMMA-RUN] Progress: 36950/42000 (88.0%) | Speed: 1.69 calls/s | ETA: 49.7 min | Mismatches: 261
+[GEMMA-RUN] Progress: 37000/42000 (88.1%) | Speed: 1.69 calls/s | ETA: 49.2 min | Mismatches: 261
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 37050/42000 (88.2%) | Speed: 1.69 calls/s | ETA: 48.7 min | Mismatches: 262
+[GEMMA-RUN] Progress: 37100/42000 (88.3%) | Speed: 1.69 calls/s | ETA: 48.2 min | Mismatches: 262
+[GEMMA-RUN] Progress: 37150/42000 (88.5%) | Speed: 1.69 calls/s | ETA: 47.7 min | Mismatches: 262
+[GEMMA-RUN] Progress: 37200/42000 (88.6%) | Speed: 1.69 calls/s | ETA: 47.2 min | Mismatches: 262
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 37250/42000 (88.7%) | Speed: 1.69 calls/s | ETA: 46.7 min | Mismatches: 263
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 37300/42000 (88.8%) | Speed: 1.69 calls/s | ETA: 46.2 min | Mismatches: 264
+[GEMMA-RUN] Progress: 37350/42000 (88.9%) | Speed: 1.69 calls/s | ETA: 45.7 min | Mismatches: 264
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 37400/42000 (89.0%) | Speed: 1.70 calls/s | ETA: 45.2 min | Mismatches: 266
+[GEMMA-RUN] Progress: 37450/42000 (89.2%) | Speed: 1.70 calls/s | ETA: 44.7 min | Mismatches: 266
+[GEMMA-RUN] Progress: 37500/42000 (89.3%) | Speed: 1.70 calls/s | ETA: 44.2 min | Mismatches: 266
+[GEMMA-RUN] Progress: 37550/42000 (89.4%) | Speed: 1.70 calls/s | ETA: 43.7 min | Mismatches: 266
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 37600/42000 (89.5%) | Speed: 1.70 calls/s | ETA: 43.2 min | Mismatches: 268
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 37650/42000 (89.6%) | Speed: 1.70 calls/s | ETA: 42.7 min | Mismatches: 269
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 37700/42000 (89.8%) | Speed: 1.70 calls/s | ETA: 42.2 min | Mismatches: 270
+[GEMMA-RUN] Progress: 37750/42000 (89.9%) | Speed: 1.70 calls/s | ETA: 41.7 min | Mismatches: 270
+[GEMMA-RUN] Progress: 37800/42000 (90.0%) | Speed: 1.70 calls/s | ETA: 41.2 min | Mismatches: 270
+[GEMMA-RUN] Progress: 37850/42000 (90.1%) | Speed: 1.70 calls/s | ETA: 40.7 min | Mismatches: 270
+[GEMMA-RUN] Progress: 37900/42000 (90.2%) | Speed: 1.70 calls/s | ETA: 40.2 min | Mismatches: 270
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 37950/42000 (90.4%) | Speed: 1.70 calls/s | ETA: 39.7 min | Mismatches: 271
+[GEMMA-RUN] Progress: 38000/42000 (90.5%) | Speed: 1.70 calls/s | ETA: 39.3 min | Mismatches: 271
+[GEMMA-RUN] Progress: 38050/42000 (90.6%) | Speed: 1.70 calls/s | ETA: 38.8 min | Mismatches: 271
+[GEMMA-RUN] Progress: 38100/42000 (90.7%) | Speed: 1.70 calls/s | ETA: 38.3 min | Mismatches: 271
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 38150/42000 (90.8%) | Speed: 1.70 calls/s | ETA: 37.8 min | Mismatches: 272
+[GEMMA-RUN] Progress: 38200/42000 (91.0%) | Speed: 1.70 calls/s | ETA: 37.3 min | Mismatches: 272
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 38250/42000 (91.1%) | Speed: 1.70 calls/s | ETA: 36.8 min | Mismatches: 273
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 38300/42000 (91.2%) | Speed: 1.70 calls/s | ETA: 36.3 min | Mismatches: 274
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 38350/42000 (91.3%) | Speed: 1.70 calls/s | ETA: 35.8 min | Mismatches: 277
+[GEMMA-RUN] Progress: 38400/42000 (91.4%) | Speed: 1.70 calls/s | ETA: 35.3 min | Mismatches: 277
+[GEMMA-RUN] Progress: 38450/42000 (91.5%) | Speed: 1.70 calls/s | ETA: 34.8 min | Mismatches: 277
+[GEMMA-RUN] Progress: 38500/42000 (91.7%) | Speed: 1.70 calls/s | ETA: 34.3 min | Mismatches: 277
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 38550/42000 (91.8%) | Speed: 1.70 calls/s | ETA: 33.8 min | Mismatches: 278
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 38600/42000 (91.9%) | Speed: 1.70 calls/s | ETA: 33.3 min | Mismatches: 279
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 38650/42000 (92.0%) | Speed: 1.70 calls/s | ETA: 32.8 min | Mismatches: 280
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 38700/42000 (92.1%) | Speed: 1.70 calls/s | ETA: 32.3 min | Mismatches: 283
+[GEMMA-RUN] Progress: 38750/42000 (92.3%) | Speed: 1.70 calls/s | ETA: 31.8 min | Mismatches: 283
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 38800/42000 (92.4%) | Speed: 1.70 calls/s | ETA: 31.3 min | Mismatches: 284
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 38850/42000 (92.5%) | Speed: 1.70 calls/s | ETA: 30.8 min | Mismatches: 287
+[GEMMA-RUN] Progress: 38900/42000 (92.6%) | Speed: 1.70 calls/s | ETA: 30.3 min | Mismatches: 287
+[GEMMA-RUN] Progress: 38950/42000 (92.7%) | Speed: 1.70 calls/s | ETA: 29.8 min | Mismatches: 287
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 39000/42000 (92.9%) | Speed: 1.71 calls/s | ETA: 29.3 min | Mismatches: 288
+[GEMMA-RUN] Progress: 39050/42000 (93.0%) | Speed: 1.71 calls/s | ETA: 28.8 min | Mismatches: 288
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 39100/42000 (93.1%) | Speed: 1.71 calls/s | ETA: 28.3 min | Mismatches: 289
+[GEMMA-RUN] Progress: 39150/42000 (93.2%) | Speed: 1.71 calls/s | ETA: 27.8 min | Mismatches: 289
+[GEMMA-RUN] Progress: 39200/42000 (93.3%) | Speed: 1.71 calls/s | ETA: 27.3 min | Mismatches: 289
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 39250/42000 (93.5%) | Speed: 1.71 calls/s | ETA: 26.8 min | Mismatches: 291
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 39300/42000 (93.6%) | Speed: 1.71 calls/s | ETA: 26.4 min | Mismatches: 293
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 39350/42000 (93.7%) | Speed: 1.71 calls/s | ETA: 25.9 min | Mismatches: 294
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 39400/42000 (93.8%) | Speed: 1.71 calls/s | ETA: 25.4 min | Mismatches: 296
+[GEMMA-RUN] Progress: 39450/42000 (93.9%) | Speed: 1.71 calls/s | ETA: 24.9 min | Mismatches: 296
+[GEMMA-RUN] Progress: 39500/42000 (94.0%) | Speed: 1.71 calls/s | ETA: 24.4 min | Mismatches: 296
+[GEMMA-RUN] Progress: 39550/42000 (94.2%) | Speed: 1.71 calls/s | ETA: 23.9 min | Mismatches: 296
+[GEMMA-RUN] Progress: 39600/42000 (94.3%) | Speed: 1.71 calls/s | ETA: 23.4 min | Mismatches: 296
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 39650/42000 (94.4%) | Speed: 1.71 calls/s | ETA: 22.9 min | Mismatches: 297
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 39700/42000 (94.5%) | Speed: 1.71 calls/s | ETA: 22.4 min | Mismatches: 298
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 39750/42000 (94.6%) | Speed: 1.71 calls/s | ETA: 21.9 min | Mismatches: 299
+[GEMMA-RUN] Progress: 39800/42000 (94.8%) | Speed: 1.71 calls/s | ETA: 21.4 min | Mismatches: 299
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 39850/42000 (94.9%) | Speed: 1.71 calls/s | ETA: 20.9 min | Mismatches: 300
+[GEMMA-RUN] Progress: 39900/42000 (95.0%) | Speed: 1.71 calls/s | ETA: 20.4 min | Mismatches: 300
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 39950/42000 (95.1%) | Speed: 1.71 calls/s | ETA: 20.0 min | Mismatches: 302
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 40000/42000 (95.2%) | Speed: 1.71 calls/s | ETA: 19.5 min | Mismatches: 304
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 40050/42000 (95.4%) | Speed: 1.71 calls/s | ETA: 19.0 min | Mismatches: 305
+[GEMMA-RUN] Progress: 40100/42000 (95.5%) | Speed: 1.71 calls/s | ETA: 18.5 min | Mismatches: 305
+[GEMMA-RUN] Progress: 40150/42000 (95.6%) | Speed: 1.71 calls/s | ETA: 18.0 min | Mismatches: 305
+[GEMMA-RUN] Progress: 40200/42000 (95.7%) | Speed: 1.71 calls/s | ETA: 17.5 min | Mismatches: 305
+[GEMMA-RUN] Progress: 40250/42000 (95.8%) | Speed: 1.71 calls/s | ETA: 17.0 min | Mismatches: 305
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 40300/42000 (96.0%) | Speed: 1.71 calls/s | ETA: 16.5 min | Mismatches: 306
+[GEMMA-RUN] Progress: 40350/42000 (96.1%) | Speed: 1.71 calls/s | ETA: 16.0 min | Mismatches: 306
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 40400/42000 (96.2%) | Speed: 1.71 calls/s | ETA: 15.5 min | Mismatches: 307
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 40450/42000 (96.3%) | Speed: 1.72 calls/s | ETA: 15.1 min | Mismatches: 308
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 40500/42000 (96.4%) | Speed: 1.72 calls/s | ETA: 14.6 min | Mismatches: 309
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 40550/42000 (96.5%) | Speed: 1.72 calls/s | ETA: 14.1 min | Mismatches: 310
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 40600/42000 (96.7%) | Speed: 1.72 calls/s | ETA: 13.6 min | Mismatches: 311
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 40650/42000 (96.8%) | Speed: 1.72 calls/s | ETA: 13.1 min | Mismatches: 312
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 40700/42000 (96.9%) | Speed: 1.72 calls/s | ETA: 12.6 min | Mismatches: 314
+[GEMMA-RUN] Progress: 40750/42000 (97.0%) | Speed: 1.72 calls/s | ETA: 12.1 min | Mismatches: 314
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 40800/42000 (97.1%) | Speed: 1.72 calls/s | ETA: 11.6 min | Mismatches: 316
+[GEMMA-RUN] Progress: 40850/42000 (97.3%) | Speed: 1.72 calls/s | ETA: 11.2 min | Mismatches: 316
+[GEMMA-RUN] Progress: 40900/42000 (97.4%) | Speed: 1.72 calls/s | ETA: 10.7 min | Mismatches: 316
+[GEMMA-RUN] Progress: 40950/42000 (97.5%) | Speed: 1.72 calls/s | ETA: 10.2 min | Mismatches: 316
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 41000/42000 (97.6%) | Speed: 1.72 calls/s | ETA: 9.7 min | Mismatches: 317
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 41050/42000 (97.7%) | Speed: 1.72 calls/s | ETA: 9.2 min | Mismatches: 318
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 41100/42000 (97.9%) | Speed: 1.72 calls/s | ETA: 8.7 min | Mismatches: 319
+[GEMMA-RUN] Progress: 41150/42000 (98.0%) | Speed: 1.72 calls/s | ETA: 8.2 min | Mismatches: 319
+[GEMMA-RUN] Progress: 41200/42000 (98.1%) | Speed: 1.72 calls/s | ETA: 7.8 min | Mismatches: 319
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 41250/42000 (98.2%) | Speed: 1.72 calls/s | ETA: 7.3 min | Mismatches: 320
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 41300/42000 (98.3%) | Speed: 1.72 calls/s | ETA: 6.8 min | Mismatches: 321
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 41350/42000 (98.5%) | Speed: 1.72 calls/s | ETA: 6.3 min | Mismatches: 322
+[GEMMA-RUN] Progress: 41400/42000 (98.6%) | Speed: 1.72 calls/s | ETA: 5.8 min | Mismatches: 322
+[GEMMA-RUN] Progress: 41450/42000 (98.7%) | Speed: 1.72 calls/s | ETA: 5.3 min | Mismatches: 322
+[GEMMA-RUN] Progress: 41500/42000 (98.8%) | Speed: 1.72 calls/s | ETA: 4.8 min | Mismatches: 322
+[GEMMA-RUN] Progress: 41550/42000 (98.9%) | Speed: 1.72 calls/s | ETA: 4.4 min | Mismatches: 322
+[GEMMA-RUN] Progress: 41600/42000 (99.0%) | Speed: 1.72 calls/s | ETA: 3.9 min | Mismatches: 322
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 41650/42000 (99.2%) | Speed: 1.72 calls/s | ETA: 3.4 min | Mismatches: 325
+[GEMMA-RUN] Progress: 41700/42000 (99.3%) | Speed: 1.72 calls/s | ETA: 2.9 min | Mismatches: 325
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 41750/42000 (99.4%) | Speed: 1.72 calls/s | ETA: 2.4 min | Mismatches: 327
+[GEMMA-RUN] Progress: 41800/42000 (99.5%) | Speed: 1.72 calls/s | ETA: 1.9 min | Mismatches: 327
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 41850/42000 (99.6%) | Speed: 1.72 calls/s | ETA: 1.5 min | Mismatches: 328
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 41900/42000 (99.8%) | Speed: 1.72 calls/s | ETA: 1.0 min | Mismatches: 329
+[GEMMA-RUN] Progress: 41950/42000 (99.9%) | Speed: 1.72 calls/s | ETA: 0.5 min | Mismatches: 329
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA-RUN] Progress: 42000/42000 (100.0%) | Speed: 1.72 calls/s | ETA: 0.0 min | Mismatches: 330
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. Note that this behavior will be extended to all models in a future release.
+`torch_dtype` is deprecated! Use `dtype` instead!
+[GEMMA-RUN] Gemma run complete. Manifest saved to /ANON/experiment_root/rq2_eval_reduced/manifests/gemma4_12b_reduced_manifest.json
+
+=======================================================
+[ANCHOR-RUN] Starting Qwen2.5-VL-7B Baseline Anchor Re-run on cuda:0...
+=======================================================
+[ANCHOR-RUN] Planned calls: 6000 | Already done: 0
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:01<00:05,  1.49s/it]Loading checkpoint shards:  40%|████      | 2/5 [00:02<00:04,  1.43s/it]Loading checkpoint shards:  60%|██████    | 3/5 [00:04<00:03,  1.56s/it]Loading checkpoint shards:  80%|████████  | 4/5 [00:06<00:01,  1.67s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:06<00:00,  1.23s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:06<00:00,  1.38s/it]
+The following generation flags are not valid and may be ignored: ['temperature']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+[ANCHOR-RUN] Qwen model loaded.
+[ANCHOR-RUN] Progress: 50/6000 (0.8%) | Speed: 3.10 calls/s | ETA: 32.0 min | Mismatches: 2
+[ANCHOR-RUN] Progress: 100/6000 (1.7%) | Speed: 2.31 calls/s | ETA: 42.6 min | Mismatches: 6
+[ANCHOR-RUN] Progress: 150/6000 (2.5%) | Speed: 2.39 calls/s | ETA: 40.7 min | Mismatches: 9
+[ANCHOR-RUN] Progress: 200/6000 (3.3%) | Speed: 2.52 calls/s | ETA: 38.3 min | Mismatches: 10
+[ANCHOR-RUN] Progress: 250/6000 (4.2%) | Speed: 2.65 calls/s | ETA: 36.1 min | Mismatches: 11
+[ANCHOR-RUN] Progress: 300/6000 (5.0%) | Speed: 2.72 calls/s | ETA: 35.0 min | Mismatches: 13
+[ANCHOR-RUN] Progress: 350/6000 (5.8%) | Speed: 2.77 calls/s | ETA: 34.0 min | Mismatches: 15
+[ANCHOR-RUN] Progress: 400/6000 (6.7%) | Speed: 2.69 calls/s | ETA: 34.7 min | Mismatches: 15
+[ANCHOR-RUN] Progress: 450/6000 (7.5%) | Speed: 2.68 calls/s | ETA: 34.5 min | Mismatches: 17
+[ANCHOR-RUN] Progress: 500/6000 (8.3%) | Speed: 2.61 calls/s | ETA: 35.1 min | Mismatches: 19
+[ANCHOR-RUN] Progress: 550/6000 (9.2%) | Speed: 2.56 calls/s | ETA: 35.5 min | Mismatches: 21
+[ANCHOR-RUN] Progress: 600/6000 (10.0%) | Speed: 2.54 calls/s | ETA: 35.4 min | Mismatches: 21
+[ANCHOR-RUN] Progress: 650/6000 (10.8%) | Speed: 2.52 calls/s | ETA: 35.4 min | Mismatches: 25
+[ANCHOR-RUN] Progress: 700/6000 (11.7%) | Speed: 2.55 calls/s | ETA: 34.7 min | Mismatches: 26
+[ANCHOR-RUN] Progress: 750/6000 (12.5%) | Speed: 2.58 calls/s | ETA: 33.9 min | Mismatches: 26
+[ANCHOR-RUN] Progress: 800/6000 (13.3%) | Speed: 2.59 calls/s | ETA: 33.5 min | Mismatches: 31
+[ANCHOR-RUN] Progress: 850/6000 (14.2%) | Speed: 2.61 calls/s | ETA: 32.9 min | Mismatches: 32
+[ANCHOR-RUN] Progress: 900/6000 (15.0%) | Speed: 2.64 calls/s | ETA: 32.2 min | Mismatches: 33
+[ANCHOR-RUN] Progress: 950/6000 (15.8%) | Speed: 2.67 calls/s | ETA: 31.6 min | Mismatches: 38
+[ANCHOR-RUN] Progress: 1000/6000 (16.7%) | Speed: 2.67 calls/s | ETA: 31.2 min | Mismatches: 40
+[ANCHOR-RUN] Progress: 1050/6000 (17.5%) | Speed: 2.67 calls/s | ETA: 30.9 min | Mismatches: 40
+[ANCHOR-RUN] Progress: 1100/6000 (18.3%) | Speed: 2.67 calls/s | ETA: 30.6 min | Mismatches: 41
+[ANCHOR-RUN] Progress: 1150/6000 (19.2%) | Speed: 2.65 calls/s | ETA: 30.5 min | Mismatches: 44
+[ANCHOR-RUN] Progress: 1200/6000 (20.0%) | Speed: 2.63 calls/s | ETA: 30.4 min | Mismatches: 46
+[ANCHOR-RUN] Progress: 1250/6000 (20.8%) | Speed: 2.62 calls/s | ETA: 30.2 min | Mismatches: 46
+[ANCHOR-RUN] Progress: 1300/6000 (21.7%) | Speed: 2.62 calls/s | ETA: 29.9 min | Mismatches: 46
+[ANCHOR-RUN] Progress: 1350/6000 (22.5%) | Speed: 2.62 calls/s | ETA: 29.5 min | Mismatches: 47
+[ANCHOR-RUN] Progress: 1400/6000 (23.3%) | Speed: 2.64 calls/s | ETA: 29.1 min | Mismatches: 48
+[ANCHOR-RUN] Progress: 1450/6000 (24.2%) | Speed: 2.65 calls/s | ETA: 28.6 min | Mismatches: 48
+[ANCHOR-RUN] Progress: 1500/6000 (25.0%) | Speed: 2.67 calls/s | ETA: 28.1 min | Mismatches: 50
+[ANCHOR-RUN] Progress: 1550/6000 (25.8%) | Speed: 2.68 calls/s | ETA: 27.7 min | Mismatches: 51
+[ANCHOR-RUN] Progress: 1600/6000 (26.7%) | Speed: 2.70 calls/s | ETA: 27.2 min | Mismatches: 52
+[ANCHOR-RUN] Progress: 1650/6000 (27.5%) | Speed: 2.70 calls/s | ETA: 26.8 min | Mismatches: 55
+[ANCHOR-RUN] Progress: 1700/6000 (28.3%) | Speed: 2.71 calls/s | ETA: 26.4 min | Mismatches: 56
+[ANCHOR-RUN] Progress: 1750/6000 (29.2%) | Speed: 2.70 calls/s | ETA: 26.2 min | Mismatches: 61
+[ANCHOR-RUN] Progress: 1800/6000 (30.0%) | Speed: 2.69 calls/s | ETA: 26.0 min | Mismatches: 64
+[ANCHOR-RUN] Progress: 1850/6000 (30.8%) | Speed: 2.69 calls/s | ETA: 25.8 min | Mismatches: 65
+[ANCHOR-RUN] Progress: 1900/6000 (31.7%) | Speed: 2.69 calls/s | ETA: 25.4 min | Mismatches: 67
+[ANCHOR-RUN] Progress: 1950/6000 (32.5%) | Speed: 2.67 calls/s | ETA: 25.3 min | Mismatches: 70
+[ANCHOR-RUN] Progress: 2000/6000 (33.3%) | Speed: 2.66 calls/s | ETA: 25.0 min | Mismatches: 72
+[ANCHOR-RUN] Progress: 2050/6000 (34.2%) | Speed: 2.66 calls/s | ETA: 24.8 min | Mismatches: 73
+[ANCHOR-RUN] Progress: 2100/6000 (35.0%) | Speed: 2.64 calls/s | ETA: 24.6 min | Mismatches: 74
+[ANCHOR-RUN] Progress: 2150/6000 (35.8%) | Speed: 2.64 calls/s | ETA: 24.3 min | Mismatches: 75
+[ANCHOR-RUN] Progress: 2200/6000 (36.7%) | Speed: 2.63 calls/s | ETA: 24.1 min | Mismatches: 77
+[ANCHOR-RUN] Progress: 2250/6000 (37.5%) | Speed: 2.63 calls/s | ETA: 23.8 min | Mismatches: 79
+[ANCHOR-RUN] Progress: 2300/6000 (38.3%) | Speed: 2.62 calls/s | ETA: 23.5 min | Mismatches: 81
+[ANCHOR-RUN] Progress: 2350/6000 (39.2%) | Speed: 2.61 calls/s | ETA: 23.3 min | Mismatches: 83
+[ANCHOR-RUN] Progress: 2400/6000 (40.0%) | Speed: 2.61 calls/s | ETA: 23.0 min | Mismatches: 84
+[ANCHOR-RUN] Progress: 2450/6000 (40.8%) | Speed: 2.60 calls/s | ETA: 22.7 min | Mismatches: 85
+[ANCHOR-RUN] Progress: 2500/6000 (41.7%) | Speed: 2.60 calls/s | ETA: 22.5 min | Mismatches: 85
+[ANCHOR-RUN] Progress: 2550/6000 (42.5%) | Speed: 2.59 calls/s | ETA: 22.2 min | Mismatches: 86
+[ANCHOR-RUN] Progress: 2600/6000 (43.3%) | Speed: 2.58 calls/s | ETA: 21.9 min | Mismatches: 87
+[ANCHOR-RUN] Progress: 2650/6000 (44.2%) | Speed: 2.58 calls/s | ETA: 21.7 min | Mismatches: 87
+[ANCHOR-RUN] Progress: 2700/6000 (45.0%) | Speed: 2.57 calls/s | ETA: 21.4 min | Mismatches: 88
+[ANCHOR-RUN] Progress: 2750/6000 (45.8%) | Speed: 2.57 calls/s | ETA: 21.1 min | Mismatches: 91
+[ANCHOR-RUN] Progress: 2800/6000 (46.7%) | Speed: 2.57 calls/s | ETA: 20.8 min | Mismatches: 92
+[ANCHOR-RUN] Progress: 2850/6000 (47.5%) | Speed: 2.56 calls/s | ETA: 20.5 min | Mismatches: 93
+[ANCHOR-RUN] Progress: 2900/6000 (48.3%) | Speed: 2.55 calls/s | ETA: 20.2 min | Mismatches: 94
+[ANCHOR-RUN] Progress: 2950/6000 (49.2%) | Speed: 2.55 calls/s | ETA: 19.9 min | Mismatches: 95
+[ANCHOR-RUN] Progress: 3000/6000 (50.0%) | Speed: 2.55 calls/s | ETA: 19.6 min | Mismatches: 95
+[ANCHOR-RUN] Progress: 3050/6000 (50.8%) | Speed: 2.54 calls/s | ETA: 19.3 min | Mismatches: 96
+[ANCHOR-RUN] Progress: 3100/6000 (51.7%) | Speed: 2.54 calls/s | ETA: 19.0 min | Mismatches: 97
+[ANCHOR-RUN] Progress: 3150/6000 (52.5%) | Speed: 2.54 calls/s | ETA: 18.7 min | Mismatches: 97
+[ANCHOR-RUN] Progress: 3200/6000 (53.3%) | Speed: 2.54 calls/s | ETA: 18.4 min | Mismatches: 99
+[ANCHOR-RUN] Progress: 3250/6000 (54.2%) | Speed: 2.53 calls/s | ETA: 18.1 min | Mismatches: 102
+[ANCHOR-RUN] Progress: 3300/6000 (55.0%) | Speed: 2.53 calls/s | ETA: 17.8 min | Mismatches: 106
+[ANCHOR-RUN] Progress: 3350/6000 (55.8%) | Speed: 2.53 calls/s | ETA: 17.5 min | Mismatches: 107
+[ANCHOR-RUN] Progress: 3400/6000 (56.7%) | Speed: 2.52 calls/s | ETA: 17.2 min | Mismatches: 109
+[ANCHOR-RUN] Progress: 3450/6000 (57.5%) | Speed: 2.52 calls/s | ETA: 16.9 min | Mismatches: 112
+[ANCHOR-RUN] Progress: 3500/6000 (58.3%) | Speed: 2.52 calls/s | ETA: 16.5 min | Mismatches: 114
+[ANCHOR-RUN] Progress: 3550/6000 (59.2%) | Speed: 2.52 calls/s | ETA: 16.2 min | Mismatches: 116
+[ANCHOR-RUN] Progress: 3600/6000 (60.0%) | Speed: 2.51 calls/s | ETA: 15.9 min | Mismatches: 117
+[ANCHOR-RUN] Progress: 3650/6000 (60.8%) | Speed: 2.51 calls/s | ETA: 15.6 min | Mismatches: 119
+[ANCHOR-RUN] Progress: 3700/6000 (61.7%) | Speed: 2.51 calls/s | ETA: 15.3 min | Mismatches: 120
+[ANCHOR-RUN] Progress: 3750/6000 (62.5%) | Speed: 2.52 calls/s | ETA: 14.9 min | Mismatches: 121
+[ANCHOR-RUN] Progress: 3800/6000 (63.3%) | Speed: 2.51 calls/s | ETA: 14.6 min | Mismatches: 123
+[ANCHOR-RUN] Progress: 3850/6000 (64.2%) | Speed: 2.49 calls/s | ETA: 14.4 min | Mismatches: 123
+[ANCHOR-RUN] Progress: 3900/6000 (65.0%) | Speed: 2.48 calls/s | ETA: 14.1 min | Mismatches: 124
+[ANCHOR-RUN] Progress: 3950/6000 (65.8%) | Speed: 2.48 calls/s | ETA: 13.8 min | Mismatches: 124
+[ANCHOR-RUN] Progress: 4000/6000 (66.7%) | Speed: 2.48 calls/s | ETA: 13.4 min | Mismatches: 125
+[ANCHOR-RUN] Progress: 4050/6000 (67.5%) | Speed: 2.48 calls/s | ETA: 13.1 min | Mismatches: 126
+[ANCHOR-RUN] Progress: 4100/6000 (68.3%) | Speed: 2.47 calls/s | ETA: 12.8 min | Mismatches: 127
+[ANCHOR-RUN] Progress: 4150/6000 (69.2%) | Speed: 2.47 calls/s | ETA: 12.5 min | Mismatches: 127
+[ANCHOR-RUN] Progress: 4200/6000 (70.0%) | Speed: 2.46 calls/s | ETA: 12.2 min | Mismatches: 128
+[ANCHOR-RUN] Progress: 4250/6000 (70.8%) | Speed: 2.46 calls/s | ETA: 11.8 min | Mismatches: 128
+[ANCHOR-RUN] Progress: 4300/6000 (71.7%) | Speed: 2.46 calls/s | ETA: 11.5 min | Mismatches: 129
+[ANCHOR-RUN] Progress: 4350/6000 (72.5%) | Speed: 2.46 calls/s | ETA: 11.2 min | Mismatches: 129
+[ANCHOR-RUN] Progress: 4400/6000 (73.3%) | Speed: 2.45 calls/s | ETA: 10.9 min | Mismatches: 132
+[ANCHOR-RUN] Progress: 4450/6000 (74.2%) | Speed: 2.45 calls/s | ETA: 10.6 min | Mismatches: 135
+[ANCHOR-RUN] Progress: 4500/6000 (75.0%) | Speed: 2.44 calls/s | ETA: 10.2 min | Mismatches: 137
+[ANCHOR-RUN] Progress: 4550/6000 (75.8%) | Speed: 2.44 calls/s | ETA: 9.9 min | Mismatches: 138
+[ANCHOR-RUN] Progress: 4600/6000 (76.7%) | Speed: 2.42 calls/s | ETA: 9.6 min | Mismatches: 140
+[ANCHOR-RUN] Progress: 4650/6000 (77.5%) | Speed: 2.42 calls/s | ETA: 9.3 min | Mismatches: 142
+[ANCHOR-RUN] Progress: 4700/6000 (78.3%) | Speed: 2.42 calls/s | ETA: 9.0 min | Mismatches: 143
+[ANCHOR-RUN] Progress: 4750/6000 (79.2%) | Speed: 2.42 calls/s | ETA: 8.6 min | Mismatches: 146
+[ANCHOR-RUN] Progress: 4800/6000 (80.0%) | Speed: 2.41 calls/s | ETA: 8.3 min | Mismatches: 147
+[ANCHOR-RUN] Progress: 4850/6000 (80.8%) | Speed: 2.41 calls/s | ETA: 7.9 min | Mismatches: 151
+[ANCHOR-RUN] Progress: 4900/6000 (81.7%) | Speed: 2.41 calls/s | ETA: 7.6 min | Mismatches: 153
+[ANCHOR-RUN] Progress: 4950/6000 (82.5%) | Speed: 2.41 calls/s | ETA: 7.3 min | Mismatches: 157
+[ANCHOR-RUN] Progress: 5000/6000 (83.3%) | Speed: 2.40 calls/s | ETA: 6.9 min | Mismatches: 157
+[ANCHOR-RUN] Progress: 5050/6000 (84.2%) | Speed: 2.40 calls/s | ETA: 6.6 min | Mismatches: 159
+[ANCHOR-RUN] Progress: 5100/6000 (85.0%) | Speed: 2.40 calls/s | ETA: 6.3 min | Mismatches: 161
+[ANCHOR-RUN] Progress: 5150/6000 (85.8%) | Speed: 2.40 calls/s | ETA: 5.9 min | Mismatches: 161
+[ANCHOR-RUN] Progress: 5200/6000 (86.7%) | Speed: 2.39 calls/s | ETA: 5.6 min | Mismatches: 162
+[ANCHOR-RUN] Progress: 5250/6000 (87.5%) | Speed: 2.39 calls/s | ETA: 5.2 min | Mismatches: 164
+[ANCHOR-RUN] Progress: 5300/6000 (88.3%) | Speed: 2.39 calls/s | ETA: 4.9 min | Mismatches: 164
+[ANCHOR-RUN] Progress: 5350/6000 (89.2%) | Speed: 2.39 calls/s | ETA: 4.5 min | Mismatches: 165
+[ANCHOR-RUN] Progress: 5400/6000 (90.0%) | Speed: 2.38 calls/s | ETA: 4.2 min | Mismatches: 167
+[ANCHOR-RUN] Progress: 5450/6000 (90.8%) | Speed: 2.38 calls/s | ETA: 3.9 min | Mismatches: 170
+[ANCHOR-RUN] Progress: 5500/6000 (91.7%) | Speed: 2.37 calls/s | ETA: 3.5 min | Mismatches: 172
+[ANCHOR-RUN] Progress: 5550/6000 (92.5%) | Speed: 2.37 calls/s | ETA: 3.2 min | Mismatches: 174
+[ANCHOR-RUN] Progress: 5600/6000 (93.3%) | Speed: 2.37 calls/s | ETA: 2.8 min | Mismatches: 175
+[ANCHOR-RUN] Progress: 5650/6000 (94.2%) | Speed: 2.37 calls/s | ETA: 2.5 min | Mismatches: 176
+[ANCHOR-RUN] Progress: 5700/6000 (95.0%) | Speed: 2.36 calls/s | ETA: 2.1 min | Mismatches: 178
+[ANCHOR-RUN] Progress: 5750/6000 (95.8%) | Speed: 2.36 calls/s | ETA: 1.8 min | Mismatches: 180
+[ANCHOR-RUN] Progress: 5800/6000 (96.7%) | Speed: 2.36 calls/s | ETA: 1.4 min | Mismatches: 184
+[ANCHOR-RUN] Progress: 5850/6000 (97.5%) | Speed: 2.36 calls/s | ETA: 1.1 min | Mismatches: 187
+[ANCHOR-RUN] Progress: 5900/6000 (98.3%) | Speed: 2.36 calls/s | ETA: 0.7 min | Mismatches: 189
+[ANCHOR-RUN] Progress: 5950/6000 (99.2%) | Speed: 2.35 calls/s | ETA: 0.4 min | Mismatches: 195
+[ANCHOR-RUN] Progress: 6000/6000 (100.0%) | Speed: 2.35 calls/s | ETA: 0.0 min | Mismatches: 196
+[ANCHOR-RUN] Anchor run complete. Manifest saved to /ANON/experiment_root/rq2_eval_reduced/manifests/qwen25_vl_7b_anchor_manifest.json
+
+[ALL COMPLETE] Gemma-3-12b-it and Qwen Anchor re-run finished successfully!

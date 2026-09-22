@@ -1,0 +1,9 @@
+{
+  "rows": 108000,
+  "exact_boundary_rows": 8168,
+  "identity_violations_away_from_boundary": 0,
+  "opposite_sign_vs_parsed_valid_disagreements": 4006,
+  "abs_c_correctness_spearman": 0.135773121824873,
+  "abs_c_correctness_p": 0.0,
+  "note": "Parsed validity can differ at token-logit ties; the algebraic identity is tested on margin signs."
+}

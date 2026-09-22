@@ -1,0 +1,39 @@
+{
+  "raw_calls": 216000,
+  "paired_rows": 108000,
+  "expected_raw_calls": 216000,
+  "expected_paired_rows": 108000,
+  "all_ab_ba_complete": true,
+  "parse_failures": 0,
+  "models": [
+    "OpenGVLab/InternVL3-8B",
+    "Qwen/Qwen2.5-VL-7B-Instruct"
+  ],
+  "languages": [
+    "cuda",
+    "java",
+    "python"
+  ],
+  "grid_conditions": [
+    "friendly_light__fs20__wrap60__lnon",
+    "friendly_light__fs20__wrap80__lnon",
+    "friendly_light__fs24__wrap60__lnon",
+    "friendly_light__fs24__wrap80__lnon",
+    "mono_light__fs20__wrap60__lnon",
+    "mono_light__fs20__wrap80__lnon",
+    "mono_light__fs24__wrap60__lnon",
+    "mono_light__fs24__wrap80__lnon",
+    "monokai_dark__fs20__wrap60__lnon",
+    "monokai_dark__fs20__wrap80__lnon",
+    "monokai_dark__fs24__wrap60__lnon",
+    "monokai_dark__fs24__wrap80__lnon"
+  ],
+  "perturbation_conditions": [
+    "baseline",
+    "gaussian_sigma_1",
+    "gaussian_sigma_2",
+    "gaussian_sigma_4",
+    "no_blank_lines",
+    "no_indent"
+  ]
+}

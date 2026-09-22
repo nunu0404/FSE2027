@@ -1,0 +1,7 @@
+condition,language,pairs,any_side_changed,both_sides_changed,neither_side_changed
+no_indent,cuda,1000,998,940,2
+no_indent,java,1000,1000,989,0
+no_indent,python,1000,996,869,4
+no_blank_lines,cuda,1000,978,752,22
+no_blank_lines,java,1000,875,439,125
+no_blank_lines,python,1000,1000,973,0

@@ -1,0 +1,1141 @@
+[PIPELINE] Starting True Gemma4-12B (707f0a3) RQ2 Pipeline on GPU 0...
+[PIPELINE] Start Time: 2026-09-12 12:03:08 KST
+[PIPELINE] Executing inference...
+[MAIN] Loading fixed pair metadata (1,000 pairs x 3 languages)...
+Traceback (most recent call last):
+  File "/ANON/experiment_root/rq2_eval_reduced/scripts/run_gemma4_reduced.py", line 365, in <module>
+    main()
+    ~~~~^^
+  File "/ANON/experiment_root/rq2_eval_reduced/scripts/run_gemma4_reduced.py", line 354, in main
+    pairs = pd.read_csv(BASE_EXP / "data/test_pairs_1000_seed42.csv")
+  File "/ANON/home/miniconda3/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 873, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/ANON/home/miniconda3/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 300, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/ANON/home/miniconda3/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 1645, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/ANON/home/miniconda3/lib/python3.13/site-packages/pandas/io/parsers/readers.py", line 1904, in _make_engine
+    self.handles = get_handle(
+                   ~~~~~~~~~~^
+        f,
+        ^^
+    ...<6 lines>...
+        storage_options=self.options.get("storage_options", None),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/ANON/home/miniconda3/lib/python3.13/site-packages/pandas/io/common.py", line 926, in get_handle
+    handle = open(
+        handle,
+    ...<3 lines>...
+        newline="",
+    )
+FileNotFoundError: [Errno 2] No such file or directory: '/ANON/experiment_root/results/grounded_protocol_3lang_20260721/data/test_pairs_1000_seed42.csv'
+[PIPELINE] Starting True Gemma4-12B (707f0a3) RQ2 Pipeline on GPU 0...
+[PIPELINE] Start Time: 2026-09-12 12:03:26 KST
+[PIPELINE] Executing inference...
+[MAIN] Loading fixed pair metadata (1,000 pairs x 3 languages)...
+[MAIN] Loaded 3000 pairs across languages: {'java': 1000, 'python': 1000, 'cuda': 1000}
+[MAIN] Loading image path lookup...
+[MAIN] Loaded 9936 image path mappings.
+============================================================
+[PREFLIGHT] Verifying true Gemma4-12B checkpoint metadata...
+============================================================
+[PREFLIGHT] Target Repository ID : google/gemma-4-12B-it
+[PREFLIGHT] Detected Repo in Path: google/gemma-4-12B-it
+[PREFLIGHT] Target Revision Hash : 707f0a3b8a3c7ad586ed01e27eafbad8a27dd0f7
+[PREFLIGHT] Detected Rev in Path : 707f0a3b8a3c7ad586ed01e27eafbad8a27dd0f7
+[PREFLIGHT] Model Architecture   : ['Gemma4UnifiedForConditionalGeneration']
+[PREFLIGHT] Model Type           : gemma4_unified
+[PREFLIGHT] Verification PASSED! True Gemma4-12B confirmed.
+
+=======================================================
+[GEMMA4-RUN] Initializing true google/gemma-4-12B-it on cuda:0...
+=======================================================
+[GEMMA4-RUN] Total planned calls: 42000 | Already done: 0
+[GEMMA4-RUN] Candidate tokens: ' A'=562, ' B'=603
+Loading weights:   0%|          | 0/677 [00:00<?, ?it/s]Loading weights:   0%|          | 3/677 [00:00<01:06, 10.18it/s]Loading weights:   2%|▏         | 16/677 [00:00<00:13, 48.44it/s]Loading weights:   4%|▍         | 27/677 [00:00<00:09, 66.42it/s]Loading weights:   5%|▌         | 36/677 [00:00<00:09, 70.60it/s]Loading weights:   7%|▋         | 50/677 [00:00<00:07, 83.42it/s]Loading weights:   9%|▉         | 64/677 [00:00<00:06, 92.29it/s]Loading weights:  12%|█▏        | 78/677 [00:01<00:06, 98.02it/s]Loading weights:  13%|█▎        | 89/677 [00:01<00:05, 99.33it/s]Loading weights:  15%|█▌        | 104/677 [00:01<00:05, 103.34it/s]Loading weights:  17%|█▋        | 117/677 [00:01<00:05, 110.24it/s]Loading weights:  19%|█▉        | 129/677 [00:01<00:04, 112.26it/s]Loading weights:  21%|██        | 141/677 [00:01<00:04, 107.23it/s]Loading weights:  22%|██▏       | 152/677 [00:01<00:05, 104.68it/s]Loading weights:  24%|██▍       | 163/677 [00:01<00:05, 100.26it/s]Loading weights:  26%|██▌       | 174/677 [00:01<00:05, 92.97it/s] Loading weights:  28%|██▊       | 187/677 [00:02<00:05, 91.96it/s]Loading weights:  30%|██▉       | 201/677 [00:02<00:04, 101.19it/s]Loading weights:  32%|███▏      | 214/677 [00:02<00:04, 108.46it/s]Loading weights:  34%|███▎      | 228/677 [00:02<00:04, 107.66it/s]Loading weights:  36%|███▌      | 242/677 [00:02<00:04, 108.63it/s]Loading weights:  37%|███▋      | 253/677 [00:02<00:03, 107.58it/s]Loading weights:  39%|███▉      | 264/677 [00:02<00:04, 100.59it/s]Loading weights:  41%|████      | 276/677 [00:02<00:03, 104.63it/s]Loading weights:  42%|████▏     | 287/677 [00:03<00:03, 99.36it/s] Loading weights:  44%|████▍     | 298/677 [00:03<00:03, 102.01it/s]Loading weights:  46%|████▌     | 312/677 [00:03<00:03, 105.00it/s]Loading weights:  48%|████▊     | 326/677 [00:03<00:03, 105.95it/s]Loading weights:  50%|████▉     | 337/677 [00:03<00:03, 91.78it/s] Loading weights:  52%|█████▏    | 354/677 [00:03<00:03, 104.86it/s]Loading weights:  54%|█████▍    | 368/677 [00:03<00:02, 106.37it/s]Loading weights:  56%|█████▋    | 382/677 [00:03<00:02, 106.82it/s]Loading weights:  58%|█████▊    | 395/677 [00:04<00:02, 106.07it/s]Loading weights:  61%|██████    | 410/677 [00:04<00:02, 109.77it/s]Loading weights:  62%|██████▏   | 422/677 [00:04<00:02, 102.03it/s]Loading weights:  64%|██████▍   | 436/677 [00:04<00:02, 104.27it/s]Loading weights:  67%|██████▋   | 451/677 [00:04<00:02, 108.25it/s]Loading weights:  69%|██████▊   | 464/677 [00:04<00:02, 105.67it/s]Loading weights:  71%|███████   | 478/677 [00:04<00:01, 107.09it/s]Loading weights:  73%|███████▎  | 493/677 [00:04<00:01, 109.48it/s]Loading weights:  75%|███████▍  | 505/677 [00:05<00:01, 111.17it/s]Loading weights:  77%|███████▋  | 519/677 [00:05<00:01, 111.15it/s]Loading weights:  79%|███████▊  | 533/677 [00:05<00:01, 110.43it/s]Loading weights:  81%|████████  | 547/677 [00:05<00:01, 110.67it/s]Loading weights:  83%|████████▎ | 561/677 [00:05<00:01, 110.69it/s]Loading weights:  85%|████████▍ | 575/677 [00:05<00:00, 103.28it/s]Loading weights:  87%|████████▋ | 586/677 [00:05<00:00, 98.91it/s] Loading weights:  89%|████████▉ | 602/677 [00:05<00:00, 109.29it/s]Loading weights:  91%|█████████ | 616/677 [00:06<00:00, 108.79it/s]Loading weights:  93%|█████████▎| 630/677 [00:06<00:00, 101.89it/s]Loading weights:  95%|█████████▌| 645/677 [00:06<00:00, 106.44it/s]Loading weights:  97%|█████████▋| 659/677 [00:06<00:00, 108.47it/s]Loading weights: 100%|██████████| 677/677 [00:06<00:00, 103.18it/s]
+[GEMMA4-RUN] Model loaded on GPU.
+
+[GEMMA4-RUN] Starting condition: monokai_dark__fs20__wrap80__lnon (grid)
+Traceback (most recent call last):
+  File "/ANON/experiment_root/rq2_eval_reduced/scripts/run_gemma4_reduced.py", line 365, in <module>
+    main()
+    ~~~~^^
+  File "/ANON/experiment_root/rq2_eval_reduced/scripts/run_gemma4_reduced.py", line 361, in main
+    run_gemma4(pairs, lookup, device=args.device)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ANON/experiment_root/rq2_eval_reduced/scripts/run_gemma4_reduced.py", line 290, in run_gemma4
+    "source_pair_id": pair.source_pair_id,
+                      ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Pandas' object has no attribute 'source_pair_id'
+[PIPELINE] Starting True Gemma4-12B (707f0a3) RQ2 Pipeline on GPU 0...
+[PIPELINE] Start Time: 2026-09-12 12:04:06 KST
+[PIPELINE] Executing inference...
+[MAIN] Loading fixed pair metadata (1,000 pairs x 3 languages)...
+[MAIN] Loaded 3000 pairs across languages: {'java': 1000, 'python': 1000, 'cuda': 1000}
+[MAIN] Loading image path lookup...
+[MAIN] Loaded 9936 image path mappings.
+============================================================
+[PREFLIGHT] Verifying true Gemma4-12B checkpoint metadata...
+============================================================
+[PREFLIGHT] Target Repository ID : google/gemma-4-12B-it
+[PREFLIGHT] Detected Repo in Path: google/gemma-4-12B-it
+[PREFLIGHT] Target Revision Hash : 707f0a3b8a3c7ad586ed01e27eafbad8a27dd0f7
+[PREFLIGHT] Detected Rev in Path : 707f0a3b8a3c7ad586ed01e27eafbad8a27dd0f7
+[PREFLIGHT] Model Architecture   : ['Gemma4UnifiedForConditionalGeneration']
+[PREFLIGHT] Model Type           : gemma4_unified
+[PREFLIGHT] Verification PASSED! True Gemma4-12B confirmed.
+
+=======================================================
+[GEMMA4-RUN] Initializing true google/gemma-4-12B-it on cuda:0...
+=======================================================
+[GEMMA4-RUN] Total planned calls: 42000 | Already done: 0
+[GEMMA4-RUN] Candidate tokens: ' A'=562, ' B'=603
+Loading weights:   0%|          | 0/677 [00:00<?, ?it/s]Loading weights:   0%|          | 3/677 [00:00<01:05, 10.24it/s]Loading weights:   2%|▏         | 13/677 [00:00<00:17, 38.95it/s]Loading weights:   3%|▎         | 22/677 [00:00<00:12, 54.33it/s]Loading weights:   5%|▌         | 35/677 [00:00<00:09, 70.26it/s]Loading weights:   7%|▋         | 49/677 [00:00<00:07, 83.25it/s]Loading weights:   9%|▉         | 63/677 [00:00<00:06, 98.36it/s]Loading weights:  11%|█▏        | 77/677 [00:00<00:05, 101.74it/s]Loading weights:  13%|█▎        | 89/677 [00:01<00:05, 104.21it/s]Loading weights:  15%|█▌        | 103/677 [00:01<00:05, 104.87it/s]Loading weights:  17%|█▋        | 114/677 [00:01<00:05, 105.47it/s]Loading weights:  18%|█▊        | 125/677 [00:01<00:05, 100.61it/s]Loading weights:  20%|██        | 136/677 [00:01<00:05, 98.32it/s] Loading weights:  22%|██▏       | 146/677 [00:01<00:05, 98.76it/s]Loading weights:  24%|██▎       | 160/677 [00:01<00:05, 101.40it/s]Loading weights:  25%|██▌       | 172/677 [00:01<00:04, 104.02it/s]Loading weights:  27%|██▋       | 183/677 [00:02<00:04, 104.73it/s]Loading weights:  29%|██▊       | 194/677 [00:02<00:04, 98.60it/s] Loading weights:  30%|███       | 204/677 [00:02<00:05, 91.50it/s]Loading weights:  32%|███▏      | 216/677 [00:02<00:05, 91.75it/s]Loading weights:  34%|███▍      | 230/677 [00:02<00:04, 94.02it/s]Loading weights:  36%|███▌      | 244/677 [00:02<00:04, 98.61it/s]Loading weights:  38%|███▊      | 255/677 [00:02<00:04, 100.15it/s]Loading weights:  40%|███▉      | 270/677 [00:02<00:03, 104.36it/s]Loading weights:  42%|████▏     | 283/677 [00:03<00:03, 106.93it/s]Loading weights:  43%|████▎     | 294/677 [00:03<00:03, 107.65it/s]Loading weights:  45%|████▌     | 305/677 [00:03<00:03, 97.94it/s] Loading weights:  47%|████▋     | 315/677 [00:03<00:03, 94.53it/s]Loading weights:  48%|████▊     | 327/677 [00:03<00:03, 93.52it/s]Loading weights:  50%|█████     | 339/677 [00:03<00:03, 88.10it/s]Loading weights:  52%|█████▏    | 353/677 [00:03<00:03, 98.83it/s]Loading weights:  54%|█████▍    | 366/677 [00:03<00:03, 103.50it/s]Loading weights:  56%|█████▌    | 377/677 [00:03<00:02, 104.78it/s]Loading weights:  57%|█████▋    | 388/677 [00:04<00:02, 96.68it/s] Loading weights:  59%|█████▉    | 398/677 [00:04<00:02, 95.99it/s]Loading weights:  60%|██████    | 409/677 [00:04<00:02, 92.89it/s]Loading weights:  62%|██████▏   | 422/677 [00:04<00:02, 96.21it/s]Loading weights:  64%|██████▍   | 436/677 [00:04<00:02, 99.92it/s]Loading weights:  66%|██████▋   | 450/677 [00:04<00:02, 95.90it/s]Loading weights:  69%|██████▊   | 465/677 [00:04<00:02, 101.92it/s]Loading weights:  71%|███████   | 478/677 [00:05<00:01, 105.61it/s]Loading weights:  73%|███████▎  | 491/677 [00:05<00:01, 105.16it/s]Loading weights:  74%|███████▍  | 504/677 [00:05<00:01, 105.99it/s]Loading weights:  77%|███████▋  | 518/677 [00:05<00:01, 106.47it/s]Loading weights:  79%|███████▊  | 532/677 [00:05<00:01, 108.37it/s]Loading weights:  81%|████████  | 546/677 [00:05<00:01, 108.84it/s]Loading weights:  83%|████████▎ | 560/677 [00:05<00:01, 108.58it/s]Loading weights:  85%|████████▍ | 574/677 [00:05<00:00, 108.56it/s]Loading weights:  86%|████████▋ | 585/677 [00:06<00:00, 107.52it/s]Loading weights:  88%|████████▊ | 596/677 [00:06<00:00, 104.16it/s]Loading weights:  90%|████████▉ | 607/677 [00:06<00:00, 101.76it/s]Loading weights:  91%|█████████▏| 618/677 [00:06<00:00, 97.68it/s] Loading weights:  93%|█████████▎| 631/677 [00:06<00:00, 98.74it/s]Loading weights:  95%|█████████▌| 645/677 [00:06<00:00, 102.87it/s]Loading weights:  97%|█████████▋| 658/677 [00:06<00:00, 103.22it/s]Loading weights: 100%|██████████| 677/677 [00:06<00:00, 99.49it/s] 
+[GEMMA4-RUN] Model loaded on GPU.
+
+[GEMMA4-RUN] Starting condition: monokai_dark__fs20__wrap80__lnon (grid)
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 50/42000 (0.1%) | Speed: 1.99 calls/s | ETA: 351.0 min | Mismatches: 1
+[GEMMA4-RUN] Progress: 100/42000 (0.2%) | Speed: 1.98 calls/s | ETA: 353.4 min | Mismatches: 1
+[GEMMA4-RUN] Progress: 150/42000 (0.4%) | Speed: 2.05 calls/s | ETA: 339.8 min | Mismatches: 1
+[GEMMA4-RUN] Progress: 200/42000 (0.5%) | Speed: 2.10 calls/s | ETA: 332.0 min | Mismatches: 1
+[GEMMA4-RUN] Progress: 250/42000 (0.6%) | Speed: 2.08 calls/s | ETA: 334.2 min | Mismatches: 1
+[GEMMA4-RUN] Progress: 300/42000 (0.7%) | Speed: 2.08 calls/s | ETA: 334.5 min | Mismatches: 1
+[GEMMA4-RUN] Progress: 350/42000 (0.8%) | Speed: 2.08 calls/s | ETA: 333.8 min | Mismatches: 1
+[GEMMA4-RUN] Progress: 400/42000 (1.0%) | Speed: 2.07 calls/s | ETA: 335.5 min | Mismatches: 1
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 450/42000 (1.1%) | Speed: 2.10 calls/s | ETA: 329.7 min | Mismatches: 2
+[GEMMA4-RUN] Progress: 500/42000 (1.2%) | Speed: 2.13 calls/s | ETA: 324.3 min | Mismatches: 2
+[GEMMA4-RUN] Progress: 550/42000 (1.3%) | Speed: 2.15 calls/s | ETA: 320.8 min | Mismatches: 2
+[GEMMA4-RUN] Progress: 600/42000 (1.4%) | Speed: 2.14 calls/s | ETA: 322.6 min | Mismatches: 2
+[GEMMA4-RUN] Progress: 650/42000 (1.5%) | Speed: 2.14 calls/s | ETA: 322.1 min | Mismatches: 2
+[GEMMA4-RUN] Progress: 700/42000 (1.7%) | Speed: 2.15 calls/s | ETA: 320.2 min | Mismatches: 2
+[GEMMA4-RUN] Progress: 750/42000 (1.8%) | Speed: 2.15 calls/s | ETA: 319.9 min | Mismatches: 2
+[GEMMA4-RUN] Progress: 800/42000 (1.9%) | Speed: 2.16 calls/s | ETA: 318.5 min | Mismatches: 2
+[GEMMA4-RUN] Progress: 850/42000 (2.0%) | Speed: 2.17 calls/s | ETA: 315.7 min | Mismatches: 2
+[GEMMA4-RUN] Progress: 900/42000 (2.1%) | Speed: 2.19 calls/s | ETA: 312.9 min | Mismatches: 2
+[GEMMA4-RUN] Progress: 950/42000 (2.3%) | Speed: 2.20 calls/s | ETA: 310.8 min | Mismatches: 2
+[GEMMA4-RUN] Progress: 1000/42000 (2.4%) | Speed: 2.21 calls/s | ETA: 308.7 min | Mismatches: 2
+[GEMMA4-RUN] Progress: 1050/42000 (2.5%) | Speed: 2.22 calls/s | ETA: 307.0 min | Mismatches: 2
+[GEMMA4-RUN] Progress: 1100/42000 (2.6%) | Speed: 2.23 calls/s | ETA: 305.4 min | Mismatches: 2
+[GEMMA4-RUN] Progress: 1150/42000 (2.7%) | Speed: 2.24 calls/s | ETA: 303.7 min | Mismatches: 2
+[GEMMA4-RUN] Progress: 1200/42000 (2.9%) | Speed: 2.24 calls/s | ETA: 303.3 min | Mismatches: 2
+[GEMMA4-RUN] Progress: 1250/42000 (3.0%) | Speed: 2.25 calls/s | ETA: 301.8 min | Mismatches: 2
+[GEMMA4-RUN] Progress: 1300/42000 (3.1%) | Speed: 2.26 calls/s | ETA: 300.7 min | Mismatches: 2
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 1350/42000 (3.2%) | Speed: 2.26 calls/s | ETA: 299.4 min | Mismatches: 3
+[GEMMA4-RUN] Progress: 1400/42000 (3.3%) | Speed: 2.27 calls/s | ETA: 298.0 min | Mismatches: 3
+[GEMMA4-RUN] Progress: 1450/42000 (3.5%) | Speed: 2.28 calls/s | ETA: 296.7 min | Mismatches: 3
+[GEMMA4-RUN] Progress: 1500/42000 (3.6%) | Speed: 2.28 calls/s | ETA: 296.1 min | Mismatches: 3
+[GEMMA4-RUN] Progress: 1550/42000 (3.7%) | Speed: 2.27 calls/s | ETA: 296.3 min | Mismatches: 3
+[GEMMA4-RUN] Progress: 1600/42000 (3.8%) | Speed: 2.27 calls/s | ETA: 296.5 min | Mismatches: 3
+[GEMMA4-RUN] Progress: 1650/42000 (3.9%) | Speed: 2.27 calls/s | ETA: 295.6 min | Mismatches: 3
+[WARNING] Argmax mismatch: parsed=None, argmax=None, raw='- Code A is severely broken visually. The first line is split across two lines in a way that breaks the syntax and'
+[GEMMA4-RUN] Progress: 1700/42000 (4.0%) | Speed: 2.28 calls/s | ETA: 294.9 min | Mismatches: 4
+[GEMMA4-RUN] Progress: 1750/42000 (4.2%) | Speed: 2.28 calls/s | ETA: 294.0 min | Mismatches: 4
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 1800/42000 (4.3%) | Speed: 2.29 calls/s | ETA: 292.8 min | Mismatches: 5
+[GEMMA4-RUN] Progress: 1850/42000 (4.4%) | Speed: 2.29 calls/s | ETA: 291.9 min | Mismatches: 5
+[GEMMA4-RUN] Progress: 1900/42000 (4.5%) | Speed: 2.30 calls/s | ETA: 290.9 min | Mismatches: 5
+[GEMMA4-RUN] Progress: 1950/42000 (4.6%) | Speed: 2.29 calls/s | ETA: 290.9 min | Mismatches: 5
+[GEMMA4-RUN] Progress: 2000/42000 (4.8%) | Speed: 2.29 calls/s | ETA: 290.6 min | Mismatches: 5
+[GEMMA4-RUN] Progress: 2050/42000 (4.9%) | Speed: 2.30 calls/s | ETA: 289.9 min | Mismatches: 5
+[GEMMA4-RUN] Progress: 2100/42000 (5.0%) | Speed: 2.30 calls/s | ETA: 289.0 min | Mismatches: 5
+[GEMMA4-RUN] Progress: 2150/42000 (5.1%) | Speed: 2.30 calls/s | ETA: 288.2 min | Mismatches: 5
+[GEMMA4-RUN] Progress: 2200/42000 (5.2%) | Speed: 2.31 calls/s | ETA: 287.4 min | Mismatches: 5
+[GEMMA4-RUN] Progress: 2250/42000 (5.4%) | Speed: 2.31 calls/s | ETA: 286.5 min | Mismatches: 5
+[GEMMA4-RUN] Progress: 2300/42000 (5.5%) | Speed: 2.32 calls/s | ETA: 285.7 min | Mismatches: 5
+[GEMMA4-RUN] Progress: 2350/42000 (5.6%) | Speed: 2.32 calls/s | ETA: 285.0 min | Mismatches: 5
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 2400/42000 (5.7%) | Speed: 2.32 calls/s | ETA: 284.1 min | Mismatches: 6
+[GEMMA4-RUN] Progress: 2450/42000 (5.8%) | Speed: 2.33 calls/s | ETA: 283.5 min | Mismatches: 6
+[GEMMA4-RUN] Progress: 2500/42000 (6.0%) | Speed: 2.33 calls/s | ETA: 282.9 min | Mismatches: 6
+[GEMMA4-RUN] Progress: 2550/42000 (6.1%) | Speed: 2.33 calls/s | ETA: 282.2 min | Mismatches: 6
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 2600/42000 (6.2%) | Speed: 2.33 calls/s | ETA: 281.6 min | Mismatches: 7
+[GEMMA4-RUN] Progress: 2650/42000 (6.3%) | Speed: 2.33 calls/s | ETA: 281.0 min | Mismatches: 7
+[GEMMA4-RUN] Progress: 2700/42000 (6.4%) | Speed: 2.34 calls/s | ETA: 280.3 min | Mismatches: 7
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 2750/42000 (6.5%) | Speed: 2.34 calls/s | ETA: 279.5 min | Mismatches: 8
+[GEMMA4-RUN] Progress: 2800/42000 (6.7%) | Speed: 2.34 calls/s | ETA: 278.9 min | Mismatches: 8
+[GEMMA4-RUN] Progress: 2850/42000 (6.8%) | Speed: 2.34 calls/s | ETA: 278.3 min | Mismatches: 8
+[GEMMA4-RUN] Progress: 2900/42000 (6.9%) | Speed: 2.33 calls/s | ETA: 279.9 min | Mismatches: 8
+[WARNING] Argmax mismatch: parsed=None, argmax=None, raw="- Code A is a small snippet of procedural code with some comments. It's very simple but lacks context."
+[GEMMA4-RUN] Progress: 2950/42000 (7.0%) | Speed: 2.29 calls/s | ETA: 283.9 min | Mismatches: 9
+[GEMMA4-RUN] Progress: 3000/42000 (7.1%) | Speed: 2.26 calls/s | ETA: 288.2 min | Mismatches: 9
+[GEMMA4-RUN] Progress: 3050/42000 (7.3%) | Speed: 2.22 calls/s | ETA: 292.0 min | Mismatches: 9
+[GEMMA4-RUN] Progress: 3100/42000 (7.4%) | Speed: 2.20 calls/s | ETA: 295.2 min | Mismatches: 9
+[GEMMA4-RUN] Progress: 3150/42000 (7.5%) | Speed: 2.17 calls/s | ETA: 299.0 min | Mismatches: 9
+[GEMMA4-RUN] Progress: 3200/42000 (7.6%) | Speed: 2.14 calls/s | ETA: 302.4 min | Mismatches: 9
+[GEMMA4-RUN] Progress: 3250/42000 (7.7%) | Speed: 2.11 calls/s | ETA: 305.7 min | Mismatches: 9
+[GEMMA4-RUN] Progress: 3300/42000 (7.9%) | Speed: 2.09 calls/s | ETA: 309.3 min | Mismatches: 9
+[GEMMA4-RUN] Progress: 3350/42000 (8.0%) | Speed: 2.06 calls/s | ETA: 312.4 min | Mismatches: 9
+[GEMMA4-RUN] Progress: 3400/42000 (8.1%) | Speed: 2.04 calls/s | ETA: 314.9 min | Mismatches: 9
+[GEMMA4-RUN] Progress: 3450/42000 (8.2%) | Speed: 2.02 calls/s | ETA: 317.4 min | Mismatches: 9
+[GEMMA4-RUN] Progress: 3500/42000 (8.3%) | Speed: 2.01 calls/s | ETA: 319.7 min | Mismatches: 9
+[GEMMA4-RUN] Progress: 3550/42000 (8.5%) | Speed: 1.99 calls/s | ETA: 321.4 min | Mismatches: 9
+[GEMMA4-RUN] Progress: 3600/42000 (8.6%) | Speed: 1.99 calls/s | ETA: 321.5 min | Mismatches: 9
+[GEMMA4-RUN] Progress: 3650/42000 (8.7%) | Speed: 1.99 calls/s | ETA: 321.2 min | Mismatches: 9
+[GEMMA4-RUN] Progress: 3700/42000 (8.8%) | Speed: 1.99 calls/s | ETA: 320.5 min | Mismatches: 9
+[GEMMA4-RUN] Progress: 3750/42000 (8.9%) | Speed: 1.99 calls/s | ETA: 320.0 min | Mismatches: 9
+[GEMMA4-RUN] Progress: 3800/42000 (9.0%) | Speed: 1.99 calls/s | ETA: 319.9 min | Mismatches: 9
+[GEMMA4-RUN] Progress: 3850/42000 (9.2%) | Speed: 1.99 calls/s | ETA: 319.1 min | Mismatches: 9
+[GEMMA4-RUN] Progress: 3900/42000 (9.3%) | Speed: 1.99 calls/s | ETA: 318.5 min | Mismatches: 9
+[GEMMA4-RUN] Progress: 3950/42000 (9.4%) | Speed: 1.99 calls/s | ETA: 318.1 min | Mismatches: 9
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='thought\nFINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 4000/42000 (9.5%) | Speed: 2.00 calls/s | ETA: 317.4 min | Mismatches: 10
+[GEMMA4-RUN] Progress: 4050/42000 (9.6%) | Speed: 2.00 calls/s | ETA: 316.9 min | Mismatches: 10
+[GEMMA4-RUN] Progress: 4100/42000 (9.8%) | Speed: 2.00 calls/s | ETA: 316.5 min | Mismatches: 10
+[WARNING] Argmax mismatch: parsed=None, argmax=None, raw='The provided images do not contain comparable code snippets for a readability comparison. Code A shows a kernel implementation involving voxel calculations and'
+[GEMMA4-RUN] Progress: 4150/42000 (9.9%) | Speed: 2.00 calls/s | ETA: 316.2 min | Mismatches: 11
+[GEMMA4-RUN] Progress: 4200/42000 (10.0%) | Speed: 2.00 calls/s | ETA: 315.1 min | Mismatches: 11
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 4250/42000 (10.1%) | Speed: 2.00 calls/s | ETA: 314.0 min | Mismatches: 12
+[GEMMA4-RUN] Progress: 4300/42000 (10.2%) | Speed: 2.01 calls/s | ETA: 313.0 min | Mismatches: 12
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 4350/42000 (10.4%) | Speed: 2.01 calls/s | ETA: 312.1 min | Mismatches: 13
+[GEMMA4-RUN] Progress: 4400/42000 (10.5%) | Speed: 2.01 calls/s | ETA: 311.0 min | Mismatches: 13
+[GEMMA4-RUN] Progress: 4450/42000 (10.6%) | Speed: 2.02 calls/s | ETA: 310.0 min | Mismatches: 13
+[GEMMA4-RUN] Progress: 4500/42000 (10.7%) | Speed: 2.02 calls/s | ETA: 309.3 min | Mismatches: 13
+[GEMMA4-RUN] Progress: 4550/42000 (10.8%) | Speed: 2.02 calls/s | ETA: 308.3 min | Mismatches: 13
+[GEMMA4-RUN] Progress: 4600/42000 (11.0%) | Speed: 2.03 calls/s | ETA: 307.5 min | Mismatches: 13
+[GEMMA4-RUN] Progress: 4650/42000 (11.1%) | Speed: 2.02 calls/s | ETA: 307.9 min | Mismatches: 13
+[GEMMA4-RUN] Progress: 4700/42000 (11.2%) | Speed: 2.02 calls/s | ETA: 308.5 min | Mismatches: 13
+[GEMMA4-RUN] Progress: 4750/42000 (11.3%) | Speed: 2.01 calls/s | ETA: 309.1 min | Mismatches: 13
+[GEMMA4-RUN] Progress: 4800/42000 (11.4%) | Speed: 2.00 calls/s | ETA: 309.6 min | Mismatches: 13
+[GEMMA4-RUN] Progress: 4850/42000 (11.5%) | Speed: 2.00 calls/s | ETA: 309.5 min | Mismatches: 13
+[GEMMA4-RUN] Progress: 4900/42000 (11.7%) | Speed: 2.00 calls/s | ETA: 308.8 min | Mismatches: 13
+[GEMMA4-RUN] Progress: 4950/42000 (11.8%) | Speed: 2.00 calls/s | ETA: 308.4 min | Mismatches: 13
+[GEMMA4-RUN] Progress: 5000/42000 (11.9%) | Speed: 2.00 calls/s | ETA: 307.8 min | Mismatches: 13
+[GEMMA4-RUN] Progress: 5050/42000 (12.0%) | Speed: 2.00 calls/s | ETA: 307.3 min | Mismatches: 13
+[GEMMA4-RUN] Progress: 5100/42000 (12.1%) | Speed: 2.00 calls/s | ETA: 306.8 min | Mismatches: 13
+[GEMMA4-RUN] Progress: 5150/42000 (12.3%) | Speed: 2.00 calls/s | ETA: 306.4 min | Mismatches: 13
+[GEMMA4-RUN] Progress: 5200/42000 (12.4%) | Speed: 2.00 calls/s | ETA: 305.9 min | Mismatches: 13
+[GEMMA4-RUN] Progress: 5250/42000 (12.5%) | Speed: 2.00 calls/s | ETA: 306.0 min | Mismatches: 13
+[GEMMA4-RUN] Progress: 5300/42000 (12.6%) | Speed: 2.00 calls/s | ETA: 306.1 min | Mismatches: 13
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 5350/42000 (12.7%) | Speed: 2.00 calls/s | ETA: 305.6 min | Mismatches: 14
+[GEMMA4-RUN] Progress: 5400/42000 (12.9%) | Speed: 2.00 calls/s | ETA: 305.1 min | Mismatches: 14
+[GEMMA4-RUN] Progress: 5450/42000 (13.0%) | Speed: 2.00 calls/s | ETA: 304.7 min | Mismatches: 14
+[GEMMA4-RUN] Progress: 5500/42000 (13.1%) | Speed: 2.00 calls/s | ETA: 304.2 min | Mismatches: 14
+[GEMMA4-RUN] Progress: 5550/42000 (13.2%) | Speed: 2.00 calls/s | ETA: 303.8 min | Mismatches: 14
+[GEMMA4-RUN] Progress: 5600/42000 (13.3%) | Speed: 2.00 calls/s | ETA: 303.7 min | Mismatches: 14
+[GEMMA4-RUN] Progress: 5650/42000 (13.5%) | Speed: 1.99 calls/s | ETA: 303.7 min | Mismatches: 14
+[GEMMA4-RUN] Progress: 5700/42000 (13.6%) | Speed: 1.99 calls/s | ETA: 303.6 min | Mismatches: 14
+[GEMMA4-RUN] Progress: 5750/42000 (13.7%) | Speed: 1.99 calls/s | ETA: 303.3 min | Mismatches: 14
+[GEMMA4-RUN] Progress: 5800/42000 (13.8%) | Speed: 1.99 calls/s | ETA: 303.0 min | Mismatches: 14
+[GEMMA4-RUN] Progress: 5850/42000 (13.9%) | Speed: 1.99 calls/s | ETA: 302.5 min | Mismatches: 14
+[GEMMA4-RUN] Progress: 5900/42000 (14.0%) | Speed: 1.99 calls/s | ETA: 302.1 min | Mismatches: 14
+[GEMMA4-RUN] Progress: 5950/42000 (14.2%) | Speed: 1.99 calls/s | ETA: 301.7 min | Mismatches: 14
+[GEMMA4-RUN] Progress: 6000/42000 (14.3%) | Speed: 1.99 calls/s | ETA: 301.3 min | Mismatches: 14
+
+[GEMMA4-RUN] Starting condition: monokai_dark__fs20__wrap60__lnon (grid)
+[GEMMA4-RUN] Progress: 6050/42000 (14.4%) | Speed: 1.99 calls/s | ETA: 300.8 min | Mismatches: 14
+[GEMMA4-RUN] Progress: 6100/42000 (14.5%) | Speed: 1.99 calls/s | ETA: 300.3 min | Mismatches: 14
+[GEMMA4-RUN] Progress: 6150/42000 (14.6%) | Speed: 1.99 calls/s | ETA: 299.7 min | Mismatches: 14
+[GEMMA4-RUN] Progress: 6200/42000 (14.8%) | Speed: 2.00 calls/s | ETA: 298.9 min | Mismatches: 14
+[GEMMA4-RUN] Progress: 6250/42000 (14.9%) | Speed: 2.00 calls/s | ETA: 298.0 min | Mismatches: 14
+[GEMMA4-RUN] Progress: 6300/42000 (15.0%) | Speed: 2.00 calls/s | ETA: 297.2 min | Mismatches: 14
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 6350/42000 (15.1%) | Speed: 2.00 calls/s | ETA: 296.4 min | Mismatches: 15
+[GEMMA4-RUN] Progress: 6400/42000 (15.2%) | Speed: 2.01 calls/s | ETA: 295.6 min | Mismatches: 15
+[GEMMA4-RUN] Progress: 6450/42000 (15.4%) | Speed: 2.01 calls/s | ETA: 294.8 min | Mismatches: 15
+[GEMMA4-RUN] Progress: 6500/42000 (15.5%) | Speed: 2.01 calls/s | ETA: 293.9 min | Mismatches: 15
+[GEMMA4-RUN] Progress: 6550/42000 (15.6%) | Speed: 2.01 calls/s | ETA: 293.3 min | Mismatches: 15
+[GEMMA4-RUN] Progress: 6600/42000 (15.7%) | Speed: 2.02 calls/s | ETA: 292.8 min | Mismatches: 15
+[GEMMA4-RUN] Progress: 6650/42000 (15.8%) | Speed: 2.02 calls/s | ETA: 292.3 min | Mismatches: 15
+[GEMMA4-RUN] Progress: 6700/42000 (16.0%) | Speed: 2.02 calls/s | ETA: 291.7 min | Mismatches: 15
+[GEMMA4-RUN] Progress: 6750/42000 (16.1%) | Speed: 2.02 calls/s | ETA: 291.1 min | Mismatches: 15
+[GEMMA4-RUN] Progress: 6800/42000 (16.2%) | Speed: 2.02 calls/s | ETA: 290.5 min | Mismatches: 15
+[GEMMA4-RUN] Progress: 6850/42000 (16.3%) | Speed: 2.02 calls/s | ETA: 289.8 min | Mismatches: 15
+[GEMMA4-RUN] Progress: 6900/42000 (16.4%) | Speed: 2.02 calls/s | ETA: 288.9 min | Mismatches: 15
+[GEMMA4-RUN] Progress: 6950/42000 (16.5%) | Speed: 2.03 calls/s | ETA: 288.2 min | Mismatches: 15
+[WARNING] Argmax mismatch: parsed=None, argmax=None, raw='- Code A uses a `switch` statement which is the standard, highly readable way to map a single variable to multiple'
+[GEMMA4-RUN] Progress: 7000/42000 (16.7%) | Speed: 2.03 calls/s | ETA: 287.5 min | Mismatches: 16
+[GEMMA4-RUN] Progress: 7050/42000 (16.8%) | Speed: 2.03 calls/s | ETA: 286.7 min | Mismatches: 16
+[GEMMA4-RUN] Progress: 7100/42000 (16.9%) | Speed: 2.03 calls/s | ETA: 285.9 min | Mismatches: 16
+[GEMMA4-RUN] Progress: 7150/42000 (17.0%) | Speed: 2.04 calls/s | ETA: 285.2 min | Mismatches: 16
+[GEMMA4-RUN] Progress: 7200/42000 (17.1%) | Speed: 2.04 calls/s | ETA: 284.5 min | Mismatches: 16
+[GEMMA4-RUN] Progress: 7250/42000 (17.3%) | Speed: 2.04 calls/s | ETA: 284.0 min | Mismatches: 16
+[GEMMA4-RUN] Progress: 7300/42000 (17.4%) | Speed: 2.04 calls/s | ETA: 283.6 min | Mismatches: 16
+[GEMMA4-RUN] Progress: 7350/42000 (17.5%) | Speed: 2.04 calls/s | ETA: 283.2 min | Mismatches: 16
+[GEMMA4-RUN] Progress: 7400/42000 (17.6%) | Speed: 2.04 calls/s | ETA: 282.5 min | Mismatches: 16
+[GEMMA4-RUN] Progress: 7450/42000 (17.7%) | Speed: 2.04 calls/s | ETA: 282.2 min | Mismatches: 16
+[GEMMA4-RUN] Progress: 7500/42000 (17.9%) | Speed: 2.04 calls/s | ETA: 282.4 min | Mismatches: 16
+[GEMMA4-RUN] Progress: 7550/42000 (18.0%) | Speed: 2.04 calls/s | ETA: 282.1 min | Mismatches: 16
+[GEMMA4-RUN] Progress: 7600/42000 (18.1%) | Speed: 2.04 calls/s | ETA: 281.3 min | Mismatches: 16
+[GEMMA4-RUN] Progress: 7650/42000 (18.2%) | Speed: 2.04 calls/s | ETA: 280.6 min | Mismatches: 16
+[GEMMA4-RUN] Progress: 7700/42000 (18.3%) | Speed: 2.04 calls/s | ETA: 279.9 min | Mismatches: 16
+[GEMMA4-RUN] Progress: 7750/42000 (18.5%) | Speed: 2.04 calls/s | ETA: 279.2 min | Mismatches: 16
+[GEMMA4-RUN] Progress: 7800/42000 (18.6%) | Speed: 2.05 calls/s | ETA: 278.5 min | Mismatches: 16
+[GEMMA4-RUN] Progress: 7850/42000 (18.7%) | Speed: 2.05 calls/s | ETA: 277.8 min | Mismatches: 16
+[GEMMA4-RUN] Progress: 7900/42000 (18.8%) | Speed: 2.05 calls/s | ETA: 277.0 min | Mismatches: 16
+[GEMMA4-RUN] Progress: 7950/42000 (18.9%) | Speed: 2.05 calls/s | ETA: 276.4 min | Mismatches: 16
+[GEMMA4-RUN] Progress: 8000/42000 (19.0%) | Speed: 2.06 calls/s | ETA: 275.7 min | Mismatches: 16
+[GEMMA4-RUN] Progress: 8050/42000 (19.2%) | Speed: 2.06 calls/s | ETA: 275.3 min | Mismatches: 16
+[GEMMA4-RUN] Progress: 8100/42000 (19.3%) | Speed: 2.05 calls/s | ETA: 275.0 min | Mismatches: 16
+[GEMMA4-RUN] Progress: 8150/42000 (19.4%) | Speed: 2.06 calls/s | ETA: 274.4 min | Mismatches: 16
+[GEMMA4-RUN] Progress: 8200/42000 (19.5%) | Speed: 2.06 calls/s | ETA: 273.7 min | Mismatches: 16
+[GEMMA4-RUN] Progress: 8250/42000 (19.6%) | Speed: 2.06 calls/s | ETA: 273.0 min | Mismatches: 16
+[GEMMA4-RUN] Progress: 8300/42000 (19.8%) | Speed: 2.06 calls/s | ETA: 272.3 min | Mismatches: 16
+[GEMMA4-RUN] Progress: 8350/42000 (19.9%) | Speed: 2.06 calls/s | ETA: 271.7 min | Mismatches: 16
+[GEMMA4-RUN] Progress: 8400/42000 (20.0%) | Speed: 2.07 calls/s | ETA: 271.0 min | Mismatches: 16
+[GEMMA4-RUN] Progress: 8450/42000 (20.1%) | Speed: 2.07 calls/s | ETA: 270.4 min | Mismatches: 16
+[GEMMA4-RUN] Progress: 8500/42000 (20.2%) | Speed: 2.07 calls/s | ETA: 269.7 min | Mismatches: 16
+[GEMMA4-RUN] Progress: 8550/42000 (20.4%) | Speed: 2.07 calls/s | ETA: 269.0 min | Mismatches: 16
+[GEMMA4-RUN] Progress: 8600/42000 (20.5%) | Speed: 2.08 calls/s | ETA: 268.3 min | Mismatches: 16
+[GEMMA4-RUN] Progress: 8650/42000 (20.6%) | Speed: 2.08 calls/s | ETA: 267.6 min | Mismatches: 16
+[GEMMA4-RUN] Progress: 8700/42000 (20.7%) | Speed: 2.08 calls/s | ETA: 266.9 min | Mismatches: 16
+[GEMMA4-RUN] Progress: 8750/42000 (20.8%) | Speed: 2.08 calls/s | ETA: 266.3 min | Mismatches: 16
+[GEMMA4-RUN] Progress: 8800/42000 (21.0%) | Speed: 2.08 calls/s | ETA: 265.7 min | Mismatches: 16
+[GEMMA4-RUN] Progress: 8850/42000 (21.1%) | Speed: 2.08 calls/s | ETA: 265.1 min | Mismatches: 16
+[GEMMA4-RUN] Progress: 8900/42000 (21.2%) | Speed: 2.09 calls/s | ETA: 264.4 min | Mismatches: 16
+[GEMMA4-RUN] Progress: 8950/42000 (21.3%) | Speed: 2.09 calls/s | ETA: 263.8 min | Mismatches: 16
+[GEMMA4-RUN] Progress: 9000/42000 (21.4%) | Speed: 2.09 calls/s | ETA: 263.2 min | Mismatches: 16
+[GEMMA4-RUN] Progress: 9050/42000 (21.5%) | Speed: 2.09 calls/s | ETA: 262.6 min | Mismatches: 16
+[GEMMA4-RUN] Progress: 9100/42000 (21.7%) | Speed: 2.09 calls/s | ETA: 262.0 min | Mismatches: 16
+[GEMMA4-RUN] Progress: 9150/42000 (21.8%) | Speed: 2.09 calls/s | ETA: 261.4 min | Mismatches: 16
+[GEMMA4-RUN] Progress: 9200/42000 (21.9%) | Speed: 2.10 calls/s | ETA: 260.8 min | Mismatches: 16
+[GEMMA4-RUN] Progress: 9250/42000 (22.0%) | Speed: 2.10 calls/s | ETA: 260.2 min | Mismatches: 16
+[GEMMA4-RUN] Progress: 9300/42000 (22.1%) | Speed: 2.10 calls/s | ETA: 259.5 min | Mismatches: 16
+[GEMMA4-RUN] Progress: 9350/42000 (22.3%) | Speed: 2.10 calls/s | ETA: 258.9 min | Mismatches: 16
+[GEMMA4-RUN] Progress: 9400/42000 (22.4%) | Speed: 2.10 calls/s | ETA: 258.2 min | Mismatches: 16
+[GEMMA4-RUN] Progress: 9450/42000 (22.5%) | Speed: 2.11 calls/s | ETA: 257.6 min | Mismatches: 16
+[GEMMA4-RUN] Progress: 9500/42000 (22.6%) | Speed: 2.11 calls/s | ETA: 257.1 min | Mismatches: 16
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 9550/42000 (22.7%) | Speed: 2.11 calls/s | ETA: 256.5 min | Mismatches: 17
+[GEMMA4-RUN] Progress: 9600/42000 (22.9%) | Speed: 2.11 calls/s | ETA: 255.9 min | Mismatches: 17
+[GEMMA4-RUN] Progress: 9650/42000 (23.0%) | Speed: 2.11 calls/s | ETA: 255.3 min | Mismatches: 17
+[GEMMA4-RUN] Progress: 9700/42000 (23.1%) | Speed: 2.11 calls/s | ETA: 254.7 min | Mismatches: 17
+[GEMMA4-RUN] Progress: 9750/42000 (23.2%) | Speed: 2.11 calls/s | ETA: 254.2 min | Mismatches: 17
+[GEMMA4-RUN] Progress: 9800/42000 (23.3%) | Speed: 2.12 calls/s | ETA: 253.6 min | Mismatches: 17
+[GEMMA4-RUN] Progress: 9850/42000 (23.5%) | Speed: 2.12 calls/s | ETA: 253.0 min | Mismatches: 17
+[GEMMA4-RUN] Progress: 9900/42000 (23.6%) | Speed: 2.12 calls/s | ETA: 252.4 min | Mismatches: 17
+[GEMMA4-RUN] Progress: 9950/42000 (23.7%) | Speed: 2.12 calls/s | ETA: 251.9 min | Mismatches: 17
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[WARNING] Argmax mismatch: parsed=None, argmax=None, raw='The provided images are incomplete. Code A shows a significant portion of a script (lines 1-49) including'
+[GEMMA4-RUN] Progress: 10000/42000 (23.8%) | Speed: 2.12 calls/s | ETA: 251.3 min | Mismatches: 19
+[WARNING] Argmax mismatch: parsed=None, argmax=None, raw='The provided images do not contain comparable code snippets for a readability comparison. Code A shows a complex CUDA kernel implementation with nested'
+[WARNING] Argmax mismatch: parsed=None, argmax=None, raw='1.  **Visual clarity**: Code A is very clean. It uses standard indentation and has plenty of whitespace between lines'
+[GEMMA4-RUN] Progress: 10050/42000 (23.9%) | Speed: 2.12 calls/s | ETA: 250.8 min | Mismatches: 21
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 10100/42000 (24.0%) | Speed: 2.12 calls/s | ETA: 250.3 min | Mismatches: 22
+[GEMMA4-RUN] Progress: 10150/42000 (24.2%) | Speed: 2.12 calls/s | ETA: 249.9 min | Mismatches: 22
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 10200/42000 (24.3%) | Speed: 2.13 calls/s | ETA: 249.4 min | Mismatches: 23
+[GEMMA4-RUN] Progress: 10250/42000 (24.4%) | Speed: 2.13 calls/s | ETA: 248.8 min | Mismatches: 23
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 10300/42000 (24.5%) | Speed: 2.13 calls/s | ETA: 248.3 min | Mismatches: 24
+[GEMMA4-RUN] Progress: 10350/42000 (24.6%) | Speed: 2.13 calls/s | ETA: 247.8 min | Mismatches: 24
+[GEMMA4-RUN] Progress: 10400/42000 (24.8%) | Speed: 2.13 calls/s | ETA: 247.2 min | Mismatches: 24
+[WARNING] Argmax mismatch: parsed=None, argmax=None, raw='The provided images do not contain comparable code snippets for a meaningful readability comparison. Code A shows a complex CUDA kernel with nested'
+[GEMMA4-RUN] Progress: 10450/42000 (24.9%) | Speed: 2.13 calls/s | ETA: 246.7 min | Mismatches: 25
+[GEMMA4-RUN] Progress: 10500/42000 (25.0%) | Speed: 2.13 calls/s | ETA: 246.1 min | Mismatches: 25
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 10550/42000 (25.1%) | Speed: 2.13 calls/s | ETA: 245.6 min | Mismatches: 26
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 10600/42000 (25.2%) | Speed: 2.14 calls/s | ETA: 245.1 min | Mismatches: 27
+[GEMMA4-RUN] Progress: 10650/42000 (25.4%) | Speed: 2.14 calls/s | ETA: 244.5 min | Mismatches: 27
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 10700/42000 (25.5%) | Speed: 2.14 calls/s | ETA: 244.0 min | Mismatches: 29
+[WARNING] Argmax mismatch: parsed=None, argmax=None, raw='The provided images do not contain comparable code snippets for a readability comparison. Code A shows a complex CUDA kernel with nested loops'
+[GEMMA4-RUN] Progress: 10750/42000 (25.6%) | Speed: 2.14 calls/s | ETA: 243.5 min | Mismatches: 30
+[GEMMA4-RUN] Progress: 10800/42000 (25.7%) | Speed: 2.14 calls/s | ETA: 243.0 min | Mismatches: 30
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 10850/42000 (25.8%) | Speed: 2.14 calls/s | ETA: 242.5 min | Mismatches: 31
+[GEMMA4-RUN] Progress: 10900/42000 (26.0%) | Speed: 2.14 calls/s | ETA: 242.1 min | Mismatches: 31
+[GEMMA4-RUN] Progress: 10950/42000 (26.1%) | Speed: 2.14 calls/s | ETA: 241.7 min | Mismatches: 31
+[GEMMA4-RUN] Progress: 11000/42000 (26.2%) | Speed: 2.14 calls/s | ETA: 241.2 min | Mismatches: 31
+[GEMMA4-RUN] Progress: 11050/42000 (26.3%) | Speed: 2.14 calls/s | ETA: 240.8 min | Mismatches: 31
+[GEMMA4-RUN] Progress: 11100/42000 (26.4%) | Speed: 2.14 calls/s | ETA: 240.3 min | Mismatches: 31
+[GEMMA4-RUN] Progress: 11150/42000 (26.5%) | Speed: 2.14 calls/s | ETA: 239.9 min | Mismatches: 31
+[GEMMA4-RUN] Progress: 11200/42000 (26.7%) | Speed: 2.14 calls/s | ETA: 239.5 min | Mismatches: 31
+[GEMMA4-RUN] Progress: 11250/42000 (26.8%) | Speed: 2.14 calls/s | ETA: 239.0 min | Mismatches: 31
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 11300/42000 (26.9%) | Speed: 2.14 calls/s | ETA: 238.6 min | Mismatches: 32
+[GEMMA4-RUN] Progress: 11350/42000 (27.0%) | Speed: 2.15 calls/s | ETA: 238.1 min | Mismatches: 32
+[GEMMA4-RUN] Progress: 11400/42000 (27.1%) | Speed: 2.15 calls/s | ETA: 237.7 min | Mismatches: 32
+[WARNING] Argmax mismatch: parsed=None, argmax=None, raw='The provided images do not contain two versions of the same code snippet for comparison. Code A shows a CUDA kernel implementation involving'
+[GEMMA4-RUN] Progress: 11450/42000 (27.3%) | Speed: 2.15 calls/s | ETA: 237.3 min | Mismatches: 33
+[GEMMA4-RUN] Progress: 11500/42000 (27.4%) | Speed: 2.15 calls/s | ETA: 236.9 min | Mismatches: 33
+[GEMMA4-RUN] Progress: 11550/42000 (27.5%) | Speed: 2.15 calls/s | ETA: 236.4 min | Mismatches: 33
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 11600/42000 (27.6%) | Speed: 2.15 calls/s | ETA: 236.0 min | Mismatches: 34
+[GEMMA4-RUN] Progress: 11650/42000 (27.7%) | Speed: 2.15 calls/s | ETA: 235.6 min | Mismatches: 34
+[GEMMA4-RUN] Progress: 11700/42000 (27.9%) | Speed: 2.15 calls/s | ETA: 235.1 min | Mismatches: 34
+[GEMMA4-RUN] Progress: 11750/42000 (28.0%) | Speed: 2.15 calls/s | ETA: 234.7 min | Mismatches: 34
+[GEMMA4-RUN] Progress: 11800/42000 (28.1%) | Speed: 2.15 calls/s | ETA: 234.2 min | Mismatches: 34
+[GEMMA4-RUN] Progress: 11850/42000 (28.2%) | Speed: 2.15 calls/s | ETA: 233.8 min | Mismatches: 34
+[GEMMA4-RUN] Progress: 11900/42000 (28.3%) | Speed: 2.15 calls/s | ETA: 233.3 min | Mismatches: 34
+[GEMMA4-RUN] Progress: 11950/42000 (28.5%) | Speed: 2.15 calls/s | ETA: 232.9 min | Mismatches: 34
+[GEMMA4-RUN] Progress: 12000/42000 (28.6%) | Speed: 2.15 calls/s | ETA: 232.4 min | Mismatches: 34
+
+[GEMMA4-RUN] Starting condition: monokai_dark__fs24__wrap80__lnon (grid)
+[GEMMA4-RUN] Progress: 12050/42000 (28.7%) | Speed: 2.15 calls/s | ETA: 232.1 min | Mismatches: 34
+[GEMMA4-RUN] Progress: 12100/42000 (28.8%) | Speed: 2.15 calls/s | ETA: 231.8 min | Mismatches: 34
+[GEMMA4-RUN] Progress: 12150/42000 (28.9%) | Speed: 2.15 calls/s | ETA: 231.4 min | Mismatches: 34
+[GEMMA4-RUN] Progress: 12200/42000 (29.0%) | Speed: 2.15 calls/s | ETA: 231.0 min | Mismatches: 34
+[GEMMA4-RUN] Progress: 12250/42000 (29.2%) | Speed: 2.15 calls/s | ETA: 230.6 min | Mismatches: 34
+[GEMMA4-RUN] Progress: 12300/42000 (29.3%) | Speed: 2.15 calls/s | ETA: 230.1 min | Mismatches: 34
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 12350/42000 (29.4%) | Speed: 2.15 calls/s | ETA: 229.7 min | Mismatches: 35
+[GEMMA4-RUN] Progress: 12400/42000 (29.5%) | Speed: 2.15 calls/s | ETA: 229.3 min | Mismatches: 35
+[GEMMA4-RUN] Progress: 12450/42000 (29.6%) | Speed: 2.15 calls/s | ETA: 229.0 min | Mismatches: 35
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 12500/42000 (29.8%) | Speed: 2.15 calls/s | ETA: 228.7 min | Mismatches: 36
+[GEMMA4-RUN] Progress: 12550/42000 (29.9%) | Speed: 2.15 calls/s | ETA: 228.4 min | Mismatches: 36
+[GEMMA4-RUN] Progress: 12600/42000 (30.0%) | Speed: 2.15 calls/s | ETA: 228.0 min | Mismatches: 36
+[GEMMA4-RUN] Progress: 12650/42000 (30.1%) | Speed: 2.15 calls/s | ETA: 227.6 min | Mismatches: 36
+[GEMMA4-RUN] Progress: 12700/42000 (30.2%) | Speed: 2.15 calls/s | ETA: 227.1 min | Mismatches: 36
+[GEMMA4-RUN] Progress: 12750/42000 (30.4%) | Speed: 2.15 calls/s | ETA: 226.7 min | Mismatches: 36
+[GEMMA4-RUN] Progress: 12800/42000 (30.5%) | Speed: 2.15 calls/s | ETA: 226.3 min | Mismatches: 36
+[GEMMA4-RUN] Progress: 12850/42000 (30.6%) | Speed: 2.15 calls/s | ETA: 225.9 min | Mismatches: 36
+[GEMMA4-RUN] Progress: 12900/42000 (30.7%) | Speed: 2.15 calls/s | ETA: 225.5 min | Mismatches: 36
+[GEMMA4-RUN] Progress: 12950/42000 (30.8%) | Speed: 2.15 calls/s | ETA: 225.1 min | Mismatches: 36
+[GEMMA4-RUN] Progress: 13000/42000 (31.0%) | Speed: 2.15 calls/s | ETA: 224.7 min | Mismatches: 36
+[GEMMA4-RUN] Progress: 13050/42000 (31.1%) | Speed: 2.15 calls/s | ETA: 224.2 min | Mismatches: 36
+[GEMMA4-RUN] Progress: 13100/42000 (31.2%) | Speed: 2.15 calls/s | ETA: 223.8 min | Mismatches: 36
+[GEMMA4-RUN] Progress: 13150/42000 (31.3%) | Speed: 2.15 calls/s | ETA: 223.4 min | Mismatches: 36
+[GEMMA4-RUN] Progress: 13200/42000 (31.4%) | Speed: 2.15 calls/s | ETA: 223.1 min | Mismatches: 36
+[GEMMA4-RUN] Progress: 13250/42000 (31.5%) | Speed: 2.15 calls/s | ETA: 222.7 min | Mismatches: 36
+[GEMMA4-RUN] Progress: 13300/42000 (31.7%) | Speed: 2.15 calls/s | ETA: 222.4 min | Mismatches: 36
+[GEMMA4-RUN] Progress: 13350/42000 (31.8%) | Speed: 2.15 calls/s | ETA: 222.2 min | Mismatches: 36
+[GEMMA4-RUN] Progress: 13400/42000 (31.9%) | Speed: 2.15 calls/s | ETA: 221.8 min | Mismatches: 36
+[GEMMA4-RUN] Progress: 13450/42000 (32.0%) | Speed: 2.15 calls/s | ETA: 221.4 min | Mismatches: 36
+[GEMMA4-RUN] Progress: 13500/42000 (32.1%) | Speed: 2.15 calls/s | ETA: 221.0 min | Mismatches: 36
+[GEMMA4-RUN] Progress: 13550/42000 (32.3%) | Speed: 2.15 calls/s | ETA: 220.6 min | Mismatches: 36
+[GEMMA4-RUN] Progress: 13600/42000 (32.4%) | Speed: 2.15 calls/s | ETA: 220.2 min | Mismatches: 36
+[GEMMA4-RUN] Progress: 13650/42000 (32.5%) | Speed: 2.15 calls/s | ETA: 219.8 min | Mismatches: 36
+[GEMMA4-RUN] Progress: 13700/42000 (32.6%) | Speed: 2.15 calls/s | ETA: 219.5 min | Mismatches: 36
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 13750/42000 (32.7%) | Speed: 2.15 calls/s | ETA: 219.2 min | Mismatches: 37
+[GEMMA4-RUN] Progress: 13800/42000 (32.9%) | Speed: 2.15 calls/s | ETA: 218.8 min | Mismatches: 37
+[GEMMA4-RUN] Progress: 13850/42000 (33.0%) | Speed: 2.15 calls/s | ETA: 218.4 min | Mismatches: 37
+[GEMMA4-RUN] Progress: 13900/42000 (33.1%) | Speed: 2.15 calls/s | ETA: 217.9 min | Mismatches: 37
+[GEMMA4-RUN] Progress: 13950/42000 (33.2%) | Speed: 2.15 calls/s | ETA: 217.6 min | Mismatches: 37
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 14000/42000 (33.3%) | Speed: 2.15 calls/s | ETA: 217.2 min | Mismatches: 38
+[GEMMA4-RUN] Progress: 14050/42000 (33.5%) | Speed: 2.15 calls/s | ETA: 216.9 min | Mismatches: 38
+[GEMMA4-RUN] Progress: 14100/42000 (33.6%) | Speed: 2.15 calls/s | ETA: 216.6 min | Mismatches: 38
+[GEMMA4-RUN] Progress: 14150/42000 (33.7%) | Speed: 2.15 calls/s | ETA: 216.2 min | Mismatches: 38
+[GEMMA4-RUN] Progress: 14200/42000 (33.8%) | Speed: 2.15 calls/s | ETA: 215.8 min | Mismatches: 38
+[GEMMA4-RUN] Progress: 14250/42000 (33.9%) | Speed: 2.15 calls/s | ETA: 215.3 min | Mismatches: 38
+[GEMMA4-RUN] Progress: 14300/42000 (34.0%) | Speed: 2.15 calls/s | ETA: 214.9 min | Mismatches: 38
+[GEMMA4-RUN] Progress: 14350/42000 (34.2%) | Speed: 2.15 calls/s | ETA: 214.5 min | Mismatches: 38
+[GEMMA4-RUN] Progress: 14400/42000 (34.3%) | Speed: 2.15 calls/s | ETA: 214.1 min | Mismatches: 38
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 14450/42000 (34.4%) | Speed: 2.15 calls/s | ETA: 213.6 min | Mismatches: 39
+[GEMMA4-RUN] Progress: 14500/42000 (34.5%) | Speed: 2.15 calls/s | ETA: 213.2 min | Mismatches: 39
+[GEMMA4-RUN] Progress: 14550/42000 (34.6%) | Speed: 2.15 calls/s | ETA: 212.8 min | Mismatches: 39
+[GEMMA4-RUN] Progress: 14600/42000 (34.8%) | Speed: 2.15 calls/s | ETA: 212.4 min | Mismatches: 39
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 14650/42000 (34.9%) | Speed: 2.15 calls/s | ETA: 212.0 min | Mismatches: 40
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 14700/42000 (35.0%) | Speed: 2.15 calls/s | ETA: 211.6 min | Mismatches: 41
+[GEMMA4-RUN] Progress: 14750/42000 (35.1%) | Speed: 2.15 calls/s | ETA: 211.2 min | Mismatches: 41
+[GEMMA4-RUN] Progress: 14800/42000 (35.2%) | Speed: 2.15 calls/s | ETA: 210.8 min | Mismatches: 41
+[GEMMA4-RUN] Progress: 14850/42000 (35.4%) | Speed: 2.15 calls/s | ETA: 210.3 min | Mismatches: 41
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 14900/42000 (35.5%) | Speed: 2.15 calls/s | ETA: 209.9 min | Mismatches: 42
+[GEMMA4-RUN] Progress: 14950/42000 (35.6%) | Speed: 2.15 calls/s | ETA: 209.5 min | Mismatches: 42
+[GEMMA4-RUN] Progress: 15000/42000 (35.7%) | Speed: 2.15 calls/s | ETA: 209.0 min | Mismatches: 42
+[GEMMA4-RUN] Progress: 15050/42000 (35.8%) | Speed: 2.15 calls/s | ETA: 208.6 min | Mismatches: 42
+[GEMMA4-RUN] Progress: 15100/42000 (36.0%) | Speed: 2.15 calls/s | ETA: 208.2 min | Mismatches: 42
+[GEMMA4-RUN] Progress: 15150/42000 (36.1%) | Speed: 2.15 calls/s | ETA: 207.8 min | Mismatches: 42
+[GEMMA4-RUN] Progress: 15200/42000 (36.2%) | Speed: 2.15 calls/s | ETA: 207.4 min | Mismatches: 42
+[GEMMA4-RUN] Progress: 15250/42000 (36.3%) | Speed: 2.15 calls/s | ETA: 207.0 min | Mismatches: 42
+[GEMMA4-RUN] Progress: 15300/42000 (36.4%) | Speed: 2.15 calls/s | ETA: 206.6 min | Mismatches: 42
+[GEMMA4-RUN] Progress: 15350/42000 (36.5%) | Speed: 2.15 calls/s | ETA: 206.1 min | Mismatches: 42
+[GEMMA4-RUN] Progress: 15400/42000 (36.7%) | Speed: 2.15 calls/s | ETA: 205.7 min | Mismatches: 42
+[GEMMA4-RUN] Progress: 15450/42000 (36.8%) | Speed: 2.16 calls/s | ETA: 205.3 min | Mismatches: 42
+[GEMMA4-RUN] Progress: 15500/42000 (36.9%) | Speed: 2.16 calls/s | ETA: 204.9 min | Mismatches: 42
+[GEMMA4-RUN] Progress: 15550/42000 (37.0%) | Speed: 2.16 calls/s | ETA: 204.5 min | Mismatches: 42
+[GEMMA4-RUN] Progress: 15600/42000 (37.1%) | Speed: 2.16 calls/s | ETA: 204.1 min | Mismatches: 42
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 15650/42000 (37.3%) | Speed: 2.16 calls/s | ETA: 203.6 min | Mismatches: 43
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='thought\nFINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 15700/42000 (37.4%) | Speed: 2.16 calls/s | ETA: 203.2 min | Mismatches: 44
+[GEMMA4-RUN] Progress: 15750/42000 (37.5%) | Speed: 2.16 calls/s | ETA: 202.8 min | Mismatches: 44
+[GEMMA4-RUN] Progress: 15800/42000 (37.6%) | Speed: 2.16 calls/s | ETA: 202.4 min | Mismatches: 44
+[GEMMA4-RUN] Progress: 15850/42000 (37.7%) | Speed: 2.16 calls/s | ETA: 201.9 min | Mismatches: 44
+[GEMMA4-RUN] Progress: 15900/42000 (37.9%) | Speed: 2.16 calls/s | ETA: 201.5 min | Mismatches: 44
+[GEMMA4-RUN] Progress: 15950/42000 (38.0%) | Speed: 2.16 calls/s | ETA: 201.1 min | Mismatches: 44
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 16000/42000 (38.1%) | Speed: 2.16 calls/s | ETA: 200.7 min | Mismatches: 45
+[WARNING] Argmax mismatch: parsed=None, argmax=None, raw='The provided images do not contain comparable code snippets for a readability comparison. Image A shows a complex CUDA kernel implementation with nested'
+[GEMMA4-RUN] Progress: 16050/42000 (38.2%) | Speed: 2.16 calls/s | ETA: 200.3 min | Mismatches: 46
+[WARNING] Argmax mismatch: parsed=None, argmax=None, raw='The provided images do not contain two versions of the same logic to compare; instead, they show two different parts of a'
+[GEMMA4-RUN] Progress: 16100/42000 (38.3%) | Speed: 2.16 calls/s | ETA: 199.9 min | Mismatches: 47
+[WARNING] Argmax mismatch: parsed=None, argmax=None, raw='The provided images do not contain comparable code snippets for a readability comparison. Code A is a complex CUDA kernel with nested logic'
+[GEMMA4-RUN] Progress: 16150/42000 (38.5%) | Speed: 2.16 calls/s | ETA: 199.6 min | Mismatches: 48
+[GEMMA4-RUN] Progress: 16200/42000 (38.6%) | Speed: 2.16 calls/s | ETA: 199.2 min | Mismatches: 48
+[GEMMA4-RUN] Progress: 16250/42000 (38.7%) | Speed: 2.16 calls/s | ETA: 198.8 min | Mismatches: 48
+[GEMMA4-RUN] Progress: 16300/42000 (38.8%) | Speed: 2.16 calls/s | ETA: 198.4 min | Mismatches: 48
+[GEMMA4-RUN] Progress: 16350/42000 (38.9%) | Speed: 2.16 calls/s | ETA: 198.0 min | Mismatches: 48
+[GEMMA4-RUN] Progress: 16400/42000 (39.0%) | Speed: 2.16 calls/s | ETA: 197.6 min | Mismatches: 48
+[WARNING] Argmax mismatch: parsed=None, argmax=None, raw='The provided images do not contain comparable code snippets for a readability comparison. Image A shows a complex CUDA kernel function (`SHA'
+[GEMMA4-RUN] Progress: 16450/42000 (39.2%) | Speed: 2.16 calls/s | ETA: 197.2 min | Mismatches: 49
+[GEMMA4-RUN] Progress: 16500/42000 (39.3%) | Speed: 2.16 calls/s | ETA: 196.8 min | Mismatches: 49
+[GEMMA4-RUN] Progress: 16550/42000 (39.4%) | Speed: 2.16 calls/s | ETA: 196.4 min | Mismatches: 49
+[GEMMA4-RUN] Progress: 16600/42000 (39.5%) | Speed: 2.16 calls/s | ETA: 196.1 min | Mismatches: 49
+[GEMMA4-RUN] Progress: 16650/42000 (39.6%) | Speed: 2.16 calls/s | ETA: 195.7 min | Mismatches: 49
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 16700/42000 (39.8%) | Speed: 2.16 calls/s | ETA: 195.3 min | Mismatches: 50
+[GEMMA4-RUN] Progress: 16750/42000 (39.9%) | Speed: 2.16 calls/s | ETA: 195.0 min | Mismatches: 50
+[GEMMA4-RUN] Progress: 16800/42000 (40.0%) | Speed: 2.16 calls/s | ETA: 194.6 min | Mismatches: 50
+[GEMMA4-RUN] Progress: 16850/42000 (40.1%) | Speed: 2.16 calls/s | ETA: 194.3 min | Mismatches: 50
+[GEMMA4-RUN] Progress: 16900/42000 (40.2%) | Speed: 2.16 calls/s | ETA: 194.0 min | Mismatches: 50
+[GEMMA4-RUN] Progress: 16950/42000 (40.4%) | Speed: 2.16 calls/s | ETA: 193.6 min | Mismatches: 50
+[GEMMA4-RUN] Progress: 17000/42000 (40.5%) | Speed: 2.16 calls/s | ETA: 193.2 min | Mismatches: 50
+[GEMMA4-RUN] Progress: 17050/42000 (40.6%) | Speed: 2.16 calls/s | ETA: 192.9 min | Mismatches: 50
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 17100/42000 (40.7%) | Speed: 2.16 calls/s | ETA: 192.5 min | Mismatches: 51
+[GEMMA4-RUN] Progress: 17150/42000 (40.8%) | Speed: 2.16 calls/s | ETA: 192.1 min | Mismatches: 51
+[GEMMA4-RUN] Progress: 17200/42000 (41.0%) | Speed: 2.16 calls/s | ETA: 191.7 min | Mismatches: 51
+[WARNING] Argmax mismatch: parsed=None, argmax=None, raw='The provided images do not contain two different versions of the same logic to compare; instead, they show two different parts of'
+[GEMMA4-RUN] Progress: 17250/42000 (41.1%) | Speed: 2.16 calls/s | ETA: 191.4 min | Mismatches: 52
+[GEMMA4-RUN] Progress: 17300/42000 (41.2%) | Speed: 2.15 calls/s | ETA: 191.0 min | Mismatches: 52
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 17350/42000 (41.3%) | Speed: 2.15 calls/s | ETA: 190.7 min | Mismatches: 53
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 17400/42000 (41.4%) | Speed: 2.15 calls/s | ETA: 190.4 min | Mismatches: 54
+[GEMMA4-RUN] Progress: 17450/42000 (41.5%) | Speed: 2.15 calls/s | ETA: 190.0 min | Mismatches: 54
+[GEMMA4-RUN] Progress: 17500/42000 (41.7%) | Speed: 2.15 calls/s | ETA: 189.7 min | Mismatches: 54
+[GEMMA4-RUN] Progress: 17550/42000 (41.8%) | Speed: 2.15 calls/s | ETA: 189.4 min | Mismatches: 54
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 17600/42000 (41.9%) | Speed: 2.15 calls/s | ETA: 189.0 min | Mismatches: 55
+[GEMMA4-RUN] Progress: 17650/42000 (42.0%) | Speed: 2.15 calls/s | ETA: 188.7 min | Mismatches: 55
+[GEMMA4-RUN] Progress: 17700/42000 (42.1%) | Speed: 2.15 calls/s | ETA: 188.3 min | Mismatches: 55
+[GEMMA4-RUN] Progress: 17750/42000 (42.3%) | Speed: 2.15 calls/s | ETA: 188.0 min | Mismatches: 55
+[GEMMA4-RUN] Progress: 17800/42000 (42.4%) | Speed: 2.15 calls/s | ETA: 187.6 min | Mismatches: 55
+[GEMMA4-RUN] Progress: 17850/42000 (42.5%) | Speed: 2.15 calls/s | ETA: 187.2 min | Mismatches: 55
+[GEMMA4-RUN] Progress: 17900/42000 (42.6%) | Speed: 2.15 calls/s | ETA: 186.9 min | Mismatches: 55
+[GEMMA4-RUN] Progress: 17950/42000 (42.7%) | Speed: 2.15 calls/s | ETA: 186.5 min | Mismatches: 55
+[GEMMA4-RUN] Progress: 18000/42000 (42.9%) | Speed: 2.15 calls/s | ETA: 186.2 min | Mismatches: 55
+
+[GEMMA4-RUN] Starting condition: mono_light__fs20__wrap80__lnon (grid)
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 18050/42000 (43.0%) | Speed: 2.15 calls/s | ETA: 185.8 min | Mismatches: 56
+[GEMMA4-RUN] Progress: 18100/42000 (43.1%) | Speed: 2.15 calls/s | ETA: 185.4 min | Mismatches: 56
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 18150/42000 (43.2%) | Speed: 2.15 calls/s | ETA: 185.0 min | Mismatches: 57
+[GEMMA4-RUN] Progress: 18200/42000 (43.3%) | Speed: 2.15 calls/s | ETA: 184.6 min | Mismatches: 57
+[GEMMA4-RUN] Progress: 18250/42000 (43.5%) | Speed: 2.15 calls/s | ETA: 184.2 min | Mismatches: 57
+[GEMMA4-RUN] Progress: 18300/42000 (43.6%) | Speed: 2.15 calls/s | ETA: 183.8 min | Mismatches: 57
+[GEMMA4-RUN] Progress: 18350/42000 (43.7%) | Speed: 2.15 calls/s | ETA: 183.4 min | Mismatches: 57
+[GEMMA4-RUN] Progress: 18400/42000 (43.8%) | Speed: 2.15 calls/s | ETA: 183.0 min | Mismatches: 57
+[GEMMA4-RUN] Progress: 18450/42000 (43.9%) | Speed: 2.15 calls/s | ETA: 182.6 min | Mismatches: 57
+[GEMMA4-RUN] Progress: 18500/42000 (44.0%) | Speed: 2.15 calls/s | ETA: 182.3 min | Mismatches: 57
+[GEMMA4-RUN] Progress: 18550/42000 (44.2%) | Speed: 2.15 calls/s | ETA: 182.0 min | Mismatches: 57
+[GEMMA4-RUN] Progress: 18600/42000 (44.3%) | Speed: 2.15 calls/s | ETA: 181.6 min | Mismatches: 57
+[GEMMA4-RUN] Progress: 18650/42000 (44.4%) | Speed: 2.15 calls/s | ETA: 181.2 min | Mismatches: 57
+[GEMMA4-RUN] Progress: 18700/42000 (44.5%) | Speed: 2.15 calls/s | ETA: 180.8 min | Mismatches: 57
+[GEMMA4-RUN] Progress: 18750/42000 (44.6%) | Speed: 2.15 calls/s | ETA: 180.4 min | Mismatches: 57
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 18800/42000 (44.8%) | Speed: 2.15 calls/s | ETA: 180.0 min | Mismatches: 58
+[GEMMA4-RUN] Progress: 18850/42000 (44.9%) | Speed: 2.15 calls/s | ETA: 179.6 min | Mismatches: 58
+[GEMMA4-RUN] Progress: 18900/42000 (45.0%) | Speed: 2.15 calls/s | ETA: 179.2 min | Mismatches: 58
+[GEMMA4-RUN] Progress: 18950/42000 (45.1%) | Speed: 2.15 calls/s | ETA: 178.8 min | Mismatches: 58
+[GEMMA4-RUN] Progress: 19000/42000 (45.2%) | Speed: 2.15 calls/s | ETA: 178.4 min | Mismatches: 58
+[GEMMA4-RUN] Progress: 19050/42000 (45.4%) | Speed: 2.15 calls/s | ETA: 178.0 min | Mismatches: 58
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 19100/42000 (45.5%) | Speed: 2.15 calls/s | ETA: 177.6 min | Mismatches: 59
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 19150/42000 (45.6%) | Speed: 2.15 calls/s | ETA: 177.2 min | Mismatches: 60
+[GEMMA4-RUN] Progress: 19200/42000 (45.7%) | Speed: 2.15 calls/s | ETA: 176.8 min | Mismatches: 60
+[GEMMA4-RUN] Progress: 19250/42000 (45.8%) | Speed: 2.15 calls/s | ETA: 176.4 min | Mismatches: 60
+[GEMMA4-RUN] Progress: 19300/42000 (46.0%) | Speed: 2.15 calls/s | ETA: 176.0 min | Mismatches: 60
+[GEMMA4-RUN] Progress: 19350/42000 (46.1%) | Speed: 2.15 calls/s | ETA: 175.7 min | Mismatches: 60
+[GEMMA4-RUN] Progress: 19400/42000 (46.2%) | Speed: 2.15 calls/s | ETA: 175.3 min | Mismatches: 60
+[GEMMA4-RUN] Progress: 19450/42000 (46.3%) | Speed: 2.15 calls/s | ETA: 174.9 min | Mismatches: 60
+[GEMMA4-RUN] Progress: 19500/42000 (46.4%) | Speed: 2.15 calls/s | ETA: 174.5 min | Mismatches: 60
+[GEMMA4-RUN] Progress: 19550/42000 (46.5%) | Speed: 2.15 calls/s | ETA: 174.1 min | Mismatches: 60
+[GEMMA4-RUN] Progress: 19600/42000 (46.7%) | Speed: 2.15 calls/s | ETA: 173.7 min | Mismatches: 60
+[GEMMA4-RUN] Progress: 19650/42000 (46.8%) | Speed: 2.15 calls/s | ETA: 173.3 min | Mismatches: 60
+[GEMMA4-RUN] Progress: 19700/42000 (46.9%) | Speed: 2.15 calls/s | ETA: 172.9 min | Mismatches: 60
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 19750/42000 (47.0%) | Speed: 2.15 calls/s | ETA: 172.5 min | Mismatches: 61
+[GEMMA4-RUN] Progress: 19800/42000 (47.1%) | Speed: 2.15 calls/s | ETA: 172.1 min | Mismatches: 61
+[GEMMA4-RUN] Progress: 19850/42000 (47.3%) | Speed: 2.15 calls/s | ETA: 171.7 min | Mismatches: 61
+[GEMMA4-RUN] Progress: 19900/42000 (47.4%) | Speed: 2.15 calls/s | ETA: 171.3 min | Mismatches: 61
+[GEMMA4-RUN] Progress: 19950/42000 (47.5%) | Speed: 2.15 calls/s | ETA: 170.9 min | Mismatches: 61
+[GEMMA4-RUN] Progress: 20000/42000 (47.6%) | Speed: 2.15 calls/s | ETA: 170.5 min | Mismatches: 61
+[GEMMA4-RUN] Progress: 20050/42000 (47.7%) | Speed: 2.15 calls/s | ETA: 170.2 min | Mismatches: 61
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 20100/42000 (47.9%) | Speed: 2.15 calls/s | ETA: 169.8 min | Mismatches: 62
+[GEMMA4-RUN] Progress: 20150/42000 (48.0%) | Speed: 2.15 calls/s | ETA: 169.5 min | Mismatches: 62
+[GEMMA4-RUN] Progress: 20200/42000 (48.1%) | Speed: 2.15 calls/s | ETA: 169.1 min | Mismatches: 62
+[GEMMA4-RUN] Progress: 20250/42000 (48.2%) | Speed: 2.15 calls/s | ETA: 168.8 min | Mismatches: 62
+[GEMMA4-RUN] Progress: 20300/42000 (48.3%) | Speed: 2.15 calls/s | ETA: 168.4 min | Mismatches: 62
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 20350/42000 (48.5%) | Speed: 2.15 calls/s | ETA: 168.0 min | Mismatches: 64
+[GEMMA4-RUN] Progress: 20400/42000 (48.6%) | Speed: 2.15 calls/s | ETA: 167.6 min | Mismatches: 64
+[GEMMA4-RUN] Progress: 20450/42000 (48.7%) | Speed: 2.15 calls/s | ETA: 167.2 min | Mismatches: 64
+[GEMMA4-RUN] Progress: 20500/42000 (48.8%) | Speed: 2.15 calls/s | ETA: 166.8 min | Mismatches: 64
+[GEMMA4-RUN] Progress: 20550/42000 (48.9%) | Speed: 2.15 calls/s | ETA: 166.4 min | Mismatches: 64
+[GEMMA4-RUN] Progress: 20600/42000 (49.0%) | Speed: 2.15 calls/s | ETA: 165.9 min | Mismatches: 64
+[GEMMA4-RUN] Progress: 20650/42000 (49.2%) | Speed: 2.15 calls/s | ETA: 165.5 min | Mismatches: 64
+[GEMMA4-RUN] Progress: 20700/42000 (49.3%) | Speed: 2.15 calls/s | ETA: 165.1 min | Mismatches: 64
+[GEMMA4-RUN] Progress: 20750/42000 (49.4%) | Speed: 2.15 calls/s | ETA: 164.7 min | Mismatches: 64
+[GEMMA4-RUN] Progress: 20800/42000 (49.5%) | Speed: 2.15 calls/s | ETA: 164.3 min | Mismatches: 64
+[GEMMA4-RUN] Progress: 20850/42000 (49.6%) | Speed: 2.15 calls/s | ETA: 163.9 min | Mismatches: 64
+[GEMMA4-RUN] Progress: 20900/42000 (49.8%) | Speed: 2.15 calls/s | ETA: 163.5 min | Mismatches: 64
+[GEMMA4-RUN] Progress: 20950/42000 (49.9%) | Speed: 2.15 calls/s | ETA: 163.1 min | Mismatches: 64
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 21000/42000 (50.0%) | Speed: 2.15 calls/s | ETA: 162.6 min | Mismatches: 65
+[GEMMA4-RUN] Progress: 21050/42000 (50.1%) | Speed: 2.15 calls/s | ETA: 162.3 min | Mismatches: 65
+[GEMMA4-RUN] Progress: 21100/42000 (50.2%) | Speed: 2.15 calls/s | ETA: 161.9 min | Mismatches: 65
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 21150/42000 (50.4%) | Speed: 2.15 calls/s | ETA: 161.5 min | Mismatches: 66
+[GEMMA4-RUN] Progress: 21200/42000 (50.5%) | Speed: 2.15 calls/s | ETA: 161.1 min | Mismatches: 66
+[WARNING] Argmax mismatch: parsed=None, argmax=None, raw='- Code A is a standard Python script with clear class definitions, method structures, and comments. It follows standard indentation and'
+[GEMMA4-RUN] Progress: 21250/42000 (50.6%) | Speed: 2.15 calls/s | ETA: 160.7 min | Mismatches: 67
+[GEMMA4-RUN] Progress: 21300/42000 (50.7%) | Speed: 2.15 calls/s | ETA: 160.3 min | Mismatches: 67
+[GEMMA4-RUN] Progress: 21350/42000 (50.8%) | Speed: 2.15 calls/s | ETA: 159.9 min | Mismatches: 67
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 21400/42000 (51.0%) | Speed: 2.15 calls/s | ETA: 159.5 min | Mismatches: 68
+[GEMMA4-RUN] Progress: 21450/42000 (51.1%) | Speed: 2.15 calls/s | ETA: 159.1 min | Mismatches: 68
+[GEMMA4-RUN] Progress: 21500/42000 (51.2%) | Speed: 2.15 calls/s | ETA: 158.7 min | Mismatches: 68
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 21550/42000 (51.3%) | Speed: 2.15 calls/s | ETA: 158.3 min | Mismatches: 69
+[GEMMA4-RUN] Progress: 21600/42000 (51.4%) | Speed: 2.15 calls/s | ETA: 157.9 min | Mismatches: 69
+[GEMMA4-RUN] Progress: 21650/42000 (51.5%) | Speed: 2.15 calls/s | ETA: 157.5 min | Mismatches: 69
+[GEMMA4-RUN] Progress: 21700/42000 (51.7%) | Speed: 2.15 calls/s | ETA: 157.1 min | Mismatches: 69
+[GEMMA4-RUN] Progress: 21750/42000 (51.8%) | Speed: 2.15 calls/s | ETA: 156.7 min | Mismatches: 69
+[GEMMA4-RUN] Progress: 21800/42000 (51.9%) | Speed: 2.15 calls/s | ETA: 156.4 min | Mismatches: 69
+[WARNING] Argmax mismatch: parsed=None, argmax=None, raw='1.  **Visual Clarity**:\n    *   **Code A**: Very sparse. It has a lot of white'
+[GEMMA4-RUN] Progress: 21850/42000 (52.0%) | Speed: 2.15 calls/s | ETA: 156.0 min | Mismatches: 70
+[GEMMA4-RUN] Progress: 21900/42000 (52.1%) | Speed: 2.15 calls/s | ETA: 155.6 min | Mismatches: 70
+[WARNING] Argmax mismatch: parsed=None, argmax=None, raw='The provided images do not contain comparable code snippets for a readability comparison. Code A shows a Python script for text color'
+[GEMMA4-RUN] Progress: 21950/42000 (52.3%) | Speed: 2.15 calls/s | ETA: 155.2 min | Mismatches: 71
+[GEMMA4-RUN] Progress: 22000/42000 (52.4%) | Speed: 2.15 calls/s | ETA: 154.8 min | Mismatches: 71
+[GEMMA4-RUN] Progress: 22050/42000 (52.5%) | Speed: 2.15 calls/s | ETA: 154.4 min | Mismatches: 71
+[GEMMA4-RUN] Progress: 22100/42000 (52.6%) | Speed: 2.15 calls/s | ETA: 154.0 min | Mismatches: 71
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 22150/42000 (52.7%) | Speed: 2.15 calls/s | ETA: 153.7 min | Mismatches: 72
+[GEMMA4-RUN] Progress: 22200/42000 (52.9%) | Speed: 2.15 calls/s | ETA: 153.3 min | Mismatches: 72
+[GEMMA4-RUN] Progress: 22250/42000 (53.0%) | Speed: 2.15 calls/s | ETA: 152.9 min | Mismatches: 72
+[GEMMA4-RUN] Progress: 22300/42000 (53.1%) | Speed: 2.15 calls/s | ETA: 152.5 min | Mismatches: 72
+[GEMMA4-RUN] Progress: 22350/42000 (53.2%) | Speed: 2.15 calls/s | ETA: 152.1 min | Mismatches: 72
+[GEMMA4-RUN] Progress: 22400/42000 (53.3%) | Speed: 2.15 calls/s | ETA: 151.7 min | Mismatches: 72
+[GEMMA4-RUN] Progress: 22450/42000 (53.5%) | Speed: 2.15 calls/s | ETA: 151.3 min | Mismatches: 72
+[GEMMA4-RUN] Progress: 22500/42000 (53.6%) | Speed: 2.15 calls/s | ETA: 150.9 min | Mismatches: 72
+[GEMMA4-RUN] Progress: 22550/42000 (53.7%) | Speed: 2.15 calls/s | ETA: 150.5 min | Mismatches: 72
+[GEMMA4-RUN] Progress: 22600/42000 (53.8%) | Speed: 2.15 calls/s | ETA: 150.1 min | Mismatches: 72
+[GEMMA4-RUN] Progress: 22650/42000 (53.9%) | Speed: 2.15 calls/s | ETA: 149.7 min | Mismatches: 72
+[GEMMA4-RUN] Progress: 22700/42000 (54.0%) | Speed: 2.15 calls/s | ETA: 149.3 min | Mismatches: 72
+[GEMMA4-RUN] Progress: 22750/42000 (54.2%) | Speed: 2.16 calls/s | ETA: 148.9 min | Mismatches: 72
+[GEMMA4-RUN] Progress: 22800/42000 (54.3%) | Speed: 2.16 calls/s | ETA: 148.5 min | Mismatches: 72
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 22850/42000 (54.4%) | Speed: 2.16 calls/s | ETA: 148.1 min | Mismatches: 74
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 22900/42000 (54.5%) | Speed: 2.16 calls/s | ETA: 147.7 min | Mismatches: 75
+[GEMMA4-RUN] Progress: 22950/42000 (54.6%) | Speed: 2.16 calls/s | ETA: 147.3 min | Mismatches: 75
+[GEMMA4-RUN] Progress: 23000/42000 (54.8%) | Speed: 2.16 calls/s | ETA: 146.9 min | Mismatches: 75
+[GEMMA4-RUN] Progress: 23050/42000 (54.9%) | Speed: 2.16 calls/s | ETA: 146.5 min | Mismatches: 75
+[GEMMA4-RUN] Progress: 23100/42000 (55.0%) | Speed: 2.16 calls/s | ETA: 146.1 min | Mismatches: 75
+[GEMMA4-RUN] Progress: 23150/42000 (55.1%) | Speed: 2.16 calls/s | ETA: 145.7 min | Mismatches: 75
+[GEMMA4-RUN] Progress: 23200/42000 (55.2%) | Speed: 2.16 calls/s | ETA: 145.3 min | Mismatches: 75
+[GEMMA4-RUN] Progress: 23250/42000 (55.4%) | Speed: 2.16 calls/s | ETA: 144.9 min | Mismatches: 75
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 23300/42000 (55.5%) | Speed: 2.16 calls/s | ETA: 144.5 min | Mismatches: 76
+[GEMMA4-RUN] Progress: 23350/42000 (55.6%) | Speed: 2.16 calls/s | ETA: 144.1 min | Mismatches: 76
+[GEMMA4-RUN] Progress: 23400/42000 (55.7%) | Speed: 2.16 calls/s | ETA: 143.7 min | Mismatches: 76
+[GEMMA4-RUN] Progress: 23450/42000 (55.8%) | Speed: 2.16 calls/s | ETA: 143.3 min | Mismatches: 76
+[GEMMA4-RUN] Progress: 23500/42000 (56.0%) | Speed: 2.16 calls/s | ETA: 142.9 min | Mismatches: 76
+[GEMMA4-RUN] Progress: 23550/42000 (56.1%) | Speed: 2.16 calls/s | ETA: 142.5 min | Mismatches: 76
+[GEMMA4-RUN] Progress: 23600/42000 (56.2%) | Speed: 2.16 calls/s | ETA: 142.1 min | Mismatches: 76
+[GEMMA4-RUN] Progress: 23650/42000 (56.3%) | Speed: 2.16 calls/s | ETA: 141.7 min | Mismatches: 76
+[GEMMA4-RUN] Progress: 23700/42000 (56.4%) | Speed: 2.16 calls/s | ETA: 141.3 min | Mismatches: 76
+[GEMMA4-RUN] Progress: 23750/42000 (56.5%) | Speed: 2.16 calls/s | ETA: 140.9 min | Mismatches: 76
+[GEMMA4-RUN] Progress: 23800/42000 (56.7%) | Speed: 2.16 calls/s | ETA: 140.5 min | Mismatches: 76
+[GEMMA4-RUN] Progress: 23850/42000 (56.8%) | Speed: 2.16 calls/s | ETA: 140.1 min | Mismatches: 76
+[GEMMA4-RUN] Progress: 23900/42000 (56.9%) | Speed: 2.16 calls/s | ETA: 139.7 min | Mismatches: 76
+[GEMMA4-RUN] Progress: 23950/42000 (57.0%) | Speed: 2.16 calls/s | ETA: 139.3 min | Mismatches: 76
+[GEMMA4-RUN] Progress: 24000/42000 (57.1%) | Speed: 2.16 calls/s | ETA: 138.9 min | Mismatches: 76
+
+[GEMMA4-RUN] Starting condition: no_indent (perturbation)
+[GEMMA4-RUN] Progress: 24050/42000 (57.3%) | Speed: 2.16 calls/s | ETA: 138.5 min | Mismatches: 76
+[GEMMA4-RUN] Progress: 24100/42000 (57.4%) | Speed: 2.16 calls/s | ETA: 138.1 min | Mismatches: 76
+[GEMMA4-RUN] Progress: 24150/42000 (57.5%) | Speed: 2.16 calls/s | ETA: 137.7 min | Mismatches: 76
+[GEMMA4-RUN] Progress: 24200/42000 (57.6%) | Speed: 2.16 calls/s | ETA: 137.3 min | Mismatches: 76
+[GEMMA4-RUN] Progress: 24250/42000 (57.7%) | Speed: 2.16 calls/s | ETA: 136.9 min | Mismatches: 76
+[GEMMA4-RUN] Progress: 24300/42000 (57.9%) | Speed: 2.16 calls/s | ETA: 136.5 min | Mismatches: 76
+[GEMMA4-RUN] Progress: 24350/42000 (58.0%) | Speed: 2.16 calls/s | ETA: 136.1 min | Mismatches: 76
+[GEMMA4-RUN] Progress: 24400/42000 (58.1%) | Speed: 2.16 calls/s | ETA: 135.7 min | Mismatches: 76
+[GEMMA4-RUN] Progress: 24450/42000 (58.2%) | Speed: 2.16 calls/s | ETA: 135.3 min | Mismatches: 76
+[GEMMA4-RUN] Progress: 24500/42000 (58.3%) | Speed: 2.16 calls/s | ETA: 135.0 min | Mismatches: 76
+[GEMMA4-RUN] Progress: 24550/42000 (58.5%) | Speed: 2.16 calls/s | ETA: 134.6 min | Mismatches: 76
+[GEMMA4-RUN] Progress: 24600/42000 (58.6%) | Speed: 2.16 calls/s | ETA: 134.2 min | Mismatches: 76
+[GEMMA4-RUN] Progress: 24650/42000 (58.7%) | Speed: 2.16 calls/s | ETA: 133.8 min | Mismatches: 76
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 24700/42000 (58.8%) | Speed: 2.16 calls/s | ETA: 133.4 min | Mismatches: 77
+[GEMMA4-RUN] Progress: 24750/42000 (58.9%) | Speed: 2.16 calls/s | ETA: 133.0 min | Mismatches: 77
+[GEMMA4-RUN] Progress: 24800/42000 (59.0%) | Speed: 2.16 calls/s | ETA: 132.6 min | Mismatches: 77
+[GEMMA4-RUN] Progress: 24850/42000 (59.2%) | Speed: 2.16 calls/s | ETA: 132.3 min | Mismatches: 77
+[GEMMA4-RUN] Progress: 24900/42000 (59.3%) | Speed: 2.16 calls/s | ETA: 131.9 min | Mismatches: 77
+[GEMMA4-RUN] Progress: 24950/42000 (59.4%) | Speed: 2.16 calls/s | ETA: 131.5 min | Mismatches: 77
+[GEMMA4-RUN] Progress: 25000/42000 (59.5%) | Speed: 2.16 calls/s | ETA: 131.1 min | Mismatches: 77
+[GEMMA4-RUN] Progress: 25050/42000 (59.6%) | Speed: 2.16 calls/s | ETA: 130.7 min | Mismatches: 77
+[GEMMA4-RUN] Progress: 25100/42000 (59.8%) | Speed: 2.16 calls/s | ETA: 130.3 min | Mismatches: 77
+[GEMMA4-RUN] Progress: 25150/42000 (59.9%) | Speed: 2.16 calls/s | ETA: 129.9 min | Mismatches: 77
+[GEMMA4-RUN] Progress: 25200/42000 (60.0%) | Speed: 2.16 calls/s | ETA: 129.5 min | Mismatches: 77
+[GEMMA4-RUN] Progress: 25250/42000 (60.1%) | Speed: 2.16 calls/s | ETA: 129.1 min | Mismatches: 77
+[GEMMA4-RUN] Progress: 25300/42000 (60.2%) | Speed: 2.16 calls/s | ETA: 128.7 min | Mismatches: 77
+[GEMMA4-RUN] Progress: 25350/42000 (60.4%) | Speed: 2.16 calls/s | ETA: 128.4 min | Mismatches: 77
+[GEMMA4-RUN] Progress: 25400/42000 (60.5%) | Speed: 2.16 calls/s | ETA: 128.0 min | Mismatches: 77
+[GEMMA4-RUN] Progress: 25450/42000 (60.6%) | Speed: 2.16 calls/s | ETA: 127.6 min | Mismatches: 77
+[GEMMA4-RUN] Progress: 25500/42000 (60.7%) | Speed: 2.16 calls/s | ETA: 127.2 min | Mismatches: 77
+[GEMMA4-RUN] Progress: 25550/42000 (60.8%) | Speed: 2.16 calls/s | ETA: 126.8 min | Mismatches: 77
+[GEMMA4-RUN] Progress: 25600/42000 (61.0%) | Speed: 2.16 calls/s | ETA: 126.4 min | Mismatches: 77
+[GEMMA4-RUN] Progress: 25650/42000 (61.1%) | Speed: 2.16 calls/s | ETA: 126.0 min | Mismatches: 77
+[GEMMA4-RUN] Progress: 25700/42000 (61.2%) | Speed: 2.16 calls/s | ETA: 125.6 min | Mismatches: 77
+[GEMMA4-RUN] Progress: 25750/42000 (61.3%) | Speed: 2.16 calls/s | ETA: 125.2 min | Mismatches: 77
+[GEMMA4-RUN] Progress: 25800/42000 (61.4%) | Speed: 2.16 calls/s | ETA: 124.8 min | Mismatches: 77
+[WARNING] Argmax mismatch: parsed=None, argmax=None, raw='The provided images do not contain two versions of the same logic to compare. Code A is a method containing complex nested logic'
+[GEMMA4-RUN] Progress: 25850/42000 (61.5%) | Speed: 2.16 calls/s | ETA: 124.4 min | Mismatches: 78
+[GEMMA4-RUN] Progress: 25900/42000 (61.7%) | Speed: 2.16 calls/s | ETA: 124.0 min | Mismatches: 78
+[GEMMA4-RUN] Progress: 25950/42000 (61.8%) | Speed: 2.16 calls/s | ETA: 123.6 min | Mismatches: 78
+[GEMMA4-RUN] Progress: 26000/42000 (61.9%) | Speed: 2.16 calls/s | ETA: 123.2 min | Mismatches: 78
+[GEMMA4-RUN] Progress: 26050/42000 (62.0%) | Speed: 2.16 calls/s | ETA: 122.9 min | Mismatches: 78
+[GEMMA4-RUN] Progress: 26100/42000 (62.1%) | Speed: 2.16 calls/s | ETA: 122.5 min | Mismatches: 78
+[GEMMA4-RUN] Progress: 26150/42000 (62.3%) | Speed: 2.16 calls/s | ETA: 122.1 min | Mismatches: 78
+[GEMMA4-RUN] Progress: 26200/42000 (62.4%) | Speed: 2.16 calls/s | ETA: 121.7 min | Mismatches: 78
+[GEMMA4-RUN] Progress: 26250/42000 (62.5%) | Speed: 2.16 calls/s | ETA: 121.3 min | Mismatches: 78
+[GEMMA4-RUN] Progress: 26300/42000 (62.6%) | Speed: 2.16 calls/s | ETA: 120.9 min | Mismatches: 78
+[GEMMA4-RUN] Progress: 26350/42000 (62.7%) | Speed: 2.16 calls/s | ETA: 120.5 min | Mismatches: 78
+[GEMMA4-RUN] Progress: 26400/42000 (62.9%) | Speed: 2.16 calls/s | ETA: 120.1 min | Mismatches: 78
+[GEMMA4-RUN] Progress: 26450/42000 (63.0%) | Speed: 2.16 calls/s | ETA: 119.7 min | Mismatches: 78
+[GEMMA4-RUN] Progress: 26500/42000 (63.1%) | Speed: 2.16 calls/s | ETA: 119.3 min | Mismatches: 78
+[GEMMA4-RUN] Progress: 26550/42000 (63.2%) | Speed: 2.17 calls/s | ETA: 118.9 min | Mismatches: 78
+[GEMMA4-RUN] Progress: 26600/42000 (63.3%) | Speed: 2.17 calls/s | ETA: 118.5 min | Mismatches: 78
+[GEMMA4-RUN] Progress: 26650/42000 (63.5%) | Speed: 2.17 calls/s | ETA: 118.1 min | Mismatches: 78
+[GEMMA4-RUN] Progress: 26700/42000 (63.6%) | Speed: 2.17 calls/s | ETA: 117.7 min | Mismatches: 78
+[GEMMA4-RUN] Progress: 26750/42000 (63.7%) | Speed: 2.17 calls/s | ETA: 117.3 min | Mismatches: 78
+[GEMMA4-RUN] Progress: 26800/42000 (63.8%) | Speed: 2.17 calls/s | ETA: 116.9 min | Mismatches: 78
+[GEMMA4-RUN] Progress: 26850/42000 (63.9%) | Speed: 2.17 calls/s | ETA: 116.5 min | Mismatches: 78
+[GEMMA4-RUN] Progress: 26900/42000 (64.0%) | Speed: 2.17 calls/s | ETA: 116.1 min | Mismatches: 78
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 26950/42000 (64.2%) | Speed: 2.17 calls/s | ETA: 115.7 min | Mismatches: 79
+[GEMMA4-RUN] Progress: 27000/42000 (64.3%) | Speed: 2.17 calls/s | ETA: 115.4 min | Mismatches: 79
+[GEMMA4-RUN] Progress: 27050/42000 (64.4%) | Speed: 2.17 calls/s | ETA: 115.0 min | Mismatches: 79
+[GEMMA4-RUN] Progress: 27100/42000 (64.5%) | Speed: 2.17 calls/s | ETA: 114.6 min | Mismatches: 79
+[GEMMA4-RUN] Progress: 27150/42000 (64.6%) | Speed: 2.17 calls/s | ETA: 114.2 min | Mismatches: 79
+[GEMMA4-RUN] Progress: 27200/42000 (64.8%) | Speed: 2.17 calls/s | ETA: 113.8 min | Mismatches: 79
+[GEMMA4-RUN] Progress: 27250/42000 (64.9%) | Speed: 2.17 calls/s | ETA: 113.4 min | Mismatches: 79
+[GEMMA4-RUN] Progress: 27300/42000 (65.0%) | Speed: 2.17 calls/s | ETA: 113.0 min | Mismatches: 79
+[GEMMA4-RUN] Progress: 27350/42000 (65.1%) | Speed: 2.17 calls/s | ETA: 112.6 min | Mismatches: 79
+[GEMMA4-RUN] Progress: 27400/42000 (65.2%) | Speed: 2.17 calls/s | ETA: 112.2 min | Mismatches: 79
+[GEMMA4-RUN] Progress: 27450/42000 (65.4%) | Speed: 2.17 calls/s | ETA: 111.8 min | Mismatches: 79
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 27500/42000 (65.5%) | Speed: 2.17 calls/s | ETA: 111.4 min | Mismatches: 80
+[GEMMA4-RUN] Progress: 27550/42000 (65.6%) | Speed: 2.17 calls/s | ETA: 111.0 min | Mismatches: 80
+[GEMMA4-RUN] Progress: 27600/42000 (65.7%) | Speed: 2.17 calls/s | ETA: 110.6 min | Mismatches: 80
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 27650/42000 (65.8%) | Speed: 2.17 calls/s | ETA: 110.2 min | Mismatches: 81
+[GEMMA4-RUN] Progress: 27700/42000 (66.0%) | Speed: 2.17 calls/s | ETA: 109.9 min | Mismatches: 81
+[GEMMA4-RUN] Progress: 27750/42000 (66.1%) | Speed: 2.17 calls/s | ETA: 109.5 min | Mismatches: 81
+[GEMMA4-RUN] Progress: 27800/42000 (66.2%) | Speed: 2.17 calls/s | ETA: 109.1 min | Mismatches: 81
+[GEMMA4-RUN] Progress: 27850/42000 (66.3%) | Speed: 2.17 calls/s | ETA: 108.7 min | Mismatches: 81
+[GEMMA4-RUN] Progress: 27900/42000 (66.4%) | Speed: 2.17 calls/s | ETA: 108.3 min | Mismatches: 81
+[GEMMA4-RUN] Progress: 27950/42000 (66.5%) | Speed: 2.17 calls/s | ETA: 107.9 min | Mismatches: 81
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 28000/42000 (66.7%) | Speed: 2.17 calls/s | ETA: 107.5 min | Mismatches: 82
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 28050/42000 (66.8%) | Speed: 2.17 calls/s | ETA: 107.1 min | Mismatches: 83
+[GEMMA4-RUN] Progress: 28100/42000 (66.9%) | Speed: 2.17 calls/s | ETA: 106.8 min | Mismatches: 83
+[WARNING] Argmax mismatch: parsed=None, argmax=None, raw='The provided images do not contain comparable code snippets for a readability comparison. Code A is a complex CUDA kernel with nested loops'
+[GEMMA4-RUN] Progress: 28150/42000 (67.0%) | Speed: 2.17 calls/s | ETA: 106.4 min | Mismatches: 84
+[GEMMA4-RUN] Progress: 28200/42000 (67.1%) | Speed: 2.17 calls/s | ETA: 106.0 min | Mismatches: 84
+[GEMMA4-RUN] Progress: 28250/42000 (67.3%) | Speed: 2.17 calls/s | ETA: 105.6 min | Mismatches: 84
+[GEMMA4-RUN] Progress: 28300/42000 (67.4%) | Speed: 2.17 calls/s | ETA: 105.2 min | Mismatches: 84
+[WARNING] Argmax mismatch: parsed=None, argmax=None, raw='The provided images do not contain comparable code snippets for a readability comparison. Image A shows a complete CUDA kernel implementation with clear'
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 28350/42000 (67.5%) | Speed: 2.17 calls/s | ETA: 104.8 min | Mismatches: 86
+[GEMMA4-RUN] Progress: 28400/42000 (67.6%) | Speed: 2.17 calls/s | ETA: 104.4 min | Mismatches: 86
+[GEMMA4-RUN] Progress: 28450/42000 (67.7%) | Speed: 2.17 calls/s | ETA: 104.1 min | Mismatches: 86
+[GEMMA4-RUN] Progress: 28500/42000 (67.9%) | Speed: 2.17 calls/s | ETA: 103.7 min | Mismatches: 86
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 28550/42000 (68.0%) | Speed: 2.17 calls/s | ETA: 103.3 min | Mismatches: 87
+[GEMMA4-RUN] Progress: 28600/42000 (68.1%) | Speed: 2.17 calls/s | ETA: 102.9 min | Mismatches: 87
+[GEMMA4-RUN] Progress: 28650/42000 (68.2%) | Speed: 2.17 calls/s | ETA: 102.5 min | Mismatches: 87
+[GEMMA4-RUN] Progress: 28700/42000 (68.3%) | Speed: 2.17 calls/s | ETA: 102.1 min | Mismatches: 87
+[GEMMA4-RUN] Progress: 28750/42000 (68.5%) | Speed: 2.17 calls/s | ETA: 101.7 min | Mismatches: 87
+[GEMMA4-RUN] Progress: 28800/42000 (68.6%) | Speed: 2.17 calls/s | ETA: 101.3 min | Mismatches: 87
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 28850/42000 (68.7%) | Speed: 2.17 calls/s | ETA: 100.9 min | Mismatches: 88
+[GEMMA4-RUN] Progress: 28900/42000 (68.8%) | Speed: 2.17 calls/s | ETA: 100.6 min | Mismatches: 88
+[GEMMA4-RUN] Progress: 28950/42000 (68.9%) | Speed: 2.17 calls/s | ETA: 100.2 min | Mismatches: 88
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 29000/42000 (69.0%) | Speed: 2.17 calls/s | ETA: 99.8 min | Mismatches: 89
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 29050/42000 (69.2%) | Speed: 2.17 calls/s | ETA: 99.4 min | Mismatches: 90
+[GEMMA4-RUN] Progress: 29100/42000 (69.3%) | Speed: 2.17 calls/s | ETA: 99.0 min | Mismatches: 90
+[GEMMA4-RUN] Progress: 29150/42000 (69.4%) | Speed: 2.17 calls/s | ETA: 98.6 min | Mismatches: 90
+[GEMMA4-RUN] Progress: 29200/42000 (69.5%) | Speed: 2.17 calls/s | ETA: 98.2 min | Mismatches: 90
+[GEMMA4-RUN] Progress: 29250/42000 (69.6%) | Speed: 2.17 calls/s | ETA: 97.8 min | Mismatches: 90
+[GEMMA4-RUN] Progress: 29300/42000 (69.8%) | Speed: 2.17 calls/s | ETA: 97.4 min | Mismatches: 90
+[GEMMA4-RUN] Progress: 29350/42000 (69.9%) | Speed: 2.17 calls/s | ETA: 97.0 min | Mismatches: 90
+[GEMMA4-RUN] Progress: 29400/42000 (70.0%) | Speed: 2.17 calls/s | ETA: 96.6 min | Mismatches: 90
+[GEMMA4-RUN] Progress: 29450/42000 (70.1%) | Speed: 2.17 calls/s | ETA: 96.3 min | Mismatches: 90
+[GEMMA4-RUN] Progress: 29500/42000 (70.2%) | Speed: 2.17 calls/s | ETA: 95.9 min | Mismatches: 90
+[GEMMA4-RUN] Progress: 29550/42000 (70.4%) | Speed: 2.17 calls/s | ETA: 95.5 min | Mismatches: 90
+[GEMMA4-RUN] Progress: 29600/42000 (70.5%) | Speed: 2.17 calls/s | ETA: 95.1 min | Mismatches: 90
+[GEMMA4-RUN] Progress: 29650/42000 (70.6%) | Speed: 2.17 calls/s | ETA: 94.7 min | Mismatches: 90
+[GEMMA4-RUN] Progress: 29700/42000 (70.7%) | Speed: 2.17 calls/s | ETA: 94.3 min | Mismatches: 90
+[GEMMA4-RUN] Progress: 29750/42000 (70.8%) | Speed: 2.17 calls/s | ETA: 93.9 min | Mismatches: 90
+[GEMMA4-RUN] Progress: 29800/42000 (71.0%) | Speed: 2.17 calls/s | ETA: 93.5 min | Mismatches: 90
+[GEMMA4-RUN] Progress: 29850/42000 (71.1%) | Speed: 2.17 calls/s | ETA: 93.1 min | Mismatches: 90
+[WARNING] Argmax mismatch: parsed=None, argmax=None, raw='The provided images do not contain two different versions of the same logic to compare; instead, they show two entirely different functions'
+[GEMMA4-RUN] Progress: 29900/42000 (71.2%) | Speed: 2.17 calls/s | ETA: 92.7 min | Mismatches: 91
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 29950/42000 (71.3%) | Speed: 2.17 calls/s | ETA: 92.4 min | Mismatches: 92
+[GEMMA4-RUN] Progress: 30000/42000 (71.4%) | Speed: 2.17 calls/s | ETA: 92.0 min | Mismatches: 92
+
+[GEMMA4-RUN] Starting condition: no_blank_lines (perturbation)
+[GEMMA4-RUN] Progress: 30050/42000 (71.5%) | Speed: 2.17 calls/s | ETA: 91.6 min | Mismatches: 92
+[GEMMA4-RUN] Progress: 30100/42000 (71.7%) | Speed: 2.17 calls/s | ETA: 91.2 min | Mismatches: 92
+[GEMMA4-RUN] Progress: 30150/42000 (71.8%) | Speed: 2.18 calls/s | ETA: 90.8 min | Mismatches: 92
+[GEMMA4-RUN] Progress: 30200/42000 (71.9%) | Speed: 2.18 calls/s | ETA: 90.4 min | Mismatches: 92
+[GEMMA4-RUN] Progress: 30250/42000 (72.0%) | Speed: 2.18 calls/s | ETA: 90.0 min | Mismatches: 92
+[GEMMA4-RUN] Progress: 30300/42000 (72.1%) | Speed: 2.18 calls/s | ETA: 89.6 min | Mismatches: 92
+[GEMMA4-RUN] Progress: 30350/42000 (72.3%) | Speed: 2.18 calls/s | ETA: 89.2 min | Mismatches: 92
+[GEMMA4-RUN] Progress: 30400/42000 (72.4%) | Speed: 2.18 calls/s | ETA: 88.8 min | Mismatches: 92
+[GEMMA4-RUN] Progress: 30450/42000 (72.5%) | Speed: 2.18 calls/s | ETA: 88.5 min | Mismatches: 92
+[GEMMA4-RUN] Progress: 30500/42000 (72.6%) | Speed: 2.18 calls/s | ETA: 88.1 min | Mismatches: 92
+[GEMMA4-RUN] Progress: 30550/42000 (72.7%) | Speed: 2.18 calls/s | ETA: 87.7 min | Mismatches: 92
+[GEMMA4-RUN] Progress: 30600/42000 (72.9%) | Speed: 2.18 calls/s | ETA: 87.3 min | Mismatches: 92
+[GEMMA4-RUN] Progress: 30650/42000 (73.0%) | Speed: 2.18 calls/s | ETA: 86.9 min | Mismatches: 92
+[GEMMA4-RUN] Progress: 30700/42000 (73.1%) | Speed: 2.18 calls/s | ETA: 86.5 min | Mismatches: 92
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 30750/42000 (73.2%) | Speed: 2.18 calls/s | ETA: 86.1 min | Mismatches: 93
+[GEMMA4-RUN] Progress: 30800/42000 (73.3%) | Speed: 2.18 calls/s | ETA: 85.7 min | Mismatches: 93
+[GEMMA4-RUN] Progress: 30850/42000 (73.5%) | Speed: 2.18 calls/s | ETA: 85.3 min | Mismatches: 93
+[GEMMA4-RUN] Progress: 30900/42000 (73.6%) | Speed: 2.18 calls/s | ETA: 85.0 min | Mismatches: 93
+[GEMMA4-RUN] Progress: 30950/42000 (73.7%) | Speed: 2.18 calls/s | ETA: 84.6 min | Mismatches: 93
+[GEMMA4-RUN] Progress: 31000/42000 (73.8%) | Speed: 2.18 calls/s | ETA: 84.2 min | Mismatches: 93
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 31050/42000 (73.9%) | Speed: 2.18 calls/s | ETA: 83.8 min | Mismatches: 94
+[GEMMA4-RUN] Progress: 31100/42000 (74.0%) | Speed: 2.18 calls/s | ETA: 83.4 min | Mismatches: 94
+[GEMMA4-RUN] Progress: 31150/42000 (74.2%) | Speed: 2.18 calls/s | ETA: 83.1 min | Mismatches: 94
+[GEMMA4-RUN] Progress: 31200/42000 (74.3%) | Speed: 2.18 calls/s | ETA: 82.7 min | Mismatches: 94
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 31250/42000 (74.4%) | Speed: 2.18 calls/s | ETA: 82.3 min | Mismatches: 95
+[GEMMA4-RUN] Progress: 31300/42000 (74.5%) | Speed: 2.18 calls/s | ETA: 81.9 min | Mismatches: 95
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 31350/42000 (74.6%) | Speed: 2.18 calls/s | ETA: 81.6 min | Mismatches: 96
+[GEMMA4-RUN] Progress: 31400/42000 (74.8%) | Speed: 2.18 calls/s | ETA: 81.2 min | Mismatches: 96
+[GEMMA4-RUN] Progress: 31450/42000 (74.9%) | Speed: 2.18 calls/s | ETA: 80.8 min | Mismatches: 96
+[GEMMA4-RUN] Progress: 31500/42000 (75.0%) | Speed: 2.18 calls/s | ETA: 80.4 min | Mismatches: 96
+[GEMMA4-RUN] Progress: 31550/42000 (75.1%) | Speed: 2.18 calls/s | ETA: 80.0 min | Mismatches: 96
+[GEMMA4-RUN] Progress: 31600/42000 (75.2%) | Speed: 2.18 calls/s | ETA: 79.6 min | Mismatches: 96
+[GEMMA4-RUN] Progress: 31650/42000 (75.4%) | Speed: 2.18 calls/s | ETA: 79.2 min | Mismatches: 96
+[GEMMA4-RUN] Progress: 31700/42000 (75.5%) | Speed: 2.18 calls/s | ETA: 78.9 min | Mismatches: 96
+[GEMMA4-RUN] Progress: 31750/42000 (75.6%) | Speed: 2.18 calls/s | ETA: 78.5 min | Mismatches: 96
+[GEMMA4-RUN] Progress: 31800/42000 (75.7%) | Speed: 2.18 calls/s | ETA: 78.1 min | Mismatches: 96
+[GEMMA4-RUN] Progress: 31850/42000 (75.8%) | Speed: 2.18 calls/s | ETA: 77.7 min | Mismatches: 96
+[GEMMA4-RUN] Progress: 31900/42000 (76.0%) | Speed: 2.18 calls/s | ETA: 77.3 min | Mismatches: 96
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 31950/42000 (76.1%) | Speed: 2.18 calls/s | ETA: 76.9 min | Mismatches: 97
+[GEMMA4-RUN] Progress: 32000/42000 (76.2%) | Speed: 2.18 calls/s | ETA: 76.5 min | Mismatches: 97
+[GEMMA4-RUN] Progress: 32050/42000 (76.3%) | Speed: 2.18 calls/s | ETA: 76.2 min | Mismatches: 97
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 32100/42000 (76.4%) | Speed: 2.18 calls/s | ETA: 75.8 min | Mismatches: 98
+[GEMMA4-RUN] Progress: 32150/42000 (76.5%) | Speed: 2.18 calls/s | ETA: 75.4 min | Mismatches: 98
+[GEMMA4-RUN] Progress: 32200/42000 (76.7%) | Speed: 2.18 calls/s | ETA: 75.0 min | Mismatches: 98
+[GEMMA4-RUN] Progress: 32250/42000 (76.8%) | Speed: 2.18 calls/s | ETA: 74.6 min | Mismatches: 98
+[GEMMA4-RUN] Progress: 32300/42000 (76.9%) | Speed: 2.18 calls/s | ETA: 74.2 min | Mismatches: 98
+[GEMMA4-RUN] Progress: 32350/42000 (77.0%) | Speed: 2.18 calls/s | ETA: 73.8 min | Mismatches: 98
+[GEMMA4-RUN] Progress: 32400/42000 (77.1%) | Speed: 2.18 calls/s | ETA: 73.4 min | Mismatches: 98
+[GEMMA4-RUN] Progress: 32450/42000 (77.3%) | Speed: 2.18 calls/s | ETA: 73.1 min | Mismatches: 98
+[GEMMA4-RUN] Progress: 32500/42000 (77.4%) | Speed: 2.18 calls/s | ETA: 72.7 min | Mismatches: 98
+[GEMMA4-RUN] Progress: 32550/42000 (77.5%) | Speed: 2.18 calls/s | ETA: 72.3 min | Mismatches: 98
+[GEMMA4-RUN] Progress: 32600/42000 (77.6%) | Speed: 2.18 calls/s | ETA: 71.9 min | Mismatches: 98
+[GEMMA4-RUN] Progress: 32650/42000 (77.7%) | Speed: 2.18 calls/s | ETA: 71.5 min | Mismatches: 98
+[GEMMA4-RUN] Progress: 32700/42000 (77.9%) | Speed: 2.18 calls/s | ETA: 71.1 min | Mismatches: 98
+[GEMMA4-RUN] Progress: 32750/42000 (78.0%) | Speed: 2.18 calls/s | ETA: 70.7 min | Mismatches: 98
+[WARNING] Argmax mismatch: parsed=None, argmax=None, raw='- Code A is a simple method with a clear `try-except` block and a single `if` condition.'
+[GEMMA4-RUN] Progress: 32800/42000 (78.1%) | Speed: 2.18 calls/s | ETA: 70.4 min | Mismatches: 99
+[GEMMA4-RUN] Progress: 32850/42000 (78.2%) | Speed: 2.18 calls/s | ETA: 70.0 min | Mismatches: 99
+[GEMMA4-RUN] Progress: 32900/42000 (78.3%) | Speed: 2.18 calls/s | ETA: 69.6 min | Mismatches: 99
+[GEMMA4-RUN] Progress: 32950/42000 (78.5%) | Speed: 2.18 calls/s | ETA: 69.2 min | Mismatches: 99
+[GEMMA4-RUN] Progress: 33000/42000 (78.6%) | Speed: 2.18 calls/s | ETA: 68.8 min | Mismatches: 99
+[GEMMA4-RUN] Progress: 33050/42000 (78.7%) | Speed: 2.18 calls/s | ETA: 68.4 min | Mismatches: 99
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 33100/42000 (78.8%) | Speed: 2.18 calls/s | ETA: 68.1 min | Mismatches: 100
+[GEMMA4-RUN] Progress: 33150/42000 (78.9%) | Speed: 2.18 calls/s | ETA: 67.7 min | Mismatches: 100
+[GEMMA4-RUN] Progress: 33200/42000 (79.0%) | Speed: 2.18 calls/s | ETA: 67.3 min | Mismatches: 100
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 33250/42000 (79.2%) | Speed: 2.18 calls/s | ETA: 66.9 min | Mismatches: 101
+[GEMMA4-RUN] Progress: 33300/42000 (79.3%) | Speed: 2.18 calls/s | ETA: 66.5 min | Mismatches: 101
+[GEMMA4-RUN] Progress: 33350/42000 (79.4%) | Speed: 2.18 calls/s | ETA: 66.1 min | Mismatches: 101
+[GEMMA4-RUN] Progress: 33400/42000 (79.5%) | Speed: 2.18 calls/s | ETA: 65.7 min | Mismatches: 101
+[GEMMA4-RUN] Progress: 33450/42000 (79.6%) | Speed: 2.18 calls/s | ETA: 65.4 min | Mismatches: 101
+[GEMMA4-RUN] Progress: 33500/42000 (79.8%) | Speed: 2.18 calls/s | ETA: 65.0 min | Mismatches: 101
+[GEMMA4-RUN] Progress: 33550/42000 (79.9%) | Speed: 2.18 calls/s | ETA: 64.6 min | Mismatches: 101
+[GEMMA4-RUN] Progress: 33600/42000 (80.0%) | Speed: 2.18 calls/s | ETA: 64.2 min | Mismatches: 101
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[WARNING] Argmax mismatch: parsed=None, argmax=None, raw='The provided images do not contain two different code snippets for comparison. Image A shows a complete script for counting words in Scrib'
+[GEMMA4-RUN] Progress: 33650/42000 (80.1%) | Speed: 2.18 calls/s | ETA: 63.8 min | Mismatches: 103
+[GEMMA4-RUN] Progress: 33700/42000 (80.2%) | Speed: 2.18 calls/s | ETA: 63.4 min | Mismatches: 103
+[GEMMA4-RUN] Progress: 33750/42000 (80.4%) | Speed: 2.18 calls/s | ETA: 63.1 min | Mismatches: 103
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 33800/42000 (80.5%) | Speed: 2.18 calls/s | ETA: 62.7 min | Mismatches: 105
+[GEMMA4-RUN] Progress: 33850/42000 (80.6%) | Speed: 2.18 calls/s | ETA: 62.3 min | Mismatches: 105
+[GEMMA4-RUN] Progress: 33900/42000 (80.7%) | Speed: 2.18 calls/s | ETA: 61.9 min | Mismatches: 105
+[GEMMA4-RUN] Progress: 33950/42000 (80.8%) | Speed: 2.18 calls/s | ETA: 61.5 min | Mismatches: 105
+[GEMMA4-RUN] Progress: 34000/42000 (81.0%) | Speed: 2.18 calls/s | ETA: 61.1 min | Mismatches: 105
+[GEMMA4-RUN] Progress: 34050/42000 (81.1%) | Speed: 2.18 calls/s | ETA: 60.8 min | Mismatches: 105
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 34100/42000 (81.2%) | Speed: 2.18 calls/s | ETA: 60.4 min | Mismatches: 106
+[WARNING] Argmax mismatch: parsed=None, argmax=None, raw='The provided images do not contain comparable code snippets for a readability comparison. Code A is a complex CUDA kernel with nested loops'
+[GEMMA4-RUN] Progress: 34150/42000 (81.3%) | Speed: 2.18 calls/s | ETA: 60.0 min | Mismatches: 107
+[GEMMA4-RUN] Progress: 34200/42000 (81.4%) | Speed: 2.18 calls/s | ETA: 59.6 min | Mismatches: 107
+[GEMMA4-RUN] Progress: 34250/42000 (81.5%) | Speed: 2.18 calls/s | ETA: 59.2 min | Mismatches: 107
+[GEMMA4-RUN] Progress: 34300/42000 (81.7%) | Speed: 2.18 calls/s | ETA: 58.9 min | Mismatches: 107
+[GEMMA4-RUN] Progress: 34350/42000 (81.8%) | Speed: 2.18 calls/s | ETA: 58.5 min | Mismatches: 107
+[GEMMA4-RUN] Progress: 34400/42000 (81.9%) | Speed: 2.18 calls/s | ETA: 58.1 min | Mismatches: 107
+[WARNING] Argmax mismatch: parsed=None, argmax=None, raw='The provided images do not contain comparable code snippets for a readability comparison. Image A shows a complex CUDA kernel with many variables'
+[GEMMA4-RUN] Progress: 34450/42000 (82.0%) | Speed: 2.18 calls/s | ETA: 57.7 min | Mismatches: 108
+[GEMMA4-RUN] Progress: 34500/42000 (82.1%) | Speed: 2.18 calls/s | ETA: 57.3 min | Mismatches: 108
+[GEMMA4-RUN] Progress: 34550/42000 (82.3%) | Speed: 2.18 calls/s | ETA: 56.9 min | Mismatches: 108
+[GEMMA4-RUN] Progress: 34600/42000 (82.4%) | Speed: 2.18 calls/s | ETA: 56.5 min | Mismatches: 108
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 34650/42000 (82.5%) | Speed: 2.18 calls/s | ETA: 56.1 min | Mismatches: 109
+[GEMMA4-RUN] Progress: 34700/42000 (82.6%) | Speed: 2.18 calls/s | ETA: 55.8 min | Mismatches: 109
+[GEMMA4-RUN] Progress: 34750/42000 (82.7%) | Speed: 2.18 calls/s | ETA: 55.4 min | Mismatches: 109
+[GEMMA4-RUN] Progress: 34800/42000 (82.9%) | Speed: 2.18 calls/s | ETA: 55.0 min | Mismatches: 109
+[GEMMA4-RUN] Progress: 34850/42000 (83.0%) | Speed: 2.18 calls/s | ETA: 54.6 min | Mismatches: 109
+[GEMMA4-RUN] Progress: 34900/42000 (83.1%) | Speed: 2.18 calls/s | ETA: 54.2 min | Mismatches: 109
+[GEMMA4-RUN] Progress: 34950/42000 (83.2%) | Speed: 2.18 calls/s | ETA: 53.8 min | Mismatches: 109
+[GEMMA4-RUN] Progress: 35000/42000 (83.3%) | Speed: 2.18 calls/s | ETA: 53.4 min | Mismatches: 109
+[GEMMA4-RUN] Progress: 35050/42000 (83.5%) | Speed: 2.18 calls/s | ETA: 53.1 min | Mismatches: 109
+[GEMMA4-RUN] Progress: 35100/42000 (83.6%) | Speed: 2.18 calls/s | ETA: 52.7 min | Mismatches: 109
+[GEMMA4-RUN] Progress: 35150/42000 (83.7%) | Speed: 2.18 calls/s | ETA: 52.3 min | Mismatches: 109
+[GEMMA4-RUN] Progress: 35200/42000 (83.8%) | Speed: 2.18 calls/s | ETA: 51.9 min | Mismatches: 109
+[GEMMA4-RUN] Progress: 35250/42000 (83.9%) | Speed: 2.18 calls/s | ETA: 51.6 min | Mismatches: 109
+[GEMMA4-RUN] Progress: 35300/42000 (84.0%) | Speed: 2.18 calls/s | ETA: 51.3 min | Mismatches: 109
+[WARNING] Argmax mismatch: parsed=None, argmax=None, raw='The provided images do not contain comparable code snippets for a meaningful readability comparison. Code A shows a complete CUDA kernel implementation with'
+[GEMMA4-RUN] Progress: 35350/42000 (84.2%) | Speed: 2.18 calls/s | ETA: 51.0 min | Mismatches: 110
+[GEMMA4-RUN] Progress: 35400/42000 (84.3%) | Speed: 2.17 calls/s | ETA: 50.6 min | Mismatches: 110
+[GEMMA4-RUN] Progress: 35450/42000 (84.4%) | Speed: 2.17 calls/s | ETA: 50.3 min | Mismatches: 110
+[GEMMA4-RUN] Progress: 35500/42000 (84.5%) | Speed: 2.17 calls/s | ETA: 50.0 min | Mismatches: 110
+[WARNING] Argmax mismatch: parsed=None, argmax=None, raw='The provided images do not contain comparable code snippets for a readability comparison. Code A shows a complex, nested reduction pattern with'
+[GEMMA4-RUN] Progress: 35550/42000 (84.6%) | Speed: 2.16 calls/s | ETA: 49.7 min | Mismatches: 111
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 35600/42000 (84.8%) | Speed: 2.16 calls/s | ETA: 49.4 min | Mismatches: 112
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 35650/42000 (84.9%) | Speed: 2.16 calls/s | ETA: 49.1 min | Mismatches: 114
+[GEMMA4-RUN] Progress: 35700/42000 (85.0%) | Speed: 2.15 calls/s | ETA: 48.8 min | Mismatches: 114
+[GEMMA4-RUN] Progress: 35750/42000 (85.1%) | Speed: 2.15 calls/s | ETA: 48.4 min | Mismatches: 114
+[GEMMA4-RUN] Progress: 35800/42000 (85.2%) | Speed: 2.15 calls/s | ETA: 48.1 min | Mismatches: 114
+[GEMMA4-RUN] Progress: 35850/42000 (85.4%) | Speed: 2.14 calls/s | ETA: 47.8 min | Mismatches: 114
+[GEMMA4-RUN] Progress: 35900/42000 (85.5%) | Speed: 2.14 calls/s | ETA: 47.5 min | Mismatches: 114
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 35950/42000 (85.6%) | Speed: 2.14 calls/s | ETA: 47.1 min | Mismatches: 115
+[GEMMA4-RUN] Progress: 36000/42000 (85.7%) | Speed: 2.14 calls/s | ETA: 46.8 min | Mismatches: 115
+
+[GEMMA4-RUN] Starting condition: gaussian_sigma_4 (perturbation)
+[GEMMA4-RUN] Progress: 36050/42000 (85.8%) | Speed: 2.14 calls/s | ETA: 46.4 min | Mismatches: 115
+[GEMMA4-RUN] Progress: 36100/42000 (86.0%) | Speed: 2.14 calls/s | ETA: 46.0 min | Mismatches: 115
+[GEMMA4-RUN] Progress: 36150/42000 (86.1%) | Speed: 2.13 calls/s | ETA: 45.7 min | Mismatches: 115
+[GEMMA4-RUN] Progress: 36200/42000 (86.2%) | Speed: 2.13 calls/s | ETA: 45.3 min | Mismatches: 115
+[GEMMA4-RUN] Progress: 36250/42000 (86.3%) | Speed: 2.13 calls/s | ETA: 45.0 min | Mismatches: 115
+[GEMMA4-RUN] Progress: 36300/42000 (86.4%) | Speed: 2.13 calls/s | ETA: 44.6 min | Mismatches: 115
+[GEMMA4-RUN] Progress: 36350/42000 (86.5%) | Speed: 2.13 calls/s | ETA: 44.2 min | Mismatches: 115
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 36400/42000 (86.7%) | Speed: 2.13 calls/s | ETA: 43.9 min | Mismatches: 116
+[GEMMA4-RUN] Progress: 36450/42000 (86.8%) | Speed: 2.13 calls/s | ETA: 43.5 min | Mismatches: 116
+[GEMMA4-RUN] Progress: 36500/42000 (86.9%) | Speed: 2.13 calls/s | ETA: 43.1 min | Mismatches: 116
+[GEMMA4-RUN] Progress: 36550/42000 (87.0%) | Speed: 2.13 calls/s | ETA: 42.7 min | Mismatches: 116
+[GEMMA4-RUN] Progress: 36600/42000 (87.1%) | Speed: 2.13 calls/s | ETA: 42.3 min | Mismatches: 116
+[GEMMA4-RUN] Progress: 36650/42000 (87.3%) | Speed: 2.13 calls/s | ETA: 41.9 min | Mismatches: 116
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 36700/42000 (87.4%) | Speed: 2.13 calls/s | ETA: 41.5 min | Mismatches: 117
+[GEMMA4-RUN] Progress: 36750/42000 (87.5%) | Speed: 2.13 calls/s | ETA: 41.1 min | Mismatches: 117
+[GEMMA4-RUN] Progress: 36800/42000 (87.6%) | Speed: 2.13 calls/s | ETA: 40.7 min | Mismatches: 117
+[GEMMA4-RUN] Progress: 36850/42000 (87.7%) | Speed: 2.13 calls/s | ETA: 40.3 min | Mismatches: 117
+[GEMMA4-RUN] Progress: 36900/42000 (87.9%) | Speed: 2.13 calls/s | ETA: 39.9 min | Mismatches: 117
+[GEMMA4-RUN] Progress: 36950/42000 (88.0%) | Speed: 2.13 calls/s | ETA: 39.5 min | Mismatches: 117
+[GEMMA4-RUN] Progress: 37000/42000 (88.1%) | Speed: 2.13 calls/s | ETA: 39.1 min | Mismatches: 117
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 37050/42000 (88.2%) | Speed: 2.13 calls/s | ETA: 38.7 min | Mismatches: 118
+[GEMMA4-RUN] Progress: 37100/42000 (88.3%) | Speed: 2.13 calls/s | ETA: 38.3 min | Mismatches: 118
+[GEMMA4-RUN] Progress: 37150/42000 (88.5%) | Speed: 2.13 calls/s | ETA: 38.0 min | Mismatches: 118
+[WARNING] Argmax mismatch: parsed=None, argmax=None, raw='The provided images do not contain comparable code snippets. Code A is a method implementation containing complex nested logic (if-else'
+[GEMMA4-RUN] Progress: 37200/42000 (88.6%) | Speed: 2.13 calls/s | ETA: 37.6 min | Mismatches: 119
+[GEMMA4-RUN] Progress: 37250/42000 (88.7%) | Speed: 2.13 calls/s | ETA: 37.2 min | Mismatches: 119
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 37300/42000 (88.8%) | Speed: 2.13 calls/s | ETA: 36.8 min | Mismatches: 120
+[GEMMA4-RUN] Progress: 37350/42000 (88.9%) | Speed: 2.13 calls/s | ETA: 36.4 min | Mismatches: 120
+[GEMMA4-RUN] Progress: 37400/42000 (89.0%) | Speed: 2.13 calls/s | ETA: 36.0 min | Mismatches: 120
+[GEMMA4-RUN] Progress: 37450/42000 (89.2%) | Speed: 2.13 calls/s | ETA: 35.6 min | Mismatches: 120
+[GEMMA4-RUN] Progress: 37500/42000 (89.3%) | Speed: 2.13 calls/s | ETA: 35.2 min | Mismatches: 120
+[GEMMA4-RUN] Progress: 37550/42000 (89.4%) | Speed: 2.13 calls/s | ETA: 34.8 min | Mismatches: 120
+[GEMMA4-RUN] Progress: 37600/42000 (89.5%) | Speed: 2.13 calls/s | ETA: 34.4 min | Mismatches: 120
+[GEMMA4-RUN] Progress: 37650/42000 (89.6%) | Speed: 2.13 calls/s | ETA: 34.0 min | Mismatches: 120
+[GEMMA4-RUN] Progress: 37700/42000 (89.8%) | Speed: 2.13 calls/s | ETA: 33.7 min | Mismatches: 120
+[GEMMA4-RUN] Progress: 37750/42000 (89.9%) | Speed: 2.13 calls/s | ETA: 33.3 min | Mismatches: 120
+[GEMMA4-RUN] Progress: 37800/42000 (90.0%) | Speed: 2.13 calls/s | ETA: 32.9 min | Mismatches: 120
+[GEMMA4-RUN] Progress: 37850/42000 (90.1%) | Speed: 2.13 calls/s | ETA: 32.5 min | Mismatches: 120
+[GEMMA4-RUN] Progress: 37900/42000 (90.2%) | Speed: 2.13 calls/s | ETA: 32.1 min | Mismatches: 120
+[GEMMA4-RUN] Progress: 37950/42000 (90.4%) | Speed: 2.13 calls/s | ETA: 31.7 min | Mismatches: 120
+[GEMMA4-RUN] Progress: 38000/42000 (90.5%) | Speed: 2.13 calls/s | ETA: 31.3 min | Mismatches: 120
+[WARNING] Argmax mismatch: parsed=None, argmax=None, raw='The provided images do not contain Python code; they contain a header comment block (A) and an HTML/XML snippet'
+[WARNING] Argmax mismatch: parsed=None, argmax=None, raw='The provided images do not contain Python code snippets; they appear to be a text editor showing a documentation/markup file ('
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 38050/42000 (90.6%) | Speed: 2.13 calls/s | ETA: 30.9 min | Mismatches: 123
+[GEMMA4-RUN] Progress: 38100/42000 (90.7%) | Speed: 2.13 calls/s | ETA: 30.5 min | Mismatches: 123
+[GEMMA4-RUN] Progress: 38150/42000 (90.8%) | Speed: 2.13 calls/s | ETA: 30.1 min | Mismatches: 123
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[WARNING] Argmax mismatch: parsed=None, argmax=None, raw='The provided images do not contain Python code. Image A shows an XML/HTML-like markup structure, and Image B'
+[GEMMA4-RUN] Progress: 38200/42000 (91.0%) | Speed: 2.13 calls/s | ETA: 29.8 min | Mismatches: 125
+[GEMMA4-RUN] Progress: 38250/42000 (91.1%) | Speed: 2.13 calls/s | ETA: 29.4 min | Mismatches: 125
+[GEMMA4-RUN] Progress: 38300/42000 (91.2%) | Speed: 2.13 calls/s | ETA: 29.0 min | Mismatches: 125
+[GEMMA4-RUN] Progress: 38350/42000 (91.3%) | Speed: 2.13 calls/s | ETA: 28.6 min | Mismatches: 125
+[GEMMA4-RUN] Progress: 38400/42000 (91.4%) | Speed: 2.13 calls/s | ETA: 28.2 min | Mismatches: 125
+[GEMMA4-RUN] Progress: 38450/42000 (91.5%) | Speed: 2.13 calls/s | ETA: 27.8 min | Mismatches: 125
+[GEMMA4-RUN] Progress: 38500/42000 (91.7%) | Speed: 2.13 calls/s | ETA: 27.4 min | Mismatches: 125
+[GEMMA4-RUN] Progress: 38550/42000 (91.8%) | Speed: 2.13 calls/s | ETA: 27.0 min | Mismatches: 125
+[GEMMA4-RUN] Progress: 38600/42000 (91.9%) | Speed: 2.13 calls/s | ETA: 26.6 min | Mismatches: 125
+[GEMMA4-RUN] Progress: 38650/42000 (92.0%) | Speed: 2.13 calls/s | ETA: 26.2 min | Mismatches: 125
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 38700/42000 (92.1%) | Speed: 2.13 calls/s | ETA: 25.8 min | Mismatches: 126
+[GEMMA4-RUN] Progress: 38750/42000 (92.3%) | Speed: 2.13 calls/s | ETA: 25.4 min | Mismatches: 126
+[GEMMA4-RUN] Progress: 38800/42000 (92.4%) | Speed: 2.13 calls/s | ETA: 25.0 min | Mismatches: 126
+[GEMMA4-RUN] Progress: 38850/42000 (92.5%) | Speed: 2.13 calls/s | ETA: 24.6 min | Mismatches: 126
+[GEMMA4-RUN] Progress: 38900/42000 (92.6%) | Speed: 2.13 calls/s | ETA: 24.3 min | Mismatches: 126
+[GEMMA4-RUN] Progress: 38950/42000 (92.7%) | Speed: 2.13 calls/s | ETA: 23.9 min | Mismatches: 126
+[GEMMA4-RUN] Progress: 39000/42000 (92.9%) | Speed: 2.13 calls/s | ETA: 23.5 min | Mismatches: 126
+[GEMMA4-RUN] Progress: 39050/42000 (93.0%) | Speed: 2.13 calls/s | ETA: 23.1 min | Mismatches: 126
+[GEMMA4-RUN] Progress: 39100/42000 (93.1%) | Speed: 2.13 calls/s | ETA: 22.7 min | Mismatches: 126
+[GEMMA4-RUN] Progress: 39150/42000 (93.2%) | Speed: 2.13 calls/s | ETA: 22.3 min | Mismatches: 126
+[GEMMA4-RUN] Progress: 39200/42000 (93.3%) | Speed: 2.13 calls/s | ETA: 21.9 min | Mismatches: 126
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 39250/42000 (93.5%) | Speed: 2.13 calls/s | ETA: 21.5 min | Mismatches: 127
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 39300/42000 (93.6%) | Speed: 2.13 calls/s | ETA: 21.1 min | Mismatches: 128
+[GEMMA4-RUN] Progress: 39350/42000 (93.7%) | Speed: 2.13 calls/s | ETA: 20.7 min | Mismatches: 128
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 39400/42000 (93.8%) | Speed: 2.13 calls/s | ETA: 20.3 min | Mismatches: 129
+[GEMMA4-RUN] Progress: 39450/42000 (93.9%) | Speed: 2.13 calls/s | ETA: 20.0 min | Mismatches: 129
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 39500/42000 (94.0%) | Speed: 2.13 calls/s | ETA: 19.6 min | Mismatches: 130
+[GEMMA4-RUN] Progress: 39550/42000 (94.2%) | Speed: 2.13 calls/s | ETA: 19.2 min | Mismatches: 130
+[GEMMA4-RUN] Progress: 39600/42000 (94.3%) | Speed: 2.13 calls/s | ETA: 18.8 min | Mismatches: 130
+[GEMMA4-RUN] Progress: 39650/42000 (94.4%) | Speed: 2.13 calls/s | ETA: 18.4 min | Mismatches: 130
+[GEMMA4-RUN] Progress: 39700/42000 (94.5%) | Speed: 2.13 calls/s | ETA: 18.0 min | Mismatches: 130
+[GEMMA4-RUN] Progress: 39750/42000 (94.6%) | Speed: 2.13 calls/s | ETA: 17.6 min | Mismatches: 130
+[GEMMA4-RUN] Progress: 39800/42000 (94.8%) | Speed: 2.13 calls/s | ETA: 17.2 min | Mismatches: 130
+[WARNING] Argmax mismatch: parsed=None, argmax=None, raw='The provided images do not contain Python code snippets. Image A shows a Python script, but Image B shows a text-'
+[GEMMA4-RUN] Progress: 39850/42000 (94.9%) | Speed: 2.13 calls/s | ETA: 16.8 min | Mismatches: 131
+[GEMMA4-RUN] Progress: 39900/42000 (95.0%) | Speed: 2.13 calls/s | ETA: 16.4 min | Mismatches: 131
+[GEMMA4-RUN] Progress: 39950/42000 (95.1%) | Speed: 2.13 calls/s | ETA: 16.0 min | Mismatches: 131
+[GEMMA4-RUN] Progress: 40000/42000 (95.2%) | Speed: 2.13 calls/s | ETA: 15.7 min | Mismatches: 131
+[GEMMA4-RUN] Progress: 40050/42000 (95.4%) | Speed: 2.13 calls/s | ETA: 15.3 min | Mismatches: 131
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 40100/42000 (95.5%) | Speed: 2.13 calls/s | ETA: 14.9 min | Mismatches: 132
+[GEMMA4-RUN] Progress: 40150/42000 (95.6%) | Speed: 2.13 calls/s | ETA: 14.5 min | Mismatches: 132
+[GEMMA4-RUN] Progress: 40200/42000 (95.7%) | Speed: 2.13 calls/s | ETA: 14.1 min | Mismatches: 132
+[GEMMA4-RUN] Progress: 40250/42000 (95.8%) | Speed: 2.13 calls/s | ETA: 13.7 min | Mismatches: 132
+[GEMMA4-RUN] Progress: 40300/42000 (96.0%) | Speed: 2.13 calls/s | ETA: 13.3 min | Mismatches: 132
+[GEMMA4-RUN] Progress: 40350/42000 (96.1%) | Speed: 2.13 calls/s | ETA: 12.9 min | Mismatches: 132
+[GEMMA4-RUN] Progress: 40400/42000 (96.2%) | Speed: 2.13 calls/s | ETA: 12.5 min | Mismatches: 132
+[GEMMA4-RUN] Progress: 40450/42000 (96.3%) | Speed: 2.13 calls/s | ETA: 12.1 min | Mismatches: 132
+[WARNING] Argmax mismatch: parsed=None, argmax=None, raw='The provided images do not contain comparable code snippets for a readability comparison. Image A shows a CUDA kernel and a series of'
+[GEMMA4-RUN] Progress: 40500/42000 (96.4%) | Speed: 2.13 calls/s | ETA: 11.7 min | Mismatches: 133
+[GEMMA4-RUN] Progress: 40550/42000 (96.5%) | Speed: 2.13 calls/s | ETA: 11.4 min | Mismatches: 133
+[GEMMA4-RUN] Progress: 40600/42000 (96.7%) | Speed: 2.13 calls/s | ETA: 11.0 min | Mismatches: 133
+[GEMMA4-RUN] Progress: 40650/42000 (96.8%) | Speed: 2.13 calls/s | ETA: 10.6 min | Mismatches: 133
+[GEMMA4-RUN] Progress: 40700/42000 (96.9%) | Speed: 2.13 calls/s | ETA: 10.2 min | Mismatches: 133
+[GEMMA4-RUN] Progress: 40750/42000 (97.0%) | Speed: 2.13 calls/s | ETA: 9.8 min | Mismatches: 133
+[GEMMA4-RUN] Progress: 40800/42000 (97.1%) | Speed: 2.13 calls/s | ETA: 9.4 min | Mismatches: 133
+[GEMMA4-RUN] Progress: 40850/42000 (97.3%) | Speed: 2.13 calls/s | ETA: 9.0 min | Mismatches: 133
+[GEMMA4-RUN] Progress: 40900/42000 (97.4%) | Speed: 2.13 calls/s | ETA: 8.6 min | Mismatches: 133
+[GEMMA4-RUN] Progress: 40950/42000 (97.5%) | Speed: 2.13 calls/s | ETA: 8.2 min | Mismatches: 133
+[GEMMA4-RUN] Progress: 41000/42000 (97.6%) | Speed: 2.13 calls/s | ETA: 7.8 min | Mismatches: 133
+[GEMMA4-RUN] Progress: 41050/42000 (97.7%) | Speed: 2.13 calls/s | ETA: 7.4 min | Mismatches: 133
+[GEMMA4-RUN] Progress: 41100/42000 (97.9%) | Speed: 2.13 calls/s | ETA: 7.1 min | Mismatches: 133
+[GEMMA4-RUN] Progress: 41150/42000 (98.0%) | Speed: 2.13 calls/s | ETA: 6.7 min | Mismatches: 133
+[GEMMA4-RUN] Progress: 41200/42000 (98.1%) | Speed: 2.13 calls/s | ETA: 6.3 min | Mismatches: 133
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 41250/42000 (98.2%) | Speed: 2.13 calls/s | ETA: 5.9 min | Mismatches: 134
+[GEMMA4-RUN] Progress: 41300/42000 (98.3%) | Speed: 2.13 calls/s | ETA: 5.5 min | Mismatches: 134
+[GEMMA4-RUN] Progress: 41350/42000 (98.5%) | Speed: 2.12 calls/s | ETA: 5.1 min | Mismatches: 134
+[WARNING] Argmax mismatch: parsed=A, argmax=TIE, raw='FINAL_VERDICT: A'
+[GEMMA4-RUN] Progress: 41400/42000 (98.6%) | Speed: 2.12 calls/s | ETA: 4.7 min | Mismatches: 135
+[GEMMA4-RUN] Progress: 41450/42000 (98.7%) | Speed: 2.12 calls/s | ETA: 4.3 min | Mismatches: 135
+[GEMMA4-RUN] Progress: 41500/42000 (98.8%) | Speed: 2.12 calls/s | ETA: 3.9 min | Mismatches: 135
+[GEMMA4-RUN] Progress: 41550/42000 (98.9%) | Speed: 2.12 calls/s | ETA: 3.5 min | Mismatches: 135
+[GEMMA4-RUN] Progress: 41600/42000 (99.0%) | Speed: 2.12 calls/s | ETA: 3.1 min | Mismatches: 135
+[GEMMA4-RUN] Progress: 41650/42000 (99.2%) | Speed: 2.12 calls/s | ETA: 2.7 min | Mismatches: 135
+[GEMMA4-RUN] Progress: 41700/42000 (99.3%) | Speed: 2.12 calls/s | ETA: 2.4 min | Mismatches: 135
+[GEMMA4-RUN] Progress: 41750/42000 (99.4%) | Speed: 2.12 calls/s | ETA: 2.0 min | Mismatches: 135
+[GEMMA4-RUN] Progress: 41800/42000 (99.5%) | Speed: 2.12 calls/s | ETA: 1.6 min | Mismatches: 135
+[GEMMA4-RUN] Progress: 41850/42000 (99.6%) | Speed: 2.12 calls/s | ETA: 1.2 min | Mismatches: 135
+[GEMMA4-RUN] Progress: 41900/42000 (99.8%) | Speed: 2.12 calls/s | ETA: 0.8 min | Mismatches: 135
+[GEMMA4-RUN] Progress: 41950/42000 (99.9%) | Speed: 2.12 calls/s | ETA: 0.4 min | Mismatches: 135
+[GEMMA4-RUN] Progress: 42000/42000 (100.0%) | Speed: 2.12 calls/s | ETA: 0.0 min | Mismatches: 135
+[GEMMA4-RUN] Gemma4 run complete. Manifest saved to /ANON/experiment_root/rq2_eval_reduced/manifests/gemma4_12b_reduced_manifest.json
+[PIPELINE] Inference complete! Running analysis & packaging...
+
+=======================================================
+[ANALYSIS] Running complete evaluation for Gemma4-12B...
+=======================================================
+[ANALYSIS] Loaded 42000 raw calls from /ANON/experiment_root/rq2_eval_reduced/gemma4/raw_calls/gemma4_12b_reduced_raw.jsonl
+[ANALYSIS] Agreement check (deterministic argmax including ties): 41966/41966 (100.00%)
+[ANALYSIS] Built 21000 paired rows across conditions.
+[ANALYSIS] Saved pair-level CSV to /ANON/experiment_root/rq2_eval_reduced/gemma4/pair_level/Gemma4-12B_pair_level.csv
+[ANALYSIS] Equivalence violations (|c|>|b| != strict_valid on non-boundary): 0
+[ANALYSIS] Saved summary metrics to /ANON/experiment_root/rq2_eval_reduced/gemma4/summary/Gemma4-12B_summary_metrics.csv
+[ANALYSIS] Saved matched contrasts to /ANON/experiment_root/rq2_eval_reduced/gemma4/summary/Gemma4-12B_matched_contrasts.csv
+[ANALYSIS] Saved Order vs Rendering comparison to /ANON/experiment_root/rq2_eval_reduced/gemma4/summary/Gemma4-12B_order_vs_rendering.csv
+
+--- Summary Table ---
+         model language                         condition  n_pairs  n_parsed  n_valid  n_correct  valid_accuracy  valid_ci_low  valid_ci_high  effective_accuracy  effective_ci_low  effective_ci_high  strict_swap_error  debiased_accuracy_D  first_position_rate  n_boundaries  n_exact_ties  share_abs_b_gt_abs_c  median_abs_b  median_abs_c
+0   Gemma4-12B     cuda                  gaussian_sigma_4     1000       999      813        551        0.677737      0.644841       0.708961               0.551          0.520035           0.581575              0.187               0.6475               0.4400             3             3                 0.185      1.437500      6.250000
+1   Gemma4-12B     cuda    mono_light__fs20__wrap80__lnon     1000      1000      841        617        0.733650      0.702761       0.762415               0.617          0.586477           0.646627              0.159               0.7050               0.4675             5             5                 0.158      1.500000      7.125000
+2   Gemma4-12B     cuda  monokai_dark__fs20__wrap60__lnon     1000       995      838        604        0.720764      0.689435       0.750078               0.604          0.573345           0.633859              0.162               0.6890               0.4960            10            10                 0.154      1.312500      6.750000
+3   Gemma4-12B     cuda  monokai_dark__fs20__wrap80__lnon     1000       999      855        606        0.708772      0.677439       0.738238               0.606          0.575364           0.635824              0.145               0.6890               0.4695             3             3                 0.142      1.437500      7.000000
+4   Gemma4-12B     cuda  monokai_dark__fs24__wrap80__lnon     1000       995      828        588        0.710145      0.678328       0.740021               0.588          0.557214           0.618113              0.172               0.6850               0.4665             5             5                 0.167      1.406250      6.562500
+5   Gemma4-12B     cuda                    no_blank_lines     1000       996      812        575        0.708128      0.675937       0.738359               0.575          0.544131           0.605295              0.188               0.6870               0.4545             5             5                 0.181      1.500000      6.375000
+6   Gemma4-12B     cuda                         no_indent     1000       997      807        566        0.701363      0.668894       0.731924               0.566          0.535087           0.596408              0.193               0.6760               0.4565             7             7                 0.188      1.375000      6.312500
+7   Gemma4-12B     java                  gaussian_sigma_4     1000       999      812        512        0.630542      0.596802       0.663052               0.512          0.481033           0.542876              0.188               0.6090               0.4675             4             4                 0.186      1.500000      6.437500
+8   Gemma4-12B     java    mono_light__fs20__wrap80__lnon     1000      1000      880        538        0.611364      0.578741       0.643019               0.538          0.507013           0.568696              0.120               0.6000               0.4880             6             6                 0.116      1.562500      8.343750
+9   Gemma4-12B     java  monokai_dark__fs20__wrap60__lnon     1000       999      874        553        0.632723      0.600248       0.664037               0.553          0.522040           0.583554              0.126               0.6185               0.4870             1             1                 0.125      1.437500      8.062500
+10  Gemma4-12B     java  monokai_dark__fs20__wrap80__lnon     1000       999      873        553        0.633448      0.600964       0.664763               0.553          0.522040           0.583554              0.127               0.6065               0.4950             4             4                 0.125      1.437500      7.906250
+11  Gemma4-12B     java  monokai_dark__fs24__wrap80__lnon     1000      1000      876        560        0.639269      0.606925       0.670398               0.560          0.529063           0.590478              0.124               0.6145               0.4780             4             4                 0.124      1.562500      8.000000
+12  Gemma4-12B     java                    no_blank_lines     1000      1000      878        555        0.632118      0.599710       0.663376               0.555          0.524046           0.585533              0.122               0.6130               0.4910             5             5                 0.120      1.406250      7.953125
+13  Gemma4-12B     java                         no_indent     1000       999      848        532        0.627358      0.594310       0.659258               0.532          0.501010           0.562745              0.152               0.6200               0.4705             1             1                 0.151      1.625000      7.187500
+14  Gemma4-12B   python                  gaussian_sigma_4     1000       997      829        566        0.682750      0.650288       0.713527               0.566          0.535087           0.596408              0.171               0.6680               0.4950             7             7                 0.166      1.281250      6.312500
+15  Gemma4-12B   python    mono_light__fs20__wrap80__lnon     1000       997      832        579        0.695913      0.663814       0.726212               0.579          0.548154           0.609241              0.168               0.6620               0.4615             7             7                 0.165      1.468750      6.593750
+16  Gemma4-12B   python  monokai_dark__fs20__wrap60__lnon     1000       999      844        558        0.661137      0.628539       0.692276               0.558          0.527056           0.588500              0.156               0.6435               0.4975             2             2                 0.154      1.312500      6.812500
+17  Gemma4-12B   python  monokai_dark__fs20__wrap80__lnon     1000       999      837        570        0.681004      0.648662       0.711691               0.570          0.539105           0.600359              0.163               0.6515               0.4850             4             4                 0.159      1.375000      6.500000
+18  Gemma4-12B   python  monokai_dark__fs24__wrap80__lnon     1000      1000      828        552        0.666667      0.633853       0.697941               0.552          0.521038           0.582564              0.172               0.6495               0.4950             7             7                 0.169      1.398425      6.500000
+19  Gemma4-12B   python                    no_blank_lines     1000       998      833        550        0.660264      0.627431       0.691626               0.550          0.519033           0.580585              0.167               0.6435               0.4900             6             6                 0.162      1.437500      6.593750
+20  Gemma4-12B   python                         no_indent     1000      1000      823        547        0.664642      0.631688       0.696066               0.547          0.516026           0.577614              0.177               0.6310               0.4655             4             4                 0.177      1.421875      6.406250
+
+--- Order vs Rendering Table ---
+        model language  median_within_condition_swap_error swap_error_range  median_rendering_flip_rate flip_rate_range  median_flip_rate_valid_both  order_exceeds_rendering
+0  Gemma4-12B     cuda                              0.1605    14.5% - 17.2%                    0.124562    9.9% - 16.3%                     0.031496                     True
+1  Gemma4-12B     java                              0.1250    12.0% - 12.7%                    0.100050    8.5% - 20.5%                     0.029666                     True
+2  Gemma4-12B   python                              0.1655    15.6% - 17.2%                    0.127255   10.1% - 23.6%                     0.037736                     True
+
+--- Expectations ---
+{
+  "E1_swap_error_exceeds_flip_rate": true,
+  "E2_wrap80_better_than_wrap60": false,
+  "E3_indent_removal_change_under_5pp": true
+}
+
+[HANDOFF] Packaging Gemma4-12B results into ~/fse2027_handoff_rq2_gemma4.zip...
+[HANDOFF] Successfully created /ANON/home/fse2027_handoff_rq2_gemma4.zip (5947 bytes)
+[PIPELINE] Gemma4 Pipeline Finished Successfully at: 2026-09-12 17:34:24 KST

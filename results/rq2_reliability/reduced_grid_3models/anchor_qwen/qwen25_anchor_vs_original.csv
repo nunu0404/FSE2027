@@ -1,0 +1,4 @@
+model,language,condition,n_pairs,new_valid_accuracy,orig_valid_accuracy,valid_acc_gap_pp,new_effective_accuracy,orig_effective_accuracy,effective_acc_gap_pp,new_strict_swap_error,orig_strict_swap_error,swap_err_gap_pp
+Qwen2.5-VL-7B-Instruct,cuda,monokai_dark__fs20__wrap80__lnon,1000,0.753577106518283,0.7687400318979266,-1.5162925379643588,0.474,0.482,-0.8000000000000007,0.371,0.373,-0.20000000000000018
+Qwen2.5-VL-7B-Instruct,java,monokai_dark__fs20__wrap80__lnon,1000,0.642578125,0.6439688715953308,-0.1390746595330783,0.329,0.331,-0.20000000000000018,0.488,0.486,0.20000000000000018
+Qwen2.5-VL-7B-Instruct,python,monokai_dark__fs20__wrap80__lnon,1000,0.7622377622377622,0.7604651162790698,0.17726459586924204,0.327,0.327,0.0,0.571,0.5700000000000001,0.09999999999998899

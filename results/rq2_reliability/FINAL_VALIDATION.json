@@ -1,0 +1,55 @@
+{
+  "gate": "FINAL",
+  "gate_pass": true,
+  "errors": [],
+  "ab_raw_calls": 216000,
+  "ab_pair_rows": 108000,
+  "baseline_rows": 6000,
+  "baseline_exact": true,
+  "spearman_complete": true,
+  "dimensions": {
+    "a_grid_rows": 72,
+    "b_perturbation_rows": 36,
+    "rq3_image_language_contrast_rows": 36,
+    "rq3_qwen_text_pair_rows": 1800,
+    "embedding_stability_rows": 15
+  },
+  "embedding": [
+    {
+      "path": "embedding/raw/OpenGVLab__InternVL3-8B__vision__full_20260722.manifest.json",
+      "status": "complete",
+      "completed_images": 9384,
+      "array_shapes": {
+        "native_patch_mean": [
+          9384,
+          1024
+        ],
+        "projected_visual_mean": [
+          9384,
+          3584
+        ],
+        "native_cls": [
+          9384,
+          1024
+        ]
+      }
+    },
+    {
+      "path": "embedding/raw/Qwen__Qwen2.5-VL-7B-Instruct__vision__full_20260722.manifest.json",
+      "status": "complete",
+      "completed_images": 9384,
+      "array_shapes": {
+        "native_patch_mean": [
+          9384,
+          1280
+        ],
+        "projected_visual_mean": [
+          9384,
+          3584
+        ]
+      }
+    }
+  ],
+  "report_bytes": 85733,
+  "report_sha256": "2c256bd0dcc8f56e6463bf7b8bc31ea1d1cf2113575350eae28e2a8d27274350"
+}

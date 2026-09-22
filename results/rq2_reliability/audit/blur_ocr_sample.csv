@@ -1,0 +1,860 @@
+rq0_id,dataset_name,language,raw_code,human_mean_score,human_score_z_within_dataset,formatting_code_hash,score_for_stratum,human_score_z_within_language,source_chars,length_sample_rank
+dorn_cuda_062,Dorn,cuda,"
+        __syncthreads();
+
+        t += tstep;
+        pos += step;
+
+    }
+}
+
+
+",3.581151832460733,0.5702557320771413,0cbffacea9847c4026fb9b144ebfd5628ddbd811b75f0b451d9caac1ed5931a7,1.1460327201377325,1.1460327201377325,79,0
+dorn_cuda_052,Dorn,cuda,"	for (int n = threadIdx.x; n < numNeurons; n += blockDim.x) {
+		int idx = SAMPLE * numNeurons + n;
+
+		cudafloat o = inputs[idx];
+
+		if (IsInfOrNaN(o)) {
+			o = CUDA_VALUE(0.0);
+		} else {
+			cudafloat w = weights[n];
+			cudafloat b = bias[n];
+",3.5785123966942147,0.5657765927695609,7612b176d5f1d15c9af05a1acfbc000cc9f44545140a6ea806befd6c03dc2628,1.1418960634803468,1.1418960634803468,243,1
+dorn_cuda_077,Dorn,cuda,"				resultImageGradient.y,
+				resultImageGradient.z);
+				
+			if( resultImageGradient.x==resultImageGradient.x &&
+				resultImageGradient.y==resultImageGradient.y &&
+				resultImageGradient.z==resultImageGradient.z){
+					
+				float jointEntropyDerivative_X = 0.0f;
+				float movingEntropyDerivative_X = 0.0f;
+				float fixedEntropyDerivative_X = 0.0f;
+",3.100591715976331,-0.2452578465086835,1b8aed109bd5f1bcb02cf0bfb353ca7f89d248942d621b0d17a71fd862339ed9,0.3928747041912399,0.3928747041912399,354,2
+dorn_cuda_021,Dorn,cuda,"				volatile unsigned int* smem = sdata;
+				if (blockSize >=  64) { smem[tid] = mySum = min(mySum, smem[tid + 32]); EMUSYNC; }
+				if (blockSize >=  32) { smem[tid] = mySum = min(mySum, smem[tid + 16]); EMUSYNC; }
+				if (blockSize >=  16) { smem[tid] = mySum = min(mySum, smem[tid +  8]); EMUSYNC; }
+				if (blockSize >=   8) { smem[tid] = mySum = min(mySum, smem[tid +  4]); EMUSYNC; }
+				if (blockSize >=   4) { smem[tid] = mySum = min(mySum, smem[tid +  2]); EMUSYNC; }
+				if (blockSize >=   2) { smem[tid] = mySum = min(mySum, smem[tid +  1]); EMUSYNC; }
+			}
+	}
+}
+",3.310861423220974,0.1115711859914327,58890d71a2f61bc47404b90e7dc73b1bae596344df92d543516a083a241deb75,0.7224199787358143,0.7224199787358143,573,3
+dorn_cuda_104,Dorn,cuda,"
+#include ""_et_line_backproject_attenuated_gpu.h""
+
+__device__ __constant__ int3 c_backprojection_size;
+
+
+__global__ void et_line_backproject_attenuated_gpu_kernel(float *g_sinogram, float *g_backprojection, float *g_attenuation)
+{
+	__shared__ float s_sino[BLOCK];
+	
+	const unsigned int tid = blockIdx.x*blockDim.x + threadIdx.x;
+	const unsigned int pixelNumber = c_backprojection_size.x * c_backprojection_size.z;
+	if(tid<pixelNumber){
+		//load sinogram to shared mem
+		s_sino[threadIdx.x] = g_sinogram[tid];
+		
+		//backproject
+                float sum_attenuation = 0.0f;
+		unsigned int index = tid;
+		for(unsigned int y=0; y < c_backprojection_size.y; y++){
+                        sum_attenuation += g_attenuation[index];
+			g_backprojection[index] = s_sino[threadIdx.x]*exp(-sum_attenuation);
+                        //g_backprojection[index] = g_sinogram[tid];
+			index += pixelNumber;
+		}
+	}
+	return;  
+}
+
+",2.941520467836257,-0.5152027678014517,80431e6062294e7fcfb8fdddd8eb25ebe7f0f485e1cc5d931c920ec7a60be9cf,0.143570233150729,0.143570233150729,913,4
+dorn_cuda_060,Dorn,cuda,"        fprintf(stderr, ""Unable to pop the context in cudaforward init!\n"");
+        return -1;
+    }
+
+    fprintf(stderr, ""cudaforwarder initialized !\n"");
+    return 0;
+}
+ 
+/* For the libvirt data transfers using datatransfer-serial.h, this handler function is
+ * executed as its own thread. That means, as it is executed, it will not have a context.
+ * This creates a problem in cases where the guest calls driver api functions. This is solved
+ * by creating a main cuda handler thread. The CUDA API can the manage contexts itself, 
+ * as is normal. Please see the comment in the main cuda handler function above. 
+ *
+ * We have to manually set and unset the context on enter and leave to this function.
+ *
+ * For now, it is garuanteed that only one handler exists at a time (to avoid race conditions
+ * and a lot of work..) */
+static void cudaFwdMsgHandler(void *msg, uint32_t msg_sz, void** respMsg, uint32_t *respMsgSz){
+
+    if(msg == NULL) // Handle empty messages
+        return;
+
+    inArgs->msg = msg;
+    inArgs->msgSz = msg_sz;
+    sem_post(&sem_in);
+    sem_wait(&sem_out);
+
+    *respMsg = outArgs->respMsg;
+    *respMsgSz = outArgs->respMsgSz;
+",3.412698412698413,0.2843892057819883,f32091978487ee3abe4dba166f865abf38e2b8e64cec29785aaf8e8ed7eca0a9,0.8820240372371633,0.8820240372371633,1159,5
+dorn_cuda_090,Dorn,cuda,"	float3 d;	// direction
+};
+
+// intersect ray with a box
+// http://www.siggraph.org/education/materials/HyperGraph/raytrace/rtinter3.htm
+
+__device__
+int intersectBox(Ray r, float3 boxmin, float3 boxmax, float *tnear, float *tfar)
+{
+    // compute intersection of ray with all six bbox planes
+    float3 invR = make_float3(1.0f) / r.d;
+    float3 tbot = invR * (boxmin - r.o);
+    float3 ttop = invR * (boxmax - r.o);
+
+    // re-order intersections to find smallest and largest on each axis
+    float3 tmin = fminf(ttop, tbot);
+    float3 tmax = fmaxf(ttop, tbot);
+
+    // find the largest tmin and the smallest tmax
+    float largest_tmin = fmaxf(fmaxf(tmin.x, tmin.y), fmaxf(tmin.x, tmin.z));
+    float smallest_tmax = fminf(fminf(tmax.x, tmax.y), fminf(tmax.x, tmax.z));
+
+    *tnear = largest_tmin;
+    *tfar = smallest_tmax;
+
+    return smallest_tmax > largest_tmin;
+}
+
+// transform vector by matrix (no translation)
+__device__
+float3 mul(const float3x4 &M, const float3 &v)
+{
+    float3 r;
+    r.x = dot(v, make_float3(M.m[0]));
+    r.y = dot(v, make_float3(M.m[1]));
+    r.z = dot(v, make_float3(M.m[2]));
+    return r;
+}
+
+// transform vector by matrix with translation
+__device__
+float4 mul(const float3x4 &M, const float4 &v)
+{
+    float4 r;
+    r.x = dot(v, M.m[0]);
+    r.y = dot(v, M.m[1]);
+    r.z = dot(v, M.m[2]);
+    r.w = 1.0f;
+    return r;
+}
+",3.863095238095238,1.0487154872681097,b77f4de1873a2b5df7ae6ccad57e1f4652f8267d938de03490b107e04e433162,1.5879086243437224,1.5879086243437224,1358,6
+dorn_cuda_025,Dorn,cuda,"	// Bind Symbols
+	CUDA_SAFE_CALL(cudaMemcpyToSymbol(c_VoxelNumber,&voxelNumber,sizeof(int)));
+	CUDA_SAFE_CALL(cudaMemcpyToSymbol(c_Binning,&binning,sizeof(int)));
+	CUDA_SAFE_CALL(cudaMemcpyToSymbol(c_Entropies,&entropies_h,sizeof(float4)));
+	CUDA_SAFE_CALL(cudaMemcpyToSymbol(c_NMI,&NMI,sizeof(float)));
+    CUDA_SAFE_CALL(cudaMemcpyToSymbol(c_ActiveVoxelNumber,&activeVoxelNumber,sizeof(int)));
+
+	// Texture binding
+	CUDA_SAFE_CALL(cudaBindTexture(0, targetImageTexture, *targetImageArray_d, voxelNumber*sizeof(float)));
+	CUDA_SAFE_CALL(cudaBindTexture(0, resultImageTexture, *resultImageArray_d, voxelNumber*sizeof(float)));
+	CUDA_SAFE_CALL(cudaBindTexture(0, resultImageGradientTexture, *resultGradientArray_d, voxelNumber*sizeof(float4)));
+    CUDA_SAFE_CALL(cudaBindTexture(0, histogramTexture, *logJointHistogram_d, binNumber*sizeof(float)));
+    CUDA_SAFE_CALL(cudaBindTexture(0, maskTexture, *mask_d, activeVoxelNumber*sizeof(int)));
+
+    CUDA_SAFE_CALL(cudaMemset(*voxelNMIGradientArray_d, 0, voxelNumber*sizeof(float4)));
+
+	const unsigned int Grid_reg_getVoxelBasedNMIGradientUsingPW = 
+		(unsigned int)ceil((float)activeVoxelNumber/(float)Block_reg_getVoxelBasedNMIGradientUsingPW);
+	dim3 B1(Block_reg_getVoxelBasedNMIGradientUsingPW,1,1);
+	dim3 G1(Grid_reg_getVoxelBasedNMIGradientUsingPW,1,1);
+
+	reg_getVoxelBasedNMIGradientUsingPW_kernel <<< G1, B1 >>> (*voxelNMIGradientArray_d);
+	CUDA_SAFE_CALL(cudaThreadSynchronize());
+#ifndef NDEBUG
+	printf(""[DEBUG] reg_getVoxelBasedNMIGradientUsingPW_kernel: %s - Grid size [%i %i %i] - Block size [%i %i %i]\n"",
+	       cudaGetErrorString(cudaGetLastError()),G1.x,G1.y,G1.z,B1.x,B1.y,B1.z);
+#endif
+}
+
+",1.8345864661654128,-2.393676819216449,200b49991d15f094cc17d9aaf911f2428f2b80de22923f348c08025edde51eea,-1.591272480350204,-1.591272480350204,1656,7
+dorn_cuda_081,Dorn,cuda,"
+		// No computation is performed if any of the point is part of the background
+        // The two is added because the image is resample between 2 and bin +2
+        // if 64 bins are used the histogram will have 68 bins et the image will be between 2 and 65
+        if( targetImageValue>0.0f &&
+            resultImageValue>0.0f &&
+            targetImageValue<c_Binning &&
+            resultImageValue<c_Binning &&
+            targetImageValue==targetImageValue &&
+            resultImageValue==resultImageValue){
+
+            targetImageValue = floor(targetImageValue); // Parzen window filling of the joint histogram is approximated
+            resultImageValue = floor(resultImageValue);
+
+			float3 resDeriv = make_float3(
+				resultImageGradient.x,
+				resultImageGradient.y,
+				resultImageGradient.z);
+				
+			if( resultImageGradient.x==resultImageGradient.x &&
+				resultImageGradient.y==resultImageGradient.y &&
+				resultImageGradient.z==resultImageGradient.z){
+					
+				float jointEntropyDerivative_X = 0.0f;
+				float movingEntropyDerivative_X = 0.0f;
+				float fixedEntropyDerivative_X = 0.0f;
+						
+				float jointEntropyDerivative_Y = 0.0f;
+				float movingEntropyDerivative_Y = 0.0f;
+				float fixedEntropyDerivative_Y = 0.0f;
+						
+				float jointEntropyDerivative_Z = 0.0f;
+				float movingEntropyDerivative_Z = 0.0f;
+				float fixedEntropyDerivative_Z = 0.0f;
+						
+				for(int t=(int)(targetImageValue-1.0f); t<(int)(targetImageValue+2.0f); t++){
+					if(-1<t && t<c_Binning){
+						for(int r=(int)(resultImageValue-1.0f); r<(int)(resultImageValue+2.0f); r++){
+							if(-1<r && r<c_Binning){
+								float commonValue = GetBasisSplineValue((float)t-targetImageValue) *
+									GetBasisSplineDerivativeValue((float)r-resultImageValue);
+		
+								float jointLog = tex1Dfetch(histogramTexture, t*c_Binning+r);
+								float targetLog = tex1Dfetch(histogramTexture, c_Binning*c_Binning+t);
+								float resultLog = tex1Dfetch(histogramTexture, c_Binning*c_Binning+c_Binning+r);
+		
+								float temp = commonValue * resDeriv.x;
+								jointEntropyDerivative_X -= temp * jointLog;
+								fixedEntropyDerivative_X -= temp * targetLog;
+								movingEntropyDerivative_X -= temp * resultLog;
+",2.629213483146068,-1.0451897100497312,3b94f9861bbeb37880e3255392e91c4040d8f868c88f048dc00c07f75f380b70,-0.3458930012854763,-0.3458930012854763,2216,8
+dorn_cuda_047,Dorn,cuda,"__host__ void h_cudaPSO_firstBestsUpdate(float* g_bestFitnesses, float* g_fitnesses, uint32_t* g_localBestIDs, int particlesNumber, dim3 bestsUpdateGrid, dim3 bestsUpdateBlock)
+{
+	const unsigned int bestsUpdateSharedAmount = (particlesNumber + 2) * sizeof(float);
+	g_firstBestsUpdate<<<bestsUpdateGrid, bestsUpdateBlock, bestsUpdateSharedAmount>>>(g_bestFitnesses, g_fitnesses, g_localBestIDs);
+	optimizerCudaCheckError(""h_cudaPSO_firstBestsUpdate: execution failed\n"", __FILE__, __LINE__);
+}
+
+__host__ void h_cudaPSO_positionsUpdate(float W, float C1, float C2, float* g_positions, float* g_velocities, float* g_bestPositions,
+										 uint32_t* g_updateFlags,  uint32_t* g_localBestIDs, curandState* devStates, 
+										 float2* g_bounds, dim3 updateGrid, dim3 updateBlock)
+{
+	g_positionsUpdate<<<updateGrid, updateBlock>>>(W, C1, C2, g_positions, g_velocities, g_bestPositions, g_updateFlags, g_localBestIDs, devStates, g_bounds);
+	optimizerCudaCheckError(""h_cudaPSO_Optimize: g_positionsUpdate() execution failed\n"", __FILE__, __LINE__);
+}
+
+__host__ void h_cudaPSO_bestsUpdate(float* g_bestFitnesses,float*  g_fitnesses, uint32_t* g_localBestIDs, uint32_t* g_updateFlags,
+										int particlesNumber, dim3 bestsUpdateGrid, dim3 bestsUpdateBlock)
+{
+	const unsigned int bestsUpdateSharedAmount = (particlesNumber + 2) * sizeof(float);
+	g_bestsUpdate<<<bestsUpdateGrid, bestsUpdateBlock, bestsUpdateSharedAmount>>>(g_bestFitnesses, g_fitnesses, g_localBestIDs, g_updateFlags);
+	optimizerCudaCheckError(""h_cudaPSO_bestsUpdate: execution failed\n"", __FILE__, __LINE__);
+}
+
+/// Initialization of the GPU...
+/// Here global variables pointing to device memory are initialized...
+/// @param particlesNumber number of particles in the swarm
+/// @param problemDimension dimensionality of the problem
+/// @param numberOfGenerations number of generation to be performed during the optimization
+__host__ void h_cudaPSO_BindTextures(int swarmsNumber, int particlesNumber, int problemDimension,
+									float* g_positions, float* g_bestPositions, float* g_velocities, 
+									float* g_fitnesses, float* g_bestFitnesses, uint32_t* g_localBestIDs, uint32_t* g_update)
+{
+	int dim, actualParticleSize = iAlignUp(problemDimension, 16);
+
+
+	dim = swarmsNumber * particlesNumber * actualParticleSize * sizeof(float);
+	
+	cudaBindTexture(NULL, t_texPositions, g_positions, dim);
+	optimizerCudaCheckError(""h_init_cudaPSO: cudaBindTexture() execution failed\n"", __FILE__, __LINE__);
+	cudaBindTexture(NULL, t_texBestPositions, g_bestPositions, dim);
+	optimizerCudaCheckError(""h_cudaPSOBindBestPositionsTextures: cudaBindTexture() execution failed\n"", __FILE__, __LINE__);
+	cudaBindTexture(NULL, t_texVelocities, g_velocities, dim);
+	optimizerCudaCheckError(""h_cudaPSOBindPositionsTextures: cudaBindTexture() execution failed\n"", __FILE__, __LINE__);
+
+	dim = swarmsNumber * particlesNumber * sizeof(float);
+
+	cudaBindTexture(NULL, t_texFitnesses, g_fitnesses, dim);
+	optimizerCudaCheckError(""h_cudaPSOBindFitnessesTextures: cudaBindTexture() execution failed\n"", __FILE__, __LINE__);
+	cudaBindTexture(NULL, t_texBestFitnesses, g_bestFitnesses, dim);
+	optimizerCudaCheckError(""h_cudaPSOBindBestFitnessesTextures: cudaBindTexture() execution failed\n"", __FILE__, __LINE__);
+",1.975,-2.155394157939788,4469c237502cab19d7044d158f97897659bce0a5b159b77b35e49a736c8ae416,-1.3712093187866796,-1.3712093187866796,3256,9
+rq0_0027,Buse,java,"        boolean    hasReturnValue;
+
+        outlen = parameters.length;
+        offset = 0;
+",3.9421487603305785,1.045478669310289,33b589d6e298efd7a390db9d9430febd1193457db230429272b45a5d1b5ff21c,1.045478669310289,,92,0
+rq0_0047,Buse,java,"    public void close() {
+
+        if (isClosed) {
+            return;
+        }
+
+        isClosed = true;
+
+        try {
+            resultOut.setResultType(ResultConstants.SQLDISCONNECT);
+",4.049586776859504,1.2166658254683484,f9c0b18bbd17b96b4898e81f9e8bb0f238f06b8e6de9790301f0cadd8aed1729,1.2166658254683484,,190,1
+rq0_0064,Buse,java,"
+      mProgramTable.changeSelection(row, 0, false, false);
+
+      Program p = (Program) mProgramTableModel.getValueAt(row, 1);
+
+      JPopupMenu menu = devplugin.Plugin.getPluginManager().createPluginContextMenu(p, CapturePlugin.getInstance());
+",2.603305785123967,-1.0877766612747517,4d9002328e650bc12c247e035305229ea2cc3bfd799bfdd5ab17f1d7c107f6f5,-1.0877766612747517,,246,2
+rq0_0006,Buse,java,"  /**
+   * Attention: DO NOT USE THIS!
+   * Under Os/2 it has some problems with calculating the real Date!
+   * 
+   * @deprecated
+   */
+  public Date(int daysSince1970) {
+
+    long l = (long) daysSince1970 * 24 * 60 * 60 * 1000;
+    java.util.Date d = new java.util.Date(l);
+    Calendar cal = Calendar.getInstance();}
+",3.628099173553719,0.545085443617502,e22b430682bdf127a954e6f2030a7d7f850e82b5f2ed61b0c4cd939dcabeb010,0.545085443617502,,320,3
+rq0_0078,Buse,java,"    /**
+     * Closes all panels, changes the background and shows the main menu.
+     */
+    public void returnToTitle() {
+        // TODO: check if the GUI object knows that we're not
+        // inGame. (Retrieve value of GUI::inGame.)  If GUI thinks
+        // we're still in the game then log an error because at this
+        // point the GUI should have been informed.
+        closeMenus();
+        removeInGameComponents();
+        showMainPanel();
+",4.148760330578512,1.3746847388450176,653ac2018a5f85ca835dd7475a8763580b77f81504ae118ddc5f338b2171a8c4,1.3746847388450176,,455,4
+rq0_0142,Dorn,java,"	public String get(Object key) {
+		String value = null;
+
+		if (key != null) {
+			FacesContext facesContext = FacesContext.getCurrentInstance();
+
+			Locale locale = facesContext.getViewRoot().getLocale();
+
+			if (locale == null) {
+				locale = facesContext.getApplication().getDefaultLocale();
+			}
+
+			value = LanguageUtil.get(locale, key.toString());
+
+			if (_log.isDebugEnabled()) {
+				_log.debug(
+					""{locale="" + locale + "", key="" + key + "", value="" + value);
+			}
+		}
+
+		return value;
+	}
+
+	public boolean isEmpty() {
+		throw new UnsupportedOperationException();
+	}
+
+	public Set<String> keySet() {
+		throw new UnsupportedOperationException();
+	}
+",3.3958332538604736,0.1231384923370928,f3383ffc6aefd7ddcf78ef0d5d5d8d343d779ddc35ea5b760ac21846ae4eb6d5,0.1231384923370928,,652,5
+rq0_0294,Scalabrino,java,"public void buildModel() {
+        if (getTarget() != null) {
+            Object target = getTarget();
+            Object kind = Model.getFacade().getAggregation(target);
+            if (kind == null
+                    || kind.equals(
+                            Model.getAggregationKind().getNone())) {
+                setSelected(ActionSetAssociationEndAggregation.NONE_COMMAND);
+            } else {
+		if (kind.equals(
+		        Model.getAggregationKind().getAggregate())) {
+		    setSelected(ActionSetAssociationEndAggregation
+		            .AGGREGATE_COMMAND);
+		} else {
+		    if (kind.equals(
+		            Model.getAggregationKind()
+		            	.getComposite())) {
+			setSelected(ActionSetAssociationEndAggregation
+			        .COMPOSITE_COMMAND);
+		    } else {
+		        setSelected(ActionSetAssociationEndAggregation
+
+			        .NONE_COMMAND);
+		    }
+		}
+            }
+        }
+    }",2.555555555555556,-1.8209254862098048,10b071ac9888d003b3882a219e0df2448da87ba28d729ceabcfa04e93bdec4da,-1.8209254862098048,,900,6
+rq0_0309,Scalabrino,java,"private AnnotationInstance overrideSchemaCatalogByDefault(AnnotationInstance annotationInstance, EntityMappingsMocker.Default defaults) {
+		List<AnnotationValue> newAnnotationValueList = new ArrayList<AnnotationValue>();
+		newAnnotationValueList.addAll( annotationInstance.values() );
+		boolean schemaDefined = false;
+		boolean catalogDefined = false;
+		if ( annotationInstance.value( ""schema"" ) != null ) {
+			schemaDefined = true;
+		}
+		if ( annotationInstance.value( ""catalog"" ) != null ) {
+			catalogDefined = true;
+		}
+		if ( schemaDefined && catalogDefined ) {
+			return annotationInstance;
+		}
+		if ( !catalogDefined && StringHelper.isNotEmpty( defaults.getCatalog() ) ) {
+			newAnnotationValueList.add(
+					AnnotationValue.createStringValue(
+							""catalog"", defaults.getCatalog()
+					)
+			);
+		}
+		if ( !schemaDefined && StringHelper.isNotEmpty( defaults.getSchema() ) ) {
+			newAnnotationValueList.add(
+					AnnotationValue.createStringValue(
+							""schema"", defaults.getSchema()
+					)
+			);
+		}
+		return MockHelper.create(
+				annotationInstance.name(),
+				annotationInstance.target(),
+				MockHelper.toArray( newAnnotationValueList )
+		);
+	}",3.333333333333333,-0.5503761919733818,9e8fbeb68ae1efe39bb0d1213d3bde762cd0a0c9a2cdd24ebc4aaddd97891e16,-0.5503761919733818,,1159,7
+rq0_0183,Dorn,java,"public class ComponentTag extends BaseComponentTag {
+
+	protected void setAttributes(HttpServletRequest request) {
+		Map<String, Object> options = getOptions();
+		HashMap<String, Object> optionsJSON = new HashMap<String, Object>();
+
+		_proccessAttributes(options, optionsJSON);
+
+		super.setAttributes(request);
+
+		setNamespacedAttribute(request, ""options"", options);
+		setNamespacedAttribute(request, ""optionsJSON"", optionsJSON);
+	}
+
+	private boolean _isEventAttribute(String key) {
+		Matcher afterMatcher = _EVENT_AFTER_REGEX.matcher(key);
+		Matcher onMatcher = _EVENT_ON_REGEX.matcher(key);
+
+		return (afterMatcher.find() || onMatcher.find());
+	}
+
+	private boolean _isValidAttribute(String key) {
+		List<String> excludeAttributes = Collections.EMPTY_LIST;
+
+		if (getExcludeAttributes() != null) {
+			excludeAttributes = Arrays.asList(
+				getExcludeAttributes().split(StringPool.COMMA));
+		}
+
+		return !(excludeAttributes.contains(key) ||
+			key.equals(_DYNAMIC_ATTRIBUTES));
+	}
+
+	private void _proccessAttributes(Map<String, Object> options,
+		Map<String, Object> newOptions) {
+
+		Map<String, String> afterEventOptionsMap =
+			new HashMap<String, String>();
+
+		Map<String, String> onEventOptionsMap =	new HashMap<String, String>();
+
+		for (String key : options.keySet()) {
+			if (!_isValidAttribute(key)) {
+				continue;
+			}
+
+			Object value = options.get(key);
+
+			String originalKey =
+				ReservedAttributeUtil.getOriginalName(getName(), key);
+",2.7650272846221924,-1.312494795838341,5b001879c19ff030a2fcdc3ed24c0a1bc06b1b96972de9bf20e99831e35a5b04,-1.312494795838341,,1449,8
+rq0_0135,Dorn,java,"		throws com.liferay.portal.kernel.exception.PortalException,
+			com.liferay.portal.kernel.exception.SystemException;
+
+	public void deleteEntry(long entryId)
+		throws com.liferay.portal.kernel.exception.PortalException,
+			com.liferay.portal.kernel.exception.SystemException;
+
+	@Transactional(propagation = Propagation.SUPPORTS, readOnly = true)
+	public java.util.List<com.liferay.portlet.bookmarks.model.BookmarksEntry> getEntries(
+		long groupId, long folderId, int start, int end)
+		throws com.liferay.portal.kernel.exception.SystemException;
+
+	@Transactional(propagation = Propagation.SUPPORTS, readOnly = true)
+	public java.util.List<com.liferay.portlet.bookmarks.model.BookmarksEntry> getEntries(
+		long groupId, long folderId, int start, int end,
+		com.liferay.portal.kernel.util.OrderByComparator orderByComparator)
+		throws com.liferay.portal.kernel.exception.SystemException;
+
+	@Transactional(propagation = Propagation.SUPPORTS, readOnly = true)
+	public int getEntriesCount(long groupId, long folderId)
+		throws com.liferay.portal.kernel.exception.SystemException;
+
+	@Transactional(propagation = Propagation.SUPPORTS, readOnly = true)
+	public com.liferay.portlet.bookmarks.model.BookmarksEntry getEntry(
+		long entryId)
+		throws com.liferay.portal.kernel.exception.PortalException,
+			com.liferay.portal.kernel.exception.SystemException;
+
+	@Transactional(propagation = Propagation.SUPPORTS, readOnly = true)
+	public int getFoldersEntriesCount(long groupId,
+		java.util.List<java.lang.Long> folderIds)
+		throws com.liferay.portal.kernel.exception.SystemException;
+
+	@Transactional(propagation = Propagation.SUPPORTS, readOnly = true)
+	public java.util.List<com.liferay.portlet.bookmarks.model.BookmarksEntry> getGroupEntries(
+		long groupId, int start, int end)
+		throws com.liferay.portal.kernel.exception.SystemException;
+
+	@Transactional(propagation = Propagation.SUPPORTS, readOnly = true)
+	public java.util.List<com.liferay.portlet.bookmarks.model.BookmarksEntry> getGroupEntries(
+		long groupId, long userId, int start, int end)
+		throws com.liferay.portal.kernel.exception.SystemException;
+
+	@Transactional(propagation = Propagation.SUPPORTS, readOnly = true)
+	public int getGroupEntriesCount(long groupId)
+		throws com.liferay.portal.kernel.exception.SystemException;
+
+	@Transactional(propagation = Propagation.SUPPORTS, readOnly = true)
+	public int getGroupEntriesCount(long groupId, long userId)
+		throws com.liferay.portal.kernel.exception.SystemException;
+",2.778260946273804,-1.2823766832680903,f3584c46a4c0bdcba17e7da5c4f40677ef6aa707f41773e41c0363150f5e3568,-1.2823766832680903,,2477,9
+dorn_python_067,Dorn,python,"
+"""""" Make selected group larger by 10% """"""
+
+import sys
+
+try:
+    from scribus import *
+except ImportError:
+    print ""This script only runs from within Scribus.""
+    sys.exit(1)
+",4.172774869109948,1.5742437935942573,ac8d562210e64beaedb6001f04d3a87a8052f5944c4ae32bdd4dd2e2c9f468fa,1.4764112145135724,1.4764112145135724,178,0
+dorn_python_001,Dorn,python,"        else:
+            return self.__class__(self.weekday, n)
+
+    def __eq__(self, other):
+        try:
+            if self.weekday != other.weekday or self.n != other.n:
+                return False
+        except AttributeError:
+            return False
+        return True
+",3.5084745762711864,0.4469219654080971,63aeff02b5ebb66189f7b2d25b1541d42c6c964dcdfd8985bbea9df9086c2680,-0.071653040618252,-0.071653040618252,280,1
+dorn_python_066,Dorn,python,"        '''Override this to take special action whenever a
+        new level of the topic hierarchy is started (e.g., indent
+        some output). '''
+        pass
+
+    def _endChildren(self):
+        '''Override this to take special action whenever a
+        level of the topic hierarchy is completed (e.g., dedent
+        some output). '''
+        pass
+",3.7936507936507935,0.9308678227217912,1711c271382e8e38c3e514546a01dd07bd15a5369ea21ebcfa796d276449a76f,0.5929125380788902,0.5929125380788902,355,2
+dorn_python_038,Dorn,python,"# $Id: test_title.py 5174 2007-05-31 00:01:52Z wiemann $
+# Author: Lea Wiemann <LeWiemann@gmail.com>
+# Copyright: This module has been placed in the public domain.
+
+""""""
+Tests for the 'title' directive.
+""""""
+
+from __init__ import DocutilsTestSupport
+
+def suite():
+    s = DocutilsTestSupport.ParserTestSuite()
+    s.generateTests(totest)
+    return s
+
+totest = {}
+
+totest['title'] = [
+[""""""\
+.. title:: This is the document title.
+"""""",
+""""""\
+<document source=""test data"" title=""This is the document title."">
+""""""],
+]
+
+
+if __name__ == '__main__':
+    import unittest
+",3.2543103448275863,0.0156036457576274,166c844fbec009f0815e3d9d553d85240b6e7e4d20c16f2c08ecaeb5e90a9f65,-0.6639492745240082,-0.6639492745240082,561,3
+dorn_python_098,Dorn,python,"QUOTE_START = u""""
+QUOTE_END = u""""
+
+def quote(textobj):
+    quoted_re = re.compile('""[^""]*""')
+    try:
+        text = getText(textobj)
+    except WrongFrameTypeError:
+        messageBox(""quote.py"", ""Cannot quote text in a non-text frame"", ICON_INFORMATION);
+        sys.exit(1)
+    if len(text) == 0:
+        return 0    # We can't very well change anything in an empty frame
+    count = 0
+    i = 0
+    selectText(0, 0, textobj)
+    while i < len(text):
+        match = quoted_re.match(text[i:])
+        if match:
+            end = match.end()
+            selectText(i, 1, textobj)
+            deleteText(textobj)
+            insertText(QUOTE_START, i, textobj)
+            selectText(i + end - 1, 1, textobj)
+            deleteText(textobj)
+            insertText(QUOTE_END, i + end - 1, textobj)
+            count += 1
+            i = i + end
+        else:
+            i = i + 1
+    return count
+",3.615384615384616,0.6283489827435503,bf1ed6531ae11af29f31c51d1a2105368ff8f47d3d4bc8218cb934de6234a748,0.1774867111632748,0.1774867111632748,898,4
+dorn_python_000,Dorn,python,"        gsz.AddGrowableCol(1)
+        self.interior.SetSizer(gsz)
+        gsz.Layout()
+        
+    def findFieldName(self, fieldName, fieldNames):
+        def fieldNameIndex(fieldName, fieldNames):
+            return fieldNames.index(fieldName) if fieldName in fieldNames else 0
+        
+        index = fieldNameIndex(fieldName, fieldNames)
+        return index if index else fieldNameIndex(fieldName[:6], [fieldName[:6] for fieldName in fieldNames])
+        
+    def CanGoNext(self):
+        wrongFields = []
+        countNotNone = 0
+
+        for index, (fieldName, canMultiple) in enumerate(self.fields):
+            count = 0
+            for choice in self.choices:
+                if choice.GetSelection() == index:
+                    count += 1
+                if choice.GetSelection() != 0:
+                    countNotNone += 1
+            if count > 1 and not canMultiple:
+                wrongFields.append(fieldName)
+
+        if countNotNone == 0:
+            return False, _('No field mapping.')
+
+        if len(wrongFields) == 1:
+            return False, _('The ""%s"" field cannot be selected several times.') % wrongFields[0]
+",3.3487394957983194,0.1758505164183208,42262e48e8446705d27b2873617d8a527468c3a458642d317a9f15818143dce6,-0.4438945871543011,-0.4438945871543011,1142,5
+dorn_python_069,Dorn,python,"codes[""darkred""]   = codes[""0xAA0000""]
+
+codes[""green""]     = codes[""0x55FF55""]
+codes[""darkgreen""] = codes[""0x00AA00""]
+
+codes[""yellow""]    = codes[""0xFFFF55""]
+codes[""brown""]     = codes[""0xAA5500""]
+
+codes[""blue""]      = codes[""0x5555FF""]
+codes[""darkblue""]  = codes[""0x0000AA""]
+
+codes[""fuchsia""]   = codes[""0xFF55FF""]
+codes[""purple""]    = codes[""0xAA00AA""]
+
+codes[""teal""]      = codes[""0x00AAAA""]
+codes[""turquoise""] = codes[""0x55FFFF""]
+
+codes[""white""]     = codes[""0xFFFFFF""]
+codes[""lightgray""] = codes[""0xAAAAAA""]
+
+codes[""darkteal""]   = codes[""turquoise""]
+codes[""darkyellow""] = codes[""brown""]
+codes[""fuscia""]     = codes[""fuchsia""]
+codes[""white""]      = codes[""bold""]
+
+def nocolor():
+    ""turn off colorization""
+    for code in codes:
+        codes[code] = """"
+
+def reset_color():
+    return codes[""reset""]
+
+def colorize(color_key, text):
+    return codes[color_key] + text + codes[""reset""]
+
+functions_colors = [
+    ""bold"", ""white"", ""teal"", ""turquoise"", ""darkteal"",
+    ""fuscia"", ""fuchsia"", ""purple"", ""blue"", ""darkblue"",
+    ""green"", ""darkgreen"", ""yellow"", ""brown"",
+    ""darkyellow"", ""red"", ""darkred""
+]
+
+def create_color_func(color_key):
+    """"""
+    Return a function that formats its argument in the given color.
+    """"""
+    def derived_func(text):
+        return colorize(color_key, text)
+    return derived_func
+",3.893854748603352,1.1009145725220653,28785ad00f0ff9f0cf92d6d65a7dc2f5ec555ac1c5a06c45d59a39febdaff1b0,0.826424644813045,0.826424644813045,1314,6
+dorn_python_036,Dorn,python,"            dx, dy, dw, dh = self.GetDisplayRect()
+
+        w, h = frm.GetSizeTuple()
+        w = w if w > self.notificationWidth else self.notificationWidth
+
+        bottom = dy + dh - self.notificationMargin
+
+        for otherFrame, height, tmo in self.displayedFrames:
+            bottom -= height + self.notificationMargin
+            if bottom - h < 0:
+                self.waitingFrames.append((frm, timeout))
+                return
+
+        if frm.GetParent():
+            x = min(self.GetDisplayRect()[2] - self.notificationMargin - w,
+                    dx + dw + self.notificationMargin)
+        else:
+            x = dx + dw - w - self.notificationMargin
+
+        frm.SetDimensions(x,
+                          bottom - h - self.notificationMargin,
+                          w, h)
+        self.displayedFrames.append((frm, h, timeout))
+
+        frm.Layout()
+
+        AnimatedShow(frm)
+
+    def CheckWaiting(self):
+        waiting = self.waitingFrames
+        self.waitingFrames = []
+        for frm, tmo in waiting:
+            self.NotifyFrame(frm, timeout=tmo)
+
+    def Notify(self, title, msg, icon=None, timeout=None):
+        """"""
+        Present a new simple notification frame.
+
+        @param title: Notification title
+        @param msg: Notification message
+        @param timeout: See L{NotifyFrame}.
+        """"""
+
+        frm = NotificationFrame(msg, title, icon=icon)
+        self.NotifyFrame(frm, timeout=timeout)
+
+    def HideFrame(self, frm):
+        """"""
+        Hide a notification frame.
+        """"""
+",3.0129310344827585,-0.3940185813550929,854b03ebf8fc48c0a1ee0b357ff0c318ee17239a48d610f34e78f79fdb5effcd,-1.2264519352956729,-1.2264519352956729,1528,7
+dorn_python_009,Dorn,python,"    def filter(self, items):
+        return items
+    
+    def test(self):
+        self.testcalled = 1 # pylint: disable-msg=W0201
+
+
+class DummyItem(str):
+    def ancestors(self):
+        return []
+
+
+class StackedFilterTest(test.TestCase):
+    def setUp(self):
+        self.list = patterns.ObservableList([DummyItem('a'), DummyItem('b'), 
+                                             DummyItem('c'), DummyItem('d')])
+        self.filter1 = DummyFilter(self.list)
+        self.filter2 = TestFilter(self.filter1)
+
+    def testDelegation(self):
+        self.filter2.test()
+        self.assertEqual(1, self.filter1.testcalled)
+        
+    def testSetTreeMode_True(self):
+        self.filter2.setTreeMode(True)
+        self.failUnless(self.filter1.treeMode())
+        
+    def testSetTreeMode_False(self):
+        self.filter2.setTreeMode(False)
+        self.failIf(self.filter1.treeMode())
+        
+
+class SearchFilterTest(test.TestCase):
+    def setUp(self):
+        task.Task.settings = config.Settings(load=False)
+        self.parent = task.Task(subject='*ABC', description='Parent description')
+        self.child = task.Task(subject='DEF', description='Child description')
+        self.parent.addChild(self.child)
+        self.list = task.TaskList([self.parent, self.child])
+        self.filter = base.SearchFilter(self.list)
+
+    def setSearchString(self, searchString, matchCase=False,
+                        includeSubItems=False, searchDescription=False):
+        self.filter.setSearchFilter(searchString, matchCase=matchCase, 
+                                    includeSubItems=includeSubItems,
+                                    searchDescription=searchDescription)
+        
+    def testNoMatch(self):
+        self.setSearchString('XYZ')
+        self.assertEqual(0, len(self.filter))
+",3.677685950413223,0.7340747451133941,322c0b3ff674c117b1d48ce9bbd9d2ec0bd074115151c48b401429730f669029,0.3226717590166094,0.3226717590166094,1795,8
+dorn_python_111,Dorn,python,"                for j in range (1, self.options.r_subdivs):
+                    draw_SVG_circle(i*dr-j*dr/self.options.r_subdivs, #minor div circles
+                                    0, 0, self.options.r_subdivs_th, 'none',
+                                    'MinorDivCircle'+str(i)+':R'+str(i*dr), grid)
+        
+        if self.options.a_divs == self.options.a_divs_cent: #the lines can go from the centre to the edge
+            for i in range(0, self.options.a_divs):
+                draw_SVG_line(0, 0, rmax*sin(i*dtheta), rmax*cos(i*dtheta), 
+                              self.options.a_divs_th, 'RadialGridline'+str(i), grid)
+        
+        else: #we need separate lines
+            for i in range(0, self.options.a_divs_cent): #lines that go to the first circle
+                draw_SVG_line(0, 0, dr*sin(i*dtheta), dr*cos(i*dtheta), 
+                              self.options.a_divs_th, 'RadialGridline'+str(i), grid)
+        
+            dtheta = 2 * pi / self.options.a_divs #work out the angle change for outer lines
+            
+            for i in range(0, self.options.a_divs): #lines that go from there to the edge
+                draw_SVG_line(  dr*sin(i*dtheta+pi/2.0),   dr*cos(i*dtheta+pi/2.0), 
+                              rmax*sin(i*dtheta+pi/2.0), rmax*cos(i*dtheta+pi/2.0), 
+                              self.options.a_divs_th, 'RadialGridline'+str(i), grid)
+        
+        if self.options.a_subdivs > 1: #draw angular subdivs
+            for i in range(0, self.options.a_divs): #for each major divison
+                for j in range(1, self.options.a_subdivs): #draw the subdivisions
+                    angle = i*dtheta-j*dtheta/self.options.a_subdivs+pi/2.0 # the angle of the subdivion line
+                    draw_SVG_line(dr*self.options.a_subdivs_cent*sin(angle),
+                                  dr*self.options.a_subdivs_cent*cos(angle), 
+                                  rmax*sin(angle), rmax*cos(angle), 
+                                  self.options.a_subdivs_th, 'RadialMinorGridline'+str(i), grid)
+        
+        if self.options.c_dot_dia <> 0: #if a non-zero diameter, draw the centre dot
+            draw_SVG_circle(self.options.c_dot_dia /2.0,
+                            0, 0, 0, '#000000', 'CentreDot', grid)
+        
+        if self.options.a_labels == 'deg':
+            label_radius = rmax+self.options.a_label_outset  #radius of label centres
+            label_size = self.options.a_label_size
+            numeral_size = 0.73*label_size #numerals appear to be 0.73 the height of the nominal pixel size of the font in ""Sans""
+            
+            for i in range(0, self.options.a_divs):#self.options.a_divs): #radial line labels
+                draw_SVG_label_centred(sin(i*dtheta+pi/2.0)*label_radius,        #0 at the RHS, mathematical style
+                                       cos(i*dtheta+pi/2.0)*label_radius+ numeral_size/2.0, #centre the text vertically 
+                                       str(i*360/self.options.a_divs), 
+                                       label_size, 'Label'+str(i), grid)
+
+if __name__ == '__main__':
+    e = Grid_Polar()
+    e.affect()
+
+",2.8823529411764706,-0.6156104374087175,1848e294006bf9f7f40626e0c63929ad4dd54de29360870350fa0375d3cd5b3f,-1.53074696712068,-1.53074696712068,3143,9

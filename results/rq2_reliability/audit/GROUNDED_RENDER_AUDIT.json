@@ -1,0 +1,29 @@
+{
+  "snippets": 552,
+  "pairs": 3000,
+  "pairs_by_language": {
+    "cuda": 1000,
+    "java": 1000,
+    "python": 1000
+  },
+  "grid_rows": 6624,
+  "grid_expected": 6624,
+  "perturbation_rows": 3312,
+  "perturbation_expected": 3312,
+  "grid_unique_keys": true,
+  "perturbation_unique_keys": true,
+  "all_files_exist": true,
+  "all_nonblank": true,
+  "layout_row_accounting_errors": 0,
+  "grid_source_hash_errors": 0,
+  "token_streams_lexed_from_original_source": 552,
+  "conditions_with_variable_width": 0,
+  "invalid_dimensions": 0,
+  "b_baseline_pixel_exact": 552,
+  "b_baseline_total": 552,
+  "blur_monotonic_gradient": 552,
+  "blur_all_distinct": 552,
+  "blur_dimensions_preserved": 552,
+  "blur_total": 552,
+  "gate_pass": true
+}

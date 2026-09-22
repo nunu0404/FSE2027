@@ -1,0 +1,442 @@
+<!doctype html><meta charset='utf-8'><title>Complementarity Case Studies</title>
+<style>body{font-family:sans-serif} .case{border:1px solid #aaa;margin:16px;padding:12px} img{max-width:48%;vertical-align:top} pre{white-space:pre-wrap;max-height:320px;overflow:auto;background:#f6f6f6;padding:8px}</style>
+<h1>Complementarity Case Studies</h1>
+<div class='case'><h2>RF_correct__VLM_correct: full_rq0_seed42__rq0_0145__rq0_0153</h2><p>difficulty=hard; gold=rq0_0153; RF=rq0_0153 correct=True; VLM=rq0_0153 valid=True correct=True</p><img src='file:///ANON/experiment_root/experiments/rq0_viability/data/rendered/default/rq0_0145.png'><img src='file:///ANON/experiment_root/experiments/rq0_viability/data/rendered/default/rq0_0153.png'><h3>Code A rq0_0145</h3><pre>	
+	public long
+	getInterval();
+	
+	public long
+	getMinInterval();
+	
+	public int
+	getTimeUntilNextUpdate();
+</pre><h3>Code B rq0_0153</h3><pre>	 */
+	public void setGadgetKey(String gadgetKey);
+
+	/**
+	 * Returns the service name of this o auth token.
+	 *
+	 * @return the service name of this o auth token
+	 */
+	@AutoEscape
+	public String getServiceName();
+</pre></div>
+<div class='case'><h2>RF_correct__VLM_wrong: full_rq0_seed42__rq0_0009__rq0_0094</h2><p>difficulty=medium; gold=rq0_0094; RF=rq0_0094 correct=True; VLM=rq0_0009 valid=True correct=False</p><img src='file:///ANON/experiment_root/experiments/rq0_viability/data/rendered/default/rq0_0009.png'><img src='file:///ANON/experiment_root/experiments/rq0_viability/data/rendered/default/rq0_0094.png'><h3>Code A rq0_0009</h3><pre>    private void moveUnit(KeyEvent e) {
+        if (!parent.isMapboardActionsEnabled()) {
+            return;
+        }
+        
+        switch (e.getKeyCode()) {
+        case KeyEvent.VK_ESCAPE:
+            // main menu
+            break;
+        case KeyEvent.VK_NUMPAD1:
+        case KeyEvent.VK_END:
+            inGameController.moveActiveUnit(Map.SW);
+</pre><h3>Code B rq0_0094</h3><pre>    /**
+     * Applies this action.
+     * 
+     * @param e The &lt;code&gt;ActionEvent&lt;/code&gt;.
+     */
+    public void actionPerformed(ActionEvent e) {
+        final Game game = freeColClient.getGame();
+        final Map map = game.getMap();
+
+        Parameters p = showParametersDialog();
+</pre></div>
+<div class='case'><h2>RF_correct__VLM_invalid: full_rq0_seed42__rq0_0159__rq0_0219</h2><p>difficulty=hard; gold=rq0_0159; RF=rq0_0159 correct=True; VLM=nan valid=False correct=False</p><img src='file:///ANON/experiment_root/experiments/rq0_viability/data/rendered/default/rq0_0159.png'><img src='file:///ANON/experiment_root/experiments/rq0_viability/data/rendered/default/rq0_0219.png'><h3>Code A rq0_0159</h3><pre>import com.liferay.portal.model.User;
+import com.liferay.portal.security.permission.ActionKeys;
+import com.liferay.portal.service.base.EmailAddressServiceBaseImpl;
+import com.liferay.portal.service.permission.CommonPermissionUtil;
+
+import java.util.List;
+
+/**
+ * @author Brian Wing Shun Chan
+ * @author Alexander Chow
+ */
+public class EmailAddressServiceImpl extends EmailAddressServiceBaseImpl {
+
+	public EmailAddress addEmailAddress(
+			String className, long classPK, String address, int typeId,
+			boolean primary)
+		throws PortalException, SystemException {
+
+		CommonPermissionUtil.check(
+			getPermissionChecker(), className, classPK, ActionKeys.UPDATE);
+
+		return emailAddressLocalService.addEmailAddress(
+			getUserId(), className, classPK, address, typeId, primary);
+	}
+
+	public void deleteEmailAddress(long emailAddressId)
+		throws PortalException, SystemException {
+
+		EmailAddress emailAddress = emailAddressPersistence.findByPrimaryKey(
+			emailAddressId);
+
+		CommonPermissionUtil.check(
+			getPermissionChecker(), emailAddress.getClassNameId(),
+			emailAddress.getClassPK(), ActionKeys.UPDATE);
+
+		emailAddressLocalService.deleteEmailAddress(emailAddressId);
+	}
+
+	public EmailAddress getEmailAddress(long emailAddressId)
+		throws PortalException, SystemException {
+
+		EmailAddress emailAddress = emailAddressPersistence.findByPrimaryKey(
+			emailAddressId);
+
+		CommonPermissionUtil.check(
+			getPermissionChecker(), emailAddress.getClassNameId(),
+			emailAddress.getClassPK(), ActionKeys.VIEW);
+
+		return emailAddress;
+	}
+</pre><h3>Code B rq0_0219</h3><pre>public int getSqlTypeCode(Mapping mapping) throws MappingException {
+        org.hibernate.type.Type type = getValue().getType();
+        try {
+            int sqlTypeCode = type.sqlTypes( mapping )[getTypeIndex()];
+            if ( getSqlTypeCode() != null &amp;&amp; getSqlTypeCode() != sqlTypeCode ) {
+                throw new MappingException( &quot;SQLType code&#x27;s does not match. mapped as &quot; + sqlTypeCode + &quot; but is &quot; + getSqlTypeCode() );
+            }
+            return sqlTypeCode;
+        }
+        catch ( Exception e ) {
+            throw new MappingException(
+                    &quot;Could not determine type for column &quot; +
+                            name +
+                            &quot; of type &quot; +
+                            type.getClass().getName() +
+                            &quot;: &quot; +
+                            e.getClass().getName(),
+                    e
+            );
+        }
+    }</pre></div>
+<div class='case'><h2>RF_wrong__VLM_correct: full_rq0_seed42__rq0_0021__rq0_0208</h2><p>difficulty=hard; gold=rq0_0208; RF=rq0_0021 correct=False; VLM=rq0_0208 valid=True correct=True</p><img src='file:///ANON/experiment_root/experiments/rq0_viability/data/rendered/default/rq0_0021.png'><img src='file:///ANON/experiment_root/experiments/rq0_viability/data/rendered/default/rq0_0208.png'><h3>Code A rq0_0021</h3><pre>	protected void printFailures(Result result) {
+		if (result.getFailureCount() == 0)
+			return;
+		if (result.getFailureCount() == 1)
+			getWriter().println(&quot;There was &quot; + result.getFailureCount() + &quot; failure:&quot;);
+		else
+			getWriter().println(&quot;There were &quot; + result.getFailureCount() + &quot; failures:&quot;);
+</pre><h3>Code B rq0_0208</h3><pre>public String extractConstraintName(SQLException sqle) {
+			try {
+				final int sqlState = Integer.valueOf( JdbcExceptionHelper.extractSqlState( sqle ) );
+				switch (sqlState) {
+					// CHECK VIOLATION
+					case 23514: return extractUsingTemplate( &quot;violates check constraint \&quot;&quot;,&quot;\&quot;&quot;, sqle.getMessage() );
+					// UNIQUE VIOLATION
+					case 23505: return extractUsingTemplate( &quot;violates unique constraint \&quot;&quot;,&quot;\&quot;&quot;, sqle.getMessage() );
+					// FOREIGN KEY VIOLATION
+					case 23503: return extractUsingTemplate( &quot;violates foreign key constraint \&quot;&quot;,&quot;\&quot;&quot;, sqle.getMessage() );
+					// NOT NULL VIOLATION
+					case 23502: return extractUsingTemplate( &quot;null value in column \&quot;&quot;,&quot;\&quot; violates not-null constraint&quot;, sqle.getMessage() );
+					// TODO: RESTRICT VIOLATION
+					case 23001: return null;
+					// ALL OTHER
+					default: return null;
+				}
+			}
+			catch (NumberFormatException nfe) {
+				return null;
+			}
+		}</pre></div>
+<div class='case'><h2>RF_wrong__VLM_correct: full_rq0_seed42__rq0_0094__rq0_0290</h2><p>difficulty=hard; gold=rq0_0290; RF=rq0_0094 correct=False; VLM=rq0_0290 valid=True correct=True</p><img src='file:///ANON/experiment_root/experiments/rq0_viability/data/rendered/default/rq0_0094.png'><img src='file:///ANON/experiment_root/experiments/rq0_viability/data/rendered/default/rq0_0290.png'><h3>Code A rq0_0094</h3><pre>    /**
+     * Applies this action.
+     * 
+     * @param e The &lt;code&gt;ActionEvent&lt;/code&gt;.
+     */
+    public void actionPerformed(ActionEvent e) {
+        final Game game = freeColClient.getGame();
+        final Map map = game.getMap();
+
+        Parameters p = showParametersDialog();
+</pre><h3>Code B rq0_0290</h3><pre>public Point getClosestPoint(Point anotherPt) {
+        Rectangle r = getBounds();
+        int[] xs = {r.x + r.width / 2,
+                    r.x + r.width,
+                    r.x + r.width / 2,
+                    r.x,
+                    r.x + r.width / 2,
+        };
+        int[] ys = {r.y,
+                    r.y + r.height / 2,
+                    r.y + r.height,
+                    r.y + r.height / 2,
+                    r.y,
+        };
+        Point p =
+            Geometry.ptClosestTo(
+                xs,
+                ys,
+                5,
+                anotherPt);
+        return p;
+    }</pre></div>
+<div class='case'><h2>RF_wrong__VLM_correct: full_rq0_seed42__rq0_0037__rq0_0300</h2><p>difficulty=medium; gold=rq0_0300; RF=rq0_0037 correct=False; VLM=rq0_0300 valid=True correct=True</p><img src='file:///ANON/experiment_root/experiments/rq0_viability/data/rendered/default/rq0_0037.png'><img src='file:///ANON/experiment_root/experiments/rq0_viability/data/rendered/default/rq0_0300.png'><h3>Code A rq0_0037</h3><pre>            row[1] = ns.getCatalogName(row[0]);
+            row[2] = schema.equals(defschema) ? Boolean.TRUE
+                                              : Boolean.FALSE;
+
+            t.insertSys(row);
+</pre><h3>Code B rq0_0300</h3><pre>@Override
+      public String call() throws Exception {
+         try {
+            if (isTrace)
+               log.tracef(&quot;[%s] Wait for all executions paths to be ready to perform calls&quot;, title(warmup));
+            barrier.await();
+
+            long start = System.nanoTime();
+            int runs = 0;
+            if (isTrace)
+               log.tracef(&quot;[%s] Start time: %d&quot;, title(warmup), start);
+
+//            while (USE_TIME &amp;&amp; PutFromLoadStressTestCase.this.run.get()) {
+//               if (runs % 100000 == 0)
+//                  log.infof(&quot;[%s] Query run # %d&quot;, title(warmup), runs);
+//
+////               Customer customer = query();
+////               deleteCached(customer);
+
+               queryItems();
+//               deleteCachedItems();
+//
+//               runs++;
+//            }
+            long end = System.nanoTime();
+            long duration = end - start;
+            if (isTrace)
+               log.tracef(&quot;[%s] End time: %d, duration: %d, runs: %d&quot;,
+                     title(warmup), start, duration, runs);
+
+            return opsPerMS(duration, runs);
+         } finally {
+            if (isTrace)
+               log.tracef(&quot;[%s] Wait for all execution paths to finish&quot;, title(warmup));
+
+            barrier.await();
+         }
+      }</pre></div>
+<div class='case'><h2>RF_wrong__VLM_correct: full_rq0_seed42__rq0_0096__rq0_0207</h2><p>difficulty=medium; gold=rq0_0207; RF=rq0_0096 correct=False; VLM=rq0_0207 valid=True correct=True</p><img src='file:///ANON/experiment_root/experiments/rq0_viability/data/rendered/default/rq0_0096.png'><img src='file:///ANON/experiment_root/experiments/rq0_viability/data/rendered/default/rq0_0207.png'><h3>Code A rq0_0096</h3><pre>			Description description= Description.createSuiteDescription(name);
+			int n= ts.testCount();
+			for (int i= 0; i &lt; n; i++)
+				description.addChild(makeDescription(ts.testAt(i)));
+</pre><h3>Code B rq0_0207</h3><pre>/**
+	 * Constructs a SybaseASE157Dialect
+	 */
+	public SybaseASE157Dialect() {
+		super();
+
+		registerFunction( &quot;create_locator&quot;, new SQLFunctionTemplate( StandardBasicTypes.BINARY, &quot;create_locator(?1, ?2)&quot; ) );
+		registerFunction( &quot;locator_literal&quot;, new SQLFunctionTemplate( StandardBasicTypes.BINARY, &quot;locator_literal(?1, ?2)&quot; ) );
+		registerFunction( &quot;locator_valid&quot;, new SQLFunctionTemplate( StandardBasicTypes.BOOLEAN, &quot;locator_valid(?1)&quot; ) );
+		registerFunction( &quot;return_lob&quot;, new SQLFunctionTemplate( StandardBasicTypes.BINARY, &quot;return_lob(?1, ?2)&quot; ) );
+		registerFunction( &quot;setdata&quot;, new SQLFunctionTemplate( StandardBasicTypes.BOOLEAN, &quot;setdata(?1, ?2, ?3)&quot; ) );
+		registerFunction( &quot;charindex&quot;, new SQLFunctionTemplate( StandardBasicTypes.INTEGER, &quot;charindex(?1, ?2, ?3)&quot; ) );
+	}</pre></div>
+<div class='case'><h2>RF_wrong__VLM_correct: full_rq0_seed42__rq0_0124__rq0_0288</h2><p>difficulty=medium; gold=rq0_0288; RF=rq0_0124 correct=False; VLM=rq0_0288 valid=True correct=True</p><img src='file:///ANON/experiment_root/experiments/rq0_viability/data/rendered/default/rq0_0124.png'><img src='file:///ANON/experiment_root/experiments/rq0_viability/data/rendered/default/rq0_0288.png'><h3>Code A rq0_0124</h3><pre>				WorkflowConstants.CONTEXT_ENTRY_CLASS_NAME));
+
+		if (workflowContext.containsKey(
+				WorkflowConstants.CONTEXT_ENTRY_CLASS_PK)) {
+
+			kaleoInstanceToken.setClassPK(
+				GetterUtil.getLong(
+					(String)workflowContext.get(
+						WorkflowConstants.CONTEXT_ENTRY_CLASS_PK)));
+		}
+</pre><h3>Code B rq0_0288</h3><pre>@Override
+	protected XMLEvent internalNextEvent() throws XMLStreamException {
+		//If there is an iterator to read from reset was called, use the iterator
+		//until it runs out of events.
+		if (this.bufferReader != null) {
+			final XMLEvent event = this.bufferReader.next();
+
+			//If nothing left in the iterator, remove the reference and fall through to direct reading
+			if (!this.bufferReader.hasNext()) {
+				this.bufferReader = null;
+			}
+
+			return event;
+		}
+
+		//Get the next event from the underlying reader
+		final XMLEvent event = this.getParent().nextEvent();
+
+		//if buffering add the event
+		if (this.eventLimit != 0) {
+			this.eventBuffer.offer(event);
+
+			//If limited buffer size and buffer is too big trim the buffer.
+			if (this.eventLimit &gt; 0 &amp;&amp; this.eventBuffer.size() &gt; this.eventLimit) {
+				this.eventBuffer.poll();
+			}
+		}
+
+		return event;
+	}</pre></div>
+<div class='case'><h2>RF_wrong__VLM_correct: full_rq0_seed42__rq0_0003__rq0_0045</h2><p>difficulty=hard; gold=rq0_0003; RF=rq0_0045 correct=False; VLM=rq0_0003 valid=True correct=True</p><img src='file:///ANON/experiment_root/experiments/rq0_viability/data/rendered/default/rq0_0003.png'><img src='file:///ANON/experiment_root/experiments/rq0_viability/data/rendered/default/rq0_0045.png'><h3>Code A rq0_0003</h3><pre>    /**
+     * Constructor, with a argument reference to the PUBLIC User Object which
+     * is null if this is the SYS or PUBLIC user.
+     *
+     * The dependency upon a GranteeManager is undesirable.  Hopefully we
+     * can get rid of this dependency with an IOC or Listener re-design.
+     */
+    Grantee(String name, Grantee inGrantee,
+            GranteeManager man) throws HsqlException {
+
+        rightsMap      = new IntValueHashMap();
+        granteeName    = name;
+        granteeManager = man;}
+</pre><h3>Code B rq0_0045</h3><pre>    /**
+     * Read Settings
+     * @param stream
+     * @throws IOException
+     * @throws ClassNotFoundException
+     */
+    public void readData(ObjectInputStream stream) throws IOException, ClassNotFoundException {
+      int version = stream.readInt();
+      mNumber = stream.readInt();
+      mName = stream.readUTF();
+</pre></div>
+<div class='case'><h2>RF_wrong__VLM_correct: full_rq0_seed42__rq0_0169__rq0_0267</h2><p>difficulty=medium; gold=rq0_0169; RF=rq0_0267 correct=False; VLM=rq0_0169 valid=True correct=True</p><img src='file:///ANON/experiment_root/experiments/rq0_viability/data/rendered/default/rq0_0169.png'><img src='file:///ANON/experiment_root/experiments/rq0_viability/data/rendered/default/rq0_0267.png'><h3>Code A rq0_0169</h3><pre>			WebKeys.MOBILE_DEVICE_RULES_RULE_EDITOR_JSP, editorJSP);
+
+		long ruleGroupId = BeanParamUtil.getLong(
+			rule, renderRequest, &quot;ruleGroupId&quot;);
+
+		MDRRuleGroup ruleGroup = MDRRuleGroupServiceUtil.getRuleGroup(
+			ruleGroupId);
+
+		renderRequest.setAttribute(
+			WebKeys.MOBILE_DEVICE_RULES_RULE_GROUP, ruleGroup);
+
+		return mapping.findForward(&quot;portlet.mobile_device_rules.edit_rule&quot;);
+	}
+
+	@Override
+	public void serveResource(
+			ActionMapping mapping, ActionForm form, PortletConfig portletConfig,
+			ResourceRequest resourceRequest, ResourceResponse resourceResponse)
+		throws Exception {
+
+		long ruleId = ParamUtil.getLong(resourceRequest, &quot;ruleId&quot;);
+
+		if (ruleId &gt; 0) {
+			MDRRule rule = MDRRuleServiceUtil.fetchRule(ruleId);
+
+			resourceRequest.setAttribute(
+				WebKeys.MOBILE_DEVICE_RULES_RULE, rule);
+		}
+
+		String type = ParamUtil.getString(resourceRequest, &quot;type&quot;);
+</pre><h3>Code B rq0_0267</h3><pre>public final void caseSList() throws RecognitionException, TokenStreamException {
+		
+		
+		{
+		_loop119:
+		do {
+			if ((_tokenSet_6.member(LA(1)))) {
+				statement();
+			}
+			else {
+				break _loop119;
+			}
+			
+		} while (true);
+		}
+	}</pre></div>
+<div class='case'><h2>RF_wrong__VLM_correct: full_rq0_seed42__rq0_0005__rq0_0153</h2><p>difficulty=hard; gold=rq0_0153; RF=rq0_0005 correct=False; VLM=rq0_0153 valid=True correct=True</p><img src='file:///ANON/experiment_root/experiments/rq0_viability/data/rendered/default/rq0_0005.png'><img src='file:///ANON/experiment_root/experiments/rq0_viability/data/rendered/default/rq0_0153.png'><h3>Code A rq0_0005</h3><pre>    xsp = jj_scanpos;
+    if (jj_scan_token(100)) {
+    jj_scanpos = xsp;
+    if (jj_scan_token(101)) return true;
+</pre><h3>Code B rq0_0153</h3><pre>	 */
+	public void setGadgetKey(String gadgetKey);
+
+	/**
+	 * Returns the service name of this o auth token.
+	 *
+	 * @return the service name of this o auth token
+	 */
+	@AutoEscape
+	public String getServiceName();
+</pre></div>
+<div class='case'><h2>RF_wrong__VLM_correct: full_rq0_seed42__rq0_0065__rq0_0156</h2><p>difficulty=medium; gold=rq0_0065; RF=rq0_0156 correct=False; VLM=rq0_0065 valid=True correct=True</p><img src='file:///ANON/experiment_root/experiments/rq0_viability/data/rendered/default/rq0_0065.png'><img src='file:///ANON/experiment_root/experiments/rq0_viability/data/rendered/default/rq0_0156.png'><h3>Code A rq0_0065</h3><pre>  /**
+   * Add one zero if neccessary
+   * @param number
+   * @return
+   */
+  private CharSequence addZero(int number) {
+    StringBuilder builder = new StringBuilder();
+    
+    if (number &lt; 10) {
+      builder.append(&#x27;0&#x27;);
+    }
+    
+    builder.append(Integer.toString(number));
+</pre><h3>Code B rq0_0156</h3><pre>
+		for (KaleoTimer model : models) {
+			soapModels.add(toSoapModel(model));
+		}
+
+		return soapModels.toArray(new KaleoTimerSoap[soapModels.size()]);
+	}
+
+	public KaleoTimerSoap() {
+	}
+</pre></div>
+<div class='case'><h2>RF_wrong__VLM_correct: full_rq0_seed42__rq0_0074__rq0_0205</h2><p>difficulty=hard; gold=rq0_0205; RF=rq0_0074 correct=False; VLM=rq0_0205 valid=True correct=True</p><img src='file:///ANON/experiment_root/experiments/rq0_viability/data/rendered/default/rq0_0074.png'><img src='file:///ANON/experiment_root/experiments/rq0_viability/data/rendered/default/rq0_0205.png'><h3>Code A rq0_0074</h3><pre>      
+      out.writeObject(device.getDriver().getClass().getName());
+      out.writeObject(device.getName());
+      
+      device.writeData(out);
+</pre><h3>Code B rq0_0205</h3><pre>/**
+	 * Constructs a Oracle8iDialect
+	 */
+	public Oracle8iDialect() {
+		super();
+		registerCharacterTypeMappings();
+		registerNumericTypeMappings();
+		registerDateTimeTypeMappings();
+		registerLargeObjectTypeMappings();
+		registerReverseHibernateTypeMappings();
+		registerFunctions();
+		registerDefaultProperties();
+	}</pre></div>
+<div class='case'><h2>RF_wrong__VLM_wrong: full_rq0_seed42__rq0_0075__rq0_0257</h2><p>difficulty=easy; gold=rq0_0257; RF=rq0_0075 correct=False; VLM=rq0_0075 valid=True correct=False</p><img src='file:///ANON/experiment_root/experiments/rq0_viability/data/rendered/default/rq0_0075.png'><img src='file:///ANON/experiment_root/experiments/rq0_viability/data/rendered/default/rq0_0257.png'><h3>Code A rq0_0075</h3><pre>        
+        File data = new File(Plugin.getPluginManager().getTvBrowserSettings().getTvBrowserUserHome()  + File.separator + 
+                &quot;CaptureDevices&quot; + File.separator + mCount + &quot;.dat&quot;);
+        
+        ObjectOutputStream stream = new ObjectOutputStream(new FileOutputStream(data));
+        
+        dev.writeData(stream);
+</pre><h3>Code B rq0_0257</h3><pre>private void initOrdinaryPropertyPaths(Mapping mapping) throws MappingException {
+		for ( int i = 0; i &lt; getSubclassPropertyNameClosure().length; i++ ) {
+			propertyMapping.initPropertyPaths( getSubclassPropertyNameClosure()[i],
+					getSubclassPropertyTypeClosure()[i],
+					getSubclassPropertyColumnNameClosure()[i],
+					getSubclassPropertyColumnReaderClosure()[i],
+					getSubclassPropertyColumnReaderTemplateClosure()[i],
+					getSubclassPropertyFormulaTemplateClosure()[i],
+					mapping );
+		}
+	}</pre></div>
+<div class='case'><h2>RF_wrong__VLM_invalid: full_rq0_seed42__rq0_0021__rq0_0308</h2><p>difficulty=easy; gold=rq0_0021; RF=rq0_0308 correct=False; VLM=nan valid=False correct=False</p><img src='file:///ANON/experiment_root/experiments/rq0_viability/data/rendered/default/rq0_0021.png'><img src='file:///ANON/experiment_root/experiments/rq0_viability/data/rendered/default/rq0_0308.png'><h3>Code A rq0_0021</h3><pre>	protected void printFailures(Result result) {
+		if (result.getFailureCount() == 0)
+			return;
+		if (result.getFailureCount() == 1)
+			getWriter().println(&quot;There was &quot; + result.getFailureCount() + &quot; failure:&quot;);
+		else
+			getWriter().println(&quot;There were &quot; + result.getFailureCount() + &quot; failures:&quot;);
+</pre><h3>Code B rq0_0308</h3><pre>public static &lt;T&gt; JaxbRoot&lt;T&gt; unmarshallXml(String fileName, String schemaName, Class&lt;T&gt; clazz, ClassLoaderService classLoaderService)
+            throws JAXBException {
+        Schema schema = getMappingSchema( schemaName, classLoaderService );
+        InputStream in = classLoaderService.locateResourceStream( fileName );
+        JAXBContext jc = JAXBContext.newInstance( clazz );
+        Unmarshaller unmarshaller = jc.createUnmarshaller();
+        unmarshaller.setSchema( schema );
+        StreamSource stream = new StreamSource( in );
+        JAXBElement&lt;T&gt; elem = unmarshaller.unmarshal( stream, clazz );
+        Origin origin = new Origin( null, fileName );
+        return new JaxbRoot&lt;T&gt;( elem.getValue(), origin );
+    }</pre></div>

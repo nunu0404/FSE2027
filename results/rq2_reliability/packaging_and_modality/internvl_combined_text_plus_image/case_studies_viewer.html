@@ -1,0 +1,571 @@
+<!doctype html><meta charset='utf-8'><title>Complementarity Case Studies</title>
+<style>body{font-family:sans-serif} .case{border:1px solid #aaa;margin:16px;padding:12px} img{max-width:48%;vertical-align:top} pre{white-space:pre-wrap;max-height:320px;overflow:auto;background:#f6f6f6;padding:8px}</style>
+<h1>Complementarity Case Studies</h1>
+<div class='case'><h2>RF_correct__VLM_correct: full_rq0_seed42__rq0_0145__rq0_0153</h2><p>difficulty=hard; gold=rq0_0153; RF=rq0_0153 correct=True; VLM=rq0_0153 valid=True correct=True</p><img src='file:///ANON/experiment_root/experiments/rq0_viability/data/rendered/default/rq0_0145.png'><img src='file:///ANON/experiment_root/experiments/rq0_viability/data/rendered/default/rq0_0153.png'><h3>Code A rq0_0145</h3><pre>	
+	public long
+	getInterval();
+	
+	public long
+	getMinInterval();
+	
+	public int
+	getTimeUntilNextUpdate();
+</pre><h3>Code B rq0_0153</h3><pre>	 */
+	public void setGadgetKey(String gadgetKey);
+
+	/**
+	 * Returns the service name of this o auth token.
+	 *
+	 * @return the service name of this o auth token
+	 */
+	@AutoEscape
+	public String getServiceName();
+</pre></div>
+<div class='case'><h2>RF_correct__VLM_wrong: full_rq0_seed42__rq0_0227__rq0_0242</h2><p>difficulty=medium; gold=rq0_0227; RF=rq0_0227 correct=True; VLM=rq0_0242 valid=True correct=False</p><img src='file:///ANON/experiment_root/experiments/rq0_viability/data/rendered/default/rq0_0227.png'><img src='file:///ANON/experiment_root/experiments/rq0_viability/data/rendered/default/rq0_0242.png'><h3>Code A rq0_0227</h3><pre>/**
+     * @return a list of all the types
+     */
+    public static Vector getTypes() {
+        if (types == null) {
+            types = new Vector();
+            types.addElement(new KnowledgeTypeNode(Critic.KT_DESIGNERS));
+            types.addElement(new KnowledgeTypeNode(Critic.KT_CORRECTNESS));
+            types.addElement(new KnowledgeTypeNode(Critic.KT_COMPLETENESS));
+            types.addElement(new KnowledgeTypeNode(Critic.KT_CONSISTENCY));
+            types.addElement(new KnowledgeTypeNode(Critic.KT_SYNTAX));
+            types.addElement(new KnowledgeTypeNode(Critic.KT_SEMANTICS));
+            types.addElement(new KnowledgeTypeNode(Critic.KT_OPTIMIZATION));
+            types.addElement(new KnowledgeTypeNode(Critic.KT_PRESENTATION));
+            types.addElement(new KnowledgeTypeNode(Critic.KT_ORGANIZATIONAL));
+            types.addElement(new KnowledgeTypeNode(Critic.KT_EXPERIENCIAL));
+            types.addElement(new KnowledgeTypeNode(Critic.KT_TOOL));
+        }
+        return types;
+    }</pre><h3>Code B rq0_0242</h3><pre>public String toString() {
+		return new StringBuilder()
+				.append(&quot;QueryStatistics&quot;)
+				.append(&quot;[cacheHitCount=&quot;).append(this.cacheHitCount)
+				.append(&quot;,cacheMissCount=&quot;).append(this.cacheMissCount)
+				.append(&quot;,cachePutCount=&quot;).append(this.cachePutCount)
+				.append(&quot;,executionCount=&quot;).append(this.executionCount)
+				.append(&quot;,executionRowCount=&quot;).append(this.executionRowCount)
+				.append(&quot;,executionAvgTime=&quot;).append(this.getExecutionAvgTime())
+				.append(&quot;,executionMaxTime=&quot;).append(this.executionMaxTime)
+				.append(&quot;,executionMinTime=&quot;).append(this.executionMinTime)
+				.append(&#x27;]&#x27;)
+				.toString();
+	}</pre></div>
+<div class='case'><h2>RF_correct__VLM_invalid: full_rq0_seed42__rq0_0096__rq0_0198</h2><p>difficulty=hard; gold=rq0_0096; RF=rq0_0096 correct=True; VLM=nan valid=False correct=False</p><img src='file:///ANON/experiment_root/experiments/rq0_viability/data/rendered/default/rq0_0096.png'><img src='file:///ANON/experiment_root/experiments/rq0_viability/data/rendered/default/rq0_0198.png'><h3>Code A rq0_0096</h3><pre>			Description description= Description.createSuiteDescription(name);
+			int n= ts.testCount();
+			for (int i= 0; i &lt; n; i++)
+				description.addChild(makeDescription(ts.testAt(i)));
+</pre><h3>Code B rq0_0198</h3><pre>private void myDoubleClick(Object src) {
+	Object sel = null;
+	Diagram d = null;
+	if (src == resultsTable) {
+	    int row = resultsTable.getSelectionModel().getMinSelectionIndex();
+	    if (row &lt; 0) {
+                return;
+            }
+	    sel = results.elementAt(row);
+	    d = (Diagram) diagrams.elementAt(row);
+	} else if (src == relatedTable) {
+	    int row = relatedTable.getSelectionModel().getMinSelectionIndex();
+	    if (row &lt; 0) {
+                return;
+            }
+	    numJumpToRelated++;
+	    sel = related.elementAt(row);
+	}
+
+	if (d != null) {
+            LOG.debug(&quot;go &quot; + sel + &quot; in &quot; + d.getName());
+            TargetManager.getInstance().setTarget(d);
+        }
+	TargetManager.getInstance().setTarget(sel);
+    }</pre></div>
+<div class='case'><h2>RF_wrong__VLM_correct: full_rq0_seed42__rq0_0021__rq0_0208</h2><p>difficulty=hard; gold=rq0_0208; RF=rq0_0021 correct=False; VLM=rq0_0208 valid=True correct=True</p><img src='file:///ANON/experiment_root/experiments/rq0_viability/data/rendered/default/rq0_0021.png'><img src='file:///ANON/experiment_root/experiments/rq0_viability/data/rendered/default/rq0_0208.png'><h3>Code A rq0_0021</h3><pre>	protected void printFailures(Result result) {
+		if (result.getFailureCount() == 0)
+			return;
+		if (result.getFailureCount() == 1)
+			getWriter().println(&quot;There was &quot; + result.getFailureCount() + &quot; failure:&quot;);
+		else
+			getWriter().println(&quot;There were &quot; + result.getFailureCount() + &quot; failures:&quot;);
+</pre><h3>Code B rq0_0208</h3><pre>public String extractConstraintName(SQLException sqle) {
+			try {
+				final int sqlState = Integer.valueOf( JdbcExceptionHelper.extractSqlState( sqle ) );
+				switch (sqlState) {
+					// CHECK VIOLATION
+					case 23514: return extractUsingTemplate( &quot;violates check constraint \&quot;&quot;,&quot;\&quot;&quot;, sqle.getMessage() );
+					// UNIQUE VIOLATION
+					case 23505: return extractUsingTemplate( &quot;violates unique constraint \&quot;&quot;,&quot;\&quot;&quot;, sqle.getMessage() );
+					// FOREIGN KEY VIOLATION
+					case 23503: return extractUsingTemplate( &quot;violates foreign key constraint \&quot;&quot;,&quot;\&quot;&quot;, sqle.getMessage() );
+					// NOT NULL VIOLATION
+					case 23502: return extractUsingTemplate( &quot;null value in column \&quot;&quot;,&quot;\&quot; violates not-null constraint&quot;, sqle.getMessage() );
+					// TODO: RESTRICT VIOLATION
+					case 23001: return null;
+					// ALL OTHER
+					default: return null;
+				}
+			}
+			catch (NumberFormatException nfe) {
+				return null;
+			}
+		}</pre></div>
+<div class='case'><h2>RF_wrong__VLM_correct: full_rq0_seed42__rq0_0095__rq0_0310</h2><p>difficulty=easy; gold=rq0_0095; RF=rq0_0310 correct=False; VLM=rq0_0095 valid=True correct=True</p><img src='file:///ANON/experiment_root/experiments/rq0_viability/data/rendered/default/rq0_0095.png'><img src='file:///ANON/experiment_root/experiments/rq0_viability/data/rendered/default/rq0_0310.png'><h3>Code A rq0_0095</h3><pre>    public ActionMenu getButtonAction() {
+        AbstractAction action = new AbstractAction() {
+
+            public void actionPerformed(ActionEvent evt) {
+                showDialog();
+            }
+        };
+        action.putValue(Action.NAME, mLocalizer.msg(&quot;CapturePlugin&quot;, &quot;Capture Plugin&quot;));
+        action.putValue(Action.SMALL_ICON, createImageIcon(&quot;mimetypes&quot;, &quot;video-x-generic&quot;, 16));
+</pre><h3>Code B rq0_0310</h3><pre>public AbstractRowReader(ReaderCollector readerCollector) {
+		this.entityReferenceInitializers = readerCollector.getEntityReferenceInitializers() != null
+				? new ArrayList&lt;EntityReferenceInitializer&gt;( readerCollector.getEntityReferenceInitializers() )
+				: Collections.&lt;EntityReferenceInitializer&gt;emptyList();
+		this.arrayReferenceInitializers = readerCollector.getArrayReferenceInitializers() != null
+				? new ArrayList&lt;CollectionReferenceInitializer&gt;( readerCollector.getArrayReferenceInitializers() )
+				: Collections.&lt;CollectionReferenceInitializer&gt;emptyList();
+		this.collectionReferenceInitializers = readerCollector.getNonArrayCollectionReferenceInitializers() != null
+				? new ArrayList&lt;CollectionReferenceInitializer&gt;( readerCollector.getNonArrayCollectionReferenceInitializers() )
+				: Collections.&lt;CollectionReferenceInitializer&gt;emptyList();
+	}</pre></div>
+<div class='case'><h2>RF_wrong__VLM_correct: full_rq0_seed42__rq0_0096__rq0_0207</h2><p>difficulty=medium; gold=rq0_0207; RF=rq0_0096 correct=False; VLM=rq0_0207 valid=True correct=True</p><img src='file:///ANON/experiment_root/experiments/rq0_viability/data/rendered/default/rq0_0096.png'><img src='file:///ANON/experiment_root/experiments/rq0_viability/data/rendered/default/rq0_0207.png'><h3>Code A rq0_0096</h3><pre>			Description description= Description.createSuiteDescription(name);
+			int n= ts.testCount();
+			for (int i= 0; i &lt; n; i++)
+				description.addChild(makeDescription(ts.testAt(i)));
+</pre><h3>Code B rq0_0207</h3><pre>/**
+	 * Constructs a SybaseASE157Dialect
+	 */
+	public SybaseASE157Dialect() {
+		super();
+
+		registerFunction( &quot;create_locator&quot;, new SQLFunctionTemplate( StandardBasicTypes.BINARY, &quot;create_locator(?1, ?2)&quot; ) );
+		registerFunction( &quot;locator_literal&quot;, new SQLFunctionTemplate( StandardBasicTypes.BINARY, &quot;locator_literal(?1, ?2)&quot; ) );
+		registerFunction( &quot;locator_valid&quot;, new SQLFunctionTemplate( StandardBasicTypes.BOOLEAN, &quot;locator_valid(?1)&quot; ) );
+		registerFunction( &quot;return_lob&quot;, new SQLFunctionTemplate( StandardBasicTypes.BINARY, &quot;return_lob(?1, ?2)&quot; ) );
+		registerFunction( &quot;setdata&quot;, new SQLFunctionTemplate( StandardBasicTypes.BOOLEAN, &quot;setdata(?1, ?2, ?3)&quot; ) );
+		registerFunction( &quot;charindex&quot;, new SQLFunctionTemplate( StandardBasicTypes.INTEGER, &quot;charindex(?1, ?2, ?3)&quot; ) );
+	}</pre></div>
+<div class='case'><h2>RF_wrong__VLM_correct: full_rq0_seed42__rq0_0124__rq0_0288</h2><p>difficulty=medium; gold=rq0_0288; RF=rq0_0124 correct=False; VLM=rq0_0288 valid=True correct=True</p><img src='file:///ANON/experiment_root/experiments/rq0_viability/data/rendered/default/rq0_0124.png'><img src='file:///ANON/experiment_root/experiments/rq0_viability/data/rendered/default/rq0_0288.png'><h3>Code A rq0_0124</h3><pre>				WorkflowConstants.CONTEXT_ENTRY_CLASS_NAME));
+
+		if (workflowContext.containsKey(
+				WorkflowConstants.CONTEXT_ENTRY_CLASS_PK)) {
+
+			kaleoInstanceToken.setClassPK(
+				GetterUtil.getLong(
+					(String)workflowContext.get(
+						WorkflowConstants.CONTEXT_ENTRY_CLASS_PK)));
+		}
+</pre><h3>Code B rq0_0288</h3><pre>@Override
+	protected XMLEvent internalNextEvent() throws XMLStreamException {
+		//If there is an iterator to read from reset was called, use the iterator
+		//until it runs out of events.
+		if (this.bufferReader != null) {
+			final XMLEvent event = this.bufferReader.next();
+
+			//If nothing left in the iterator, remove the reference and fall through to direct reading
+			if (!this.bufferReader.hasNext()) {
+				this.bufferReader = null;
+			}
+
+			return event;
+		}
+
+		//Get the next event from the underlying reader
+		final XMLEvent event = this.getParent().nextEvent();
+
+		//if buffering add the event
+		if (this.eventLimit != 0) {
+			this.eventBuffer.offer(event);
+
+			//If limited buffer size and buffer is too big trim the buffer.
+			if (this.eventLimit &gt; 0 &amp;&amp; this.eventBuffer.size() &gt; this.eventLimit) {
+				this.eventBuffer.poll();
+			}
+		}
+
+		return event;
+	}</pre></div>
+<div class='case'><h2>RF_wrong__VLM_correct: full_rq0_seed42__rq0_0177__rq0_0228</h2><p>difficulty=easy; gold=rq0_0177; RF=rq0_0228 correct=False; VLM=rq0_0177 valid=True correct=True</p><img src='file:///ANON/experiment_root/experiments/rq0_viability/data/rendered/default/rq0_0177.png'><img src='file:///ANON/experiment_root/experiments/rq0_viability/data/rendered/default/rq0_0228.png'><h3>Code A rq0_0177</h3><pre>/*
+ * Copyright (C) 2007 Rob Manning
+ * manningr@users.sourceforge.net
+ *
+ * This library is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU Lesser General Public
+ * License as published by the Free Software Foundation; either
+ * version 2.1 of the License, or (at your option) any later version.
+ *
+ * This library is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public
+ * License along with this library; if not, write to the Free Software
+ * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ */
+package net.sourceforge.squirrel_sql.plugins.dbdiff;
+
+import net.sourceforge.squirrel_sql.client.session.ISession;
+import net.sourceforge.squirrel_sql.fw.sql.IDatabaseObjectInfo;
+
+/**
+ * This is implemented in order to pass needed info along to diff executor.
+ */
+public interface SessionInfoProvider
+{
+
+	public void setSourceSession(ISession session);
+
+	public ISession getSourceSession();
+
+	public IDatabaseObjectInfo[] getSourceSelectedDatabaseObjects();
+
+	public IDatabaseObjectInfo[] getDestSelectedDatabaseObjects();
+
+	public void setDestSelectedDatabaseObjects(IDatabaseObjectInfo[] infos);
+
+	public void setSourceSelectedDatabaseObjects(IDatabaseObjectInfo[] infos);
+
+	public void setDestSession(ISession session);
+
+	public ISession getDestSession();
+
+	/**
+	 * @return the scriptFileManager
+	 */
+	public IScriptFileManager getScriptFileManager();
+</pre><h3>Code B rq0_0228</h3><pre>public void toDoItemsRemoved(ToDoListEvent tde) {
+	LOG.debug(&quot;toDoItemRemoved&quot;);
+        Vector items = tde.getToDoItems();
+        int nItems = items.size();
+        
+	ToDoList list = Designer.theDesigner().getToDoList(); //source?
+	Object[] path = new Object[2];
+	path[0] = Designer.theDesigner().getToDoList();
+
+
+	Enumeration elems = list.getPosters().elements();
+ 	while (elems.hasMoreElements()) {
+	    Poster p = (Poster) elems.nextElement();
+            boolean anyInPoster = false;
+            for (int i = 0; i &lt; nItems; i++) {
+                ToDoItem item = (ToDoItem) items.elementAt(i);
+                Poster post = item.getPoster();
+                if (post == p) { 
+                    anyInPoster = true;
+                    break;
+                }
+            }
+            if (!anyInPoster) { 
+                continue;
+            }
+	    path[1] = p;
+	    fireTreeStructureChanged(path);
+	}
+    }</pre></div>
+<div class='case'><h2>RF_wrong__VLM_correct: full_rq0_seed42__rq0_0287__rq0_0290</h2><p>difficulty=medium; gold=rq0_0287; RF=rq0_0290 correct=False; VLM=rq0_0287 valid=True correct=True</p><img src='file:///ANON/experiment_root/experiments/rq0_viability/data/rendered/default/rq0_0287.png'><img src='file:///ANON/experiment_root/experiments/rq0_viability/data/rendered/default/rq0_0290.png'><h3>Code A rq0_0287</h3><pre>@Override
+	public void release() {
+		if ( reader == null ) {
+			return;
+		}
+		try {
+			reader.close();
+		}
+		catch (IOException ignore) {
+		}
+	}</pre><h3>Code B rq0_0290</h3><pre>public Point getClosestPoint(Point anotherPt) {
+        Rectangle r = getBounds();
+        int[] xs = {r.x + r.width / 2,
+                    r.x + r.width,
+                    r.x + r.width / 2,
+                    r.x,
+                    r.x + r.width / 2,
+        };
+        int[] ys = {r.y,
+                    r.y + r.height / 2,
+                    r.y + r.height,
+                    r.y + r.height / 2,
+                    r.y,
+        };
+        Point p =
+            Geometry.ptClosestTo(
+                xs,
+                ys,
+                5,
+                anotherPt);
+        return p;
+    }</pre></div>
+<div class='case'><h2>RF_wrong__VLM_correct: full_rq0_seed42__rq0_0169__rq0_0267</h2><p>difficulty=medium; gold=rq0_0169; RF=rq0_0267 correct=False; VLM=rq0_0169 valid=True correct=True</p><img src='file:///ANON/experiment_root/experiments/rq0_viability/data/rendered/default/rq0_0169.png'><img src='file:///ANON/experiment_root/experiments/rq0_viability/data/rendered/default/rq0_0267.png'><h3>Code A rq0_0169</h3><pre>			WebKeys.MOBILE_DEVICE_RULES_RULE_EDITOR_JSP, editorJSP);
+
+		long ruleGroupId = BeanParamUtil.getLong(
+			rule, renderRequest, &quot;ruleGroupId&quot;);
+
+		MDRRuleGroup ruleGroup = MDRRuleGroupServiceUtil.getRuleGroup(
+			ruleGroupId);
+
+		renderRequest.setAttribute(
+			WebKeys.MOBILE_DEVICE_RULES_RULE_GROUP, ruleGroup);
+
+		return mapping.findForward(&quot;portlet.mobile_device_rules.edit_rule&quot;);
+	}
+
+	@Override
+	public void serveResource(
+			ActionMapping mapping, ActionForm form, PortletConfig portletConfig,
+			ResourceRequest resourceRequest, ResourceResponse resourceResponse)
+		throws Exception {
+
+		long ruleId = ParamUtil.getLong(resourceRequest, &quot;ruleId&quot;);
+
+		if (ruleId &gt; 0) {
+			MDRRule rule = MDRRuleServiceUtil.fetchRule(ruleId);
+
+			resourceRequest.setAttribute(
+				WebKeys.MOBILE_DEVICE_RULES_RULE, rule);
+		}
+
+		String type = ParamUtil.getString(resourceRequest, &quot;type&quot;);
+</pre><h3>Code B rq0_0267</h3><pre>public final void caseSList() throws RecognitionException, TokenStreamException {
+		
+		
+		{
+		_loop119:
+		do {
+			if ((_tokenSet_6.member(LA(1)))) {
+				statement();
+			}
+			else {
+				break _loop119;
+			}
+			
+		} while (true);
+		}
+	}</pre></div>
+<div class='case'><h2>RF_wrong__VLM_correct: full_rq0_seed42__rq0_0109__rq0_0268</h2><p>difficulty=hard; gold=rq0_0109; RF=rq0_0268 correct=False; VLM=rq0_0109 valid=True correct=True</p><img src='file:///ANON/experiment_root/experiments/rq0_viability/data/rendered/default/rq0_0109.png'><img src='file:///ANON/experiment_root/experiments/rq0_viability/data/rendered/default/rq0_0268.png'><h3>Code A rq0_0109</h3><pre>		return (Address)message.get(_ADDRESS);
+	}
+
+	public static ClusterLink getClusterLink() {
+		if ((_clusterLink == null) || !_clusterLink.isEnabled()) {
+			if (_log.isWarnEnabled()) {
+				_log.warn(&quot;ClusterLinkUtil has not been initialized&quot;);
+			}
+
+			return null;
+		}
+
+		return _clusterLink;
+	}
+
+	public static List&lt;Address&gt; getLocalTransportAddresses() {
+		if ((_clusterLink == null) || !_clusterLink.isEnabled()) {
+			if (_log.isWarnEnabled()) {
+				_log.warn(&quot;ClusterLinkUtil has not been initialized&quot;);
+			}
+
+			return Collections.emptyList();
+		}
+
+		return _clusterLink.getLocalTransportAddresses();
+	}
+
+	public static List&lt;Address&gt; getTransportAddresses(Priority priority) {
+		if ((_clusterLink == null) || !_clusterLink.isEnabled()) {
+			if (_log.isWarnEnabled()) {
+				_log.warn(&quot;ClusterLinkUtil has not been initialized&quot;);
+			}
+
+			return Collections.emptyList();
+		}
+
+		return _clusterLink.getTransportAddresses(priority);
+	}
+
+	public static boolean isForwardMessage(Message message) {
+		return message.getBoolean(CLUSTER_FORWARD_MESSAGE);
+	}
+
+	public static void sendMulticastMessage(
+		Message message, Priority priority) {
+
+		if ((_clusterLink == null) || !_clusterLink.isEnabled()) {
+			if (_log.isWarnEnabled()) {
+				_log.warn(&quot;ClusterLinkUtil has not been initialized&quot;);
+			}
+</pre><h3>Code B rq0_0268</h3><pre>public void write(BufferedReader reader,
+                      BufferedWriter writer,
+                      Stack parseStateStack) throws IOException {
+        ParseState parseState = (ParseState) parseStateStack.peek();
+        Object mInterface = /*(MInterface)*/ parseState.newClassifier(name);
+
+	if (mInterface != null) {
+	    parseStateStack.push(new ParseState(mInterface));
+	    StringBuffer sbText =
+		GeneratorJava.getInstance().generateClassifierStart(mInterface);
+	    if (sbText != null) {
+		writer.write (sbText.toString());
+	    }
+            // dispose code piece in reader
+            ffCodePiece(reader, null);
+        } else {
+            // not in model, so write the original code
+            ffCodePiece(reader, writer);
+        }
+    }</pre></div>
+<div class='case'><h2>RF_wrong__VLM_correct: full_rq0_seed42__rq0_0288__rq0_0294</h2><p>difficulty=easy; gold=rq0_0288; RF=rq0_0294 correct=False; VLM=rq0_0288 valid=True correct=True</p><img src='file:///ANON/experiment_root/experiments/rq0_viability/data/rendered/default/rq0_0288.png'><img src='file:///ANON/experiment_root/experiments/rq0_viability/data/rendered/default/rq0_0294.png'><h3>Code A rq0_0288</h3><pre>@Override
+	protected XMLEvent internalNextEvent() throws XMLStreamException {
+		//If there is an iterator to read from reset was called, use the iterator
+		//until it runs out of events.
+		if (this.bufferReader != null) {
+			final XMLEvent event = this.bufferReader.next();
+
+			//If nothing left in the iterator, remove the reference and fall through to direct reading
+			if (!this.bufferReader.hasNext()) {
+				this.bufferReader = null;
+			}
+
+			return event;
+		}
+
+		//Get the next event from the underlying reader
+		final XMLEvent event = this.getParent().nextEvent();
+
+		//if buffering add the event
+		if (this.eventLimit != 0) {
+			this.eventBuffer.offer(event);
+
+			//If limited buffer size and buffer is too big trim the buffer.
+			if (this.eventLimit &gt; 0 &amp;&amp; this.eventBuffer.size() &gt; this.eventLimit) {
+				this.eventBuffer.poll();
+			}
+		}
+
+		return event;
+	}</pre><h3>Code B rq0_0294</h3><pre>public void buildModel() {
+        if (getTarget() != null) {
+            Object target = getTarget();
+            Object kind = Model.getFacade().getAggregation(target);
+            if (kind == null
+                    || kind.equals(
+                            Model.getAggregationKind().getNone())) {
+                setSelected(ActionSetAssociationEndAggregation.NONE_COMMAND);
+            } else {
+		if (kind.equals(
+		        Model.getAggregationKind().getAggregate())) {
+		    setSelected(ActionSetAssociationEndAggregation
+		            .AGGREGATE_COMMAND);
+		} else {
+		    if (kind.equals(
+		            Model.getAggregationKind()
+		            	.getComposite())) {
+			setSelected(ActionSetAssociationEndAggregation
+			        .COMPOSITE_COMMAND);
+		    } else {
+		        setSelected(ActionSetAssociationEndAggregation
+
+			        .NONE_COMMAND);
+		    }
+		}
+            }
+        }
+    }</pre></div>
+<div class='case'><h2>RF_wrong__VLM_correct: full_rq0_seed42__rq0_0063__rq0_0179</h2><p>difficulty=hard; gold=rq0_0063; RF=rq0_0179 correct=False; VLM=rq0_0063 valid=True correct=True</p><img src='file:///ANON/experiment_root/experiments/rq0_viability/data/rendered/default/rq0_0063.png'><img src='file:///ANON/experiment_root/experiments/rq0_viability/data/rendered/default/rq0_0179.png'><h3>Code A rq0_0063</h3><pre>
+        String[] texts = new String[messages.length];
+        ImageIcon[] images = new ImageIcon[messages.length];
+        for (int i = 0; i &lt; messages.length; i++) {
+            String ID = messages[i].getMessageID();
+</pre><h3>Code B rq0_0179</h3><pre>				sql = _SQL_SELECT_SCPRODUCTVERSION.concat(SCProductVersionModelImpl.ORDER_BY_JPQL);
+			}
+
+			Session session = null;
+
+			try {
+				session = openSession();
+
+				Query q = session.createQuery(sql);
+
+				if (orderByComparator == null) {
+					list = (List&lt;SCProductVersion&gt;)QueryUtil.list(q,
+							getDialect(), start, end, false);
+
+					Collections.sort(list);
+				}
+				else {
+					list = (List&lt;SCProductVersion&gt;)QueryUtil.list(q,
+							getDialect(), start, end);
+				}
+			}
+			catch (Exception e) {
+				throw processException(e);
+			}
+			finally {
+				if (list == null) {
+					FinderCacheUtil.removeResult(finderPath, finderArgs);
+				}
+				else {
+					cacheResult(list);
+</pre></div>
+<div class='case'><h2>RF_wrong__VLM_wrong: full_rq0_seed42__rq0_0069__rq0_0133</h2><p>difficulty=hard; gold=rq0_0069; RF=rq0_0133 correct=False; VLM=rq0_0133 valid=True correct=False</p><img src='file:///ANON/experiment_root/experiments/rq0_viability/data/rendered/default/rq0_0069.png'><img src='file:///ANON/experiment_root/experiments/rq0_viability/data/rendered/default/rq0_0133.png'><h3>Code A rq0_0069</h3><pre>	/**
+		Translate bsh.Modifiers into ASM modifier bitflags.
+	*/
+	static int getASMModifiers( Modifiers modifiers ) 
+	{
+		int mods = 0;
+		if ( modifiers == null )
+			return mods;
+
+		if ( modifiers.hasModifier(&quot;public&quot;) )
+			mods += ACC_PUBLIC;
+</pre><h3>Code B rq0_0133</h3><pre>
+		Date createDate = getCreateDate();
+
+		if (createDate != null) {
+			passwordPolicyCacheModel.createDate = createDate.getTime();
+		}
+		else {
+			passwordPolicyCacheModel.createDate = Long.MIN_VALUE;
+		}
+
+		Date modifiedDate = getModifiedDate();
+
+		if (modifiedDate != null) {
+			passwordPolicyCacheModel.modifiedDate = modifiedDate.getTime();
+		}
+		else {
+			passwordPolicyCacheModel.modifiedDate = Long.MIN_VALUE;
+		}
+
+		passwordPolicyCacheModel.defaultPolicy = getDefaultPolicy();
+
+		passwordPolicyCacheModel.name = getName();
+
+		String name = passwordPolicyCacheModel.name;
+
+		if ((name != null) &amp;&amp; (name.length() == 0)) {
+			passwordPolicyCacheModel.name = null;
+		}
+
+		passwordPolicyCacheModel.description = getDescription();
+</pre></div>
+<div class='case'><h2>RF_wrong__VLM_invalid: full_rq0_seed42__rq0_0021__rq0_0308</h2><p>difficulty=easy; gold=rq0_0021; RF=rq0_0308 correct=False; VLM=nan valid=False correct=False</p><img src='file:///ANON/experiment_root/experiments/rq0_viability/data/rendered/default/rq0_0021.png'><img src='file:///ANON/experiment_root/experiments/rq0_viability/data/rendered/default/rq0_0308.png'><h3>Code A rq0_0021</h3><pre>	protected void printFailures(Result result) {
+		if (result.getFailureCount() == 0)
+			return;
+		if (result.getFailureCount() == 1)
+			getWriter().println(&quot;There was &quot; + result.getFailureCount() + &quot; failure:&quot;);
+		else
+			getWriter().println(&quot;There were &quot; + result.getFailureCount() + &quot; failures:&quot;);
+</pre><h3>Code B rq0_0308</h3><pre>public static &lt;T&gt; JaxbRoot&lt;T&gt; unmarshallXml(String fileName, String schemaName, Class&lt;T&gt; clazz, ClassLoaderService classLoaderService)
+            throws JAXBException {
+        Schema schema = getMappingSchema( schemaName, classLoaderService );
+        InputStream in = classLoaderService.locateResourceStream( fileName );
+        JAXBContext jc = JAXBContext.newInstance( clazz );
+        Unmarshaller unmarshaller = jc.createUnmarshaller();
+        unmarshaller.setSchema( schema );
+        StreamSource stream = new StreamSource( in );
+        JAXBElement&lt;T&gt; elem = unmarshaller.unmarshal( stream, clazz );
+        Origin origin = new Origin( null, fileName );
+        return new JaxbRoot&lt;T&gt;( elem.getValue(), origin );
+    }</pre></div>
