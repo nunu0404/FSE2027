@@ -1,0 +1,28 @@
+{
+  "generated_at_utc": "2026-07-09T07:31:06.413303+00:00",
+  "model": "gpt-5.4-2026-03-05",
+  "conditions": [
+    "image_only",
+    "text_plus_image"
+  ],
+  "dataset": "/ANON/experiment_root/experiments/rq0_viability/data/processed/pooled_313_processed.csv",
+  "pairs": "/ANON/experiment_root/experiments/rq0_viability/data/pairs/full_pair_set_rq0.csv",
+  "default_render_metadata": "/ANON/experiment_root/experiments/rq0_viability/outputs/render_metadata/default_render_metadata.csv",
+  "combined_labeled_render_metadata": "/ANON/experiment_root/experiments/rq0_viability/outputs/render_metadata/combined_labeled_full_pair_set_metadata.csv",
+  "default_render_dir": "/ANON/experiment_root/experiments/rq0_viability/data/rendered/default",
+  "combined_labeled_render_dir": "/ANON/experiment_root/experiments/rq0_viability/data/rendered/combined_labeled/full_pair_set_rq0",
+  "pairs_per_difficulty": 100,
+  "num_pairs_per_condition": 300,
+  "strict_swap": true,
+  "detail": "high",
+  "max_output_tokens": 4096,
+  "reasoning_effort": "low",
+  "request_timeout": 180.0,
+  "input_cost_per_mtok": 2.5,
+  "output_cost_per_mtok": 15.0,
+  "outputs": {
+    "raw": "/ANON/experiment_root/results/gpt54_reasoning_budget_pilot_90_20260709/gpt-5.4-2026-03-05__reasoning_low__mot_4096_raw.jsonl",
+    "summary": "/ANON/experiment_root/results/gpt54_reasoning_budget_pilot_90_20260709/gpt-5.4-2026-03-05__reasoning_low__mot_4096_summary.csv",
+    "usage": "/ANON/experiment_root/results/gpt54_reasoning_budget_pilot_90_20260709/gpt-5.4-2026-03-05__reasoning_low__mot_4096_usage.json"
+  }
+}

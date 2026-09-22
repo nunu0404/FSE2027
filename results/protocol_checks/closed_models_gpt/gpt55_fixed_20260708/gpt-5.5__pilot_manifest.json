@@ -1,0 +1,30 @@
+{
+  "generated_at_utc": "2026-07-08T07:52:01.598347+00:00",
+  "model": "gpt-5.5",
+  "conditions": [
+    "image_only",
+    "text_plus_image",
+    "combined_labeled_image_only",
+    "combined_labeled_text_plus_image"
+  ],
+  "dataset": "/ANON/experiment_root/experiments/rq0_viability/data/processed/pooled_313_processed.csv",
+  "pairs": "/ANON/experiment_root/experiments/rq0_viability/data/pairs/full_pair_set_rq0.csv",
+  "default_render_metadata": "/ANON/experiment_root/experiments/rq0_viability/outputs/render_metadata/default_render_metadata.csv",
+  "combined_labeled_render_metadata": "/ANON/experiment_root/experiments/rq0_viability/outputs/render_metadata/combined_labeled_full_pair_set_metadata.csv",
+  "default_render_dir": "/ANON/experiment_root/experiments/rq0_viability/data/rendered/default",
+  "combined_labeled_render_dir": "/ANON/experiment_root/experiments/rq0_viability/data/rendered/combined_labeled/full_pair_set_rq0",
+  "pairs_per_difficulty": 100,
+  "num_pairs_per_condition": 300,
+  "strict_swap": true,
+  "detail": "high",
+  "max_output_tokens": 256,
+  "reasoning_effort": "low",
+  "request_timeout": 90.0,
+  "input_cost_per_mtok": 5.0,
+  "output_cost_per_mtok": 30.0,
+  "outputs": {
+    "raw": "/ANON/experiment_root/results/openai_vlm_pilot_20260708_gpt55_fixed/gpt-5.5__pilot_raw.jsonl",
+    "summary": "/ANON/experiment_root/results/openai_vlm_pilot_20260708_gpt55_fixed/gpt-5.5__pilot_summary.csv",
+    "usage": "/ANON/experiment_root/results/openai_vlm_pilot_20260708_gpt55_fixed/gpt-5.5__pilot_usage.json"
+  }
+}

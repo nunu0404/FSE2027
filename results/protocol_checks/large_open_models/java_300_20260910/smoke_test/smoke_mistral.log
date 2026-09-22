@@ -1,0 +1,41 @@
+2026-09-10 04:15:57.333565: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-09-10 04:15:57.377426: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 AVX512_FP16 AVX_VNNI AMX_TILE AMX_INT8 AMX_BF16 AMX_FP16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-09-10 04:15:58.523120: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+`torch_dtype` is deprecated! Use `dtype` instead!
+[UNIT-TEST] Running unit tests...
+  [PASS] Parser tests passed.
+  [PASS] Choice mapping tests passed.
+  [PASS] Strict-swap logic tests passed.
+[UNIT-TEST] All unit tests PASSED successfully!
+
+============================================================
+STARTING 10-PAIR SMOKE TEST ACROSS 3 MODELS
+============================================================
+Loaded 10 smoke test pairs:
+  full_rq0_seed42__rq0_0072__rq0_0291 (diff: easy, pref: rq0_0072)
+  full_rq0_seed42__rq0_0060__rq0_0168 (diff: medium, pref: rq0_0168)
+  full_rq0_seed42__rq0_0086__rq0_0255 (diff: hard, pref: rq0_0255)
+  full_rq0_seed42__rq0_0013__rq0_0052 (diff: easy, pref: rq0_0052)
+  full_rq0_seed42__rq0_0217__rq0_0286 (diff: medium, pref: rq0_0286)
+  full_rq0_seed42__rq0_0179__rq0_0263 (diff: hard, pref: rq0_0179)
+  full_rq0_seed42__rq0_0005__rq0_0022 (diff: easy, pref: rq0_0022)
+  full_rq0_seed42__rq0_0027__rq0_0032 (diff: medium, pref: rq0_0032)
+  full_rq0_seed42__rq0_0007__rq0_0127 (diff: hard, pref: rq0_0007)
+  full_rq0_seed42__rq0_0145__rq0_0240 (diff: easy, pref: rq0_0240)
+[Mistral-Small-3.1-24B-Instruct-2503] Initializing on GPU 0...
+[Mistral-Small-3.1-24B-Instruct-2503] Loading weights in bfloat16...
+Loading checkpoint shards:   0%|          | 0/10 [00:00<?, ?it/s]Loading checkpoint shards:  10%|█         | 1/10 [00:01<00:10,  1.19s/it]Loading checkpoint shards:  20%|██        | 2/10 [00:02<00:10,  1.26s/it]Loading checkpoint shards:  30%|███       | 3/10 [00:03<00:08,  1.28s/it]Loading checkpoint shards:  40%|████      | 4/10 [00:04<00:06,  1.16s/it]Loading checkpoint shards:  50%|█████     | 5/10 [00:05<00:05,  1.12s/it]Loading checkpoint shards:  60%|██████    | 6/10 [00:07<00:04,  1.15s/it]Loading checkpoint shards:  70%|███████   | 7/10 [00:08<00:03,  1.19s/it]Loading checkpoint shards:  80%|████████  | 8/10 [00:09<00:02,  1.17s/it]Loading checkpoint shards:  90%|█████████ | 9/10 [00:10<00:01,  1.16s/it]Loading checkpoint shards: 100%|██████████| 10/10 [00:11<00:00,  1.09s/it]Loading checkpoint shards: 100%|██████████| 10/10 [00:11<00:00,  1.15s/it]
+[Mistral-Small-3.1-24B-Instruct-2503] Model loaded. VRAM allocated: 44.73 GB
+[Mistral-Small-3.1-24B-Instruct-2503] Found 0 previously completed calls.
+[Mistral-Small-3.1-24B-Instruct-2503] Starting inference on 10 pairs (20 calls)...
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 10/20 calls (50.0%) | Pair 5/10 | Last: BA -> 'B' (rq0_0217)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 20/20 calls (100.0%) | Pair 10/10 | Last: BA -> 'A' (rq0_0240)
+[Mistral-Small-3.1-24B-Instruct-2503] Cleaning up model from GPU 0...
+[Mistral-Small-3.1-24B-Instruct-2503] Cleanup complete. Remaining VRAM: 0.01 GB
+[Mistral-Small-3.1-24B-Instruct-2503] Finished all calls. Saved to /ANON/experiment_root/results/large_model_cross_family_3model_300java_20260910/smoke_test/mistral_smoke_raw.jsonl.
+
+[SMOKE-TEST] mistral parse failure rate: 0.0% (0/20)
+
+[SMOKE-TEST] All smoke tests PASSED successfully!
+

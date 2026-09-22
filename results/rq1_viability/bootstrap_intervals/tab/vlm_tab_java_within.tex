@@ -1,0 +1,21 @@
+\begin{table}[t]
+\centering
+\caption{Comparison of VLM judges and the best machine learning baseline on within-dataset Java pairs ($n=1,004$; Buse: 299, Dorn: 275, Scalabrino: 430) versus the mixed Java evaluation set ($n=3,000$). All values are percentages. For the feature-based baseline, order swap error is by definition zero, so valid accuracy equals effective accuracy.}
+\label{tab:vlm_tab_java_within}
+\small
+\begin{tabular}{lcccccc}
+\toprule
+& \multicolumn{3}{c}{Within-Dataset ($n=1,004$)} & \multicolumn{3}{c}{Mixed ($n=3,000$)} \\
+\cmidrule(lr){2-4} \cmidrule(lr){5-7}
+Judge & Valid & $E$ & $S$ & Valid & $E$ & $S$ \\
+\midrule
+Qwen2.5-VL-7B & 63.95 & 31.27 & 51.10 & 62.35 & 32.73 & 47.50 \\
+Qwen3-VL-8B & 62.54 & 43.23 & 30.88 & 62.21 & 44.33 & 28.73 \\
+Gemma-3-12B & 66.21 & 52.49 & 20.72 & 62.54 & 50.80 & 18.77 \\
+Gemma4-12B & 64.83 & 55.08 & 15.04 & 61.89 & 54.30 & 12.27 \\
+InternVL3.5-8B & 61.37 & 41.14 & 32.97 & 60.27 & 41.37 & 31.37 \\
+\midrule
+Multilayer Perceptron (Best Baseline) & 63.94 & 63.94 & 0.00 & 63.17 & 63.17 & 0.00 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,20 @@
+{
+  "completed_models": [
+    "qwen",
+    "internvl",
+    "gemma",
+    "ministral",
+    "phi"
+  ],
+  "incomplete_models_excluded": [],
+  "pairs_per_completed_model": 9000,
+  "calls_per_completed_model": 18000,
+  "metric_contract": {
+    "valid": "AB and BA choose the same underlying snippet",
+    "valid_accuracy": "correct strict-valid pairs / strict-valid pairs",
+    "effective_accuracy": "correct strict-valid pairs / all pairs",
+    "strict_swap_error": "non-valid pairs / all pairs",
+    "spearman_valid_only": "Spearman(model preference sign, human z-score difference) on strict-valid pairs",
+    "debiased_accuracy": "sign((AB margin - BA margin)/2) against gold; zero content margin is incorrect"
+  }
+}

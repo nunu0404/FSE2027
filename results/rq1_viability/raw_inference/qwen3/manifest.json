@@ -1,0 +1,76 @@
+{
+  "run_family": "latest_vlm_extension_20260830",
+  "phase": "full",
+  "model_key": "qwen3",
+  "model_id": "Qwen/Qwen3-VL-8B-Instruct",
+  "model_revision": "0c351dd01ed87e9c1b53cbc748cba10e6187ff3b",
+  "processor_revision": "0c351dd01ed87e9c1b53cbc748cba10e6187ff3b",
+  "model_snapshot": "/ANON/scratch_rq1/hf/models--Qwen--Qwen3-VL-8B-Instruct/snapshots/0c351dd01ed87e9c1b53cbc748cba10e6187ff3b",
+  "package_git_commit": "4ad50f67c37db556e12e5f1b13918f3ee60d26b4",
+  "package_git_dirty_at_start": false,
+  "pair_manifest": "results/rq1_model_battery_3lang_20260723/data/rq1_pairs_9000.csv",
+  "pair_manifest_sha256": "e41fc9896dc927b98d35eb57e44a4f7139d2013353d061fbac854470d3733183",
+  "prompt_path": "results/latest_vlm_extension_20260830/config/FROZEN_PROMPT_B.txt",
+  "prompt_sha256": "1eb486ba7a7f1908b4279446aec106117fd209d410f7309ca2c5a64bcb978ae1",
+  "runner_sha256": "a996804398e3b8eaa2c2c4cf5e5ba24fb51079af74d057b51605a424810208e0",
+  "parser": "FINAL[_space-]*VERDICT[:=](A|B), last match",
+  "logit_orientation": "margin=logit_A-logit_B; A/B refer to displayed first/second candidate",
+  "modality": "image_only",
+  "packaging": "two_separate_ordered_pngs",
+  "orders": [
+    "AB",
+    "BA"
+  ],
+  "pairs": 9000,
+  "calls_expected": 18000,
+  "generation": {
+    "dtype": "bfloat16",
+    "quantization": "none",
+    "batch_size": 1,
+    "do_sample": false,
+    "temperature": 0.0,
+    "top_p_inactive": 1.0,
+    "max_new_tokens": 24,
+    "seed": 42,
+    "thinking": false
+  },
+  "gpu": {
+    "physical_index": "0",
+    "uuid": "GPU-98933e9f-5143-2ea9-2508-16c4aea693f4",
+    "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+    "memory_mib": "97887",
+    "driver": "580.95.05"
+  },
+  "cuda_visible_devices": "0",
+  "environment_path": "environments/qwen3_full.json",
+  "environment_sha256": "83f2052998d549f8db61b85551a12a327413756bd98774cc6d2f190d1022cb9c",
+  "started_at_utc": "2026-08-30T09:01:17.352338+00:00",
+  "status": "validated_complete",
+  "calls_completed": 18000,
+  "updated_at_utc": "2026-08-30T10:52:24.228470+00:00",
+  "validation_path": "inference/full/qwen3/validation.json",
+  "validated_at_utc": "2026-08-30T10:52:26.141883+00:00",
+  "effective_logit_path": "inference/full/qwen3/effective_logits.jsonl",
+  "effective_logit_validation": "inference/full/qwen3/validation.json",
+  "raw_inference_modified": false,
+  "postprocess_package_git_commit": "cdf8d9d40ea94568065ad0ce67f00a6fa9e55ca0",
+  "effective_generation_clarification": {
+    "actual_generate_kwargs": {
+      "max_new_tokens": 24,
+      "do_sample": false,
+      "return_dict_in_generate": true
+    },
+    "temperature_argument": "omitted",
+    "temperature_effective": "not_applicable_under_greedy_decoding",
+    "top_p_argument": "omitted",
+    "top_p_active": false,
+    "seed_recorded": 42,
+    "seed_active": false,
+    "inference_behavior_changed_by_amendment": false
+  },
+  "metadata_amendment": {
+    "created_at_utc": "2026-08-31T06:17:48.711652+00:00",
+    "script_sha256": "36c6627fd33f49d9e6a9889adccc878fbeb92812132edb4215feb69a2c485bbf",
+    "package_git_commit": "ac0ab27b1428ec9919f2b1020aa64b321bfd0ed1"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "model_key": "internvl3_5",
+  "created_at_utc": "2026-08-30T12:52:58.942374+00:00",
+  "expected_calls": 18000,
+  "actual_calls": 18000,
+  "unique_pairs": 9000,
+  "duplicate_calls": 0,
+  "missing_pair_order_keys": 0,
+  "unexpected_pair_order_keys": 0,
+  "parse_failures": 1,
+  "missing_logits": 1,
+  "argmax_mismatches": 1,
+  "mapping_errors": 0,
+  "truncations": 1,
+  "non_exact_outputs": 1,
+  "calls_by_language_order": {
+    "cuda|AB": 3000,
+    "cuda|BA": 3000,
+    "java|AB": 3000,
+    "java|BA": 3000,
+    "python|AB": 3000,
+    "python|BA": 3000
+  },
+  "gate_pass": false
+}

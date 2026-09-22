@@ -1,0 +1,10 @@
+run_id,language,difficulty,n_pairs,reference_first_count,reference_second_count,reference_first_percent
+rq1_model_battery_3lang_20260723,java,easy,1000,514,486,51.4
+rq1_model_battery_3lang_20260723,java,medium,1000,508,492,50.8
+rq1_model_battery_3lang_20260723,java,hard,1000,490,510,49.0
+rq1_model_battery_3lang_20260723,python,easy,1000,504,496,50.4
+rq1_model_battery_3lang_20260723,python,medium,1000,482,518,48.2
+rq1_model_battery_3lang_20260723,python,hard,1000,515,485,51.5
+rq1_model_battery_3lang_20260723,cuda,easy,1000,498,502,49.8
+rq1_model_battery_3lang_20260723,cuda,medium,1000,496,504,49.6
+rq1_model_battery_3lang_20260723,cuda,hard,1000,514,486,51.4

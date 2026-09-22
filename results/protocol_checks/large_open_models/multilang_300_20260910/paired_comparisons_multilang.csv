@@ -1,0 +1,13 @@
+comparison,language,pairs,eff_acc_diff_pp,swap_error_diff_pp,mcnemar_b,mcnemar_c,mcnemar_raw_p
+Qwen2.5-VL-32B vs Gemma 3-27B,ALL,900,24.89,-26.89,327,85,1.4860157539590235e-34
+Qwen2.5-VL-32B vs Gemma 3-27B,java,300,14.67,-23.67,103,32,6.796791472915328e-10
+Qwen2.5-VL-32B vs Gemma 3-27B,python,300,29.0,-23.67,99,28,1.71744082628715e-10
+Qwen2.5-VL-32B vs Gemma 3-27B,cuda,300,31.0,-33.33,125,25,3.4105740593607413e-17
+Qwen2.5-VL-32B vs Mistral Small 3.1-24B,ALL,900,23.44,-26.89,332,90,1.1482089786240996e-33
+Qwen2.5-VL-32B vs Mistral Small 3.1-24B,java,300,13.67,-14.67,86,42,0.00012535822987511485
+Qwen2.5-VL-32B vs Mistral Small 3.1-24B,python,300,36.33,-45.0,157,22,2.5636386452508263e-26
+Qwen2.5-VL-32B vs Mistral Small 3.1-24B,cuda,300,20.33,-21.0,89,26,2.9523783298817333e-09
+Gemma 3-27B vs Mistral Small 3.1-24B,ALL,900,-1.44,0.0,190,190,1.0
+Gemma 3-27B vs Mistral Small 3.1-24B,java,300,-1.0,9.0,52,79,0.022743268128245023
+Gemma 3-27B vs Mistral Small 3.1-24B,python,300,7.33,-21.33,99,35,2.8898922372571294e-08
+Gemma 3-27B vs Mistral Small 3.1-24B,cuda,300,-10.67,12.33,39,76,0.0007171910479201684

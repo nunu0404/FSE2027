@@ -1,0 +1,228 @@
+2026-09-10 04:48:46.993562: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-09-10 04:48:47.039212: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 AVX512_FP16 AVX_VNNI AMX_TILE AMX_INT8 AMX_BF16 AMX_FP16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-09-10 04:48:48.199784: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. Note that this behavior will be extended to all models in a future release.
+`torch_dtype` is deprecated! Use `dtype` instead!
+[UNIT-TEST] Running unit tests for multi-language evaluation...
+[UNIT-TEST] All unit tests PASSED successfully!
+
+============================================================
+STARTING FULL MULTI-LANGUAGE EVALUATION (900 PAIRS)
+Models: ['qwen', 'gemma', 'mistral'] on GPU 0
+============================================================
+[Qwen2.5-VL-32B-Instruct] Initializing on GPU 0...
+[Qwen2.5-VL-32B-Instruct] Loading weights in bfloat16...
+Loading checkpoint shards:   0%|          | 0/18 [00:00<?, ?it/s]Loading checkpoint shards:   6%|▌         | 1/18 [00:00<00:12,  1.38it/s]Loading checkpoint shards:  11%|█         | 2/18 [00:01<00:13,  1.23it/s]Loading checkpoint shards:  17%|█▋        | 3/18 [00:02<00:12,  1.20it/s]Loading checkpoint shards:  22%|██▏       | 4/18 [00:03<00:11,  1.26it/s]Loading checkpoint shards:  28%|██▊       | 5/18 [00:04<00:10,  1.22it/s]Loading checkpoint shards:  33%|███▎      | 6/18 [00:05<00:11,  1.08it/s]Loading checkpoint shards:  39%|███▉      | 7/18 [00:06<00:11,  1.03s/it]Loading checkpoint shards:  44%|████▍     | 8/18 [00:07<00:11,  1.14s/it]Loading checkpoint shards:  50%|█████     | 9/18 [00:09<00:10,  1.17s/it]Loading checkpoint shards:  56%|█████▌    | 10/18 [00:10<00:09,  1.17s/it]Loading checkpoint shards:  61%|██████    | 11/18 [00:11<00:08,  1.17s/it]Loading checkpoint shards:  67%|██████▋   | 12/18 [00:12<00:06,  1.13s/it]Loading checkpoint shards:  72%|███████▏  | 13/18 [00:13<00:05,  1.02s/it]Loading checkpoint shards:  78%|███████▊  | 14/18 [00:14<00:03,  1.02it/s]Loading checkpoint shards:  83%|████████▎ | 15/18 [00:14<00:02,  1.07it/s]Loading checkpoint shards:  89%|████████▉ | 16/18 [00:15<00:01,  1.07it/s]Loading checkpoint shards:  94%|█████████▍| 17/18 [00:16<00:00,  1.04it/s]Loading checkpoint shards: 100%|██████████| 18/18 [00:17<00:00,  1.06it/s]Loading checkpoint shards: 100%|██████████| 18/18 [00:17<00:00,  1.01it/s]
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+[Qwen2.5-VL-32B-Instruct] Model loaded. VRAM allocated: 62.31 GB
+[Qwen2.5-VL-32B-Instruct] Imported 600 existing Java calls from previous run.
+[Qwen2.5-VL-32B-Instruct] Total calls planned: 1800 (already completed: 600)
+[Qwen2.5-VL-32B-Instruct] Progress: 620/1800 (34.4%) | Last: python BA -> 'B' (dorn_python_008)
+[Qwen2.5-VL-32B-Instruct] Progress: 640/1800 (35.6%) | Last: python BA -> 'A' (dorn_python_021)
+[Qwen2.5-VL-32B-Instruct] Progress: 660/1800 (36.7%) | Last: python BA -> 'A' (dorn_python_036)
+[Qwen2.5-VL-32B-Instruct] Progress: 680/1800 (37.8%) | Last: python BA -> 'A' (dorn_python_046)
+[Qwen2.5-VL-32B-Instruct] Progress: 700/1800 (38.9%) | Last: python BA -> 'B' (dorn_python_057)
+[Qwen2.5-VL-32B-Instruct] Progress: 720/1800 (40.0%) | Last: python BA -> 'B' (dorn_python_010)
+[Qwen2.5-VL-32B-Instruct] Progress: 740/1800 (41.1%) | Last: python BA -> 'A' (dorn_python_109)
+[Qwen2.5-VL-32B-Instruct] Progress: 760/1800 (42.2%) | Last: python BA -> 'A' (dorn_python_077)
+[Qwen2.5-VL-32B-Instruct] Progress: 780/1800 (43.3%) | Last: python BA -> 'B' (dorn_python_084)
+[Qwen2.5-VL-32B-Instruct] Progress: 800/1800 (44.4%) | Last: python BA -> 'B' (dorn_python_002)
+[Qwen2.5-VL-32B-Instruct] Progress: 820/1800 (45.6%) | Last: python BA -> 'B' (dorn_python_033)
+[Qwen2.5-VL-32B-Instruct] Progress: 840/1800 (46.7%) | Last: python BA -> 'A' (dorn_python_069)
+[Qwen2.5-VL-32B-Instruct] Progress: 860/1800 (47.8%) | Last: python BA -> 'B' (dorn_python_029)
+[Qwen2.5-VL-32B-Instruct] Progress: 880/1800 (48.9%) | Last: python BA -> 'A' (dorn_python_082)
+[Qwen2.5-VL-32B-Instruct] Progress: 900/1800 (50.0%) | Last: python BA -> 'A' (dorn_python_116)
+[Qwen2.5-VL-32B-Instruct] Progress: 920/1800 (51.1%) | Last: python BA -> 'B' (dorn_python_001)
+[Qwen2.5-VL-32B-Instruct] Progress: 940/1800 (52.2%) | Last: python BA -> 'B' (dorn_python_035)
+[Qwen2.5-VL-32B-Instruct] Progress: 960/1800 (53.3%) | Last: python BA -> 'B' (dorn_python_030)
+[Qwen2.5-VL-32B-Instruct] Progress: 980/1800 (54.4%) | Last: python BA -> 'A' (dorn_python_100)
+[Qwen2.5-VL-32B-Instruct] Progress: 1000/1800 (55.6%) | Last: python BA -> 'A' (dorn_python_010)
+[Qwen2.5-VL-32B-Instruct] Progress: 1020/1800 (56.7%) | Last: python BA -> 'B' (dorn_python_082)
+[Qwen2.5-VL-32B-Instruct] Progress: 1040/1800 (57.8%) | Last: python BA -> 'B' (dorn_python_008)
+[Qwen2.5-VL-32B-Instruct] Progress: 1060/1800 (58.9%) | Last: python BA -> 'A' (dorn_python_022)
+[Qwen2.5-VL-32B-Instruct] Progress: 1080/1800 (60.0%) | Last: python BA -> 'A' (dorn_python_055)
+[Qwen2.5-VL-32B-Instruct] Progress: 1100/1800 (61.1%) | Last: python BA -> 'A' (dorn_python_070)
+[Qwen2.5-VL-32B-Instruct] Progress: 1120/1800 (62.2%) | Last: python BA -> 'B' (dorn_python_001)
+[Qwen2.5-VL-32B-Instruct] Progress: 1140/1800 (63.3%) | Last: python BA -> 'B' (dorn_python_022)
+[Qwen2.5-VL-32B-Instruct] Progress: 1160/1800 (64.4%) | Last: python BA -> 'B' (dorn_python_025)
+[Qwen2.5-VL-32B-Instruct] Progress: 1180/1800 (65.6%) | Last: python BA -> 'B' (dorn_python_010)
+[Qwen2.5-VL-32B-Instruct] Progress: 1200/1800 (66.7%) | Last: python BA -> 'A' (dorn_python_075)
+[Qwen2.5-VL-32B-Instruct] Progress: 1220/1800 (67.8%) | Last: cuda BA -> 'B' (dorn_cuda_065)
+[Qwen2.5-VL-32B-Instruct] Progress: 1240/1800 (68.9%) | Last: cuda BA -> 'A' (dorn_cuda_068)
+[Qwen2.5-VL-32B-Instruct] Progress: 1260/1800 (70.0%) | Last: cuda BA -> 'B' (dorn_cuda_040)
+[Qwen2.5-VL-32B-Instruct] Progress: 1280/1800 (71.1%) | Last: cuda BA -> 'B' (dorn_cuda_031)
+[Qwen2.5-VL-32B-Instruct] Progress: 1300/1800 (72.2%) | Last: cuda BA -> 'B' (dorn_cuda_012)
+[Qwen2.5-VL-32B-Instruct] Progress: 1320/1800 (73.3%) | Last: cuda BA -> 'B' (dorn_cuda_004)
+[Qwen2.5-VL-32B-Instruct] Progress: 1340/1800 (74.4%) | Last: cuda BA -> 'B' (dorn_cuda_088)
+[Qwen2.5-VL-32B-Instruct] Progress: 1360/1800 (75.6%) | Last: cuda BA -> 'A' (dorn_cuda_057)
+[Qwen2.5-VL-32B-Instruct] Progress: 1380/1800 (76.7%) | Last: cuda BA -> 'A' (dorn_cuda_101)
+[Qwen2.5-VL-32B-Instruct] Progress: 1400/1800 (77.8%) | Last: cuda BA -> 'A' (dorn_cuda_100)
+[Qwen2.5-VL-32B-Instruct] Progress: 1420/1800 (78.9%) | Last: cuda BA -> 'A' (dorn_cuda_107)
+[Qwen2.5-VL-32B-Instruct] Progress: 1440/1800 (80.0%) | Last: cuda BA -> 'B' (dorn_cuda_000)
+[Qwen2.5-VL-32B-Instruct] Progress: 1460/1800 (81.1%) | Last: cuda BA -> 'A' (dorn_cuda_074)
+[Qwen2.5-VL-32B-Instruct] Progress: 1480/1800 (82.2%) | Last: cuda BA -> 'B' (dorn_cuda_013)
+[Qwen2.5-VL-32B-Instruct] Progress: 1500/1800 (83.3%) | Last: cuda BA -> 'A' (dorn_cuda_111)
+[Qwen2.5-VL-32B-Instruct] Progress: 1520/1800 (84.4%) | Last: cuda BA -> 'A' (dorn_cuda_080)
+[Qwen2.5-VL-32B-Instruct] Progress: 1540/1800 (85.6%) | Last: cuda BA -> 'B' (dorn_cuda_026)
+[Qwen2.5-VL-32B-Instruct] Progress: 1560/1800 (86.7%) | Last: cuda BA -> 'B' (dorn_cuda_023)
+[Qwen2.5-VL-32B-Instruct] Progress: 1580/1800 (87.8%) | Last: cuda BA -> 'B' (dorn_cuda_010)
+[Qwen2.5-VL-32B-Instruct] Progress: 1600/1800 (88.9%) | Last: cuda BA -> 'B' (dorn_cuda_001)
+[Qwen2.5-VL-32B-Instruct] Progress: 1620/1800 (90.0%) | Last: cuda BA -> 'A' (dorn_cuda_101)
+[Qwen2.5-VL-32B-Instruct] Progress: 1640/1800 (91.1%) | Last: cuda BA -> 'A' (dorn_cuda_017)
+[Qwen2.5-VL-32B-Instruct] Progress: 1660/1800 (92.2%) | Last: cuda BA -> 'A' (dorn_cuda_079)
+[Qwen2.5-VL-32B-Instruct] Progress: 1680/1800 (93.3%) | Last: cuda BA -> 'A' (dorn_cuda_105)
+[Qwen2.5-VL-32B-Instruct] Progress: 1700/1800 (94.4%) | Last: cuda BA -> 'B' (dorn_cuda_076)
+[Qwen2.5-VL-32B-Instruct] Progress: 1720/1800 (95.6%) | Last: cuda BA -> 'B' (dorn_cuda_080)
+[Qwen2.5-VL-32B-Instruct] Progress: 1740/1800 (96.7%) | Last: cuda BA -> 'B' (dorn_cuda_011)
+[Qwen2.5-VL-32B-Instruct] Progress: 1760/1800 (97.8%) | Last: cuda BA -> 'A' (dorn_cuda_057)
+[Qwen2.5-VL-32B-Instruct] Progress: 1780/1800 (98.9%) | Last: cuda BA -> 'B' (dorn_cuda_002)
+[Qwen2.5-VL-32B-Instruct] Progress: 1800/1800 (100.0%) | Last: cuda BA -> 'B' (dorn_cuda_004)
+[Qwen2.5-VL-32B-Instruct] Finished all calls. Output: /ANON/experiment_root/results/multilang_cross_family_3model_python_cuda_java_20260910/qwen25_vl_32b_multilang_raw.jsonl
+
+[Qwen2.5-VL-32B-Instruct] Cleaning up model from GPU 0...
+[Qwen2.5-VL-32B-Instruct] Cleanup complete. Remaining VRAM: 0.01 GB
+[gemma-3-27b-it] Initializing on GPU 0...
+[gemma-3-27b-it] Loading weights in bfloat16...
+Loading checkpoint shards:   0%|          | 0/12 [00:00<?, ?it/s]Loading checkpoint shards:   8%|▊         | 1/12 [00:01<00:15,  1.43s/it]Loading checkpoint shards:  17%|█▋        | 2/12 [00:02<00:11,  1.15s/it]Loading checkpoint shards:  25%|██▌       | 3/12 [00:03<00:09,  1.07s/it]Loading checkpoint shards:  33%|███▎      | 4/12 [00:04<00:08,  1.04s/it]Loading checkpoint shards:  42%|████▏     | 5/12 [00:05<00:07,  1.09s/it]Loading checkpoint shards:  50%|█████     | 6/12 [00:06<00:06,  1.09s/it]Loading checkpoint shards:  58%|█████▊    | 7/12 [00:08<00:05,  1.19s/it]Loading checkpoint shards:  67%|██████▋   | 8/12 [00:09<00:05,  1.30s/it]Loading checkpoint shards:  75%|███████▌  | 9/12 [00:10<00:03,  1.29s/it]Loading checkpoint shards:  83%|████████▎ | 10/12 [00:12<00:02,  1.43s/it]Loading checkpoint shards:  92%|█████████▏| 11/12 [00:13<00:01,  1.34s/it]Loading checkpoint shards: 100%|██████████| 12/12 [00:13<00:00,  1.15s/it]
+The following generation flags are not valid and may be ignored: ['top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+[gemma-3-27b-it] Model loaded. VRAM allocated: 51.11 GB
+[gemma-3-27b-it] Imported 600 existing Java calls from previous run.
+[gemma-3-27b-it] Total calls planned: 1800 (already completed: 600)
+[gemma-3-27b-it] Progress: 620/1800 (34.4%) | Last: python BA -> 'B' (dorn_python_008)
+[gemma-3-27b-it] Progress: 640/1800 (35.6%) | Last: python BA -> 'A' (dorn_python_021)
+[gemma-3-27b-it] Progress: 660/1800 (36.7%) | Last: python BA -> 'A' (dorn_python_036)
+[gemma-3-27b-it] Progress: 680/1800 (37.8%) | Last: python BA -> 'B' (dorn_python_020)
+[gemma-3-27b-it] Progress: 700/1800 (38.9%) | Last: python BA -> 'A' (dorn_python_111)
+[gemma-3-27b-it] Progress: 720/1800 (40.0%) | Last: python BA -> 'B' (dorn_python_010)
+[gemma-3-27b-it] Progress: 740/1800 (41.1%) | Last: python BA -> 'B' (dorn_python_019)
+[gemma-3-27b-it] Progress: 760/1800 (42.2%) | Last: python BA -> 'A' (dorn_python_077)
+[gemma-3-27b-it] Progress: 780/1800 (43.3%) | Last: python BA -> 'B' (dorn_python_084)
+[gemma-3-27b-it] Progress: 800/1800 (44.4%) | Last: python BA -> 'A' (dorn_python_100)
+[gemma-3-27b-it] Progress: 820/1800 (45.6%) | Last: python BA -> 'B' (dorn_python_033)
+[gemma-3-27b-it] Progress: 840/1800 (46.7%) | Last: python BA -> 'A' (dorn_python_069)
+[gemma-3-27b-it] Progress: 860/1800 (47.8%) | Last: python BA -> 'A' (dorn_python_090)
+[gemma-3-27b-it] Progress: 880/1800 (48.9%) | Last: python BA -> 'A' (dorn_python_082)
+[gemma-3-27b-it] Progress: 900/1800 (50.0%) | Last: python BA -> 'A' (dorn_python_116)
+[gemma-3-27b-it] Progress: 920/1800 (51.1%) | Last: python BA -> 'A' (dorn_python_095)
+[gemma-3-27b-it] Progress: 940/1800 (52.2%) | Last: python BA -> 'B' (dorn_python_035)
+[gemma-3-27b-it] Progress: 960/1800 (53.3%) | Last: python BA -> 'A' (dorn_python_061)
+[gemma-3-27b-it] Progress: 980/1800 (54.4%) | Last: python BA -> 'A' (dorn_python_100)
+[gemma-3-27b-it] Progress: 1000/1800 (55.6%) | Last: python BA -> 'A' (dorn_python_010)
+[gemma-3-27b-it] Progress: 1020/1800 (56.7%) | Last: python BA -> 'A' (dorn_python_108)
+[gemma-3-27b-it] Progress: 1040/1800 (57.8%) | Last: python BA -> 'B' (dorn_python_008)
+[gemma-3-27b-it] Progress: 1060/1800 (58.9%) | Last: python BA -> 'A' (dorn_python_022)
+[gemma-3-27b-it] Progress: 1080/1800 (60.0%) | Last: python BA -> 'A' (dorn_python_055)
+[gemma-3-27b-it] Progress: 1100/1800 (61.1%) | Last: python BA -> 'A' (dorn_python_070)
+[gemma-3-27b-it] Progress: 1120/1800 (62.2%) | Last: python BA -> 'A' (dorn_python_068)
+[gemma-3-27b-it] Progress: 1140/1800 (63.3%) | Last: python BA -> 'B' (dorn_python_022)
+[gemma-3-27b-it] Progress: 1160/1800 (64.4%) | Last: python BA -> 'A' (dorn_python_053)
+[gemma-3-27b-it] Progress: 1180/1800 (65.6%) | Last: python BA -> 'A' (dorn_python_042)
+[gemma-3-27b-it] Progress: 1200/1800 (66.7%) | Last: python BA -> 'A' (dorn_python_075)
+[gemma-3-27b-it] Progress: 1220/1800 (67.8%) | Last: cuda BA -> 'A' (dorn_cuda_117)
+[gemma-3-27b-it] Progress: 1240/1800 (68.9%) | Last: cuda BA -> 'A' (dorn_cuda_068)
+[gemma-3-27b-it] Progress: 1260/1800 (70.0%) | Last: cuda BA -> 'B' (dorn_cuda_040)
+[gemma-3-27b-it] Progress: 1280/1800 (71.1%) | Last: cuda BA -> 'A' (dorn_cuda_056)
+[gemma-3-27b-it] Progress: 1300/1800 (72.2%) | Last: cuda BA -> 'B' (dorn_cuda_012)
+[gemma-3-27b-it] Progress: 1320/1800 (73.3%) | Last: cuda BA -> 'A' (dorn_cuda_010)
+[gemma-3-27b-it] Progress: 1340/1800 (74.4%) | Last: cuda BA -> 'B' (dorn_cuda_088)
+[gemma-3-27b-it] Progress: 1360/1800 (75.6%) | Last: cuda BA -> 'A' (dorn_cuda_057)
+[gemma-3-27b-it] Progress: 1380/1800 (76.7%) | Last: cuda BA -> 'A' (dorn_cuda_101)
+[gemma-3-27b-it] Progress: 1400/1800 (77.8%) | Last: cuda BA -> 'B' (dorn_cuda_034)
+[gemma-3-27b-it] Progress: 1420/1800 (78.9%) | Last: cuda BA -> 'A' (dorn_cuda_107)
+[gemma-3-27b-it] Progress: 1440/1800 (80.0%) | Last: cuda BA -> 'A' (dorn_cuda_072)
+[gemma-3-27b-it] Progress: 1460/1800 (81.1%) | Last: cuda BA -> 'A' (dorn_cuda_074)
+[gemma-3-27b-it] Progress: 1480/1800 (82.2%) | Last: cuda BA -> 'A' (dorn_cuda_044)
+[gemma-3-27b-it] Progress: 1500/1800 (83.3%) | Last: cuda BA -> 'A' (dorn_cuda_111)
+[gemma-3-27b-it] Progress: 1520/1800 (84.4%) | Last: cuda BA -> 'A' (dorn_cuda_080)
+[gemma-3-27b-it] Progress: 1540/1800 (85.6%) | Last: cuda BA -> 'A' (dorn_cuda_107)
+[gemma-3-27b-it] Progress: 1560/1800 (86.7%) | Last: cuda BA -> 'A' (dorn_cuda_047)
+[gemma-3-27b-it] Progress: 1580/1800 (87.8%) | Last: cuda BA -> 'B' (dorn_cuda_010)
+[gemma-3-27b-it] Progress: 1600/1800 (88.9%) | Last: cuda BA -> 'A' (dorn_cuda_093)
+[gemma-3-27b-it] Progress: 1620/1800 (90.0%) | Last: cuda BA -> 'A' (dorn_cuda_101)
+[gemma-3-27b-it] Progress: 1640/1800 (91.1%) | Last: cuda BA -> 'A' (dorn_cuda_017)
+[gemma-3-27b-it] Progress: 1660/1800 (92.2%) | Last: cuda BA -> 'A' (dorn_cuda_079)
+[gemma-3-27b-it] Progress: 1680/1800 (93.3%) | Last: cuda BA -> 'A' (dorn_cuda_105)
+[gemma-3-27b-it] Progress: 1700/1800 (94.4%) | Last: cuda BA -> 'A' (dorn_cuda_111)
+[gemma-3-27b-it] Progress: 1720/1800 (95.6%) | Last: cuda BA -> 'B' (dorn_cuda_080)
+[gemma-3-27b-it] Progress: 1740/1800 (96.7%) | Last: cuda BA -> 'A' (dorn_cuda_072)
+[gemma-3-27b-it] Progress: 1760/1800 (97.8%) | Last: cuda BA -> 'A' (dorn_cuda_057)
+[gemma-3-27b-it] Progress: 1780/1800 (98.9%) | Last: cuda BA -> 'B' (dorn_cuda_002)
+[gemma-3-27b-it] Progress: 1800/1800 (100.0%) | Last: cuda BA -> 'A' (dorn_cuda_026)
+[gemma-3-27b-it] Finished all calls. Output: /ANON/experiment_root/results/multilang_cross_family_3model_python_cuda_java_20260910/gemma3_27b_multilang_raw.jsonl
+
+[gemma-3-27b-it] Cleaning up model from GPU 0...
+[gemma-3-27b-it] Cleanup complete. Remaining VRAM: 0.01 GB
+[Mistral-Small-3.1-24B-Instruct-2503] Initializing on GPU 0...
+[Mistral-Small-3.1-24B-Instruct-2503] Loading weights in bfloat16...
+Loading checkpoint shards:   0%|          | 0/10 [00:00<?, ?it/s]Loading checkpoint shards:  10%|█         | 1/10 [00:00<00:08,  1.03it/s]Loading checkpoint shards:  20%|██        | 2/10 [00:02<00:08,  1.05s/it]Loading checkpoint shards:  30%|███       | 3/10 [00:03<00:07,  1.08s/it]Loading checkpoint shards:  40%|████      | 4/10 [00:04<00:05,  1.02it/s]Loading checkpoint shards:  50%|█████     | 5/10 [00:04<00:04,  1.06it/s]Loading checkpoint shards:  60%|██████    | 6/10 [00:05<00:03,  1.04it/s]Loading checkpoint shards:  70%|███████   | 7/10 [00:06<00:02,  1.00it/s]Loading checkpoint shards:  80%|████████  | 8/10 [00:07<00:01,  1.03it/s]Loading checkpoint shards:  90%|█████████ | 9/10 [00:08<00:00,  1.04it/s]Loading checkpoint shards: 100%|██████████| 10/10 [00:09<00:00,  1.10it/s]Loading checkpoint shards: 100%|██████████| 10/10 [00:09<00:00,  1.04it/s]
+[Mistral-Small-3.1-24B-Instruct-2503] Model loaded. VRAM allocated: 44.74 GB
+[Mistral-Small-3.1-24B-Instruct-2503] Imported 600 existing Java calls from previous run.
+[Mistral-Small-3.1-24B-Instruct-2503] Total calls planned: 1800 (already completed: 600)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 620/1800 (34.4%) | Last: python BA -> 'B' (dorn_python_008)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 640/1800 (35.6%) | Last: python BA -> 'A' (dorn_python_021)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 660/1800 (36.7%) | Last: python BA -> 'A' (dorn_python_036)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 680/1800 (37.8%) | Last: python BA -> 'B' (dorn_python_020)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 700/1800 (38.9%) | Last: python BA -> 'A' (dorn_python_111)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 720/1800 (40.0%) | Last: python BA -> 'B' (dorn_python_010)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 740/1800 (41.1%) | Last: python BA -> 'A' (dorn_python_109)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 760/1800 (42.2%) | Last: python BA -> 'A' (dorn_python_077)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 780/1800 (43.3%) | Last: python BA -> 'B' (dorn_python_084)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 800/1800 (44.4%) | Last: python BA -> 'A' (dorn_python_100)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 820/1800 (45.6%) | Last: python BA -> 'A' (dorn_python_113)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 840/1800 (46.7%) | Last: python BA -> 'A' (dorn_python_069)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 860/1800 (47.8%) | Last: python BA -> 'A' (dorn_python_090)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 880/1800 (48.9%) | Last: python BA -> 'B' (dorn_python_021)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 900/1800 (50.0%) | Last: python BA -> 'A' (dorn_python_116)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 920/1800 (51.1%) | Last: python BA -> 'A' (dorn_python_095)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 940/1800 (52.2%) | Last: python BA -> 'B' (dorn_python_035)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 960/1800 (53.3%) | Last: python BA -> 'A' (dorn_python_061)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 980/1800 (54.4%) | Last: python BA -> 'B' (dorn_python_043)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 1000/1800 (55.6%) | Last: python BA -> 'A' (dorn_python_010)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 1020/1800 (56.7%) | Last: python BA -> 'A' (dorn_python_108)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 1040/1800 (57.8%) | Last: python BA -> 'A' (dorn_python_031)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 1060/1800 (58.9%) | Last: python BA -> 'A' (dorn_python_022)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 1080/1800 (60.0%) | Last: python BA -> 'A' (dorn_python_055)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 1100/1800 (61.1%) | Last: python BA -> 'A' (dorn_python_070)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 1120/1800 (62.2%) | Last: python BA -> 'A' (dorn_python_068)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 1140/1800 (63.3%) | Last: python BA -> 'B' (dorn_python_022)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 1160/1800 (64.4%) | Last: python BA -> 'A' (dorn_python_053)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 1180/1800 (65.6%) | Last: python BA -> 'A' (dorn_python_042)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 1200/1800 (66.7%) | Last: python BA -> 'A' (dorn_python_075)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 1220/1800 (67.8%) | Last: cuda BA -> 'A' (dorn_cuda_117)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 1240/1800 (68.9%) | Last: cuda BA -> 'A' (dorn_cuda_068)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 1260/1800 (70.0%) | Last: cuda BA -> 'B' (dorn_cuda_040)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 1280/1800 (71.1%) | Last: cuda BA -> 'A' (dorn_cuda_056)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 1300/1800 (72.2%) | Last: cuda BA -> 'B' (dorn_cuda_012)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 1320/1800 (73.3%) | Last: cuda BA -> 'A' (dorn_cuda_010)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 1340/1800 (74.4%) | Last: cuda BA -> 'B' (dorn_cuda_088)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 1360/1800 (75.6%) | Last: cuda BA -> 'A' (dorn_cuda_057)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 1380/1800 (76.7%) | Last: cuda BA -> 'A' (dorn_cuda_101)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 1400/1800 (77.8%) | Last: cuda BA -> 'A' (dorn_cuda_100)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 1420/1800 (78.9%) | Last: cuda BA -> 'A' (dorn_cuda_107)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 1440/1800 (80.0%) | Last: cuda BA -> 'B' (dorn_cuda_000)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 1460/1800 (81.1%) | Last: cuda BA -> 'A' (dorn_cuda_074)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 1480/1800 (82.2%) | Last: cuda BA -> 'B' (dorn_cuda_013)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 1500/1800 (83.3%) | Last: cuda BA -> 'A' (dorn_cuda_111)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 1520/1800 (84.4%) | Last: cuda BA -> 'A' (dorn_cuda_080)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 1540/1800 (85.6%) | Last: cuda BA -> 'A' (dorn_cuda_107)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 1560/1800 (86.7%) | Last: cuda BA -> 'A' (dorn_cuda_047)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 1580/1800 (87.8%) | Last: cuda BA -> 'B' (dorn_cuda_010)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 1600/1800 (88.9%) | Last: cuda BA -> 'B' (dorn_cuda_001)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 1620/1800 (90.0%) | Last: cuda BA -> 'A' (dorn_cuda_101)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 1640/1800 (91.1%) | Last: cuda BA -> 'A' (dorn_cuda_017)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 1660/1800 (92.2%) | Last: cuda BA -> 'A' (dorn_cuda_079)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 1680/1800 (93.3%) | Last: cuda BA -> 'A' (dorn_cuda_105)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 1700/1800 (94.4%) | Last: cuda BA -> 'A' (dorn_cuda_111)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 1720/1800 (95.6%) | Last: cuda BA -> 'B' (dorn_cuda_080)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 1740/1800 (96.7%) | Last: cuda BA -> 'A' (dorn_cuda_072)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 1760/1800 (97.8%) | Last: cuda BA -> 'A' (dorn_cuda_057)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 1780/1800 (98.9%) | Last: cuda BA -> 'B' (dorn_cuda_002)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 1800/1800 (100.0%) | Last: cuda BA -> 'A' (dorn_cuda_026)
+[Mistral-Small-3.1-24B-Instruct-2503] Finished all calls. Output: /ANON/experiment_root/results/multilang_cross_family_3model_python_cuda_java_20260910/mistral_small_31_24b_multilang_raw.jsonl
+
+[Mistral-Small-3.1-24B-Instruct-2503] Cleaning up model from GPU 0...
+[Mistral-Small-3.1-24B-Instruct-2503] Cleanup complete. Remaining VRAM: 0.01 GB
+============================================================
+ALL MULTI-LANGUAGE MODEL RUNS COMPLETED
+============================================================

@@ -1,0 +1,17 @@
+{
+  "run_id": "F7_battery_ml_confirmation_20260819",
+  "new_model_calls": 0,
+  "seed": 42,
+  "bootstrap_replicates": 10000,
+  "bootstrap_method": "two-endpoint snippet cluster bootstrap using endpoint multiplicity products",
+  "primary_correction": "Voting Python effective accuracy = 1940/3000 = 0.6466666667",
+  "holm_family": "30 prespecified E1 comparisons",
+  "sources": {
+    "results/rq1_model_battery_3lang_20260723/data/rq1_pairs_9000.csv": "e41fc9896dc927b98d35eb57e44a4f7139d2013353d061fbac854470d3733183",
+    "results/rq1_model_battery_3lang_20260723/data/ml_predictions_9models_9000.csv": "09f61f3fcecf5ce022a5f854d07a4e9d6c59ae1c637f9b63f4c68aecf7bf0cdf",
+    "results/python_cuda_missing_experiments_20260716/data/clean_classical_pair_predictions.csv": "4fae73c9f1eb956e211ce8e496ba989786eafa28e0ba4c3adbde0227047290a2",
+    "results/rq1_model_battery_3lang_20260723/analysis/full/pair_level_results.csv": "0fa4ae44f141efbce8933019b3b0fe8e5a70906cd63cb65bf49f91d5202e4167",
+    "results/rq1_model_battery_3lang_20260723/analysis/table1_ml_replication/canonical_pairwise_summary.csv": "561539eda7ebae28b71b18d4aff93bc29537d764978d124ce5186c9d680a9e84",
+    "results/rq1_model_battery_3lang_20260723/code/run_f7_baseline_confirmation.py": "6ed3a4bc32c60f5c2622d466f6bcb20ca4d259430538d39749df8e488e0c3874"
+  }
+}

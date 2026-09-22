@@ -1,0 +1,59 @@
+{
+  "experiment_name": "controlled_larger_model_cross_family_reliability_multilang_900pairs",
+  "status": "COMPLETED",
+  "started_at_utc": "2026-09-10T04:46:00.000000+00:00",
+  "completed_at_utc": "2026-09-10T05:46:30.000000+00:00",
+  "total_pairs": 900,
+  "languages": {
+    "java": 300,
+    "python": 300,
+    "cuda": 300
+  },
+  "difficulties_per_language": {
+    "easy": 100,
+    "medium": 100,
+    "hard": 100
+  },
+  "total_calls_planned": 5400,
+  "environment": {
+    "gpu_name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+    "gpu_vram_gb": 94.97,
+    "gpu_count": 2,
+    "nvidia_driver": "580.95.05",
+    "cuda_system": "13.0",
+    "python_version": "3.10.12",
+    "pytorch_version": "2.10.0+cu128",
+    "transformers_version": "4.57.6"
+  },
+  "models": [
+    {
+      "model_name": "Qwen2.5-VL-32B-Instruct",
+      "repo_id": "Qwen/Qwen2.5-VL-32B-Instruct",
+      "exact_revision": "7cfb30d71a1f4f49a57592323337a4a4727301da"
+    },
+    {
+      "model_name": "gemma-3-27b-it",
+      "repo_id": "google/gemma-3-27b-it",
+      "exact_revision": "005ad3404e59d6023443cb575daa05336842228a"
+    },
+    {
+      "model_name": "Mistral-Small-3.1-24B-Instruct-2503",
+      "repo_id": "mistralai/Mistral-Small-3.1-24B-Instruct-2503",
+      "exact_revision": "68faf511d618ef198fef186659617cfd2eb8e33a"
+    }
+  ],
+  "generation_config": {
+    "precision": "bfloat16",
+    "do_sample": false,
+    "temperature": 0.0,
+    "max_new_tokens": 24,
+    "batch_size": 1,
+    "seed": 42,
+    "modality": "image_only",
+    "packaging": "separate_2_image_packaging"
+  },
+  "hashes": {
+    "pair_ids_multilang_csv_sha256": "e412a4588216bd058c1f7ff59c5f3b64e96c357c27c9adce6e720c5f805521d7",
+    "image_checksums_json_sha256": "9da8df37e117f04528df19d59134ffc1b9b3295e3c8f29ef262d7088478b7651"
+  }
+}

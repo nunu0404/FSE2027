@@ -1,0 +1,4 @@
+comparison,model_1,model_2,effective_acc_diff_pp,effective_acc_ci_low,effective_acc_ci_high,valid_acc_diff_pp,valid_acc_ci_low,valid_acc_ci_high,swap_error_diff_pp,swap_error_ci_low,swap_error_ci_high,mcnemar_b,mcnemar_c,mcnemar_raw_p,mcnemar_holm_p
+Qwen2.5-VL-32B vs Gemma 3-27B,Qwen2.5-VL-32B-Instruct,gemma-3-27b-it,14.667,5.0,24.907,-2.421,-14.212,10.289,-23.667,-36.432,-10.559,103,32,6.796791472915328e-10,2.0390374418745983e-09
+Qwen2.5-VL-32B vs Mistral Small 3.1-24B,Qwen2.5-VL-32B-Instruct,Mistral-Small-3.1-24B-Instruct-2503,13.667,3.623,24.15,6.268,-5.481,18.066,-14.667,-27.964,-1.094,86,42,0.00012535822987511485,0.0002507164597502297
+Gemma 3-27B vs Mistral Small 3.1-24B,gemma-3-27b-it,Mistral-Small-3.1-24B-Instruct-2503,-1.0,-11.897,9.668,8.688,-4.764,21.643,9.0,-5.018,23.13,52,79,0.022743268128245023,0.022743268128245023

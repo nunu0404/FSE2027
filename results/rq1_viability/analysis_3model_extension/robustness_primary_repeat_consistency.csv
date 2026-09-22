@@ -1,0 +1,7 @@
+model_key,language,calls,parsed_verdict_agreement,median_abs_margin_difference,max_abs_margin_difference
+qwen3,cuda,600,1.0,0.0,0.0
+qwen3,java,600,1.0,0.0,0.0
+qwen3,python,600,1.0,0.0,0.0
+internvl3_5,cuda,600,1.0,0.0,0.0
+internvl3_5,java,600,0.9983333333333333,0.0,0.0
+internvl3_5,python,600,1.0,0.0,0.0

@@ -1,0 +1,10 @@
+model,language,correct_pairs,num_pairs,effective_accuracy,legacy_correct_pairs,legacy_num_pairs,legacy_accuracy,correct_pair_delta,accuracy_percentage_point_delta,legacy_pair_id_endpoint_mismatch_count,correction_reason
+multilayer_perceptron,Java,1895,3000,0.6316666666666667,1895,3000,0.6316666666666667,0,0.0,0,clean pair rebuild reused pair_id for changed snippet endpoints; corrected from stored OOF scores
+multilayer_perceptron,CUDA,2069,3000,0.6896666666666667,2068,3000,0.6893333333333334,1,0.03333333333332966,1,clean pair rebuild reused pair_id for changed snippet endpoints; corrected from stored OOF scores
+multilayer_perceptron,Python,1888,3000,0.6293333333333333,1886,3000,0.6286666666666667,2,0.06666666666665932,2,clean pair rebuild reused pair_id for changed snippet endpoints; corrected from stored OOF scores
+svr,Java,1838,3000,0.6126666666666667,1838,3000,0.6126666666666667,0,0.0,0,clean pair rebuild reused pair_id for changed snippet endpoints; corrected from stored OOF scores
+svr,CUDA,2274,3000,0.758,2274,3000,0.758,0,0.0,1,clean pair rebuild reused pair_id for changed snippet endpoints; corrected from stored OOF scores
+svr,Python,1786,3000,0.5953333333333334,1784,3000,0.5946666666666667,2,0.06666666666667043,2,clean pair rebuild reused pair_id for changed snippet endpoints; corrected from stored OOF scores
+voting_lr_nb_rf,Java,1830,3000,0.61,1830,3000,0.61,0,0.0,0,clean pair rebuild reused pair_id for changed snippet endpoints; corrected from stored OOF scores
+voting_lr_nb_rf,CUDA,2142,3000,0.714,2142,3000,0.714,0,0.0,1,clean pair rebuild reused pair_id for changed snippet endpoints; corrected from stored OOF scores
+voting_lr_nb_rf,Python,1940,3000,0.6466666666666666,1938,3000,0.646,2,0.06666666666665932,2,clean pair rebuild reused pair_id for changed snippet endpoints; corrected from stored OOF scores

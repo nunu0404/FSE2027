@@ -1,0 +1,15 @@
+{
+  "model": "OpenGVLab/InternVL3-8B",
+  "model_kind": "vlm",
+  "input_setting": "combined_labeled_image_only",
+  "prompt_variant": "B",
+  "seed": 42,
+  "all_pairs": 300,
+  "valid_pairs": 124,
+  "correct_pairs": 74,
+  "accuracy_on_valid_pairs": 0.5967741935483871,
+  "effective_accuracy": 0.24666666666666667,
+  "strict_swap_error_rate": 0.5866666666666667,
+  "parse_failure_rate": 0.0,
+  "nvidia_smi_after": "0, NVIDIA RTX PRO 6000 Blackwell Server Edition, 16141 MiB, 97887 MiB, 14 %\n1, NVIDIA RTX PRO 6000 Blackwell Server Edition, 95551 MiB, 97887 MiB, 96 %\n"
+}

@@ -1,0 +1,27 @@
+{
+  "status": "complete",
+  "raw_calls": 7200,
+  "pair_rows": 3600,
+  "pairs_by_model": {
+    "OpenGVLab/InternVL3-8B": 1800,
+    "Qwen/Qwen2.5-VL-7B-Instruct": 1800
+  },
+  "pairs_by_model_language": {
+    "OpenGVLab/InternVL3-8B/cuda": 600,
+    "OpenGVLab/InternVL3-8B/java": 600,
+    "OpenGVLab/InternVL3-8B/python": 600,
+    "Qwen/Qwen2.5-VL-7B-Instruct/cuda": 600,
+    "Qwen/Qwen2.5-VL-7B-Instruct/java": 600,
+    "Qwen/Qwen2.5-VL-7B-Instruct/python": 600
+  },
+  "parse_failure_pairs": 0,
+  "output_files": [
+    "RQ3_IMAGE_ONLY_PAIR_LEVEL.csv",
+    "RQ3_IMAGE_ONLY_OVERALL.csv",
+    "RQ3_IMAGE_ONLY_BY_CONTRAST.csv",
+    "RQ3_IMAGE_ONLY_BY_LANGUAGE.csv",
+    "RQ3_IMAGE_ONLY_BY_LANGUAGE_CONTRAST.csv",
+    "RQ3_IMAGE_ONLY_BY_STRATUM_CONTRAST.csv",
+    "RQ3_IMAGE_ONLY_REPORT.md"
+  ]
+}

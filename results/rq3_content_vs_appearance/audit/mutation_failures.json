@@ -1,0 +1,240 @@
+[
+  {
+    "base_id": "rq3g_cuda_000",
+    "before": {
+      "has_error": true,
+      "error_nodes": 9,
+      "identifier_nodes": 265,
+      "behavior_nodes": 31
+    },
+    "after": {
+      "has_error": true,
+      "error_nodes": 11,
+      "identifier_nodes": 263,
+      "behavior_nodes": 29
+    },
+    "families": [
+      "identity_fragmentation",
+      "literal_corruption",
+      "operator_inversion",
+      "reference_role_permutation",
+      "semantic_cue_erasure"
+    ]
+  },
+  {
+    "base_id": "rq3g_cuda_015",
+    "before": {
+      "has_error": true,
+      "error_nodes": 4,
+      "identifier_nodes": 88,
+      "behavior_nodes": 36
+    },
+    "after": {
+      "has_error": true,
+      "error_nodes": 7,
+      "identifier_nodes": 87,
+      "behavior_nodes": 34
+    },
+    "families": [
+      "identity_fragmentation",
+      "literal_corruption",
+      "operator_inversion",
+      "reference_role_permutation",
+      "semantic_cue_erasure"
+    ]
+  },
+  {
+    "base_id": "rq3g_cuda_017",
+    "before": {
+      "has_error": true,
+      "error_nodes": 5,
+      "identifier_nodes": 133,
+      "behavior_nodes": 41
+    },
+    "after": {
+      "has_error": true,
+      "error_nodes": 6,
+      "identifier_nodes": 131,
+      "behavior_nodes": 41
+    },
+    "families": [
+      "identity_fragmentation",
+      "literal_corruption",
+      "operator_inversion",
+      "reference_role_permutation",
+      "semantic_cue_erasure"
+    ]
+  },
+  {
+    "base_id": "rq3g_cuda_023",
+    "before": {
+      "has_error": true,
+      "error_nodes": 3,
+      "identifier_nodes": 163,
+      "behavior_nodes": 82
+    },
+    "after": {
+      "has_error": true,
+      "error_nodes": 8,
+      "identifier_nodes": 156,
+      "behavior_nodes": 76
+    },
+    "families": [
+      "identity_fragmentation",
+      "literal_corruption",
+      "operator_inversion",
+      "reference_role_permutation",
+      "semantic_cue_erasure"
+    ]
+  },
+  {
+    "base_id": "rq3g_cuda_027",
+    "before": {
+      "has_error": true,
+      "error_nodes": 7,
+      "identifier_nodes": 123,
+      "behavior_nodes": 40
+    },
+    "after": {
+      "has_error": true,
+      "error_nodes": 9,
+      "identifier_nodes": 120,
+      "behavior_nodes": 39
+    },
+    "families": [
+      "identity_fragmentation",
+      "literal_corruption",
+      "operator_inversion",
+      "reference_role_permutation"
+    ]
+  },
+  {
+    "base_id": "rq3g_cuda_042",
+    "before": {
+      "has_error": true,
+      "error_nodes": 11,
+      "identifier_nodes": 92,
+      "behavior_nodes": 31
+    },
+    "after": {
+      "has_error": true,
+      "error_nodes": 12,
+      "identifier_nodes": 92,
+      "behavior_nodes": 29
+    },
+    "families": [
+      "identity_fragmentation",
+      "literal_corruption",
+      "operator_inversion",
+      "reference_role_permutation",
+      "semantic_cue_erasure"
+    ]
+  },
+  {
+    "base_id": "rq3g_cuda_053",
+    "before": {
+      "has_error": true,
+      "error_nodes": 3,
+      "identifier_nodes": 53,
+      "behavior_nodes": 15
+    },
+    "after": {
+      "has_error": true,
+      "error_nodes": 4,
+      "identifier_nodes": 51,
+      "behavior_nodes": 15
+    },
+    "families": [
+      "identity_fragmentation",
+      "literal_corruption",
+      "operator_inversion",
+      "reference_role_permutation",
+      "semantic_cue_erasure"
+    ]
+  },
+  {
+    "base_id": "rq3g_cuda_082",
+    "before": {
+      "has_error": true,
+      "error_nodes": 5,
+      "identifier_nodes": 149,
+      "behavior_nodes": 32
+    },
+    "after": {
+      "has_error": true,
+      "error_nodes": 6,
+      "identifier_nodes": 148,
+      "behavior_nodes": 32
+    },
+    "families": [
+      "identity_fragmentation",
+      "literal_corruption",
+      "operator_inversion",
+      "reference_role_permutation",
+      "semantic_cue_erasure"
+    ]
+  },
+  {
+    "base_id": "rq3g_java_067",
+    "before": {
+      "has_error": true,
+      "error_nodes": 2,
+      "identifier_nodes": 74,
+      "behavior_nodes": 42
+    },
+    "after": {
+      "has_error": true,
+      "error_nodes": 5,
+      "identifier_nodes": 71,
+      "behavior_nodes": 41
+    },
+    "families": [
+      "identity_fragmentation",
+      "literal_corruption",
+      "reference_role_permutation"
+    ]
+  },
+  {
+    "base_id": "rq3g_java_094",
+    "before": {
+      "has_error": true,
+      "error_nodes": 2,
+      "identifier_nodes": 16,
+      "behavior_nodes": 6
+    },
+    "after": {
+      "has_error": true,
+      "error_nodes": 3,
+      "identifier_nodes": 15,
+      "behavior_nodes": 6
+    },
+    "families": [
+      "identity_fragmentation",
+      "literal_corruption",
+      "operator_inversion",
+      "reference_role_permutation"
+    ]
+  },
+  {
+    "base_id": "rq3g_python_019",
+    "before": {
+      "has_error": true,
+      "error_nodes": 1,
+      "identifier_nodes": 55,
+      "behavior_nodes": 16
+    },
+    "after": {
+      "has_error": true,
+      "error_nodes": 4,
+      "identifier_nodes": 55,
+      "behavior_nodes": 18
+    },
+    "families": [
+      "identity_fragmentation",
+      "literal_corruption",
+      "operator_inversion",
+      "reference_role_permutation",
+      "semantic_cue_erasure"
+    ]
+  }
+]

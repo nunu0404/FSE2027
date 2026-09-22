@@ -1,0 +1,40 @@
+[1/36] image_only pair=1/9 valid=True correct=False parse_fail=0
+[2/36] image_only pair=2/9 valid=True correct=True parse_fail=0
+[3/36] image_only pair=3/9 valid=True correct=False parse_fail=0
+[4/36] image_only pair=4/9 valid=True correct=True parse_fail=0
+[5/36] image_only pair=5/9 valid=True correct=True parse_fail=0
+[6/36] image_only pair=6/9 valid=True correct=False parse_fail=0
+[7/36] image_only pair=7/9 valid=True correct=True parse_fail=0
+[8/36] image_only pair=8/9 valid=True correct=True parse_fail=0
+[9/36] image_only pair=9/9 valid=True correct=True parse_fail=0
+[10/36] text_plus_image pair=1/9 valid=True correct=True parse_fail=0
+[11/36] text_plus_image pair=2/9 valid=True correct=False parse_fail=0
+[12/36] text_plus_image pair=3/9 valid=True correct=True parse_fail=0
+[13/36] text_plus_image pair=4/9 valid=True correct=True parse_fail=0
+[14/36] text_plus_image pair=5/9 valid=True correct=True parse_fail=0
+[15/36] text_plus_image pair=6/9 valid=True correct=False parse_fail=0
+[16/36] text_plus_image pair=7/9 valid=False correct=False parse_fail=0
+[17/36] text_plus_image pair=8/9 valid=True correct=True parse_fail=0
+[18/36] text_plus_image pair=9/9 valid=True correct=True parse_fail=0
+[19/36] combined_labeled_image_only pair=1/9 valid=False correct=False parse_fail=1
+[20/36] combined_labeled_image_only pair=2/9 valid=True correct=True parse_fail=0
+[21/36] combined_labeled_image_only pair=3/9 valid=True correct=False parse_fail=0
+[22/36] combined_labeled_image_only pair=4/9 valid=True correct=True parse_fail=0
+[23/36] combined_labeled_image_only pair=5/9 valid=True correct=True parse_fail=0
+[24/36] combined_labeled_image_only pair=6/9 valid=False correct=False parse_fail=0
+[25/36] combined_labeled_image_only pair=7/9 valid=True correct=True parse_fail=0
+[26/36] combined_labeled_image_only pair=8/9 valid=True correct=True parse_fail=0
+[27/36] combined_labeled_image_only pair=9/9 valid=True correct=True parse_fail=0
+[28/36] combined_labeled_text_plus_image pair=1/9 valid=True correct=True parse_fail=0
+[29/36] combined_labeled_text_plus_image pair=2/9 valid=True correct=False parse_fail=0
+[30/36] combined_labeled_text_plus_image pair=3/9 valid=True correct=True parse_fail=0
+[31/36] combined_labeled_text_plus_image pair=4/9 valid=True correct=True parse_fail=0
+[32/36] combined_labeled_text_plus_image pair=5/9 valid=True correct=True parse_fail=0
+[33/36] combined_labeled_text_plus_image pair=6/9 valid=True correct=False parse_fail=0
+[34/36] combined_labeled_text_plus_image pair=7/9 valid=False correct=False parse_fail=0
+[35/36] combined_labeled_text_plus_image pair=8/9 valid=True correct=True parse_fail=0
+[36/36] combined_labeled_text_plus_image pair=9/9 valid=True correct=True parse_fail=0
+{
+  "summary": "/ANON/experiment_root/results/openai_vlm_pilot_20260708_gpt55_fixed/gpt-5.5__pilot_summary.csv",
+  "usage": "/ANON/experiment_root/results/openai_vlm_pilot_20260708_gpt55_fixed/gpt-5.5__pilot_usage.json"
+}

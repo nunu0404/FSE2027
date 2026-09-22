@@ -1,0 +1,25 @@
+{
+  "model_key": "gemma4",
+  "created_at_utc": "2026-08-30T14:41:26.873334+00:00",
+  "expected_calls": 18000,
+  "actual_calls": 18000,
+  "unique_pairs": 9000,
+  "duplicate_calls": 0,
+  "missing_pair_order_keys": 0,
+  "unexpected_pair_order_keys": 0,
+  "parse_failures": 11,
+  "missing_logits": 11,
+  "argmax_mismatches": 25,
+  "mapping_errors": 0,
+  "truncations": 11,
+  "non_exact_outputs": 137,
+  "calls_by_language_order": {
+    "cuda|AB": 3000,
+    "cuda|BA": 3000,
+    "java|AB": 3000,
+    "java|BA": 3000,
+    "python|AB": 3000,
+    "python|BA": 3000
+  },
+  "gate_pass": false
+}

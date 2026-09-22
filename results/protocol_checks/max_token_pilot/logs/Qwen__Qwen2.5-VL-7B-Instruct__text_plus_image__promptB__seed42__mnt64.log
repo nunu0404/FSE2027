@@ -1,0 +1,318 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 26921.08it/s]
+Loading weights:   0%|          | 0/729 [00:00<?, ?it/s]Loading weights:   0%|          | 1/729 [00:00<02:04,  5.86it/s]Loading weights:   0%|          | 2/729 [00:00<02:43,  4.45it/s]Loading weights:   1%|          | 6/729 [00:00<00:52, 13.72it/s]Loading weights:   2%|▏         | 18/729 [00:00<00:18, 38.93it/s]Loading weights:   4%|▍         | 30/729 [00:00<00:12, 54.80it/s]Loading weights:   6%|▌         | 42/729 [00:00<00:10, 65.36it/s]Loading weights:   7%|▋         | 53/729 [00:01<00:09, 69.50it/s]Loading weights:   9%|▉         | 65/729 [00:01<00:08, 81.48it/s]Loading weights:  11%|█         | 77/729 [00:01<00:07, 83.17it/s]Loading weights:  12%|█▏        | 88/729 [00:01<00:08, 77.38it/s]Loading weights:  14%|█▎        | 100/729 [00:01<00:07, 87.23it/s]Loading weights:  15%|█▌        | 110/729 [00:01<00:08, 69.25it/s]Loading weights:  16%|█▌        | 118/729 [00:02<00:12, 50.25it/s]Loading weights:  17%|█▋        | 125/729 [00:02<00:11, 50.84it/s]Loading weights:  19%|█▊        | 136/729 [00:02<00:10, 58.30it/s]Loading weights:  20%|█▉        | 143/729 [00:02<00:10, 56.17it/s]Loading weights:  21%|██        | 150/729 [00:02<00:11, 49.75it/s]Loading weights:  22%|██▏       | 160/729 [00:02<00:09, 58.39it/s]Loading weights:  24%|██▎       | 172/729 [00:02<00:07, 71.88it/s]Loading weights:  25%|██▍       | 181/729 [00:03<00:07, 74.76it/s]Loading weights:  26%|██▌       | 190/729 [00:03<00:07, 72.62it/s]Loading weights:  27%|██▋       | 198/729 [00:03<00:07, 68.62it/s]Loading weights:  29%|██▉       | 210/729 [00:03<00:06, 74.38it/s]Loading weights:  30%|███       | 220/729 [00:03<00:06, 80.62it/s]Loading weights:  32%|███▏      | 232/729 [00:03<00:06, 81.48it/s]Loading weights:  34%|███▎      | 245/729 [00:03<00:06, 77.61it/s]Loading weights:  35%|███▌      | 257/729 [00:03<00:05, 87.11it/s]Loading weights:  37%|███▋      | 269/729 [00:04<00:05, 86.62it/s]Loading weights:  38%|███▊      | 278/729 [00:04<00:06, 73.55it/s]Loading weights:  40%|████      | 293/729 [00:04<00:04, 90.20it/s]Loading weights:  42%|████▏     | 304/729 [00:04<00:04, 94.92it/s]Loading weights:  43%|████▎     | 315/729 [00:04<00:04, 97.67it/s]Loading weights:  45%|████▍     | 326/729 [00:04<00:04, 89.47it/s]Loading weights:  46%|████▌     | 336/729 [00:04<00:04, 85.08it/s]Loading weights:  61%|██████    | 445/729 [00:04<00:00, 334.70it/s]Loading weights:  74%|███████▍  | 538/729 [00:05<00:00, 490.70it/s]Loading weights:  85%|████████▌ | 621/729 [00:05<00:00, 580.94it/s]Loading weights:  98%|█████████▊| 713/729 [00:05<00:00, 674.72it/s]Loading weights: 100%|██████████| 729/729 [00:05<00:00, 136.97it/s]
+[1/300] valid=0 correct=0 parse_failures=0
+[2/300] valid=1 correct=1 parse_failures=0
+[3/300] valid=2 correct=2 parse_failures=0
+[4/300] valid=2 correct=2 parse_failures=0
+[5/300] valid=3 correct=3 parse_failures=0
+[6/300] valid=4 correct=3 parse_failures=0
+[7/300] valid=5 correct=3 parse_failures=0
+[8/300] valid=6 correct=3 parse_failures=0
+[9/300] valid=7 correct=4 parse_failures=0
+[10/300] valid=8 correct=5 parse_failures=0
+[11/300] valid=9 correct=6 parse_failures=0
+[12/300] valid=9 correct=6 parse_failures=0
+[13/300] valid=10 correct=7 parse_failures=0
+[14/300] valid=11 correct=7 parse_failures=0
+[15/300] valid=12 correct=8 parse_failures=0
+[16/300] valid=13 correct=9 parse_failures=0
+[17/300] valid=13 correct=9 parse_failures=0
+[18/300] valid=14 correct=9 parse_failures=0
+[19/300] valid=15 correct=9 parse_failures=0
+[20/300] valid=15 correct=9 parse_failures=0
+[21/300] valid=16 correct=10 parse_failures=0
+[22/300] valid=17 correct=10 parse_failures=0
+[23/300] valid=17 correct=10 parse_failures=0
+[24/300] valid=17 correct=10 parse_failures=0
+[25/300] valid=18 correct=10 parse_failures=0
+[26/300] valid=19 correct=11 parse_failures=0
+[27/300] valid=20 correct=12 parse_failures=0
+[28/300] valid=21 correct=13 parse_failures=0
+[29/300] valid=22 correct=13 parse_failures=0
+[30/300] valid=23 correct=14 parse_failures=0
+[31/300] valid=24 correct=15 parse_failures=0
+[32/300] valid=25 correct=16 parse_failures=0
+[33/300] valid=26 correct=16 parse_failures=0
+[34/300] valid=27 correct=17 parse_failures=0
+[35/300] valid=27 correct=17 parse_failures=0
+[36/300] valid=27 correct=17 parse_failures=0
+[37/300] valid=28 correct=18 parse_failures=0
+[38/300] valid=28 correct=18 parse_failures=0
+[39/300] valid=29 correct=19 parse_failures=0
+[40/300] valid=30 correct=20 parse_failures=0
+[41/300] valid=31 correct=21 parse_failures=0
+[42/300] valid=32 correct=22 parse_failures=0
+[43/300] valid=33 correct=23 parse_failures=0
+[44/300] valid=34 correct=23 parse_failures=0
+[45/300] valid=35 correct=24 parse_failures=0
+[46/300] valid=36 correct=24 parse_failures=0
+[47/300] valid=37 correct=24 parse_failures=0
+[48/300] valid=37 correct=24 parse_failures=0
+[49/300] valid=37 correct=24 parse_failures=0
+[50/300] valid=38 correct=25 parse_failures=0
+[51/300] valid=38 correct=25 parse_failures=0
+[52/300] valid=38 correct=25 parse_failures=0
+[53/300] valid=39 correct=25 parse_failures=0
+[54/300] valid=40 correct=25 parse_failures=0
+[55/300] valid=40 correct=25 parse_failures=0
+[56/300] valid=41 correct=26 parse_failures=0
+[57/300] valid=42 correct=26 parse_failures=0
+[58/300] valid=43 correct=27 parse_failures=0
+[59/300] valid=44 correct=27 parse_failures=0
+[60/300] valid=45 correct=28 parse_failures=0
+[61/300] valid=45 correct=28 parse_failures=0
+[62/300] valid=46 correct=29 parse_failures=0
+[63/300] valid=47 correct=30 parse_failures=0
+[64/300] valid=48 correct=31 parse_failures=0
+[65/300] valid=49 correct=32 parse_failures=0
+[66/300] valid=50 correct=32 parse_failures=0
+[67/300] valid=50 correct=32 parse_failures=0
+[68/300] valid=50 correct=32 parse_failures=0
+[69/300] valid=50 correct=32 parse_failures=0
+[70/300] valid=50 correct=32 parse_failures=0
+[71/300] valid=51 correct=33 parse_failures=0
+[72/300] valid=52 correct=34 parse_failures=0
+[73/300] valid=53 correct=34 parse_failures=0
+[74/300] valid=53 correct=34 parse_failures=0
+[75/300] valid=54 correct=35 parse_failures=0
+[76/300] valid=55 correct=35 parse_failures=0
+[77/300] valid=56 correct=36 parse_failures=0
+[78/300] valid=57 correct=37 parse_failures=0
+[79/300] valid=58 correct=38 parse_failures=0
+[80/300] valid=59 correct=39 parse_failures=0
+[81/300] valid=60 correct=39 parse_failures=0
+[82/300] valid=61 correct=40 parse_failures=0
+[83/300] valid=62 correct=40 parse_failures=0
+[84/300] valid=63 correct=41 parse_failures=0
+[85/300] valid=64 correct=41 parse_failures=0
+[86/300] valid=64 correct=41 parse_failures=0
+[87/300] valid=64 correct=41 parse_failures=0
+[88/300] valid=65 correct=41 parse_failures=0
+[89/300] valid=65 correct=41 parse_failures=0
+[90/300] valid=65 correct=41 parse_failures=0
+[91/300] valid=66 correct=42 parse_failures=0
+[92/300] valid=66 correct=42 parse_failures=0
+[93/300] valid=67 correct=42 parse_failures=0
+[94/300] valid=68 correct=42 parse_failures=0
+[95/300] valid=69 correct=42 parse_failures=0
+[96/300] valid=70 correct=42 parse_failures=0
+[97/300] valid=71 correct=42 parse_failures=0
+[98/300] valid=71 correct=42 parse_failures=0
+[99/300] valid=71 correct=42 parse_failures=0
+[100/300] valid=72 correct=42 parse_failures=0
+[101/300] valid=73 correct=43 parse_failures=0
+[102/300] valid=74 correct=43 parse_failures=0
+[103/300] valid=75 correct=43 parse_failures=0
+[104/300] valid=76 correct=44 parse_failures=0
+[105/300] valid=77 correct=45 parse_failures=0
+[106/300] valid=78 correct=46 parse_failures=0
+[107/300] valid=79 correct=47 parse_failures=0
+[108/300] valid=80 correct=48 parse_failures=0
+[109/300] valid=81 correct=49 parse_failures=0
+[110/300] valid=82 correct=50 parse_failures=0
+[111/300] valid=83 correct=51 parse_failures=0
+[112/300] valid=84 correct=52 parse_failures=0
+[113/300] valid=84 correct=52 parse_failures=0
+[114/300] valid=85 correct=53 parse_failures=0
+[115/300] valid=86 correct=54 parse_failures=0
+[116/300] valid=87 correct=55 parse_failures=0
+[117/300] valid=88 correct=56 parse_failures=0
+[118/300] valid=89 correct=57 parse_failures=0
+[119/300] valid=89 correct=57 parse_failures=0
+[120/300] valid=90 correct=58 parse_failures=0
+[121/300] valid=91 correct=58 parse_failures=0
+[122/300] valid=91 correct=58 parse_failures=0
+[123/300] valid=92 correct=59 parse_failures=0
+[124/300] valid=92 correct=59 parse_failures=0
+[125/300] valid=93 correct=60 parse_failures=0
+[126/300] valid=94 correct=60 parse_failures=0
+[127/300] valid=95 correct=61 parse_failures=0
+[128/300] valid=96 correct=62 parse_failures=0
+[129/300] valid=97 correct=63 parse_failures=0
+[130/300] valid=98 correct=63 parse_failures=0
+[131/300] valid=99 correct=63 parse_failures=0
+[132/300] valid=100 correct=64 parse_failures=0
+[133/300] valid=101 correct=65 parse_failures=0
+[134/300] valid=102 correct=65 parse_failures=0
+[135/300] valid=102 correct=65 parse_failures=0
+[136/300] valid=103 correct=66 parse_failures=0
+[137/300] valid=103 correct=66 parse_failures=0
+[138/300] valid=103 correct=66 parse_failures=0
+[139/300] valid=103 correct=66 parse_failures=0
+[140/300] valid=104 correct=67 parse_failures=0
+[141/300] valid=105 correct=67 parse_failures=0
+[142/300] valid=105 correct=67 parse_failures=0
+[143/300] valid=106 correct=68 parse_failures=0
+[144/300] valid=106 correct=68 parse_failures=0
+[145/300] valid=107 correct=68 parse_failures=0
+[146/300] valid=108 correct=69 parse_failures=0
+[147/300] valid=109 correct=70 parse_failures=0
+[148/300] valid=110 correct=70 parse_failures=0
+[149/300] valid=110 correct=70 parse_failures=0
+[150/300] valid=111 correct=71 parse_failures=0
+[151/300] valid=112 correct=72 parse_failures=0
+[152/300] valid=113 correct=72 parse_failures=0
+[153/300] valid=114 correct=72 parse_failures=0
+[154/300] valid=114 correct=72 parse_failures=0
+[155/300] valid=115 correct=72 parse_failures=0
+[156/300] valid=116 correct=73 parse_failures=0
+[157/300] valid=117 correct=73 parse_failures=0
+[158/300] valid=118 correct=74 parse_failures=0
+[159/300] valid=119 correct=74 parse_failures=0
+[160/300] valid=120 correct=74 parse_failures=0
+[161/300] valid=121 correct=74 parse_failures=0
+[162/300] valid=121 correct=74 parse_failures=0
+[163/300] valid=122 correct=75 parse_failures=0
+[164/300] valid=123 correct=75 parse_failures=0
+[165/300] valid=124 correct=76 parse_failures=0
+[166/300] valid=125 correct=77 parse_failures=0
+[167/300] valid=126 correct=77 parse_failures=0
+[168/300] valid=127 correct=77 parse_failures=0
+[169/300] valid=127 correct=77 parse_failures=0
+[170/300] valid=128 correct=78 parse_failures=0
+[171/300] valid=129 correct=79 parse_failures=0
+[172/300] valid=130 correct=79 parse_failures=0
+[173/300] valid=130 correct=79 parse_failures=0
+[174/300] valid=130 correct=79 parse_failures=0
+[175/300] valid=131 correct=80 parse_failures=0
+[176/300] valid=132 correct=80 parse_failures=0
+[177/300] valid=133 correct=80 parse_failures=0
+[178/300] valid=133 correct=80 parse_failures=0
+[179/300] valid=134 correct=81 parse_failures=0
+[180/300] valid=135 correct=82 parse_failures=0
+[181/300] valid=136 correct=82 parse_failures=0
+[182/300] valid=137 correct=83 parse_failures=0
+[183/300] valid=138 correct=83 parse_failures=0
+[184/300] valid=138 correct=83 parse_failures=0
+[185/300] valid=139 correct=84 parse_failures=0
+[186/300] valid=140 correct=85 parse_failures=0
+[187/300] valid=141 correct=85 parse_failures=0
+[188/300] valid=142 correct=86 parse_failures=0
+[189/300] valid=143 correct=86 parse_failures=0
+[190/300] valid=143 correct=86 parse_failures=0
+[191/300] valid=144 correct=87 parse_failures=0
+[192/300] valid=145 correct=88 parse_failures=0
+[193/300] valid=145 correct=88 parse_failures=0
+[194/300] valid=146 correct=89 parse_failures=0
+[195/300] valid=146 correct=89 parse_failures=0
+[196/300] valid=146 correct=89 parse_failures=0
+[197/300] valid=147 correct=90 parse_failures=0
+[198/300] valid=148 correct=91 parse_failures=0
+[199/300] valid=148 correct=91 parse_failures=0
+[200/300] valid=149 correct=92 parse_failures=0
+[201/300] valid=150 correct=93 parse_failures=0
+[202/300] valid=151 correct=93 parse_failures=0
+[203/300] valid=151 correct=93 parse_failures=0
+[204/300] valid=152 correct=94 parse_failures=0
+[205/300] valid=153 correct=94 parse_failures=0
+[206/300] valid=154 correct=94 parse_failures=0
+[207/300] valid=155 correct=95 parse_failures=0
+[208/300] valid=156 correct=96 parse_failures=0
+[209/300] valid=157 correct=97 parse_failures=0
+[210/300] valid=157 correct=97 parse_failures=0
+[211/300] valid=158 correct=97 parse_failures=0
+[212/300] valid=159 correct=97 parse_failures=0
+[213/300] valid=160 correct=97 parse_failures=0
+[214/300] valid=160 correct=97 parse_failures=0
+[215/300] valid=161 correct=97 parse_failures=0
+[216/300] valid=162 correct=98 parse_failures=0
+[217/300] valid=163 correct=98 parse_failures=0
+[218/300] valid=164 correct=99 parse_failures=0
+[219/300] valid=164 correct=99 parse_failures=0
+[220/300] valid=165 correct=100 parse_failures=0
+[221/300] valid=165 correct=100 parse_failures=0
+[222/300] valid=166 correct=100 parse_failures=0
+[223/300] valid=167 correct=101 parse_failures=0
+[224/300] valid=168 correct=102 parse_failures=0
+[225/300] valid=169 correct=102 parse_failures=0
+[226/300] valid=170 correct=102 parse_failures=0
+[227/300] valid=171 correct=102 parse_failures=0
+[228/300] valid=172 correct=102 parse_failures=0
+[229/300] valid=173 correct=103 parse_failures=0
+[230/300] valid=174 correct=104 parse_failures=0
+[231/300] valid=175 correct=105 parse_failures=0
+[232/300] valid=176 correct=106 parse_failures=0
+[233/300] valid=177 correct=107 parse_failures=0
+[234/300] valid=178 correct=108 parse_failures=0
+[235/300] valid=179 correct=108 parse_failures=0
+[236/300] valid=180 correct=109 parse_failures=0
+[237/300] valid=181 correct=110 parse_failures=0
+[238/300] valid=182 correct=111 parse_failures=0
+[239/300] valid=183 correct=111 parse_failures=0
+[240/300] valid=184 correct=111 parse_failures=0
+[241/300] valid=185 correct=111 parse_failures=0
+[242/300] valid=186 correct=111 parse_failures=0
+[243/300] valid=187 correct=112 parse_failures=0
+[244/300] valid=187 correct=112 parse_failures=0
+[245/300] valid=188 correct=113 parse_failures=0
+[246/300] valid=188 correct=113 parse_failures=0
+[247/300] valid=189 correct=114 parse_failures=0
+[248/300] valid=190 correct=115 parse_failures=0
+[249/300] valid=191 correct=115 parse_failures=0
+[250/300] valid=192 correct=115 parse_failures=0
+[251/300] valid=192 correct=115 parse_failures=0
+[252/300] valid=193 correct=115 parse_failures=0
+[253/300] valid=194 correct=116 parse_failures=0
+[254/300] valid=195 correct=117 parse_failures=0
+[255/300] valid=195 correct=117 parse_failures=0
+[256/300] valid=196 correct=117 parse_failures=0
+[257/300] valid=197 correct=118 parse_failures=0
+[258/300] valid=198 correct=118 parse_failures=0
+[259/300] valid=199 correct=118 parse_failures=0
+[260/300] valid=199 correct=118 parse_failures=0
+[261/300] valid=199 correct=118 parse_failures=0
+[262/300] valid=199 correct=118 parse_failures=0
+[263/300] valid=200 correct=119 parse_failures=0
+[264/300] valid=201 correct=119 parse_failures=0
+[265/300] valid=202 correct=120 parse_failures=0
+[266/300] valid=203 correct=121 parse_failures=0
+[267/300] valid=204 correct=122 parse_failures=0
+[268/300] valid=205 correct=123 parse_failures=0
+[269/300] valid=206 correct=123 parse_failures=0
+[270/300] valid=207 correct=124 parse_failures=0
+[271/300] valid=207 correct=124 parse_failures=0
+[272/300] valid=208 correct=124 parse_failures=0
+[273/300] valid=209 correct=125 parse_failures=0
+[274/300] valid=210 correct=126 parse_failures=0
+[275/300] valid=211 correct=127 parse_failures=0
+[276/300] valid=211 correct=127 parse_failures=0
+[277/300] valid=212 correct=127 parse_failures=0
+[278/300] valid=213 correct=127 parse_failures=0
+[279/300] valid=214 correct=127 parse_failures=0
+[280/300] valid=215 correct=128 parse_failures=0
+[281/300] valid=216 correct=129 parse_failures=0
+[282/300] valid=217 correct=130 parse_failures=0
+[283/300] valid=218 correct=131 parse_failures=0
+[284/300] valid=218 correct=131 parse_failures=0
+[285/300] valid=219 correct=131 parse_failures=0
+[286/300] valid=220 correct=132 parse_failures=0
+[287/300] valid=221 correct=133 parse_failures=0
+[288/300] valid=222 correct=133 parse_failures=0
+[289/300] valid=222 correct=133 parse_failures=0
+[290/300] valid=222 correct=133 parse_failures=0
+[291/300] valid=222 correct=133 parse_failures=0
+[292/300] valid=223 correct=133 parse_failures=0
+[293/300] valid=223 correct=133 parse_failures=0
+[294/300] valid=224 correct=133 parse_failures=0
+[295/300] valid=224 correct=133 parse_failures=0
+[296/300] valid=225 correct=133 parse_failures=0
+[297/300] valid=226 correct=134 parse_failures=0
+[298/300] valid=227 correct=134 parse_failures=0
+[299/300] valid=228 correct=134 parse_failures=0
+[300/300] valid=229 correct=135 parse_failures=0
+{
+  "model": "Qwen/Qwen2.5-VL-7B-Instruct",
+  "model_kind": "vlm",
+  "input_setting": "text_plus_image",
+  "prompt_variant": "B",
+  "seed": 42,
+  "all_pairs": 300,
+  "valid_pairs": 229,
+  "correct_pairs": 135,
+  "accuracy_on_valid_pairs": 0.5895196506550219,
+  "effective_accuracy": 0.45,
+  "strict_swap_error_rate": 0.23666666666666666,
+  "parse_failure_rate": 0.0,
+  "nvidia_smi_after": "0, NVIDIA RTX PRO 6000 Blackwell Server Edition, 18813 MiB, 97887 MiB, 51 %\n1, NVIDIA RTX PRO 6000 Blackwell Server Edition, 95551 MiB, 97887 MiB, 96 %\n"
+}

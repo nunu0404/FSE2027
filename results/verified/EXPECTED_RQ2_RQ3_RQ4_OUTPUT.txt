@@ -1,0 +1,104 @@
+
+RQ2  Rendering grid and perturbations (Figure 8)
+------------------------------------------------
+  condition labels in A_B_PAIR_LEVEL.csv                          18    (paper 17 unique + 1 duplicate)
+  baseline == monokai_dark__fs20__wrap80__lnon                  True    (paper: exact duplicate)
+  wrap 60->80, factorial dE                                   +1.65..  +5.35  (paper +1.7..+5.4)  OK
+  wrap 60->80, factorial dS                                  -14.25..  -2.80  (paper -14.2..-2.8)  OK
+  font 20->24, factorial dE                                   +0.50..  +3.55  (paper +0.5..+3.6)  OK
+  baseline-relative contrasts significant after Holm              22 / 66  (paper 22 / 66)  OK
+  Fig 8(a) InternVL3-8B wrap dE                               +0.90..  +4.20  (paper +0.9..+4.2)  OK
+  Fig 8(a) InternVL3-8B wrap dS                              -12.10..  -0.10  (paper -12.1..-0.1)  OK
+  Fig 8(a) Qwen2.5-VL-7B wrap dE                              -2.30..  +1.30  (paper -2.3..+1.3)  OK
+  Fig 8(a) Qwen2.5-VL-7B wrap dS                              -1.10..  +4.10  (paper -1.1..+4.1)  OK
+  Fig 8(a) Gemma-3-12B wrap dE                                +0.70..  +1.60  (paper +0.7..+1.6)  OK
+  Fig 8(a) Gemma-3-12B wrap dS                                -4.50..  -0.80  (paper -4.5..-0.8)  OK
+  Fig 8(a) Gemma4-12B wrap dE                                 -0.00..  +1.20  (paper -0.0..+1.2)  OK
+  Fig 8(a) Gemma4-12B wrap dS                                 -1.70..  +0.70  (paper -1.7..+0.7)  OK
+  Fig 8(a) InternVL3.5-8B wrap dE                             +4.00..  +7.30  (paper +4.0..+7.3)  OK
+  Fig 8(a) InternVL3.5-8B wrap dS                             -9.80..  -6.20  (paper -9.8..-6.2)  OK
+  Fig 8(b) Qwen2.5-VL-7B-Instru cuda dValidAcc (n=1000)         1.58pp  (paper    1.60pp)  OK
+  Fig 8(b) Qwen2.5-VL-7B-Instru java dValidAcc (n=89)          -0.03pp  (paper   -0.03pp)  OK
+  Fig 8(b) Qwen2.5-VL-7B-Instru python dValidAcc (n=1000)      -1.05pp  (paper   -1.10pp)  OK
+  Fig 8(b) InternVL3-8B cuda dValidAcc (n=1000)                -2.58pp  (paper   -2.60pp)  OK
+  Fig 8(b) InternVL3-8B java dValidAcc (n=89)                  -2.90pp  (paper   -2.90pp)  OK
+  Fig 8(b) InternVL3-8B python dValidAcc (n=1000)               3.06pp  (paper    3.10pp)  OK
+  indentation removal, dE over 4 above-chance judges          +1.83..  +2.80  (paper +1.8..+2.8)  OK
+  Fig 8(c) Qwen java E, baseline                               33.10%  (paper   33.10%)  OK
+  Fig 8(c) Qwen java E, blur 4                                 19.50%  (paper   19.50%)  OK
+  Fig 8(c) InternVL3 cuda S, baseline                          69.40%  (paper   69.40%)  OK
+  Fig 8(c) InternVL3 cuda S, blur 4                            36.20%  (paper   36.20%)  OK
+  model-language groups with order > rendering                    15 / 15  (paper 15 / 15)  OK
+  encoder top-1 retrieval, InternVL3-8B                      +72.22.. +89.46  (paper +72.2..+89.5)  OK
+  encoder top-1 retrieval, Qwen2.5-VL-7B                     +92.22.. +98.82  (paper +92.2..+98.8)  OK
+  held-out isotonic AUC over 5 diagnostic judges              +0.52..  +0.63  (paper +0.52..+0.63)  OK
+
+RQ3  Content versus appearance (Figure 10)
+------------------------------------------
+  Fig 10 golden/beautiful_trash InternVL3-8B pref              91.67%  (paper   91.70%)  OK
+  Fig 10 golden/beautiful_trash InternVL3-8B S                  8.33%  (paper    8.30%)  OK
+  Fig 10 golden/ugly_trash InternVL3-8B pref                   99.00%  (paper   99.00%)  OK
+  Fig 10 golden/ugly_trash InternVL3-8B S                       1.00%  (paper    1.00%)  OK
+  Fig 10 ugly_gold/ugly_trash InternVL3-8B pref                97.67%  (paper   97.70%)  OK
+  Fig 10 ugly_gold/ugly_trash InternVL3-8B S                    2.00%  (paper    2.00%)  OK
+  Fig 10 ugly_gold/beautiful_trash InternVL3-8B pref           82.00%  (paper   82.00%)  OK
+  Fig 10 ugly_gold/beautiful_trash InternVL3-8B S              17.33%  (paper   17.30%)  OK
+  Fig 10 golden/ugly_gold InternVL3-8B pref                    57.33%  (paper   57.30%)  OK
+  Fig 10 golden/ugly_gold InternVL3-8B S                       39.67%  (paper   39.70%)  OK
+  Fig 10 beautiful_trash/ugly_trash InternVL3-8B pref          60.33%  (paper   60.30%)  OK
+  Fig 10 beautiful_trash/ugly_trash InternVL3-8B S             36.67%  (paper   36.70%)  OK
+  Fig 10 golden/beautiful_trash Qwen2.5-VL-7B- pref            98.33%  (paper   98.30%)  OK
+  Fig 10 golden/beautiful_trash Qwen2.5-VL-7B- S                1.67%  (paper    1.70%)  OK
+  Fig 10 golden/ugly_trash Qwen2.5-VL-7B- pref                 97.67%  (paper   97.70%)  OK
+  Fig 10 golden/ugly_trash Qwen2.5-VL-7B- S                     2.33%  (paper    2.30%)  OK
+  Fig 10 ugly_gold/ugly_trash Qwen2.5-VL-7B- pref              94.00%  (paper   94.00%)  OK
+  Fig 10 ugly_gold/ugly_trash Qwen2.5-VL-7B- S                  6.00%  (paper    6.00%)  OK
+  Fig 10 ugly_gold/beautiful_trash Qwen2.5-VL-7B- pref         91.67%  (paper   91.70%)  OK
+  Fig 10 ugly_gold/beautiful_trash Qwen2.5-VL-7B- S             8.33%  (paper    8.30%)  OK
+  Fig 10 golden/ugly_gold Qwen2.5-VL-7B- pref                  56.00%  (paper   56.00%)  OK
+  Fig 10 golden/ugly_gold Qwen2.5-VL-7B- S                     43.33%  (paper   43.30%)  OK
+  Fig 10 beautiful_trash/ugly_trash Qwen2.5-VL-7B- pref         8.33%  (paper    8.30%)  OK
+  Fig 10 beautiful_trash/ugly_trash Qwen2.5-VL-7B- S           91.67%  (paper   91.70%)  OK
+  RQ3 pairs with a parse failure                                   0     (paper 0, all 7,200 calls parsed)
+  key-conflict conditional preference                        +99.19..+100.00  (paper +99.2..+100.0)  OK
+  key conflict by language, InternVL3-8B                     +66.00.. +91.00  (paper +66.0..+91.0)  OK
+  key conflict by language, Qwen2.5-VL-7B                    +89.00.. +94.00  (paper +89.0..+94.0)  OK
+
+RQ4  Image-only pipeline comparison (Table 3)
+---------------------------------------------
+  Table 3(a) frozen RF, source features                        62.33%  (paper   62.33%)  OK
+  Table 3(a) frozen RF, RapidOCR                               51.87%  (paper   51.87%)  OK
+  Table 3(a) frozen RF, EasyOCR                                48.23%  (paper   48.23%)  OK
+  Table 3(a) frozen RF, EasyOCR preprocessed                   51.73%  (paper   51.73%)  OK
+  Table 3(b) direct Qwen D, java                               57.17%  (paper   57.17%)  OK
+  Table 3(b) RapidOCR+Coder D, java                            50.10%  (paper   50.10%)  OK
+  Table 3(b) direct Qwen D, python                             63.07%  (paper   63.07%)  OK
+  Table 3(b) RapidOCR+Coder D, python                          55.60%  (paper   55.60%)  OK
+  Table 3(b) direct Qwen D, cuda                               65.57%  (paper   65.57%)  OK
+  Table 3(b) RapidOCR+Coder D, cuda                            54.33%  (paper   54.33%)  OK
+  Table 3(b) RapidOCR+Coder E (strict), java                   28.47%  (paper   28.47%)  OK
+  Table 3(b) RapidOCR+Coder E (strict), python                  9.87%  (paper    9.87%)  OK
+  Table 3(b) RapidOCR+Coder E (strict), cuda                   21.57%  (paper   21.57%)  OK
+  Table 3(b) direct - OCR+ML, java                              4.20pp  (paper    4.20pp)  OK
+  Table 3(b) direct - OCR+ML, python                            3.53pp  (paper    3.53pp)  OK
+  Table 3(b) direct - OCR+ML, cuda                              4.83pp  (paper    4.83pp)  OK
+    note: the CUDA row above compares against RapidOCR+LR (60.73). Table 3(b)'s
+    CUDA comparator is EasyOCR+LR (61.37), giving +4.20 pp and [-2.6, +11.0];
+    see figures_and_tables/tab03_rq4/recomputed_intervals.csv.
+  Table 3(c) text_only_source E                                44.78%  (paper   44.78%)  OK
+  Table 3(c) text_only_source A_valid                          58.04%  (paper   58.04%)  OK
+  Table 3(c) text_only_source S                                22.86%  (paper   22.86%)  OK
+  Table 3(c) text_only_source D (ties as errors)               56.30%  (paper   56.30%)  OK
+  Table 3(c) text_only_ocr E                                   27.96%  (paper   27.96%)  OK
+  Table 3(c) text_only_ocr A_valid                             54.76%  (paper   54.76%)  OK
+  Table 3(c) text_only_ocr S                                   48.94%  (paper   48.94%)  OK
+  Table 3(c) text_only_ocr D (ties as errors)                  52.58%  (paper   52.58%)  OK
+  Table 3(c) images only E                                     41.30%  (paper   41.30%)  OK
+  Table 3(c) images only A_valid                               68.35%  (paper   68.35%)  OK
+  Table 3(c) images only S                                     39.58%  (paper   39.58%)  OK
+  Table 3(c) images only D (mean of per-language D_main)       61.93%  (paper   61.93%)  OK
+  source E minus OCR E                                         16.82pp  (paper   16.82pp)  OK
+  source E minus images E                                       3.48pp  (paper    3.48pp)  OK
+  images E minus OCR E                                         13.34pp  (paper   13.34pp)  OK
+
+All RQ2, RQ3 and RQ4 checks reproduce the manuscript.

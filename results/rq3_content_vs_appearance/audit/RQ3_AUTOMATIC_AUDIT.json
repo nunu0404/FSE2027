@@ -1,0 +1,49 @@
+{
+  "bases": 300,
+  "bases_by_language": {
+    "cuda": 100,
+    "java": 100,
+    "python": 100
+  },
+  "strata": {
+    "cuda/high": 33,
+    "cuda/low": 34,
+    "cuda/mid": 33,
+    "java/high": 33,
+    "java/low": 34,
+    "java/mid": 33,
+    "python/high": 33,
+    "python/low": 34,
+    "python/mid": 33
+  },
+  "sources": 600,
+  "images": 1200,
+  "contrasts": 1800,
+  "unique_base_variant_keys": true,
+  "missing_images": 0,
+  "image_hash_errors": 0,
+  "dimension_or_row_height_errors": 0,
+  "blank_images": 0,
+  "pair_source_hash_mismatches": 0,
+  "original_identifier_cue_residual_bases": 0,
+  "nonopaque_comment_residual_bases": 0,
+  "parse_error_increases": 0,
+  "minimum_mutation_families": 2,
+  "mutation_count_min": 5,
+  "mutation_count_median": 55.5,
+  "mutation_count_max": 333,
+  "contrast_complete_bases": 300,
+  "review_items": 60,
+  "review_by_language": {
+    "cuda": 20,
+    "java": 20,
+    "python": 20
+  },
+  "contact_sheets": [
+    "results/grounded_protocol_3lang_20260721/rq3/audit/contact_rq3_cuda.png",
+    "results/grounded_protocol_3lang_20260721/rq3/audit/contact_rq3_java.png",
+    "results/grounded_protocol_3lang_20260721/rq3/audit/contact_rq3_python.png"
+  ],
+  "author_semantic_gate": "pending",
+  "automatic_gate_pass": true
+}

@@ -1,0 +1,23 @@
+{
+  "created_at_utc": "2026-08-31T06:18:19.768505+00:00",
+  "analysis_script_sha256": "d0f9fe1a11f0564f21a548259fb2845c5324d4a59354664a18b0bc726f53f7cf",
+  "package_git_commit": "ac0ab27b1428ec9919f2b1020aa64b321bfd0ed1",
+  "models": [
+    "qwen3",
+    "internvl3_5",
+    "gemma4"
+  ],
+  "pairs_per_model": 9000,
+  "calls_per_model": 18000,
+  "historical_outputs_rerun": false,
+  "historical_metrics_reproduced": false,
+  "predecessor_comparison_source": "results/rq1_model_battery_3lang_20260723/analysis/full/pair_level_results.csv",
+  "tie_rule": "c=0 is incorrect for primary two-order-averaged accuracy",
+  "bc_rule": "strict_valid iff abs(c)>abs(b); zero empirical violations required",
+  "bc_rule_violations": 0,
+  "inference_manifests": {
+    "qwen3": "inference/full/qwen3/manifest.json",
+    "internvl3_5": "inference/full/internvl3_5/manifest.json",
+    "gemma4": "inference/full/gemma4/manifest.json"
+  }
+}

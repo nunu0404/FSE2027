@@ -1,0 +1,22 @@
+reasoning_effort  max_output_tokens       condition  pairs  valid_pairs  correct_pairs  valid_accuracy  effective_accuracy  strict_swap_error  parse_failure_rate  incomplete_rate  empty_output_rate  spearman_valid_only  input_tokens  output_tokens  reasoning_tokens  mean_output_tokens_per_call  mean_reasoning_tokens_per_call  p95_reasoning_tokens_per_call  max_reasoning_tokens_per_call  mean_latency_sec  p95_latency_sec  estimated_cost_usd
+            high                256      image_only     90           19             14        0.736842            0.155556           0.788889            0.588889         0.600000           0.566667             0.131762        173540          41620             40767                   231.222222                      226.483333                         256.00                          256.0          3.230862         4.733306            1.058150
+            high                256 text_plus_image     90           48             35        0.729167            0.388889           0.466667            0.200000         0.200000           0.188889             0.500205        216010          28390             26788                   157.722222                      148.822222                         256.00                          256.0          3.048006         4.829563            0.965875
+            high               4096      image_only     90           79             51        0.645570            0.566667           0.122222            0.000000         0.000000           0.000000             0.340577        173540          61729             59749                   342.938889                      331.938889                         972.50                         1273.0          5.420571        10.306530            1.359785
+            high               4096 text_plus_image     90           72             53        0.736111            0.588889           0.200000            0.000000         0.000000           0.000000             0.508201        216010          35936             33956                   199.644444                      188.644444                         457.15                          951.0          4.084944        15.668534            1.079065
+             low                256      image_only     90           76             45        0.592105            0.500000           0.155556            0.005556         0.005556           0.005556             0.238720        173540          12530             10561                    69.611111                       58.672222                         130.25                          256.0          2.045853         3.447185            0.621800
+             low                256 text_plus_image     90           67             44        0.656716            0.488889           0.255556            0.000000         0.000000           0.000000             0.391097        216010          11452              9472                    63.622222                       52.622222                         101.05                          177.0          2.409073         3.164164            0.711805
+             low               4096      image_only     90           71             41        0.577465            0.455556           0.211111            0.000000         0.000000           0.000000             0.172398        173540          12986             11006                    72.144444                       61.144444                         121.20                          255.0          2.096031         3.089613            0.628640
+             low               4096 text_plus_image     90           71             47        0.661972            0.522222           0.211111            0.000000         0.000000           0.000000             0.408951        216010          12272             10292                    68.177778                       57.177778                         112.05                          208.0          2.600195         4.356540            0.724105
+{
+  "pairs_per_cell": 90,
+  "pair_condition_rows": 720,
+  "api_calls": 1440,
+  "input_tokens": 1558200,
+  "output_tokens": 216915,
+  "reasoning_tokens": 202591,
+  "incomplete_calls": 145,
+  "empty_output_calls": 137,
+  "estimated_cost_usd": 7.149225,
+  "first_created_at_utc": "2026-07-09T05:41:32.430866+00:00",
+  "last_created_at_utc": "2026-07-09T06:56:21.015459+00:00"
+}

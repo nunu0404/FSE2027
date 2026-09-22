@@ -1,0 +1,13 @@
+{
+  "pairs_per_cell": 90,
+  "pair_condition_rows": 720,
+  "api_calls": 1440,
+  "input_tokens": 1558200,
+  "output_tokens": 216915,
+  "reasoning_tokens": 202591,
+  "incomplete_calls": 145,
+  "empty_output_calls": 137,
+  "estimated_cost_usd": 7.149225,
+  "first_created_at_utc": "2026-07-09T05:41:32.430866+00:00",
+  "last_created_at_utc": "2026-07-09T06:56:21.015459+00:00"
+}

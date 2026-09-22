@@ -1,0 +1,106 @@
+2026-09-10 04:13:55.149580: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-09-10 04:13:55.190443: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 AVX512_FP16 AVX_VNNI AMX_TILE AMX_INT8 AMX_BF16 AMX_FP16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-09-10 04:13:56.374832: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. Note that this behavior will be extended to all models in a future release.
+`torch_dtype` is deprecated! Use `dtype` instead!
+[UNIT-TEST] Running unit tests...
+  [PASS] Parser tests passed.
+  [PASS] Choice mapping tests passed.
+  [PASS] Strict-swap logic tests passed.
+[UNIT-TEST] All unit tests PASSED successfully!
+
+============================================================
+STARTING 10-PAIR SMOKE TEST ACROSS 3 MODELS
+============================================================
+Loaded 10 smoke test pairs:
+  full_rq0_seed42__rq0_0072__rq0_0291 (diff: easy, pref: rq0_0072)
+  full_rq0_seed42__rq0_0060__rq0_0168 (diff: medium, pref: rq0_0168)
+  full_rq0_seed42__rq0_0086__rq0_0255 (diff: hard, pref: rq0_0255)
+  full_rq0_seed42__rq0_0013__rq0_0052 (diff: easy, pref: rq0_0052)
+  full_rq0_seed42__rq0_0217__rq0_0286 (diff: medium, pref: rq0_0286)
+  full_rq0_seed42__rq0_0179__rq0_0263 (diff: hard, pref: rq0_0179)
+  full_rq0_seed42__rq0_0005__rq0_0022 (diff: easy, pref: rq0_0022)
+  full_rq0_seed42__rq0_0027__rq0_0032 (diff: medium, pref: rq0_0032)
+  full_rq0_seed42__rq0_0007__rq0_0127 (diff: hard, pref: rq0_0007)
+  full_rq0_seed42__rq0_0145__rq0_0240 (diff: easy, pref: rq0_0240)
+[Qwen2.5-VL-32B-Instruct] Initializing on GPU 0...
+[Qwen2.5-VL-32B-Instruct] Loading weights in bfloat16...
+Loading checkpoint shards:   0%|          | 0/18 [00:00<?, ?it/s]Loading checkpoint shards:   6%|▌         | 1/18 [00:00<00:13,  1.23it/s]Loading checkpoint shards:  11%|█         | 2/18 [00:02<00:20,  1.28s/it]Loading checkpoint shards:  17%|█▋        | 3/18 [00:03<00:19,  1.28s/it]Loading checkpoint shards:  22%|██▏       | 4/18 [00:04<00:15,  1.09s/it]Loading checkpoint shards:  28%|██▊       | 5/18 [00:05<00:13,  1.03s/it]Loading checkpoint shards:  33%|███▎      | 6/18 [00:06<00:13,  1.10s/it]Loading checkpoint shards:  39%|███▉      | 7/18 [00:08<00:13,  1.19s/it]Loading checkpoint shards:  44%|████▍     | 8/18 [00:09<00:12,  1.28s/it]Loading checkpoint shards:  50%|█████     | 9/18 [00:10<00:11,  1.31s/it]Loading checkpoint shards:  56%|█████▌    | 10/18 [00:12<00:10,  1.30s/it]Loading checkpoint shards:  61%|██████    | 11/18 [00:13<00:08,  1.28s/it]Loading checkpoint shards:  67%|██████▋   | 12/18 [00:14<00:07,  1.22s/it]Loading checkpoint shards:  72%|███████▏  | 13/18 [00:15<00:05,  1.07s/it]Loading checkpoint shards:  78%|███████▊  | 14/18 [00:16<00:04,  1.01s/it]Loading checkpoint shards:  83%|████████▎ | 15/18 [00:16<00:02,  1.05it/s]Loading checkpoint shards:  89%|████████▉ | 16/18 [00:17<00:01,  1.06it/s]Loading checkpoint shards:  94%|█████████▍| 17/18 [00:18<00:00,  1.01it/s]Loading checkpoint shards: 100%|██████████| 18/18 [00:19<00:00,  1.03it/s]Loading checkpoint shards: 100%|██████████| 18/18 [00:19<00:00,  1.10s/it]
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+[Qwen2.5-VL-32B-Instruct] Model loaded. VRAM allocated: 62.31 GB
+[Qwen2.5-VL-32B-Instruct] Found 20 previously completed calls.
+[Qwen2.5-VL-32B-Instruct] Starting inference on 10 pairs (20 calls)...
+[Qwen2.5-VL-32B-Instruct] Cleaning up model from GPU 0...
+[Qwen2.5-VL-32B-Instruct] Cleanup complete. Remaining VRAM: 0.00 GB
+[Qwen2.5-VL-32B-Instruct] Finished all calls. Saved to /ANON/experiment_root/results/large_model_cross_family_3model_300java_20260910/smoke_test/qwen_smoke_raw.jsonl.
+
+[SMOKE-TEST] qwen parse failure rate: 0.0% (0/20)
+[gemma-3-27b-it] Initializing on GPU 0...
+[gemma-3-27b-it] Loading weights in bfloat16...
+Loading checkpoint shards:   0%|          | 0/12 [00:00<?, ?it/s]Loading checkpoint shards:   8%|▊         | 1/12 [00:03<00:38,  3.48s/it]Loading checkpoint shards:  17%|█▋        | 2/12 [00:06<00:34,  3.41s/it]Loading checkpoint shards:  25%|██▌       | 3/12 [00:10<00:30,  3.40s/it]Loading checkpoint shards:  33%|███▎      | 4/12 [00:13<00:27,  3.41s/it]Loading checkpoint shards:  42%|████▏     | 5/12 [00:16<00:22,  3.26s/it]Loading checkpoint shards:  50%|█████     | 6/12 [00:19<00:19,  3.28s/it]Loading checkpoint shards:  58%|█████▊    | 7/12 [00:21<00:13,  2.61s/it]Loading checkpoint shards:  67%|██████▋   | 8/12 [00:22<00:08,  2.19s/it]Loading checkpoint shards:  75%|███████▌  | 9/12 [00:23<00:05,  1.87s/it]Loading checkpoint shards:  83%|████████▎ | 10/12 [00:25<00:03,  1.76s/it]Loading checkpoint shards:  92%|█████████▏| 11/12 [00:26<00:01,  1.53s/it]Loading checkpoint shards: 100%|██████████| 12/12 [00:26<00:00,  2.19s/it]
+The following generation flags are not valid and may be ignored: ['top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+[gemma-3-27b-it] Model loaded. VRAM allocated: 51.10 GB
+[gemma-3-27b-it] Starting inference on 10 pairs (20 calls)...
+[gemma-3-27b-it] Progress: 10/20 calls (50.0%) | Pair 5/10 | Last: BA -> 'A' (rq0_0286)
+[gemma-3-27b-it] Progress: 20/20 calls (100.0%) | Pair 10/10 | Last: BA -> 'B' (rq0_0145)
+[gemma-3-27b-it] Cleaning up model from GPU 0...
+[gemma-3-27b-it] Cleanup complete. Remaining VRAM: 0.01 GB
+[gemma-3-27b-it] Finished all calls. Saved to /ANON/experiment_root/results/large_model_cross_family_3model_300java_20260910/smoke_test/gemma_smoke_raw.jsonl.
+
+[SMOKE-TEST] gemma parse failure rate: 0.0% (0/20)
+[Mistral-Small-3.1-24B-Instruct-2503] Initializing on GPU 0...
+[Mistral-Small-3.1-24B-Instruct-2503] Loading weights in bfloat16...
+Loading checkpoint shards:   0%|          | 0/10 [00:00<?, ?it/s]Loading checkpoint shards:  10%|█         | 1/10 [00:01<00:09,  1.03s/it]Loading checkpoint shards:  20%|██        | 2/10 [00:02<00:09,  1.13s/it]Loading checkpoint shards:  30%|███       | 3/10 [00:03<00:08,  1.18s/it]Loading checkpoint shards:  40%|████      | 4/10 [00:04<00:06,  1.07s/it]Loading checkpoint shards:  50%|█████     | 5/10 [00:05<00:05,  1.01s/it]Loading checkpoint shards:  60%|██████    | 6/10 [00:06<00:04,  1.02s/it]Loading checkpoint shards:  70%|███████   | 7/10 [00:07<00:03,  1.06s/it]Loading checkpoint shards:  80%|████████  | 8/10 [00:08<00:02,  1.04s/it]Loading checkpoint shards:  90%|█████████ | 9/10 [00:09<00:01,  1.03s/it]Loading checkpoint shards: 100%|██████████| 10/10 [00:10<00:00,  1.04it/s]Loading checkpoint shards: 100%|██████████| 10/10 [00:10<00:00,  1.03s/it]
+[Mistral-Small-3.1-24B-Instruct-2503] Model loaded. VRAM allocated: 44.74 GB
+[Mistral-Small-3.1-24B-Instruct-2503] Starting inference on 10 pairs (20 calls)...
+Traceback (most recent call last):
+  File "/ANON/experiment_root/results/large_model_cross_family_3model_300java_20260910/scripts/run_inference.py", line 479, in <module>
+    main()
+  File "/ANON/experiment_root/results/large_model_cross_family_3model_300java_20260910/scripts/run_inference.py", line 448, in main
+    df_res = run_experiment_for_model(
+  File "/ANON/experiment_root/results/large_model_cross_family_3model_300java_20260910/scripts/run_inference.py", line 353, in run_experiment_for_model
+    call_result = runner.infer(img_a, img_b, FROZEN_PROMPT)
+  File "/ANON/experiment_root/results/large_model_cross_family_3model_300java_20260910/scripts/run_inference.py", line 240, in infer
+    output_ids = self.model.generate(
+  File "/ANON/home/.local/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+  File "/ANON/home/.local/lib/python3.10/site-packages/transformers/generation/utils.py", line 2566, in generate
+    result = decoding_method(
+  File "/ANON/home/.local/lib/python3.10/site-packages/transformers/generation/utils.py", line 2786, in _sample
+    outputs = self(**model_inputs, return_dict=True)
+  File "/ANON/home/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/ANON/home/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/ANON/home/.local/lib/python3.10/site-packages/transformers/utils/generic.py", line 918, in wrapper
+    output = func(self, *args, **kwargs)
+  File "/ANON/home/.local/lib/python3.10/site-packages/transformers/models/mistral3/modeling_mistral3.py", line 469, in forward
+    outputs = self.model(
+  File "/ANON/home/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/ANON/home/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/ANON/home/.local/lib/python3.10/site-packages/transformers/utils/generic.py", line 918, in wrapper
+    output = func(self, *args, **kwargs)
+  File "/ANON/home/.local/lib/python3.10/site-packages/transformers/models/mistral3/modeling_mistral3.py", line 321, in forward
+    image_features = self.get_image_features(
+  File "/ANON/home/.local/lib/python3.10/site-packages/transformers/models/mistral3/modeling_mistral3.py", line 247, in get_image_features
+    image_outputs = self.vision_tower(pixel_values, image_sizes=image_sizes, output_hidden_states=True, **kwargs)
+  File "/ANON/home/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/ANON/home/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/ANON/home/.local/lib/python3.10/site-packages/transformers/utils/generic.py", line 918, in wrapper
+    output = func(self, *args, **kwargs)
+  File "/ANON/home/.local/lib/python3.10/site-packages/transformers/models/pixtral/modeling_pixtral.py", line 479, in forward
+    patch_embeds = self.patch_conv(pixel_values)
+  File "/ANON/home/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/ANON/home/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/ANON/home/.local/lib/python3.10/site-packages/torch/nn/modules/conv.py", line 553, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/ANON/home/.local/lib/python3.10/site-packages/torch/nn/modules/conv.py", line 548, in _conv_forward
+    return F.conv2d(
+RuntimeError: Input type (torch.cuda.FloatTensor) and weight type (CUDABFloat16Type) should be the same

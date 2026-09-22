@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "pairs": 9000,
+  "models": 9,
+  "prediction_rows": 81000,
+  "primary_metric": "Spearman(sign(predicted_score_i - predicted_score_j), human_score_i_z - human_score_j_z), all pairs; exact score ties use sign 0",
+  "sensitivity_metric": "The same Spearman correlation after excluding exact score ties",
+  "java_regression_reference_check": "passed at absolute tolerance 1e-12",
+  "inputs": {
+    "pairs": "/ANON/experiment_root/results/rq1_model_battery_3lang_20260723/data/rq1_pairs_9000.csv",
+    "predictions": "/ANON/experiment_root/results/rq1_model_battery_3lang_20260723/data/ml_predictions_9models_9000.csv"
+  }
+}

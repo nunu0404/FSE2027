@@ -1,0 +1,5 @@
+variant,n_items,mean_elo,elo_rank
+beautiful_trash,160,1478.086471485626,3.0
+golden,160,1525.2671791043363,1.0
+ugly_gold,160,1520.9339841481947,2.0
+ugly_trash,160,1475.7123652618434,4.0

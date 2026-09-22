@@ -1,0 +1,29 @@
+2026-09-10 04:47:32.248638: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-09-10 04:47:32.295327: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 AVX512_FP16 AVX_VNNI AMX_TILE AMX_INT8 AMX_BF16 AMX_FP16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-09-10 04:47:33.498901: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. Note that this behavior will be extended to all models in a future release.
+`torch_dtype` is deprecated! Use `dtype` instead!
+[UNIT-TEST] Running unit tests for multi-language evaluation...
+[UNIT-TEST] All unit tests PASSED successfully!
+
+============================================================
+STARTING MULTI-LANGUAGE SMOKE TEST (10 pairs per language = 30 pairs total)
+============================================================
+Total smoke test pairs: 30
+[Qwen2.5-VL-32B-Instruct] Initializing on GPU 0...
+[Qwen2.5-VL-32B-Instruct] Loading weights in bfloat16...
+Loading checkpoint shards:   0%|          | 0/18 [00:00<?, ?it/s]Loading checkpoint shards:   6%|▌         | 1/18 [00:00<00:13,  1.25it/s]Loading checkpoint shards:  11%|█         | 2/18 [00:01<00:14,  1.14it/s]Loading checkpoint shards:  17%|█▋        | 3/18 [00:02<00:13,  1.14it/s]Loading checkpoint shards:  22%|██▏       | 4/18 [00:03<00:11,  1.22it/s]Loading checkpoint shards:  28%|██▊       | 5/18 [00:04<00:11,  1.17it/s]Loading checkpoint shards:  33%|███▎      | 6/18 [00:05<00:11,  1.03it/s]Loading checkpoint shards:  39%|███▉      | 7/18 [00:06<00:12,  1.10s/it]Loading checkpoint shards:  44%|████▍     | 8/18 [00:08<00:12,  1.23s/it]Loading checkpoint shards:  50%|█████     | 9/18 [00:09<00:11,  1.25s/it]Loading checkpoint shards:  56%|█████▌    | 10/18 [00:10<00:09,  1.25s/it]Loading checkpoint shards:  61%|██████    | 11/18 [00:12<00:08,  1.25s/it]Loading checkpoint shards:  67%|██████▋   | 12/18 [00:13<00:07,  1.21s/it]Loading checkpoint shards:  72%|███████▏  | 13/18 [00:14<00:05,  1.08s/it]Loading checkpoint shards:  78%|███████▊  | 14/18 [00:14<00:04,  1.03s/it]Loading checkpoint shards:  83%|████████▎ | 15/18 [00:15<00:02,  1.03it/s]Loading checkpoint shards:  89%|████████▉ | 16/18 [00:16<00:01,  1.05it/s]Loading checkpoint shards:  94%|█████████▍| 17/18 [00:17<00:01,  1.00s/it]Loading checkpoint shards: 100%|██████████| 18/18 [00:18<00:00,  1.01it/s]Loading checkpoint shards: 100%|██████████| 18/18 [00:18<00:00,  1.04s/it]
+[Qwen2.5-VL-32B-Instruct] Model loaded. VRAM allocated: 62.31 GB
+[Qwen2.5-VL-32B-Instruct] Imported 600 existing Java calls from previous run.
+[Qwen2.5-VL-32B-Instruct] Total calls planned: 60 (already completed: 600)
+[Qwen2.5-VL-32B-Instruct] Progress: 620/60 (1033.3%) | Last: python BA -> 'B' (dorn_python_008)
+[Qwen2.5-VL-32B-Instruct] Progress: 640/60 (1066.7%) | Last: cuda BA -> 'B' (dorn_cuda_065)
+[Qwen2.5-VL-32B-Instruct] Finished all calls. Output: /ANON/experiment_root/results/multilang_cross_family_3model_python_cuda_java_20260910/smoke_test/qwen_multilang_smoke_raw.jsonl
+
+[Qwen2.5-VL-32B-Instruct] Cleaning up model from GPU 0...
+[Qwen2.5-VL-32B-Instruct] Cleanup complete. Remaining VRAM: 0.01 GB
+[SMOKE-TEST] qwen parse failure rate: 0.0% (0/640)
+
+[SMOKE-TEST] All multi-language smoke tests PASSED successfully!
+

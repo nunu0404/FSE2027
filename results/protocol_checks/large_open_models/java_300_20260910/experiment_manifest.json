@@ -1,0 +1,60 @@
+{
+  "experiment_name": "controlled_larger_model_cross_family_reliability_3model_300java",
+  "status": "COMPLETED",
+  "started_at_utc": "2026-09-10T02:22:10.599609+00:00",
+  "completed_at_utc": "2026-09-10T04:38:15.000000+00:00",
+  "total_pairs": 300,
+  "total_calls": 1800,
+  "environment": {
+    "gpu_name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+    "gpu_vram_gb": 94.97,
+    "gpu_count": 2,
+    "nvidia_driver": "580.95.05",
+    "cuda_system": "13.0",
+    "cuda_torch": "12.8",
+    "python_version": "3.10.12",
+    "pytorch_version": "2.10.0+cu128",
+    "transformers_version": "4.57.6",
+    "flash_attention": "Not installed (PyTorch SDPA used)",
+    "hf_home": "/ANON/hf_cache"
+  },
+  "models": [
+    {
+      "model_name": "Qwen2.5-VL-32B-Instruct",
+      "repo_id": "Qwen/Qwen2.5-VL-32B-Instruct",
+      "exact_revision": "7cfb30d71a1f4f49a57592323337a4a4727301da",
+      "processor_class": "Qwen2_5_VLProcessor",
+      "model_class": "Qwen2_5_VLForConditionalGeneration"
+    },
+    {
+      "model_name": "gemma-3-27b-it",
+      "repo_id": "google/gemma-3-27b-it",
+      "exact_revision": "005ad3404e59d6023443cb575daa05336842228a",
+      "processor_class": "Gemma3Processor",
+      "model_class": "Gemma3ForConditionalGeneration"
+    },
+    {
+      "model_name": "Mistral-Small-3.1-24B-Instruct-2503",
+      "repo_id": "mistralai/Mistral-Small-3.1-24B-Instruct-2503",
+      "exact_revision": "68faf511d618ef198fef186659617cfd2eb8e33a",
+      "processor_class": "PixtralProcessor",
+      "model_class": "Mistral3ForConditionalGeneration"
+    }
+  ],
+  "generation_config": {
+    "precision": "bfloat16",
+    "do_sample": false,
+    "temperature": 0.0,
+    "max_new_tokens": 24,
+    "batch_size": 1,
+    "seed": 42,
+    "modality": "image_only",
+    "packaging": "separate_2_image_packaging"
+  },
+  "hashes": {
+    "pair_ids_csv_sha256": "385cce21ff1e0e186c57f16261af8dd669354759d4b32875326bbe8acf546c93",
+    "prompt_sha256": "dabc354ef65f59f3a06c7ef8f975f5f8c2150c135584abcb7bd1e7337e6b4217",
+    "image_checksums_json_sha256": "652b3810f797f9c9311e6530b62489d50969110e7bf6796b7965705c7d0c3f8c"
+  },
+  "frozen_prompt": "You are comparing two Java code snippets by readability only.\n\nReadability means how easily a developer can understand the local structure and intent of the code.\n\nConsider:\n1. Visual clarity: indentation consistency, spacing, line breaks, density.\n2. Structural readability: block separation and control-flow traceability.\n3. Information efficiency: naming clarity and local comprehensibility when text is legible.\n\nIgnore functional correctness unless the code is locally corrupted or uninterpretable.\n\nReturn exactly one line:\nFINAL_VERDICT: A\nor\nFINAL_VERDICT: B"
+}

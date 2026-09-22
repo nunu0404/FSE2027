@@ -1,0 +1,22 @@
+{
+  "generated_at_utc": "2026-07-07T07:01:48.986893+00:00",
+  "model": "gpt-5.4-mini",
+  "conditions": [
+    "image_only",
+    "text_plus_image",
+    "combined_labeled_image_only",
+    "combined_labeled_text_plus_image"
+  ],
+  "pairs_per_difficulty": 100,
+  "num_pairs_per_condition": 300,
+  "strict_swap": true,
+  "detail": "high",
+  "max_output_tokens": 24,
+  "input_cost_per_mtok": 0.75,
+  "output_cost_per_mtok": 4.5,
+  "outputs": {
+    "raw": "/ANON/experiment_root/results/openai_vlm_pilot_20260707/gpt-5.4-mini__pilot_raw.jsonl",
+    "summary": "/ANON/experiment_root/results/openai_vlm_pilot_20260707/gpt-5.4-mini__pilot_summary.csv",
+    "usage": "/ANON/experiment_root/results/openai_vlm_pilot_20260707/gpt-5.4-mini__pilot_usage.json"
+  }
+}

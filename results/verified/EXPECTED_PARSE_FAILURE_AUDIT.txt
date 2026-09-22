@@ -1,0 +1,105 @@
+
+RQ1  8 judges x 9,000 pairs x 2 orders = 144,000 calls
+------------------------------------------------------
+  judge              calls  failed  pairs  by language
+  gemma              18000       0      0  -
+  gemma4             18000      11     11  {'cuda': 7, 'python': 4}
+  internvl           18000       0      0  -
+  internvl3_5        18000       1      1  {'java': 1}
+  ministral          18000       0      0  -
+  phi                18000       0      0  -
+  qwen               18000       0      0  -
+  qwen3              18000       0      0  -
+  TOTAL failed calls across RQ1: 12 / 144,000
+
+RQ2  full grid: 2 judges x 18 labels x 3,000 pairs = 216,000 calls
+------------------------------------------------------------------
+  pairs  108000   parse-failed pairs 0
+
+RQ2  reduced grid: 3 judges x 7 conditions x 3,000 pairs
+--------------------------------------------------------
+  gemma          pairs  21000  failed pairs    0 ( 0.00%)  failed calls    0 (0.00%)
+  gemma4         pairs  21000  failed pairs   33 ( 0.16%)  failed calls   34 (0.08%)
+      by condition: {'monokai_dark__fs20__wrap80__lnon': 3, 'monokai_dark__fs20__wrap60__lnon': 7, 'monokai_dark__fs24__wrap80__lnon': 5, 'mono_light__fs20__wrap80__lnon': 3, 'no_indent': 4, 'no_blank_lines': 6, 'gaussian_sigma_4': 5}
+      by language : {'java': 4, 'python': 10, 'cuda': 19}
+  internvl3_5    pairs  21000  failed pairs  204 ( 0.97%)  failed calls  247 (0.59%)
+      by condition: {'monokai_dark__fs20__wrap80__lnon': 5, 'monokai_dark__fs20__wrap60__lnon': 1, 'monokai_dark__fs24__wrap80__lnon': 6, 'no_indent': 8, 'no_blank_lines': 2, 'gaussian_sigma_4': 182}
+      by language : {'java': 127, 'python': 66, 'cuda': 11}
+
+RQ2  packaging and modality: 8 conditions x 3,000 Java pairs
+------------------------------------------------------------
+  internvl_combined_image_only         pairs  3000  failed pairs 0
+  internvl_combined_text_plus_image    pairs  3000  failed pairs 2
+  internvl_image_only                  pairs  3000  failed pairs 0
+  internvl_text_plus_image             pairs  3000  failed pairs 35
+  qwen_combined_image_only             pairs  3000  failed pairs 0
+  qwen_combined_text_plus_image        pairs  3000  failed pairs 0
+  qwen_image_only                      pairs  3000  failed pairs 0
+  qwen_text_plus_image                 pairs  3000  failed pairs 0
+
+RQ3  image-only primary (7,200 calls) plus supplementary arms
+-------------------------------------------------------------
+  image-only primary   pair rows  3600  failed 0
+  Qwen text+image      pair rows  1800  failed 0
+  raw call files:
+    OpenGVLab__InternVL3-8B__image_only__promptB__seed42__full_2026072 calls  3600 failed 0
+    OpenGVLab__InternVL3-8B__image_only__promptB__seed42__ga0_20260721 calls   100 failed 0
+    OpenGVLab__InternVL3-8B__text_plus_image__promptB__seed42__ga0_202 calls   100 failed 1  <-- GATE FAILURE
+        contrast=rq3g_cuda_008__c2 order=BA lang=cuda output='FINAL_VERDDICT: B'
+    OpenGVLab__InternVL3-8B__text_plus_image__promptB__seed42__ga0_ret calls   100 failed 1  <-- GATE FAILURE
+        contrast=rq3g_cuda_008__c2 order=BA lang=cuda output='FINAL_VERDDICT: B'
+    Qwen__Qwen2.5-VL-7B-Instruct__image_only__promptB__seed42__full_20 calls  3600 failed 0
+    Qwen__Qwen2.5-VL-7B-Instruct__image_only__promptB__seed42__ga0_202 calls   100 failed 0
+    Qwen__Qwen2.5-VL-7B-Instruct__text_plus_image__promptB__seed42__fu calls  3600 failed 0
+    Qwen__Qwen2.5-VL-7B-Instruct__text_plus_image__promptB__seed42__ga calls   100 failed 0
+
+RQ4  text ablation and OCR routes
+---------------------------------
+  text_only_source               pairs  9000  failed pairs   0  rate 0.00%
+  text_only_ocr                  pairs  9000  failed pairs   0  rate 0.00%
+  image_only_baseline_carried    pairs  9000  failed pairs   0  rate 0.00%
+  Source text LLM Qwen2.5-Coder                    parse_failure_rate 0.0
+  OCR(EasyOCR)+text-only LLM Qwen2.5-Coder         parse_failure_rate 0.0
+  OCR(RapidOCR)+text-only LLM Qwen2.5-Coder        parse_failure_rate 0.0
+  OCR(EasyOCR-preprocessed)+text-only LLM Qwen2.5- parse_failure_rate 0.0
+
+Protocol checks  Table 2(a) closed models, Table 2(b) open 24B-32B
+------------------------------------------------------------------
+  run / model                             condition                          pairs fail calls fail pairs
+  gpt54_and_gpt55_20260708/gpt-5.4        combined_labeled_image_only          300          0          0
+  gpt54_and_gpt55_20260708/gpt-5.4        combined_labeled_text_plus_image     300          0          0
+  gpt54_and_gpt55_20260708/gpt-5.4        image_only                           300          0          0
+  gpt54_and_gpt55_20260708/gpt-5.4        text_plus_image                      300          0          0
+  gpt54_and_gpt55_20260708/gpt-5.5        image_only                           300        600        300  <-- NONZERO
+  gpt54_and_gpt55_20260708/gpt-5.5        text_plus_image                      122        244        122  <-- NONZERO
+  gpt54_mini_20260707/gpt-5.4-mini        combined_labeled_image_only          300          0          0
+  gpt54_mini_20260707/gpt-5.4-mini        combined_labeled_text_plus_image     300          0          0
+  gpt54_mini_20260707/gpt-5.4-mini        image_only                           300          0          0
+  gpt54_mini_20260707/gpt-5.4-mini        text_plus_image                      300          0          0
+  gpt55_fixed_20260708/gpt-5.5            combined_labeled_image_only          300         53         48  <-- NONZERO
+  gpt55_fixed_20260708/gpt-5.5            combined_labeled_text_plus_image     300         18         18  <-- NONZERO
+  gpt55_fixed_20260708/gpt-5.5            image_only                           300         29         26  <-- NONZERO
+  gpt55_fixed_20260708/gpt-5.5            text_plus_image                      300         22         20  <-- NONZERO
+
+  GPT-5.5 (Table 2a): S decomposed into parse failure vs disagreement
+    condition                             S %  parse-fail pp  disagree pp  PF share
+    combined_labeled_image_only          23.0           16.0          7.0       70%
+    combined_labeled_text_plus_image     20.7            6.0         14.7       29%
+    image_only                           18.7            8.7         10.0       46%
+    text_plus_image                      25.3            6.7         18.7       26%
+
+  gemma-3-27b-it                           900 pairs   parse_failures=0
+  Mistral-Small-3.1-24B-Instruct-2503      900 pairs   parse_failures=0
+  Qwen2.5-VL-32B-Instruct                  900 pairs   parse_failures=0
+
+  Excluded GPT-5.4 reasoning-budget pilot (90 pairs per condition)
+    tokens=256    reasoning=high   image_only          58.89%  <-- NONZERO
+    tokens=256    reasoning=high   text_plus_image     20.00%  <-- NONZERO
+    tokens=4096   reasoning=high   image_only           0.00%
+    tokens=4096   reasoning=high   text_plus_image      0.00%
+    tokens=256    reasoning=low    image_only           0.56%  <-- NONZERO
+    tokens=256    reasoning=low    text_plus_image      0.00%
+    tokens=4096   reasoning=low    image_only           0.00%
+    tokens=4096   reasoning=low    text_plus_image      0.00%
+
+Full written analysis: docs/PARSE_FAILURE_AUDIT.md

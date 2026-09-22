@@ -1,0 +1,29 @@
+2026-09-10 02:24:49.213673: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-09-10 02:24:49.260868: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 AVX512_FP16 AVX_VNNI AMX_TILE AMX_INT8 AMX_BF16 AMX_FP16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-09-10 02:24:50.559111: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. Note that this behavior will be extended to all models in a future release.
+`torch_dtype` is deprecated! Use `dtype` instead!
+[UNIT-TEST] Running unit tests...
+  [PASS] Parser tests passed.
+  [PASS] Choice mapping tests passed.
+  [PASS] Strict-swap logic tests passed.
+[UNIT-TEST] All unit tests PASSED successfully!
+
+============================================================
+STARTING 10-PAIR SMOKE TEST ACROSS 3 MODELS
+============================================================
+Loaded 10 smoke test pairs:
+  full_rq0_seed42__rq0_0072__rq0_0291 (diff: easy, pref: rq0_0072)
+  full_rq0_seed42__rq0_0060__rq0_0168 (diff: medium, pref: rq0_0168)
+  full_rq0_seed42__rq0_0086__rq0_0255 (diff: hard, pref: rq0_0255)
+  full_rq0_seed42__rq0_0013__rq0_0052 (diff: easy, pref: rq0_0052)
+  full_rq0_seed42__rq0_0217__rq0_0286 (diff: medium, pref: rq0_0286)
+  full_rq0_seed42__rq0_0179__rq0_0263 (diff: hard, pref: rq0_0179)
+  full_rq0_seed42__rq0_0005__rq0_0022 (diff: easy, pref: rq0_0022)
+  full_rq0_seed42__rq0_0027__rq0_0032 (diff: medium, pref: rq0_0032)
+  full_rq0_seed42__rq0_0007__rq0_0127 (diff: hard, pref: rq0_0007)
+  full_rq0_seed42__rq0_0145__rq0_0240 (diff: easy, pref: rq0_0240)
+[Qwen2.5-VL-32B-Instruct] Initializing on GPU 0...
+[Qwen2.5-VL-32B-Instruct] Loading weights in bfloat16...
+Fetching 18 files:   0%|          | 0/18 [00:00<?, ?it/s]

@@ -1,0 +1,10 @@
+{
+  "generated_at_utc": "2026-07-07T07:51:45.983909+00:00",
+  "raw_path": "/ANON/experiment_root/results/openai_vlm_pilot_20260707/gpt-5.4-mini__pilot_raw.jsonl",
+  "summary_path": "/ANON/experiment_root/results/openai_vlm_pilot_20260707/gpt-5.4-mini__pilot_summary.csv",
+  "num_rows": 1200,
+  "total_api_calls": 2400,
+  "total_input_tokens": 3452668,
+  "total_output_tokens": 21810,
+  "estimated_total_cost_usd": 2.687646
+}

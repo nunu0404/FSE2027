@@ -1,0 +1,12 @@
+{
+  "pairs_per_cell": 300,
+  "pair_condition_rows": 1200,
+  "api_calls": 2400,
+  "input_tokens": 2741604,
+  "output_tokens": 406859,
+  "reasoning_tokens": 380465,
+  "incomplete_calls": 0,
+  "empty_output_calls": 0,
+  "parse_failures": 0,
+  "estimated_cost_usd": 12.956895
+}

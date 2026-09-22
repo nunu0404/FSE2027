@@ -1,0 +1,123 @@
+{
+  "archived_external_sources": {
+    "results/rq1_model_battery_3lang_20260723/evidence/sources/Gemma3Report.pdf": "b2793d288d6672f8d6a03f65370bb4a48d607f54937a22fc7d9f727435795305",
+    "results/rq1_model_battery_3lang_20260723/evidence/sources/InternVL3_official_blog.html": "78024700462cbf4bac4f175fc0e98151e1cfc0714bc218030f9bfde15a6fc620",
+    "results/rq1_model_battery_3lang_20260723/evidence/sources/Ministral-3-8B-Instruct-2512-BF16_README.md": "f390689977775d8ee2196a56d469f77293a1a33400069a6a2a00c5dc95f53510",
+    "results/rq1_model_battery_3lang_20260723/evidence/sources/Ministral3_report.pdf": "98cb4208c5c8d8246475dee31eab5c3681f4ec88fc4caa5a441d04007c2e5992",
+    "results/rq1_model_battery_3lang_20260723/evidence/sources/Phi-4-multimodal-instruct_README.md": "c79dc706ea8478e931981a048164233ae2256b229114e05744610b87f9301293",
+    "results/rq1_model_battery_3lang_20260723/evidence/sources/Qwen2.5-VL-7B-Instruct_README.md": "1fa65dbb08bc9ffe0b020409c8686f08b23008c5a68554353305fd2de6f2b81e"
+  },
+  "artifacts": {
+    "results/grounded_protocol_3lang_20260721/config/prompt_B_template.txt": "1eb486ba7a7f1908b4279446aec106117fd209d410f7309ca2c5a64bcb978ae1",
+    "results/rq1_model_battery_3lang_20260723/data/ga0_pairs_50_seed42.csv": "4e47ad8e86cd864d00df7810bcb66345328d5cfc20d25bfceeeaef6ae327be48",
+    "results/rq1_model_battery_3lang_20260723/data/ml_predictions_9models_9000.csv": "09f61f3fcecf5ce022a5f854d07a4e9d6c59ae1c637f9b63f4c68aecf7bf0cdf",
+    "results/rq1_model_battery_3lang_20260723/data/rq1_pairs_9000.csv": "e41fc9896dc927b98d35eb57e44a4f7139d2013353d061fbac854470d3733183"
+  },
+  "continuous_primary_difficulty": "abs_z_diff",
+  "duplicate_unordered_pairs": 0,
+  "ga0_sample": {
+    "allocation_by_cell": {
+      "cuda/easy": 5,
+      "cuda/hard": 5,
+      "cuda/medium": 6,
+      "java/easy": 6,
+      "java/hard": 5,
+      "java/medium": 6,
+      "python/easy": 6,
+      "python/hard": 6,
+      "python/medium": 5
+    },
+    "allocation_by_difficulty": {
+      "easy": 17,
+      "hard": 16,
+      "medium": 17
+    },
+    "allocation_by_language": {
+      "cuda": 16,
+      "java": 17,
+      "python": 17
+    },
+    "calls_per_model": 100,
+    "pairs": 50,
+    "seed": 42
+  },
+  "gold_direction_matches_z": true,
+  "grounded_subset_audit": {
+    "all_grounded_pairs_in_full_9000": true,
+    "grounded_rows": 3000,
+    "grounded_source_sha256": "ce2fb868a23ea4fb2a7b7413fccf70ec60a388563553d0b9b97791ae73f29403",
+    "grounded_unique_source_pair_ids": 3000
+  },
+  "image_audit": {
+    "baseline_condition": "monokai_dark__fs20__wrap80__lnon",
+    "blank_or_constant_pngs": 0,
+    "languages": {
+      "cuda": 120,
+      "java": 313,
+      "python": 119
+    },
+    "png_files_checked": 552,
+    "png_hash_matches": 552,
+    "referenced_snippets": 552,
+    "upstream_gate_pass": true,
+    "upstream_render_audit": "results/grounded_protocol_3lang_20260721/audit/GROUNDED_RENDER_AUDIT.json",
+    "upstream_render_audit_sha256": "371c2a807b8ea36f19613127ac25e923e15d7e996c77c86f7803d2faf57f16d4"
+  },
+  "legacy_sampling_bins": {
+    "easy": "abs_z_diff >= 1.0",
+    "hard": "0.2 <= abs_z_diff < 0.5",
+    "medium": "0.5 <= abs_z_diff < 1.0"
+  },
+  "ml_prediction_audit": {
+    "all_cells_exact": true,
+    "exact_pair_id_cells": 27,
+    "expected_prediction_rows": 81000,
+    "language_model_cells": 27,
+    "models": [
+      "Logistic Regression",
+      "Multilayer Perceptron",
+      "Naive Bayes",
+      "Scalabrino-LR (replicated, not official tool)",
+      "Voting ensemble (LR+NB+RF)",
+      "gradient_boosting_regressor",
+      "linear_regression",
+      "random_forest_regressor",
+      "svr"
+    ],
+    "prediction_rows": 81000,
+    "source_sha256": {
+      "experiments/rq0_viability/outputs/canonical_baselines/canonical_pair_level.csv": "3103e23467f050320a918395b77d7fa75dcbb689003046e5319f5ce0cdc49991",
+      "experiments/rq0_viability/outputs/pair_level_results/full_pair_classical_baseline_pair_level.csv": "24a1195a7dadeadad60bcd957743ed6bc4ab2bcbfa724f5ee7fe9c8433198719",
+      "results/dataset_extension_20260713/data/pair_predictions.csv": "d142343f40d053f49f1fd659afe325b9bf3077ee4bcac0632dff48dbf9003109"
+    },
+    "ties_by_language": {
+      "cuda": 9,
+      "java": 0,
+      "python": 20
+    }
+  },
+  "pair_rows": 9000,
+  "pairs_by_language": {
+    "cuda": 3000,
+    "java": 3000,
+    "python": 3000
+  },
+  "pairs_by_language_difficulty": {
+    "cuda/easy": 1000,
+    "cuda/hard": 1000,
+    "cuda/medium": 1000,
+    "java/easy": 1000,
+    "java/hard": 1000,
+    "java/medium": 1000,
+    "python/easy": 1000,
+    "python/hard": 1000,
+    "python/medium": 1000
+  },
+  "scope": "preregistration assets only; no new VLM outcomes generated",
+  "source_pair_sha256": {
+    "experiments/rq0_viability/data/pairs/full_pair_set_rq0.csv": "b19db955d496cfb5a49c78cbe8c88119475b674cef3e8be7e87f5dfb6eed0328",
+    "results/python_cuda_vlm_main_20260715/data/pairs_seed42_clean.csv": "107194b394770936d8cfb3790441959530dfb50f1e0ef5502507f6992ae6d00a"
+  },
+  "status": "PASS",
+  "unique_snippets": 552
+}

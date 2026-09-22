@@ -1,0 +1,1 @@
+Change to 2.2 and [−6.18, +10.23], sourced from ~/experiment_26_v1/fse2027/external_runs/fse2027_review_defense_e1_e8_20260730/analysis/E1/E1_debiased_vs_baseline.csv (the earlier draft values 2.1 and [−6.19, +10.52] originated from ~/experiment_26_v1/results/rq1_model_battery_3lang_20260723/analysis/F7/F7_E1_debiased_vs_language_best.csv).

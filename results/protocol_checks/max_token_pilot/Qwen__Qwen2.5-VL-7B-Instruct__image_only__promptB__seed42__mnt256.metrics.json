@@ -1,0 +1,15 @@
+{
+  "model": "Qwen/Qwen2.5-VL-7B-Instruct",
+  "model_kind": "vlm",
+  "input_setting": "image_only",
+  "prompt_variant": "B",
+  "seed": 42,
+  "all_pairs": 300,
+  "valid_pairs": 194,
+  "correct_pairs": 121,
+  "accuracy_on_valid_pairs": 0.6237113402061856,
+  "effective_accuracy": 0.4033333333333333,
+  "strict_swap_error_rate": 0.35333333333333333,
+  "parse_failure_rate": 0.0,
+  "nvidia_smi_after": "0, NVIDIA RTX PRO 6000 Blackwell Server Edition, 18689 MiB, 97887 MiB, 35 %\n1, NVIDIA RTX PRO 6000 Blackwell Server Edition, 95551 MiB, 97887 MiB, 100 %\n"
+}

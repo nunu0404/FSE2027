@@ -1,0 +1,13 @@
+{
+  "generated_at_utc": "2026-07-09T08:06:32.649233+00:00",
+  "raw_path": "/ANON/experiment_root/results/gpt54_reasoning_budget_pilot_90_20260709/gpt-5.4-2026-03-05__reasoning_low__mot_4096_raw.jsonl",
+  "summary_path": "/ANON/experiment_root/results/gpt54_reasoning_budget_pilot_90_20260709/gpt-5.4-2026-03-05__reasoning_low__mot_4096_summary.csv",
+  "num_rows": 600,
+  "total_api_calls": 1200,
+  "total_input_tokens": 1370802,
+  "total_output_tokens": 81642,
+  "total_reasoning_tokens": 68448,
+  "incomplete_calls": 0,
+  "empty_output_calls": 0,
+  "estimated_total_cost_usd": 4.651635
+}

@@ -1,0 +1,229 @@
+2026-09-10 04:16:37.143351: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-09-10 04:16:37.189620: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 AVX512_FP16 AVX_VNNI AMX_TILE AMX_INT8 AMX_BF16 AMX_FP16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-09-10 04:16:38.341620: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. Note that this behavior will be extended to all models in a future release.
+`torch_dtype` is deprecated! Use `dtype` instead!
+[UNIT-TEST] Running unit tests...
+  [PASS] Parser tests passed.
+  [PASS] Choice mapping tests passed.
+  [PASS] Strict-swap logic tests passed.
+[UNIT-TEST] All unit tests PASSED successfully!
+
+============================================================
+STARTING FULL 300-PAIR EXPERIMENT ACROSS MODELS
+Models: ['qwen', 'gemma', 'mistral'] on GPU 0
+============================================================
+Loaded 300 pairs for evaluation.
+[Qwen2.5-VL-32B-Instruct] Initializing on GPU 0...
+[Qwen2.5-VL-32B-Instruct] Loading weights in bfloat16...
+Loading checkpoint shards:   0%|          | 0/18 [00:00<?, ?it/s]Loading checkpoint shards:   6%|▌         | 1/18 [00:00<00:12,  1.31it/s]Loading checkpoint shards:  11%|█         | 2/18 [00:01<00:13,  1.21it/s]Loading checkpoint shards:  17%|█▋        | 3/18 [00:02<00:12,  1.20it/s]Loading checkpoint shards:  22%|██▏       | 4/18 [00:03<00:11,  1.27it/s]Loading checkpoint shards:  28%|██▊       | 5/18 [00:04<00:10,  1.20it/s]Loading checkpoint shards:  33%|███▎      | 6/18 [00:05<00:11,  1.06it/s]Loading checkpoint shards:  39%|███▉      | 7/18 [00:06<00:11,  1.04s/it]Loading checkpoint shards:  44%|████▍     | 8/18 [00:07<00:11,  1.15s/it]Loading checkpoint shards:  50%|█████     | 9/18 [00:09<00:10,  1.17s/it]Loading checkpoint shards:  56%|█████▌    | 10/18 [00:10<00:09,  1.17s/it]Loading checkpoint shards:  61%|██████    | 11/18 [00:11<00:08,  1.17s/it]Loading checkpoint shards:  67%|██████▋   | 12/18 [00:12<00:06,  1.13s/it]Loading checkpoint shards:  72%|███████▏  | 13/18 [00:13<00:05,  1.03s/it]Loading checkpoint shards:  78%|███████▊  | 14/18 [00:14<00:03,  1.02it/s]Loading checkpoint shards:  83%|████████▎ | 15/18 [00:14<00:02,  1.08it/s]Loading checkpoint shards:  89%|████████▉ | 16/18 [00:15<00:01,  1.10it/s]Loading checkpoint shards:  94%|█████████▍| 17/18 [00:16<00:00,  1.06it/s]Loading checkpoint shards: 100%|██████████| 18/18 [00:17<00:00,  1.08it/s]Loading checkpoint shards: 100%|██████████| 18/18 [00:17<00:00,  1.02it/s]
+[Qwen2.5-VL-32B-Instruct] Model loaded. VRAM allocated: 62.31 GB
+[Qwen2.5-VL-32B-Instruct] Starting inference on 300 pairs (600 calls)...
+[Qwen2.5-VL-32B-Instruct] Progress: 10/600 calls (1.7%) | Pair 5/300 | Last: BA -> 'A' (rq0_0032)
+[Qwen2.5-VL-32B-Instruct] Progress: 20/600 calls (3.3%) | Pair 10/300 | Last: BA -> 'B' (rq0_0080)
+[Qwen2.5-VL-32B-Instruct] Progress: 30/600 calls (5.0%) | Pair 15/300 | Last: BA -> 'B' (rq0_0227)
+[Qwen2.5-VL-32B-Instruct] Progress: 40/600 calls (6.7%) | Pair 20/300 | Last: BA -> 'B' (rq0_0191)
+[Qwen2.5-VL-32B-Instruct] Progress: 50/600 calls (8.3%) | Pair 25/300 | Last: BA -> 'B' (rq0_0150)
+[Qwen2.5-VL-32B-Instruct] Progress: 60/600 calls (10.0%) | Pair 30/300 | Last: BA -> 'B' (rq0_0091)
+[Qwen2.5-VL-32B-Instruct] Progress: 70/600 calls (11.7%) | Pair 35/300 | Last: BA -> 'A' (rq0_0029)
+[Qwen2.5-VL-32B-Instruct] Progress: 80/600 calls (13.3%) | Pair 40/300 | Last: BA -> 'A' (rq0_0282)
+[Qwen2.5-VL-32B-Instruct] Progress: 90/600 calls (15.0%) | Pair 45/300 | Last: BA -> 'A' (rq0_0167)
+[Qwen2.5-VL-32B-Instruct] Progress: 100/600 calls (16.7%) | Pair 50/300 | Last: BA -> 'B' (rq0_0075)
+[Qwen2.5-VL-32B-Instruct] Progress: 110/600 calls (18.3%) | Pair 55/300 | Last: BA -> 'B' (rq0_0071)
+[Qwen2.5-VL-32B-Instruct] Progress: 120/600 calls (20.0%) | Pair 60/300 | Last: BA -> 'B' (rq0_0133)
+[Qwen2.5-VL-32B-Instruct] Progress: 130/600 calls (21.7%) | Pair 65/300 | Last: BA -> 'A' (rq0_0205)
+[Qwen2.5-VL-32B-Instruct] Progress: 140/600 calls (23.3%) | Pair 70/300 | Last: BA -> 'B' (rq0_0288)
+[Qwen2.5-VL-32B-Instruct] Progress: 150/600 calls (25.0%) | Pair 75/300 | Last: BA -> 'A' (rq0_0222)
+[Qwen2.5-VL-32B-Instruct] Progress: 160/600 calls (26.7%) | Pair 80/300 | Last: BA -> 'B' (rq0_0021)
+[Qwen2.5-VL-32B-Instruct] Progress: 170/600 calls (28.3%) | Pair 85/300 | Last: BA -> 'A' (rq0_0246)
+[Qwen2.5-VL-32B-Instruct] Progress: 180/600 calls (30.0%) | Pair 90/300 | Last: BA -> 'B' (rq0_0099)
+[Qwen2.5-VL-32B-Instruct] Progress: 190/600 calls (31.7%) | Pair 95/300 | Last: BA -> 'A' (rq0_0093)
+[Qwen2.5-VL-32B-Instruct] Progress: 200/600 calls (33.3%) | Pair 100/300 | Last: BA -> 'A' (rq0_0079)
+[Qwen2.5-VL-32B-Instruct] Progress: 210/600 calls (35.0%) | Pair 105/300 | Last: BA -> 'B' (rq0_0010)
+[Qwen2.5-VL-32B-Instruct] Progress: 220/600 calls (36.7%) | Pair 110/300 | Last: BA -> 'A' (rq0_0101)
+[Qwen2.5-VL-32B-Instruct] Progress: 230/600 calls (38.3%) | Pair 115/300 | Last: BA -> 'A' (rq0_0224)
+[Qwen2.5-VL-32B-Instruct] Progress: 240/600 calls (40.0%) | Pair 120/300 | Last: BA -> 'B' (rq0_0192)
+[Qwen2.5-VL-32B-Instruct] Progress: 250/600 calls (41.7%) | Pair 125/300 | Last: BA -> 'A' (rq0_0131)
+[Qwen2.5-VL-32B-Instruct] Progress: 260/600 calls (43.3%) | Pair 130/300 | Last: BA -> 'A' (rq0_0136)
+[Qwen2.5-VL-32B-Instruct] Progress: 270/600 calls (45.0%) | Pair 135/300 | Last: BA -> 'B' (rq0_0008)
+[Qwen2.5-VL-32B-Instruct] Progress: 280/600 calls (46.7%) | Pair 140/300 | Last: BA -> 'B' (rq0_0246)
+[Qwen2.5-VL-32B-Instruct] Progress: 290/600 calls (48.3%) | Pair 145/300 | Last: BA -> 'A' (rq0_0132)
+[Qwen2.5-VL-32B-Instruct] Progress: 300/600 calls (50.0%) | Pair 150/300 | Last: BA -> 'B' (rq0_0022)
+[Qwen2.5-VL-32B-Instruct] Progress: 310/600 calls (51.7%) | Pair 155/300 | Last: BA -> 'B' (rq0_0167)
+[Qwen2.5-VL-32B-Instruct] Progress: 320/600 calls (53.3%) | Pair 160/300 | Last: BA -> 'B' (rq0_0159)
+[Qwen2.5-VL-32B-Instruct] Progress: 330/600 calls (55.0%) | Pair 165/300 | Last: BA -> 'A' (rq0_0093)
+[Qwen2.5-VL-32B-Instruct] Progress: 340/600 calls (56.7%) | Pair 170/300 | Last: BA -> 'A' (rq0_0078)
+[Qwen2.5-VL-32B-Instruct] Progress: 350/600 calls (58.3%) | Pair 175/300 | Last: BA -> 'B' (rq0_0075)
+[Qwen2.5-VL-32B-Instruct] Progress: 360/600 calls (60.0%) | Pair 180/300 | Last: BA -> 'A' (rq0_0180)
+[Qwen2.5-VL-32B-Instruct] Progress: 370/600 calls (61.7%) | Pair 185/300 | Last: BA -> 'B' (rq0_0152)
+[Qwen2.5-VL-32B-Instruct] Progress: 380/600 calls (63.3%) | Pair 190/300 | Last: BA -> 'A' (rq0_0109)
+[Qwen2.5-VL-32B-Instruct] Progress: 390/600 calls (65.0%) | Pair 195/300 | Last: BA -> 'B' (rq0_0275)
+[Qwen2.5-VL-32B-Instruct] Progress: 400/600 calls (66.7%) | Pair 200/300 | Last: BA -> 'A' (rq0_0210)
+[Qwen2.5-VL-32B-Instruct] Progress: 410/600 calls (68.3%) | Pair 205/300 | Last: BA -> 'B' (rq0_0247)
+[Qwen2.5-VL-32B-Instruct] Progress: 420/600 calls (70.0%) | Pair 210/300 | Last: BA -> 'A' (rq0_0169)
+[Qwen2.5-VL-32B-Instruct] Progress: 430/600 calls (71.7%) | Pair 215/300 | Last: BA -> 'A' (rq0_0113)
+[Qwen2.5-VL-32B-Instruct] Progress: 440/600 calls (73.3%) | Pair 220/300 | Last: BA -> 'B' (rq0_0087)
+[Qwen2.5-VL-32B-Instruct] Progress: 450/600 calls (75.0%) | Pair 225/300 | Last: BA -> 'B' (rq0_0040)
+[Qwen2.5-VL-32B-Instruct] Progress: 460/600 calls (76.7%) | Pair 230/300 | Last: BA -> 'B' (rq0_0011)
+[Qwen2.5-VL-32B-Instruct] Progress: 470/600 calls (78.3%) | Pair 235/300 | Last: BA -> 'A' (rq0_0175)
+[Qwen2.5-VL-32B-Instruct] Progress: 480/600 calls (80.0%) | Pair 240/300 | Last: BA -> 'A' (rq0_0152)
+[Qwen2.5-VL-32B-Instruct] Progress: 490/600 calls (81.7%) | Pair 245/300 | Last: BA -> 'A' (rq0_0159)
+[Qwen2.5-VL-32B-Instruct] Progress: 500/600 calls (83.3%) | Pair 250/300 | Last: BA -> 'A' (rq0_0272)
+[Qwen2.5-VL-32B-Instruct] Progress: 510/600 calls (85.0%) | Pair 255/300 | Last: BA -> 'B' (rq0_0036)
+[Qwen2.5-VL-32B-Instruct] Progress: 520/600 calls (86.7%) | Pair 260/300 | Last: BA -> 'A' (rq0_0053)
+[Qwen2.5-VL-32B-Instruct] Progress: 530/600 calls (88.3%) | Pair 265/300 | Last: BA -> 'A' (rq0_0230)
+[Qwen2.5-VL-32B-Instruct] Progress: 540/600 calls (90.0%) | Pair 270/300 | Last: BA -> 'B' (rq0_0029)
+[Qwen2.5-VL-32B-Instruct] Progress: 550/600 calls (91.7%) | Pair 275/300 | Last: BA -> 'B' (rq0_0075)
+[Qwen2.5-VL-32B-Instruct] Progress: 560/600 calls (93.3%) | Pair 280/300 | Last: BA -> 'A' (rq0_0246)
+[Qwen2.5-VL-32B-Instruct] Progress: 570/600 calls (95.0%) | Pair 285/300 | Last: BA -> 'B' (rq0_0041)
+[Qwen2.5-VL-32B-Instruct] Progress: 580/600 calls (96.7%) | Pair 290/300 | Last: BA -> 'A' (rq0_0269)
+[Qwen2.5-VL-32B-Instruct] Progress: 590/600 calls (98.3%) | Pair 295/300 | Last: BA -> 'B' (rq0_0074)
+[Qwen2.5-VL-32B-Instruct] Progress: 600/600 calls (100.0%) | Pair 300/300 | Last: BA -> 'A' (rq0_0067)
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+[Qwen2.5-VL-32B-Instruct] Cleaning up model from GPU 0...
+[Qwen2.5-VL-32B-Instruct] Cleanup complete. Remaining VRAM: 0.01 GB
+[Qwen2.5-VL-32B-Instruct] Finished all calls. Saved to /ANON/experiment_root/results/large_model_cross_family_3model_300java_20260910/qwen25_vl_32b_raw.jsonl.
+
+[gemma-3-27b-it] Initializing on GPU 0...
+[gemma-3-27b-it] Loading weights in bfloat16...
+Loading checkpoint shards:   0%|          | 0/12 [00:00<?, ?it/s]Loading checkpoint shards:   8%|▊         | 1/12 [00:01<00:13,  1.20s/it]Loading checkpoint shards:  17%|█▋        | 2/12 [00:02<00:09,  1.00it/s]Loading checkpoint shards:  25%|██▌       | 3/12 [00:02<00:08,  1.07it/s]Loading checkpoint shards:  33%|███▎      | 4/12 [00:03<00:07,  1.09it/s]Loading checkpoint shards:  42%|████▏     | 5/12 [00:05<00:07,  1.05s/it]Loading checkpoint shards:  50%|█████     | 6/12 [00:06<00:06,  1.02s/it]Loading checkpoint shards:  58%|█████▊    | 7/12 [00:07<00:05,  1.14s/it]Loading checkpoint shards:  67%|██████▋   | 8/12 [00:08<00:05,  1.26s/it]Loading checkpoint shards:  75%|███████▌  | 9/12 [00:10<00:03,  1.28s/it]Loading checkpoint shards:  83%|████████▎ | 10/12 [00:12<00:02,  1.41s/it]Loading checkpoint shards:  92%|█████████▏| 11/12 [00:13<00:01,  1.32s/it]Loading checkpoint shards: 100%|██████████| 12/12 [00:13<00:00,  1.10s/it]
+The following generation flags are not valid and may be ignored: ['top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+[gemma-3-27b-it] Model loaded. VRAM allocated: 51.11 GB
+[gemma-3-27b-it] Starting inference on 300 pairs (600 calls)...
+[gemma-3-27b-it] Progress: 10/600 calls (1.7%) | Pair 5/300 | Last: BA -> 'A' (rq0_0032)
+[gemma-3-27b-it] Progress: 20/600 calls (3.3%) | Pair 10/300 | Last: BA -> 'B' (rq0_0080)
+[gemma-3-27b-it] Progress: 30/600 calls (5.0%) | Pair 15/300 | Last: BA -> 'A' (rq0_0262)
+[gemma-3-27b-it] Progress: 40/600 calls (6.7%) | Pair 20/300 | Last: BA -> 'A' (rq0_0285)
+[gemma-3-27b-it] Progress: 50/600 calls (8.3%) | Pair 25/300 | Last: BA -> 'A' (rq0_0202)
+[gemma-3-27b-it] Progress: 60/600 calls (10.0%) | Pair 30/300 | Last: BA -> 'A' (rq0_0204)
+[gemma-3-27b-it] Progress: 70/600 calls (11.7%) | Pair 35/300 | Last: BA -> 'A' (rq0_0029)
+[gemma-3-27b-it] Progress: 80/600 calls (13.3%) | Pair 40/300 | Last: BA -> 'B' (rq0_0126)
+[gemma-3-27b-it] Progress: 90/600 calls (15.0%) | Pair 45/300 | Last: BA -> 'A' (rq0_0167)
+[gemma-3-27b-it] Progress: 100/600 calls (16.7%) | Pair 50/300 | Last: BA -> 'B' (rq0_0075)
+[gemma-3-27b-it] Progress: 110/600 calls (18.3%) | Pair 55/300 | Last: BA -> 'B' (rq0_0071)
+[gemma-3-27b-it] Progress: 120/600 calls (20.0%) | Pair 60/300 | Last: BA -> 'A' (rq0_0166)
+[gemma-3-27b-it] Progress: 130/600 calls (21.7%) | Pair 65/300 | Last: BA -> 'A' (rq0_0205)
+[gemma-3-27b-it] Progress: 140/600 calls (23.3%) | Pair 70/300 | Last: BA -> 'A' (rq0_0290)
+[gemma-3-27b-it] Progress: 150/600 calls (25.0%) | Pair 75/300 | Last: BA -> 'A' (rq0_0222)
+[gemma-3-27b-it] Progress: 160/600 calls (26.7%) | Pair 80/300 | Last: BA -> 'A' (rq0_0041)
+[gemma-3-27b-it] Progress: 170/600 calls (28.3%) | Pair 85/300 | Last: BA -> 'A' (rq0_0246)
+[gemma-3-27b-it] Progress: 180/600 calls (30.0%) | Pair 90/300 | Last: BA -> 'A' (rq0_0307)
+[gemma-3-27b-it] Progress: 190/600 calls (31.7%) | Pair 95/300 | Last: BA -> 'A' (rq0_0093)
+[gemma-3-27b-it] Progress: 200/600 calls (33.3%) | Pair 100/300 | Last: BA -> 'A' (rq0_0079)
+[gemma-3-27b-it] Progress: 210/600 calls (35.0%) | Pair 105/300 | Last: BA -> 'B' (rq0_0010)
+[gemma-3-27b-it] Progress: 220/600 calls (36.7%) | Pair 110/300 | Last: BA -> 'A' (rq0_0101)
+[gemma-3-27b-it] Progress: 230/600 calls (38.3%) | Pair 115/300 | Last: BA -> 'A' (rq0_0224)
+[gemma-3-27b-it] Progress: 240/600 calls (40.0%) | Pair 120/300 | Last: BA -> 'B' (rq0_0192)
+[gemma-3-27b-it] Progress: 250/600 calls (41.7%) | Pair 125/300 | Last: BA -> 'A' (rq0_0131)
+[gemma-3-27b-it] Progress: 260/600 calls (43.3%) | Pair 130/300 | Last: BA -> 'A' (rq0_0136)
+[gemma-3-27b-it] Progress: 270/600 calls (45.0%) | Pair 135/300 | Last: BA -> 'B' (rq0_0008)
+[gemma-3-27b-it] Progress: 280/600 calls (46.7%) | Pair 140/300 | Last: BA -> 'B' (rq0_0246)
+[gemma-3-27b-it] Progress: 290/600 calls (48.3%) | Pair 145/300 | Last: BA -> 'A' (rq0_0132)
+[gemma-3-27b-it] Progress: 300/600 calls (50.0%) | Pair 150/300 | Last: BA -> 'B' (rq0_0022)
+[gemma-3-27b-it] Progress: 310/600 calls (51.7%) | Pair 155/300 | Last: BA -> 'A' (rq0_0248)
+[gemma-3-27b-it] Progress: 320/600 calls (53.3%) | Pair 160/300 | Last: BA -> 'A' (rq0_0271)
+[gemma-3-27b-it] Progress: 330/600 calls (55.0%) | Pair 165/300 | Last: BA -> 'A' (rq0_0093)
+[gemma-3-27b-it] Progress: 340/600 calls (56.7%) | Pair 170/300 | Last: BA -> 'A' (rq0_0078)
+[gemma-3-27b-it] Progress: 350/600 calls (58.3%) | Pair 175/300 | Last: BA -> 'A' (rq0_0275)
+[gemma-3-27b-it] Progress: 360/600 calls (60.0%) | Pair 180/300 | Last: BA -> 'A' (rq0_0180)
+[gemma-3-27b-it] Progress: 370/600 calls (61.7%) | Pair 185/300 | Last: BA -> 'A' (rq0_0274)
+[gemma-3-27b-it] Progress: 380/600 calls (63.3%) | Pair 190/300 | Last: BA -> 'A' (rq0_0109)
+[gemma-3-27b-it] Progress: 390/600 calls (65.0%) | Pair 195/300 | Last: BA -> 'A' (rq0_0297)
+[gemma-3-27b-it] Progress: 400/600 calls (66.7%) | Pair 200/300 | Last: BA -> 'A' (rq0_0210)
+[gemma-3-27b-it] Progress: 410/600 calls (68.3%) | Pair 205/300 | Last: BA -> 'A' (rq0_0295)
+[gemma-3-27b-it] Progress: 420/600 calls (70.0%) | Pair 210/300 | Last: BA -> 'A' (rq0_0169)
+[gemma-3-27b-it] Progress: 430/600 calls (71.7%) | Pair 215/300 | Last: BA -> 'A' (rq0_0113)
+[gemma-3-27b-it] Progress: 440/600 calls (73.3%) | Pair 220/300 | Last: BA -> 'B' (rq0_0087)
+[gemma-3-27b-it] Progress: 450/600 calls (75.0%) | Pair 225/300 | Last: BA -> 'A' (rq0_0281)
+[gemma-3-27b-it] Progress: 460/600 calls (76.7%) | Pair 230/300 | Last: BA -> 'A' (rq0_0235)
+[gemma-3-27b-it] Progress: 470/600 calls (78.3%) | Pair 235/300 | Last: BA -> 'A' (rq0_0175)
+[gemma-3-27b-it] Progress: 480/600 calls (80.0%) | Pair 240/300 | Last: BA -> 'A' (rq0_0152)
+[gemma-3-27b-it] Progress: 490/600 calls (81.7%) | Pair 245/300 | Last: BA -> 'A' (rq0_0159)
+[gemma-3-27b-it] Progress: 500/600 calls (83.3%) | Pair 250/300 | Last: BA -> 'A' (rq0_0272)
+[gemma-3-27b-it] Progress: 510/600 calls (85.0%) | Pair 255/300 | Last: BA -> 'A' (rq0_0268)
+[gemma-3-27b-it] Progress: 520/600 calls (86.7%) | Pair 260/300 | Last: BA -> 'A' (rq0_0053)
+[gemma-3-27b-it] Progress: 530/600 calls (88.3%) | Pair 265/300 | Last: BA -> 'A' (rq0_0230)
+[gemma-3-27b-it] Progress: 540/600 calls (90.0%) | Pair 270/300 | Last: BA -> 'A' (rq0_0264)
+[gemma-3-27b-it] Progress: 550/600 calls (91.7%) | Pair 275/300 | Last: BA -> 'A' (rq0_0245)
+[gemma-3-27b-it] Progress: 560/600 calls (93.3%) | Pair 280/300 | Last: BA -> 'A' (rq0_0246)
+[gemma-3-27b-it] Progress: 570/600 calls (95.0%) | Pair 285/300 | Last: BA -> 'A' (rq0_0245)
+[gemma-3-27b-it] Progress: 580/600 calls (96.7%) | Pair 290/300 | Last: BA -> 'A' (rq0_0269)
+[gemma-3-27b-it] Progress: 590/600 calls (98.3%) | Pair 295/300 | Last: BA -> 'B' (rq0_0074)
+[gemma-3-27b-it] Progress: 600/600 calls (100.0%) | Pair 300/300 | Last: BA -> 'B' (rq0_0056)
+[gemma-3-27b-it] Cleaning up model from GPU 0...
+[gemma-3-27b-it] Cleanup complete. Remaining VRAM: 0.01 GB
+[gemma-3-27b-it] Finished all calls. Saved to /ANON/experiment_root/results/large_model_cross_family_3model_300java_20260910/gemma3_27b_raw.jsonl.
+
+[Mistral-Small-3.1-24B-Instruct-2503] Initializing on GPU 0...
+[Mistral-Small-3.1-24B-Instruct-2503] Loading weights in bfloat16...
+Loading checkpoint shards:   0%|          | 0/10 [00:00<?, ?it/s]Loading checkpoint shards:  10%|█         | 1/10 [00:01<00:09,  1.00s/it]Loading checkpoint shards:  20%|██        | 2/10 [00:02<00:08,  1.09s/it]Loading checkpoint shards:  30%|███       | 3/10 [00:03<00:07,  1.13s/it]Loading checkpoint shards:  40%|████      | 4/10 [00:04<00:06,  1.01s/it]Loading checkpoint shards:  50%|█████     | 5/10 [00:05<00:04,  1.04it/s]Loading checkpoint shards:  60%|██████    | 6/10 [00:06<00:03,  1.01it/s]Loading checkpoint shards:  70%|███████   | 7/10 [00:07<00:03,  1.03s/it]Loading checkpoint shards:  80%|████████  | 8/10 [00:08<00:02,  1.01s/it]Loading checkpoint shards:  90%|█████████ | 9/10 [00:09<00:00,  1.01it/s]Loading checkpoint shards: 100%|██████████| 10/10 [00:09<00:00,  1.08it/s]Loading checkpoint shards: 100%|██████████| 10/10 [00:09<00:00,  1.01it/s]
+[Mistral-Small-3.1-24B-Instruct-2503] Model loaded. VRAM allocated: 44.74 GB
+[Mistral-Small-3.1-24B-Instruct-2503] Starting inference on 300 pairs (600 calls)...
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 10/600 calls (1.7%) | Pair 5/300 | Last: BA -> 'A' (rq0_0032)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 20/600 calls (3.3%) | Pair 10/300 | Last: BA -> 'A' (rq0_0156)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 30/600 calls (5.0%) | Pair 15/300 | Last: BA -> 'A' (rq0_0262)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 40/600 calls (6.7%) | Pair 20/300 | Last: BA -> 'B' (rq0_0191)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 50/600 calls (8.3%) | Pair 25/300 | Last: BA -> 'A' (rq0_0202)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 60/600 calls (10.0%) | Pair 30/300 | Last: BA -> 'A' (rq0_0204)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 70/600 calls (11.7%) | Pair 35/300 | Last: BA -> 'A' (rq0_0029)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 80/600 calls (13.3%) | Pair 40/300 | Last: BA -> 'A' (rq0_0282)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 90/600 calls (15.0%) | Pair 45/300 | Last: BA -> 'A' (rq0_0167)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 100/600 calls (16.7%) | Pair 50/300 | Last: BA -> 'A' (rq0_0302)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 110/600 calls (18.3%) | Pair 55/300 | Last: BA -> 'A' (rq0_0261)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 120/600 calls (20.0%) | Pair 60/300 | Last: BA -> 'A' (rq0_0166)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 130/600 calls (21.7%) | Pair 65/300 | Last: BA -> 'A' (rq0_0205)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 140/600 calls (23.3%) | Pair 70/300 | Last: BA -> 'B' (rq0_0288)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 150/600 calls (25.0%) | Pair 75/300 | Last: BA -> 'A' (rq0_0222)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 160/600 calls (26.7%) | Pair 80/300 | Last: BA -> 'B' (rq0_0021)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 170/600 calls (28.3%) | Pair 85/300 | Last: BA -> 'A' (rq0_0246)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 180/600 calls (30.0%) | Pair 90/300 | Last: BA -> 'A' (rq0_0307)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 190/600 calls (31.7%) | Pair 95/300 | Last: BA -> 'A' (rq0_0093)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 200/600 calls (33.3%) | Pair 100/300 | Last: BA -> 'A' (rq0_0079)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 210/600 calls (35.0%) | Pair 105/300 | Last: BA -> 'B' (rq0_0010)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 220/600 calls (36.7%) | Pair 110/300 | Last: BA -> 'A' (rq0_0101)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 230/600 calls (38.3%) | Pair 115/300 | Last: BA -> 'A' (rq0_0224)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 240/600 calls (40.0%) | Pair 120/300 | Last: BA -> 'B' (rq0_0192)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 250/600 calls (41.7%) | Pair 125/300 | Last: BA -> 'A' (rq0_0131)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 260/600 calls (43.3%) | Pair 130/300 | Last: BA -> 'A' (rq0_0136)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 270/600 calls (45.0%) | Pair 135/300 | Last: BA -> 'B' (rq0_0008)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 280/600 calls (46.7%) | Pair 140/300 | Last: BA -> 'B' (rq0_0246)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 290/600 calls (48.3%) | Pair 145/300 | Last: BA -> 'A' (rq0_0132)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 300/600 calls (50.0%) | Pair 150/300 | Last: BA -> 'A' (rq0_0204)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 310/600 calls (51.7%) | Pair 155/300 | Last: BA -> 'A' (rq0_0248)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 320/600 calls (53.3%) | Pair 160/300 | Last: BA -> 'B' (rq0_0159)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 330/600 calls (55.0%) | Pair 165/300 | Last: BA -> 'A' (rq0_0093)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 340/600 calls (56.7%) | Pair 170/300 | Last: BA -> 'A' (rq0_0078)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 350/600 calls (58.3%) | Pair 175/300 | Last: BA -> 'A' (rq0_0275)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 360/600 calls (60.0%) | Pair 180/300 | Last: BA -> 'A' (rq0_0180)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 370/600 calls (61.7%) | Pair 185/300 | Last: BA -> 'A' (rq0_0274)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 380/600 calls (63.3%) | Pair 190/300 | Last: BA -> 'A' (rq0_0109)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 390/600 calls (65.0%) | Pair 195/300 | Last: BA -> 'A' (rq0_0297)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 400/600 calls (66.7%) | Pair 200/300 | Last: BA -> 'A' (rq0_0210)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 410/600 calls (68.3%) | Pair 205/300 | Last: BA -> 'A' (rq0_0295)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 420/600 calls (70.0%) | Pair 210/300 | Last: BA -> 'A' (rq0_0169)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 430/600 calls (71.7%) | Pair 215/300 | Last: BA -> 'A' (rq0_0113)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 440/600 calls (73.3%) | Pair 220/300 | Last: BA -> 'B' (rq0_0087)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 450/600 calls (75.0%) | Pair 225/300 | Last: BA -> 'B' (rq0_0040)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 460/600 calls (76.7%) | Pair 230/300 | Last: BA -> 'A' (rq0_0235)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 470/600 calls (78.3%) | Pair 235/300 | Last: BA -> 'A' (rq0_0175)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 480/600 calls (80.0%) | Pair 240/300 | Last: BA -> 'A' (rq0_0152)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 490/600 calls (81.7%) | Pair 245/300 | Last: BA -> 'A' (rq0_0159)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 500/600 calls (83.3%) | Pair 250/300 | Last: BA -> 'A' (rq0_0272)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 510/600 calls (85.0%) | Pair 255/300 | Last: BA -> 'B' (rq0_0036)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 520/600 calls (86.7%) | Pair 260/300 | Last: BA -> 'A' (rq0_0053)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 530/600 calls (88.3%) | Pair 265/300 | Last: BA -> 'A' (rq0_0230)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 540/600 calls (90.0%) | Pair 270/300 | Last: BA -> 'A' (rq0_0264)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 550/600 calls (91.7%) | Pair 275/300 | Last: BA -> 'A' (rq0_0245)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 560/600 calls (93.3%) | Pair 280/300 | Last: BA -> 'A' (rq0_0246)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 570/600 calls (95.0%) | Pair 285/300 | Last: BA -> 'A' (rq0_0245)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 580/600 calls (96.7%) | Pair 290/300 | Last: BA -> 'A' (rq0_0269)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 590/600 calls (98.3%) | Pair 295/300 | Last: BA -> 'B' (rq0_0074)
+[Mistral-Small-3.1-24B-Instruct-2503] Progress: 600/600 calls (100.0%) | Pair 300/300 | Last: BA -> 'A' (rq0_0067)
+[Mistral-Small-3.1-24B-Instruct-2503] Cleaning up model from GPU 0...
+[Mistral-Small-3.1-24B-Instruct-2503] Cleanup complete. Remaining VRAM: 0.01 GB
+[Mistral-Small-3.1-24B-Instruct-2503] Finished all calls. Saved to /ANON/experiment_root/results/large_model_cross_family_3model_300java_20260910/mistral_small_31_24b_raw.jsonl.
+
+============================================================
+ALL MODEL RUNS COMPLETED
+============================================================

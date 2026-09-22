@@ -1,0 +1,29 @@
+{
+  "created_at_utc": "2026-08-31T06:18:29.249017+00:00",
+  "analysis_script_sha256": "c9a7cba64e36f0f8756853bfc6b810a9d241bada089e467d7b0e7e4957eaf4dd",
+  "package_git_commit": "ac0ab27b1428ec9919f2b1020aa64b321bfd0ed1",
+  "models": [
+    "qwen3",
+    "internvl3_5"
+  ],
+  "pairs_per_model": 900,
+  "conditions": [
+    "separate_image_only",
+    "combined_image_only",
+    "separate_text_plus_image",
+    "combined_text_plus_image"
+  ],
+  "orders": [
+    "AB",
+    "BA"
+  ],
+  "calls_per_model": 7200,
+  "paired_reference": "separate_image_only",
+  "paired_test": "two-sided exact McNemar on effective-correct indicator",
+  "bc_rule": "strict_valid iff abs(c)>abs(b); zero empirical violations required",
+  "bc_rule_violations": 0,
+  "inference_manifests": {
+    "qwen3": "inference/robustness/qwen3/manifest.json",
+    "internvl3_5": "inference/robustness/internvl3_5/manifest.json"
+  }
+}

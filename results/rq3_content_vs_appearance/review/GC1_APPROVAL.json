@@ -1,0 +1,19 @@
+{
+  "status": "approved",
+  "validated_at_utc": "2026-07-21T13:59:20.483881+00:00",
+  "review_form": "results/grounded_protocol_3lang_20260721/rq3/review/GC1_REVIEW_FORM.csv",
+  "review_form_sha256": "d2491c2adf6706d2b220da88fba3e388e564babe49b7a3d88b93d770ce36ce74",
+  "sample_sha256": "4c41b11585ff062dbcca2e547b384f4ddd9da11e6d634608639c2245140da15a",
+  "review_rows": 60,
+  "checks_per_row": [
+    "gold_coherent",
+    "trash_incoherent",
+    "clean_legible",
+    "ugly_degraded_no_corruption",
+    "same_tokens_clean_ugly",
+    "approve"
+  ],
+  "failed_rows": [],
+  "errors": [],
+  "gate_pass": true
+}
