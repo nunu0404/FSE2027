@@ -1,0 +1,10 @@
+{
+  "run_id": "deploy_v2_logit_20260731",
+  "system": "rapidocr_text_qwen_coder",
+  "formal_calls_used": 20,
+  "extra_pilot_calls": 0,
+  "parse_failures": 0,
+  "missing_logit_calls": 0,
+  "argmax_mismatches": 0,
+  "gate_pass": true
+}

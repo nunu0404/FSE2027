@@ -1,0 +1,25 @@
+{
+  "generated_at_utc": "2026-07-07T06:51:32.014634+00:00",
+  "model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "model_kind": "text_llm",
+  "input_setting": "text_only",
+  "modality": "text_only",
+  "packaging": "text_only",
+  "prompt_variant": "B",
+  "pairs": "/ANON/experiment_root/experiments/rq0_viability/data/pairs/full_pair_set_rq0.csv",
+  "limit_pairs": 3000,
+  "max_pairs": null,
+  "resume": true,
+  "cuda_visible_devices": "0",
+  "nvidia_smi_before": "0, NVIDIA RTX PRO 6000 Blackwell Server Edition, 3 MiB, 97887 MiB, 0 %\n1, NVIDIA RTX PRO 6000 Blackwell Server Edition, 96617 MiB, 97887 MiB, 100 %\n",
+  "dtype": "bf16",
+  "device_map": "auto",
+  "temperature": 0.0,
+  "top_p": 1.0,
+  "max_new_tokens": 24,
+  "seed": 42,
+  "outputs": {
+    "raw": "/ANON/experiment_root/results/screenshot_only_ocr_clean_20260707/ocr_text_llm_raw/ocr_text_llm_easyocr_preprocessed.jsonl",
+    "metrics": "/ANON/experiment_root/results/screenshot_only_ocr_clean_20260707/ocr_text_llm_raw/ocr_text_llm_easyocr_preprocessed.metrics.json"
+  }
+}

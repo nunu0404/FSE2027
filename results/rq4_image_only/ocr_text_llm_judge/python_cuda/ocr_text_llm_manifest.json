@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "conditions": 4,
+  "pairs_per_condition": 6000,
+  "directional_calls": 48000,
+  "prompt": "B",
+  "seed": 42,
+  "temperature": 0.0,
+  "top_p": 1.0,
+  "max_new_tokens": 24
+}

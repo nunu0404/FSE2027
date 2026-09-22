@@ -1,0 +1,10 @@
+model_family,model,pairs,correct_pairs,tie_pairs,pair_accuracy,spearman_continuous_all
+canonical_binary_probability,Logistic Regression,6000,3946,0,0.6576666666666666,0.46250499093261394
+canonical_binary_probability,Multilayer Perceptron,6000,3957,0,0.6595,0.4516635891932649
+canonical_binary_probability,Naive Bayes,6000,3871,2,0.6451666666666667,0.3944760312538991
+canonical_binary_probability,"Scalabrino-LR (replicated, not official tool)",6000,3950,0,0.6583333333333333,0.46433672995935577
+canonical_binary_probability,Voting ensemble (LR+NB+RF),6000,4082,0,0.6803333333333333,0.4825577050016828
+regression,gradient_boosting_regressor,6000,4076,0,0.6793333333333333,0.5030497543060503
+regression,linear_regression,6000,4049,0,0.6748333333333333,0.5115790546710266
+regression,random_forest_regressor,6000,4086,0,0.681,0.5230437690955944
+regression,svr,6000,4060,0,0.6766666666666666,0.5056616358004568

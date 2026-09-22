@@ -1,0 +1,5 @@
+run_name,rows,unique_pairs,duplicate_pairs
+source_text_llm,6000,6000,0
+ocr_text_llm_rapidocr,6000,6000,0
+ocr_text_llm_easyocr,6000,6000,0
+ocr_text_llm_easyocr_preprocessed,6000,6000,0

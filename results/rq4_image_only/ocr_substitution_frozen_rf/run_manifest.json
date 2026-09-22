@@ -1,0 +1,26 @@
+{
+  "generated_at_utc": "2026-07-07T04:32:14.217248+00:00",
+  "git_commit": null,
+  "output_dir": "/ANON/experiment_root/results/screenshot_only_ocr_clean_20260707",
+  "engines": [
+    "easyocr",
+    "rapidocr",
+    "easyocr_preprocessed"
+  ],
+  "dataset": "/ANON/experiment_root/experiments/rq0_viability/data/processed/pooled_313_processed.csv",
+  "pairs": "/ANON/experiment_root/experiments/rq0_viability/data/pairs/full_pair_set_rq0.csv",
+  "render_metadata": "/ANON/experiment_root/experiments/rq0_viability/outputs/render_metadata/default_render_metadata.csv",
+  "clean_direct_vlm_inputs": [
+    "/ANON/experiment_root/experiments/rq0_viability/outputs/vlm_judges/full_factorial_clean_20260703/OpenGVLab__InternVL3-8B__image_only__promptB__seed42.jsonl",
+    "/ANON/experiment_root/experiments/rq0_viability/outputs/vlm_judges/full_factorial_clean_20260703/Qwen__Qwen2.5-VL-7B-Instruct__image_only__promptB__seed42.jsonl"
+  ],
+  "tesseract_available": false,
+  "text_llm_status": "not_run: no local Qwen/Qwen2.5-Coder-7B-Instruct checkpoint is currently present in Hugging Face cache",
+  "outputs": {
+    "ocr_text": "/ANON/experiment_root/results/screenshot_only_ocr_clean_20260707/clean_ocr_text_by_snippet_all_engines.csv",
+    "quality": "/ANON/experiment_root/results/screenshot_only_ocr_clean_20260707/ocr_quality_summary.md",
+    "pair_predictions": "/ANON/experiment_root/results/screenshot_only_ocr_clean_20260707/ocr_classical_pair_predictions.csv",
+    "final_table": "/ANON/experiment_root/results/screenshot_only_ocr_clean_20260707/clean_multi_ocr_final_comparison_table.csv",
+    "report": "/ANON/experiment_root/results/screenshot_only_ocr_clean_20260707/CLEAN_MULTI_OCR_EXPERIMENT_REPORT.md"
+  }
+}

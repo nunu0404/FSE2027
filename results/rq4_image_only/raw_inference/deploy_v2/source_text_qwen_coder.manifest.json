@@ -1,0 +1,40 @@
+{
+  "run_id": "deploy_v2_logit_20260731",
+  "system": "source_text_qwen_coder",
+  "status": "complete",
+  "model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "model_revision": "c03e6d358207e414f1eca0bb1891e29f1db0e242",
+  "model_snapshot": "/ANON/home/.cache/huggingface/hub/models--Qwen--Qwen2.5-Coder-7B-Instruct/snapshots/c03e6d358207e414f1eca0bb1891e29f1db0e242",
+  "started_at_utc": "2026-07-31T04:01:17.404528+00:00",
+  "updated_at_utc": "2026-07-31T05:18:48.366449+00:00",
+  "calls": 18000,
+  "expected_calls": 18000,
+  "languages": [
+    "java",
+    "python",
+    "cuda"
+  ],
+  "pairs_per_language": 3000,
+  "orders": [
+    "AB",
+    "BA"
+  ],
+  "dtype": "bfloat16",
+  "decoding": {
+    "do_sample": false,
+    "temperature": 0.0,
+    "top_p_inactive": 1.0,
+    "max_new_tokens": 24,
+    "use_cache": false
+  },
+  "batch_size": 1,
+  "seed": 42,
+  "capture_verdict_logits": true,
+  "cuda_visible_devices": "0",
+  "gpu_uuid": "GPU-98933e9f-5143-2ea9-2508-16c4aea693f4",
+  "python": "3.13.11",
+  "execution_lock_sha256": "31d995c9e8acce644487059162273c289f119abc1fa498f81a6e835e11f707f9",
+  "frozen_pairs_sha256": "5965080b53e037aa14524959ea69b5884076663bd46304a42eeebf68aca2925f",
+  "frozen_items_sha256": "ed51c1cb6a5a8e1baf36d16080ab6eb311485d196a9261cf442473d3597cf3a4",
+  "prompt_sha256": "1eb486ba7a7f1908b4279446aec106117fd209d410f7309ca2c5a64bcb978ae1"
+}

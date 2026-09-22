@@ -1,0 +1,19 @@
+model_family,model,language,pairs,correct_pairs,tie_pairs,pair_accuracy,spearman_continuous_all
+canonical_binary_probability,Logistic Regression,cuda,3000,2032,0,0.6773333333333333,0.5198070364483414
+canonical_binary_probability,Logistic Regression,python,3000,1914,0,0.638,0.39655817865403054
+canonical_binary_probability,Multilayer Perceptron,cuda,3000,2069,0,0.6896666666666667,0.5440950326476582
+canonical_binary_probability,Multilayer Perceptron,python,3000,1888,0,0.6293333333333333,0.3592446675138885
+canonical_binary_probability,Naive Bayes,cuda,3000,1951,0,0.6503333333333333,0.4352341875338272
+canonical_binary_probability,Naive Bayes,python,3000,1920,2,0.64,0.347529167495653
+canonical_binary_probability,"Scalabrino-LR (replicated, not official tool)",cuda,3000,2031,0,0.677,0.5213765301890971
+canonical_binary_probability,"Scalabrino-LR (replicated, not official tool)",python,3000,1919,0,0.6396666666666667,0.39854057400280885
+canonical_binary_probability,Voting ensemble (LR+NB+RF),cuda,3000,2142,0,0.714,0.5644976028329393
+canonical_binary_probability,Voting ensemble (LR+NB+RF),python,3000,1940,0,0.6466666666666666,0.3930060015614973
+regression,gradient_boosting_regressor,cuda,3000,2202,0,0.734,0.6216491037990386
+regression,gradient_boosting_regressor,python,3000,1874,0,0.6246666666666667,0.35152626881076043
+regression,linear_regression,cuda,3000,2195,0,0.7316666666666667,0.6417843588416654
+regression,linear_regression,python,3000,1854,0,0.618,0.35239114491444945
+regression,random_forest_regressor,cuda,3000,2202,0,0.734,0.6332657967253639
+regression,random_forest_regressor,python,3000,1884,0,0.628,0.3866491692438282
+regression,svr,cuda,3000,2274,0,0.758,0.6879688167358758
+regression,svr,python,3000,1786,0,0.5953333333333334,0.26618980902431155

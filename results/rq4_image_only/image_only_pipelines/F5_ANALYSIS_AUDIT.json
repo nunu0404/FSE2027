@@ -1,0 +1,32 @@
+{
+  "run_id": "deploy_v2_logit_20260731",
+  "calls": 54000,
+  "system_pairs": 27000,
+  "duplicate_call_keys": 0,
+  "missing_logit_calls": 0,
+  "parse_failure_calls": 0,
+  "argmax_mismatch_calls": 0,
+  "calls_per_system_language_order": {
+    "direct_qwen_image_only|cuda|AB": 3000,
+    "direct_qwen_image_only|cuda|BA": 3000,
+    "direct_qwen_image_only|java|AB": 3000,
+    "direct_qwen_image_only|java|BA": 3000,
+    "direct_qwen_image_only|python|AB": 3000,
+    "direct_qwen_image_only|python|BA": 3000,
+    "rapidocr_text_qwen_coder|cuda|AB": 3000,
+    "rapidocr_text_qwen_coder|cuda|BA": 3000,
+    "rapidocr_text_qwen_coder|java|AB": 3000,
+    "rapidocr_text_qwen_coder|java|BA": 3000,
+    "rapidocr_text_qwen_coder|python|AB": 3000,
+    "rapidocr_text_qwen_coder|python|BA": 3000,
+    "source_text_qwen_coder|cuda|AB": 3000,
+    "source_text_qwen_coder|cuda|BA": 3000,
+    "source_text_qwen_coder|java|AB": 3000,
+    "source_text_qwen_coder|java|BA": 3000,
+    "source_text_qwen_coder|python|AB": 3000,
+    "source_text_qwen_coder|python|BA": 3000
+  },
+  "bootstrap": "10,000 two-endpoint snippet-cluster replicates; shared multinomial snippet counts; dyad weight=w_i*w_j",
+  "mcnemar": "two-sided exact binomial McNemar",
+  "multiplicity": "Holm across 9 system-language comparisons"
+}

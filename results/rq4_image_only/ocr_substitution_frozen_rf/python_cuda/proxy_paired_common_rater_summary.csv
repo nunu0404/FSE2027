@@ -1,0 +1,7 @@
+language,difficulty,pairs_with_common_raters,median_common_raters,paired_test_available_pairs,paired_direction_match_rate,paired_wilcoxon_fdr_significant_pairs
+cuda,easy,140,74.5,118,0.9285714285714286,109
+cuda,hard,127,67.0,103,0.6850393700787402,26
+cuda,medium,121,64.0,96,0.8925619834710744,71
+python,easy,109,85.0,99,0.9541284403669725,87
+python,hard,121,78.0,110,0.8181818181818182,36
+python,medium,109,71.0,99,0.9357798165137615,60

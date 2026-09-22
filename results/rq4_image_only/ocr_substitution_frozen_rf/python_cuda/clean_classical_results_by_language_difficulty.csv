@@ -1,0 +1,55 @@
+model_family,model,language,difficulty,pairs,correct_pairs,tie_pairs,pair_accuracy,spearman_continuous_all
+canonical_binary_probability,Logistic Regression,cuda,easy,1000,823,0,0.823,0.7268583903029917
+canonical_binary_probability,Logistic Regression,cuda,hard,1000,566,0,0.566,0.1757447538711419
+canonical_binary_probability,Logistic Regression,cuda,medium,1000,643,0,0.643,0.3389284902474142
+canonical_binary_probability,Logistic Regression,python,easy,1000,747,0,0.747,0.5433455022465996
+canonical_binary_probability,Logistic Regression,python,hard,1000,564,0,0.564,0.21192245945897026
+canonical_binary_probability,Logistic Regression,python,medium,1000,603,0,0.603,0.2733728736746531
+canonical_binary_probability,Multilayer Perceptron,cuda,easy,1000,839,0,0.839,0.7428927767222034
+canonical_binary_probability,Multilayer Perceptron,cuda,hard,1000,583,0,0.583,0.1931345424608259
+canonical_binary_probability,Multilayer Perceptron,cuda,medium,1000,647,0,0.647,0.37635631380862367
+canonical_binary_probability,Multilayer Perceptron,python,easy,1000,713,0,0.713,0.5044595078608656
+canonical_binary_probability,Multilayer Perceptron,python,hard,1000,562,0,0.562,0.16342925078356718
+canonical_binary_probability,Multilayer Perceptron,python,medium,1000,613,0,0.613,0.22592790209465785
+canonical_binary_probability,Naive Bayes,cuda,easy,1000,767,0,0.767,0.6325149664701241
+canonical_binary_probability,Naive Bayes,cuda,hard,1000,562,0,0.562,0.14144922581791458
+canonical_binary_probability,Naive Bayes,cuda,medium,1000,622,0,0.622,0.2889535232994627
+canonical_binary_probability,Naive Bayes,python,easy,1000,744,2,0.744,0.4892566722584218
+canonical_binary_probability,Naive Bayes,python,hard,1000,582,0,0.582,0.21253656456397813
+canonical_binary_probability,Naive Bayes,python,medium,1000,594,0,0.594,0.20068734754508538
+canonical_binary_probability,"Scalabrino-LR (replicated, not official tool)",cuda,easy,1000,824,0,0.824,0.7284306379129734
+canonical_binary_probability,"Scalabrino-LR (replicated, not official tool)",cuda,hard,1000,564,0,0.564,0.176379890550103
+canonical_binary_probability,"Scalabrino-LR (replicated, not official tool)",cuda,medium,1000,643,0,0.643,0.34083493826252975
+canonical_binary_probability,"Scalabrino-LR (replicated, not official tool)",python,easy,1000,748,0,0.748,0.5471833224298236
+canonical_binary_probability,"Scalabrino-LR (replicated, not official tool)",python,hard,1000,568,0,0.568,0.21147766099415588
+canonical_binary_probability,"Scalabrino-LR (replicated, not official tool)",python,medium,1000,603,0,0.603,0.2750780994566141
+canonical_binary_probability,Voting ensemble (LR+NB+RF),cuda,easy,1000,867,0,0.867,0.7582876164865194
+canonical_binary_probability,Voting ensemble (LR+NB+RF),cuda,hard,1000,598,0,0.598,0.20764833597607116
+canonical_binary_probability,Voting ensemble (LR+NB+RF),cuda,medium,1000,677,0,0.677,0.37727204077654714
+canonical_binary_probability,Voting ensemble (LR+NB+RF),python,easy,1000,746,0,0.746,0.5357741179937907
+canonical_binary_probability,Voting ensemble (LR+NB+RF),python,hard,1000,585,0,0.585,0.2424576793682751
+canonical_binary_probability,Voting ensemble (LR+NB+RF),python,medium,1000,609,0,0.609,0.25184909918230886
+regression,gradient_boosting_regressor,cuda,easy,1000,877,0,0.877,0.7937691808196414
+regression,gradient_boosting_regressor,cuda,hard,1000,610,0,0.61,0.23376624389611472
+regression,gradient_boosting_regressor,cuda,medium,1000,715,0,0.715,0.4527146025193349
+regression,gradient_boosting_regressor,python,easy,1000,716,0,0.716,0.5103441222750953
+regression,gradient_boosting_regressor,python,hard,1000,567,0,0.567,0.13014592600249275
+regression,gradient_boosting_regressor,python,medium,1000,591,0,0.591,0.21322048881541097
+regression,linear_regression,cuda,easy,1000,895,0,0.895,0.8167817003844613
+regression,linear_regression,cuda,hard,1000,599,0,0.599,0.23736450774265883
+regression,linear_regression,cuda,medium,1000,701,0,0.701,0.4582370503565622
+regression,linear_regression,python,easy,1000,710,0,0.71,0.5265563919464693
+regression,linear_regression,python,hard,1000,547,0,0.547,0.11467100383119906
+regression,linear_regression,python,medium,1000,597,0,0.597,0.23064832902750404
+regression,random_forest_regressor,cuda,easy,1000,886,0,0.886,0.809693119125754
+regression,random_forest_regressor,cuda,hard,1000,608,0,0.608,0.2451984821171774
+regression,random_forest_regressor,cuda,medium,1000,708,0,0.708,0.45957283776848956
+regression,random_forest_regressor,python,easy,1000,729,0,0.729,0.5511840187905827
+regression,random_forest_regressor,python,hard,1000,562,0,0.562,0.17801117402167696
+regression,random_forest_regressor,python,medium,1000,593,0,0.593,0.23049573086803893
+regression,svr,cuda,easy,1000,919,0,0.919,0.8421962444089545
+regression,svr,cuda,hard,1000,624,0,0.624,0.2830041325314177
+regression,svr,cuda,medium,1000,731,0,0.731,0.5119541831355716
+regression,svr,python,easy,1000,676,0,0.676,0.4272777037326988
+regression,svr,python,hard,1000,536,0,0.536,0.12429530188859053
+regression,svr,python,medium,1000,574,0,0.574,0.11783918714195066
