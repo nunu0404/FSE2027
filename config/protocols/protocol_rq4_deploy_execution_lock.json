@@ -1,0 +1,96 @@
+{
+  "run_id": "deploy_v2_logit_20260731",
+  "created_at_utc": "2026-07-31T02:01:13.544493+00:00",
+  "status": "locked_before_inference",
+  "python_executable": "/ANON/home/miniconda3/bin/python",
+  "python_version": "3.13.11",
+  "python_full": "3.13.11 | packaged by Anaconda, Inc. | (main, Dec 10 2025, 21:28:48) [GCC 14.3.0]",
+  "platform": "Linux-5.15.0-163-generic-x86_64-with-glibc2.35",
+  "packages": {
+    "torch": {
+      "version": "2.11.0+cu130",
+      "path": "/ANON/home/miniconda3/lib/python3.13/site-packages/torch/__init__.py"
+    },
+    "transformers": {
+      "version": "5.9.0",
+      "path": "/ANON/home/miniconda3/lib/python3.13/site-packages/transformers/__init__.py"
+    },
+    "accelerate": {
+      "version": "1.14.0",
+      "path": "/ANON/home/miniconda3/lib/python3.13/site-packages/accelerate/__init__.py"
+    },
+    "PIL": {
+      "version": "12.1.1",
+      "path": "/ANON/home/.local/lib/python3.13/site-packages/PIL/__init__.py"
+    },
+    "pandas": {
+      "version": "3.0.1",
+      "path": "/ANON/home/miniconda3/lib/python3.13/site-packages/pandas/__init__.py"
+    },
+    "numpy": {
+      "version": "2.5.0",
+      "path": "/ANON/home/miniconda3/lib/python3.13/site-packages/numpy/__init__.py"
+    },
+    "scipy": {
+      "version": "1.18.0",
+      "path": "/ANON/home/miniconda3/lib/python3.13/site-packages/scipy/__init__.py"
+    },
+    "sklearn": {
+      "version": "1.9.0",
+      "path": "/ANON/home/.local/lib/python3.13/site-packages/sklearn/__init__.py"
+    },
+    "tokenizers": {
+      "version": "0.22.2",
+      "path": "/ANON/home/miniconda3/lib/python3.13/site-packages/tokenizers/__init__.py"
+    },
+    "safetensors": {
+      "version": "0.7.0",
+      "path": "/ANON/home/miniconda3/lib/python3.13/site-packages/safetensors/__init__.py"
+    }
+  },
+  "torch_cuda": "13.0",
+  "cudnn": 91900,
+  "deterministic_algorithms_enabled": false,
+  "cuda_matmul_allow_tf32": false,
+  "cuda_visible_devices": "0",
+  "gpu_uuid": "GPU-98933e9f-5143-2ea9-2508-16c4aea693f4",
+  "gpu": {
+    "uuid": "GPU-98933e9f-5143-2ea9-2508-16c4aea693f4",
+    "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+    "driver": "580.95.05",
+    "memory_mib": "97887"
+  },
+  "batching": "batch_size_1_direct_generate_no_continuous_batching",
+  "parallelism": {
+    "tensor_parallel": 1,
+    "pipeline_parallel": 1,
+    "model_processes": 1
+  },
+  "precision": "bfloat16",
+  "decoding": {
+    "do_sample": false,
+    "temperature": 0.0,
+    "top_p_inactive": 1.0,
+    "max_new_tokens": 24,
+    "seed": 42
+  },
+  "environment": {
+    "LD_LIBRARY_PATH": "/ANON/home/miniconda3/lib",
+    "PYTHONPATH": "",
+    "HF_HOME": "",
+    "TRANSFORMERS_CACHE": ""
+  },
+  "model_revisions": {
+    "Qwen/Qwen2.5-VL-7B-Instruct": "cc594898137f460bfe9f0759e9844b3ce807cfb5",
+    "Qwen/Qwen2.5-Coder-7B-Instruct": "c03e6d358207e414f1eca0bb1891e29f1db0e242"
+  },
+  "preregistration_sha256": "c008a88fe2f1033a55bd9e8927b111e267d5f6a591d54c48354f3566247f34a7",
+  "frozen_inventory_sha256": "c6cedf1e8ff740fb3e601285c18964cb07c0a863c02339499e60c697e57500fa",
+  "frozen_pairs_sha256": "5965080b53e037aa14524959ea69b5884076663bd46304a42eeebf68aca2925f",
+  "frozen_items_sha256": "ed51c1cb6a5a8e1baf36d16080ab6eb311485d196a9261cf442473d3597cf3a4",
+  "ocrml_gate_sha256": "c87bf592b137cabb48d56afd6197ad8629e1016d728c2599682e9868d444f6a1",
+  "runner_sha256": "6d96de6cea1da3f467773382e71f57feb6d5c91df85dc8cc8399774d28766c1f",
+  "logit_capture_source_sha256": "9ede213223341612d6731c6708b92e0dd9cfc00baae72664b2528472edd78523",
+  "canonical_judge_source_sha256": "cdbc524640db129a23d5f9c7e7fb31266725a451736411f0f886acb6481fd169",
+  "new_inference_budget": 54000
+}

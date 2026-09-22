@@ -1,0 +1,19 @@
+# Core
+torch>=2.1.0
+transformers>=4.40.0
+accelerate>=0.27.0
+
+# Image rendering
+Pillow>=10.0.0
+pygments>=2.17.0
+
+# Data handling
+pandas>=2.0.0
+scipy>=1.11.0
+numpy>=1.24.0
+
+# OpenAI API judge (optional)
+openai>=1.0.0
+
+# YAML config support
+PyYAML>=6.0

@@ -1,0 +1,24 @@
+classical:
+  regression:
+    - linear_regression
+    - random_forest_regressor
+    - gradient_boosting_regressor
+    - svr
+  classification:
+    - logistic_regression
+    - random_forest_classifier
+    - gradient_boosting_classifier
+    - svc
+
+text_llm:
+  preferred:
+    - Qwen/Qwen2.5-Coder-7B-Instruct
+    - Qwen/Qwen2.5-7B-Instruct
+  status: check_local_or_download
+
+vlm:
+  main:
+    - Qwen/Qwen2.5-VL-7B-Instruct
+    - OpenGVLab/InternVL3-8B
+  optional:
+    - Qwen/Qwen2.5-VL-32B-Instruct

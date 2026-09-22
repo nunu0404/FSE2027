@@ -1,0 +1,12 @@
+{
+  "model": "OpenGVLab/InternVL3_5-8B-HF",
+  "model_label": "InternVL3.5-8B",
+  "model_revision": "741a7d03020411e666c6109218ab71e08151ef86",
+  "device": 0,
+  "total_calls": 42000,
+  "completed_calls": 42000,
+  "mismatch_count": 720,
+  "agreement_pass_rate": 0.9828571428571429,
+  "completed_at_utc": "2026-09-11T16:51:30.247121+00:00",
+  "status": "complete"
+}

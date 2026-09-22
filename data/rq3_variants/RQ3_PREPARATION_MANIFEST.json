@@ -1,0 +1,53 @@
+{
+  "status": "ready_for_inference",
+  "generated_at_utc": "2026-07-21T09:23:40.680504+00:00",
+  "seed": 42,
+  "bases": 300,
+  "bases_by_language": {
+    "cuda": 100,
+    "java": 100,
+    "python": 100
+  },
+  "score_strata_by_language": {
+    "cuda/low": 34,
+    "cuda/mid": 33,
+    "cuda/high": 33,
+    "java/low": 34,
+    "java/mid": 33,
+    "java/high": 33,
+    "python/low": 34,
+    "python/mid": 33,
+    "python/high": 33
+  },
+  "variant_sources": 600,
+  "rendered_images": 1200,
+  "contrasts": 1800,
+  "contrasts_by_language": {
+    "cuda": 600,
+    "java": 600,
+    "python": 600
+  },
+  "minimum_mutation_families_per_base": 2,
+  "all_parse_error_counts_nonincreasing": true,
+  "all_original_identifier_cues_removed": true,
+  "all_visual_source_hash_pairs_match": true,
+  "all_clean_ugly_image_pairs_distinct": true,
+  "all_images_nonblank": true,
+  "gc1_review_items": 60,
+  "gc1_by_language": {
+    "cuda": 20,
+    "java": 20,
+    "python": 20
+  },
+  "inference_authorized": true,
+  "inference_blocker": null,
+  "parser_versions": {
+    "tree_sitter": "0.25.2",
+    "java": "0.23.5",
+    "python": "0.25.0",
+    "cpp_for_cuda": "0.23.4"
+  },
+  "automatic_preparation_gate_pass": true,
+  "gc1_approval_sha256": "5f491367b1475bd7cecca52fc75df1ec11e5ee09f052808369c5b601c61e61ea",
+  "gc1_approved_at_utc": "2026-07-21T13:59:20.483881+00:00"
+}

@@ -1,0 +1,8 @@
+# Replication package integrity.
+#
+# Every file in this repository must be checked out byte-for-byte identical to
+# the bytes that were produced by the original runs, because MANIFEST.sha256
+# records a SHA-256 for each one. Disabling text conversion and diffing keeps
+# that true on every platform, including Windows checkouts with core.autocrlf
+# enabled.
+* -text -diff

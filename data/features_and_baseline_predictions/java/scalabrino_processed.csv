@@ -1,0 +1,3209 @@
+rq0_id,snippet_id,dataset_name,raw_code,human_mean_score,human_score_z_within_dataset,human_score_minmax_within_dataset,binary_label_median,binary_label_tertile_strict,tertiary_label,num_annotators,language,LOC,cyclomatic_complexity,min_score,max_score,code_type,exact_code_hash,formatting_normalized_hash,exact_duplicate_group_id,formatting_duplicate_group_id,duplicate_group_id,source_metadata,source_key,source_path,source_row_index
+rq0_0189,1,Scalabrino,"@Override
+    public void runTest(final Test test, final TestResult result) {
+        Thread t = new Thread() {
+            @Override
+            public void run() {
+                try {
+                    // inlined due to limitation in VA/Java
+                    //ActiveTestSuite.super.runTest(test, result);
+                    test.run(result);
+                } finally {
+                    ActiveTestSuite.this.runFinished();
+                }
+            }
+        };
+        t.start();
+    }",4.222222222222222,0.9016801442968183,0.7777777777777777,readable,readable,high,,java,14,2,2.0,5.0,Code,df5f44cbca37fcd03793e4e159e84194add9807943c6e4b4145b2f164758936d,8c2df56b216d87f93d5f2f8a254debb05003de8aa36d20211947014913a7e3db,,fmt_dup_0001,fmt_dup_0001,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 0, ""original_snippet_id"": ""1""}",,,0
+rq0_0190,2,Scalabrino,"/**
+     * ...as the moon sets over the early morning Merlin, Oregon
+     * mountains, our intrepid adventurers type...
+     */
+    static public Test createTest(Class<?> theClass, String name) {
+        Constructor<?> constructor;
+        try {
+            constructor = getTestConstructor(theClass);
+        } catch (NoSuchMethodException e) {
+            return warning(""Class "" + theClass.getName() + "" has no public constructor TestCase(String name) or TestCase()"");
+        }
+        Object test;
+        try {
+            if (constructor.getParameterTypes().length == 0) {
+                test = constructor.newInstance(new Object[0]);
+                if (test instanceof TestCase) {
+                    ((TestCase) test).setName(name);
+                }
+            } else {
+                test = constructor.newInstance(new Object[]{name});
+            }
+        } catch (InstantiationException e) {
+            return (warning(""Cannot instantiate test case: "" + name + "" ("" + exceptionToString(e) + "")""));
+        } catch (InvocationTargetException e) {
+            return (warning(""Exception in constructor: "" + name + "" ("" + exceptionToString(e.getTargetException()) + "")""));
+        } catch (IllegalAccessException e) {
+            return (warning(""Cannot access test case: "" + name + "" ("" + exceptionToString(e) + "")""));
+        }
+        return (Test) test;
+    }",3.555555555555556,-0.18736210790583105,0.5555555555555556,unreadable,discard,mid,,java,26,7,2.0,5.0,Code,d3b4fec8d831ee57a4a0dacda1f1483cdfd2844073a1d9806aa8c46a9ac30f6e,e3bd5a8379a938842ce1f526326444d27086894721ba4222ae6a90a1c4e828e0,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 1, ""original_snippet_id"": ""2""}",,,1
+rq0_0191,3,Scalabrino,"/**
+     * Provides serialization support.
+     *
+     * @param stream  the input stream (<code>null</code> not permitted).
+     *
+     * @throws IOException  if there is an I/O error.
+     * @throws ClassNotFoundException  if there is a classpath problem.
+     */
+    private void readObject(ObjectInputStream stream)
+        throws IOException, ClassNotFoundException {
+        stream.defaultReadObject();
+        this.titlePaint = SerialUtilities.readPaint(stream);
+        this.subtitlePaint = SerialUtilities.readPaint(stream);
+        this.chartBackgroundPaint = SerialUtilities.readPaint(stream);
+        this.legendBackgroundPaint = SerialUtilities.readPaint(stream);
+        this.legendItemPaint = SerialUtilities.readPaint(stream);
+        this.plotBackgroundPaint = SerialUtilities.readPaint(stream);
+        this.plotOutlinePaint = SerialUtilities.readPaint(stream);
+        this.labelLinkPaint = SerialUtilities.readPaint(stream);
+        this.baselinePaint = SerialUtilities.readPaint(stream);
+        this.domainGridlinePaint = SerialUtilities.readPaint(stream);
+        this.rangeGridlinePaint = SerialUtilities.readPaint(stream);
+        this.crosshairPaint = SerialUtilities.readPaint(stream);
+        this.axisLabelPaint = SerialUtilities.readPaint(stream);
+        this.tickLabelPaint = SerialUtilities.readPaint(stream);
+        this.itemLabelPaint = SerialUtilities.readPaint(stream);
+        this.shadowPaint = SerialUtilities.readPaint(stream);
+        this.thermometerPaint = SerialUtilities.readPaint(stream);
+        this.wallPaint = SerialUtilities.readPaint(stream);
+        this.errorIndicatorPaint = SerialUtilities.readPaint(stream);
+        this.gridBandPaint = SerialUtilities.readPaint(stream);
+        this.gridBandAlternatePaint = SerialUtilities.readPaint(stream);
+    }",3.555555555555556,-0.18736210790583105,0.5555555555555556,unreadable,discard,mid,,java,25,1,2.0,5.0,Code,dc91f43374f36f17e24c9eec0ef9cf5afa8dc25b67ece8afdceb0fc4fda73d98,8cf8c369130c4523b949ae0c4e8dd069de6dc0ddec17068169f4d2a03903278f,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 2, ""original_snippet_id"": ""3""}",,,2
+rq0_0192,4,Scalabrino,"/**
+     * Constructs a panel that displays the specified chart.
+     *
+     * @param chart  the chart.
+     */
+    public ChartPanel(JFreeChart chart) {
+
+        this(
+            chart,
+            DEFAULT_WIDTH,
+            DEFAULT_HEIGHT,
+            DEFAULT_MINIMUM_DRAW_WIDTH,
+            DEFAULT_MINIMUM_DRAW_HEIGHT,
+            DEFAULT_MAXIMUM_DRAW_WIDTH,
+            DEFAULT_MAXIMUM_DRAW_HEIGHT,
+            DEFAULT_BUFFER_USED,
+            true,  // properties
+            true,  // save
+            true,  // print
+            true,  // zoom
+            true   // tooltips
+        );
+
+    }",4.333333333333333,1.0831871863305926,0.8148148148148147,readable,readable,high,,java,17,1,3.0,5.0,Code,096b021a15229eaeabbb787ffaaabaf681ca6f867bdcf92fceff932189d916ef,38aa287d1f0f94197375337fd5f989ac71772d6443d7c4708ae7144c612ee48e,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 3, ""original_snippet_id"": ""4""}",,,3
+rq0_0193,5,Scalabrino,"/**
+     * static initializer, register all appropriate notations.
+     */
+    static void init() {
+        NotationProviderFactory2 npf = NotationProviderFactory2.getInstance();
+        NotationName name = /*Notation.findNotation(""Java"");*/
+            Notation.makeNotation(
+                    ""Java"",
+                    null,
+                    ResourceLoaderWrapper.lookupIconResource(""JavaNotation""));
+
+        npf.addNotationProvider(
+                NotationProviderFactory2.TYPE_NAME,
+                name, ModelElementNameNotationJava.class);
+        npf.addNotationProvider(
+                NotationProviderFactory2.TYPE_ATTRIBUTE,
+                name, AttributeNotationJava.class);
+        npf.addNotationProvider(
+                NotationProviderFactory2.TYPE_OPERATION,
+                name, OperationNotationJava.class);
+        npf.addNotationProvider(
+                NotationProviderFactory2.TYPE_ASSOCIATION_END_NAME,
+                name, AssociationEndNameNotationJava.class);
+        npf.addNotationProvider(
+                NotationProviderFactory2.TYPE_ASSOCIATION_NAME,
+                name, AssociationNameNotationJava.class);
+    }",4.0,0.5386660602292682,0.7037037037037036,readable,readable,high,,java,23,1,3.0,5.0,Code,7d2dc8bd92ce7bbc88c3a3c68df74de65fb1af7af9aa13e9c3199a2879a1fa3b,c8525fecdca04a1a0e3c056ea776621fc7aab16188cc0aa09737fed852cb9714,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 4, ""original_snippet_id"": ""5""}",,,4
+rq0_0194,6,Scalabrino,"/**
+     * {@inheritDoc}
+     *
+     * Overridden to find the start of a line-end.
+     */
+    public boolean addChar(char c) {
+	if (c == '\n') {
+	    hasLf = true;
+	    return true;
+	}
+
+	if (c == '\r') {
+	    hasCr = true;
+	    return true;
+	}
+
+	return false;
+    }",4.555555555555555,1.4462012703981426,0.8888888888888887,readable,readable,high,,java,11,3,3.0,5.0,Code,f0b8b29208adadca6096fd4b8e54ae975983a9e14eede2e5bc0ecaea7045aea4,313d853a8387f2c02c6a945aff7bc4ec492d486dd62a02502f9aa4deb146594e,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 5, ""original_snippet_id"": ""6""}",,,5
+rq0_0195,7,Scalabrino,"/**
+     * Loads the bundle (if not already loaded).
+     *
+     * @param name The name of the bundle to load.
+     */
+    private static void loadBundle(String name) {
+        if (bundles.containsKey(name)) {
+            return;
+        }
+        String resource = BUNDLES_PATH + ""."" + name;
+        ResourceBundle bundle = null;
+        try {
+            LOG.debug(""Loading "" + resource);
+            bundle = ResourceBundle.getBundle(resource, Locale.getDefault());
+        } catch (MissingResourceException e1) {
+            LOG.debug(""Resource "" + resource
+		      + "" not found in the default class loader."");
+
+	    Iterator iter = classLoaders.iterator();
+	    while (iter.hasNext()) {
+		ClassLoader cl = (ClassLoader) iter.next();
+		try {
+		    LOG.debug(""Loading "" + resource + "" from "" + cl);
+		    bundle =
+			ResourceBundle.getBundle(resource,
+						 Locale.getDefault(),
+						 cl);
+		    break;
+		} catch (MissingResourceException e2) {
+		    LOG.debug(""Resource "" + resource + "" not found in "" + cl);
+		}
+	    }
+        }
+
+        bundles.put(name, bundle);
+    }",3.0,-1.0948973180747061,0.37037037037037035,unreadable,unreadable,low,,java,29,5,1.0,5.0,Code,295f69245a08a8f746a3743ca6b7c48775938895f6f31ba414b0bec92fd25631,d8ec43dee77a7c9de15271ea34dfc7fc139f8907d32831307a70f77eaf75dc61,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 6, ""original_snippet_id"": ""7""}",,,6
+rq0_0196,8,Scalabrino,"protected synchronized String evalToString(
+            Object self,
+            String expr,
+            String sep)
+    	throws ExpansionException {
+
+        _scratchBindings.put(""self"", self);
+        java.util.List values = eval(_scratchBindings, expr);
+        _strBuf.setLength(0);
+        Iterator iter = values.iterator();
+        while (iter.hasNext()) {
+            Object v = iter.next();
+            if (Model.getFacade().isAModelElement(v)) {
+                v = Model.getFacade().getName(v);
+                if ("""".equals(v)) {
+                    v = Translator.localize(""misc.name.anon"");
+                }
+            }
+            if (Model.getFacade().isAExpression(v)) {
+                v = Model.getFacade().getBody(v);
+                if ("""".equals(v)) {
+                    v = ""(unspecified)"";
+                }
+            }
+            if (!"""".equals(v)) {
+                _strBuf.append(v);
+                if (iter.hasNext()) {
+                    _strBuf.append(sep);
+                }
+            }
+        }
+        return _strBuf.toString();
+    }",3.111111111111111,-0.9133902760409311,0.4074074074074074,unreadable,unreadable,low,,java,32,8,1.0,5.0,Code,b889e7dda230231dd80eaf2aaff1f69104fb946e7451716d34426c8f4e45d0de,5e784dd90bcb6c8156851686e226838eb5d2a3a78977f3cde09f2ca15f11559e,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 7, ""original_snippet_id"": ""8""}",,,7
+rq0_0197,9,Scalabrino,"/**
+     * Notify all listeners that have registered interest for
+     * notification on this event type.  The event instance
+     * is lazily created using the parameters passed into
+     * the fire method.
+     * @see EventListenerList
+     */
+    public void fireTreeStructureChanged(
+					 Object source,
+					 Object[] path,
+					 int[] childIndices,
+					 Object[] children) {
+
+        // Guaranteed to return a non-null array
+        Object[] listeners = listenerList.getListenerList();
+        TreeModelEvent e = null;
+        // Process the listeners last to first, notifying
+        // those that are interested in this event
+        for (int i = listeners.length - 2; i >= 0; i -= 2) {
+            if (listeners[i] == TreeModelListener.class) {
+                // Lazily create the event:
+                if (e == null)
+                    e =
+                        new TreeModelEvent(
+					   source,
+					   path,
+					   childIndices,
+					   children);
+                ((TreeModelListener) listeners[i + 1]).treeStructureChanged(e);
+            }
+        }
+    }",3.7777777777777777,0.17565197616171824,0.6296296296296295,readable,discard,mid,,java,20,1,2.0,5.0,Code,2f17a8ca1b1ba1ea0b13e7745e45d4558f478de735d23499af90b6bfd77b7b6b,5254efa06931c0ce4c016a5df206080e37fa19be4b4c6b7f40dd1d1243467227,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 8, ""original_snippet_id"": ""9""}",,,8
+rq0_0198,10,Scalabrino,"private void myDoubleClick(Object src) {
+	Object sel = null;
+	Diagram d = null;
+	if (src == resultsTable) {
+	    int row = resultsTable.getSelectionModel().getMinSelectionIndex();
+	    if (row < 0) {
+                return;
+            }
+	    sel = results.elementAt(row);
+	    d = (Diagram) diagrams.elementAt(row);
+	} else if (src == relatedTable) {
+	    int row = relatedTable.getSelectionModel().getMinSelectionIndex();
+	    if (row < 0) {
+                return;
+            }
+	    numJumpToRelated++;
+	    sel = related.elementAt(row);
+	}
+
+	if (d != null) {
+            LOG.debug(""go "" + sel + "" in "" + d.getName());
+            TargetManager.getInstance().setTarget(d);
+        }
+	TargetManager.getInstance().setTarget(sel);
+    }",3.2222222222222223,-0.731883234007156,0.4444444444444444,unreadable,unreadable,low,,java,24,6,2.0,5.0,Code,f1b9ebbc907b3e6ba88ddce0e6961cf7ab56ecdfba4ea02157c7e8d20140d3e3,24fec60907477eab6908f97304b187aa9934936ded487119aec5736698ef5c93,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 9, ""original_snippet_id"": ""10""}",,,9
+rq0_0199,11,Scalabrino,"public void propertyChange(PropertyChangeEvent evt) {
+        // the project changed
+        if (evt.getPropertyName()
+            .equals(ProjectManager.CURRENT_PROJECT_PROPERTY_NAME)) {
+            Project p = (Project) evt.getNewValue();
+            if (p != null) {
+                titleHandler.buildTitle(p.getName(), null);
+                //Designer.TheDesigner.getToDoList().removeAllElements();
+                Designer.setCritiquingRoot(p);
+                // update all panes
+                TargetManager.getInstance().setTarget(p.getInitialTarget());
+            }
+        }
+    }",4.0,0.5386660602292682,0.7037037037037036,readable,readable,high,,java,11,3,2.0,5.0,Code,7e2fc174ed537d360ea42acaf1411dda8fd506934f0669eaecb8cab62727dc9e,7df53e8d7696cb51d28e27ae1f644c4813c00cfb57ee236decf4557b56324a76,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 10, ""original_snippet_id"": ""11""}",,,10
+rq0_0200,13,Scalabrino,"private Object createTestUsingFieldInjection() throws Exception {
+            List<FrameworkField> annotatedFieldsByParameter = getAnnotatedFieldsByParameter();
+            if (annotatedFieldsByParameter.size() != fParameters.length) {
+                throw new Exception(""Wrong number of parameters and @Parameter fields."" +
+                        "" @Parameter fields counted: "" + annotatedFieldsByParameter.size() + "", available parameters: "" + fParameters.length + ""."");
+            }
+            Object testClassInstance = getTestClass().getJavaClass().newInstance();
+            for (FrameworkField each : annotatedFieldsByParameter) {
+                Field field = each.getField();
+                Parameter annotation = field.getAnnotation(Parameter.class);
+                int index = annotation.value();
+                try {
+                    field.set(testClassInstance, fParameters[index]);
+                } catch (IllegalArgumentException iare) {
+                    throw new Exception(getTestClass().getName() + "": Trying to set "" + field.getName() +
+                            "" with the value "" + fParameters[index] +
+                            "" that is not the right type ("" + fParameters[index].getClass().getSimpleName() + "" instead of "" +
+                            field.getType().getSimpleName() + "")."", iare);
+                }
+            }
+            return testClassInstance;
+        }",3.555555555555556,-0.18736210790583105,0.5555555555555556,unreadable,discard,mid,,java,22,2,2.0,5.0,Code,8504c806016314902a4068d577883a4d262c8389c79c733b130d6b7ebf3ab319,5f14e24b94b25d8fa0161738db47388749cee78971b226fc5e2a397500e8efd1,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 11, ""original_snippet_id"": ""13""}",,,11
+rq0_0201,14,Scalabrino,"@Override
+        protected void validateFields(List<Throwable> errors) {
+            super.validateFields(errors);
+            if (fieldsAreAnnotated()) {
+                List<FrameworkField> annotatedFieldsByParameter = getAnnotatedFieldsByParameter();
+                int[] usedIndices = new int[annotatedFieldsByParameter.size()];
+                for (FrameworkField each : annotatedFieldsByParameter) {
+                    int index = each.getField().getAnnotation(Parameter.class).value();
+                    if (index < 0 || index > annotatedFieldsByParameter.size() - 1) {
+                        errors.add(
+                                new Exception(""Invalid @Parameter value: "" + index + "". @Parameter fields counted: "" +
+                                        annotatedFieldsByParameter.size() + "". Please use an index between 0 and "" +
+                                        (annotatedFieldsByParameter.size() - 1) + ""."")
+                        );
+                    } else {
+                        usedIndices[index]++;
+                    }
+                }
+                for (int index = 0; index < usedIndices.length; index++) {
+                    int numberOfUse = usedIndices[index];
+                    if (numberOfUse == 0) {
+                        errors.add(new Exception(""@Parameter("" + index + "") is never used.""));
+                    } else if (numberOfUse > 1) {
+                        errors.add(new Exception(""@Parameter("" + index + "") is used more than once ("" + numberOfUse + "").""));
+                    }
+                }
+            }
+        }",3.555555555555556,-0.18736210790583105,0.5555555555555556,unreadable,discard,mid,,java,28,4,2.0,5.0,Code,894ef189cc3aa5a8d2550cc890cdf4786fbb00624304d3d990f87389a19a7a57,97ed775bf78bd14e0d80ea4403e1c42076e28cafdbcdc8e98e2b3d18ad270598,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 12, ""original_snippet_id"": ""14""}",,,12
+rq0_0202,15,Scalabrino,"String[] parseOptions(String[] args) {
+        for (int i = 0; i != args.length; ++i) {
+            String arg = args[i];
+
+            try {
+                if (arg.equals(""--"")) {
+                    return copyArray(args, i + 1, args.length);
+                } else if (arg.startsWith(""--"")) {
+                    if (arg.startsWith(""--filter="") || arg.equals(""--filter"")) {
+                        String filterSpec;
+                        if (arg.equals(""--filter"")) {
+                            ++i;
+
+                            if (i < args.length) {
+                                filterSpec = args[i];
+                            } else {
+                                parserErrors.add(new CommandLineParserError(arg + "" value not specified""));
+
+                                break;
+                            }
+                        } else {
+                            filterSpec = arg.substring(arg.indexOf('=') + 1);
+                        }
+
+                        filter = filter.intersect(FilterFactories.createFilterFromFilterSpec(
+                                createSuiteDescription(arg), filterSpec));
+                    } else {
+                        parserErrors.add(new CommandLineParserError(""JUnit knows nothing about the "" + arg + "" option""));
+                    }
+                } else {
+                    return copyArray(args, i, args.length);
+                }
+            } catch (FilterFactory.FilterNotCreatedException e) {
+                parserErrors.add(e);
+            }
+        }
+
+        return new String[]{};
+    }",2.6666666666666665,-1.639418444176031,0.2592592592592592,unreadable,unreadable,low,,java,34,9,1.0,5.0,Code,8a614a90713f64210e1a30c74df7d5c37b0a4e3dc642de81530c8ac4d3c431f9,c3eec1bd3d712e5305d66c034900be4db009c6af7833f15bbae8b6028a9fb015,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 13, ""original_snippet_id"": ""15""}",,,13
+rq0_0203,16,Scalabrino,"private static Set<String> buildHintsSet() {
+		HashSet<String> hints = new HashSet<String>();
+		hints.add( HINT_TIMEOUT );
+		hints.add( SPEC_HINT_TIMEOUT );
+		hints.add( HINT_COMMENT );
+		hints.add( HINT_FETCH_SIZE );
+		hints.add( HINT_CACHE_REGION );
+		hints.add( HINT_CACHEABLE );
+		hints.add( HINT_READONLY );
+		hints.add( HINT_CACHE_MODE );
+		hints.add( HINT_FLUSH_MODE );
+		hints.add( HINT_NATIVE_LOCKMODE );
+		hints.add( HINT_FETCHGRAPH );
+		hints.add( HINT_LOADGRAPH );
+		return java.util.Collections.unmodifiableSet( hints );
+	}",4.444444444444445,1.2646942283643683,0.8518518518518519,readable,readable,high,,java,16,1,3.0,5.0,Code,94ca4c1a32c6e0e507435ce6f3db0a57431777dd5b740895a018d9eb0afef958,c21d4a8f2be0b8acbea27c35c7e2ac8b1a9ea7fba0b20680701da6e7ce981f7f,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 14, ""original_snippet_id"": ""16""}",,,14
+rq0_0204,18,Scalabrino,"/**
+	 * Constructs a PostgresPlusDialect
+	 */
+	public PostgresPlusDialect() {
+		super();
+
+		registerFunction( ""ltrim"", new StandardSQLFunction( ""ltrim"" ) );
+		registerFunction( ""rtrim"", new StandardSQLFunction( ""rtrim"" ) );
+		registerFunction( ""soundex"", new StandardSQLFunction( ""soundex"" ) );
+		registerFunction( ""sysdate"", new NoArgSQLFunction( ""sysdate"", StandardBasicTypes.DATE, false ) );
+		registerFunction( ""rowid"", new NoArgSQLFunction( ""rowid"", StandardBasicTypes.LONG, false ) );
+		registerFunction( ""rownum"", new NoArgSQLFunction( ""rownum"", StandardBasicTypes.LONG, false ) );
+		registerFunction( ""instr"", new StandardSQLFunction( ""instr"", StandardBasicTypes.INTEGER ) );
+		registerFunction( ""lpad"", new StandardSQLFunction( ""lpad"", StandardBasicTypes.STRING ) );
+		registerFunction( ""replace"", new StandardSQLFunction( ""replace"", StandardBasicTypes.STRING ) );
+		registerFunction( ""rpad"", new StandardSQLFunction( ""rpad"", StandardBasicTypes.STRING ) );
+		registerFunction( ""translate"", new StandardSQLFunction( ""translate"", StandardBasicTypes.STRING ) );
+		registerFunction( ""substring"", new StandardSQLFunction( ""substr"", StandardBasicTypes.STRING ) );
+		registerFunction( ""coalesce"", new NvlFunction() );
+		registerFunction( ""atan2"", new StandardSQLFunction( ""atan2"", StandardBasicTypes.FLOAT ) );
+		registerFunction( ""mod"", new StandardSQLFunction( ""mod"", StandardBasicTypes.INTEGER ) );
+		registerFunction( ""nvl"", new StandardSQLFunction( ""nvl"" ) );
+		registerFunction( ""nvl2"", new StandardSQLFunction( ""nvl2"" ) );
+		registerFunction( ""power"", new StandardSQLFunction( ""power"", StandardBasicTypes.FLOAT ) );
+		registerFunction( ""add_months"", new StandardSQLFunction( ""add_months"", StandardBasicTypes.DATE ) );
+		registerFunction( ""months_between"", new StandardSQLFunction( ""months_between"", StandardBasicTypes.FLOAT ) );
+		registerFunction( ""next_day"", new StandardSQLFunction( ""next_day"", StandardBasicTypes.DATE ) );
+	}",4.0,0.5386660602292682,0.7037037037037036,readable,readable,high,,java,24,1,2.0,5.0,Code,49e7e3ebe7ceefaa8df2cfd442a79cf93468a387734618eaa2c0ede87c27ce34,ab9bb5869611fa5e5b6bf66b7aa8094178a57706e9fcd65a22161b4e9a830955,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 15, ""original_snippet_id"": ""18""}",,,15
+rq0_0205,19,Scalabrino,"/**
+	 * Constructs a Oracle8iDialect
+	 */
+	public Oracle8iDialect() {
+		super();
+		registerCharacterTypeMappings();
+		registerNumericTypeMappings();
+		registerDateTimeTypeMappings();
+		registerLargeObjectTypeMappings();
+		registerReverseHibernateTypeMappings();
+		registerFunctions();
+		registerDefaultProperties();
+	}",4.0,0.5386660602292682,0.7037037037037036,readable,readable,high,,java,10,1,3.0,5.0,Code,1070aa96b790228b46e069e77eb252757475a712e5bab000d447e88638180f5e,5edfadd2ec414151dbe9c304bd242b87a52bd21d15fa5e3ce7ed4d62aa653dbb,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 16, ""original_snippet_id"": ""19""}",,,16
+rq0_0206,20,Scalabrino,"/**
+	 * Constructs a InterbaseDialect
+	 */
+	public InterbaseDialect() {
+		super();
+		registerColumnType( Types.BIT, ""smallint"" );
+		registerColumnType( Types.BIGINT, ""numeric(18,0)"" );
+		registerColumnType( Types.SMALLINT, ""smallint"" );
+		registerColumnType( Types.TINYINT, ""smallint"" );
+		registerColumnType( Types.INTEGER, ""integer"" );
+		registerColumnType( Types.CHAR, ""char(1)"" );
+		registerColumnType( Types.VARCHAR, ""varchar($l)"" );
+		registerColumnType( Types.FLOAT, ""float"" );
+		registerColumnType( Types.DOUBLE, ""double precision"" );
+		registerColumnType( Types.DATE, ""date"" );
+		registerColumnType( Types.TIME, ""time"" );
+		registerColumnType( Types.TIMESTAMP, ""timestamp"" );
+		registerColumnType( Types.VARBINARY, ""blob"" );
+		registerColumnType( Types.NUMERIC, ""numeric($p,$s)"" );
+		registerColumnType( Types.BLOB, ""blob"" );
+		registerColumnType( Types.CLOB, ""blob sub_type 1"" );
+		registerColumnType( Types.BOOLEAN, ""smallint"" );
+		
+		registerFunction( ""concat"", new VarArgsSQLFunction( StandardBasicTypes.STRING, ""("",""||"","")"" ) );
+		registerFunction( ""current_date"", new NoArgSQLFunction( ""current_date"", StandardBasicTypes.DATE, false ) );
+
+		getDefaultProperties().setProperty( Environment.STATEMENT_BATCH_SIZE, NO_BATCH );
+	}",3.888888888888889,0.3571590181954932,0.6666666666666665,readable,discard,mid,,java,23,1,2.0,5.0,Code,f5218e721f73ad3b65bda35b34377612202c07c6ba42c1d8e55d37cbd34af7a3,bbbb3d47f411c22a648bfece922ac3423c99aa94a3b33b4f239dcd9236ddf111,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 17, ""original_snippet_id"": ""20""}",,,17
+rq0_0207,21,Scalabrino,"/**
+	 * Constructs a SybaseASE157Dialect
+	 */
+	public SybaseASE157Dialect() {
+		super();
+
+		registerFunction( ""create_locator"", new SQLFunctionTemplate( StandardBasicTypes.BINARY, ""create_locator(?1, ?2)"" ) );
+		registerFunction( ""locator_literal"", new SQLFunctionTemplate( StandardBasicTypes.BINARY, ""locator_literal(?1, ?2)"" ) );
+		registerFunction( ""locator_valid"", new SQLFunctionTemplate( StandardBasicTypes.BOOLEAN, ""locator_valid(?1)"" ) );
+		registerFunction( ""return_lob"", new SQLFunctionTemplate( StandardBasicTypes.BINARY, ""return_lob(?1, ?2)"" ) );
+		registerFunction( ""setdata"", new SQLFunctionTemplate( StandardBasicTypes.BOOLEAN, ""setdata(?1, ?2, ?3)"" ) );
+		registerFunction( ""charindex"", new SQLFunctionTemplate( StandardBasicTypes.INTEGER, ""charindex(?1, ?2, ?3)"" ) );
+	}",4.0,0.5386660602292682,0.7037037037037036,readable,readable,high,,java,9,1,3.0,5.0,Code,2c59108cb95c949acb328cd62b6bfc2dfa5fa16096462502debaaf721afe7014,ed2ec8ba9deafc9fc84dbaa4a53e10080602d50b41d22ce4bf26811614d8e79a,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 18, ""original_snippet_id"": ""21""}",,,18
+rq0_0208,22,Scalabrino,"public String extractConstraintName(SQLException sqle) {
+			try {
+				final int sqlState = Integer.valueOf( JdbcExceptionHelper.extractSqlState( sqle ) );
+				switch (sqlState) {
+					// CHECK VIOLATION
+					case 23514: return extractUsingTemplate( ""violates check constraint \"""",""\"""", sqle.getMessage() );
+					// UNIQUE VIOLATION
+					case 23505: return extractUsingTemplate( ""violates unique constraint \"""",""\"""", sqle.getMessage() );
+					// FOREIGN KEY VIOLATION
+					case 23503: return extractUsingTemplate( ""violates foreign key constraint \"""",""\"""", sqle.getMessage() );
+					// NOT NULL VIOLATION
+					case 23502: return extractUsingTemplate( ""null value in column \"""",""\"" violates not-null constraint"", sqle.getMessage() );
+					// TODO: RESTRICT VIOLATION
+					case 23001: return null;
+					// ALL OTHER
+					default: return null;
+				}
+			}
+			catch (NumberFormatException nfe) {
+				return null;
+			}
+		}",4.555555555555555,1.4462012703981426,0.8888888888888887,readable,readable,high,,java,16,7,4.0,5.0,Code,b4f2a2a86e66ef83eeb06cbc596ec30d7ab7c0e8d1ce72d3ea9984dc3e8db42e,bfdcbfa2dea6cfa96aefa1507b623893b6b8811c369d55d41be924f8b616bcaf,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 19, ""original_snippet_id"": ""22""}",,,19
+rq0_0209,25,Scalabrino,"/**
+	 * Constructs a FrontBaseDialect
+	 */
+	public FrontBaseDialect() {
+		super();
+
+		registerColumnType( Types.BIT, ""bit"" );
+		registerColumnType( Types.BIGINT, ""longint"" );
+		registerColumnType( Types.SMALLINT, ""smallint"" );
+		registerColumnType( Types.TINYINT, ""tinyint"" );
+		registerColumnType( Types.INTEGER, ""integer"" );
+		registerColumnType( Types.CHAR, ""char(1)"" );
+		registerColumnType( Types.VARCHAR, ""varchar($l)"" );
+		registerColumnType( Types.FLOAT, ""float"" );
+		registerColumnType( Types.DOUBLE, ""double precision"" );
+		registerColumnType( Types.DATE, ""date"" );
+		registerColumnType( Types.TIME, ""time"" );
+		registerColumnType( Types.TIMESTAMP, ""timestamp"" );
+		registerColumnType( Types.VARBINARY, ""bit varying($l)"" );
+		registerColumnType( Types.NUMERIC, ""numeric($p,$s)"" );
+		registerColumnType( Types.BLOB, ""blob"" );
+		registerColumnType( Types.CLOB, ""clob"" );
+	}",4.222222222222222,0.9016801442968183,0.7777777777777777,readable,readable,high,,java,19,1,3.0,5.0,Code,745433aed7f9729298e5ad44b14a6c021b6c8ee6228a152d8c41548dbec5f984,e0fc2d8f334b1da68915d358cf7e1b05b977815a1b1f140feba33896cfd2a799,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 20, ""original_snippet_id"": ""25""}",,,20
+rq0_0210,27,Scalabrino,"private void considerExplicitFieldAndPropertyAccess() {
+		for ( XProperty property : fieldAccessMap.values() ) {
+			Access access = property.getAnnotation( Access.class );
+			if ( access == null ) {
+				continue;
+			}
+
+			// see ""2.3.2 Explicit Access Type"" of JPA 2 spec
+			// the access type for this property is explicitly set to AccessType.FIELD, hence we have to
+			// use field access for this property even if the default access type for the class is AccessType.PROPERTY
+			AccessType accessType = AccessType.getAccessStrategy( access.value() );
+            if (accessType == AccessType.FIELD) {
+				propertyAccessMap.put(property.getName(), property);
+			}
+            else {
+				LOG.debug( ""Placing @Access(AccessType.FIELD) on a field does not have any effect."" );
+			}
+		}
+
+		for ( XProperty property : propertyAccessMap.values() ) {
+			Access access = property.getAnnotation( Access.class );
+			if ( access == null ) {
+				continue;
+			}
+
+			AccessType accessType = AccessType.getAccessStrategy( access.value() );
+
+			// see ""2.3.2 Explicit Access Type"" of JPA 2 spec
+			// the access type for this property is explicitly set to AccessType.PROPERTY, hence we have to
+			// return use method access even if the default class access type is AccessType.FIELD
+            if (accessType == AccessType.PROPERTY) {
+				fieldAccessMap.put(property.getName(), property);
+			}
+            else {
+				LOG.debug( ""Placing @Access(AccessType.PROPERTY) on a field does not have any effect."" );
+			}
+		}
+	}",3.7777777777777777,0.17565197616171824,0.6296296296296295,readable,discard,mid,,java,28,2,2.0,5.0,Code,dda16f456180030bccd53e1fc9356feae341c0f59e5d25e0df9aac18cefa2b7c,2f171b323c90c683580e211287050a6c7f58852ed9f0c3c50cca88331bf674d0,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 21, ""original_snippet_id"": ""27""}",,,21
+rq0_0211,28,Scalabrino,"private static Ejb3DiscriminatorColumn processDiscriminatorProperties(XClass clazzToProcess, Mappings mappings, InheritanceState inheritanceState, EntityBinder entityBinder) {
+		Ejb3DiscriminatorColumn discriminatorColumn = null;
+		javax.persistence.DiscriminatorColumn discAnn = clazzToProcess.getAnnotation(
+				javax.persistence.DiscriminatorColumn.class
+		);
+		DiscriminatorType discriminatorType = discAnn != null ?
+				discAnn.discriminatorType() :
+				DiscriminatorType.STRING;
+
+		org.hibernate.annotations.DiscriminatorFormula discFormulaAnn = clazzToProcess.getAnnotation(
+				org.hibernate.annotations.DiscriminatorFormula.class
+		);
+		if ( !inheritanceState.hasParents() ) {
+			discriminatorColumn = Ejb3DiscriminatorColumn.buildDiscriminatorColumn(
+					discriminatorType, discAnn, discFormulaAnn, mappings
+			);
+		}
+		if ( discAnn != null && inheritanceState.hasParents() ) {
+			LOG.invalidDiscriminatorAnnotation( clazzToProcess.getName() );
+		}
+
+		String discrimValue = clazzToProcess.isAnnotationPresent( DiscriminatorValue.class ) ?
+				clazzToProcess.getAnnotation( DiscriminatorValue.class ).value() :
+				null;
+		entityBinder.setDiscriminatorValue( discrimValue );
+
+		DiscriminatorOptions discriminatorOptions = clazzToProcess.getAnnotation( DiscriminatorOptions.class );
+		if ( discriminatorOptions != null) {
+			entityBinder.setForceDiscriminator( discriminatorOptions.force() );
+			entityBinder.setInsertableDiscriminator( discriminatorOptions.insert() );
+		}
+
+		return discriminatorColumn;
+	}",2.333333333333333,-2.183939570277356,0.14814814814814806,unreadable,unreadable,low,,java,30,1,1.0,5.0,Code,f7a6e230bf996882e4baf31dcd303580a2a180173c70d6cfbc2af23a5be82aab,b498c5b1077fe2ac47a6ffe1af0f23dd1e030b0d503cfe552771f03166d45e85,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 22, ""original_snippet_id"": ""28""}",,,22
+rq0_0212,29,Scalabrino,"private static boolean isEntityClassType(XClass clazzToProcess, AnnotatedClassType classType) {
+		if ( AnnotatedClassType.EMBEDDABLE_SUPERCLASS.equals( classType ) //will be processed by their subentities
+				|| AnnotatedClassType.NONE.equals( classType ) //to be ignored
+				|| AnnotatedClassType.EMBEDDABLE.equals( classType ) //allow embeddable element declaration
+				) {
+			if ( AnnotatedClassType.NONE.equals( classType )
+					&& clazzToProcess.isAnnotationPresent( org.hibernate.annotations.Entity.class ) ) {
+				LOG.missingEntityAnnotation( clazzToProcess.getName() );
+			}
+			return false;
+		}
+
+		if ( !classType.equals( AnnotatedClassType.ENTITY ) ) {
+			throw new AnnotationException(
+					""Annotated class should have a @javax.persistence.Entity, @javax.persistence.Embeddable or @javax.persistence.EmbeddedSuperclass annotation: "" + clazzToProcess
+							.getName()
+			);
+		}
+
+		return true;
+	}",3.6666666666666665,-0.005855065872056767,0.5925925925925924,unreadable,discard,mid,,java,19,2,3.0,5.0,Code,fe292f322b0b453c3133a3b6af468290309fbb0952c0c860c1b7eacaf0cbb3db,900b8d888c853fbdc82421a801b5987e305e19e8b4f1a95b1d0e325426a58f36,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 23, ""original_snippet_id"": ""29""}",,,23
+rq0_0213,30,Scalabrino,"public void redefineColumnName(String columnName, String propertyName, boolean applyNamingStrategy) {
+		if ( applyNamingStrategy ) {
+			if ( StringHelper.isEmpty( columnName ) ) {
+				if ( propertyName != null ) {
+					mappingColumn.setName(
+							mappings.getObjectNameNormalizer().normalizeIdentifierQuoting(
+									mappings.getNamingStrategy().propertyToColumnName( propertyName )
+							)
+					);
+				}
+				//Do nothing otherwise
+			}
+			else {
+				columnName = mappings.getObjectNameNormalizer().normalizeIdentifierQuoting( columnName );
+				columnName = mappings.getNamingStrategy().columnName( columnName );
+				columnName = mappings.getObjectNameNormalizer().normalizeIdentifierQuoting( columnName );
+				mappingColumn.setName( columnName );
+			}
+		}
+		else {
+			if ( StringHelper.isNotEmpty( columnName ) ) {
+				mappingColumn.setName( mappings.getObjectNameNormalizer().normalizeIdentifierQuoting( columnName ) );
+			}
+		}
+	}",3.4444444444444446,-0.36886914993960607,0.5185185185185185,unreadable,discard,mid,,java,24,5,2.0,5.0,Code,33097aee3d46670e05828e5272413013f77e1d30f63c2baa376cca9481309d30,76ef93843f273d26e1f7913949df25f454f2a16eac6671fff59ddcf6b4b2666a,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 24, ""original_snippet_id"": ""30""}",,,24
+rq0_0214,31,Scalabrino,"private static void parseFilter(Element filterElement, Filterable filterable, Mappings model) {
+		final String name = filterElement.attributeValue( ""name"" );
+		String condition = filterElement.getTextTrim();
+		if ( StringHelper.isEmpty(condition) ) {
+			condition = filterElement.attributeValue( ""condition"" );
+		}
+		//TODO: bad implementation, cos it depends upon ordering of mapping doc
+		//      fixing this requires that Collection/PersistentClass gain access
+		//      to the Mappings reference from Configuration (or the filterDefinitions
+		//      map directly) sometime during Configuration.build
+		//      (after all the types/filter-defs are known and before building
+		//      persisters).
+		if ( StringHelper.isEmpty(condition) ) {
+			condition = model.getFilterDefinition(name).getDefaultFilterCondition();
+		}
+		if ( condition==null) {
+			throw new MappingException(""no filter condition found for filter: "" + name);
+		}
+		Iterator aliasesIterator = filterElement.elementIterator(""aliases"");
+		java.util.Map<String, String> aliasTables = new HashMap<String, String>();
+		while (aliasesIterator.hasNext()){
+			Element alias = (Element) aliasesIterator.next();
+			aliasTables.put(alias.attributeValue(""alias""), alias.attributeValue(""table""));
+		}
+		LOG.debugf( ""Applying filter [%s] as [%s]"", name, condition );
+		String autoAliasInjectionText = filterElement.attributeValue(""autoAliasInjection"");
+		boolean autoAliasInjection = StringHelper.isEmpty(autoAliasInjectionText) ? true : Boolean.parseBoolean(autoAliasInjectionText);
+		filterable.addFilter(name, condition, autoAliasInjection, aliasTables, null);
+	}",3.2222222222222223,-0.731883234007156,0.4444444444444444,unreadable,unreadable,low,,java,23,6,2.0,5.0,Code,c10f4d37bb08ac274e5c839158ad7bcfdaf48b08b72c738cfe55d5e1b743656f,b76db02444e52c258758648668c11879d63ca5d5b8aba2145db14b07fee032f9,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 25, ""original_snippet_id"": ""31""}",,,25
+rq0_0215,32,Scalabrino,"/**
+     * Retrieves a PropertyAccessor instance based on the given property definition and
+     * entity mode.
+     *
+     * @param property The property for which to retrieve an accessor.
+     * @param mode The mode for the resulting entity.
+     * @return An appropriate accessor.
+     * @throws MappingException
+     */
+	public static PropertyAccessor getPropertyAccessor(AttributeBinding property, EntityMode mode) throws MappingException {
+		//TODO: this is temporary in that the end result will probably not take a Property reference per-se.
+	    if ( null == mode || EntityMode.POJO.equals( mode ) ) {
+		    return getPojoPropertyAccessor( property.getPropertyAccessorName() );
+	    }
+	    else if ( EntityMode.MAP.equals( mode ) ) {
+		    return getDynamicMapPropertyAccessor();
+	    }
+	    else {
+		    throw new MappingException( ""Unknown entity mode ["" + mode + ""]"" );
+	    }
+	}",4.333333333333333,1.0831871863305926,0.8148148148148147,readable,readable,high,,java,11,4,3.0,5.0,Code,aaab97b993676e971e3d41874543e3764a15947ac2348b53970bb67b42cdf0bc,5f43a292651f9baef4778df76a6e5305c9e8bd60323da907e02234f8c9f540e0,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 26, ""original_snippet_id"": ""32""}",,,26
+rq0_0216,33,Scalabrino,"/**
+	 * Execute given <tt>PreparedStatement</tt>, advance to the first result and return SQL <tt>ResultSet</tt>.
+	 */
+	protected final ResultSet getResultSet(
+			final PreparedStatement st,
+			final RowSelection selection,
+			final LimitHandler limitHandler,
+			final boolean autodiscovertypes,
+			final SessionImplementor session)
+	throws SQLException, HibernateException {
+
+		try {
+			ResultSet rs = session.getTransactionCoordinator().getJdbcCoordinator().getResultSetReturn().extract( st );
+			rs = wrapResultSetIfEnabled( rs , session );
+
+			if ( !limitHandler.supportsLimitOffset() || !LimitHelper.useLimit( limitHandler, selection ) ) {
+				advance( rs, selection );
+			}
+
+			if ( autodiscovertypes ) {
+				autoDiscoverTypes( rs );
+			}
+			return rs;
+		}
+		catch ( SQLException sqle ) {
+			session.getTransactionCoordinator().getJdbcCoordinator().release( st );
+			throw sqle;
+		}
+	}",4.0,0.5386660602292682,0.7037037037037036,readable,readable,high,,java,23,5,3.0,5.0,Code,6a06bb4f5d818262cd48d500fa299a2cbc587bcda0fda83c9885a62021591ded,5ac86d4970a390a6beb4058ae80aef643101575f5bb4b06846dc5ea3778eaf42,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 27, ""original_snippet_id"": ""33""}",,,27
+rq0_0217,34,Scalabrino,"/**
+	 * Generate a select list of columns containing all properties of the entity classes
+	 */
+	protected final String selectString(List associations)
+	throws MappingException {
+
+		if ( associations.size()==0 ) {
+			return """";
+		}
+		else {
+			StringBuilder buf = new StringBuilder( associations.size() * 100 );
+			int entityAliasCount=0;
+			int collectionAliasCount=0;
+			for ( int i=0; i<associations.size(); i++ ) {
+				OuterJoinableAssociation join = (OuterJoinableAssociation) associations.get(i);
+				OuterJoinableAssociation next = (i == associations.size() - 1)
+				        ? null
+				        : ( OuterJoinableAssociation ) associations.get( i + 1 );
+				final Joinable joinable = join.getJoinable();
+				final String entitySuffix = ( suffixes == null || entityAliasCount >= suffixes.length )
+				        ? null
+				        : suffixes[entityAliasCount];
+				final String collectionSuffix = ( collectionSuffixes == null || collectionAliasCount >= collectionSuffixes.length )
+				        ? null
+				        : collectionSuffixes[collectionAliasCount];
+				final String selectFragment = joinable.selectFragment(
+						next == null ? null : next.getJoinable(),
+						next == null ? null : next.getRHSAlias(),
+						join.getRHSAlias(),
+						entitySuffix,
+				        collectionSuffix,
+						join.getJoinType()==JoinType.LEFT_OUTER_JOIN
+				);
+				if (selectFragment.trim().length() > 0) {
+					buf.append("", "").append(selectFragment);
+				}
+				if ( joinable.consumesEntityAlias() ) entityAliasCount++;
+				if ( joinable.consumesCollectionAlias() && join.getJoinType()==JoinType.LEFT_OUTER_JOIN ) collectionAliasCount++;
+			}
+			return buf.toString();
+		}
+	}",2.555555555555556,-1.8209254862098054,0.2222222222222223,unreadable,unreadable,low,,java,38,14,1.0,5.0,Code,b2b2b8660a502a8d7c8b43ddd005a31703954d0f8218af59ad9f951803e769ac,873b0307ad52c794441c3d942b8774c3a06d30a4bde79e7f5f7f1d0004079bac,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 28, ""original_snippet_id"": ""34""}",,,28
+rq0_0218,36,Scalabrino,"public boolean equals(Table table) {
+		if (null == table) {
+			return false;
+		}
+		if (this == table) {
+			return true;
+		}
+
+		return isQuoted() ? name.equals(table.getName()) : name.equalsIgnoreCase(table.getName())
+			&& ((schema == null && table.getSchema() != null) ? false : (schema == null) ? true : isSchemaQuoted() ? schema.equals(table.getSchema()) : schema.equalsIgnoreCase(table.getSchema()))
+			&& ((catalog == null && table.getCatalog() != null) ? false : (catalog == null) ? true : isCatalogQuoted() ? catalog.equals(table.getCatalog()) : catalog.equalsIgnoreCase(table.getCatalog()));
+	}",2.2222222222222223,-2.3654466123111306,0.11111111111111115,unreadable,unreadable,low,,java,11,14,1.0,4.0,Code,2f9521171cb2b4633257e6bbd6247f359cf4af467944467c4389525c806ddb70,1a8583675322607e4d5f4c3a26a74d070f62fd1bfb1aa504eeffbd0c35232550,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 29, ""original_snippet_id"": ""36""}",,,29
+rq0_0219,37,Scalabrino,"public int getSqlTypeCode(Mapping mapping) throws MappingException {
+        org.hibernate.type.Type type = getValue().getType();
+        try {
+            int sqlTypeCode = type.sqlTypes( mapping )[getTypeIndex()];
+            if ( getSqlTypeCode() != null && getSqlTypeCode() != sqlTypeCode ) {
+                throw new MappingException( ""SQLType code's does not match. mapped as "" + sqlTypeCode + "" but is "" + getSqlTypeCode() );
+            }
+            return sqlTypeCode;
+        }
+        catch ( Exception e ) {
+            throw new MappingException(
+                    ""Could not determine type for column "" +
+                            name +
+                            "" of type "" +
+                            type.getClass().getName() +
+                            "": "" +
+                            e.getClass().getName(),
+                    e
+            );
+        }
+    }",3.7777777777777777,0.17565197616171824,0.6296296296296295,readable,discard,mid,,java,21,4,2.0,5.0,Code,7ffb98802fd559e3f402eca5ad205a501d2b06737a7f9619801d6424cd4c6cd5,d459fbd95e2d22237f83f2a4639c3d745838634e4e1df609a6e15b4d4874efa6,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 30, ""original_snippet_id"": ""37""}",,,30
+rq0_0220,38,Scalabrino,"/**
+     * Provides serialization support.
+     *
+     * @param stream  the output stream.
+     *
+     * @throws IOException  if there is an I/O error.
+     */
+    private void writeObject(ObjectOutputStream stream) throws IOException {
+        stream.defaultWriteObject();
+
+        SerialUtilities.writeShape(this.legendItemShape, stream);
+        SerialUtilities.writePaint(this.seriesPaint, stream);
+        SerialUtilities.writePaint(this.baseSeriesPaint, stream);
+        SerialUtilities.writePaint(this.seriesOutlinePaint, stream);
+        SerialUtilities.writePaint(this.baseSeriesOutlinePaint, stream);
+        SerialUtilities.writeStroke(this.seriesOutlineStroke, stream);
+        SerialUtilities.writeStroke(this.baseSeriesOutlineStroke, stream);
+        SerialUtilities.writePaint(this.labelPaint, stream);
+        SerialUtilities.writePaint(this.axisLinePaint, stream);
+        SerialUtilities.writeStroke(this.axisLineStroke, stream);
+    }",4.222222222222222,0.9016801442968183,0.7777777777777777,readable,readable,high,,java,13,1,3.0,5.0,Code,bc95c41da50b5f0710359f6de98889c269a090adf6d68f7e12b7cd9e4b6ed88d,0719ce85bad4c0897c5b3689a92df0e72f28903056b4706a402ced4a09da16f7,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 31, ""original_snippet_id"": ""38""}",,,31
+rq0_0221,39,Scalabrino,"/**
+     * Tests another object for equality with this object.
+     *
+     * @param obj  the object to test (<code>null</code> permitted).
+     *
+     * @return A boolean.
+     */
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == this) {
+            return true;
+        }
+        if (!(obj instanceof PinNeedle)) {
+            return false;
+        }
+        if (!super.equals(obj)) {
+            return false;
+        }
+        return true;
+    }",4.777777777777778,1.8092153544656926,0.9629629629629628,readable,readable,high,,java,13,4,4.0,5.0,Code,e4ecac9118114683d7ecca5de60af56f3db83805e03ef3aefc4c305469973d0d,20bd6553700261e9cd483105bb22e90ab1d14f71984fe1d8731688d7e59c3da4,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 32, ""original_snippet_id"": ""39""}",,,32
+rq0_0222,40,Scalabrino,"/**
+     * Tests this dataset for equality with an arbitrary object.
+     *
+     * @param obj  the object (<code>null</code> permitted).
+     *
+     * @return A boolean.
+     */
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == this) {
+            return true;
+        }
+        if (!(obj instanceof CategoryDataset)) {
+            return false;
+        }
+        CategoryDataset that = (CategoryDataset) obj;
+        if (!getRowKeys().equals(that.getRowKeys())) {
+            return false;
+        }
+        if (!getColumnKeys().equals(that.getColumnKeys())) {
+            return false;
+        }
+        int rowCount = getRowCount();
+        int colCount = getColumnCount();
+        for (int r = 0; r < rowCount; r++) {
+            for (int c = 0; c < colCount; c++) {
+                Number v1 = getValue(r, c);
+                Number v2 = that.getValue(r, c);
+                if (v1 == null) {
+                    if (v2 != null) {
+                        return false;
+                    }
+                }
+                else if (!v1.equals(v2)) {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }",4.222222222222222,0.9016801442968183,0.7777777777777777,readable,readable,high,,java,33,10,3.0,5.0,Code,b7dfde829eb9dab160172a2157b7c43e31eedf4b166eda23b8713db74e8e2923,a4d785cabb445c5aec7b06360e1fcc6d199c7f43c58c7c27832df5afd2a3a5b6,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 33, ""original_snippet_id"": ""40""}",,,33
+rq0_0223,41,Scalabrino,"/**
+     * Returns the minimum and maximum values for the dataset's range
+     * (y-values), assuming that the series in one category are stacked.
+     *
+     * @param dataset  the dataset (<code>null</code> not permitted).
+     * @param base  the base value for the bars.
+     *
+     * @return The range (<code>null</code> if the dataset contains no values).
+     */
+    public static Range findStackedRangeBounds(CategoryDataset dataset,
+            double base) {
+        ParamChecks.nullNotPermitted(dataset, ""dataset"");
+        Range result = null;
+        double minimum = Double.POSITIVE_INFINITY;
+        double maximum = Double.NEGATIVE_INFINITY;
+        int categoryCount = dataset.getColumnCount();
+        for (int item = 0; item < categoryCount; item++) {
+            double positive = base;
+            double negative = base;
+            int seriesCount = dataset.getRowCount();
+            for (int series = 0; series < seriesCount; series++) {
+                Number number = dataset.getValue(series, item);
+                if (number != null) {
+                    double value = number.doubleValue();
+                    if (value > 0.0) {
+                        positive = positive + value;
+                    }
+                    if (value < 0.0) {
+                        negative = negative + value;
+                        // '+', remember value is negative
+                    }
+                }
+            }
+            minimum = Math.min(minimum, negative);
+            maximum = Math.max(maximum, positive);
+        }
+        if (minimum <= maximum) {
+            result = new Range(minimum, maximum);
+        }
+        return result;
+
+    }",4.111111111111111,0.7201731022630425,0.7407407407407405,readable,readable,high,,java,31,7,3.0,5.0,Code,07598eaddb737632fbba2ad40195eab9d184b6a4ca5183fb94eafccd98741e39,fcdd167dcb8c0cc8505e09bd92277fc2d7da241c0a4445454b3efc981165508b,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 34, ""original_snippet_id"": ""41""}",,,34
+rq0_0224,42,Scalabrino,"/**
+     * Tests the equality of this object against an arbitrary Object.
+     * <P>
+     * This method will return true ONLY if the object is a Second object
+     * representing the same second as this instance.
+     *
+     * @param obj  the object to compare (<code>null</code> permitted).
+     *
+     * @return <code>true</code> if second and minute of this and the object
+     *         are the same.
+     */
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == this) {
+            return true;
+        }
+        if (!(obj instanceof Second)) {
+            return false;
+        }
+        Second that = (Second) obj;
+        if (this.second != that.second) {
+            return false;
+        }
+        if (this.minute != that.minute) {
+            return false;
+        }
+        if (this.hour != that.hour) {
+            return false;
+        }
+        if (!this.day.equals(that.day)) {
+            return false;
+        }
+        return true;
+    }",4.666666666666667,1.6277083124319183,0.9259259259259259,readable,readable,high,,java,23,7,4.0,5.0,Code,8d9c5b622858549d555059f7b484817397dfe7217aa391631c20ab12d64240a1,82e1e4618b3aa6cba9ed97892e4511ec5b766c8215294356e44c95f29d1104b3,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 35, ""original_snippet_id"": ""42""}",,,35
+rq0_0225,43,Scalabrino,"private void handleFireEvent(ArgoEvent event, ArgoEventListener listener) {
+        if (event.getEventType() == ArgoEventTypes.ANY_EVENT) {
+            if (listener instanceof ArgoModuleEventListener) {
+                handleFireModuleEvent((ArgoModuleEvent) event,
+				      (ArgoModuleEventListener) listener);
+            }
+            if (listener instanceof ArgoNotationEventListener) {
+                handleFireNotationEvent((ArgoNotationEvent) event,
+					(ArgoNotationEventListener) listener);
+            }
+        } else {
+            if (event.getEventType() >= ArgoEventTypes.ANY_MODULE_EVENT
+                && event.getEventType() < ArgoEventTypes.LAST_MODULE_EVENT) {
+                if (listener instanceof ArgoModuleEventListener) {
+                    handleFireModuleEvent((ArgoModuleEvent) event,
+					  (ArgoModuleEventListener) listener);
+                }
+            }
+            if (event.getEventType() >= ArgoEventTypes.ANY_NOTATION_EVENT
+                && event.getEventType() < ArgoEventTypes.LAST_NOTATION_EVENT) {
+                if (listener instanceof ArgoNotationEventListener) {
+                    handleFireNotationEvent((ArgoNotationEvent) event,
+					(ArgoNotationEventListener) listener);
+                }
+            }
+            if (event.getEventType() >= ArgoEventTypes.ANY_GENERATOR_EVENT
+                && event.getEventType() < ArgoEventTypes.LAST_GENERATOR_EVENT) {
+                if (listener instanceof ArgoGeneratorEventListener) {
+                    handleFireGeneratorEvent((ArgoGeneratorEvent) event,
+                            (ArgoGeneratorEventListener) listener);
+                }
+            }
+        }
+    }",2.888888888888889,-1.2764043601084811,0.33333333333333326,unreadable,unreadable,low,,java,34,13,1.0,4.0,Code,765573a64781849b9a15f5641d1f99c40e1f236eb44596669dba7d2a087fdcc8,b68e4c798ce9a66b3fa56cee5c8019a8b2f85e72e30d980ee115dd43faaedfe9,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 36, ""original_snippet_id"": ""43""}",,,36
+rq0_0226,44,Scalabrino,"/**
+     * Find an element in the list.
+     *
+     * This is a little more complex than the simple lookup since it might be
+     * that we are indexing with a class and the list contains interfaces.
+     *
+     * Since the hashtable lookup is a lot faster than the linear search we
+     * add the result of the linear search to the hashtable so that the next
+     * time we need not do it.
+     *
+     * @return Checklist or null if noone exist.
+     * @param cls the class to lookup.
+     */
+    private static Checklist lookupChecklist(Class cls) {
+        if (lists.contains(cls)) {
+            return (Checklist) lists.get(cls);
+	}
+
+        // Now lets search
+        Enumeration enumeration = lists.keys();
+
+        while (enumeration.hasMoreElements()) {
+            Object clazz = enumeration.nextElement();
+
+            Class[] intfs = cls.getInterfaces();
+            for (int i = 0; i < intfs.length; i++) {
+                if (intfs[i].equals(clazz)) {
+                    // We found it!
+                    Checklist chlist = (Checklist) lists.get(clazz);
+
+                    // Enter the class to speed up the next search.
+                    lists.put(cls, chlist);
+                    return chlist;
+                }
+            }
+        }
+
+        return null;
+    }",4.0,0.5386660602292682,0.7037037037037036,readable,readable,high,,java,18,5,3.0,5.0,Code,0eb46cb356dc24d146d4c23a04c336be5a158540cbdf797bbe739e1acfe1b540,8b66a2a2e4826948d3d9c0b23789697ad12b6c43908bf187fad6e5e508e9416a,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 37, ""original_snippet_id"": ""44""}",,,37
+rq0_0227,45,Scalabrino,"/**
+     * @return a list of all the types
+     */
+    public static Vector getTypes() {
+        if (types == null) {
+            types = new Vector();
+            types.addElement(new KnowledgeTypeNode(Critic.KT_DESIGNERS));
+            types.addElement(new KnowledgeTypeNode(Critic.KT_CORRECTNESS));
+            types.addElement(new KnowledgeTypeNode(Critic.KT_COMPLETENESS));
+            types.addElement(new KnowledgeTypeNode(Critic.KT_CONSISTENCY));
+            types.addElement(new KnowledgeTypeNode(Critic.KT_SYNTAX));
+            types.addElement(new KnowledgeTypeNode(Critic.KT_SEMANTICS));
+            types.addElement(new KnowledgeTypeNode(Critic.KT_OPTIMIZATION));
+            types.addElement(new KnowledgeTypeNode(Critic.KT_PRESENTATION));
+            types.addElement(new KnowledgeTypeNode(Critic.KT_ORGANIZATIONAL));
+            types.addElement(new KnowledgeTypeNode(Critic.KT_EXPERIENCIAL));
+            types.addElement(new KnowledgeTypeNode(Critic.KT_TOOL));
+        }
+        return types;
+    }",4.333333333333333,1.0831871863305926,0.8148148148148147,readable,readable,high,,java,17,2,2.0,5.0,Code,c2485b80f0b558c927c51bfc2d6ffedc33d40206819652663b72113427ac9b2d,263cbaa81989c991d94d01a94bd3ad57fdeb274ef91d23632f7f6e67ba80108a,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 38, ""original_snippet_id"": ""45""}",,,38
+rq0_0228,46,Scalabrino,"public void toDoItemsRemoved(ToDoListEvent tde) {
+	LOG.debug(""toDoItemRemoved"");
+        Vector items = tde.getToDoItems();
+        int nItems = items.size();
+        
+	ToDoList list = Designer.theDesigner().getToDoList(); //source?
+	Object[] path = new Object[2];
+	path[0] = Designer.theDesigner().getToDoList();
+
+
+	Enumeration elems = list.getPosters().elements();
+ 	while (elems.hasMoreElements()) {
+	    Poster p = (Poster) elems.nextElement();
+            boolean anyInPoster = false;
+            for (int i = 0; i < nItems; i++) {
+                ToDoItem item = (ToDoItem) items.elementAt(i);
+                Poster post = item.getPoster();
+                if (post == p) { 
+                    anyInPoster = true;
+                    break;
+                }
+            }
+            if (!anyInPoster) { 
+                continue;
+            }
+	    path[1] = p;
+	    fireTreeStructureChanged(path);
+	}
+    }",3.333333333333333,-0.5503761919733818,0.48148148148148134,unreadable,unreadable,low,,java,26,5,2.0,5.0,Code,84bef5a4ef6afaefb44cf1b74cc4ff25cf27306c4b15a546b728a90f83068d65,e5b5d5a8f74dc199c942e9345c3982a7591a53e7f65677944b006c42aae46865,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 39, ""original_snippet_id"": ""46""}",,,39
+rq0_0229,47,Scalabrino,"public void updateListener(PropertyChangeListener listener, 
+            Object modelElement,
+            PropertyChangeEvent pce) {
+        Object obj = pce.getSource();
+        if ((obj == modelElement) 
+                && ""stereotype"".equals(pce.getPropertyName())) {
+            if (pce instanceof AddAssociationEvent 
+                    && Model.getFacade().isAStereotype(pce.getNewValue())) {
+                // new stereotype
+                addElementListener(
+                        listener, 
+                        pce.getNewValue(), 
+                        new String[] {""name"", ""remove""});
+            }
+            if (pce instanceof RemoveAssociationEvent 
+                    && Model.getFacade().isAStereotype(pce.getOldValue())) {
+                // removed stereotype
+                removeElementListener(
+                        listener, 
+                        pce.getOldValue());
+            }
+        }
+    }",3.6666666666666665,-0.005855065872056767,0.5925925925925924,unreadable,discard,mid,,java,21,7,3.0,5.0,Code,c97519cd8bb6fb01e5bdbec642c1d8315ad2adfd60b8d7780cbcface4105c5bc,8b523ba45e85ef4b3d63dd5672ee3f55319ab3595c70ce53a0c5cecaeab41c8a,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 40, ""original_snippet_id"": ""47""}",,,40
+rq0_0230,48,Scalabrino,"/**
+     * @param filename the filename to read from
+     */
+    public void read(String filename) {
+        try {
+            FileReader f = new FileReader(filename);
+            BufferedReader fr = new BufferedReader(f);
+
+            String line = """";
+            String content = """";
+            boolean inSection = false;
+            while (line != null) {
+                line = fr.readLine();
+                if (line != null) {
+                    if (inSection) {
+                        String sectionId = getSectId(line);
+                        if (sectionId != null) {
+                            inSection = false;
+                            mAry.put(sectionId, content);
+                            content = """";
+                        } else {
+                            content += line + LINE_SEPARATOR;
+                        }
+                    } else {
+                        String sectionId = getSectId(line);
+                        if (sectionId != null) {
+                            inSection = true;
+                        }
+                    }
+                }
+            }
+            fr.close();
+        } catch (IOException e) {
+            LOG.error(""Error: "" + e.toString());
+        }
+    }",4.111111111111111,0.7201731022630425,0.7407407407407405,readable,readable,high,,java,32,7,3.0,5.0,Code,4ee2d2eafbb1180da49ec849d182934268c38c5213379508b3e4419b372a6365,4531e14464fa2371f6f3b148ab6361f498b1264cb844fccd5114daf397c99180,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 41, ""original_snippet_id"": ""48""}",,,41
+rq0_0231,49,Scalabrino,"private boolean saveGraphicsToFile(File theFile, CmdSaveGraphics cmd,
+            boolean overwrite) throws IOException {
+        if ( theFile.exists() && !overwrite ) {
+            int response =
+		JOptionPane.showConfirmDialog(ArgoFrame.getInstance(),
+                    Translator.messageFormat(""optionpane.confirm-overwrite"",
+                            new Object[] {theFile}),
+                    Translator.localize(""optionpane.confirm-overwrite-title""),
+                    JOptionPane.YES_NO_OPTION);
+            if (response == JOptionPane.NO_OPTION) return false;
+        }
+        FileOutputStream fo = null;
+        try {
+            fo = new FileOutputStream( theFile );
+            cmd.setStream(fo);
+            cmd.setScale(Configuration.getInteger(
+                    SaveGraphicsManager.KEY_GRAPHICS_RESOLUTION, 1));
+            cmd.doIt();
+        } finally {
+            if (fo != null) {
+                fo.close();
+            }
+        }
+        return true;
+    }",2.7777777777777777,-1.4579114021422561,0.2962962962962962,unreadable,unreadable,low,,java,25,5,1.0,5.0,Code,a4d225b9220bd55c7ba267325e0578a00fcab7a89afa85ffda5dec2b59d58d74,4f4a1e637d83adc93bd88d0aec8f230041b749f05976a567f4af07b1e5a17d02,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 42, ""original_snippet_id"": ""49""}",,,42
+rq0_0232,50,Scalabrino,"public void targetAdded(TargetEvent e) {
+            if (!updatingSelection) {
+                updatingSelection = true;
+                Object[] targets = e.getAddedTargets();
+
+                int rows = getRowCount();
+                for (int i = 0; i < targets.length; i++) {
+                    Object target = targets[i];
+                    if (target instanceof Fig) {
+                        target = ((Fig) target).getOwner();
+                    }
+                    for (int j = 0; j < rows; j++) {
+                        Object rowItem =
+                            ((DefaultMutableTreeNode)
+                                    getPathForRow(j).getLastPathComponent())
+                            .getUserObject();
+                        if (rowItem == target) {
+                            updatingSelectionViaTreeSelection = true;
+                            addSelectionRow(j);
+                            updatingSelectionViaTreeSelection = false;
+                        }
+                    }
+                }
+
+                if (getSelectionCount() > 0) {
+                    scrollRowToVisible(getSelectionRows()[0]);
+                }
+                updatingSelection = false;
+            }
+            // setTargets(e.getNewTargets());
+        }",3.111111111111111,-0.9133902760409311,0.4074074074074074,unreadable,unreadable,low,,java,28,7,1.0,5.0,Code,cad56d2e3bd86dcd270182cee7fb6667c10caff0ed1f4e9e75b2ef5cc862d2f4,18aa3f142c9fbb983ccba29fa05a6037d6718cdafd0252f795a78405965fca7d,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 43, ""original_snippet_id"": ""50""}",,,43
+rq0_0233,51,Scalabrino,"/**
+     * Saves the given actions in the configuration file
+     * 
+     * @param newActions
+     *            the actions array
+     */
+    public static void saveShortcuts(Action[] newActions) {
+        for (int i = 0; i < newActions.length; i++) {
+            Action oldAction = (Action) shortcutHash
+                    .get(newActions[i].getKey());
+            if (newActions[i].getCurrentShortcut() == null
+                    && newActions[i].getDefaultShortcut() != null) {
+                // if a default action was voided then we have to save it
+                Configuration.setString(Configuration.makeKey(oldAction
+                        .getKey()), """");
+            } else if (newActions[i].getCurrentShortcut() != null
+                    && !newActions[i].getCurrentShortcut().equals(
+                            newActions[i].getDefaultShortcut())) {
+                // if a not-default current shortcut was added, then we have to
+                // save it
+                Configuration.setString(Configuration.makeKey(oldAction
+                        .getKey()), KeyEventUtils.formatKeyStroke(newActions[i]
+                        .getCurrentShortcut()));
+            } else {
+                // if the actual is not going to be saved, then try to remove it
+                // (as it could have been cancelled)
+                Configuration.removeKey(Configuration.makeKey(oldAction
+                        .getKey()));
+            }
+        }
+    }",3.4444444444444446,-0.36886914993960607,0.5185185185185185,unreadable,discard,mid,,java,20,6,2.0,5.0,Code,2ab9e3cf25513b6ff50eb7f8b140f41abaab5d4d93a7da55d2c6b9e7945c6c0a,66abace62a3df8b3e7d6cf884a679a9b8b88caad26066dc5ac61f36f6c266e5e,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 44, ""original_snippet_id"": ""51""}",,,44
+rq0_0234,52,Scalabrino,"protected void scanAnnotatedMembers(Map<Class<? extends Annotation>, List<FrameworkMethod>> methodsForAnnotations, Map<Class<? extends Annotation>, List<FrameworkField>> fieldsForAnnotations) {
+        for (Class<?> eachClass : getSuperClasses(fClass)) {
+            for (Method eachMethod : MethodSorter.getDeclaredMethods(eachClass)) {
+                addToAnnotationLists(new FrameworkMethod(eachMethod), methodsForAnnotations);
+            }
+            // ensuring fields are sorted to make sure that entries are inserted
+            // and read from fieldForAnnotations in a deterministic order
+            for (Field eachField : getSortedDeclaredFields(eachClass)) {
+                addToAnnotationLists(new FrameworkField(eachField), fieldsForAnnotations);
+            }
+        }
+    }",4.0,0.5386660602292682,0.7037037037037036,readable,readable,high,,java,10,4,3.0,5.0,Code,a8db211ff4d7429b69a011c6174885e2b73d2270eaef155ea415f165dd51ea5e,ba017d1373df8838bce592bc8d08c44067f55a7cb535901adcb269e9e250123c,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 45, ""original_snippet_id"": ""52""}",,,45
+rq0_0235,54,Scalabrino,"private static Description makeDescription(Test test) {
+        if (test instanceof TestCase) {
+            TestCase tc = (TestCase) test;
+            return Description.createTestDescription(tc.getClass(), tc.getName(),
+                    getAnnotations(tc));
+        } else if (test instanceof TestSuite) {
+            TestSuite ts = (TestSuite) test;
+            String name = ts.getName() == null ? createSuiteDescription(ts) : ts.getName();
+            Description description = Description.createSuiteDescription(name);
+            int n = ts.testCount();
+            for (int i = 0; i < n; i++) {
+                Description made = makeDescription(ts.testAt(i));
+                description.addChild(made);
+            }
+            return description;
+        } else if (test instanceof Describable) {
+            Describable adapter = (Describable) test;
+            return adapter.getDescription();
+        } else if (test instanceof TestDecorator) {
+            TestDecorator decorator = (TestDecorator) test;
+            return makeDescription(decorator.getTest());
+        } else {
+            // This is the best we can do in this case
+            return Description.createSuiteDescription(test.getClass());
+        }
+    }",4.111111111111111,0.7201731022630425,0.7407407407407405,readable,readable,high,,java,25,7,3.0,5.0,Code,d325038a0753492d167f441660b06f6cc09cfa118b941c6d7a74ff03dd89c104,3b5115188eeeeff09c01d7985848bd56986617a7fe1e1d3e18fd95d2a17dccf2,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 46, ""original_snippet_id"": ""54""}",,,46
+rq0_0236,55,Scalabrino,"private EntityManager internalCreateEntityManager(SynchronizationType synchronizationType, Map map) {
+		validateNotClosed();
+
+		//TODO support discardOnClose, persistencecontexttype?, interceptor,
+		return new EntityManagerImpl(
+				this,
+				PersistenceContextType.EXTENDED,
+				synchronizationType,
+				transactionType,
+				discardOnClose,
+				sessionInterceptorClass,
+				map
+		);
+	}",4.222222222222222,0.9016801442968183,0.7777777777777777,readable,readable,high,,java,12,1,1.0,5.0,Code,a1c83eb57d16d05afeec93bf1a3d225d6901cf6b5785dbc1767f6b779750249c,456b01030d77e26db20f9f9cb77bd428e596b8160386cc1e4165ac016963af1b,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 47, ""original_snippet_id"": ""55""}",,,47
+rq0_0237,58,Scalabrino,"public static void main(String[] args) {
+		CustomVersionOneStrategy strategy = new CustomVersionOneStrategy();
+
+		for ( int i = 0; i < 1000; i++ ) {
+			System.out.println( ""Generation # "" + i + "" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"" );
+			byte[] loBits = new byte[8];
+
+			long sysTime = System.currentTimeMillis();
+			short hiTime = (short) ( System.currentTimeMillis() >>> 32 );
+			int loTime = (int) sysTime;
+			System.arraycopy( BytesHelper.fromShort( hiTime ), 0, loBits, 0, 2 );
+			System.arraycopy( BytesHelper.fromInt( loTime ), 0, loBits, 2, 4 );
+			System.arraycopy( Helper.getCountBytes(), 0, loBits, 6, 2 );
+
+			System.out.println( ""    before bit setting ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"" );
+			System.out.println( ""       loBits[0] : "" + BytesHelper.toBinaryString( loBits[0] ) );
+			System.out.println( ""             lsb : "" + BytesHelper.toBinaryString( BytesHelper.asLong( loBits ) ) );
+			System.out.println( ""    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"" );
+
+			loBits[0] &= 0x3f;
+			loBits[0] |= ((byte)2 << (byte)6);
+
+			System.out.println( ""    after bit setting ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"" );
+			System.out.println( ""       loBits[0] : "" + BytesHelper.toBinaryString( loBits[0] ) );
+			long leastSignificantBits = BytesHelper.asLong( loBits );
+			System.out.println( ""             lsb : "" + BytesHelper.toBinaryString( leastSignificantBits ) );
+			System.out.println( ""    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"" );
+
+
+			UUID uuid = new UUID( strategy.mostSignificantBits, leastSignificantBits );
+			System.out.println( ""  uuid : "" + uuid.toString() );
+			System.out.println( ""  variant : "" + uuid.variant() );
+			System.out.println( ""  version : "" + uuid.version() );
+			if ( uuid.variant() != 2 ) {
+				throw new RuntimeException( ""bad variant"" );
+			}
+			System.out.println( ""~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"" );
+		}
+	}",3.555555555555556,-0.18736210790583105,0.5555555555555556,unreadable,discard,mid,,java,32,3,1.0,5.0,Code,7f0ff3d82bd6b8dbbc4b8c6bbff4f2bd01807021744ddb258b6c272c860bf7ef,b6ad5fc1ffe0afafb35a1ec7ea05668f8ac6ecfee781d7d2ed3f43b5f5451bb9,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 48, ""original_snippet_id"": ""58""}",,,48
+rq0_0238,59,Scalabrino,"public void doTestWithTupleSubsetResultTransformerNullAliases(TupleSubsetResultTransformer transformer) throws Exception {
+		doTest( buildBasicKey( CacheableResultTransformer.create( transformer, null, new boolean[] { true } ) ) );
+		doTest( buildBasicKey( CacheableResultTransformer.create( transformer, null, new boolean[] { true, true } ) ) );
+		doTest( buildBasicKey( CacheableResultTransformer.create( transformer, null, new boolean[] { true, true, true } ) ) );
+		doTest( buildBasicKey( CacheableResultTransformer.create( transformer, null, new boolean[] { false, true } ) ) );
+		doTest( buildBasicKey( CacheableResultTransformer.create( transformer, null, new boolean[] { true, false } ) ) );
+		doTest( buildBasicKey( CacheableResultTransformer.create( transformer, null, new boolean[] { false, true, true } ) ) );
+		doTest( buildBasicKey( CacheableResultTransformer.create( transformer, null, new boolean[] {true, false, true } ) ) );
+		doTest( buildBasicKey( CacheableResultTransformer.create( transformer, null, new boolean[] {true, true, false } ) ) );
+		doTest( buildBasicKey( CacheableResultTransformer.create( transformer, null, new boolean[] {false, false, true } ) ) );
+		doTest( buildBasicKey( CacheableResultTransformer.create( transformer, null, new boolean[] {false, true, false } ) ) );
+		doTest( buildBasicKey( CacheableResultTransformer.create( transformer, null, new boolean[] {false, false, true } ) ) );
+	}",3.7777777777777777,0.17565197616171824,0.6296296296296295,readable,discard,mid,,java,13,1,2.0,5.0,Code,ac13c33e859758b3e0764c6d4a5d49ff4d00dd8b23bd139ef412a579bb007f27,9e2a615c6b6d387714c0654d3d50b8c9a817d0cbec2eadbf8c2d27b279336cba,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 49, ""original_snippet_id"": ""59""}",,,49
+rq0_0239,60,Scalabrino,"public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Person)) return false;
+
+        Person person = (Person) o;
+
+        if (id != person.id) return false;
+        if (name != null ? !name.equals(person.name) : person.name != null) return false;
+        if (surname != null ? !surname.equals(person.surname) : person.surname != null) return false;
+
+        return true;
+    }",3.888888888888889,0.3571590181954932,0.6666666666666665,readable,discard,mid,,java,9,8,3.0,5.0,Code,d73866cf449ac7a1ae1f182091912ac9578827bcf57acfd49edceecbd7ede202,63e7ce3714933ee876a2d2e81c3ecf5f1d57f2685fb50f36631ba8c98beaee97,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 50, ""original_snippet_id"": ""60""}",,,50
+rq0_0240,61,Scalabrino,"private void readAndSetAddress(Scanner scanner, Person p) {
+        Address old = p.getAddress();
+
+        String input = scanner.nextLine();
+        if (""NULL"".equals(input)) {
+            p.setAddress(null);
+            if (old != null) {
+                old.getPersons().remove(p);
+            }
+        } else if ("""".equals(input)) {
+        } else {
+            try {
+                Integer id = Integer.valueOf(input);
+
+                Address a = entityManager.find(Address.class, id);
+
+                if (a == null) {
+                    System.err.println(""Unknown address id, setting to NULL."");
+                    p.setAddress(null);
+                    if (old != null) {
+                        old.getPersons().remove(p);
+                    }
+                } else {
+                    p.setAddress(a);
+
+                    a.getPersons().add(p);
+
+                    if (old != null) {
+                        old.getPersons().remove(p);
+                    }
+                }
+            } catch (NumberFormatException e) {
+                System.err.println(""Invalid address id, setting to NULL."");
+                p.setAddress(null);
+                if (old != null) {
+                    old.getPersons().remove(p);
+                }
+            }
+        }
+    }",3.888888888888889,0.3571590181954932,0.6666666666666665,readable,discard,mid,,java,35,9,2.0,5.0,Code,0a494b75caa75d118505e7d2991fb198bd4eaf87d8316e174bfebef6db9a4e49,b10816f39a28b4eed2d76ae43b26b09098008636cb817a3c9c32b6aefe6d52ad,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 51, ""original_snippet_id"": ""61""}",,,51
+rq0_0241,62,Scalabrino,"/**
+	 * add statistics report of a DB query
+	 *
+	 * @param rows rows count returned
+	 * @param time time taken
+	 */
+	void executed(long rows, long time) {
+		// read lock is enough, concurrent updates are supported by the underlying type AtomicLong
+		// this only guards executed(long, long) to be called, when another thread is executing getExecutionAvgTime()
+		readLock.lock();
+		try {
+			// Less chances for a context switch
+			for (long old = executionMinTime.get(); (time < old) && !executionMinTime.compareAndSet(old, time); old = executionMinTime.get());
+			for (long old = executionMaxTime.get(); (time > old) && !executionMaxTime.compareAndSet(old, time); old = executionMaxTime.get());
+			executionCount.getAndIncrement();
+			executionRowCount.addAndGet(rows);
+			totalExecutionTime.addAndGet(time);
+		} finally {
+			readLock.unlock();
+		}
+	}",3.333333333333333,-0.5503761919733818,0.48148148148148134,unreadable,unreadable,low,,java,12,5,2.0,5.0,Code,34e7dde208f205ff900df6210397d24406d8f85f5ef7f1994fd567ba20941ea5,391398efa674dc69e498fdfc2f5baf0c95cb387bde0be1889d42c2e7b2882bcd,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 52, ""original_snippet_id"": ""62""}",,,52
+rq0_0242,63,Scalabrino,"public String toString() {
+		return new StringBuilder()
+				.append(""QueryStatistics"")
+				.append(""[cacheHitCount="").append(this.cacheHitCount)
+				.append("",cacheMissCount="").append(this.cacheMissCount)
+				.append("",cachePutCount="").append(this.cachePutCount)
+				.append("",executionCount="").append(this.executionCount)
+				.append("",executionRowCount="").append(this.executionRowCount)
+				.append("",executionAvgTime="").append(this.getExecutionAvgTime())
+				.append("",executionMaxTime="").append(this.executionMaxTime)
+				.append("",executionMinTime="").append(this.executionMinTime)
+				.append(']')
+				.toString();
+	}",4.0,0.5386660602292682,0.7037037037037036,readable,readable,high,,java,14,1,3.0,5.0,Code,6e5f65a99f90dabf6cbbbb8c4a9a4ca2734c9e780c87146f446851993a072a26,3aba83fac5e7cfe22bdd775aeb09d8c0b3cfa433c7094f7459863dc47daa656e,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 53, ""original_snippet_id"": ""63""}",,,53
+rq0_0243,64,Scalabrino,"public String toString() {
+		StringBuilder buf = new StringBuilder()
+				.append(""SecondLevelCacheStatistics"")
+				.append(""[hitCount="").append(this.hitCount)
+				.append("",missCount="").append(this.missCount)
+				.append("",putCount="").append(this.putCount);
+		//not sure if this would ever be null but wanted to be careful
+		if (region != null) {
+			buf.append("",elementCountInMemory="").append(this.getElementCountInMemory())
+					.append("",elementCountOnDisk="").append(this.getElementCountOnDisk())
+					.append("",sizeInMemory="").append(this.getSizeInMemory());
+		}
+		buf.append(']');
+		return buf.toString();
+	}",3.888888888888889,0.3571590181954932,0.6666666666666665,readable,discard,mid,,java,14,2,2.0,5.0,Code,7731952de94da595838b693867f64050b28d0b7605a4a6bedfe9858f51925cda,b576a18e7545b08fd2b7b98b6c6b6c4c2262f13b9b479e367dee937e6f1f10c5,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 54, ""original_snippet_id"": ""64""}",,,54
+rq0_0244,65,Scalabrino,"Object processEntity(Object value, EntityType entityType) throws HibernateException {
+
+		if (value!=null) {
+			getSession().getPersistenceContext().reassociateIfUninitializedProxy(value);
+			// if it is an initialized proxy, let cascade
+			// handle it later on
+		}
+
+		return null;
+	}",4.555555555555555,1.4462012703981426,0.8888888888888887,readable,readable,high,,java,6,2,4.0,5.0,Code,d2baff0b8e1c9f545e299fb38047d6ef2134fda086f125cb7241ab964e488214,2735a7d7e31f32fefeb9077bb37681fb06a4405ee96c6bbb4d7016598d39061f,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 55, ""original_snippet_id"": ""65""}",,,55
+rq0_0245,66,Scalabrino,"/**
+	 * 1. Recreate the collection key -> collection map
+	 * 2. rebuild the collection entries
+	 * 3. call Interceptor.postFlush()
+	 */
+	protected void postFlush(SessionImplementor session) throws HibernateException {
+
+		LOG.trace( ""Post flush"" );
+
+		final PersistenceContext persistenceContext = session.getPersistenceContext();
+		persistenceContext.getCollectionsByKey().clear();
+		
+		// the database has changed now, so the subselect results need to be invalidated
+		// the batch fetching queues should also be cleared - especially the collection batch fetching one
+		persistenceContext.getBatchFetchQueue().clear();
+
+		for ( Map.Entry<PersistentCollection, CollectionEntry> me : IdentityMap.concurrentEntries( persistenceContext.getCollectionEntries() ) ) {
+			CollectionEntry collectionEntry = me.getValue();
+			PersistentCollection persistentCollection = me.getKey();
+			collectionEntry.postFlush(persistentCollection);
+			if ( collectionEntry.getLoadedPersister() == null ) {
+				//if the collection is dereferenced, remove from the session cache
+				//iter.remove(); //does not work, since the entrySet is not backed by the set
+				persistenceContext.getCollectionEntries()
+						.remove(persistentCollection);
+			}
+			else {
+				//otherwise recreate the mapping between the collection and its key
+				CollectionKey collectionKey = new CollectionKey(
+						collectionEntry.getLoadedPersister(),
+						collectionEntry.getLoadedKey()
+				);
+				persistenceContext.getCollectionsByKey().put(collectionKey, persistentCollection);
+			}
+		}
+
+	}",3.4444444444444446,-0.36886914993960607,0.5185185185185185,unreadable,discard,mid,,java,22,3,1.0,5.0,Code,539c37ff511d3468b784ed47925b92b8322fe2067733584aa4fc1ffece84cde3,a8ec0217e3f6c410fec0f4a7c95e03cd3c18284d54dafef455b497d89c34f5a6,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 56, ""original_snippet_id"": ""66""}",,,56
+rq0_0246,67,Scalabrino,"/**
+		 * Build a ParameterMemento from the given parameter registration
+		 *
+		 * @param registration The parameter registration from a ProcedureCall
+		 *
+		 * @return The memento
+		 */
+		public static ParameterMemento fromRegistration(ParameterRegistrationImplementor registration) {
+			return new ParameterMemento(
+					registration.getPosition(),
+					registration.getName(),
+					registration.getMode(),
+					registration.getType(),
+					registration.getHibernateType()
+			);
+		}",4.666666666666667,1.6277083124319183,0.9259259259259259,readable,readable,high,,java,9,1,4.0,5.0,Code,3cd2a5b1b89a46e7cecaf0bd32a36974679d0d9dc576295f29a45bc621338d3a,e895d2c6dbf9f2418286abefcc2451cb0d907b50a60bfe55555d895cd3285cb1,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 57, ""original_snippet_id"": ""67""}",,,57
+rq0_0247,70,Scalabrino,"public boolean equals(Object o) {
+		if (this == o) return true;
+		if (!(o instanceof OuterKey)) return false;
+
+		final OuterKey cidDetailID = (OuterKey) o;
+
+		if (detailId != null ? !detailId.equals(cidDetailID.detailId) : cidDetailID.detailId != null) return false;
+		if (master != null ? !master.equals(cidDetailID.master) : cidDetailID.master != null) return false;
+
+		return true;
+	}",3.2222222222222223,-0.731883234007156,0.4444444444444444,unreadable,unreadable,low,,java,8,7,2.0,5.0,Code,d5d59f0b3d68c29aa11d632090fd94163f37242c2c1c988ff1568ee62519e024,64479ef3a85c0fd7330d6531b9ffb919d04ece756abec3cb47312e3921acbd31,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 58, ""original_snippet_id"": ""70""}",,,58
+rq0_0248,73,Scalabrino,"@Override
+    public void runTest(final Test test, final TestResult result) {
+        Thread t = new Thread() {
+            @Override
+            public void run() {
+                try {
+                    // inlined due to limitation in VA/Java
+                    //ActiveTestSuite.super.runTest(test, result);
+                    test.run(result);
+                } finally {
+                    ActiveTestSuite.this.runFinished();
+                }
+            }
+        };
+        t.start();
+    }
+",4.555555555555555,1.4462012703981426,0.8888888888888887,readable,readable,high,,java,14,2,4.0,5.0,Code,e8753418aa6b5bae05a1bacdb975dc45b6c68f83eeca9358a2fbac18c7e1d91f,8c2df56b216d87f93d5f2f8a254debb05003de8aa36d20211947014913a7e3db,,fmt_dup_0001,fmt_dup_0001,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 59, ""original_snippet_id"": ""73""}",,,59
+rq0_0249,74,Scalabrino,"public boolean equalsFoo(Foo other) {
+		if ( _bytes!=other._bytes ) {
+			if ( _bytes==null || other._bytes==null ) return false;
+			if ( _bytes.length!=other._bytes.length ) return false;
+			for ( int i=0; i< _bytes.length; i++) {
+				if ( _bytes[i] != other._bytes[i] ) return false;
+			}
+		}
+
+		return ( this._bool == other._bool )
+		&& ( ( this._boolean == other._boolean ) || ( this._boolean.equals(other._boolean) ) )
+		&& ( ( this._byte == other._byte ) || ( this._byte.equals(other._byte) ) )
+		//&& ( ( this._date == other._date ) || ( this._date.getDate() == other._date.getDate() && this._date.getMonth() == other._date.getMonth() && this._date.getYear() == other._date.getYear() ) )
+		&& ( ( this._double == other._double ) || ( this._double.equals(other._double) ) )
+		&& ( ( this._float == other._float ) || ( this._float.equals(other._float) ) )
+		&& ( this._int == other._int )
+		&& ( ( this._integer == other._integer ) || ( this._integer.equals(other._integer) ) )
+		&& ( ( this._long == other._long ) || ( this._long.equals(other._long) ) )
+		&& ( this._null == other._null )
+		&& ( ( this._short == other._short ) || ( this._short.equals(other._short) ) )
+		&& ( ( this._string == other._string) || ( this._string.equals(other._string) ) )
+		//&& ( ( this._timestamp==other._timestamp) || ( this._timestamp.getDate() == other._timestamp.getDate() && this._timestamp.getYear() == other._timestamp.getYear() && this._timestamp.getMonth() == other._timestamp.getMonth() ) )
+		&& ( this._zero == other._zero )
+		&& ( ( this._foo == other._foo ) || ( this._foo.getKey().equals( other._foo.getKey() ) ) )
+		&& ( ( this.blob == other.blob ) || ( this.blob.equals(other.blob) ) )
+		&& ( this.yesno == other.yesno )
+		&& ( ( this.binary == other.binary ) || java.util.Arrays.equals(this.binary, other.binary) )
+		&& ( this.key.equals(other.key) )
+		&& ( this.theLocale.equals(other.theLocale) )
+		&& ( ( this.custom == other.custom ) || ( this.custom[0].equals(other.custom[0]) && this.custom[1].equals(other.custom[1]) ) );
+
+	}",1.8888888888888888,-2.9099677384124556,0.0,unreadable,unreadable,low,,java,28,38,1.0,5.0,Code,e3686a9c34e52c74403ea21e9a5e3766faa176d2427fdc90abcfda97c287309b,f474d7d7f3c3d5b80f4704987bb3b8f98b9fe024ba420c76169ed5df10ca7d49,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 60, ""original_snippet_id"": ""74""}",,,60
+rq0_0250,76,Scalabrino,"@Override
+	protected void prepareTest() throws Exception {
+	    Session s = openSession();
+	    Transaction t = s.beginTransaction();
+	    Child child_1_1 = new Child( ""achild1-1"");
+	    Child child_1_2 = new Child( ""ychild1-2"");
+	    Child child_1_3 = new Child( ""dchild1-3"");
+	    Child child_2_1 = new Child( ""bchild2-1"");
+	    Child child_2_2 = new Child( ""cchild2-2"");
+	    Child child_2_3 = new Child( ""zchild2-3"");
+	
+	    s.save( child_1_1 );
+	    s.save( child_2_1 );
+	    s.save( child_1_2 );
+	    s.save( child_2_2 );
+	    s.save( child_1_3 );
+	    s.save( child_2_3 );
+	
+	    s.flush();
+	
+	    Parent p1 = new Parent( ""parent1"" );
+	    p1.addChild( child_1_1 );
+	    p1.addChild( child_1_2 );
+	    p1.addChild( child_1_3 );
+	    s.save( p1 );
+	
+	    Parent p2 = new Parent( ""parent2"" );
+	    p2.addChild( child_2_1 );
+	    p2.addChild( child_2_2 );
+	    p2.addChild( child_2_3 );
+	    s.save( p2 );
+	
+	    t.commit();
+	    s.close();
+	}",4.444444444444445,1.2646942283643683,0.8518518518518519,readable,readable,high,,java,30,1,4.0,5.0,Code,df8d3062bbec7d82f39b6a0a7c8649355c6d60421acf0c73c2646cf5c50e0e06,6a5bb66efe7d9f6129e14d7a2e6cb0e9dc018a456b64aeb3d43fa53face905f3,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 61, ""original_snippet_id"": ""76""}",,,61
+rq0_0251,84,Scalabrino,"/**
+	 * Build a normal attribute.
+	 *
+	 * @param ownerType The descriptor of the attribute owner (aka declarer).
+	 * @param property The Hibernate property descriptor for the attribute
+	 * @param <X> The type of the owner
+	 * @param <Y> The attribute type
+	 *
+	 * @return The built attribute descriptor or null if the attribute is not part of the JPA 2 model (eg backrefs)
+	 */
+	@SuppressWarnings({""unchecked""})
+	public <X, Y> AttributeImplementor<X, Y> buildAttribute(AbstractManagedType<X> ownerType, Property property) {
+		if ( property.isSynthetic() ) {
+			// hide synthetic/virtual properties (fabricated by Hibernate) from the JPA metamodel.
+			LOG.tracef( ""Skipping synthetic property %s(%s)"", ownerType.getTypeName(), property.getName() );
+			return null;
+		}
+		LOG.trace( ""Building attribute ["" + ownerType.getTypeName() + ""."" + property.getName() + ""]"" );
+		final AttributeContext<X> attributeContext = wrap( ownerType, property );
+		final AttributeMetadata<X, Y> attributeMetadata =
+				determineAttributeMetadata( attributeContext, normalMemberResolver );
+		if ( attributeMetadata == null ) {
+			return null;
+		}
+		if ( attributeMetadata.isPlural() ) {
+			return buildPluralAttribute( (PluralAttributeMetadata) attributeMetadata );
+		}
+		final SingularAttributeMetadata<X, Y> singularAttributeMetadata = (SingularAttributeMetadata<X, Y>) attributeMetadata;
+		final Type<Y> metaModelType = getMetaModelType( singularAttributeMetadata.getValueContext() );
+		return new SingularAttributeImpl<X, Y>(
+				attributeMetadata.getName(),
+				attributeMetadata.getJavaType(),
+				ownerType,
+				attributeMetadata.getMember(),
+				false,
+				false,
+				property.isOptional(),
+				metaModelType,
+				attributeMetadata.getPersistentAttributeType()
+		);
+	}
+",2.888888888888889,-1.2764043601084811,0.33333333333333326,unreadable,unreadable,low,,java,30,4,1.0,4.0,Code,0c59e956263beea7140b7acdc4ab190c498b6cfadacc791640f51138f496f80e,3b41991b636b2c85c2409bb90b4f5152d4341951fb3cbe41bb2ea9f5e42fff74,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 62, ""original_snippet_id"": ""84""}",,,62
+rq0_0252,95,Scalabrino,"private void releaseStatement(Session session, PreparedStatement ps) {
+		if ( ps != null ) {
+			try {
+				( (SessionImplementor) session ).getTransactionCoordinator().getJdbcCoordinator().release( ps );
+			}
+			catch ( Throwable ignore ) {
+				// ignore...
+			}
+		}
+	}",3.888888888888889,0.3571590181954932,0.6666666666666665,readable,discard,mid,,java,9,3,1.0,5.0,Code,7bf540cc608f000c7ce7be51dc25080e24ce5c515357837e8398bbc52c0cb429,292a9ee1cd760066776602de647907b7aa8c3fb9dc8d5eddd498b866d30ef2ba,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 63, ""original_snippet_id"": ""95""}",,,63
+rq0_0253,100,Scalabrino,"public void afterSessionFactoryBuilt() {
+		super.afterSessionFactoryBuilt();
+		final Session session = sessionFactory().openSession();
+		session.doWork(
+				new Work() {
+					@Override
+					public void execute(Connection connection) throws SQLException {
+						Statement st = ((SessionImplementor)session).getTransactionCoordinator().getJdbcCoordinator().getStatementPreparer().createStatement();
+						try {
+							((SessionImplementor)session).getTransactionCoordinator().getJdbcCoordinator().getResultSetReturn().execute( st, ""drop table Point"");
+						}
+						catch (Exception ignored) {
+						}
+						((SessionImplementor)session).getTransactionCoordinator().getJdbcCoordinator().getResultSetReturn().execute( st, ""create table Point (\""x\"" number(19,2) not null, \""y\"" number(19,2) not null, description varchar2(255) )"");
+						((SessionImplementor)session).getTransactionCoordinator().getJdbcCoordinator().release( st );
+					}
+				}
+		);
+		session.close();
+	}",3.6666666666666665,-0.005855065872056767,0.5925925925925924,unreadable,discard,mid,,java,20,3,2.0,5.0,Code,611fa0355fef6ebc1db94aa4aeb65b81b5c5caa2b4845a655a7d747efdd08e12,7022e0a54a0bed86774118097a0a20056ae5721c19ee99a55af878a8e3056e85,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 64, ""original_snippet_id"": ""100""}",,,64
+rq0_0254,102,Scalabrino,"/**
+	 * Throws {@link org.hibernate.PropertyValueException} if there are any unresolved
+	 * entity insert actions that depend on non-nullable associations with
+	 * a transient entity. This method should be called on completion of
+	 * an operation (after all cascades are completed) that saves an entity.
+	 *
+	 * @throws org.hibernate.PropertyValueException if there are any unresolved entity
+	 * insert actions; {@link org.hibernate.PropertyValueException#getEntityName()}
+	 * and {@link org.hibernate.PropertyValueException#getPropertyName()} will
+	 * return the entity name and property value for the first unresolved
+	 * entity insert action.
+	 */
+	public void checkNoUnresolvedActionsAfterOperation() throws PropertyValueException {
+		if ( isEmpty() ) {
+			LOG.trace( ""No entity insert actions have non-nullable, transient entity dependencies."" );
+		}
+		else {
+			final AbstractEntityInsertAction firstDependentAction =
+					dependenciesByAction.keySet().iterator().next();
+
+			logCannotResolveNonNullableTransientDependencies( firstDependentAction.getSession() );
+
+			final NonNullableTransientDependencies nonNullableTransientDependencies =
+					dependenciesByAction.get( firstDependentAction );
+			final Object firstTransientDependency =
+					nonNullableTransientDependencies.getNonNullableTransientEntities().iterator().next();
+			final String firstPropertyPath =
+					nonNullableTransientDependencies.getNonNullableTransientPropertyPaths( firstTransientDependency ).iterator().next();
+
+			throw new TransientPropertyValueException(
+					""Not-null property references a transient value - transient instance must be saved before current operation"",
+					firstDependentAction.getSession().guessEntityName( firstTransientDependency ),
+					firstDependentAction.getEntityName(),
+					firstPropertyPath
+			);
+		}
+	}",3.333333333333333,-0.5503761919733818,0.48148148148148134,unreadable,unreadable,low,,java,22,2,2.0,5.0,Code,fb0671497bdfbe86120d7e370d73b5b9ccaab2ed254e4935e3e4c2a7de367a40,c6da4c18d308d6055f3392939fa1d9389a7f31b897c434e80a10d87b2ab85334,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 65, ""original_snippet_id"": ""102""}",,,65
+rq0_0255,103,Scalabrino,"/**
+	 * Handle sending notifications needed for natural-id after saving
+	 *
+	 * @param generatedId The generated entity identifier
+	 */
+	public void handleNaturalIdPostSaveNotifications(Serializable generatedId) {
+		if ( isEarlyInsert() ) {
+			// with early insert, we still need to add a local (transactional) natural id cross-reference
+			getSession().getPersistenceContext().getNaturalIdHelper().manageLocalNaturalIdCrossReference(
+					getPersister(),
+					generatedId,
+					state,
+					null,
+					CachedNaturalIdValueSource.INSERT
+			);
+		}
+		// after save, we need to manage the shared cache entries
+		getSession().getPersistenceContext().getNaturalIdHelper().manageSharedNaturalIdCrossReference(
+				getPersister(),
+				getId(),
+				state,
+				null,
+				CachedNaturalIdValueSource.INSERT
+		);
+	}",3.888888888888889,0.3571590181954932,0.6666666666666665,readable,discard,mid,,java,18,2,3.0,5.0,Code,403739439f696bdb939a8373fc7f84a42c86b2d4e46da64701121bddea65d39e,eb68dc121455862aa2b7a07fdf7d67cabed48030e948c046710bd6b28e2cb0fc,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 66, ""original_snippet_id"": ""103""}",,,66
+rq0_0256,104,Scalabrino,"private boolean initializeLazyProperty(
+			final String fieldName,
+			final Object entity,
+			final SessionImplementor session,
+			final Object[] snapshot,
+			final int j,
+			final Object propValue) {
+		setPropertyValue( entity, lazyPropertyNumbers[j], propValue );
+		if ( snapshot != null ) {
+			// object have been loaded with setReadOnly(true); HHH-2236
+			snapshot[ lazyPropertyNumbers[j] ] = lazyPropertyTypes[j].deepCopy( propValue, factory );
+		}
+		return fieldName.equals( lazyPropertyNames[j] );
+	}",3.888888888888889,0.3571590181954932,0.6666666666666665,readable,discard,mid,,java,13,2,2.0,5.0,Code,310d408a7e395de38084b5fc6262e326b35e3f15fa4ecde4e06f896a09210a83,05c047420f0e3bbc45b61c181b81b5e1fe2f59174e4738943c4e226b9da43e34,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 67, ""original_snippet_id"": ""104""}",,,67
+rq0_0257,105,Scalabrino,"private void initOrdinaryPropertyPaths(Mapping mapping) throws MappingException {
+		for ( int i = 0; i < getSubclassPropertyNameClosure().length; i++ ) {
+			propertyMapping.initPropertyPaths( getSubclassPropertyNameClosure()[i],
+					getSubclassPropertyTypeClosure()[i],
+					getSubclassPropertyColumnNameClosure()[i],
+					getSubclassPropertyColumnReaderClosure()[i],
+					getSubclassPropertyColumnReaderTemplateClosure()[i],
+					getSubclassPropertyFormulaTemplateClosure()[i],
+					mapping );
+		}
+	}",3.888888888888889,0.3571590181954932,0.6666666666666665,readable,discard,mid,,java,11,2,1.0,5.0,Code,bd2246a74d5ec40634355ec33ffa80003c27d38985a90d2b28db8841567424f0,ccf1612d4f7736866c8e4eb5c70a46926dc000631c2be321435f22e3c011603a,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 68, ""original_snippet_id"": ""105""}",,,68
+rq0_0258,106,Scalabrino,"/**
+	 * Delete an object
+	 */
+	public void delete(Serializable id, Object version, Object object, SessionImplementor session)
+			throws HibernateException {
+		final int span = getTableSpan();
+		boolean isImpliedOptimisticLocking = !entityMetamodel.isVersioned() && isAllOrDirtyOptLocking();
+		Object[] loadedState = null;
+		if ( isImpliedOptimisticLocking ) {
+			// need to treat this as if it where optimistic-lock=""all"" (dirty does *not* make sense);
+			// first we need to locate the ""loaded"" state
+			//
+			// Note, it potentially could be a proxy, so doAfterTransactionCompletion the location the safe way...
+			final EntityKey key = session.generateEntityKey( id, this );
+			Object entity = session.getPersistenceContext().getEntity( key );
+			if ( entity != null ) {
+				EntityEntry entry = session.getPersistenceContext().getEntry( entity );
+				loadedState = entry.getLoadedState();
+			}
+		}
+
+		final String[] deleteStrings;
+		if ( isImpliedOptimisticLocking && loadedState != null ) {
+			// we need to utilize dynamic delete statements
+			deleteStrings = generateSQLDeletStrings( loadedState );
+		}
+		else {
+			// otherwise, utilize the static delete statements
+			deleteStrings = getSQLDeleteStrings();
+		}
+
+		for ( int j = span - 1; j >= 0; j-- ) {
+			delete( id, version, j, object, deleteStrings[j], session, loadedState );
+		}
+
+	}",3.555555555555556,-0.18736210790583105,0.5555555555555556,unreadable,discard,mid,,java,24,7,2.0,5.0,Code,7dba12d1379d45459d6ce3e0e9b91cf2fd95e8a924c9127e4fbde88f147b4b01,1fec1891b762f5356cb972918e3812ec9912870e39c2153d011ca4b20307be85,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 69, ""original_snippet_id"": ""106""}",,,69
+rq0_0259,107,Scalabrino,"private UniqueEntityLoader getAppropriateLoader(LockOptions lockOptions, SessionImplementor session) {
+		if ( queryLoader != null ) {
+			// if the user specified a custom query loader we need to that
+			// regardless of any other consideration
+			return queryLoader;
+		}
+		else if ( isAffectedByEnabledFilters( session ) ) {
+			// because filters affect the rows returned (because they add
+			// restrictions) these need to be next in precedence
+			return createEntityLoader(lockOptions, session.getLoadQueryInfluencers() );
+		}
+		else if ( session.getLoadQueryInfluencers().getInternalFetchProfile() != null && LockMode.UPGRADE.greaterThan( lockOptions.getLockMode() ) ) {
+			// Next, we consider whether an 'internal' fetch profile has been set.
+			// This indicates a special fetch profile Hibernate needs applied
+			// (for its merge loading process e.g.).
+			return ( UniqueEntityLoader ) getLoaders().get( session.getLoadQueryInfluencers().getInternalFetchProfile() );
+		}
+		else if ( isAffectedByEnabledFetchProfiles( session ) ) {
+			// If the session has associated influencers we need to adjust the
+			// SQL query used for loading based on those influencers
+			return createEntityLoader(lockOptions, session.getLoadQueryInfluencers() );
+		}
+		else if ( isAffectedByEntityGraph( session ) ) {
+			return createEntityLoader( lockOptions, session.getLoadQueryInfluencers() );
+		}
+		else if ( lockOptions.getTimeOut() != LockOptions.WAIT_FOREVER ) {
+			return createEntityLoader( lockOptions, session.getLoadQueryInfluencers() );
+		}
+		else {
+			return ( UniqueEntityLoader ) getLoaders().get( lockOptions.getLockMode() );
+		}
+	}",3.888888888888889,0.3571590181954932,0.6666666666666665,readable,discard,mid,,java,23,8,3.0,5.0,Code,f83f48e92f6091e96cd13a4484aeb9ffec3951b5bc3c288603ae1cb8a5af93c8,806796a662bf33b91b8cb0748c767bd6ab0dd21eeb4db4514fb42eea46832abe,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 70, ""original_snippet_id"": ""107""}",,,70
+rq0_0260,108,Scalabrino,"public String[] toColumns(String alias, String propertyName) throws QueryException {
+		if ( propertyName.equals(CollectionPropertyNames.COLLECTION_ELEMENTS) ) {
+			return memberPersister.getElementColumnNames(alias);
+		}
+		else if ( propertyName.equals(CollectionPropertyNames.COLLECTION_INDICES) ) {
+			if ( !memberPersister.hasIndex() ) throw new QueryException(""unindexed collection in indices()"");
+			return memberPersister.getIndexColumnNames(alias);
+		}
+		else if ( propertyName.equals(CollectionPropertyNames.COLLECTION_SIZE) ) {
+			String[] cols = memberPersister.getKeyColumnNames();
+			return new String[] { ""count("" + alias + '.' + cols[0] + ')' };
+		}
+		else if ( propertyName.equals(CollectionPropertyNames.COLLECTION_MAX_INDEX) ) {
+			if ( !memberPersister.hasIndex() ) throw new QueryException(""unindexed collection in maxIndex()"");
+			String[] cols = memberPersister.getIndexColumnNames(alias);
+			if ( cols.length!=1 ) throw new QueryException(""composite collection index in maxIndex()"");
+			return new String[] { ""max("" + cols[0] + ')' };
+		}
+		else if ( propertyName.equals(CollectionPropertyNames.COLLECTION_MIN_INDEX) ) {
+			if ( !memberPersister.hasIndex() ) throw new QueryException(""unindexed collection in minIndex()"");
+			String[] cols = memberPersister.getIndexColumnNames(alias);
+			if ( cols.length!=1 ) throw new QueryException(""composite collection index in minIndex()"");
+			return new String[] { ""min("" + cols[0] + ')' };
+		}
+		else if ( propertyName.equals(CollectionPropertyNames.COLLECTION_MAX_ELEMENT) ) {
+			String[] cols = memberPersister.getElementColumnNames(alias);
+			if ( cols.length!=1 ) throw new QueryException(""composite collection element in maxElement()"");
+			return new String[] { ""max("" + cols[0] + ')' };
+		}
+		else if ( propertyName.equals(CollectionPropertyNames.COLLECTION_MIN_ELEMENT) ) {
+			String[] cols = memberPersister.getElementColumnNames(alias);
+			if ( cols.length!=1 ) throw new QueryException(""composite collection element in minElement()"");
+			return new String[] { ""min("" + cols[0] + ')' };
+		}
+		else {
+			//return memberPersister.toColumns(alias, propertyName);
+			throw new QueryException(""illegal syntax near collection: "" + propertyName);
+		}
+	}",3.333333333333333,-0.5503761919733818,0.48148148148148134,unreadable,unreadable,low,,java,38,15,2.0,5.0,Code,3bd361e3edea7246581b3dc79e8f99ce551e473d513054fa4571091ba3969ec5,7b66a55198badda66e2908c784045426ec5dfa2592a1f14822b9971b74728b1d,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 71, ""original_snippet_id"": ""108""}",,,71
+rq0_0261,109,Scalabrino,"private void bindIndex(final Mappings mappings) {
+		if ( !indexColumn.isImplicit() ) {
+			PropertyHolder valueHolder = PropertyHolderBuilder.buildPropertyHolder(
+					this.collection,
+					StringHelper.qualify( this.collection.getRole(), ""key"" ),
+					null,
+					null, propertyHolder, mappings
+			);
+			List list = (List) this.collection;
+			if ( !list.isOneToMany() ) indexColumn.forceNotNull();
+			indexColumn.setPropertyHolder( valueHolder );
+			SimpleValueBinder value = new SimpleValueBinder();
+			value.setColumns( new Ejb3Column[] { indexColumn } );
+			value.setExplicitType( ""integer"" );
+			value.setMappings( mappings );
+			SimpleValue indexValue = value.make();
+			indexColumn.linkWithValue( indexValue );
+			list.setIndex( indexValue );
+			list.setBaseIndex( indexColumn.getBase() );
+			if ( list.isOneToMany() && !list.getKey().isNullable() && !list.isInverse() ) {
+				String entityName = ( (OneToMany) list.getElement() ).getReferencedEntityName();
+				PersistentClass referenced = mappings.getClass( entityName );
+				IndexBackref ib = new IndexBackref();
+				ib.setName( '_' + propertyName + ""IndexBackref"" );
+				ib.setUpdateable( false );
+				ib.setSelectable( false );
+				ib.setCollectionRole( list.getRole() );
+				ib.setEntityName( list.getOwner().getEntityName() );
+				ib.setValue( list.getIndex() );
+				referenced.addProperty( ib );
+			}
+		}
+		else {
+			Collection coll = this.collection;
+			throw new AnnotationException(
+					""List/array has to be annotated with an @OrderColumn (or @IndexColumn): ""
+							+ coll.getRole()
+			);
+		}
+	}",3.0,-1.0948973180747061,0.37037037037037035,unreadable,unreadable,low,,java,40,6,1.0,5.0,Code,afc9db8eb3d4e46837b909c26cab949990afc547d2a78572fcf81fe551951e5a,7e4f1f3a0ef8a3ca483fbb454e63c323f43b60a6a2ca9df433d06ed15cb0bf3e,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 72, ""original_snippet_id"": ""109""}",,,72
+rq0_0262,110,Scalabrino,"/**
+	 * Perform {@link org.hibernate.action.spi.Executable#execute()} on each element of the list
+	 * 
+	 * @param list The list of Executable elements to be performed
+	 *
+	 * @throws HibernateException
+	 */
+	private <E extends Executable & Comparable<?> & Serializable> void executeActions(ExecutableList<E> list) throws HibernateException {
+		// todo : consider ways to improve the double iteration of Executables here:
+		//		1) we explicitly iterate list here to perform Executable#execute()
+		//		2) ExecutableList#getQuerySpaces also iterates the Executables to collect query spaces.
+		try {
+			for ( E e : list ) {
+				try {
+					e.execute();
+				}
+				finally {
+					beforeTransactionProcesses.register( e.getBeforeTransactionCompletionProcess() );
+					afterTransactionProcesses.register( e.getAfterTransactionCompletionProcess() );
+				}
+			}
+		}
+		finally {
+			if ( session.getFactory().getSettings().isQueryCacheEnabled() ) {
+				// Strictly speaking, only a subset of the list may have been processed if a RuntimeException occurs.
+				// We still invalidate all spaces. I don't see this as a big deal - after all, RuntimeExceptions are
+				// unexpected.
+				Set<Serializable> propertySpaces = list.getQuerySpaces();
+				invalidateSpaces( propertySpaces.toArray( new Serializable[propertySpaces.size()] ) );
+			}
+		}
+
+		list.clear();
+		session.getTransactionCoordinator().getJdbcCoordinator().executeBatch();
+	}",3.555555555555556,-0.18736210790583105,0.5555555555555556,unreadable,discard,mid,,java,21,3,2.0,5.0,Code,12c6eadd81c4d5d9cb4db7004bfcb66469464e620e8bdbeea5d21ba10c044b70,266dd4e19164a1f56c6c0a27dda8dbb666fd0cf3aa7b847d7d10e9f18c681d25,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 73, ""original_snippet_id"": ""110""}",,,73
+rq0_0263,111,Scalabrino,"@SuppressWarnings( {""SimplifiableIfStatement""})
+	private boolean isUnequivocallyNonDirty(Object entity) {
+
+		if(entity instanceof SelfDirtinessTracker)
+			return ((SelfDirtinessTracker) entity).$$_hibernate_hasDirtyAttributes();
+
+		final CustomEntityDirtinessStrategy customEntityDirtinessStrategy =
+				persistenceContext.getSession().getFactory().getCustomEntityDirtinessStrategy();
+		if ( customEntityDirtinessStrategy.canDirtyCheck( entity, getPersister(), (Session) persistenceContext.getSession() ) ) {
+			return ! customEntityDirtinessStrategy.isDirty( entity, getPersister(), (Session) persistenceContext.getSession() );
+		}
+
+		if ( getPersister().hasMutableProperties() ) {
+			return false;
+		}
+
+		if ( getPersister().getInstrumentationMetadata().isInstrumented() ) {
+			// the entity must be instrumented (otherwise we cant check dirty flag) and the dirty flag is false
+			return ! getPersister().getInstrumentationMetadata().extractInterceptor( entity ).isDirty();
+		}
+
+		return false;
+	}",3.0,-1.0948973180747061,0.37037037037037035,unreadable,unreadable,low,,java,17,5,1.0,4.0,Code,aa672a9318f0441f06b9fe912e5deae9e61f96b575aaeb097237594a454723f9,7a624cfe2f8f5c8e27615755a44bd9290a8a61b64766d8e4a24473c0bee506fa,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 74, ""original_snippet_id"": ""111""}",,,74
+rq0_0264,112,Scalabrino,"public static String expandBatchIdPlaceholder(
+			String sql,
+			Serializable[] ids,
+			String alias,
+			String[] keyColumnNames,
+			Dialect dialect) {
+		if ( keyColumnNames.length == 1 ) {
+			// non-composite
+			return StringHelper.replace( sql, BATCH_ID_PLACEHOLDER, repeat( ""?"", ids.length, "","" ) );
+		}
+		else {
+			// composite
+			if ( dialect.supportsRowValueConstructorSyntaxInInList() ) {
+				final String tuple = ""("" + StringHelper.repeat( ""?"", keyColumnNames.length, "","" );
+				return StringHelper.replace( sql, BATCH_ID_PLACEHOLDER, repeat( tuple, ids.length, "","" ) );
+			}
+			else {
+				final String keyCheck = joinWithQualifier( keyColumnNames, alias, "" and "" );
+				return replace( sql, BATCH_ID_PLACEHOLDER, repeat( keyCheck, ids.length, "" or "" ) );
+			}
+		}
+	}",3.888888888888889,0.3571590181954932,0.6666666666666665,readable,discard,mid,,java,20,3,3.0,5.0,Code,b3dc46ab4249c10a86de5a6b5be395cdc43dfa7542cad11b9612e9171c947863,9397b62a88125a7e06caaf66db26620cd97426cb7b7080b6155e664cc720baf9,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 75, ""original_snippet_id"": ""112""}",,,75
+rq0_0265,113,Scalabrino,"/**
+	 * Interpret a long as its binary form
+	 *
+	 * @param longValue The long to interpret to binary
+	 *
+	 * @return The binary
+	 */
+	public static byte[] fromLong(long longValue) {
+		byte[] bytes = new byte[8];
+		bytes[0] = (byte) ( longValue >> 56 );
+		bytes[1] = (byte) ( ( longValue << 8 ) >> 56 );
+		bytes[2] = (byte) ( ( longValue << 16 ) >> 56 );
+		bytes[3] = (byte) ( ( longValue << 24 ) >> 56 );
+		bytes[4] = (byte) ( ( longValue << 32 ) >> 56 );
+		bytes[5] = (byte) ( ( longValue << 40 ) >> 56 );
+		bytes[6] = (byte) ( ( longValue << 48 ) >> 56 );
+		bytes[7] = (byte) ( ( longValue << 56 ) >> 56 );
+		return bytes;
+	}",4.111111111111111,0.7201731022630425,0.7407407407407405,readable,readable,high,,java,12,1,2.0,5.0,Code,4e410a5b4cffc04e809736e6446aa6dd4dcac25a350aa15c68dc30b9aaba7f2e,e70a8e2802d54e37f95893d32607503d3d7fcde9069ed68fd41af4cb349b6598,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 76, ""original_snippet_id"": ""113""}",,,76
+rq0_0266,114,Scalabrino,"/**
+     * Tests this instance for equality with an arbitrary object.
+     *
+     * @param obj  the object (<code>null</code> permitted).
+     *
+     * @return A boolean.
+     */
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == this) {
+            return true;
+        }
+        if (!(obj instanceof OHLC)) {
+            return false;
+        }
+        OHLC that = (OHLC) obj;
+        if (this.open != that.open) {
+            return false;
+        }
+        if (this.close != that.close) {
+            return false;
+        }
+        if (this.high != that.high) {
+            return false;
+        }
+        if (this.low != that.low) {
+            return false;
+        }
+        return true;
+    }",4.666666666666667,1.6277083124319183,0.9259259259259259,readable,readable,high,,java,23,7,4.0,5.0,Code,3ab0cefa7a0ded740b9fae78986fa4cabede4df060f42262d9c727ae2b6e3516,89a20f96bf03bf0d578b43f983835b7894da9baf2ad7e6d7a8f13e14053af440,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 77, ""original_snippet_id"": ""114""}",,,77
+rq0_0267,115,Scalabrino,"public final void caseSList() throws RecognitionException, TokenStreamException {
+		
+		
+		{
+		_loop119:
+		do {
+			if ((_tokenSet_6.member(LA(1)))) {
+				statement();
+			}
+			else {
+				break _loop119;
+			}
+			
+		} while (true);
+		}
+	}",3.333333333333333,-0.5503761919733818,0.48148148148148134,unreadable,unreadable,low,,java,13,3,1.0,5.0,Code,4d7df3251db7bd9d56535cfd4bd3973bf0f0d49accd07bad436d31a7954098f0,75d8d3e32dcc09421d7eeba58056dfc1584576b91586c6d7cb1ddfab59e00e9b,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 78, ""original_snippet_id"": ""115""}",,,78
+rq0_0268,116,Scalabrino,"public void write(BufferedReader reader,
+                      BufferedWriter writer,
+                      Stack parseStateStack) throws IOException {
+        ParseState parseState = (ParseState) parseStateStack.peek();
+        Object mInterface = /*(MInterface)*/ parseState.newClassifier(name);
+
+	if (mInterface != null) {
+	    parseStateStack.push(new ParseState(mInterface));
+	    StringBuffer sbText =
+		GeneratorJava.getInstance().generateClassifierStart(mInterface);
+	    if (sbText != null) {
+		writer.write (sbText.toString());
+	    }
+            // dispose code piece in reader
+            ffCodePiece(reader, null);
+        } else {
+            // not in model, so write the original code
+            ffCodePiece(reader, writer);
+        }
+    }",3.555555555555556,-0.18736210790583105,0.5555555555555556,unreadable,discard,mid,,java,17,3,2.0,5.0,Code,f09f47fe28a0ff47d8101f32713d39a007b07918d3d2fd275ac7577e500f626e,fa1d1468ff08471f88eb7c35102e512cc7c2805d1c737f2a1426dcab62182cf8,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 79, ""original_snippet_id"": ""116""}",,,79
+rq0_0269,117,Scalabrino,"protected final void mHEX_DIGIT(boolean _createToken) throws RecognitionException, CharStreamException, TokenStreamException {
+		int _ttype; Token _token=null; int _begin=text.length();
+		_ttype = HEX_DIGIT;
+		int _saveIndex;
+		
+		{
+		switch ( LA(1)) {
+		case '0':  case '1':  case '2':  case '3':
+		case '4':  case '5':  case '6':  case '7':
+		case '8':  case '9':
+		{
+			matchRange('0','9');
+			break;
+		}
+		case 'A':  case 'B':  case 'C':  case 'D':
+		case 'E':  case 'F':
+		{
+			matchRange('A','F');
+			break;
+		}
+		case 'a':  case 'b':  case 'c':  case 'd':
+		case 'e':  case 'f':
+		{
+			matchRange('a','f');
+			break;
+		}
+		default:
+		{
+			throw new NoViableAltForCharException((char)LA(1), getFilename(), getLine(), getColumn());
+		}
+		}
+		}
+		if ( _createToken && _token==null && _ttype!=Token.SKIP ) {
+			_token = makeToken(_ttype);
+			_token.setText(new String(text.getBuffer(), _begin, text.length()-_begin));
+		}
+		_returnToken = _token;
+	}",3.555555555555556,-0.18736210790583105,0.5555555555555556,unreadable,discard,mid,,java,37,26,1.0,5.0,Code,15405bfd298b92fa04907b830b623ae6149d11abc7bba085139f240e9c18cfb5,b266358e05f220b581a22ff8a51abd5f46c4ad5218e207a020fe26d5ccfa90d5,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 80, ""original_snippet_id"": ""117""}",,,80
+rq0_0270,118,Scalabrino,"/**
+     * The constructor.
+     */
+    public TabChecklist() {
+	super(""tab.checklist"");
+
+	tableModel = new TableModelChecklist(this);
+	table.setModel(tableModel);
+
+	Font labelFont = LookAndFeelMgr.getInstance().getStandardFont();
+	table.setFont(labelFont);
+
+	table.setIntercellSpacing(new Dimension(0, 1));
+	table.setShowVerticalLines(false);
+	table.getSelectionModel().addListSelectionListener(this);
+	table.setAutoResizeMode(JTable.AUTO_RESIZE_LAST_COLUMN);
+
+	TableColumn checkCol = table.getColumnModel().getColumn(0);
+	TableColumn descCol = table.getColumnModel().getColumn(1);
+	checkCol.setMinWidth(20);
+	checkCol.setMaxWidth(30);
+	checkCol.setWidth(30);
+	descCol.setPreferredWidth(900);
+	table.setAutoResizeMode(JTable.AUTO_RESIZE_LAST_COLUMN);
+	table.sizeColumnsToFit(-1);
+
+	JScrollPane sp = new JScrollPane(table);
+
+	setLayout(new BorderLayout());
+	add(new JLabel(Translator.localize(""tab.checklist.warning"")),
+	    BorderLayout.NORTH);
+	add(sp, BorderLayout.CENTER);
+	
+	addComponentListener(this);
+    }",3.888888888888889,0.3571590181954932,0.6666666666666665,readable,discard,mid,,java,25,1,2.0,5.0,Code,ca3e1df73cfd96155b392f1bcb5ad4723e7974033d9839f5dbf97c8eb3fd9ebd,614cd93b57dfb87fce16b07160cebfc33991afc1fc9ab0a0f75211084606c0ea,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 81, ""original_snippet_id"": ""118""}",,,81
+rq0_0271,119,Scalabrino,"public void vetoableChange(PropertyChangeEvent pce) {
+        if (""ownedElement"".equals(pce.getPropertyName())) {
+            Vector oldOwned = (Vector) pce.getOldValue();
+            Object eo = pce.getNewValue();
+            Object me = Model.getFacade().getModelElement(eo);
+            if (oldOwned.contains(eo)) {
+                LOG.debug(""model removed "" + me);
+                if (Model.getFacade().isANode(me)) {
+                    removeNode(me);
+                }
+                if (Model.getFacade().isANodeInstance(me)) {
+                    removeNode(me);
+                }
+                if (Model.getFacade().isAComponent(me)) {
+                    removeNode(me);
+                }
+                if (Model.getFacade().isAComponentInstance(me)) {
+                    removeNode(me);
+                }
+                if (Model.getFacade().isAClass(me)) {
+                    removeNode(me);
+                }
+                if (Model.getFacade().isAInterface(me)) {
+                    removeNode(me);
+                }
+                if (Model.getFacade().isAObject(me)) {
+                    removeNode(me);
+                }
+                if (Model.getFacade().isAAssociation(me)) {
+                    removeEdge(me);
+                }
+                if (Model.getFacade().isADependency(me)) {
+                    removeEdge(me);
+                }
+                if (Model.getFacade().isALink(me)) {
+                    removeEdge(me);
+                }
+            } else {
+                LOG.debug(""model added "" + me);
+            }
+        }
+    }",4.111111111111111,0.7201731022630425,0.7407407407407405,readable,readable,high,,java,42,13,2.0,5.0,Code,570461c9a91f349b04b2a7e5073bb7104ccfea6b686e3f4d1115da2242e49723,6088095f10cd04f482e6eec9a85c8e3bcc2b40d8bce7664baf45d206d887bf22,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 82, ""original_snippet_id"": ""119""}",,,82
+rq0_0272,120,Scalabrino,"public List getInEdges(Object port) {
+	Vector res = new Vector(); //wasteful!
+	if (Model.getFacade().isAClassifierRole(port)) {
+	    Object cr = port;
+	    Collection ends = Model.getFacade().getAssociationEnds(cr);
+	    if (ends == null) {
+                return res; // empty Vector
+            }
+	    Iterator iter = ends.iterator();
+	    while (iter.hasNext()) {
+		Object aer = iter.next();
+		res.addElement(Model.getFacade().getAssociation(aer));
+	    }
+	}
+	return res;
+    }
+",3.888888888888889,0.3571590181954932,0.6666666666666665,readable,discard,mid,,java,16,4,3.0,5.0,Code,2720cfd7cbae3a1948c37f151b1cf295084028512854b31284330251cce71653,a84863dc67e734a61b4ab713c22d6f2ba43bfda0835e090d05d3d25ffef5c20c,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 83, ""original_snippet_id"": ""120""}",,,83
+rq0_0273,121,Scalabrino,"/**
+     * Displays visual indications of pending ToDoItems.
+     * Please note that the list of advices (ToDoList) is not the same
+     * as the list of element known by the FigNode (_figs). Therefore,
+     * it is necessary to check if the graphic item exists before drawing
+     * on it. See ClAttributeCompartment for an example.
+     * @param g the graphics device
+     * @see org.argouml.uml.cognitive.critics.ClAttributeCompartment
+     */
+    public void paintClarifiers(Graphics g) {
+        int iconX = getX();
+        int iconY = getY() - 10;
+        ToDoList list = Designer.theDesigner().getToDoList();
+        Vector items = list.elementsForOffender(getOwner());
+        int size = items.size();
+        for (int i = 0; i < size; i++) {
+            ToDoItem item = (ToDoItem) items.elementAt(i);
+            Icon icon = item.getClarifier();
+            if (icon instanceof Clarifier) {
+                ((Clarifier) icon).setFig(this);
+                ((Clarifier) icon).setToDoItem(item);
+            }
+            if (icon != null) {
+                icon.paintIcon(null, g, iconX, iconY);
+                iconX += icon.getIconWidth();
+            }
+        }
+        items = list.elementsForOffender(this);
+        size = items.size();
+        for (int i = 0; i < size; i++) {
+            ToDoItem item = (ToDoItem) items.elementAt(i);
+            Icon icon = item.getClarifier();
+            if (icon instanceof Clarifier) {
+                ((Clarifier) icon).setFig(this);
+                ((Clarifier) icon).setToDoItem(item);
+            }
+            if (icon != null) {
+                icon.paintIcon(null, g, iconX, iconY);
+                iconX += icon.getIconWidth();
+            }
+        }
+    }",3.333333333333333,-0.5503761919733818,0.48148148148148134,unreadable,unreadable,low,,java,33,7,1.0,4.0,Code,884e2ddbb47428596fbf8915748d5538dec8f82a4679e003fc3705deda53efc9,ce94d7fd7708ea0ffa0d90fd5e3ca7b23277ff24bc626495e7a5313c7e0b9247,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 84, ""original_snippet_id"": ""121""}",,,84
+rq0_0274,122,Scalabrino,"public void mouseMoved(MouseEvent me) {
+	//- RedrawManager.lock();
+	translateMouseEvent(me);
+	Globals.curEditor(this);
+	setUnderMouse(me);
+        Fig currentFig = getCurrentFig();
+	if (currentFig != null && Globals.getShowFigTips()) {
+	    String tip = currentFig.getTipString(me);
+	    if (tip != null && (getJComponent() != null)) {
+	        JComponent c = getJComponent();
+	        if (c.getToolTipText() == null
+		    || !(c.getToolTipText().equals(tip))) {
+	            c.setToolTipText(tip);
+	        }
+            }
+	} else if (getJComponent() != null
+		   && getJComponent().getToolTipText() != null) {
+            getJComponent().setToolTipText(null); //was """"
+	}
+
+	_selectionManager.mouseMoved(me);
+	_modeManager.mouseMoved(me);
+	//- RedrawManager.unlock();
+	//- _redrawer.repairDamage();
+    }",3.2222222222222223,-0.731883234007156,0.4444444444444444,unreadable,unreadable,low,,java,21,9,1.0,5.0,Code,ff72f55e96cdd230d92eb9da36612af3db5364f22915f3371141c19177e86e4e,34485f08e21306dffb071f8349eaff0c4ea1be4b8c34990841ffbf53790563d2,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 85, ""original_snippet_id"": ""122""}",,,85
+rq0_0275,123,Scalabrino,"public Set getDependencies(Object parent) {
+        if (Model.getFacade().isAClass(parent)) {
+	    Set set = new HashSet();
+	    set.add(parent);
+	    set.addAll(Model.getFacade().getAttributes(parent));
+	    set.addAll(Model.getFacade().getOperations(parent));
+	    set.addAll(Model.getFacade().getAssociationEnds(parent));
+	    set.addAll(Model.getFacade().getSupplierDependencies(parent));
+	    set.addAll(Model.getFacade().getClientDependencies(parent));
+	    set.addAll(Model.getFacade().getGeneralizations(parent));
+	    set.addAll(Model.getFacade().getSpecializations(parent));
+	    return set;
+	}
+
+	return null;
+    }",4.666666666666667,1.6277083124319183,0.9259259259259259,readable,readable,high,,java,15,2,4.0,5.0,Code,a115b04c96a03c5c07eaded36ac72568da37d32fc8713026010bbee8ca2aae2e,2230de70d4760594dfb118d93e4060260ad88d480bea7f630d7faeed3831e353,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 86, ""original_snippet_id"": ""123""}",,,86
+rq0_0276,125,Scalabrino,"private Exception createTimeoutException(Thread thread) {
+        StackTraceElement[] stackTrace = thread.getStackTrace();
+        final Thread stuckThread = fLookForStuckThread ? getStuckThread(thread) : null;
+        Exception currThreadException = new Exception(String.format(
+                ""test timed out after %d %s"", fTimeout, fTimeUnit.name().toLowerCase()));
+        if (stackTrace != null) {
+            currThreadException.setStackTrace(stackTrace);
+            thread.interrupt();
+        }
+        if (stuckThread != null) {
+            Exception stuckThreadException = 
+                new Exception (""Appears to be stuck in thread "" +
+                               stuckThread.getName());
+            stuckThreadException.setStackTrace(getStackTrace(stuckThread));
+            return new MultipleFailureException    
+                (Arrays.<Throwable>asList(currThreadException, stuckThreadException));
+        } else {
+            return currThreadException;
+        }
+    }",2.888888888888889,-1.2764043601084811,0.33333333333333326,unreadable,unreadable,low,,java,20,4,2.0,4.0,Code,0353b6f365d4ab8e59cf44720ac0e37c53a1d10178da51c4b1739cfda878d2a5,1499b99a7d810adae5c9edee0a937e0c836e0398f05a3cbf2e284c81b176be30,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 87, ""original_snippet_id"": ""125""}",,,87
+rq0_0277,126,Scalabrino,"/**
+	 * Build the metamodel using the information from the collection of Hibernate
+	 * {@link PersistentClass} models as well as the Hibernate {@link org.hibernate.SessionFactory}.
+	 *
+	 * @param persistentClasses Iterator over the Hibernate (config-time) metamodel
+	 * @param mappedSuperclasses All known MappedSuperclasses
+	 * @param sessionFactory The Hibernate session factory.
+     * @param ignoreUnsupported ignore unsupported/unknown annotations (like @Any)
+	 *
+	 * @return The built metamodel
+	 */
+	public static MetamodelImpl buildMetamodel(
+			Iterator<PersistentClass> persistentClasses,
+			Set<MappedSuperclass> mappedSuperclasses,
+			SessionFactoryImplementor sessionFactory,
+            boolean ignoreUnsupported) {
+		MetadataContext context = new MetadataContext( sessionFactory, mappedSuperclasses, ignoreUnsupported );
+		while ( persistentClasses.hasNext() ) {
+			PersistentClass pc = persistentClasses.next();
+			locateOrBuildEntityType( pc, context );
+		}
+		handleUnusedMappedSuperclasses( context );
+		context.wrapUp();
+		return new MetamodelImpl( context.getEntityTypeMap(), context.getEmbeddableTypeMap(), context.getMappedSuperclassTypeMap(), context.getEntityTypesByEntityName() );
+	}",3.111111111111111,-0.9133902760409311,0.4074074074074074,unreadable,unreadable,low,,java,14,2,2.0,5.0,Code,264e9cd753a56ecf13f96b06f7de9c0089e485e105224c49f1cc7af4de803406,9f435baa6d03ae1eecfc7d7aaa3f3d823f61f8ba41ec0d8521738c7637e0d88a,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 88, ""original_snippet_id"": ""126""}",,,88
+rq0_0278,132,Scalabrino,"private InfinispanRegionFactory createRegionFactory(final EmbeddedCacheManager manager, Properties p) {
+      final InfinispanRegionFactory factory = new SingleNodeTestCase.TestInfinispanRegionFactory() {
+
+         @Override
+         protected org.infinispan.transaction.lookup.TransactionManagerLookup createTransactionManagerLookup(Settings settings, Properties properties) {
+            return new HibernateTransactionManagerLookup(null, null) {
+               @Override
+               public TransactionManager getTransactionManager() throws Exception {
+                  AbstractJtaPlatform jta = new JBossStandAloneJtaPlatform();
+                  jta.injectServices(ServiceRegistryBuilder.buildServiceRegistry());
+                  return jta.getTransactionManager();
+               }
+            };
+         }
+
+         @Override
+         protected EmbeddedCacheManager createCacheManager(Properties properties) throws CacheException {
+            if (manager != null)
+               return manager;
+            else
+               return super.createCacheManager(properties);
+         }
+
+      };
+
+      factory.start(null, p);
+      return factory;
+   }",2.888888888888889,-1.2764043601084811,0.33333333333333326,unreadable,unreadable,low,,java,24,3,1.0,4.0,Code,363dd8789f0ecd6240656ed40466b9c3dd8ca71d4f46b9c89d976b0ecf60366a,5647ccc4cb945e44a897c4f709a97a99e783be0766f05c1c5ed7c8b0ee77ccc0,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 89, ""original_snippet_id"": ""132""}",,,89
+rq0_0279,139,Scalabrino,"public CollectionListeners( SessionFactory sf) {
+		preCollectionRecreateListener = new PreCollectionRecreateListener( this );
+		initializeCollectionListener = new InitializeCollectionListener( this );
+		preCollectionRemoveListener = new PreCollectionRemoveListener( this );
+		preCollectionUpdateListener = new PreCollectionUpdateListener( this );
+		postCollectionRecreateListener = new PostCollectionRecreateListener( this );
+		postCollectionRemoveListener = new PostCollectionRemoveListener( this );
+		postCollectionUpdateListener = new PostCollectionUpdateListener( this );
+
+		EventListenerRegistry registry = ( (SessionFactoryImplementor) sf ).getServiceRegistry().getService( EventListenerRegistry.class );
+		registry.setListeners( EventType.INIT_COLLECTION, initializeCollectionListener );
+
+		registry.setListeners( EventType.PRE_COLLECTION_RECREATE, preCollectionRecreateListener );
+		registry.setListeners( EventType.POST_COLLECTION_RECREATE, postCollectionRecreateListener );
+
+		registry.setListeners( EventType.PRE_COLLECTION_REMOVE, preCollectionRemoveListener );
+		registry.setListeners( EventType.POST_COLLECTION_REMOVE, postCollectionRemoveListener );
+
+		registry.setListeners( EventType.PRE_COLLECTION_UPDATE, preCollectionUpdateListener );
+		registry.setListeners( EventType.POST_COLLECTION_UPDATE, postCollectionUpdateListener );
+	}",4.111111111111111,0.7201731022630425,0.7407407407407405,readable,readable,high,,java,17,1,3.0,5.0,Code,53321d33f175c944136f5e876ea4c0289b63963787716a1ad285cf719f581d49,6024682a04dd01b715466767115a30bd51af742d9857599a4c189b68eb40162f,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 90, ""original_snippet_id"": ""139""}",,,90
+rq0_0280,141,Scalabrino,"public int hashCode() {
+        final int PRIME = 31;
+        int result = 1;
+        if ( name != null ) {
+            result += name.hashCode();
+        }
+        result *= PRIME;
+        if ( num != null ) {
+            result += num.hashCode();
+        }
+        return result;
+    }",4.333333333333333,1.0831871863305926,0.8148148148148147,readable,readable,high,,java,12,3,3.0,5.0,Code,c70d73e926e3b6acc1b19ce5afb894b145f91c19dcbea2d2d588202c016d23de,8ab32eb553a5163e24491b2c95929820de457406c070ec6835b1ebfd562315e5,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 91, ""original_snippet_id"": ""141""}",,,91
+rq0_0281,143,Scalabrino,"public LoadPlan buildLoadPlan(
+			SessionFactoryImplementor sf,
+			OuterJoinLoadable persister,
+			LoadQueryInfluencers influencers,
+			LockMode lockMode) {
+		FetchStyleLoadPlanBuildingAssociationVisitationStrategy strategy = new FetchStyleLoadPlanBuildingAssociationVisitationStrategy(
+				sf,
+				influencers,
+				lockMode
+				);
+		return MetamodelDrivenLoadPlanBuilder.buildRootEntityLoadPlan( strategy, persister );
+	}",3.333333333333333,-0.5503761919733818,0.48148148148148134,unreadable,unreadable,low,,java,12,1,1.0,4.0,Code,287ff7b585d8120555ff1349083b0776cb1ac87e447a661e1421d4f93e5c82ca,c4e8f9478bdd932da2b259b2cb2030422c1c5ef9ba9be9cb91729c3be92b22b0,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 92, ""original_snippet_id"": ""143""}",,,92
+rq0_0282,144,Scalabrino,"private void compare(JoinWalker walker, LoadQueryDetails details) {
+		System.out.println( ""------ SQL -----------------------------------------------------------------"" );
+		System.out.println( ""WALKER    : "" + walker.getSQLString() );
+		System.out.println( ""LOAD-PLAN : "" + details.getSqlStatement() );
+		System.out.println( ""----------------------------------------------------------------------------"" );
+		System.out.println( );
+		System.out.println( ""------ SUFFIXES ------------------------------------------------------------"" );
+		System.out.println( ""WALKER    : "" + StringHelper.join( "", "",  walker.getSuffixes() ) + "" : ""
+									+ StringHelper.join( "", "", walker.getCollectionSuffixes() ) );
+		System.out.println( ""----------------------------------------------------------------------------"" );
+		System.out.println( );
+	}",4.888888888888889,1.9907223964994682,1.0,readable,readable,high,,java,12,1,4.0,5.0,Code,2d72afdd0b9892cb41aca63d117123cd54039b8a7c56903d0e954145c143ad9b,8da26cc815d7f5351f46973b1228879c94314e093a57d3cba7ee1b82f58d5444,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 93, ""original_snippet_id"": ""144""}",,,93
+rq0_0283,146,Scalabrino,"private void doBasicPluralAttributeBinding(PluralAttributeSource source, AbstractPluralAttributeBinding binding) {
+		binding.setFetchTiming( source.getFetchTiming() );
+		binding.setFetchStyle( source.getFetchStyle() );
+		binding.setCascadeStyles( source.getCascadeStyles() );
+
+		binding.setCaching( source.getCaching() );
+
+		binding.getHibernateTypeDescriptor().setJavaTypeName(
+				source.getPluralAttributeNature().reportedJavaType().getName()
+		);
+		binding.getHibernateTypeDescriptor().setExplicitTypeName( source.getTypeInformation().getName() );
+		binding.getHibernateTypeDescriptor().getTypeParameters().putAll( source.getTypeInformation().getParameters() );
+
+		if ( StringHelper.isNotEmpty( source.getCustomPersisterClassName() ) ) {
+			binding.setCollectionPersisterClass(
+					currentBindingContext.<CollectionPersister>locateClassByName( source.getCustomPersisterClassName() )
+			);
+		}
+
+		if ( source.getCustomPersisterClassName() != null ) {
+			binding.setCollectionPersisterClass(
+					metadata.<CollectionPersister>locateClassByName( source.getCustomPersisterClassName() )
+			);
+		}
+
+		binding.setCustomLoaderName( source.getCustomLoaderName() );
+		binding.setCustomSqlInsert( source.getCustomSqlInsert() );
+		binding.setCustomSqlUpdate( source.getCustomSqlUpdate() );
+		binding.setCustomSqlDelete( source.getCustomSqlDelete() );
+		binding.setCustomSqlDeleteAll( source.getCustomSqlDeleteAll() );
+
+		binding.setMetaAttributeContext(
+				buildMetaAttributeContext(
+						source.metaAttributes(),
+						binding.getContainer().getMetaAttributeContext()
+				)
+		);
+
+		doBasicAttributeBinding( source, binding );
+	}",2.7777777777777777,-1.4579114021422561,0.2962962962962962,unreadable,unreadable,low,,java,33,3,2.0,4.0,Code,31ebce2aed9ecd23361a6413be7a4915f69674f3bee41c9253a7bb77a6f39b9d,a9743ba7716c7fa19d83f9a3be33ecd8bdbded4f1e2b056ad248e933f72cd839,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 94, ""original_snippet_id"": ""146""}",,,94
+rq0_0284,147,Scalabrino,"private void pushHibernateTypeInformationDownIfNeeded(
+			HibernateTypeDescriptor hibernateTypeDescriptor,
+			Value value,
+			Type resolvedHibernateType) {
+		if ( resolvedHibernateType == null ) {
+			return;
+		}
+		if ( hibernateTypeDescriptor.getResolvedTypeMapping() == null ) {
+			hibernateTypeDescriptor.setResolvedTypeMapping( resolvedHibernateType );
+		}
+
+		// java type information ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+		if ( hibernateTypeDescriptor.getJavaTypeName() == null ) {
+			hibernateTypeDescriptor.setJavaTypeName( resolvedHibernateType.getReturnedClass().getName() );
+		}
+
+	   // todo : this can be made a lot smarter, but for now this will suffice.  currently we only handle single value bindings
+
+	   if ( SimpleValue.class.isInstance( value ) ) {
+		   SimpleValue simpleValue = ( SimpleValue ) value;
+		   if ( simpleValue.getDatatype() == null ) {
+			   simpleValue.setDatatype(
+					   new Datatype(
+							   resolvedHibernateType.sqlTypes( metadata )[0],
+							   resolvedHibernateType.getName(),
+							   resolvedHibernateType.getReturnedClass()
+					   )
+			   );
+		   }
+	   }
+	}",3.4444444444444446,-0.36886914993960607,0.5185185185185185,unreadable,discard,mid,,java,26,6,2.0,5.0,Code,ac7d0ed3476a28a5e88480e1595cb8d9f13eb51be0d872cada1f2c634b73e84c,04e47cb3a2163d8767bd81e640fab6ca9a6b3d9c97b9603f404c94d28fb43e72,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 95, ""original_snippet_id"": ""147""}",,,95
+rq0_0285,148,Scalabrino,"public static Iterable<AttributeDefinition> getCompositeCollectionIndexSubAttributes(CompositeCollectionElementDefinition compositionElementDefinition){
+		final QueryableCollection collectionPersister =
+				(QueryableCollection) compositionElementDefinition.getCollectionDefinition().getCollectionPersister();
+		return getSingularSubAttributes(
+				compositionElementDefinition.getSource(),
+				(OuterJoinLoadable) collectionPersister.getOwnerEntityPersister(),
+				(CompositeType) collectionPersister.getIndexType(),
+				collectionPersister.getTableName(),
+				collectionPersister.getIndexColumnNames()
+		);
+	}",3.0,-1.0948973180747061,0.37037037037037035,unreadable,unreadable,low,,java,11,1,1.0,4.0,Code,f59404720bdd84845815a1434013dfe4a0b96ab3f476491831a05f1f4d035116,40d7a3c320efda03a6581e2e8ef91be4879e57d7f6ab797d0c500f582852c8ac,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 96, ""original_snippet_id"": ""148""}",,,96
+rq0_0286,149,Scalabrino,"/**
+	 * As per sections 12.2.3.23.9, 12.2.4.8.9 and 12.2.5.3.6 of the JPA 2.0
+	 * specification, the element-collection subelement completely overrides the
+	 * mapping for the specified field or property.  Thus, any methods which
+	 * might in some contexts merge with annotations must not do so in this
+	 * context.
+	 */
+	private void getElementCollection(List<Annotation> annotationList, XMLContext.Default defaults) {
+		for ( Element element : elementsForProperty ) {
+			if ( ""element-collection"".equals( element.getName() ) ) {
+				AnnotationDescriptor ad = new AnnotationDescriptor( ElementCollection.class );
+				addTargetClass( element, ad, ""target-class"", defaults );
+				getFetchType( ad, element );
+				getOrderBy( annotationList, element );
+				getOrderColumn( annotationList, element );
+				getMapKey( annotationList, element );
+				getMapKeyClass( annotationList, element, defaults );
+				getMapKeyTemporal( annotationList, element );
+				getMapKeyEnumerated( annotationList, element );
+				getMapKeyColumn( annotationList, element );
+				buildMapKeyJoinColumns( annotationList, element );
+				Annotation annotation = getColumn( element.element( ""column"" ), false, element );
+				addIfNotNull( annotationList, annotation );
+				getTemporal( annotationList, element );
+				getEnumerated( annotationList, element );
+				getLob( annotationList, element );
+				//Both map-key-attribute-overrides and attribute-overrides
+				//translate into AttributeOverride annotations, which need
+				//need to be wrapped in the same AttributeOverrides annotation.
+				List<AttributeOverride> attributes = new ArrayList<AttributeOverride>();
+				attributes.addAll( buildAttributeOverrides( element, ""map-key-attribute-override"" ) );
+				attributes.addAll( buildAttributeOverrides( element, ""attribute-override"" ) );
+				annotation = mergeAttributeOverrides( defaults, attributes, false );
+				addIfNotNull( annotationList, annotation );
+				annotation = getAssociationOverrides( element, defaults, false );
+				addIfNotNull( annotationList, annotation );
+				getCollectionTable( annotationList, element, defaults );
+				annotationList.add( AnnotationFactory.create( ad ) );
+				getAccessType( annotationList, element );
+			}
+		}
+	}",2.888888888888889,-1.2764043601084811,0.33333333333333326,unreadable,unreadable,low,,java,32,3,1.0,4.0,Code,fbb6de670d2848ead89674d4afa1b23d2e409ed4ea6152c9903753ee3c0b6788,d37f7b6d2a6c9cf34706ccf98b96ceeb06fefd277d9b8da74cf147c6f8b3ffec,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 97, ""original_snippet_id"": ""149""}",,,97
+rq0_0287,150,Scalabrino,"@Override
+	public void release() {
+		if ( reader == null ) {
+			return;
+		}
+		try {
+			reader.close();
+		}
+		catch (IOException ignore) {
+		}
+	}",4.777777777777778,1.8092153544656926,0.9629629629629628,readable,readable,high,,java,11,3,3.0,5.0,Code,14509ab1e17c4f971d3cfab1079bad1387da84cee4c790efc8fd47d9859d3d5b,3f07a9ea11d6af535740b9490a55c6ed7e3d2bf2c3ec653bd1a4e7ab7ee87bb1,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 98, ""original_snippet_id"": ""150""}",,,98
+rq0_0288,151,Scalabrino,"@Override
+	protected XMLEvent internalNextEvent() throws XMLStreamException {
+		//If there is an iterator to read from reset was called, use the iterator
+		//until it runs out of events.
+		if (this.bufferReader != null) {
+			final XMLEvent event = this.bufferReader.next();
+
+			//If nothing left in the iterator, remove the reference and fall through to direct reading
+			if (!this.bufferReader.hasNext()) {
+				this.bufferReader = null;
+			}
+
+			return event;
+		}
+
+		//Get the next event from the underlying reader
+		final XMLEvent event = this.getParent().nextEvent();
+
+		//if buffering add the event
+		if (this.eventLimit != 0) {
+			this.eventBuffer.offer(event);
+
+			//If limited buffer size and buffer is too big trim the buffer.
+			if (this.eventLimit > 0 && this.eventBuffer.size() > this.eventLimit) {
+				this.eventBuffer.poll();
+			}
+		}
+
+		return event;
+	}",4.555555555555555,1.4462012703981426,0.8888888888888887,readable,readable,high,,java,18,6,3.0,5.0,Code,a003f1870a96cb5d13c5253f9e5a1ed16e821eecc7e2130e0261229f4c420e91,d060b8f744cb5d681cb020047b064eefc52af9c37eac15a8d0fea1d4bb752e92,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 99, ""original_snippet_id"": ""151""}",,,99
+rq0_0289,152,Scalabrino,"@Override
+	public final String getElementText() throws XMLStreamException {
+		XMLEvent event = this.previousEvent;
+		if (event == null) {
+			throw new XMLStreamException(""Must be on START_ELEMENT to read next text, element was null"");
+		}
+		if (!event.isStartElement()) {
+			throw new XMLStreamException(""Must be on START_ELEMENT to read next text"", event.getLocation());
+		}
+
+		final StringBuilder text = new StringBuilder();
+		while (!event.isEndDocument()) {
+			switch (event.getEventType()) {
+				case XMLStreamConstants.CHARACTERS:
+				case XMLStreamConstants.SPACE:
+				case XMLStreamConstants.CDATA: {
+					final Characters characters = event.asCharacters();
+					text.append(characters.getData());
+					break;
+				}
+				case XMLStreamConstants.ENTITY_REFERENCE: {
+					final EntityReference entityReference = (EntityReference)event;
+					final EntityDeclaration declaration = entityReference.getDeclaration();
+					text.append(declaration.getReplacementText());
+					break;
+				}
+				case XMLStreamConstants.COMMENT:
+				case XMLStreamConstants.PROCESSING_INSTRUCTION: {
+					//Ignore
+					break;
+				}
+				default: {
+					throw new XMLStreamException(""Unexpected event type '"" + XMLStreamConstantsUtils.getEventName(event.getEventType()) + ""' encountered. Found event: "" + event, event.getLocation());
+				}
+			}
+
+			event = this.nextEvent();
+		}
+
+		return text.toString();
+	}",4.111111111111111,0.7201731022630425,0.7407407407407405,readable,readable,high,,java,37,10,2.0,5.0,Code,cede3a5b6e15a001b945e64580d9da5efb309b3db986ea71fe524eb4bed13728,3ce1775e72a17c0f7c20eaca05776c2981fc517c69b12d9db9c0874a0bfa4bd3,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 100, ""original_snippet_id"": ""152""}",,,100
+rq0_0290,153,Scalabrino,"public Point getClosestPoint(Point anotherPt) {
+        Rectangle r = getBounds();
+        int[] xs = {r.x + r.width / 2,
+                    r.x + r.width,
+                    r.x + r.width / 2,
+                    r.x,
+                    r.x + r.width / 2,
+        };
+        int[] ys = {r.y,
+                    r.y + r.height / 2,
+                    r.y + r.height,
+                    r.y + r.height / 2,
+                    r.y,
+        };
+        Point p =
+            Geometry.ptClosestTo(
+                xs,
+                ys,
+                5,
+                anotherPt);
+        return p;
+    }",4.333333333333333,1.0831871863305926,0.8148148148148147,readable,readable,high,,java,22,1,2.0,5.0,Code,649b5283fb485007165011f62231d0675e2502b8a97509af8a15464c49450715,f4d1a8c63fa4dcfaf2a278ceebff03a29fb139992e87e3763048430f51a7098b,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 101, ""original_snippet_id"": ""153""}",,,101
+rq0_0291,154,Scalabrino,"protected void modelChanged(PropertyChangeEvent mee) {
+        super.modelChanged(mee);
+        final Object trCollection = mee.getNewValue();
+        final String eName = mee.getPropertyName();
+        final Object owner = getOwner();
+        /*
+         * A Concurrent region cannot have incoming or outgoing transitions so
+         * incoming or outgoing transitions are redirected to its concurrent
+         * composite state container.
+         */
+        SwingUtilities.invokeLater(new Runnable() {
+            public void run() {
+                Object tr = null;
+                // TODO: Is this comparison correct?
+                // Where is the string created?
+                if (eName == ""incoming"") {
+                    if (!((Collection) trCollection).isEmpty()) {
+                        tr = ((Collection) trCollection).iterator().next();
+                    }
+                    if (tr != null
+                            && Model.getFacade().isATransition(tr)) {
+                        Model.getCommonBehaviorHelper().setTarget(tr,
+                                Model.getFacade().getContainer(owner));
+                    }
+                } else if (eName == ""outgoing"") {
+                    if (!((Collection) trCollection).isEmpty()) {
+                        tr = ((Collection) trCollection).iterator().next();
+                    }
+                    if (tr != null
+                            && Model.getFacade().isATransition(tr))
+                    {
+                        Model.getStateMachinesHelper().setSource(tr,
+                                Model.getFacade().getContainer(owner));
+                    }
+                }
+            }
+        });
+    }",3.0,-1.0948973180747061,0.37037037037037035,unreadable,unreadable,low,,java,31,10,2.0,4.0,Code,dd3325fb8db9db39ee7cf447a0ba72f320d06e685658c396bb60128bf2da533f,4573b88a32d0db4b7b69bf2244a9a95de41ff5cffccecffa1455138a376bf3d3,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 102, ""original_snippet_id"": ""154""}",,,102
+rq0_0292,155,Scalabrino,"public void setEnclosingFig(Fig encloser) {
+        if (getOwner() != null) {
+            Object nod = getOwner();
+            if (encloser != null) {
+                Object comp = encloser.getOwner();
+                if (Model.getFacade().isAComponentInstance(comp)) {
+                    if (Model.getFacade().getComponentInstance(nod) != comp) {
+                        Model.getCommonBehaviorHelper()
+                                .setComponentInstance(nod, comp);
+                        super.setEnclosingFig(encloser);
+                    }
+                } else if (Model.getFacade().isANode(comp)) {
+                    super.setEnclosingFig(encloser);
+                }
+            } else if (encloser == null) {
+                if (isVisible() 
+                        // If we are not visible most likely 
+                        // we're being deleted.
+                    // TODO: This indicates a more fundamental problem that should
+                    // be investigated - tfm - 20061230
+                    && Model.getFacade().getComponentInstance(nod) 
+                                    != null) {
+                    Model.getCommonBehaviorHelper()
+                            .setComponentInstance(nod, null);
+                    super.setEnclosingFig(encloser);
+                }
+            }
+        }
+
+        if (getLayer() != null) {
+            // elementOrdering(figures);
+            Collection contents = new ArrayList(getLayer().getContents());
+            Iterator it = contents.iterator();
+            while (it.hasNext()) {
+                Object o = it.next();
+                if (o instanceof FigEdgeModelElement) {
+                    FigEdgeModelElement figedge = (FigEdgeModelElement) o;
+                    figedge.getLayer().bringToFront(figedge);
+                }
+            }
+        }
+    }",2.888888888888889,-1.2764043601084811,0.33333333333333326,unreadable,unreadable,low,,java,36,12,1.0,4.0,Code,077151e7d33f52ec255b2ca4c96dfcce9216d956b2390554048b984534da962c,6fb2ec94bf1712c9062acd79e86396382e2aed57d1ed7c5efd8b2c5f77e7197f,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 103, ""original_snippet_id"": ""155""}",,,103
+rq0_0293,156,Scalabrino,"protected Object[] getUmlActions() {
+        Object[] actions = {
+            getActionPackage(),
+            getActionClass(),
+            null,
+            getAssociationActions(),
+            getAggregationActions(),
+            getCompositionActions(),
+            getActionAssociationEnd(),
+            getActionGeneralization(),
+            null,
+            getActionInterface(),
+            getActionRealization(),
+            null,
+            getDependencyActions(),
+            null,
+            getActionAttribute(),
+            getActionOperation(),
+            getActionAssociationClass(),
+            null,
+            getDataTypeActions(),
+        };
+
+        return actions;
+    }",3.2222222222222223,-0.731883234007156,0.4444444444444444,unreadable,unreadable,low,,java,24,1,1.0,5.0,Code,6ce65469ac12e060f19a8b737ad2545fe8b79a03172e163872492061e0ccbf22,5bc31fe01a9625934c34e0f8d75d9d77bf6cf6fb301dcb2d6479b0a7b0a3c0a2,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 104, ""original_snippet_id"": ""156""}",,,104
+rq0_0294,157,Scalabrino,"public void buildModel() {
+        if (getTarget() != null) {
+            Object target = getTarget();
+            Object kind = Model.getFacade().getAggregation(target);
+            if (kind == null
+                    || kind.equals(
+                            Model.getAggregationKind().getNone())) {
+                setSelected(ActionSetAssociationEndAggregation.NONE_COMMAND);
+            } else {
+		if (kind.equals(
+		        Model.getAggregationKind().getAggregate())) {
+		    setSelected(ActionSetAssociationEndAggregation
+		            .AGGREGATE_COMMAND);
+		} else {
+		    if (kind.equals(
+		            Model.getAggregationKind()
+		            	.getComposite())) {
+			setSelected(ActionSetAssociationEndAggregation
+			        .COMPOSITE_COMMAND);
+		    } else {
+		        setSelected(ActionSetAssociationEndAggregation
+
+			        .NONE_COMMAND);
+		    }
+		}
+            }
+        }
+    }",2.555555555555556,-1.8209254862098054,0.2222222222222223,unreadable,unreadable,low,,java,27,6,2.0,3.0,Code,46cfaea26e68362f846e088b7bf26de5a8af840059e9a145d7dd02d5acf147f2,10b071ac9888d003b3882a219e0df2448da87ba28d729ceabcfa04e93bdec4da,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 105, ""original_snippet_id"": ""157""}",,,105
+rq0_0295,158,Scalabrino,"/**
+     * Construct a property panel for Node Instance elements.
+     */
+    public PropPanelNodeInstance() {
+        super(""Node Instance"", lookupIcon(""NodeInstance""),
+                ConfigLoader.getTabPropsOrientation());
+
+        addField(Translator.localize(""label.name""), getNameTextField());
+        addField(Translator.localize(""label.namespace""),
+                getNamespaceSelector());
+
+        addSeparator();
+
+        addField(Translator.localize(""label.stimili-sent""),
+                getStimuliSenderScroll());
+
+        addField(Translator.localize(""label.stimili-received""),
+                getStimuliReceiverScroll());
+
+        JList resList = new UMLLinkedList(new UMLContainerResidentListModel());
+        addField(Translator.localize(""label.residents""),
+                new JScrollPane(resList));
+
+        addSeparator();
+        AbstractActionAddModelElement a =
+            new ActionAddInstanceClassifier(Model.getMetaTypes().getNode());
+        JScrollPane classifierScroll =
+                new JScrollPane(new UMLMutableLinkedList(
+	                new UMLInstanceClassifierListModel(),
+	            a, null, null, true));
+	addField(Translator.localize(""label.classifiers""),
+                    classifierScroll);
+
+
+        addAction(new ActionNavigateContainerElement());
+        addAction(new ActionNewStereotype());
+        addAction(getDeleteAction());
+    }",2.6666666666666665,-1.639418444176031,0.2592592592592592,unreadable,unreadable,low,,java,27,1,1.0,4.0,Code,b7f2675bee97d71ed37db15e8d72d3b2b9d44f1b4e5359c0bdc60ec9a0247e0b,0deea09767a8f9aa798e0a341fbcac5b2fed0b58c18cd994ea7664f3f73991fa,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 106, ""original_snippet_id"": ""158""}",,,106
+rq0_0296,164,Scalabrino,"/**
+	 * Get the value mapped to this key, or null if no value is mapped to this key.
+	 *
+	 * @param key The cache key
+	 *
+	 * @return The cached data
+	 */
+	public final Object get(Object key) {
+		try {
+			final Element element = getCache().get( key );
+			if ( element == null ) {
+				return null;
+			}
+			else {
+				return element.getObjectValue();
+			}
+		}
+		catch (net.sf.ehcache.CacheException e) {
+			if ( e instanceof NonStopCacheException ) {
+				HibernateNonstopCacheExceptionHandler.getInstance()
+						.handleNonstopCacheException( (NonStopCacheException) e );
+				return null;
+			}
+			else {
+				throw new CacheException( e );
+			}
+		}
+	}",4.222222222222222,0.9016801442968183,0.7777777777777777,readable,readable,high,,java,21,4,3.0,5.0,Code,4c55973c174221fc48e617a370572b0aa7775acf8ce9a2fa4de30a40da847d45,991ce3596515fcd952c48a864f6d5f2834a07209925854fd2f18362f49740253,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 107, ""original_snippet_id"": ""164""}",,,107
+rq0_0297,169,Scalabrino,"@Override
+	public boolean equals(Object obj) {
+		if ( this == obj ) {
+			return true;
+		}
+		if ( !super.equals( obj ) ) {
+			return false;
+		}
+		if ( getClass() != obj.getClass() ) {
+			return false;
+		}
+		VersionsJoinTableRangeTestAlternateEntity other = (VersionsJoinTableRangeTestAlternateEntity) obj;
+		if ( alternateValue == null ) {
+			if ( other.alternateValue != null ) {
+				return false;
+			}
+		}
+		else if ( !alternateValue.equals( other.alternateValue ) ) {
+			return false;
+		}
+		return true;
+	}",4.222222222222222,0.9016801442968183,0.7777777777777777,readable,readable,high,,java,22,7,3.0,5.0,Code,c17233b6f0ff4a22ffdbe6787922af4b7694a5b12069da7f2bb9a012dd9d308f,deb1341cf757683aeea8a4ea0764fd044337336b133835adbc2ac3a0bd6ead66,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 108, ""original_snippet_id"": ""169""}",,,108
+rq0_0298,170,Scalabrino,"private Element createMiddleEntityXml(String auditMiddleTableName, String auditMiddleEntityName, String where) {
+		final String schema = mainGenerator.getSchema(
+				propertyAuditingData.getJoinTable().schema(),
+				propertyValue.getCollectionTable()
+		);
+		final String catalog = mainGenerator.getCatalog(
+				propertyAuditingData.getJoinTable().catalog(),
+				propertyValue.getCollectionTable()
+		);
+
+		final Element middleEntityXml = MetadataTools.createEntity(
+				xmlMappingData.newAdditionalMapping(),
+				new AuditTableData( auditMiddleEntityName, auditMiddleTableName, schema, catalog ), null, null
+		);
+		final Element middleEntityXmlId = middleEntityXml.addElement( ""composite-id"" );
+
+		// If there is a where clause on the relation, adding it to the middle entity.
+		if ( where != null ) {
+			middleEntityXml.addAttribute( ""where"", where );
+		}
+
+		middleEntityXmlId.addAttribute( ""name"", mainGenerator.getVerEntCfg().getOriginalIdPropName() );
+
+		// Adding the revision number as a foreign key to the revision info entity to the composite id of the
+		// middle table.
+		mainGenerator.addRevisionInfoRelation( middleEntityXmlId );
+
+		// Adding the revision type property to the entity xml.
+		mainGenerator.addRevisionType(
+				isEmbeddableElementType() ? middleEntityXmlId : middleEntityXml,
+				middleEntityXml
+		);
+
+		// All other properties should also be part of the primary key of the middle entity.
+		return middleEntityXmlId;
+	}",3.111111111111111,-0.9133902760409311,0.4074074074074074,unreadable,unreadable,low,,java,25,3,2.0,4.0,Code,873b71cdad29f8812670fcfd82ab82c23dea594786ebd781e30b4468e9c427b8,a1cd612c8b93b763b6ca004593b147d016947d574fd87f07b31221154dfbfb5d,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 109, ""original_snippet_id"": ""170""}",,,109
+rq0_0299,171,Scalabrino,"private void addTransactionFactories(StrategySelectorImpl strategySelector) {
+		strategySelector.registerStrategyImplementor( TransactionFactory.class, JdbcTransactionFactory.SHORT_NAME, JdbcTransactionFactory.class );
+		strategySelector.registerStrategyImplementor( TransactionFactory.class, ""org.hibernate.transaction.JDBCTransactionFactory"", JdbcTransactionFactory.class );
+
+		strategySelector.registerStrategyImplementor( TransactionFactory.class, JtaTransactionFactory.SHORT_NAME, JtaTransactionFactory.class );
+		strategySelector.registerStrategyImplementor( TransactionFactory.class, ""org.hibernate.transaction.JTATransactionFactory"", JtaTransactionFactory.class );
+
+		strategySelector.registerStrategyImplementor( TransactionFactory.class, CMTTransactionFactory.SHORT_NAME, CMTTransactionFactory.class );
+		strategySelector.registerStrategyImplementor( TransactionFactory.class, ""org.hibernate.transaction.CMTTransactionFactory"", CMTTransactionFactory.class );
+	}",3.888888888888889,0.3571590181954932,0.6666666666666665,readable,discard,mid,,java,8,1,3.0,5.0,Code,bfeb29575b6e9902202c7b1cbbde2aafefaa2a845ae82c19d70c18b7840eb4c2,89e0fe033fb64e40e3e6d25abdccab0ce5821fd03c479fb1f9cd3396582e4690,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 110, ""original_snippet_id"": ""171""}",,,110
+rq0_0300,172,Scalabrino,"@Override
+      public String call() throws Exception {
+         try {
+            if (isTrace)
+               log.tracef(""[%s] Wait for all executions paths to be ready to perform calls"", title(warmup));
+            barrier.await();
+
+            long start = System.nanoTime();
+            int runs = 0;
+            if (isTrace)
+               log.tracef(""[%s] Start time: %d"", title(warmup), start);
+
+//            while (USE_TIME && PutFromLoadStressTestCase.this.run.get()) {
+//               if (runs % 100000 == 0)
+//                  log.infof(""[%s] Query run # %d"", title(warmup), runs);
+//
+////               Customer customer = query();
+////               deleteCached(customer);
+
+               queryItems();
+//               deleteCachedItems();
+//
+//               runs++;
+//            }
+            long end = System.nanoTime();
+            long duration = end - start;
+            if (isTrace)
+               log.tracef(""[%s] End time: %d, duration: %d, runs: %d"",
+                     title(warmup), start, duration, runs);
+
+            return opsPerMS(duration, runs);
+         } finally {
+            if (isTrace)
+               log.tracef(""[%s] Wait for all execution paths to finish"", title(warmup));
+
+            barrier.await();
+         }
+      }",3.6666666666666665,-0.005855065872056767,0.5925925925925924,unreadable,discard,mid,,java,23,5,2.0,5.0,Code,0a465bbfed75909abe3de5e3d384e571c0ffbeef4135748c2979742732241cc9,ae0a213c83fbe8990a0ae169cda4122c2f653b88c57d46051012d1928914fa15,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 111, ""original_snippet_id"": ""172""}",,,111
+rq0_0301,174,Scalabrino,"@Override
+	protected void prepareBootstrapRegistryBuilder(BootstrapServiceRegistryBuilder builder) {
+		super.prepareBootstrapRegistryBuilder( builder );
+		builder.with(
+				new Integrator() {
+
+				    @Override
+					public void integrate(
+							Configuration configuration,
+							SessionFactoryImplementor sessionFactory,
+							SessionFactoryServiceRegistry serviceRegistry) {
+                        integrate(serviceRegistry);
+					}
+
+                    @Override
+				    public void integrate( MetadataImplementor metadata,
+				                           SessionFactoryImplementor sessionFactory,
+				                           SessionFactoryServiceRegistry serviceRegistry ) {
+                        integrate(serviceRegistry);
+				    }
+
+                    private void integrate( SessionFactoryServiceRegistry serviceRegistry ) {
+                        serviceRegistry.getService( EventListenerRegistry.class ).prependListeners(EventType.LOAD,
+                                                                                                   new CustomLoadListener());
+                    }
+
+					@Override
+					public void disintegrate(
+							SessionFactoryImplementor sessionFactory, SessionFactoryServiceRegistry serviceRegistry) {
+					}
+				}
+		);
+	}",3.4444444444444446,-0.36886914993960607,0.5185185185185185,unreadable,discard,mid,,java,29,4,3.0,4.0,Code,f95d61470baeb31e19c89fe567670b863d2133e4f4d8746573c5a4d40a3def6d,592e55dfc433bb111bee0f1c3b56d64d74d3e4e5494fdc6a7fd55ee0a05004b1,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 112, ""original_snippet_id"": ""174""}",,,112
+rq0_0302,182,Scalabrino,"@Override
+	protected void applyRootReturnSelectFragments(SelectStatementBuilder selectStatementBuilder) {
+		selectStatementBuilder.appendSelectClauseFragment(
+			getQueryableCollection().selectFragment(
+					getCollectionReferenceAliases().getCollectionTableAlias(),
+					getCollectionReferenceAliases().getCollectionColumnAliases().getSuffix()
+			)
+		);
+		if ( getQueryableCollection().isManyToMany() ) {
+			final OuterJoinLoadable elementPersister = (OuterJoinLoadable) getQueryableCollection().getElementPersister();
+			selectStatementBuilder.appendSelectClauseFragment(
+					elementPersister.selectFragment(
+							getCollectionReferenceAliases().getElementTableAlias(),
+							getCollectionReferenceAliases().getEntityElementAliases().getColumnAliases().getSuffix()
+					)
+			);
+		}
+		super.applyRootReturnSelectFragments( selectStatementBuilder );
+	}",3.333333333333333,-0.5503761919733818,0.48148148148148134,unreadable,unreadable,low,,java,19,2,1.0,5.0,Code,55b9e2a030f91f9ab301f78d0477a281936eb158d4edd4cea4435234d01b9d3c,51796e81aafebe29cac79a0e92b4bf120e4a95f7c02e60e228c9d8b5af0c96ba,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 113, ""original_snippet_id"": ""182""}",,,113
+rq0_0303,183,Scalabrino,"@Override
+	public void startingCollectionElements(CollectionElementDefinition elementDefinition) {
+		final Type elementType = elementDefinition.getType();
+		log.tracef(
+				""%s Starting collection element graph : %s"",
+				StringHelper.repeat( "">>"", fetchSourceStack.size() ),
+				elementDefinition.getCollectionDefinition().getCollectionPersister().getRole()
+		);
+
+		final CollectionReference collectionReference = currentCollection();
+		final CollectionFetchableElement elementGraph = collectionReference.getElementGraph();
+
+		if ( elementType.isAssociationType() || elementType.isComponentType() ) {
+			if ( elementGraph == null ) {
+				throw new IllegalStateException(
+						""CollectionReference did not return an expected element graph : "" +
+								elementDefinition.getCollectionDefinition().getCollectionPersister().getRole()
+				);
+			}
+			if ( !elementType.isAnyType() ) {
+				pushToStack( (ExpandingFetchSource) elementGraph );
+			}
+		}
+		else {
+			if ( elementGraph != null ) {
+				throw new IllegalStateException(
+						""CollectionReference returned an unexpected element graph : "" +
+								elementDefinition.getCollectionDefinition().getCollectionPersister().getRole()
+				);
+			}
+		}
+	}",3.555555555555556,-0.18736210790583105,0.5555555555555556,unreadable,discard,mid,,java,30,6,2.0,5.0,Code,ea8c51b54207801abcbdc1ca1a172cfe89cc3b8fcd579f82512c46d05a9aa7e2,df621acd2feddb87e7b29ad53cd85adf5a76060420ee9ec29d07066e3686c342,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 114, ""original_snippet_id"": ""183""}",,,114
+rq0_0304,184,Scalabrino,"@Override
+	protected void beforeTransactionCommit() {
+		transactionCoordinator().sendBeforeTransactionCompletionNotifications( this );
+
+		final boolean flush = ! transactionCoordinator().getTransactionContext().isFlushModeNever() &&
+				( isDriver || ! transactionCoordinator().getTransactionContext().isFlushBeforeCompletionEnabled() );
+
+		if ( flush ) {
+			// if an exception occurs during flush, user must call rollback()
+			transactionCoordinator().getTransactionContext().managedFlush();
+		}
+
+		if ( isDriver && isInitiator ) {
+			transactionCoordinator().getTransactionContext().beforeTransactionCompletion( this );
+		}
+
+		closeIfRequired();
+	}",4.222222222222222,0.9016801442968183,0.7777777777777777,readable,readable,high,,java,13,6,3.0,5.0,Code,ce2c5bf69f4894f5e5c8c37a35310c01e5347bffa01900ff00e95d298e3c6d37,dcac2bbbdd61369a3ed64e406d7b746143f10a20bf6f06250b2a899e86a650cb,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 115, ""original_snippet_id"": ""184""}",,,115
+rq0_0305,190,Scalabrino,"protected void resetRegionUsageState(CacheAccessListener localListener, CacheAccessListener remoteListener) {
+		String stdName = StandardQueryCache.class.getName();
+		String acctName = Account.class.getName();
+
+		localListener.getSawRegionModification( stdName );
+		localListener.getSawRegionModification( acctName );
+
+		localListener.getSawRegionAccess( stdName );
+		localListener.getSawRegionAccess( acctName );
+
+		remoteListener.getSawRegionModification( stdName );
+		remoteListener.getSawRegionModification( acctName );
+
+		remoteListener.getSawRegionAccess( stdName );
+		remoteListener.getSawRegionAccess( acctName );
+
+		log.info( ""Region usage state cleared"" );
+	}",3.7777777777777777,0.17565197616171824,0.6296296296296295,readable,discard,mid,,java,13,1,1.0,5.0,Code,780d5dd40e217b7a085d4630b5c85fae87e1d9055506ef75a9f4eef5a8e1212e,b02b805a1f1c9e750e525ee51fd256d84fefebf074aa57fa81514b49a492690f,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 116, ""original_snippet_id"": ""190""}",,,116
+rq0_0306,191,Scalabrino,"@Override
+	public void configure(Configuration cfg) {
+		super.configure( cfg );
+		cfg.setProperty( Environment.USE_SECOND_LEVEL_CACHE, ""true"" );
+		cfg.setProperty( Environment.GENERATE_STATISTICS, ""true"" );
+		cfg.setProperty( Environment.USE_QUERY_CACHE, ""false"" );
+		cfg.setProperty( Environment.CACHE_REGION_FACTORY, getCacheRegionFactory().getName() );
+		cfg.setProperty( Environment.TRANSACTION_STRATEGY, getTransactionFactoryClass().getName() );
+		cfg.getProperties().put( AvailableSettings.JTA_PLATFORM, getJtaPlatform() );
+		cfg.setProperty( Environment.CONNECTION_PROVIDER, getConnectionProviderClass().getName() );
+	}",4.444444444444445,1.2646942283643683,0.8518518518518519,readable,readable,high,,java,11,1,3.0,5.0,Code,461fbc8aade14906bce0bbbc536b6a9a28340e60ffbaa63818f06b063b220857,60a19ab28d8639e2ffeacfa9007deec3f732bf1544647bf98ccabd49038fbb06,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 117, ""original_snippet_id"": ""191""}",,,117
+rq0_0307,193,Scalabrino,"protected AnnotationInstance parserPrimaryKeyJoinColumnList(List<JaxbPrimaryKeyJoinColumn> primaryKeyJoinColumnList, AnnotationTarget target) {
+		if ( MockHelper.isNotEmpty( primaryKeyJoinColumnList ) ) {
+			if ( primaryKeyJoinColumnList.size() == 1 ) {
+				return parserPrimaryKeyJoinColumn( primaryKeyJoinColumnList.get( 0 ), target );
+			}
+			else {
+				return create(
+						PRIMARY_KEY_JOIN_COLUMNS,
+						target,
+						nestedPrimaryKeyJoinColumnList( ""value"", primaryKeyJoinColumnList, null )
+				);
+			}
+		}
+
+		return null;
+
+	}",3.7777777777777777,0.17565197616171824,0.6296296296296295,readable,discard,mid,,java,15,3,2.0,5.0,Code,3d3cf4b679dcaaef0e99a4a7bc6442ef5ed475d0831842811fb061b5288ab9fd,3ffec836a5f2e6e58c45b9e5f181d9e2823c134817836c874a6c5e8a8c78665f,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 118, ""original_snippet_id"": ""193""}",,,118
+rq0_0308,194,Scalabrino,"public static <T> JaxbRoot<T> unmarshallXml(String fileName, String schemaName, Class<T> clazz, ClassLoaderService classLoaderService)
+            throws JAXBException {
+        Schema schema = getMappingSchema( schemaName, classLoaderService );
+        InputStream in = classLoaderService.locateResourceStream( fileName );
+        JAXBContext jc = JAXBContext.newInstance( clazz );
+        Unmarshaller unmarshaller = jc.createUnmarshaller();
+        unmarshaller.setSchema( schema );
+        StreamSource stream = new StreamSource( in );
+        JAXBElement<T> elem = unmarshaller.unmarshal( stream, clazz );
+        Origin origin = new Origin( null, fileName );
+        return new JaxbRoot<T>( elem.getValue(), origin );
+    }",3.111111111111111,-0.9133902760409311,0.4074074074074074,unreadable,unreadable,low,,java,12,1,1.0,4.0,Code,932506cc7044adfebe3214822539ab961ffd11c87f73e32c4986c135f1a345a1,c09891dfeb351d42d1e65e53188e8da851a60cb7a4960752dc2d2715ac6ef416,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 119, ""original_snippet_id"": ""194""}",,,119
+rq0_0309,195,Scalabrino,"private AnnotationInstance overrideSchemaCatalogByDefault(AnnotationInstance annotationInstance, EntityMappingsMocker.Default defaults) {
+		List<AnnotationValue> newAnnotationValueList = new ArrayList<AnnotationValue>();
+		newAnnotationValueList.addAll( annotationInstance.values() );
+		boolean schemaDefined = false;
+		boolean catalogDefined = false;
+		if ( annotationInstance.value( ""schema"" ) != null ) {
+			schemaDefined = true;
+		}
+		if ( annotationInstance.value( ""catalog"" ) != null ) {
+			catalogDefined = true;
+		}
+		if ( schemaDefined && catalogDefined ) {
+			return annotationInstance;
+		}
+		if ( !catalogDefined && StringHelper.isNotEmpty( defaults.getCatalog() ) ) {
+			newAnnotationValueList.add(
+					AnnotationValue.createStringValue(
+							""catalog"", defaults.getCatalog()
+					)
+			);
+		}
+		if ( !schemaDefined && StringHelper.isNotEmpty( defaults.getSchema() ) ) {
+			newAnnotationValueList.add(
+					AnnotationValue.createStringValue(
+							""schema"", defaults.getSchema()
+					)
+			);
+		}
+		return MockHelper.create(
+				annotationInstance.name(),
+				annotationInstance.target(),
+				MockHelper.toArray( newAnnotationValueList )
+		);
+	}",3.333333333333333,-0.5503761919733818,0.48148148148148134,unreadable,unreadable,low,,java,34,9,1.0,5.0,Code,e33d5d7921152234de77e9a8840afa2dacd341bed7e4344aba5df7d07d3df2d1,9e8fbeb68ae1efe39bb0d1213d3bde762cd0a0c9a2cdd24ebc4aaddd97891e16,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 120, ""original_snippet_id"": ""195""}",,,120
+rq0_0310,196,Scalabrino,"public AbstractRowReader(ReaderCollector readerCollector) {
+		this.entityReferenceInitializers = readerCollector.getEntityReferenceInitializers() != null
+				? new ArrayList<EntityReferenceInitializer>( readerCollector.getEntityReferenceInitializers() )
+				: Collections.<EntityReferenceInitializer>emptyList();
+		this.arrayReferenceInitializers = readerCollector.getArrayReferenceInitializers() != null
+				? new ArrayList<CollectionReferenceInitializer>( readerCollector.getArrayReferenceInitializers() )
+				: Collections.<CollectionReferenceInitializer>emptyList();
+		this.collectionReferenceInitializers = readerCollector.getNonArrayCollectionReferenceInitializers() != null
+				? new ArrayList<CollectionReferenceInitializer>( readerCollector.getNonArrayCollectionReferenceInitializers() )
+				: Collections.<CollectionReferenceInitializer>emptyList();
+	}",2.555555555555556,-1.8209254862098054,0.2222222222222223,unreadable,unreadable,low,,java,11,4,1.0,5.0,Code,3b82663416e34a2dca1a397b2c3fa5f0729fa84319329def542cc901fbcc96ab,f399bc8d507897a78428f7d6e15384e1b0eed55148b606f85b47523a73778f77,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 121, ""original_snippet_id"": ""196""}",,,121
+rq0_0311,197,Scalabrino,"private void resolveEntityKey(
+			ResultSet resultSet,
+			ResultSetProcessingContextImpl context,
+			FetchSource fetchSource,
+			Map<EntityReference,EntityReferenceInitializer> initializerByEntityReference) throws SQLException {
+		// Resolve any bidirectional entity references first.
+		for ( BidirectionalEntityReference bidirectionalEntityReference : fetchSource.getBidirectionalEntityReferences() ) {
+			final EntityReferenceInitializer targetEntityReferenceInitializer = initializerByEntityReference.get(
+					bidirectionalEntityReference.getTargetEntityReference()
+			);
+			resolveEntityKey(
+					resultSet,
+					context,
+					targetEntityReferenceInitializer,
+					initializerByEntityReference
+			);
+			targetEntityReferenceInitializer.hydrateEntityState( resultSet, context );
+		}
+		for ( Fetch fetch : fetchSource.getFetches() ) {
+			if ( EntityFetch.class.isInstance( fetch ) ) {
+				final EntityFetch entityFetch = (EntityFetch) fetch;
+				final EntityReferenceInitializer  entityReferenceInitializer = initializerByEntityReference.get( entityFetch );
+				if ( entityReferenceInitializer != null ) {
+					resolveEntityKey(
+							resultSet,
+							context,
+							entityReferenceInitializer,
+							initializerByEntityReference
+					);
+					entityReferenceInitializer.hydrateEntityState( resultSet, context );
+				}
+			}
+			else if ( CompositeFetch.class.isInstance( fetch ) ) {
+				resolveEntityKey(
+						resultSet,
+						context,
+						(CompositeFetch) fetch,
+						initializerByEntityReference );
+			}
+		}
+	}",3.0,-1.0948973180747061,0.37037037037037035,unreadable,unreadable,low,,java,40,2,2.0,4.0,Code,d0066fec94ceb44c33d6b73bc2f8891ad13c6f8fa36ed7170f9fbf8c74023ff0,21f4b768247809a5a09c9090e07ae2ab9c25743508b24fc0ccbde9bf925e8264,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 122, ""original_snippet_id"": ""197""}",,,122
+rq0_0312,198,Scalabrino,"public EntityKey interpretEntityKey(
+			SessionImplementor session,
+			String optionalEntityName,
+			Serializable optionalId,
+			Object optionalObject) {
+		if ( optionalEntityName != null ) {
+			final EntityPersister entityPersister;
+			if ( optionalObject != null ) {
+				entityPersister = session.getEntityPersister( optionalEntityName, optionalObject );
+			}
+			else {
+				entityPersister = session.getFactory().getEntityPersister( optionalEntityName );
+			}
+			if ( entityPersister.isInstance( optionalId ) &&
+					!entityPersister.getEntityMetamodel().getIdentifierProperty().isVirtual() &&
+					entityPersister.getEntityMetamodel().getIdentifierProperty().isEmbedded() ) {
+				// non-encapsulated composite identifier
+				final Serializable identifierState = ((CompositeType) entityPersister.getIdentifierType()).getPropertyValues(
+						optionalId,
+						session
+				);
+				return session.generateEntityKey( identifierState, entityPersister );
+			}
+			else {
+				return session.generateEntityKey( optionalId, entityPersister );
+			}
+		}
+		else {
+			return null;
+		}
+	}",3.0,-1.0948973180747061,0.37037037037037035,unreadable,unreadable,low,,java,30,6,2.0,4.0,Code,cbce19d96f3fe68b311511fffeb4a329a8fc0997430daa8bd68a3fcd6204ca7e,510d5a75b3a16f2f60f0e7b8d4d460fa30901759b9bc91a363f333a1e354fe23,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 123, ""original_snippet_id"": ""198""}",,,123

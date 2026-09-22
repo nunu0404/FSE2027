@@ -1,0 +1,2638 @@
+rq0_id,snippet_id,dataset_name,raw_code,human_mean_score,human_score_z_within_dataset,human_score_minmax_within_dataset,binary_label_median,binary_label_tertile_strict,tertiary_label,num_annotators,language,LOC,cyclomatic_complexity,min_score,max_score,code_type,exact_code_hash,formatting_normalized_hash,exact_duplicate_group_id,formatting_duplicate_group_id,duplicate_group_id,source_metadata,source_key,source_path,source_row_index
+rq0_0099,101,Dorn,"		long logoId = 0;
+
+		Group group = null;
+
+		try {
+			group = getGroup();
+
+			if (!group.isStagingGroup()) {
+				return logoId;
+			}
+		}
+		catch (Exception e) {
+			return logoId;
+		}
+
+		Group liveGroup = group.getLiveGroup();
+
+		LayoutSet liveLayoutSet = null;
+
+		if (isPrivateLayout()) {
+			liveLayoutSet = liveGroup.getPrivateLayoutSet();
+		}
+		else {
+			liveLayoutSet = liveGroup.getPublicLayoutSet();
+		}
+
+		return liveLayoutSet.getLogoId();
+	}
+
+	@Override
+	public String getSettings() {
+		if (_settingsProperties == null) {
+			return super.getSettings();
+		}
+		else {
+			return _settingsProperties.toString();
+		}
+	}
+
+	public UnicodeProperties getSettingsProperties() {
+		if (_settingsProperties == null) {
+			_settingsProperties = new UnicodeProperties(true);
+
+			try {
+				_settingsProperties.load(super.getSettings());
+			}
+			catch (IOException ioe) {
+				_log.error(ioe, ioe);
+			}
+		}
+",3.6666667461395264,0.739520701811303,0.756208671566705,readable,readable,high,,java,40,5,2.0,5.0,Code,27038ffab00a58633657c899c354622c9f79510962cdec47cb3de22ce786e545,bcdd67bb2c80999abecda0aab43b2188ddc315ab26b1295b1b51f5bcb7ec368a,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 0, ""original_snippet_id"": ""101""}",,,0
+rq0_0100,103,Dorn,"			DB db = DBFactoryUtil.getDB();
+
+			Thread currentThread = Thread.currentThread();
+
+			ClassLoader classLoader = currentThread.getContextClassLoader();
+
+			String tablesSQL = StringUtil.read(
+				classLoader,
+				""com/liferay/portal/tools/sql/dependencies/portal-tables.sql"");
+
+			String indexesSQL = StringUtil.read(
+				classLoader,
+				""com/liferay/portal/tools/sql/dependencies/indexes.sql"");
+
+			String indexesProperties = StringUtil.read(
+				classLoader,
+				""com/liferay/portal/tools/sql/dependencies/indexes.properties"");
+
+			db.updateIndexes(
+				tablesSQL, indexesSQL, indexesProperties, _dropIndexes);
+		}
+		catch (Exception e) {
+			_log.error(e, e);
+		}
+	}
+
+	public void upgradeProcess(int buildNumber) throws UpgradeException {
+		if (buildNumber == ReleaseInfo.getBuildNumber()) {
+			if (_log.isDebugEnabled()) {
+				_log.debug(
+					""Skipping upgrade process from "" + buildNumber + "" to "" +
+						ReleaseInfo.getBuildNumber());
+			}
+
+			return;
+		}
+
+		String[] upgradeProcessClassNames = getUpgradeProcessClassNames(
+			PropsKeys.UPGRADE_PROCESSES);
+
+		if (upgradeProcessClassNames.length == 0) {
+			upgradeProcessClassNames = getUpgradeProcessClassNames(
+				PropsKeys.UPGRADE_PROCESSES + StringPool.PERIOD + buildNumber);
+
+			if (upgradeProcessClassNames.length == 0) {
+				if (_log.isInfoEnabled()) {
+					_log.info(
+						""Upgrading from "" + buildNumber + "" to "" +
+							ReleaseInfo.getBuildNumber() + "" is not supported"");
+				}
+",3.2340426445007324,-0.24507613440702056,0.5543607841174228,unreadable,discard,mid,,java,39,1,1.0,5.0,Code,817d9bc0a2ab08ce7c92f5bd85a4b6f897e1dbe3c5d753ef2eaddcb8e508e865,d4f2678aa4da28c0259f26b7406281ac9ee2bde4c5c3802917356ffe060e5f2c,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 1, ""original_snippet_id"": ""103""}",,,1
+rq0_0101,104,Dorn,"
+	public SetServerManagerContextPathCommand( IRemoteServerWorkingCopy server, String serverManagerContextPath ) {
+		super( server, ""Set Server Manager Context Path"" );
+		this.serverManagerContextPath = serverManagerContextPath;
+	}
+
+	public void execute() {
+		oldServerManagerContextPath = server.getServerManagerContextPath();
+		server.setServerManagerContextPath( serverManagerContextPath );
+	}
+",3.080357074737549,-0.5948447330311896,0.4826562547797624,unreadable,unreadable,low,,java,8,2,1.0,5.0,Code,249406a09e1eeaee9d3850815c9ba6d045d5b95eafeba2b67e2cfdceda57f66a,b52e3859ab8bb658a0ce52daca82462f213229db19f1206fd710660480f6f293,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 2, ""original_snippet_id"": ""104""}",,,2
+rq0_0102,105,Dorn,"			try {
+				if (selenium.isVisible(""//section"")) {
+					break;
+				}
+			}
+			catch (Exception e) {
+			}
+
+			Thread.sleep(1000);
+		}
+",3.632478713989258,0.6617131359263368,0.7402576830770683,readable,readable,high,,java,9,2,1.0,5.0,Code,e9fead2125968be9f8ff5990723122c49a387d965b49fe6a1b563c323a7109f3,1b8f7d28dac53296826eb9defadd162bae8ee9c7f1e577a91a29ef4bee911b57,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 3, ""original_snippet_id"": ""105""}",,,3
+rq0_0103,106,Dorn,"		createGroup(model, ""websites"", parameter_group);
+
+		
+		return model;
+	}
+	
+	private static BasicPluginConfigModel createInstallationConfigGroup(final JythonPlugin plugin, final JythonPluginCore core, final JythonPluginInitialiser jpi, final BasicPluginConfigModel parent, final boolean init_ok) {
+		BasicPluginConfigModel model = core.plugin_interface.getUIManager().createBasicPluginConfigModel(parent.getSection(), ""azjython.install"");
+		addJythonStatusParameter(init_ok, core, model, false);
+		
+		// Things to disable upon installing Jython.
+		final List disable_on_install = new ArrayList();
+
+		// We reuse this multiple times to store parameters in a group.
+		ArrayList parameter_group = new ArrayList();
+		
+		LabelParameter lp = model.addLabelParameter2(""azjython.config.auto_config.info"");
+		final ActionParameter start_param = model.addActionParameter2(""azjython.blank"", ""azjython.config.auto_config.start"");
+		final ActionParameter stop_param = model.addActionParameter2(""azjython.blank"", ""azjython.config.auto_config.stop"");
+		start_param.setEnabled(!init_ok);
+		stop_param.setEnabled(false);
+				
+		parameter_group.add(lp);
+		parameter_group.add(start_param);
+		parameter_group.add(stop_param);
+		disable_on_install.add(start_param);
+		disable_on_install.add(stop_param);
+		createGroup(model, ""auto_config"", parameter_group);
+				
+		final DirectoryParameter dm = model.addDirectoryParameter2(""jython.path"", ""azjython.config.jythonpath"", """");
+		disable_on_install.add(dm);
+		parameter_group.add(dm);
+					
+		ActionParameter am = model.addActionParameter2(""azjython.config.install"", ""azjython.config.install.action"");
+		disable_on_install.add(am);
+		parameter_group.add(am);
+		
+		final ParameterListener auto_install_listener = new ParameterListener() {
+			public void parameterChanged(Parameter p) {
+				boolean installed = jpi.installJython(true);
+				if (installed) {
+					for (int i=0; i < disable_on_install.size(); i++) {
+						((Parameter)disable_on_install.get(i)).setEnabled(false);
+					}
+				}
+			}
+		};
+		
+		am.addListener(auto_install_listener);
+		am.setEnabled(!init_ok);
+",3.54347825050354,0.45915952312931857,0.6987330535694916,readable,discard,mid,,java,37,3,1.0,5.0,Code,5e16f249bdd28abcd79ed55e08c2095279d65fed02039bf43d2be6340c1e98df,2f5317b331efd6f116da738d047f8dfd823d01ece2d1a28f5be09bff8af6e8f3,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 4, ""original_snippet_id"": ""106""}",,,4
+rq0_0104,108,Dorn,"		return listenerID;
+	}
+
+	public String getMessageID() {
+		return messageID;
+	}
+
+	public String getOperationID() {
+		return operationID;
+	}
+
+	protected long getSequenceNo() {
+		return lSequenceNo;
+	}
+
+	protected void setSequenceNo(long sequenceNo) {
+		lSequenceNo = sequenceNo;
+	}
+
+	public String toString() {
+		String paramString = parameters.toString();
+		return ""PlaformMessage {""
+				+ ""cn""
+				+ contentNetworkID
+				+ "", ""
+				+ lSequenceNo
+				+ "", ""
+				+ messageID
+				+ "", ""
+				+ listenerID
+				+ "", ""
+				+ operationID
+				+ "", ""
+				+ (paramString.length() > 32767 ? paramString.substring(0, 32767)
+						: paramString) + ""}"";
+	}
+
+	public String toShortString() {
+		return (requiresAuthorization ? ""AUTH: "" : """") + getMessageID() + "".""
+				+ getListenerID() + ""."" + getOperationID();
+	}
+
+	/**
+	 * @return
+	 *
+	 * @since 3.1.1.1
+	 */
+	public boolean sendAZID() {
+		return sendAZID;
+	}
+",3.039823055267334,-0.6870949502021848,0.46374444157079325,unreadable,unreadable,low,,java,38,9,1.0,5.0,Code,8770d0b70bd023ef8339be0a4dfc584d9a50cd2b9ff77a6961c491f7cb6ae768,9a3fe93f95fd4721ce87f30c6ff341cc7ebdfe6fc8e1727a76a6a8a1ef076c11,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 5, ""original_snippet_id"": ""108""}",,,5
+rq0_0105,109,Dorn,"		else if (RUBY.getValue().equals(value)) {
+			return RUBY;
+		}
+
+		throw new IllegalArgumentException(""Invalid value "" + value);
+	}
+
+	public String getValue() {
+		return _value;
+	}
+",3.7136929035186768,0.8465461902194238,0.7781494984551804,readable,readable,high,,java,8,2,1.0,5.0,Code,5a56148a5e08a3be197c5d8df7ed7df7ea0a1adcd29635bac7dee0c4cd4c4c0e,45d450b85354b0851ff5c61941856ed14bd56f4198b789ce12063aed42d4f96a,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 6, ""original_snippet_id"": ""109""}",,,6
+rq0_0106,111,Dorn,"
+			sendRedirect(actionRequest, actionResponse);
+		}
+		catch (Exception e) {
+			if (e instanceof PrincipalException) {
+				SessionErrors.add(actionRequest, e.getClass().getName());
+
+				setForward(actionRequest, ""portlet.sites_admin.error"");
+			}
+			else {
+				throw e;
+			}
+		}
+	}
+
+	@Override
+	public ActionForward render(
+			ActionMapping mapping, ActionForm form, PortletConfig portletConfig,
+			RenderRequest renderRequest, RenderResponse renderResponse)
+		throws Exception {
+
+		try {
+			ActionUtil.getGroup(renderRequest);
+			ActionUtil.getRole(renderRequest);
+
+			Role role = (Role)renderRequest.getAttribute(WebKeys.ROLE);
+
+			if (role != null) {
+				String name = role.getName();
+
+				if (name.equals(RoleConstants.ORGANIZATION_USER) ||
+					name.equals(RoleConstants.SITE_MEMBER)) {
+
+					throw new NoSuchRoleException();
+				}
+			}
+		}
+		catch (Exception e) {
+			if (e instanceof NoSuchGroupException ||
+				e instanceof NoSuchRoleException ||
+				e instanceof PrincipalException) {
+
+				SessionErrors.add(renderRequest, e.getClass().getName());
+
+				return mapping.findForward(""portlet.sites_admin.error"");
+			}
+			else {
+				throw e;
+			}
+		}
+",3.324110746383667,-0.04009271387589107,0.5963835378724042,unreadable,discard,mid,,java,40,2,1.0,5.0,Code,cf6c6812dc8f878f79faeb2002aa60202f0dd039e91aa243b0ddd873d4f4030b,20563922208add209a22b11933c224f3aa19fdbdbdcafebac8f604ca0eddcdae,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 7, ""original_snippet_id"": ""111""}",,,7
+rq0_0107,112,Dorn,"		float trialFitness = posFitnesses[solutionPosID];
+
+		if(trialFitness BETTER_THAN fitnesses[solutionPosID])
+		{
+			posBetter = true;
+			bias = 0.2f*bias + 0.4f*(dif+bias);
+		}
+		else
+		{
+			trialFitness = negFitnesses[solutionPosID];
+			if(trialFitness BETTER_THAN fitnesses[solutionPosID])
+			{
+				negBetter = true;
+				bias = bias - 0.4f*(dif+bias);
+			}
+		}
+
+		if(posBetter || negBetter)
+		{
+			successes[solutionPosID]++;
+			fails[solutionPosID] = 0;
+			biases[solutionPosID] = bias;
+			fitnesses[solutionPosID] = trialFitness;
+			
+		}
+		else
+		{
+			successes[solutionPosID] = 0;
+			fails[solutionPosID]++;
+		}
+",3.46399998664856,0.2782772124968096,0.661651162855371,readable,discard,mid,,java,27,3,1.0,5.0,Code,e9272fe2e9ef735a069b4d210abb51dd26f886f27ee04ff88ee1ea580dc8f6d1,d16d6be983d68e8303e72e01cdcb4a918e7939b88e702600f759b3af19f1a02f,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 8, ""original_snippet_id"": ""112""}",,,8
+rq0_0108,115,Dorn,"		    	
+		    	String	temp = """";
+		    	
+		    	for (int i=0;i<library_path.length();i++){
+		    		
+		    		char	c = library_path.charAt(i);
+		    		
+		    		if ( c != '""' ){
+		    			
+		    			temp += c;
+		    			
+		    		}else{
+		    			
+		    			changed	= true;
+		    		}
+		    	}
+		    	
+		    	library_path	= temp;
+		    	
+		    		// remove trailing separator chars if they exist as they stuff up
+		    		// the following ""
+		    	
+		    	while( library_path.endsWith(File.separator)){
+		    	
+		    		changed = true;
+		    		
+		    		library_path = library_path.substring( 0, library_path.length()-1 );
+		    	}
+		    	
+		    	if ( changed ){
+",3.4590163230896,0.2669350349474289,0.6593259526848708,readable,discard,mid,,java,15,3,1.0,5.0,Code,3b9153e5b98b5cf82413e12ea0d6d09b16483b624e208bdddc4203afd4e84252,44e1d36d155f3fb9ec4e725c848ea91385970ba43e36b12074199f6160040a4f,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 9, ""original_snippet_id"": ""115""}",,,9
+rq0_0109,116,Dorn,"		return (Address)message.get(_ADDRESS);
+	}
+
+	public static ClusterLink getClusterLink() {
+		if ((_clusterLink == null) || !_clusterLink.isEnabled()) {
+			if (_log.isWarnEnabled()) {
+				_log.warn(""ClusterLinkUtil has not been initialized"");
+			}
+
+			return null;
+		}
+
+		return _clusterLink;
+	}
+
+	public static List<Address> getLocalTransportAddresses() {
+		if ((_clusterLink == null) || !_clusterLink.isEnabled()) {
+			if (_log.isWarnEnabled()) {
+				_log.warn(""ClusterLinkUtil has not been initialized"");
+			}
+
+			return Collections.emptyList();
+		}
+
+		return _clusterLink.getLocalTransportAddresses();
+	}
+
+	public static List<Address> getTransportAddresses(Priority priority) {
+		if ((_clusterLink == null) || !_clusterLink.isEnabled()) {
+			if (_log.isWarnEnabled()) {
+				_log.warn(""ClusterLinkUtil has not been initialized"");
+			}
+
+			return Collections.emptyList();
+		}
+
+		return _clusterLink.getTransportAddresses(priority);
+	}
+
+	public static boolean isForwardMessage(Message message) {
+		return message.getBoolean(CLUSTER_FORWARD_MESSAGE);
+	}
+
+	public static void sendMulticastMessage(
+		Message message, Priority priority) {
+
+		if ((_clusterLink == null) || !_clusterLink.isEnabled()) {
+			if (_log.isWarnEnabled()) {
+				_log.warn(""ClusterLinkUtil has not been initialized"");
+			}
+",3.4110169410705566,0.15769461237882418,0.6369310518397391,readable,discard,mid,,java,38,13,1.0,5.0,Code,a9266bb27c9f06d168d6fe60eb39d91221be59564a7320c9f1f9efff0adb0e8e,fe348583814ebd156e480cf291fb084ccc972efd8f30a0e1ce3c66724867481e,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 10, ""original_snippet_id"": ""116""}",,,10
+rq0_0110,117,Dorn,"				}
+			}
+		}
+	}
+	
+	protected int
+	isBuddy(
+		Peer		peer )
+	{
+		String	peer_ip = peer.getIp();
+",3.1290323734283447,-0.48406601101501884,0.505366515660935,unreadable,unreadable,low,,java,9,1,1.0,5.0,Code,e7a649ceda02c158fd93f385af8582e30581c429154df7b59f0f4f92ab27bb6c,eb79cd1690a70f17cb7ccc6643c012dd061f7c4b5781efd21c11791ba6b08d9b,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 11, ""original_snippet_id"": ""117""}",,,11
+rq0_0111,118,Dorn,"		Category category );
+		
+  /**
+   * A category has been removed from the CategoryManager
+   * @param category Category that was removed
+   */  
+	public void
+	categoryRemoved(
+		Category category );
+",2.045871496200561,-2.949200914026875,0.0,unreadable,unreadable,low,,java,4,1,1.0,5.0,Code,1b314110ff2b59296acb14d3b67054ce592807c36e9c56c72586fb242fa4a7de,d56b7cec86c72b6d1a3bc3fe51ae3befaabb141e9b3e348abc95e43c20bedf8e,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 12, ""original_snippet_id"": ""118""}",,,12
+rq0_0112,119,Dorn,"
+/**
+ * @author Brian Wing Shun Chan
+ */
+public class PluginUtil {
+
+	public static <P extends Plugin> List<P> restrictPlugins(
+			List<P> plugins, long companyId, long userId)
+		throws SystemException {
+
+		List<P> visiblePlugins = new ArrayList<P>(plugins.size());
+
+		for (P plugin : plugins) {
+			PluginSetting pluginSetting =
+				PluginSettingLocalServiceUtil.getPluginSetting(
+					companyId, plugin.getPluginId(), plugin.getPluginType());
+
+			if (pluginSetting.isActive() &&
+				pluginSetting.hasPermission(userId)) {
+
+				visiblePlugins.add(plugin);
+			}
+		}
+
+		return visiblePlugins;
+	}
+
+	public static <P extends Plugin> List<P> restrictPlugins(
+			List<P> plugins, User user)
+		throws SystemException {
+",3.054621934890747,-0.6534146027559996,0.47064910216942113,unreadable,unreadable,low,,java,19,4,1.0,5.0,Code,38ed6b369458899eef0728eda4e1a73e7b3eae6a8bed76af3540083310465917,943d0c99e54ff8deb223a39f9c400b08e483aef0fdeda57d6fb5626a3a1dcf9f,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 13, ""original_snippet_id"": ""119""}",,,13
+rq0_0113,122,Dorn,"package org.bouncycastle.jce;
+
+import java.util.Enumeration;
+
+import org.bouncycastle.asn1.x9.X962NamedCurves;
+import org.bouncycastle.asn1.x9.X9ECParameters;
+import org.bouncycastle.jce.spec.ECNamedCurveParameterSpec;
+
+/**
+ * a table of locally supported named curves.
+ */
+public class ECNamedCurveTable
+{
+    /**
+     * return a parameter spec representing the passed in named
+     * curve. The routine returns null if the curve is not present.
+     * 
+     * @param name the name of the curve requested
+     * @return a parameter spec for the curve, null if it is not available.
+     */
+    public static ECNamedCurveParameterSpec getParameterSpec(
+        String  name)
+    {
+        X9ECParameters  ecP = X962NamedCurves.getByName(name);
+        if (ecP == null)
+        {
+            return null;
+        }
+
+        return new ECNamedCurveParameterSpec(
+                                        name,
+                                        ecP.getCurve(),
+                                        ecP.getG(),
+                                        ecP.getN(),
+                                        ecP.getH(),
+                                        ecP.getSeed());
+
+    }
+
+    /**
+     * return an enumeration of the names of the available curves.
+     *
+     * @return an enumeration of the names of the available curves.
+     */
+    public static Enumeration getNames()
+    {
+        return X962NamedCurves.getNames();
+    }
+",3.171428680419922,-0.38757746686520655,0.5251472097311095,unreadable,discard,mid,,java,27,3,1.0,5.0,Code,d6686147009e5096c8c83dc145194fb15975731697d64e986dcc68ea118e0dcc,80a87b621657591c0cbbe4526a351715b4bb42f6fdc6560f6a1399e894b66ed3,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 14, ""original_snippet_id"": ""122""}",,,14
+rq0_0114,123,Dorn,"package net.sourceforge.squirrel_sql.client.gui.db;
+
+import javax.swing.JFrame;
+
+import net.sourceforge.squirrel_sql.client.ApplicationArguments;
+import net.sourceforge.squirrel_sql.client.gui.db.aliasproperties.ConnectionPropertiesPanel;
+
+public class ConnectionPropertiesPanelTestUI {
+
+	
+	
+    /**
+     * @param args
+     */
+    public static void main(String[] args) {
+        ApplicationArguments.initialize(new String[] {});
+        
+        
+        final JFrame frame = new JFrame(""Test ConnectionPropertiesPanel"");
+
+        SQLAliasConnectionProperties props = new SQLAliasConnectionProperties();
+        
+        ConnectionPropertiesPanel panel = new ConnectionPropertiesPanel(props);
+        
+        frame.getContentPane().add(panel);
+        frame.setSize(500,300);
+        frame.setVisible(true);
+        
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+",3.935483932495117,1.3513140582244638,0.8816297495195901,readable,readable,high,,java,14,1,1.0,5.0,Code,defca00bc4bbc86f0292caf39cd6ff958b4d09aa9e8c806a2aeb689d5625cad9,a80d93c2154dc1046eb143b61473659b3ff63e74a3be3e875bc9c4ebc0eaff7c,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 15, ""original_snippet_id"": ""123""}",,,15
+rq0_0115,124,Dorn,"				if (selenium.isVisible(
+							""//td[@id='cke_contents__19_editor']/iframe"")) {
+					break;
+				}
+			}
+			catch (Exception e) {
+			}
+
+			Thread.sleep(1000);
+		}
+",3.865079402923584,1.191082400281727,0.8487813587178692,readable,readable,high,,java,9,2,1.0,5.0,Code,d1a21f1b1e711db5a48aff1d6ace7511d2028dba2ac365ca0414128ac7519537,c7e8191eee313287c60360c05ce07f0d2e50d6142ce382b7c460ab47c22a6ac4,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 16, ""original_snippet_id"": ""124""}",,,16
+rq0_0116,125,Dorn,"/**
+ * Copyright (c) 2000-2012 Liferay, Inc. All rights reserved.
+ *
+ * This library is free software; you can redistribute it and/or modify it under
+ * the terms of the GNU Lesser General Public License as published by the Free
+ * Software Foundation; either version 2.1 of the License, or (at your option)
+ * any later version.
+ *
+ * This library is distributed in the hope that it will be useful, but WITHOUT
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more
+ * details.
+ */
+
+package com.liferay.portal.sharepoint.methods;
+
+import com.liferay.portal.sharepoint.ResponseElement;
+import com.liferay.portal.sharepoint.SharepointRequest;
+import com.liferay.portal.sharepoint.SharepointStorage;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * @author Bruno Farache
+ */
+public class UncheckoutDocumentMethodImpl extends BaseMethodImpl {
+
+	public String getMethodName() {
+		return _METHOD_NAME;
+	}
+
+	@Override
+	public String getRootPath(SharepointRequest sharepointRequest) {
+		return sharepointRequest.getParameterValue(""document_name"");
+	}
+
+	@Override
+	protected List<ResponseElement> getElements(
+			SharepointRequest sharepointRequest)
+		throws Exception {
+
+		List<ResponseElement> elements = new ArrayList<ResponseElement>();
+
+		SharepointStorage storage = sharepointRequest.getSharepointStorage();
+
+		elements.add(storage.getDocumentTree(sharepointRequest));
+
+		return elements;
+	}
+",3.011857748031616,-0.7507403941889145,0.4506967676986781,unreadable,unreadable,low,,java,23,3,1.0,5.0,Code,f5ebca4c366a6ce16df88267b7f822a4180eeb094934db84c7d38dde5200d453,989e0433cada4e1cc2f09e97cf20e2f8cdba3103580e11e789569f28a2ef9b45,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 17, ""original_snippet_id"": ""125""}",,,17
+rq0_0117,126,Dorn,"	getLeecherCount();
+	
+		/**
+		 * Gives access to the number of peers that have failed NAT checks, 0 if NAT checking
+		 * is disabled.
+		 * @return
+		 */
+	
+	public int
+	getBadNATCount();
+",3.661157131195069,0.7269815265260033,0.7536380701300651,readable,readable,high,,java,3,1,1.0,5.0,Code,e289f179b2f8afe510060aa5a25eb466064155e37221ddff210fc674f21e117b,9d6cac3ffdde49f38dbaa77982f966b339952121b9a600e28e0b9bdea74216b3,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 18, ""original_snippet_id"": ""126""}",,,18
+rq0_0118,127,Dorn,"			""8"", ""com.liferay.portlet.calendar"",
+			new String[] {""ADD_EVENT"", ""EXPORT_ALL_EVENTS""});
+
+		updatePortletPermissions(
+			""20"", ""com.liferay.portlet.documentlibrary"",
+			new String[] {""ADD_FOLDER""});
+
+		updatePortletPermissions(
+			""31"", ""com.liferay.portlet.imagegallery"",
+			new String[] {""ADD_FOLDER""});
+
+		updatePortletPermissions(
+			""15"", ""com.liferay.portlet.journal"",
+			new String[] {
+				""ADD_ARTICLE"", ""ADD_FEED"", ""ADD_STRUCTURE"", ""ADD_TEMPLATE"",
+				""APPROVE_ARTICLE""
+			});
+
+		updatePortletPermissions(
+			""19"", ""com.liferay.portlet.messageboards"",
+			new String[] {""ADD_CATEGORY"", ""BAN_USER""});
+
+		updatePortletPermissions(
+			""25"", ""com.liferay.portlet.polls"", new String[] {""ADD_QUESTION""});
+
+		updatePortletPermissions(
+			""34"", ""com.liferay.portlet.shopping"",
+			new String[] {""ADD_CATEGORY"", ""MANAGE_COUPONS"", ""MANAGE_ORDERS""});
+
+		updatePortletPermissions(
+			""98"", ""com.liferay.portlet.softwarecatalog"",
+			new String[] {""ADD_FRAMEWORK_VERSION"", ""ADD_PRODUCT_ENTRY""});
+
+		updatePortletPermissions(
+			""99"", ""com.liferay.portlet.tags"",
+			new String[] {""ADD_ENTRY"", ""ADD_VOCABULARY""});
+
+		updatePortletPermissions(
+			""36"", ""com.liferay.portlet.wiki"", new String[] {""ADD_NODE""});
+	}
+
+	protected Object[] getLayout(long plid) throws Exception {
+		Connection con = null;
+		PreparedStatement ps = null;
+		ResultSet rs = null;
+
+		try {
+			con = DataAccess.getConnection();
+
+			ps = con.prepareStatement(_GET_LAYOUT);
+",3.475806474685669,0.30514726140104875,0.6671596739611054,readable,discard,mid,,java,38,1,1.0,5.0,Code,3093c63d294075345fe8b7f0b75b5ed078f49f921c28d38b1eba84181e4e9e67,0414aea5ff48b2d25e87edb409f876b175bda798edf7a38d0d228ac229643d23,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 19, ""original_snippet_id"": ""127""}",,,19
+rq0_0119,128,Dorn,"package net.sourceforge.squirrel_sql.plugins.graph;
+
+import java.awt.*;
+
+public class ConnectionPoints
+{
+   Point[] points;
+   boolean pointsAreLeftOfWindow;
+
+",3.121951103210449,-0.5001820716471844,0.5020626326166817,unreadable,unreadable,low,,java,6,1,1.0,5.0,Code,1d05b16cb876d067e549baaaacadc5ac8153b54df4aaabb8c3850ae9e00edd9a,9916b13d0ad7d279a381255c3d97f17a74f1a5992fd799e971efa7e9e52d89c4,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 20, ""original_snippet_id"": ""128""}",,,20
+rq0_0120,129,Dorn,"						""_2_announcementsTypetestEmailCheckbox"");
+
+				if (testEmailChecked) {
+					label = 6;
+
+					continue;
+				}
+
+				selenium.clickAt(""_2_announcementsTypetestEmailCheckbox"",
+					RuntimeVariables.replace(""""));
+",4.1479997634887695,1.8349727680606498,0.9807825044703811,readable,readable,high,,java,7,1,1.0,5.0,Code,d71c331f1c2b92c65c4bf01da77f63713c44c96dc5e33a8e67d898df1de24c9a,7ba438e418baaafce87576b8abc30be008392106d99c1d311a560e231d818cb8,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 21, ""original_snippet_id"": ""129""}",,,21
+rq0_0121,130,Dorn,"	public void setCompanyId(long companyId);
+
+	/**
+	 * Returns the user ID of this meetups registration.
+	 *
+	 * @return the user ID of this meetups registration
+	 */
+	public long getUserId();
+
+	/**
+	 * Sets the user ID of this meetups registration.
+	 *
+	 * @param userId the user ID of this meetups registration
+	 */
+	public void setUserId(long userId);
+
+	/**
+	 * Returns the user uuid of this meetups registration.
+	 *
+	 * @return the user uuid of this meetups registration
+	 * @throws SystemException if a system exception occurred
+	 */
+	public String getUserUuid() throws SystemException;
+
+	/**
+	 * Sets the user uuid of this meetups registration.
+	 *
+	 * @param userUuid the user uuid of this meetups registration
+	 */
+	public void setUserUuid(String userUuid);
+",3.1875,-0.3510012096653474,0.532645548111872,unreadable,discard,mid,,java,5,1,1.0,5.0,Code,90a616891d0bd5148bb5f66fdc383cf5840d312583c3475724d5ae54bbc62468,b5248882c2f876b6501a7924acfbd9a4d0a95d54fc304dbbf7990ef20ebc8e6d,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 22, ""original_snippet_id"": ""130""}",,,22
+rq0_0122,131,Dorn,"		if (name == null) {
+			throw new IllegalArgumentException();
+		}
+
+		_events.add(new EventImpl(name.getLocalPart(), name, value));
+	}
+
+	public void setEvent(String name, Serializable value) {
+		if (name == null) {
+			throw new IllegalArgumentException();
+		}
+
+		setEvent(new QName(getDefaultNamespace(), name), value);
+	}
+
+	public void setPortletMode(PortletMode portletMode)
+		throws PortletModeException {
+
+		if (_redirectLocation != null) {
+			throw new IllegalStateException();
+		}
+
+		if (!_portletRequestImpl.isPortletModeAllowed(portletMode)) {
+			throw new PortletModeException(portletMode.toString(), portletMode);
+		}
+
+		try {
+			_portletMode = PortalUtil.updatePortletMode(
+				_portletName, _user, _layout, portletMode,
+				_portletRequestImpl.getHttpServletRequest());
+",4.171875,1.889309736906987,0.9919218886005964,readable,readable,high,,java,23,3,1.0,5.0,Code,c2e02f24cce19d6b9737310de2c49e053d74416e0304b13e9e95d1626b21b470,e6e1fa9b0b371c1f5492f5704e2d737585004a811d5e7c4139e5a4b99195a2de,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 23, ""original_snippet_id"": ""131""}",,,23
+rq0_0123,132,Dorn,"			_instance._disconnect();
+		}
+	}
+
+	public static void send(String to, String msg) {
+		_instance._send(to, msg);
+	}
+
+	public void update(Observable obs, Object obj) {
+		_connecting = false;
+",3.251908302307129,-0.20441619408815273,0.5626963004986246,unreadable,discard,mid,,java,8,1,1.0,5.0,Code,509583c73503a19ad7094cb48a43d4a2c92d81fcbb9f5421be2673e42e9c1b79,c0523827b14511017ad0a8ca9e9ff8686b610a5bbf93605ee007ee0f0a1f7374,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 24, ""original_snippet_id"": ""132""}",,,24
+rq0_0124,133,Dorn,"				WorkflowConstants.CONTEXT_ENTRY_CLASS_NAME));
+
+		if (workflowContext.containsKey(
+				WorkflowConstants.CONTEXT_ENTRY_CLASS_PK)) {
+
+			kaleoInstanceToken.setClassPK(
+				GetterUtil.getLong(
+					(String)workflowContext.get(
+						WorkflowConstants.CONTEXT_ENTRY_CLASS_PK)));
+		}
+",3.705660343170166,0.8282651155499416,0.7744017753602026,readable,readable,high,,java,8,1,1.0,5.0,Code,e58987f58ad56bf7120f22c83bcfdda6084f82b78abc301b5bd9594f1573d4c1,a0e20d6735224a1c72c39b709a6d44a2ab48d45b8335a18fc2aed0de79e33e52,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 25, ""original_snippet_id"": ""133""}",,,25
+rq0_0125,134,Dorn,"/**
+ * Copyright (c) 2000-2012 Liferay, Inc. All rights reserved.
+ *
+ * This library is free software; you can redistribute it and/or modify it under
+ * the terms of the GNU Lesser General Public License as published by the Free
+ * Software Foundation; either version 2.1 of the License, or (at your option)
+ * any later version.
+ *
+ * This library is distributed in the hope that it will be useful, but WITHOUT
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more
+ * details.
+ */
+
+package com.liferay.portal.workflow.kaleo.runtime.util;
+
+import com.liferay.portal.kernel.json.JSONFactoryUtil;
+import com.liferay.portal.kernel.json.JSONObject;
+import com.liferay.portal.service.ServiceContext;
+import com.liferay.portal.workflow.kaleo.model.KaleoInstanceToken;
+import com.liferay.portal.workflow.kaleo.model.KaleoTaskInstanceToken;
+import com.liferay.portal.workflow.kaleo.runtime.ExecutionContext;
+import com.liferay.portal.workflow.kaleo.service.KaleoInstanceTokenLocalServiceUtil;
+import com.liferay.portal.workflow.kaleo.service.KaleoTaskInstanceTokenLocalServiceUtil;
+import com.liferay.portal.workflow.kaleo.util.WorkflowContextUtil;
+
+import java.io.Serializable;
+
+import java.util.Map;
+",2.7649402618408203,-1.3126928485009026,0.3354933549135263,unreadable,unreadable,low,,java,12,1,1.0,5.0,Code,da9ab4d263f7bac46530e1ee1a66ba3eb52a3fff64d24f8bd5c2c4d2018091c5,428961cc32df246f61f9b4f9dc646f123a66740e269ba92a970d551b22baf477,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 26, ""original_snippet_id"": ""134""}",,,26
+rq0_0126,135,Dorn,"
+		long fileEntryTypeId = ParamUtil.getLong(
+			serviceContext, ""fileEntryTypeId"", -1L);
+		Map<String, Fields> fieldsMap = getFieldsMap(
+			serviceContext, fileEntryTypeId);
+
+		DLFileEntry dlFileEntry = dlFileEntryLocalService.updateFileEntry(
+			userId, fileEntryId, sourceFileName, mimeType, title, description,
+			changeLog, majorVersion, fileEntryTypeId, fieldsMap, null, is, size,
+			serviceContext);
+",3.8793773651123047,1.2236227240456061,0.855452308051692,readable,readable,high,,java,8,1,1.0,5.0,Code,3e484005b0c3bd48a56c26beb6ddfbfffef786665bae2192db9e9b9b02403201,47be8f9b02c9f6e3f84494ef57caaa05ec5633b006ea28f4f165a47ce866db48,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 27, ""original_snippet_id"": ""135""}",,,27
+rq0_0127,136,Dorn,"	 */
+	public UserFinder getUserFinder() {
+		return userFinder;
+	}
+
+	/**
+	 * Sets the user finder.
+	 *
+	 * @param userFinder the user finder
+	 */
+	public void setUserFinder(UserFinder userFinder) {
+		this.userFinder = userFinder;
+	}
+
+	/**
+	 * Returns the asset entry local service.
+	 *
+	 * @return the asset entry local service
+	 */
+	public AssetEntryLocalService getAssetEntryLocalService() {
+		return assetEntryLocalService;
+	}
+
+	/**
+	 * Sets the asset entry local service.
+	 *
+	 * @param assetEntryLocalService the asset entry local service
+	 */
+	public void setAssetEntryLocalService(
+		AssetEntryLocalService assetEntryLocalService) {
+		this.assetEntryLocalService = assetEntryLocalService;
+	}
+
+	/**
+	 * Returns the asset entry remote service.
+	 *
+	 * @return the asset entry remote service
+	 */
+	public AssetEntryService getAssetEntryService() {
+		return assetEntryService;
+	}
+
+	/**
+	 * Sets the asset entry remote service.
+	 *
+	 * @param assetEntryService the asset entry remote service
+	 */
+	public void setAssetEntryService(AssetEntryService assetEntryService) {
+		this.assetEntryService = assetEntryService;
+	}
+",2.878048896789551,-1.0552721368539235,0.3882660481827864,unreadable,unreadable,low,,java,19,6,1.0,5.0,Code,f612275f1b4f9cd0a8ec1d39acc21af226507bec195cbedd21d1aebfe072b45c,a503df195bc776cc03fa62b02b3d62ff08fb20240f73552c5e5260ee7d5e61f0,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 28, ""original_snippet_id"": ""136""}",,,28
+rq0_0128,137,Dorn,"public abstract class AliasAction extends SquirrelAction
+{
+   /** Logger for this class. */
+   private static ILogger s_log =
+      LoggerController.createLogger(DeleteAliasAction.class);
+   /** Internationalized strings for this class. */
+   private static final StringManager s_stringMgr =
+       StringManagerFactory.getStringManager(DeleteAliasAction.class);
+
+   public AliasAction(IApplication app)
+   {
+      super(app);
+   }
+
+   protected void moveToFrontAndSelectAliasFrame()
+   {
+      IApplication app = getApplication();
+      AliasesListInternalFrame tw = app.getWindowManager().getAliasesListInternalFrame();
+      tw.moveToFront();
+      try
+      {
+         tw.setSelected(true);
+      }
+      catch (PropertyVetoException ex)
+      {
+            //i18n[DeleteAliasAction.error.selectingwindow=Error selecting window]
+         s_log.error(s_stringMgr.getString(""DeleteAliasAction.error.selectingwindow""), ex);
+      }
+   }
+",4.127572059631348,1.7884819403119563,0.9712516233811375,readable,readable,high,,java,24,3,1.0,5.0,Code,647de0ff21ad7c00f377c012ec19eca638d8afe6b589d7ab9f72d70ced3828a1,fd9113b72a2c7da6b81f2c375c1608827b2f4abfbb710b2efcc90ec177bdb267,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 29, ""original_snippet_id"": ""137""}",,,29
+rq0_0129,138,Dorn,"		DownloadListener	l )
+	{
+	}
+
+	public void 
+	addCompletionListener(
+		DownloadCompletionListener l ) 
+	{
+		notSupported();
+	}
+	
+	public void 
+	removeCompletionListener(
+		DownloadCompletionListener l ) 
+	{
+		notSupported();
+	}
+	
+	public void
+	addTrackerListener(
+		DownloadTrackerListener	l )
+	{
+	}
+
+	public void 
+	addTrackerListener(
+		DownloadTrackerListener l, 
+		boolean immediateTrigger)
+	{
+	}
+  
+	public void
+	removeTrackerListener(
+		DownloadTrackerListener	l )
+	{
+	}
+
+	public void
+	addDownloadWillBeRemovedListener(
+		DownloadWillBeRemovedListener	l )
+	{
+		notSupported();
+	}
+
+	public void
+	removeDownloadWillBeRemovedListener(
+		DownloadWillBeRemovedListener	l )
+	{
+		notSupported();
+	}
+",3.401639461517334,0.13635267450520594,0.6325558345778095,readable,discard,mid,,java,43,7,1.0,5.0,Code,38da1038462fb2fabfffed5ded590a800f413c1390a9e9c7241e84e6a67ded42,ff8c81d8d08445e5f2446da08bc9ef9eef8bfe6d1132d561687e2d2197c4e4c1,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 30, ""original_snippet_id"": ""138""}",,,30
+rq0_0130,139,Dorn," */
+public class AuthTokenWrapper implements AuthToken {
+
+	public AuthTokenWrapper(AuthToken authToken) {
+		_authToken = authToken;
+		_originalAuthToken = authToken;
+	}
+
+	public void check(HttpServletRequest request) throws PortalException {
+		_authToken.check(request);
+	}
+
+	public String getToken(HttpServletRequest request) {
+		return _authToken.getToken(request);
+	}
+
+	public String getToken(
+		HttpServletRequest request, long plid, String portletId) {
+
+		return _authToken.getToken(request, plid, portletId);
+	}
+
+	public void setAuthToken(AuthToken authToken) {
+		if (authToken == null) {
+			_authToken = _originalAuthToken;
+		}
+		else {
+			_authToken = authToken;
+		}
+	}
+",3.07112979888916,-0.6158448265831262,0.4783511175258419,unreadable,unreadable,low,,java,23,6,1.0,5.0,Code,6c78048fe631fe743f3503ae1b8b5df6691e1cda321d696f659dd39e537e85ae,c0f962563e2518b6362e9efc5b321bdd56375161dad02d1516d50568e214ce73,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 31, ""original_snippet_id"": ""139""}",,,31
+rq0_0131,140,Dorn,"		}
+		catch (Exception e) {
+			_log.error(e, e);
+
+			throw new RemoteException(e.getMessage());
+		}
+	}
+
+	public static void testCounterIncrement_Rollback()
+		throws RemoteException {
+		try {
+			PortalServiceUtil.testCounterIncrement_Rollback();
+		}
+		catch (Exception e) {
+			_log.error(e, e);
+
+			throw new RemoteException(e.getMessage());
+		}
+	}
+
+	public static void testDeleteClassName() throws RemoteException {
+		try {
+			PortalServiceUtil.testDeleteClassName();
+		}
+		catch (Exception e) {
+			_log.error(e, e);
+
+			throw new RemoteException(e.getMessage());
+		}
+	}
+",3.5742971897125244,0.5292994666179637,0.7131121363556725,readable,readable,high,,java,25,5,1.0,5.0,Code,b1430a675a7b94ca771a913eb8c2ad31c991730c0035f38dcce8288c7114fc30,2173081151e7f1e28de3ad8358798d93c5386bfaa53ec96a229842570b24bfda,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 32, ""original_snippet_id"": ""140""}",,,32
+rq0_0132,141,Dorn,"	public long getClassPK();
+
+	/**
+	 * Sets the class p k of this expando row.
+	 *
+	 * @param classPK the class p k of this expando row
+	 */
+	public void setClassPK(long classPK);
+
+	public boolean isNew();
+",3.207792282104492,-0.3048185844162018,0.5421132459557995,unreadable,discard,mid,,java,3,1,1.0,5.0,Code,7557b74c55ed28475bdef1ecc2e9327828c7db60f2fbc72dca8ce39abb67c896,2319512fec758525492e2cbabc56a0778293e64989d0d0ba01cf72b215ddd5a7,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 33, ""original_snippet_id"": ""141""}",,,33
+rq0_0133,142,Dorn,"
+		Date createDate = getCreateDate();
+
+		if (createDate != null) {
+			passwordPolicyCacheModel.createDate = createDate.getTime();
+		}
+		else {
+			passwordPolicyCacheModel.createDate = Long.MIN_VALUE;
+		}
+
+		Date modifiedDate = getModifiedDate();
+
+		if (modifiedDate != null) {
+			passwordPolicyCacheModel.modifiedDate = modifiedDate.getTime();
+		}
+		else {
+			passwordPolicyCacheModel.modifiedDate = Long.MIN_VALUE;
+		}
+
+		passwordPolicyCacheModel.defaultPolicy = getDefaultPolicy();
+
+		passwordPolicyCacheModel.name = getName();
+
+		String name = passwordPolicyCacheModel.name;
+
+		if ((name != null) && (name.length() == 0)) {
+			passwordPolicyCacheModel.name = null;
+		}
+
+		passwordPolicyCacheModel.description = getDescription();
+",3.5319149494171143,0.43284293646018185,0.693338005333867,readable,discard,mid,,java,21,3,1.0,5.0,Code,31d6c1488956915ee5ccf6aedab9cd7c658b5eecc58e55cd359c5380ed4c0e2e,134d44e9d7510000439a80574b95a828d6503095d48ccf01bf2fc408af81d21c,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 34, ""original_snippet_id"": ""142""}",,,34
+rq0_0134,143,Dorn,"				if (selenium.isVisible(
+							""link=Web Content Display Permissions Page"")) {
+					break;
+				}
+			}
+			catch (Exception e) {
+			}
+
+			Thread.sleep(1000);
+		}
+",3.3836207389831543,0.09534437854424355,0.624148903331303,readable,discard,mid,,java,9,2,1.0,5.0,Code,3acf26668f001bf25b677b0fb68a554d0da7fe97ed521020ac6e2203c7492e44,ca3dfd3cf1d96b8d559fe7b9c5e87365f21f48ef9af5222eabc397043c46e19e,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 35, ""original_snippet_id"": ""143""}",,,35
+rq0_0135,144,Dorn,"		throws com.liferay.portal.kernel.exception.PortalException,
+			com.liferay.portal.kernel.exception.SystemException;
+
+	public void deleteEntry(long entryId)
+		throws com.liferay.portal.kernel.exception.PortalException,
+			com.liferay.portal.kernel.exception.SystemException;
+
+	@Transactional(propagation = Propagation.SUPPORTS, readOnly = true)
+	public java.util.List<com.liferay.portlet.bookmarks.model.BookmarksEntry> getEntries(
+		long groupId, long folderId, int start, int end)
+		throws com.liferay.portal.kernel.exception.SystemException;
+
+	@Transactional(propagation = Propagation.SUPPORTS, readOnly = true)
+	public java.util.List<com.liferay.portlet.bookmarks.model.BookmarksEntry> getEntries(
+		long groupId, long folderId, int start, int end,
+		com.liferay.portal.kernel.util.OrderByComparator orderByComparator)
+		throws com.liferay.portal.kernel.exception.SystemException;
+
+	@Transactional(propagation = Propagation.SUPPORTS, readOnly = true)
+	public int getEntriesCount(long groupId, long folderId)
+		throws com.liferay.portal.kernel.exception.SystemException;
+
+	@Transactional(propagation = Propagation.SUPPORTS, readOnly = true)
+	public com.liferay.portlet.bookmarks.model.BookmarksEntry getEntry(
+		long entryId)
+		throws com.liferay.portal.kernel.exception.PortalException,
+			com.liferay.portal.kernel.exception.SystemException;
+
+	@Transactional(propagation = Propagation.SUPPORTS, readOnly = true)
+	public int getFoldersEntriesCount(long groupId,
+		java.util.List<java.lang.Long> folderIds)
+		throws com.liferay.portal.kernel.exception.SystemException;
+
+	@Transactional(propagation = Propagation.SUPPORTS, readOnly = true)
+	public java.util.List<com.liferay.portlet.bookmarks.model.BookmarksEntry> getGroupEntries(
+		long groupId, int start, int end)
+		throws com.liferay.portal.kernel.exception.SystemException;
+
+	@Transactional(propagation = Propagation.SUPPORTS, readOnly = true)
+	public java.util.List<com.liferay.portlet.bookmarks.model.BookmarksEntry> getGroupEntries(
+		long groupId, long userId, int start, int end)
+		throws com.liferay.portal.kernel.exception.SystemException;
+
+	@Transactional(propagation = Propagation.SUPPORTS, readOnly = true)
+	public int getGroupEntriesCount(long groupId)
+		throws com.liferay.portal.kernel.exception.SystemException;
+
+	@Transactional(propagation = Propagation.SUPPORTS, readOnly = true)
+	public int getGroupEntriesCount(long groupId, long userId)
+		throws com.liferay.portal.kernel.exception.SystemException;
+",2.778260946273804,-1.2823766832680905,0.34170833924285804,unreadable,unreadable,low,,java,40,1,1.0,5.0,Code,4579873ce74a728c8e3251d322a6017a48ced423576b028bb78d6f6080369783,f3584c46a4c0bdcba17e7da5c4f40677ef6aa707f41773e41c0363150f5e3568,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 36, ""original_snippet_id"": ""144""}",,,36
+rq0_0136,147,Dorn,"public class PluginGlobalPreferencesTab implements IGlobalPreferencesPanel {
+
+    protected PluginQueryTokenizerPreferencesPanel _prefs = null;
+
+    private JScrollPane _myscrolledPanel;
+
+    private String _title = null;
+    
+    private String _hint = null;
+    
+    public PluginGlobalPreferencesTab(PluginQueryTokenizerPreferencesPanel prefsPanel) {
+        _myscrolledPanel = new JScrollPane(prefsPanel);
+        _prefs = prefsPanel;
+    }
+
+    public void initialize(IApplication app) {
+        /* Do Nothing */
+    }
+
+    public void uninitialize(IApplication app) {
+        /* Do Nothing */
+    }
+
+    public void applyChanges() {
+        if (_prefs != null) {
+            _prefs.applyChanges();
+        }
+    }
+
+    /*
+     * (non-Javadoc)
+     * 
+     * @see net.sourceforge.squirrel_sql.client.util.IOptionPanel#getTitle()
+     */
+    public String getTitle() {
+        return _title;
+    }
+
+    public void setTitle(String title) {
+        this._title = title;
+    }
+    
+    /*
+     * (non-Javadoc)
+     * 
+     * @see net.sourceforge.squirrel_sql.client.util.IOptionPanel#getHint()
+     */
+    public String getHint() {
+        return _hint;
+    }
+",3.439655065536499,0.22287130188267354,0.650292639652492,readable,discard,mid,,java,27,8,1.0,5.0,Code,0528305782d2e5e2ab82d50b6458e1b812009b480b40eef62b732e66ed09736e,225980f16e6647b6644859d1b6b625533203a4074c213d68c4a648c6139e9c45,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 37, ""original_snippet_id"": ""147""}",,,37
+rq0_0137,148,Dorn,"			layoutRevision.setCreateDate(serviceContext.getCreateDate(now));
+			layoutRevision.setModifiedDate(serviceContext.getModifiedDate(now));
+			layoutRevision.setLayoutSetBranchId(
+				oldLayoutRevision.getLayoutSetBranchId());
+			layoutRevision.setParentLayoutRevisionId(
+				oldLayoutRevision.getLayoutRevisionId());
+			layoutRevision.setHead(false);
+			layoutRevision.setLayoutBranchId(layoutBranchId);
+			layoutRevision.setPlid(oldLayoutRevision.getPlid());
+			layoutRevision.setPrivateLayout(
+				oldLayoutRevision.isPrivateLayout());
+			layoutRevision.setName(name);
+			layoutRevision.setTitle(title);
+			layoutRevision.setDescription(description);
+			layoutRevision.setKeywords(keywords);
+			layoutRevision.setRobots(robots);
+			layoutRevision.setTypeSettings(typeSettings);
+
+			if (iconImage) {
+				layoutRevision.setIconImage(iconImage);
+				layoutRevision.setIconImageId(iconImageId);
+			}
+
+			layoutRevision.setThemeId(themeId);
+			layoutRevision.setColorSchemeId(colorSchemeId);
+			layoutRevision.setWapThemeId(wapThemeId);
+			layoutRevision.setWapColorSchemeId(wapColorSchemeId);
+			layoutRevision.setCss(css);
+			layoutRevision.setStatus(WorkflowConstants.STATUS_DRAFT);
+			layoutRevision.setStatusDate(serviceContext.getModifiedDate(now));
+",3.65350866317749,0.7095745966219621,0.750069551626996,readable,readable,high,,java,28,1,1.0,5.0,Code,23d8f3336a373a882302e2eb2d32c9d76e6cce13c88f0a59e2650d82ff1df8b3,e45c55e1d70b360fcbf295230e42c0cd298e1cb48e8b73363a75c5aa0e403560,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 38, ""original_snippet_id"": ""148""}",,,38
+rq0_0138,149,Dorn,"				selenium.clickAt(""link=Search All Users"",
+					RuntimeVariables.replace(""Search All Users""));
+				selenium.waitForPageToLoad(""30000"");
+				loadRequiredJavaScriptModules();
+
+				boolean advancedVisible = selenium.isVisible(
+						""link=Advanced \u00bb"");
+
+				if (!advancedVisible) {
+					label = 3;
+",2.4827585220336914,-1.954902210393207,0.20383682481944673,unreadable,unreadable,low,,java,8,1,1.0,5.0,Code,bcea06b20ea09ff0beff46931bd4162dabbc4e0216b64dec089b1d71d1bcd616,a1481ac49c9d77e4718cc2373189ae3ce148537c1a7dfe1bfc5d2a5ba788cad9,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 39, ""original_snippet_id"": ""149""}",,,39
+rq0_0139,150,Dorn,"		return _dataType;
+	}
+
+	public int getPrecision()
+	{
+		return _precision;
+	}
+
+	public String getLiteralPrefix()
+	{
+		return _literalPrefix;
+	}
+
+	public String getLiteralSuffix()
+	{
+		return _literalSuffix;
+	}
+
+	public String getCreateParams()
+	{
+		return _createParams;
+	}
+
+    /**
+     * @see java.lang.Object#hashCode()
+     */
+    @Override
+    public int hashCode() {
+        final int prime = 31;
+        int result = super.hashCode();
+        result = prime * result + (_autoIncrement ? 1231 : 1237);
+        return result;
+    }
+
+    /**
+     * @see java.lang.Object#equals(java.lang.Object)
+     */
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (!super.equals(obj))
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        final DataTypeInfo other = (DataTypeInfo) obj;
+        if (!getSimpleName().equals(other.getSimpleName()))
+            return false;
+        return true;
+    }
+",3.101214647293091,-0.5473755793904456,0.4923876981776416,unreadable,unreadable,low,,java,38,11,1.0,5.0,Code,e520300f02799f53a488e24ddb49166cab64c24d087dec94ac43b5f5ff3b3a39,c35ec328e2413cc00a423c835bfc0d2dc61618bc98b2f066e2ce8cadf9992c24,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 40, ""original_snippet_id"": ""150""}",,,40
+rq0_0140,151,Dorn,"
+package org.gudy.azureus2.pluginsimpl.local.update;
+
+/**
+ * @author parg
+ *
+ */
+
+import java.io.*;
+
+import org.gudy.azureus2.platform.PlatformManager;
+import org.gudy.azureus2.platform.PlatformManagerCapabilities;
+import org.gudy.azureus2.platform.PlatformManagerFactory;
+import org.gudy.azureus2.plugins.update.*;
+
+import org.gudy.azureus2.core3.util.*;
+import org.gudy.azureus2.core3.internat.MessageText;
+import org.gudy.azureus2.core3.logging.*;
+
+import com.aelitis.azureus.core.update.AzureusRestarter;
+import com.aelitis.azureus.core.update.AzureusRestarterFactory;
+
+public class 
+UpdateInstallerImpl
+	implements UpdateInstaller
+{
+		// change these and you'll need to change the Updater!!!!
+	
+	protected static final String	UPDATE_DIR 	= ""updates"";
+	protected static final String	ACTIONS		= ""install.act"";
+	
+	protected static AEMonitor	class_mon 	= new AEMonitor( ""UpdateInstaller:class"" );
+
+	private UpdateManagerImpl	manager;
+	private File				install_dir;
+	
+	protected static void
+	checkForFailedInstalls(
+		UpdateManagerImpl	manager )
+	{
+		try{
+			File	update_dir = new File( manager.getUserDir() + File.separator + UPDATE_DIR );
+			
+			File[]	dirs = update_dir.listFiles();
+			
+			if ( dirs != null ){
+				
+				boolean	found_failure = false;
+				
+				String	files = """";
+",3.6064257621765137,0.6024199670256514,0.7281022500688283,readable,readable,high,,java,30,1,1.0,5.0,Code,50c4d82e8d268cb9104d95c3bcb22aff4977b451e82949c333fd1dda3d7de0f3,d5984607d31ff8694b8722fde6cbae01010e103bdf209267d2748f7f677fb6f8,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 41, ""original_snippet_id"": ""151""}",,,41
+rq0_0141,153,Dorn,"		throws PortalException, SystemException {
+
+		for (PollsQuestion question :
+				pollsQuestionPersistence.findByGroupId(groupId)) {
+
+			deleteQuestion(question);
+		}
+	}
+
+	public PollsQuestion getQuestion(long questionId)
+		throws PortalException, SystemException {
+
+		return pollsQuestionPersistence.findByPrimaryKey(questionId);
+	}
+
+	public List<PollsQuestion> getQuestions(long groupId)
+		throws SystemException {
+
+		return pollsQuestionPersistence.findByGroupId(groupId);
+	}
+
+	public List<PollsQuestion> getQuestions(long groupId, int start, int end)
+		throws SystemException {
+
+		return pollsQuestionPersistence.findByGroupId(groupId, start, end);
+	}
+
+	public int getQuestionsCount(long groupId) throws SystemException {
+		return pollsQuestionPersistence.countByGroupId(groupId);
+	}
+",2.2674896717071533,-2.444826438296785,0.1033996034361453,unreadable,unreadable,low,,java,21,5,1.0,5.0,Code,c6c1659a21003184e660ce59683462dc42b8a04464a84e451c57e590eeeffbd5,e99b05a74e41cb096ed0479dd06ccd1ad871353c15da1ac19de31c9edb1470cf,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 42, ""original_snippet_id"": ""153""}",,,42
+rq0_0142,154,Dorn,"	public String get(Object key) {
+		String value = null;
+
+		if (key != null) {
+			FacesContext facesContext = FacesContext.getCurrentInstance();
+
+			Locale locale = facesContext.getViewRoot().getLocale();
+
+			if (locale == null) {
+				locale = facesContext.getApplication().getDefaultLocale();
+			}
+
+			value = LanguageUtil.get(locale, key.toString());
+
+			if (_log.isDebugEnabled()) {
+				_log.debug(
+					""{locale="" + locale + "", key="" + key + "", value="" + value);
+			}
+		}
+
+		return value;
+	}
+
+	public boolean isEmpty() {
+		throw new UnsupportedOperationException();
+	}
+
+	public Set<String> keySet() {
+		throw new UnsupportedOperationException();
+	}
+",3.3958332538604736,0.12313849233709281,0.6298468529348783,readable,discard,mid,,java,22,6,1.0,5.0,Code,f1fb9811676c6acd2d1a36278e0c60738d902aa2ff432784e133b06cc5fcd931,f3383ffc6aefd7ddcf78ef0d5d5d8d343d779ddc35ea5b760ac21846ae4eb6d5,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 43, ""original_snippet_id"": ""154""}",,,43
+rq0_0143,155,Dorn,"		testSuite.addTestSuite(AddPortletMBTest.class);
+		testSuite.addTestSuite(AddMBCategoryTest.class);
+		testSuite.addTestSuite(AddMBMessage1Tag1Test.class);
+		testSuite.addTestSuite(AddMBMessage2Tag2Test.class);
+		testSuite.addTestSuite(AddMBMessage3Tag3Test.class);
+		testSuite.addTestSuite(AddMBMessageATagTest.class);
+		testSuite.addTestSuite(AddMBMessageBTagTest.class);
+		testSuite.addTestSuite(AddMBMessageCTagTest.class);
+		testSuite.addTestSuite(SearchTagsTest.class);
+		testSuite.addTestSuite(ViewTagsTest.class);
+",3.543209791183472,0.45854854423056807,0.698607799459939,readable,discard,mid,,java,10,1,1.0,5.0,Code,8aa5deb2cb067764164f088b4987b6eab7d61f1bcf93696fc4304286cb3c1438,554177b6762690ba70a914377242488e2ddeb299a4c20a6c6abb75cdf8af69b7,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 44, ""original_snippet_id"": ""155""}",,,44
+rq0_0144,156,Dorn,"		throws InstanceNotFoundException, MBeanRegistrationException {
+
+		synchronized (_objectNameCache) {
+			ObjectName objectName = _objectNameCache.get(objectNameCacheKey);
+
+			if (objectName == null) {
+				_mBeanServer.unregisterMBean(defaultObjectName);
+			}
+			else {
+				_objectNameCache.remove(objectNameCacheKey);
+",3.531496047973633,0.4318895706297144,0.6931425599781971,readable,discard,mid,,java,8,1,1.0,5.0,Code,e92da8c2e0d5ca7c74f367cf56711e20a66e9680fdeba311fdaa99249754ea4d,d314eb90d867d7e86b2e2df7b4d502a781fd091a6206dbac5fd1e52b4e0feb01,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 45, ""original_snippet_id"": ""156""}",,,45
+rq0_0145,158,Dorn,"	
+	public long
+	getInterval();
+	
+	public long
+	getMinInterval();
+	
+	public int
+	getTimeUntilNextUpdate();
+",2.6763484477996826,-1.5143164276989332,0.29415938752297766,unreadable,unreadable,low,,java,6,1,1.0,5.0,Code,9e7d43793767f018ab75b059e3f0500225b9bf5bf5d01a37dad57b4137446c6f,6be43b28b340d26be1c140570ffd9015d2d7fd37b3df46891a69afca2d956c3a,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 46, ""original_snippet_id"": ""158""}",,,46
+rq0_0146,160,Dorn,"/**
+ * Created on Sep 19, 2008
+ *
+ * Copyright 2008 Vuze, Inc.  All rights reserved.
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; version 2 of the License only.
+ * 
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA 
+ */
+ 
+package org.gudy.azureus2.plugins.download;
+
+/**
+ * For registering columns, menus, etc with a datasource
+ * @author TuxPaper
+ * @created Sep 19, 2008
+ *
+ */
+public interface DownloadTypeIncomplete
+{
+
+",3.686991930007935,0.7857782072451989,0.7656917202695299,readable,readable,high,,java,3,1,1.0,5.0,Code,81ea54f2185a71eafbfa178eb20e06d599d0e800f6cc6bf02cd3f9ebb8be03a4,55d9544ab9c44b31a195d7a792dd89400aca408279e3f3b276e132892edaa38a,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 47, ""original_snippet_id"": ""160""}",,,47
+rq0_0147,161,Dorn,"
+	/**
+	 * Sets the org group permission finder.
+	 *
+	 * @param orgGroupPermissionFinder the org group permission finder
+	 */
+	public void setOrgGroupPermissionFinder(
+		OrgGroupPermissionFinder orgGroupPermissionFinder) {
+		this.orgGroupPermissionFinder = orgGroupPermissionFinder;
+	}
+",3.934426307678223,1.348907040111799,0.8811362972727196,readable,readable,high,,java,4,1,1.0,5.0,Code,d47f12d02c2faad51f6b266b6523fa1928fefa0f4122bcb4fd2d486623251097,9446a12687e6e6390df910dd2b9ed3e76626f48c8ac597fef7545c4828946aee,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 48, ""original_snippet_id"": ""161""}",,,48
+rq0_0148,162,Dorn,"		com.liferay.portal.service.ServiceContext serviceContext)
+		throws com.liferay.portal.kernel.exception.PortalException,
+			com.liferay.portal.kernel.exception.SystemException {
+		try {
+			MethodKey methodKey = new MethodKey(LayoutSetPrototypeServiceUtil.class.getName(),
+					""updateLayoutSetPrototype"",
+					_updateLayoutSetPrototypeParameterTypes4);
+
+			MethodHandler methodHandler = new MethodHandler(methodKey,
+					layoutSetPrototypeId, nameMap, description, active,
+					layoutsUpdateable, serviceContext);
+
+			Object returnObj = null;
+
+			try {
+				returnObj = TunnelUtil.invoke(httpPrincipal, methodHandler);
+			}
+			catch (Exception e) {
+				if (e instanceof com.liferay.portal.kernel.exception.PortalException) {
+					throw (com.liferay.portal.kernel.exception.PortalException)e;
+				}
+
+				if (e instanceof com.liferay.portal.kernel.exception.SystemException) {
+					throw (com.liferay.portal.kernel.exception.SystemException)e;
+				}
+
+				throw new com.liferay.portal.kernel.exception.SystemException(e);
+			}
+
+			return (com.liferay.portal.model.LayoutSetPrototype)returnObj;
+		}
+		catch (com.liferay.portal.kernel.exception.SystemException se) {
+			_log.error(se, se);
+
+			throw se;
+		}
+	}
+
+	public static com.liferay.portal.model.LayoutSetPrototype updateLayoutSetPrototype(
+		HttpPrincipal httpPrincipal, long layoutSetPrototypeId,
+		java.lang.String settings)
+		throws com.liferay.portal.kernel.exception.PortalException,
+			com.liferay.portal.kernel.exception.SystemException {
+		try {
+			MethodKey methodKey = new MethodKey(LayoutSetPrototypeServiceUtil.class.getName(),
+					""updateLayoutSetPrototype"",
+					_updateLayoutSetPrototypeParameterTypes5);
+
+			MethodHandler methodHandler = new MethodHandler(methodKey,
+					layoutSetPrototypeId, settings);
+",3.280632495880127,-0.1390436223618795,0.5760980452683478,unreadable,discard,mid,,java,41,4,1.0,5.0,Code,e2516c575351528582f58f7cbdd01b8b571668cdb3c7bdc1f5f5ff8deb879205,9590982163b87f6d80e7834a112abbb59ee2c26777051105eb0cd4c2b57fac6c,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 49, ""original_snippet_id"": ""162""}",,,49
+rq0_0149,163,Dorn,"/**
+ * Copyright (c) 2000-2012 Liferay, Inc. All rights reserved.
+ *
+ * This library is free software; you can redistribute it and/or modify it under
+ * the terms of the GNU Lesser General Public License as published by the Free
+ * Software Foundation; either version 2.1 of the License, or (at your option)
+ * any later version.
+ *
+ * This library is distributed in the hope that it will be useful, but WITHOUT
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more
+ * details.
+ */
+
+package com.liferay.portal.kernel.messaging.proxy;
+
+import java.io.Serializable;
+
+/**
+ * @author Micha Kiener
+ * @author Michael C. Han
+ * @author Brian Wing Shun Chan
+ */
+public class ProxyResponse implements Serializable {
+
+	public Exception getException() {
+		return _exception;
+	}
+
+	public Object getResult() {
+		return _result;
+	}
+
+	public boolean hasError() {
+		if (_exception != null) {
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
+
+	public void setException(Exception exception) {
+		_exception = exception;
+	}
+
+	public void setResult(Object result) {
+		_result = result;
+	}
+",2.612021923065185,-1.6607153280343245,0.264146789807252,unreadable,unreadable,low,,java,23,6,1.0,5.0,Code,5f0302fae93c31ae5890da6228356d9f0d2d260ed47f590876f0bca4d9ea63f4,c392fc16a19a7c139ded4936964245591d0ae51344137bab2e3f19e4ddcf3202,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 50, ""original_snippet_id"": ""163""}",,,50
+rq0_0150,164,Dorn,"				continue;
+				
+			}else if ( c == '\\' ){
+				
+				escape = true;
+				
+				continue;
+			}
+			
+			if ( c == '""' || c == '\'' && ( i == 0 || chars[ i-1 ] != '\\' )){
+				
+				if ( quote == ' ' ){
+						
+					bit_contains_quotes = true;
+					
+					quote = c;
+					
+				}else if ( quote == c ){
+										
+					quote = ' ';
+					
+				}else{
+					
+					bit += c;
+				}
+			}else{
+				
+				if ( quote == ' ' ){
+					
+					if ( c == ' ' ){
+",4.021505355834961,1.5470877586414644,0.9217644588683187,readable,readable,high,,java,17,4,1.0,5.0,Code,0d053c3f52919a49240f1a94edf668fa5cb1080e32be4c46eea517fb1b34979d,3645a68f1fc114339f462b92097650bb463615beb7a3bd01d13bd98fe7d749cd,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 51, ""original_snippet_id"": ""164""}",,,51
+rq0_0151,165,Dorn,"		}
+	}
+
+	public void addBar_Rollback(java.lang.String text)
+		throws com.liferay.portal.kernel.exception.SystemException {
+		MethodHandler methodHandler = new MethodHandler(_addBar_RollbackMethodKey17,
+				ClpSerializer.translateInput(text));
+
+		try {
+			_classLoaderProxy.invoke(methodHandler);
+		}
+		catch (Throwable t) {
+			if (t instanceof com.liferay.portal.kernel.exception.SystemException) {
+				throw (com.liferay.portal.kernel.exception.SystemException)t;
+			}
+
+			if (t instanceof RuntimeException) {
+				throw (RuntimeException)t;
+			}
+			else {
+				throw new RuntimeException(t.getClass().getName() +
+					"" is not a valid exception"");
+			}
+		}
+	}
+
+	public com.liferay.testtransaction.model.Bar addBar_Success(
+		java.lang.String text)
+		throws com.liferay.portal.kernel.exception.SystemException {
+		Object returnObj = null;
+
+		MethodHandler methodHandler = new MethodHandler(_addBar_SuccessMethodKey18,
+				ClpSerializer.translateInput(text));
+
+		try {
+			returnObj = _classLoaderProxy.invoke(methodHandler);
+		}
+		catch (Throwable t) {
+			if (t instanceof com.liferay.portal.kernel.exception.SystemException) {
+				throw (com.liferay.portal.kernel.exception.SystemException)t;
+			}
+
+			if (t instanceof RuntimeException) {
+				throw (RuntimeException)t;
+			}
+			else {
+				throw new RuntimeException(t.getClass().getName() +
+					"" is not a valid exception"");
+			}
+		}
+",2.747422695159912,-1.3525605781695242,0.3273202461699329,unreadable,unreadable,low,,java,43,4,1.0,5.0,Code,53ebe55da4764373b5fed6a4320440db51a754c37cbc53553b1293c2cef83caa,e58f206e9b76356d083420b9834b4ea3277b70802f3985721ee4c9240b332575,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 52, ""original_snippet_id"": ""165""}",,,52
+rq0_0152,166,Dorn,"public class SWTSkinPropertiesImpl
+	extends SkinPropertiesImpl
+	implements SWTSkinProperties
+{
+	private static Map colorMap = new LightHashMap();
+
+	/**
+	 * @param skinPath
+	 * @param mainSkinFile
+	 */
+	public SWTSkinPropertiesImpl(ClassLoader classLoader, String skinPath, String mainSkinFile) {
+		super(classLoader, skinPath, mainSkinFile);
+	}
+
+	/**
+	 * 
+	 */
+	public SWTSkinPropertiesImpl() {
+		super();
+	}
+
+	// @see com.aelitis.azureus.ui.swt.skin.SWTSkinProperties#getColor(java.lang.String)
+	public Color getColor(String sID) {
+		Color color;
+		if (colorMap.containsKey(sID)) {
+			return (Color) colorMap.get(sID);
+		}
+
+		try {
+			int[] rgb = getColorValue(sID);
+			if (rgb[0] > -1) {
+				color = ColorCache.getColor(Utils.getDisplay(), rgb[0], rgb[1], rgb[2]);
+			} else {
+				color = ColorCache.getColor(Utils.getDisplay(), getStringValue(sID));
+			}
+		} catch (Exception e) {
+			//				IMP.getLogger().log(LoggerChannel.LT_ERROR,
+			//						""Failed loading color : color."" + colorNames[i]);
+			color = null;
+		}
+
+		colorMap.put(sID, color);
+
+		return color;
+	}
+
+	public void clearCache() {
+		super.clearCache();
+		colorMap.clear();
+	}
+",2.7513227462768555,-1.3436845632265606,0.3291398791397957,unreadable,unreadable,low,,java,33,7,1.0,5.0,Code,09b6fac9b2e4aae2b923fa0a59d368f290e3193197ab55da52e7b96f2cc528da,58175e6c15bf199e0ef35c910642f284825d95a7f561a6d5ad06806e0a3dc543,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 53, ""original_snippet_id"": ""166""}",,,53
+rq0_0153,168,Dorn,"	 */
+	public void setGadgetKey(String gadgetKey);
+
+	/**
+	 * Returns the service name of this o auth token.
+	 *
+	 * @return the service name of this o auth token
+	 */
+	@AutoEscape
+	public String getServiceName();
+",2.7647058963775635,-1.3132262341647327,0.33538400785341044,unreadable,unreadable,low,,java,3,1,1.0,5.0,Code,171298f236fb63ddd13aaf53f27162c608807bae35d85992c09abcc230ebde39,c14b8993912b2ce9aec111a27749bc5deb4aa0d72638e94bde45a7f9c1be3fde,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 54, ""original_snippet_id"": ""168""}",,,54
+rq0_0154,169,Dorn,"    }
+
+    abstract void encode(DEROutputStream out)
+        throws IOException;
+
+    public String toString()
+    {
+      return ""#""+new String(Hex.encode(string));
+    }
+",3.830687761306762,1.1128114454273685,0.8327353728840419,readable,readable,high,,java,7,1,1.0,5.0,Code,747f61f93edbbb890b0f3e37812ad86a823b6a5b18afc05f97f52fa4c2dea9a3,78979d4dd0163c76581fff649305e9cd41e1bc67807db73f26f05cc465ae9cd7,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 55, ""original_snippet_id"": ""169""}",,,55
+rq0_0155,170,Dorn,"      _app = app;
+   }
+
+
+	protected void paintComponent(Graphics g)
+	{
+		setPreferredSize(getRequiredSize());
+		super.paintComponent(g);
+	}
+
+	public void remove(Component comp)
+	{
+		if (comp != null)
+		{
+			comp.removeComponentListener(_listener);
+         super.remove(comp);
+		}
+		revalidate();
+		repaint();
+	}
+
+	protected void addImpl(Component comp, Object constraints, int index)
+	{
+		if (comp != null)
+		{
+			comp.addComponentListener(_listener);
+			revalidate();
+		}
+		super.addImpl(comp, constraints, index);
+	}
+",3.7277228832244873,0.8784766203046201,0.7846954161556663,readable,readable,high,,java,26,5,1.0,5.0,Code,3f83d60a67e4971d7b8e9db53bdb4409190eff5ad7ed4ce5e14d0142d1a96d03,399d53ba054e5945f583e233c7968b5f6b97c69a41ee43432575fb34a1420d4f,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 56, ""original_snippet_id"": ""170""}",,,56
+rq0_0156,171,Dorn,"
+		for (KaleoTimer model : models) {
+			soapModels.add(toSoapModel(model));
+		}
+
+		return soapModels.toArray(new KaleoTimerSoap[soapModels.size()]);
+	}
+
+	public KaleoTimerSoap() {
+	}
+",3.450777292251587,0.24818405998814214,0.6554818973884071,readable,discard,mid,,java,7,2,1.0,5.0,Code,adfb583a63a74deb1a8f9e1f664f60d95d313e628314dcd547fb14ab656171f8,bd9e9add3f7a85372580642fc77b066e9633c24cb431f5c2b21805b06863b3c2,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 57, ""original_snippet_id"": ""171""}",,,57
+rq0_0157,172,Dorn,"import net.sourceforge.squirrel_sql.fw.util.ICommand;
+import net.sourceforge.squirrel_sql.fw.util.Resources;
+import net.sourceforge.squirrel_sql.fw.util.StringManager;
+import net.sourceforge.squirrel_sql.fw.util.StringManagerFactory;
+import net.sourceforge.squirrel_sql.plugins.refactoring.commands.AddAutoIncrementCommand;
+
+public class AddAutoIncrementAction extends AbstractRefactoringAction
+{
+	private static final long serialVersionUID = -5316665324698095673L;
+
+	/**
+	 * Internationalized strings for this class.
+	 */
+	private static final StringManager s_stringMgr =
+		StringManagerFactory.getStringManager(AddAutoIncrementAction.class);
+
+	private static interface i18n
+	{
+		String ACTION_PART = s_stringMgr.getString(""AddAutoIncrementAction.actionPart"");
+
+		String OBJECT_PART = s_stringMgr.getString(""Shared.tableObject"");
+
+		String SINGLE_OBJECT_MESSAGE =
+			s_stringMgr.getString(""Shared.singleObjectMessage"", OBJECT_PART, ACTION_PART);
+	}
+
+	public AddAutoIncrementAction(final IApplication app, final Resources rsrc)
+	{
+		super(app, rsrc);
+	}
+",3.59375,0.5735715619359334,0.7221881648215043,readable,readable,high,,java,21,1,1.0,5.0,Code,140ffa586c541be7d6454c024aefa26e611b21f1424ac123805ddd94617cf5de,7f2900790a389ab04116e04942f5bd201a1de5365af353f7b9ae4c530870d3d8,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 58, ""original_snippet_id"": ""172""}",,,58
+rq0_0158,174,Dorn,"				}
+			}
+			catch (Exception e) {
+			}
+
+			Thread.sleep(1000);
+		}
+
+		selenium.clickAt(""//div[@title='Knowledge Base Article']/p/a"",
+			RuntimeVariables.replace(""Add""));
+",2.585106372833252,-1.7219716600395232,0.25158889732444545,unreadable,unreadable,low,,java,8,1,1.0,5.0,Code,b0c5df9665f51e266fd7960a6602a29e5de35d2204d6f01511d1c799808922db,814bd19a74743af38d3cd9417de24a306c45b19882cffe8bb760f24951eba188,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 59, ""original_snippet_id"": ""174""}",,,59
+rq0_0159,175,Dorn,"import com.liferay.portal.model.User;
+import com.liferay.portal.security.permission.ActionKeys;
+import com.liferay.portal.service.base.EmailAddressServiceBaseImpl;
+import com.liferay.portal.service.permission.CommonPermissionUtil;
+
+import java.util.List;
+
+/**
+ * @author Brian Wing Shun Chan
+ * @author Alexander Chow
+ */
+public class EmailAddressServiceImpl extends EmailAddressServiceBaseImpl {
+
+	public EmailAddress addEmailAddress(
+			String className, long classPK, String address, int typeId,
+			boolean primary)
+		throws PortalException, SystemException {
+
+		CommonPermissionUtil.check(
+			getPermissionChecker(), className, classPK, ActionKeys.UPDATE);
+
+		return emailAddressLocalService.addEmailAddress(
+			getUserId(), className, classPK, address, typeId, primary);
+	}
+
+	public void deleteEmailAddress(long emailAddressId)
+		throws PortalException, SystemException {
+
+		EmailAddress emailAddress = emailAddressPersistence.findByPrimaryKey(
+			emailAddressId);
+
+		CommonPermissionUtil.check(
+			getPermissionChecker(), emailAddress.getClassNameId(),
+			emailAddress.getClassPK(), ActionKeys.UPDATE);
+
+		emailAddressLocalService.deleteEmailAddress(emailAddressId);
+	}
+
+	public EmailAddress getEmailAddress(long emailAddressId)
+		throws PortalException, SystemException {
+
+		EmailAddress emailAddress = emailAddressPersistence.findByPrimaryKey(
+			emailAddressId);
+
+		CommonPermissionUtil.check(
+			getPermissionChecker(), emailAddress.getClassNameId(),
+			emailAddress.getClassPK(), ActionKeys.VIEW);
+
+		return emailAddress;
+	}
+",3.510204076766968,0.38343178150626683,0.6832084407476313,readable,discard,mid,,java,33,3,1.0,5.0,Code,8c79232356732dcb165bc53d12290f1049f4f900cf5e78ade40b5cebe37750a6,ca65eb5b702697fe80644d7665b36193af9f832ab20afcc6f34a85862867db63,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 60, ""original_snippet_id"": ""175""}",,,60
+rq0_0160,176,Dorn,"/**
+ * @author Brian Wing Shun Chan
+ */
+public class DBUpgradeTags528TestSuite extends BaseTestSuite {
+
+	public static Test suite() {
+		TestSuite testSuite = new TestSuite();
+
+		testSuite.addTest(LoginTests.suite());
+		testSuite.addTest(TagsTestPlan.suite());
+",3.327777862548828,-0.031746828936551036,0.5980944912107988,unreadable,discard,mid,,java,5,1,1.0,5.0,Code,0fdb0d57c722484f6f0727d424d829bccf6103ac1709e07835ffd0d8d794396c,35dfab83a293b0ce8ed06f818c8948912e99565c8e02677c57da0202b03bb3e6,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 61, ""original_snippet_id"": ""176""}",,,61
+rq0_0161,177,Dorn,"		find.append(""\\s*</array>.*"");
+		value.append(""\n\t\t\t"");
+		
+		String match = ""(?s)(<key>"" + key + ""</key>\\s*<array>)(.*?)(</array>)"";
+		
+		setValue(find.toString(),match,value.toString());
+	}
+	
+	private boolean 
+	isValuePresent(
+		String match )
+	
+		throws IOException
+	{
+		String fileContent = getFileContent();
+		
+		//System.out.println(""Searching for:\n"" + match);
+		return fileContent.matches(match);
+	}
+	
+
+	/**
+	 * 
+	 * @param find the regex expression to find if the value is already present
+	 * @param match the regex expression that will match for the replace, it needs to capture 3 groups, the 2nd one being replaced by value
+	 * @param value the value that replaces the 2nd match group
+	 */
+	private void 
+	setValue(
+		String find,
+		String match,
+		String value)
+	
+		throws IOException
+	{
+		String fileContent = getFileContent();
+		
+		if( !isValuePresent(find)) {
+			//System.out.println(""Changing "" +plistFile);
+			fileContent = fileContent.replaceFirst(match, ""$1""+value + ""$3"");
+			setFileContent(fileContent);
+			touchFile();
+		}
+	}
+	
+	private String 
+	getFileContent()
+		throws IOException
+	{
+		FileReader fr = null;
+",3.8212289810180655,1.0912844775320145,0.828322223427301,readable,readable,high,,java,32,3,1.0,5.0,Code,180bff5885501b17ece03fce3474e602d09294ae79c1b1c126d00f2629f7236f,9a89a22d5e7c99e424860b545a45de909fd8d6e92c8e3a08dc7fcd1c0af594f0,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 62, ""original_snippet_id"": ""177""}",,,62
+rq0_0162,179,Dorn,"import org.eclipse.sapphire.modeling.annotations.Type;
+import org.eclipse.sapphire.modeling.annotations.ValidFileSystemResourceType;
+import org.eclipse.sapphire.modeling.xml.annotations.XmlBinding;
+
+/**
+ * @author Gregory Amerson
+ */
+@GenerateImpl
+public interface IPortalPropertiesFile extends IModelElement
+{
+",3.269461154937744,-0.16446815813443763,0.5708858724821948,unreadable,discard,mid,,java,6,1,1.0,5.0,Code,b9a0bf2e77d53d1eef8c047487f3a4ffba87709659865bb9037b48c5a88caf46,69a26292774bd1eb2f78db913f4aef848f28b5c664472560780c5679a1dfc553,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 63, ""original_snippet_id"": ""179""}",,,63
+rq0_0163,180,Dorn,"					PropsKeys.XUGGLER_ENABLED, PropsValues.XUGGLER_ENABLED) ||
+				_hasAudio(fileVersion)) {
+
+				return;
+			}
+
+			if (_isGeneratePreview(fileVersion)) {
+				File file = null;
+
+				if (fileVersion instanceof LiferayFileVersion) {
+					try {
+						LiferayFileVersion liferayFileVersion =
+							(LiferayFileVersion)fileVersion;
+
+						file = liferayFileVersion.getFile(false);
+					}
+					catch (UnsupportedOperationException uoe) {
+					}
+				}
+
+				if (file == null) {
+					InputStream inputStream = fileVersion.getContentStream(
+						false);
+
+					FileUtil.write(audioTempFile, inputStream);
+
+					file = audioTempFile;
+				}
+
+				try {
+					_generateAudioXuggler(fileVersion, file, previewTempFile);
+				}
+				catch (Exception e) {
+					_log.error(e, e);
+				}
+			}
+		}
+		catch (NoSuchFileEntryException nsfee) {
+		}
+		finally {
+			_fileVersionIds.remove(fileVersion.getFileVersionId());
+
+			FileUtil.delete(audioTempFile);
+			FileUtil.delete(previewTempFile);
+		}
+	}
+
+	private void _generateAudioXuggler(
+			FileVersion fileVersion, File srcFile, File destFile)
+		throws Exception {
+",3.5606937408447266,0.49833976588433615,0.706765223630311,readable,readable,high,,java,40,6,1.0,5.0,Code,182e9c76dacca4d9371219dc9d837f4146f5f200ac9a6beae2ec938f6bbfbb48,dcd9f345315cf851d75d94aae575a3e1d699858681eca4c4e0997f087b1cc9f1,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 64, ""original_snippet_id"": ""180""}",,,64
+rq0_0164,181,Dorn,"		public LiferayDecorationsProvider(IRuntime adaptableObject) {
+			// runtime = adaptableObject;
+		}
+
+		public ImageDescriptor getIcon() {
+			return LiferayServerUIPlugin.imageDescriptorFromPlugin(
+				LiferayServerUIPlugin.PLUGIN_ID, ""icons/e16/server.png"" );
+		}
+
+	}
+",2.818713426589966,-1.1903120387288662,0.3605821090189077,unreadable,unreadable,low,,java,7,2,1.0,5.0,Code,6676ca1e147671597e7e7b20fff97b89d38e7c8b0bf67732194e3ab78fcfd430,9b983f9c7702a3cf442c9b57d9754eb08edd10b01142bae6ab50c7002176f39a,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 65, ""original_snippet_id"": ""181""}",,,65
+rq0_0165,182,Dorn,"import com.liferay.portal.kernel.exception.PortalException;
+
+/**
+ * @author Alexander Chow
+ */
+public class LockException extends PortalException {
+
+	public LockException() {
+		super();
+	}
+",3.3518519401550293,0.023042676678488336,0.6093266479230453,unreadable,discard,mid,,java,5,1,1.0,5.0,Code,aa83903dbbeacb1a4767949712727f1086e0e50c9481dcc7774e8ee643fe4f02,c66b9a6cda107d2e6e09d28d2df4f13fa5c5c619f0f5368703d08e166ad68e7c,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 66, ""original_snippet_id"": ""182""}",,,66
+rq0_0166,183,Dorn,"		calendarImpl.setCalendarId(getCalendarId());
+		calendarImpl.setGroupId(getGroupId());
+		calendarImpl.setCompanyId(getCompanyId());
+		calendarImpl.setUserId(getUserId());
+		calendarImpl.setUserName(getUserName());
+		calendarImpl.setCreateDate(getCreateDate());
+		calendarImpl.setModifiedDate(getModifiedDate());
+		calendarImpl.setResourceBlockId(getResourceBlockId());
+		calendarImpl.setCalendarResourceId(getCalendarResourceId());
+		calendarImpl.setName(getName());
+		calendarImpl.setDescription(getDescription());
+		calendarImpl.setColor(getColor());
+		calendarImpl.setDefaultCalendar(getDefaultCalendar());
+
+		calendarImpl.resetOriginalValues();
+
+		return calendarImpl;
+	}
+
+	public int compareTo(Calendar calendar) {
+		int value = 0;
+
+		value = getName().compareTo(calendar.getName());
+
+		if (value != 0) {
+			return value;
+		}
+
+		return 0;
+	}
+",3.6809816360473633,0.7720995508876254,0.7628875188061923,readable,readable,high,,java,24,2,1.0,5.0,Code,ff03f87bad02b4d99d5ffad1ed9c6d77be28f9c4e0ca13525ca3e62abafc0eaa,37ea11b6bbe3b105f9e015b372e73290079bfeb36a1de7f97947f60d7d56717a,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 67, ""original_snippet_id"": ""183""}",,,67
+rq0_0167,184,Dorn,"     */
+    public void init(CipherParameters params)
+        throws IllegalArgumentException;
+
+    /**
+     * Return the name of the algorithm the MAC implements.
+     *
+     * @return the name of the algorithm the MAC implements.
+     */
+    public String getAlgorithmName();
+
+    /**
+     * Return the block size for this cipher (in bytes).
+     *
+     * @return the block size for this cipher in bytes.
+     */
+	public int getMacSize();
+
+    /**
+     * add a single byte to the mac for processing.
+     *
+     * @param in the byte to be processed.
+     * @exception IllegalStateException if the MAC is not initialised.
+     */
+	public void update(byte in)
+        throws IllegalStateException;
+
+    /**
+     * @param in the array containing the input.
+     * @param inOff the index in the array the data begins at.
+     * @param len the length of the input starting at inOff.
+     * @exception IllegalStateException if the MAC is not initialised.
+     * @exception DataLengthException if there isn't enough data in in.
+     */
+	public void update(byte[] in, int inOff, int len)
+        throws DataLengthException, IllegalStateException;
+
+    /**
+     * Compute the final statge of the MAC writing the output to the out
+     * parameter.
+     * <p>
+     * doFinal leaves the MAC in the same state it was after the last init.
+     *
+     * @param out the array the MAC is to be output to.
+     * @param outOff the offset into the out buffer the output is to start at.
+     * @exception DataLengthException if there isn't enough space in out.
+     * @exception IllegalStateException if the MAC is not initialised.
+     */
+	public int doFinal(byte[] out, int outOff)
+        throws DataLengthException, IllegalStateException;
+",3.306748390197754,-0.07960720441210843,0.588282845137087,unreadable,discard,mid,,java,10,1,1.0,5.0,Code,5894a7b4da9dbd799d6187157c76da9820242bb22f3cb13f3eabc72116d71903,f6f14fcba2939dc39c7995017d98bdf580596a7419259cf1e0860eda0a8b80b2,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 68, ""original_snippet_id"": ""184""}",,,68
+rq0_0168,185,Dorn,"	{
+		DHTNATPuncher puncher = plugin.getDHT().getNATPuncher();
+		
+		if ( puncher == null ){
+			
+			return( null );
+		}
+		
+		return( puncher.punch( ""Tunnel"", contact, null, null ));
+	}
+",3.801204919815064,1.045712288571589,0.8189796684548192,readable,readable,high,,java,7,1,1.0,5.0,Code,75ea96c5e780b4948475c3cb85471254433ae5a96d97c4c9b3c03d9b72be15dd,793f71001197a6393e5e106dde9eef8cb123ab3b4c198efd310fe872fce94ee1,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 69, ""original_snippet_id"": ""185""}",,,69
+rq0_0169,186,Dorn,"			WebKeys.MOBILE_DEVICE_RULES_RULE_EDITOR_JSP, editorJSP);
+
+		long ruleGroupId = BeanParamUtil.getLong(
+			rule, renderRequest, ""ruleGroupId"");
+
+		MDRRuleGroup ruleGroup = MDRRuleGroupServiceUtil.getRuleGroup(
+			ruleGroupId);
+
+		renderRequest.setAttribute(
+			WebKeys.MOBILE_DEVICE_RULES_RULE_GROUP, ruleGroup);
+
+		return mapping.findForward(""portlet.mobile_device_rules.edit_rule"");
+	}
+
+	@Override
+	public void serveResource(
+			ActionMapping mapping, ActionForm form, PortletConfig portletConfig,
+			ResourceRequest resourceRequest, ResourceResponse resourceResponse)
+		throws Exception {
+
+		long ruleId = ParamUtil.getLong(resourceRequest, ""ruleId"");
+
+		if (ruleId > 0) {
+			MDRRule rule = MDRRuleServiceUtil.fetchRule(ruleId);
+
+			resourceRequest.setAttribute(
+				WebKeys.MOBILE_DEVICE_RULES_RULE, rule);
+		}
+
+		String type = ParamUtil.getString(resourceRequest, ""type"");
+",3.3388888835906982,-0.006459573502699946,0.6032785207556403,unreadable,discard,mid,,java,21,1,1.0,5.0,Code,6883e9ea5e0691beb2593e6c9f243dbad51b4aa03b74e10ac700e4f1de8b697a,a291d5f6d11d21160db94686b3a12fe80e95d83557b2fdca1edf19975714c18b,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 70, ""original_snippet_id"": ""186""}",,,70
+rq0_0170,187,Dorn,"            {
+               continue;
+            }
+
+            SchemaLoadInfo schemaLoadInfo = new SchemaLoadInfo(addStringArrays(tableTypes, viewTypes));
+            schemaLoadInfo.schemaName = _schemaDetails[i].getSchemaName();
+            schemaLoadInfo.tableTypes = new String[0];
+
+            if(SQLAliasSchemaDetailProperties.SCHEMA_LOADING_ID_DONT_LOAD !=_schemaDetails[i].getTable())
+            {
+               schemaLoadInfo.tableTypes = addStringArrays(schemaLoadInfo.tableTypes, tableTypes);
+            }
+
+            if(SQLAliasSchemaDetailProperties.SCHEMA_LOADING_ID_DONT_LOAD !=_schemaDetails[i].getView())
+            {
+               schemaLoadInfo.tableTypes = addStringArrays(schemaLoadInfo.tableTypes, viewTypes);
+            }
+
+            if(SQLAliasSchemaDetailProperties.SCHEMA_LOADING_ID_DONT_LOAD !=_schemaDetails[i].getProcedure())
+            {
+               schemaLoadInfo.loadProcedures = true;
+            }
+            else
+            {
+               schemaLoadInfo.loadProcedures = false;
+
+            }
+
+            schemaLoadInfos.add(schemaLoadInfo);
+         }
+",2.7909605503082275,-1.253474017174932,0.3476335483009769,unreadable,unreadable,low,,java,24,3,1.0,5.0,Code,fd5379942cfc1628644b7729c8638768ed2944148382f35ff60278fc4cdf9a00,c44f1a934a4a896e21df75dade214ecf3a3ebb8358c71fc2e53419ea42cfc761,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 71, ""original_snippet_id"": ""187""}",,,71
+rq0_0171,188,Dorn,"
+    private com.sap.engine.services.dc.wsgate.Option[] options;
+
+    public Deploy() {
+    }
+
+    public Deploy(
+           com.sap.engine.services.dc.wsgate.ArchiveFile[] archiveFiles,
+           com.sap.engine.services.dc.wsgate.Option[] options) {
+           this.archiveFiles = archiveFiles;
+           this.options = options;
+    }
+
+
+    /**
+     * Gets the archiveFiles value for this Deploy.
+     * 
+     * @return archiveFiles
+     */
+    public com.sap.engine.services.dc.wsgate.ArchiveFile[] getArchiveFiles() {
+        return archiveFiles;
+    }
+
+
+    /**
+     * Sets the archiveFiles value for this Deploy.
+     * 
+     * @param archiveFiles
+     */
+    public void setArchiveFiles(com.sap.engine.services.dc.wsgate.ArchiveFile[] archiveFiles) {
+        this.archiveFiles = archiveFiles;
+    }
+
+    public com.sap.engine.services.dc.wsgate.ArchiveFile getArchiveFiles(int i) {
+        return this.archiveFiles[i];
+    }
+
+    public void setArchiveFiles(int i, com.sap.engine.services.dc.wsgate.ArchiveFile _value) {
+        this.archiveFiles[i] = _value;
+    }
+
+
+    /**
+     * Gets the options value for this Deploy.
+     * 
+     * @return options
+     */
+    public com.sap.engine.services.dc.wsgate.Option[] getOptions() {
+        return options;
+    }
+",2.916201114654541,-0.968442593926736,0.40606659269332485,unreadable,unreadable,low,,java,24,7,1.0,5.0,Code,d89363479985dcda593ed836682a8077f0b3bf7dfb48fc24b2dc384ae838deaf,9f574ab9b115182a5443446b296419600889fde82583932bd7369f997f781f36,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 72, ""original_snippet_id"": ""188""}",,,72
+rq0_0172,189,Dorn,"
+/**
+ * @author Peter Shin
+ * @author Brian Wing Shun Chan
+ */
+public class AdminActivityKeys {
+
+	public static final int ADD_KB_ARTICLE = 1;
+
+	public static final int ADD_KB_COMMENT = 5;
+",3.337278127670288,-0.010125446895208967,0.6025269960983232,unreadable,discard,mid,,java,3,1,1.0,5.0,Code,3da7f5ef6a016141474a6df8b2e01eb3953399d10e66f53a92c1ccb74faba0b5,6c54770fbafeb9b1101ed152b0f7bdbf928c807127bcf653607eb2cea9d94d0d,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 73, ""original_snippet_id"": ""189""}",,,73
+rq0_0173,190,Dorn,"/**
+* <p>Title: sqsc-isqlj</p>
+* <p>Description: SquirrelSQL plugin for iSqlJ</p>
+* <p>Copyright: Copyright (c) 2003 Stathis Alexopoulos</p>
+* @author Stathis Alexopoulos stathis@rege.org
+* <br>
+* <br>
+* <p>
+*    This file is part of sqsc-isqlj.
+* </p>
+* <br>
+* <p>
+*    sqsc-isqlj is free software; you can redistribute it and/or modify
+*    it under the terms of the GNU Lesser General Public License as published by
+*    the Free Software Foundation; either version 2 of the License, or
+*    (at your option) any later version.
+*
+*    Foobar is distributed in the hope that it will be useful,
+*    but WITHOUT ANY WARRANTY; without even the implied warranty of
+*    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+*    GNU Lesser General Public License for more details.
+*
+*    You should have received a copy of the GNU Lesser General Public License
+*    along with Foobar; if not, write to the Free Software
+*    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+* </p>
+*/
+
+import net.sourceforge.squirrel_sql.client.plugin.IPlugin;
+import net.sourceforge.squirrel_sql.client.plugin.PluginResources;
+",3.9076087474823,1.2878737208307431,0.8686241236522805,readable,readable,high,,java,2,1,1.0,5.0,Code,30cad5be2264cd2704202d4c07a1daa61e1c11751e721e1636f883e0a9bf02ed,a6d04b8cfa38b3472fb789ce5341dac3546105a853bb93f7ccc3be5dac260d63,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 74, ""original_snippet_id"": ""190""}",,,74
+rq0_0174,195,Dorn,"			LiferayPortletRequest liferayPortletRequest,
+			LiferayPortletResponse liferayPortletResponse)
+		throws Exception;
+
+	public PortletURL getURLExport(
+			LiferayPortletRequest liferayPortletRequest,
+			LiferayPortletResponse liferayPortletResponse)
+		throws Exception;
+
+	public String getUrlTitle();
+",2.7633135318756104,-1.3163950767657173,0.33473437730297645,unreadable,unreadable,low,,java,8,1,1.0,5.0,Code,3ec778426b4d42db587442103cbf58a9c2e6c3f3e8fefbab53e77b3ac4baff80,08a66785174d6aaadb7f71a057e3893b26b44d8d885bbbf76d7e80e9401e75ae,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 75, ""original_snippet_id"": ""195""}",,,75
+rq0_0175,196,Dorn,"
+      JPanel pnlName = new JPanel(new BorderLayout());
+
+		// i18n[graph.name=Name]
+      JLabel lblName = new JLabel(s_stringMgr.getString(""graph.name""));
+      pnlName.add(lblName, BorderLayout.WEST);
+      txtName = new JTextField();
+      pnlName.add(txtName, BorderLayout.CENTER);
+
+      pnlEdit.add(pnlName);
+",3.1277778148651123,-0.48692122501611157,0.5047811807368967,unreadable,unreadable,low,,java,6,1,1.0,5.0,Code,1aa7d7942a4f168099912f24d91f5f9c1d8ae5489ac99e359b6ed3d855735464,088352070bbb4b4c79f978b88c5b1d95ad9e9bcc640c15ad14ea842239760fcd,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 76, ""original_snippet_id"": ""196""}",,,76
+rq0_0176,197,Dorn,"		StringBundler sb = new StringBundler(17);
+
+		sb.append(""{resourcePermissionId="");
+		sb.append(resourcePermissionId);
+		sb.append("", companyId="");
+		sb.append(companyId);
+		sb.append("", name="");
+		sb.append(name);
+		sb.append("", scope="");
+		sb.append(scope);
+		sb.append("", primKey="");
+		sb.append(primKey);
+		sb.append("", roleId="");
+		sb.append(roleId);
+		sb.append("", ownerId="");
+		sb.append(ownerId);
+		sb.append("", actionIds="");
+		sb.append(actionIds);
+		sb.append(""}"");
+
+		return sb.toString();
+	}
+
+	public ResourcePermission toEntityModel() {
+		ResourcePermissionImpl resourcePermissionImpl = new ResourcePermissionImpl();
+
+		resourcePermissionImpl.setResourcePermissionId(resourcePermissionId);
+		resourcePermissionImpl.setCompanyId(companyId);
+
+		if (name == null) {
+			resourcePermissionImpl.setName(StringPool.BLANK);
+		}
+		else {
+			resourcePermissionImpl.setName(name);
+		}
+
+		resourcePermissionImpl.setScope(scope);
+
+		if (primKey == null) {
+			resourcePermissionImpl.setPrimKey(StringPool.BLANK);
+		}
+		else {
+			resourcePermissionImpl.setPrimKey(primKey);
+		}
+
+		resourcePermissionImpl.setRoleId(roleId);
+		resourcePermissionImpl.setOwnerId(ownerId);
+		resourcePermissionImpl.setActionIds(actionIds);
+
+		resourcePermissionImpl.resetOriginalValues();
+",3.4833333492279053,0.3222774601875363,0.6706714610291191,readable,discard,mid,,java,41,1,1.0,5.0,Code,6e0025c77bcaa712456dcbe7a418ddedc37049ed8c5c8aecfc79c40cf6a5083c,7a45e95710e189e12eec74b1b5b07854efa484757523c66444334def454dfa22,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 77, ""original_snippet_id"": ""197""}",,,77
+rq0_0177,200,Dorn,"/*
+ * Copyright (C) 2007 Rob Manning
+ * manningr@users.sourceforge.net
+ *
+ * This library is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU Lesser General Public
+ * License as published by the Free Software Foundation; either
+ * version 2.1 of the License, or (at your option) any later version.
+ *
+ * This library is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public
+ * License along with this library; if not, write to the Free Software
+ * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ */
+package net.sourceforge.squirrel_sql.plugins.dbdiff;
+
+import net.sourceforge.squirrel_sql.client.session.ISession;
+import net.sourceforge.squirrel_sql.fw.sql.IDatabaseObjectInfo;
+
+/**
+ * This is implemented in order to pass needed info along to diff executor.
+ */
+public interface SessionInfoProvider
+{
+
+	public void setSourceSession(ISession session);
+
+	public ISession getSourceSession();
+
+	public IDatabaseObjectInfo[] getSourceSelectedDatabaseObjects();
+
+	public IDatabaseObjectInfo[] getDestSelectedDatabaseObjects();
+
+	public void setDestSelectedDatabaseObjects(IDatabaseObjectInfo[] infos);
+
+	public void setSourceSelectedDatabaseObjects(IDatabaseObjectInfo[] infos);
+
+	public void setDestSession(ISession session);
+
+	public ISession getDestSession();
+
+	/**
+	 * @return the scriptFileManager
+	 */
+	public IScriptFileManager getScriptFileManager();
+",3.780104637145996,0.9976907579158094,0.8091349846630456,readable,readable,high,,java,14,1,1.0,5.0,Code,d0ed5bb39d4a1fbbc4781ee64594fca534d51556767e8b239b097d655caffdd6,e2b2e866192f1a4b3dda3d947bc54af9cf7c2a7ac8694775d2475347a8a9dafd,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 78, ""original_snippet_id"": ""200""}",,,78
+rq0_0178,201,Dorn,"		String[]	labels,
+		String	 	defaultValue );
+
+	/**
+	 * 
+	 * @param key
+	 * @param resource_name
+	 * @param encoding_type
+	 * @param defaultValue
+	 * @return
+	 * @since 2.1.0.2
+	 */
+	public PasswordParameter
+	addPasswordParameter2(
+		String 		key,
+		String 		resource_name,
+		int			encoding_type,		// see PasswordParameter.ET_ constants
+		byte[]	 	defaultValue );		// plain default value
+
+	/**
+	 * 
+	 * @param key
+	 * @param resource_name
+	 * @param defaultValue
+	 * @return
+	 * @since 2.1.0.2
+	 */
+	public IntParameter
+	addIntParameter2(
+		String 		key,
+		String 		resource_name,
+		int	 		defaultValue );
+
+	/**
+	 * 
+	 * @param key
+	 * @param resource_name
+	 * @param defaultValue
+	 * @param min_value Minimum allowed value
+	 * @param max_value Maximum allowed value
+	 * @return
+	 * @since 3.0.3.5
+	 */
+	public IntParameter
+	addIntParameter2(
+		String 		key,
+		String 		resource_name,
+		int	 		defaultValue,
+		int         min_value,
+		int         max_value);
+",3.734999895095825,0.8950381637750405,0.7880906256865474,readable,readable,high,,java,20,1,1.0,5.0,Code,f12f3dcdab7c0d28d5c0b5842b0b167e88aa6c2e01dc3fe5aa94c05ed620faf2,f0670994917a82a4b046b26e63efcd103d61e1c47350fa22fd5876d03f74e947,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 79, ""original_snippet_id"": ""201""}",,,79
+rq0_0179,202,Dorn,"				sql = _SQL_SELECT_SCPRODUCTVERSION.concat(SCProductVersionModelImpl.ORDER_BY_JPQL);
+			}
+
+			Session session = null;
+
+			try {
+				session = openSession();
+
+				Query q = session.createQuery(sql);
+
+				if (orderByComparator == null) {
+					list = (List<SCProductVersion>)QueryUtil.list(q,
+							getDialect(), start, end, false);
+
+					Collections.sort(list);
+				}
+				else {
+					list = (List<SCProductVersion>)QueryUtil.list(q,
+							getDialect(), start, end);
+				}
+			}
+			catch (Exception e) {
+				throw processException(e);
+			}
+			finally {
+				if (list == null) {
+					FinderCacheUtil.removeResult(finderPath, finderArgs);
+				}
+				else {
+					cacheResult(list);
+",3.0753769874572754,-0.606178771430054,0.4803327131808814,unreadable,unreadable,low,,java,25,3,1.0,5.0,Code,603c642cafb279075d8640a126610365040aa9dc096aa217249cd1981858bb10,73071a7db7d3b2f221962ca438430e299a926ec7496724075adbf34b6c4106a8,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 80, ""original_snippet_id"": ""202""}",,,80
+rq0_0180,206,Dorn,"
+		String emailMessageAddedSubjectPrefix = getParameter(
+			actionRequest, ""emailMessageAddedSubjectPrefix"");
+		String emailMessageAddedBody = getParameter(
+			actionRequest, ""emailMessageAddedBody"");
+
+		if (Validator.isNull(emailMessageAddedSubjectPrefix)) {
+			SessionErrors.add(actionRequest, ""emailMessageAddedSubjectPrefix"");
+		}
+		else if (Validator.isNull(emailMessageAddedBody)) {
+			SessionErrors.add(actionRequest, ""emailMessageAddedBody"");
+		}
+	}
+
+	protected void validateEmailMessageUpdated(ActionRequest actionRequest)
+		throws Exception {
+
+		String emailMessageUpdatedSubjectPrefix = getParameter(
+			actionRequest, ""emailMessageUpdatedSubjectPrefix"");
+		String emailMessageUpdatedBody = getParameter(
+			actionRequest, ""emailMessageUpdatedBody"");
+
+		if (Validator.isNull(emailMessageUpdatedSubjectPrefix)) {
+			SessionErrors.add(
+				actionRequest, ""emailMessageUpdatedSubjectPrefix"");
+		}
+		else if (Validator.isNull(emailMessageUpdatedBody)) {
+			SessionErrors.add(actionRequest, ""emailMessageUpdatedBody"");
+		}
+	}
+",3.016042709350586,-0.7412159602548247,0.45264933020754244,unreadable,unreadable,low,,java,25,5,1.0,5.0,Code,e27b13b0469508de07c8fdcd1ffbf7f4fae9a1ee1d41df007679d252b0100891,d7ded35b28160aad53b84fba70820ba1df116c48d96aa12fafea6a736d74927f,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 81, ""original_snippet_id"": ""206""}",,,81
+rq0_0181,207,Dorn,"/**
+ * @author Brian Wing Shun Chan
+ */
+public class UnitConverterTestPlan extends BaseTestSuite {
+
+	public static Test suite() {
+		TestSuite testSuite = new TestSuite();
+
+		testSuite.addTest(PortletTestPlan.suite());
+		testSuite.addTest(UnitTestPlan.suite());
+",3.1666667461395264,-0.39841501708258115,0.5229254510010038,unreadable,discard,mid,,java,5,1,1.0,5.0,Code,9e585444cd933950357408874d2542aafe1f7e1f13ead07d3576d6272f38d22c,520d8ff7f28348a21ed09351248c5ece48fbc04617c1d5371710c68b1e054695,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 82, ""original_snippet_id"": ""207""}",,,82
+rq0_0182,208,Dorn,"
+import com.liferay.portal.kernel.log.Log;
+import com.liferay.portal.kernel.log.LogFactoryUtil;
+import com.liferay.portal.kernel.util.PortalClassLoaderUtil;
+import com.liferay.portal.kernel.util.SortedProperties;
+import com.liferay.portal.util.PropsUtil;
+import com.liferay.portal.util.PropsValues;
+
+import java.util.Enumeration;
+import java.util.Properties;
+",4.189188957214356,1.92871407760622,1.0,readable,readable,high,,java,8,1,2.0,5.0,Code,0e6f56ac05f2b2064d653af2fcf62889a7b686231cdc39318d9ac90f85cef88c,38e8042d4dad813ea3092f23d73123f15325ff8893028b1d06b6f6c17bf26469,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 83, ""original_snippet_id"": ""208""}",,,83
+rq0_0183,211,Dorn,"public class ComponentTag extends BaseComponentTag {
+
+	protected void setAttributes(HttpServletRequest request) {
+		Map<String, Object> options = getOptions();
+		HashMap<String, Object> optionsJSON = new HashMap<String, Object>();
+
+		_proccessAttributes(options, optionsJSON);
+
+		super.setAttributes(request);
+
+		setNamespacedAttribute(request, ""options"", options);
+		setNamespacedAttribute(request, ""optionsJSON"", optionsJSON);
+	}
+
+	private boolean _isEventAttribute(String key) {
+		Matcher afterMatcher = _EVENT_AFTER_REGEX.matcher(key);
+		Matcher onMatcher = _EVENT_ON_REGEX.matcher(key);
+
+		return (afterMatcher.find() || onMatcher.find());
+	}
+
+	private boolean _isValidAttribute(String key) {
+		List<String> excludeAttributes = Collections.EMPTY_LIST;
+
+		if (getExcludeAttributes() != null) {
+			excludeAttributes = Arrays.asList(
+				getExcludeAttributes().split(StringPool.COMMA));
+		}
+
+		return !(excludeAttributes.contains(key) ||
+			key.equals(_DYNAMIC_ATTRIBUTES));
+	}
+
+	private void _proccessAttributes(Map<String, Object> options,
+		Map<String, Object> newOptions) {
+
+		Map<String, String> afterEventOptionsMap =
+			new HashMap<String, String>();
+
+		Map<String, String> onEventOptionsMap =	new HashMap<String, String>();
+
+		for (String key : options.keySet()) {
+			if (!_isValidAttribute(key)) {
+				continue;
+			}
+
+			Object value = options.get(key);
+
+			String originalKey =
+				ReservedAttributeUtil.getOriginalName(getName(), key);
+",2.7650272846221924,-1.312494795838341,0.3355339568229284,unreadable,unreadable,low,,java,35,6,1.0,5.0,Code,51860d767da262a0763d9b9b5c1ff46740cdce15b4fd94094cf772c7bbef618b,5b001879c19ff030a2fcdc3ed24c0a1bc06b1b96972de9bf20e99831e35a5b04,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 84, ""original_snippet_id"": ""211""}",,,84
+rq0_0184,213,Dorn,"   */
+  public ICMPEchoPacket(ICMPEchoPacket packet) {
+    super(packet);
+  }
+
+
+  public int getICMPHeaderByteLength() {
+    return 8;
+  }
+
+",3.745192289352417,0.9182347427462899,0.7928460548014536,readable,readable,high,,java,6,2,1.0,5.0,Code,88872c5135019ea9358c9bc5542649193dea54f0389ce24103dbcd163dfeeb5d,358edeeaf13172886781cd632631fbff7d6b0aaf7b041ca5421a8e4c81ca6144,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 85, ""original_snippet_id"": ""213""}",,,85
+rq0_0185,214,Dorn,"	public java.util.List<com.liferay.portlet.polls.model.PollsVote> getQuestionVotes(
+		long questionId, int start, int end)
+		throws com.liferay.portal.kernel.exception.SystemException {
+		return _pollsVoteLocalService.getQuestionVotes(questionId, start, end);
+	}
+
+	public int getQuestionVotesCount(long questionId)
+		throws com.liferay.portal.kernel.exception.SystemException {
+		return _pollsVoteLocalService.getQuestionVotesCount(questionId);
+	}
+",3.9718310832977295,1.434035500581094,0.8985881103148313,readable,readable,high,,java,9,2,1.0,5.0,Code,b6eec0f895eabf8255b124a45f2f32c7aad99fd2fa05c8d3f4d69421a23b981e,cf32b8c5b45388ebdc0e5ecffc200a6dd22ae3045f6f42b4ada9a834c631c3f6,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 86, ""original_snippet_id"": ""214""}",,,86
+rq0_0186,216,Dorn,"package org.gudy.azureus2.countrylocator.statisticsProviders;
+
+import java.util.Map;
+
+import org.gudy.azureus2.plugins.peers.Peer;
+
+/**
+ * IStatisticsProvider (see {@link #getStatistics(Peer[])})
+ * 
+ * @author gooogelybear
+ * @author free_lancer
+ */
+public interface IStatisticsProvider {
+		
+	/**
+	 * Calculates stats values for a column in the stats table. <br />
+	 * 
+	 * @param peers the peers for which the stats will be calculated
+	 * @return A map indexed by country code which contains the stats values as values
+	 */
+	public Map getStatistics(Peer[] peers);
+	
+	public String getName();
+	
+	/**
+	 * 
+	 * @return The measurement unit used for the stats values, e.g. ""kB/s""
+	 */
+	public String getUnit();
+",3.1449999809265137,-0.44772578918013034,0.5128164654647388,unreadable,unreadable,low,,java,7,1,1.0,5.0,Code,1bb093618fc66915c62656cd5c4de4e1f94374e7f2b1dd303626baadd9ae3579,265d17fd9b1a6920731ffc9121d5acf2ed52a334a6ca0705d183bfc63968adb0,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 87, ""original_snippet_id"": ""216""}",,,87
+rq0_0187,218,Dorn,"			try {
+				if (selenium.isElementPresent(""link=Control Panel"")) {
+					break;
+				}
+			}
+			catch (Exception e) {
+			}
+
+			Thread.sleep(1000);
+		}
+",3.1020407676696777,-0.5454954356211968,0.4927731382216919,unreadable,unreadable,low,,java,9,2,1.0,5.0,Code,e4d85b2fdcb8ae634fa2764c911ec370fdd5f3f2b6082f58667bc6c3ac062424,ce287e817ae88384ff0a36ae1af181ca206bcd7badfb84d76f254a6474faff45,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 88, ""original_snippet_id"": ""218""}",,,88
+rq0_0188,221,Dorn,"    PrimaryKeyInfo() {
+        super(null, null, null, null, null);
+    }
+    
+    /**
+     * Create a new PrimaryKeyInfo object.
+     * 
+     * @param catalog catalog name
+     * @param schema schema name
+     * @param aColumnName the name of the column that either by itself or along
+     *                    with others form(s) a unique index value for a single
+     *                    row in a table. 
+     * @param aKeySequence sequence number within primary key
+     * @param aPrimaryKeyName the name of the primary key
+     * @param md
+     */
+	public PrimaryKeyInfo(String catalog, 
+                   String schema,
+                   String aTableName,
+                   String aColumnName, 
+                   short aKeySequence, 
+                   String aPrimaryKeyName,
+                   ISQLDatabaseMetaData md)
+	{
+		super(catalog, schema, aPrimaryKeyName, DatabaseObjectType.PRIMARY_KEY, md);
+        columnName = aColumnName;
+        tableName = aTableName;
+        keySequence = aKeySequence;
+	}
+
+    /**
+     * @param columnName The columnName to set.
+     */
+    public void setColumnName(String columnName) {
+        this.columnName = columnName;
+    }
+
+    /**
+     * @return Returns the columnName.
+     */
+    public String getColumnName() {
+        return columnName;
+    }
+
+    /**
+     * @param keySequence The keySequence to set.
+     */
+    public void setKeySequence(short keySequence) {
+        this.keySequence = keySequence;
+    }
+",3.160221099853516,-0.41308447936299475,0.5199181287525482,unreadable,discard,mid,,java,25,5,1.0,5.0,Code,f2884d7ee6d2eb979e483ff224c21dad084cbc6fca8189f1f163eee763c48f32,18cf7590b82fdc1532250d98e5fabd5db4333d4e306eb0eacec5771ad32e4740,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 89, ""original_snippet_id"": ""221""}",,,89

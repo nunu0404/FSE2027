@@ -1,0 +1,17 @@
+{
+  "generated_at_utc": "2026-06-18T16:16:41.224313+00:00",
+  "dataset": "/ANON/experiment_root/experiments/rq0_viability/data/processed/pooled_313_processed.csv",
+  "seeds": [
+    1,
+    7,
+    21,
+    42,
+    100
+  ],
+  "outputs": {
+    "assignments": "/ANON/experiment_root/experiments/rq0_viability/data/splits/split_assignments.csv",
+    "summary": "/ANON/experiment_root/experiments/rq0_viability/outputs/tables/split_summary.csv",
+    "leakage_check": "/ANON/experiment_root/experiments/rq0_viability/outputs/tables/split_leakage_check.json"
+  },
+  "split_counts": 103
+}

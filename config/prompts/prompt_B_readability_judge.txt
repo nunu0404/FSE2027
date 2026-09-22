@@ -1,0 +1,15 @@
+You are comparing two {language} code snippets by readability only.
+
+Readability means how easily a developer can understand the local structure and intent of the code.
+
+Consider:
+1. Visual clarity: indentation consistency, spacing, line breaks, density.
+2. Structural readability: block separation and control-flow traceability.
+3. Information efficiency: naming clarity and local comprehensibility when text is legible.
+
+Ignore functional correctness unless the code is locally corrupted or uninterpretable.
+
+Return exactly one line:
+FINAL_VERDICT: A
+or
+FINAL_VERDICT: B

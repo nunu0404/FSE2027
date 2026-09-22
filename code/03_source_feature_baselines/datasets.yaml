@@ -1,0 +1,22 @@
+raw_sources:
+  buse:
+    path: ase-2026-v1/dataset/raw_sources/Buse_java_Code.csv
+    dataset_name: Buse
+  dorn:
+    path: ase-2026-v1/dataset/raw_sources/Dorn_java_Code.csv
+    dataset_name: Dorn
+  scalabrino:
+    path: ase-2026-v1/dataset/raw_sources/Scalabrino_java_Code.csv
+    dataset_name: Scalabrino
+
+columns:
+  id: snippet_id
+  code: code_snippet
+  score: mean_score
+  language: language
+  loc: LOC
+  cyclomatic_complexity: cyclomatic_complexity
+
+processed_dir: experiments/rq0_viability/data/processed
+tables_dir: experiments/rq0_viability/outputs/tables
+logs_dir: experiments/rq0_viability/outputs/logs

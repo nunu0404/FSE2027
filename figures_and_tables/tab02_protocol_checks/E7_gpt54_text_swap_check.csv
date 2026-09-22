@@ -1,0 +1,2 @@
+model,reasoning_effort,max_output_tokens,image_only_swap_error,text_plus_image_swap_error,image_invalid_text_valid,image_valid_text_invalid,exact_mcnemar_p
+gpt-5.4-2026-03-05,high,4096,0.11333333333333333,0.29,24,77,1.1806803494439654e-07

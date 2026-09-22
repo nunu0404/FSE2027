@@ -1,0 +1,12 @@
+{
+  "model": "google/gemma-4-12B-it",
+  "model_label": "Gemma4-12B",
+  "model_revision": "707f0a3b8a3c7ad586ed01e27eafbad8a27dd0f7",
+  "device": 0,
+  "total_calls": 42000,
+  "completed_calls": 42000,
+  "mismatch_count": 135,
+  "agreement_pass_rate": 0.9967857142857143,
+  "completed_at_utc": "2026-09-12T08:34:19.430623+00:00",
+  "status": "complete"
+}

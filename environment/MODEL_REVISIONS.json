@@ -1,0 +1,42 @@
+{
+  "note": "Exact Hugging Face revisions pinned by the frozen protocols and run manifests. Every open-weight run used BF16, greedy decoding (do_sample=false, temperature=0.0), batch size 1, max_new_tokens=24, seed 42.",
+  "open_weight_judges": {
+    "primary_rq1": {
+      "Qwen/Qwen2.5-VL-7B-Instruct": "cc594898137f460bfe9f0759e9844b3ce807cfb5",
+      "Qwen/Qwen3-VL-8B-Instruct": "0c351dd01ed87e9c1b53cbc748cba10e6187ff3b",
+      "google/gemma-3-12b-it": "96b6f1eccf38110c56df3a15bffe176da04bfd80",
+      "google/gemma-4-12B-it": "707f0a3b8a3c7ad586ed01e27eafbad8a27dd0f7",
+      "OpenGVLab/InternVL3_5-8B-HF": "741a7d03020411e666c6109218ab71e08151ef86"
+    },
+    "diagnostic_earlier_checkpoints": {
+      "OpenGVLab/InternVL3-8B": "853e3a797a661694b1b8ece0cb72dc2b23e3dac9",
+      "mistralai/Ministral-3-8B-Instruct-2512-BF16": "f6fae9795746f63c9be8344932f01275f3c63734",
+      "microsoft/Phi-4-multimodal-instruct": "93f923e1a7727d1c4f446756212d9d3e8fcc5d81"
+    },
+    "large_open_protocol_checks": {
+      "Qwen/Qwen2.5-VL-32B-Instruct": "7cfb30d71a1f4f49a57592323337a4a4727301da",
+      "google/gemma-3-27b-it": "005ad3404e59d6023443cb575daa05336842228a",
+      "mistralai/Mistral-Small-3.1-24B-Instruct-2503": "68faf511d618ef198fef186659617cfd2eb8e33a"
+    },
+    "text_only_judge": {
+      "Qwen/Qwen2.5-Coder-7B-Instruct": "c03e6d358207e414f1eca0bb1891e29f1db0e242"
+    }
+  },
+  "closed_models": {
+    "note": "API snapshots. No token logits are exposed, so only parsed verdicts are retained.",
+    "gpt-5.4-mini": "see results/protocol_checks/closed_models_gpt/gpt54_mini_20260707/*_manifest.json",
+    "gpt-5.4": "gpt-5.4-2026-03-05",
+    "gpt-5.5": "see results/protocol_checks/closed_models_gpt/gpt55_fixed_20260708/*_manifest.json"
+  },
+  "ocr_engines": {
+    "RapidOCR": "see results/rq4_image_only/ocr_substitution_frozen_rf/run_manifest.json",
+    "EasyOCR": "see results/rq4_image_only/ocr_substitution_frozen_rf/run_manifest.json"
+  },
+  "renderer": {
+    "font": "DejaVu Sans Mono",
+    "font_file": "code/01_rendering/fonts/DejaVuSansMono.ttf",
+    "tab_width": 4,
+    "image_pad_px": 10,
+    "line_gap_px": 6
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "protocol_version": "grounded-3lang-20260721-v2",
+  "source_protocol_root": "results/protocol_unified_3lang_20260720",
+  "seed": 42,
+  "languages": ["java", "python", "cuda"],
+  "pairs_per_language": 1000,
+  "difficulty_primary": "continuous_abs_z_diff",
+  "difficulty_strata": "within-language rank tertiles named near, middle, far",
+  "rendering": {
+    "font_path": "ase-2026-v1/rendering/fonts/DejaVuSansMono.ttf",
+    "font_sizes": [20, 24],
+    "wrap_columns": [60, 80],
+    "line_numbers": true,
+    "tab_width": 4,
+    "image_pad": 10,
+    "line_gap": 6,
+    "display_modes": {
+      "mono_light": "bw",
+      "friendly_light": "friendly",
+      "monokai_dark": "monokai"
+    },
+    "baseline_condition": "monokai_dark__fs20__wrap80__lnon",
+    "wrap_semantics": "token-preserving visual soft wrap after lexing; continuation rows have no source line number"
+  },
+  "perturbations": {
+    "conditions": [
+      "baseline",
+      "no_indent",
+      "no_blank_lines",
+      "gaussian_sigma_1",
+      "gaussian_sigma_2",
+      "gaussian_sigma_4"
+    ],
+    "gaussian_sigma_pixels": [1.0, 2.0, 4.0],
+    "layout_ablation_semantics": "render-stage only after lexing"
+  },
+  "inference": {
+    "models": [
+      "Qwen/Qwen2.5-VL-7B-Instruct",
+      "OpenGVLab/InternVL3-8B"
+    ],
+    "model_revisions": {
+      "Qwen/Qwen2.5-VL-7B-Instruct": "cc594898137f460bfe9f0759e9844b3ce807cfb5",
+      "OpenGVLab/InternVL3-8B": "853e3a797a661694b1b8ece0cb72dc2b23e3dac9"
+    },
+    "dtype": "bfloat16",
+    "do_sample": false,
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_p_active": false,
+    "max_new_tokens": 24,
+    "seed": 42,
+    "modality": "image_only",
+    "packaging": "two separately labeled images",
+    "prompt": "results/grounded_protocol_3lang_20260721/config/prompt_B_template.txt",
+    "direct_pairwise": true,
+    "strict_swap": true,
+    "orders": ["AB", "BA"],
+    "capture_verdict_logits": true
+  },
+  "analysis": {
+    "primary_endpoints": ["effective_accuracy", "strict_swap_error"],
+    "secondary_endpoints": ["valid_accuracy", "spearman_valid_only"],
+    "primary_inference": "pair-level regression with crossed snippet cluster-robust uncertainty (snippet_i and snippet_j); language interactions use the Dorn-only three-language subset",
+    "pairwise_test": "exact McNemar on matched binary pair outcomes as a sensitivity analysis",
+    "omnibus_test": "Cochran Q on complete matched binary outcomes as a sensitivity analysis",
+    "multiplicity": "Holm family-wise correction within each model-language-endpoint family",
+    "binomial_interval": "Wilson 95%",
+    "difficulty_reporting": "continuous interaction plus descriptive rank tertiles; legacy thresholds are reproducibility-only",
+    "blur_reporting": "categorical condition interaction primary; ordinal sigma trend secondary because sigma 4 may reach an OCR floor",
+    "embedding_reporting": "continuous estimates with bootstrap confidence intervals and permutation null; no fixed R=0.5/0.8 labels"
+  }
+}

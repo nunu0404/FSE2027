@@ -1,0 +1,67 @@
+Using Python 3.10.12 environment at: /ANON/scratch_rq1/envs/phi4mm
+Resolved 28 packages in 2.46s
+Downloading sympy (6.0MiB)
+Downloading triton (162.4MiB)
+Downloading nvidia-cuda-runtime (2.1MiB)
+Downloading torch (584.3MiB)
+Downloading nvidia-cufile (1.2MiB)
+Downloading nvidia-cusparse (133.8MiB)
+Downloading nvidia-cuda-cupti (10.2MiB)
+Downloading nvidia-nvshmem-cu13 (57.6MiB)
+Downloading torchvision (7.2MiB)
+ Downloaded torchvision
+ Downloaded triton
+ Downloaded sympy
+Downloading nvidia-cusolver (184.5MiB)
+Downloading nvidia-cufft (204.2MiB)
+Downloading nvidia-curand (56.8MiB)
+Downloading nvidia-nvjitlink (38.8MiB)
+Downloading nvidia-cublas (400.0MiB)
+Downloading nvidia-cuda-nvrtc (86.0MiB)
+Downloading nvidia-cudnn-cu13 (332.4MiB)
+Downloading nvidia-cusparselt-cu13 (162.0MiB)
+Downloading nvidia-nccl-cu13 (184.9MiB)
+ Downloaded torch
+ Downloaded nvidia-cufile
+ Downloaded nvidia-cuda-runtime
+ Downloaded nvidia-cuda-cupti
+ Downloaded nvidia-nvjitlink
+ Downloaded nvidia-nvshmem-cu13
+ Downloaded nvidia-curand
+ Downloaded nvidia-cusparse
+ Downloaded nvidia-cuda-nvrtc
+ Downloaded nvidia-cusolver
+ Downloaded nvidia-cufft
+ Downloaded nvidia-cusparselt-cu13
+ Downloaded nvidia-nccl-cu13
+ Downloaded nvidia-cudnn-cu13
+ Downloaded nvidia-cublas
+Prepared 19 packages in 1m 40s
+Uninstalled 4 packages in 1.03s
+warning: Failed to hardlink files; falling back to full copy. This may lead to degraded performance.
+         If the cache and target directories are on different filesystems, hardlinking may not be supported.
+         If this is intentional, set `export UV_LINK_MODE=copy` or use `--link-mode=copy` to suppress this warning.
+Installed 19 packages in 2.50s
+ + nvidia-cublas==13.0.0.19
+ + nvidia-cuda-cupti==13.0.48
+ + nvidia-cuda-nvrtc==13.0.48
+ + nvidia-cuda-runtime==13.0.48
+ + nvidia-cudnn-cu13==9.13.0.50
+ + nvidia-cufft==12.0.0.15
+ + nvidia-cufile==1.15.0.42
+ + nvidia-curand==10.4.0.35
+ + nvidia-cusolver==12.0.3.29
+ + nvidia-cusparse==12.6.2.49
+ + nvidia-cusparselt-cu13==0.8.0
+ + nvidia-nccl-cu13==2.27.7
+ + nvidia-nvjitlink==13.0.39
+ + nvidia-nvshmem-cu13==3.3.24
+ + nvidia-nvtx==13.0.39
+ - sympy==1.13.1
+ + sympy==1.14.0
+ - torch==2.6.0
+ + torch==2.9.1+cu130
+ - torchvision==0.21.0
+ + torchvision==0.24.1+cu130
+ - triton==3.2.0
+ + triton==3.5.1

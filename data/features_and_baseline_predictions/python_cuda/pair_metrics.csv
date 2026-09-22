@@ -1,0 +1,145 @@
+dataset_name,language,model,difficulty,n_pairs,pair_accuracy,prediction_ties
+Dorn,cuda,Logistic Regression,easy,1000,0.823,0
+Dorn,cuda,Logistic Regression,hard,1000,0.565,1
+Dorn,cuda,Logistic Regression,medium,1000,0.643,0
+Dorn,cuda,Multilayer Perceptron,easy,1000,0.839,0
+Dorn,cuda,Multilayer Perceptron,hard,1000,0.582,1
+Dorn,cuda,Multilayer Perceptron,medium,1000,0.647,0
+Dorn,cuda,Naive Bayes,easy,1000,0.767,0
+Dorn,cuda,Naive Bayes,hard,1000,0.562,1
+Dorn,cuda,Naive Bayes,medium,1000,0.622,0
+Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",easy,1000,0.824,0
+Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",hard,1000,0.563,1
+Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",medium,1000,0.643,0
+Dorn,cuda,Voting ensemble (LR+NB+RF),easy,1000,0.867,0
+Dorn,cuda,Voting ensemble (LR+NB+RF),hard,1000,0.598,1
+Dorn,cuda,Voting ensemble (LR+NB+RF),medium,1000,0.677,0
+Dorn,cuda,gradient_boosting_regressor,easy,1000,0.877,0
+Dorn,cuda,gradient_boosting_regressor,hard,1000,0.609,1
+Dorn,cuda,gradient_boosting_regressor,medium,1000,0.715,0
+Dorn,cuda,linear_regression,easy,1000,0.895,0
+Dorn,cuda,linear_regression,hard,1000,0.598,1
+Dorn,cuda,linear_regression,medium,1000,0.701,0
+Dorn,cuda,random_forest_regressor,easy,1000,0.886,0
+Dorn,cuda,random_forest_regressor,hard,1000,0.607,1
+Dorn,cuda,random_forest_regressor,medium,1000,0.708,0
+Dorn,cuda,svr,easy,1000,0.919,0
+Dorn,cuda,svr,hard,1000,0.624,1
+Dorn,cuda,svr,medium,1000,0.731,0
+Dorn,java,Logistic Regression,easy,1000,0.842,0
+Dorn,java,Logistic Regression,hard,1000,0.621,0
+Dorn,java,Logistic Regression,medium,1000,0.735,0
+Dorn,java,Multilayer Perceptron,easy,1000,0.872,0
+Dorn,java,Multilayer Perceptron,hard,1000,0.625,0
+Dorn,java,Multilayer Perceptron,medium,1000,0.766,0
+Dorn,java,Naive Bayes,easy,1000,0.832,0
+Dorn,java,Naive Bayes,hard,1000,0.608,1
+Dorn,java,Naive Bayes,medium,1000,0.739,0
+Dorn,java,"Scalabrino-LR (replicated, not official tool)",easy,1000,0.842,0
+Dorn,java,"Scalabrino-LR (replicated, not official tool)",hard,1000,0.626,0
+Dorn,java,"Scalabrino-LR (replicated, not official tool)",medium,1000,0.735,0
+Dorn,java,Voting ensemble (LR+NB+RF),easy,1000,0.863,0
+Dorn,java,Voting ensemble (LR+NB+RF),hard,1000,0.624,0
+Dorn,java,Voting ensemble (LR+NB+RF),medium,1000,0.756,0
+Dorn,java,gradient_boosting_regressor,easy,1000,0.901,0
+Dorn,java,gradient_boosting_regressor,hard,1000,0.628,0
+Dorn,java,gradient_boosting_regressor,medium,1000,0.762,0
+Dorn,java,linear_regression,easy,1000,0.831,0
+Dorn,java,linear_regression,hard,1000,0.63,0
+Dorn,java,linear_regression,medium,1000,0.705,0
+Dorn,java,random_forest_regressor,easy,1000,0.883,0
+Dorn,java,random_forest_regressor,hard,1000,0.654,0
+Dorn,java,random_forest_regressor,medium,1000,0.773,0
+Dorn,java,svr,easy,1000,0.885,0
+Dorn,java,svr,hard,1000,0.661,0
+Dorn,java,svr,medium,1000,0.782,0
+Dorn,python,Logistic Regression,easy,1000,0.747,0
+Dorn,python,Logistic Regression,hard,1000,0.564,1
+Dorn,python,Logistic Regression,medium,1000,0.603,1
+Dorn,python,Multilayer Perceptron,easy,1000,0.713,0
+Dorn,python,Multilayer Perceptron,hard,1000,0.561,1
+Dorn,python,Multilayer Perceptron,medium,1000,0.612,1
+Dorn,python,Naive Bayes,easy,1000,0.744,2
+Dorn,python,Naive Bayes,hard,1000,0.581,1
+Dorn,python,Naive Bayes,medium,1000,0.593,1
+Dorn,python,"Scalabrino-LR (replicated, not official tool)",easy,1000,0.748,0
+Dorn,python,"Scalabrino-LR (replicated, not official tool)",hard,1000,0.568,1
+Dorn,python,"Scalabrino-LR (replicated, not official tool)",medium,1000,0.603,1
+Dorn,python,Voting ensemble (LR+NB+RF),easy,1000,0.746,0
+Dorn,python,Voting ensemble (LR+NB+RF),hard,1000,0.584,1
+Dorn,python,Voting ensemble (LR+NB+RF),medium,1000,0.608,1
+Dorn,python,gradient_boosting_regressor,easy,1000,0.716,0
+Dorn,python,gradient_boosting_regressor,hard,1000,0.566,1
+Dorn,python,gradient_boosting_regressor,medium,1000,0.59,1
+Dorn,python,linear_regression,easy,1000,0.71,0
+Dorn,python,linear_regression,hard,1000,0.547,1
+Dorn,python,linear_regression,medium,1000,0.596,1
+Dorn,python,random_forest_regressor,easy,1000,0.729,0
+Dorn,python,random_forest_regressor,hard,1000,0.561,1
+Dorn,python,random_forest_regressor,medium,1000,0.592,1
+Dorn,python,svr,easy,1000,0.676,0
+Dorn,python,svr,hard,1000,0.535,1
+Dorn,python,svr,medium,1000,0.573,1
+Sergeyuk2024,java,Logistic Regression,easy,1000,0.67,0
+Sergeyuk2024,java,Logistic Regression,hard,1000,0.519,0
+Sergeyuk2024,java,Logistic Regression,medium,1000,0.598,0
+Sergeyuk2024,java,Multilayer Perceptron,easy,1000,0.732,0
+Sergeyuk2024,java,Multilayer Perceptron,hard,1000,0.516,0
+Sergeyuk2024,java,Multilayer Perceptron,medium,1000,0.607,0
+Sergeyuk2024,java,Naive Bayes,easy,1000,0.627,0
+Sergeyuk2024,java,Naive Bayes,hard,1000,0.501,0
+Sergeyuk2024,java,Naive Bayes,medium,1000,0.583,0
+Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",easy,1000,0.671,0
+Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",hard,1000,0.523,0
+Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",medium,1000,0.597,0
+Sergeyuk2024,java,Voting ensemble (LR+NB+RF),easy,1000,0.715,0
+Sergeyuk2024,java,Voting ensemble (LR+NB+RF),hard,1000,0.503,0
+Sergeyuk2024,java,Voting ensemble (LR+NB+RF),medium,1000,0.609,0
+Sergeyuk2024,java,gradient_boosting_regressor,easy,1000,0.765,0
+Sergeyuk2024,java,gradient_boosting_regressor,hard,1000,0.544,0
+Sergeyuk2024,java,gradient_boosting_regressor,medium,1000,0.629,0
+Sergeyuk2024,java,linear_regression,easy,1000,0.638,0
+Sergeyuk2024,java,linear_regression,hard,1000,0.505,0
+Sergeyuk2024,java,linear_regression,medium,1000,0.59,0
+Sergeyuk2024,java,random_forest_regressor,easy,1000,0.786,0
+Sergeyuk2024,java,random_forest_regressor,hard,1000,0.534,0
+Sergeyuk2024,java,random_forest_regressor,medium,1000,0.631,0
+Sergeyuk2024,java,svr,easy,1000,0.768,0
+Sergeyuk2024,java,svr,hard,1000,0.545,0
+Sergeyuk2024,java,svr,medium,1000,0.627,0
+Dorn,cuda,Logistic Regression,all,3000,0.677,1
+Dorn,cuda,Multilayer Perceptron,all,3000,0.6893333333333334,1
+Dorn,cuda,Naive Bayes,all,3000,0.6503333333333333,1
+Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",all,3000,0.6766666666666666,1
+Dorn,cuda,Voting ensemble (LR+NB+RF),all,3000,0.714,1
+Dorn,cuda,gradient_boosting_regressor,all,3000,0.7336666666666667,1
+Dorn,cuda,linear_regression,all,3000,0.7313333333333333,1
+Dorn,cuda,random_forest_regressor,all,3000,0.7336666666666667,1
+Dorn,cuda,svr,all,3000,0.758,1
+Dorn,java,Logistic Regression,all,3000,0.7326666666666667,0
+Dorn,java,Multilayer Perceptron,all,3000,0.7543333333333333,0
+Dorn,java,Naive Bayes,all,3000,0.7263333333333334,1
+Dorn,java,"Scalabrino-LR (replicated, not official tool)",all,3000,0.7343333333333333,0
+Dorn,java,Voting ensemble (LR+NB+RF),all,3000,0.7476666666666667,0
+Dorn,java,gradient_boosting_regressor,all,3000,0.7636666666666667,0
+Dorn,java,linear_regression,all,3000,0.722,0
+Dorn,java,random_forest_regressor,all,3000,0.77,0
+Dorn,java,svr,all,3000,0.776,0
+Dorn,python,Logistic Regression,all,3000,0.638,2
+Dorn,python,Multilayer Perceptron,all,3000,0.6286666666666667,2
+Dorn,python,Naive Bayes,all,3000,0.6393333333333333,4
+Dorn,python,"Scalabrino-LR (replicated, not official tool)",all,3000,0.6396666666666667,2
+Dorn,python,Voting ensemble (LR+NB+RF),all,3000,0.646,2
+Dorn,python,gradient_boosting_regressor,all,3000,0.624,2
+Dorn,python,linear_regression,all,3000,0.6176666666666667,2
+Dorn,python,random_forest_regressor,all,3000,0.6273333333333333,2
+Dorn,python,svr,all,3000,0.5946666666666667,2
+Sergeyuk2024,java,Logistic Regression,all,3000,0.5956666666666667,0
+Sergeyuk2024,java,Multilayer Perceptron,all,3000,0.6183333333333333,0
+Sergeyuk2024,java,Naive Bayes,all,3000,0.5703333333333334,0
+Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",all,3000,0.597,0
+Sergeyuk2024,java,Voting ensemble (LR+NB+RF),all,3000,0.609,0
+Sergeyuk2024,java,gradient_boosting_regressor,all,3000,0.646,0
+Sergeyuk2024,java,linear_regression,all,3000,0.5776666666666667,0
+Sergeyuk2024,java,random_forest_regressor,all,3000,0.6503333333333333,0
+Sergeyuk2024,java,svr,all,3000,0.6466666666666666,0

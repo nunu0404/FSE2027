@@ -1,0 +1,14 @@
+Using Python 3.10.12 environment at: /ANON/scratch_rq1/envs/phi4mm
+Resolved 6 packages in 313ms
+Downloading pandas (12.2MiB)
+ Downloaded pandas
+Prepared 5 packages in 1.00s
+warning: Failed to hardlink files; falling back to full copy. This may lead to degraded performance.
+         If the cache and target directories are on different filesystems, hardlinking may not be supported.
+         If this is intentional, set `export UV_LINK_MODE=copy` or use `--link-mode=copy` to suppress this warning.
+Installed 5 packages in 269ms
+ + pandas==2.3.3
+ + python-dateutil==2.9.0.post0
+ + pytz==2026.2
+ + six==1.17.0
+ + tzdata==2026.3

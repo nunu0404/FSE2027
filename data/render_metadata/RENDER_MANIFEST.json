@@ -1,0 +1,11 @@
+{
+  "protocol_version": "grounded-3lang-20260721-v2",
+  "generated_at_utc": "2026-07-21T04:34:59.670926+00:00",
+  "snippets": 552,
+  "grid_conditions": 12,
+  "grid_images": 6624,
+  "perturbation_conditions": 6,
+  "perturbation_images": 3312,
+  "renderer": "token-preserving lex-first soft wrap",
+  "source_protocol_untouched": true
+}

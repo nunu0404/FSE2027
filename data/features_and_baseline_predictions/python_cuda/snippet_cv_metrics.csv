@@ -1,0 +1,17 @@
+dataset_name,language,model,n_snippets,feature_count,cv,spearman_r,spearman_p,mae_z,rmse_z
+Dorn,cuda,linear_regression,120,27,"StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42)",0.7344367721906975,1.3562648763403218e-21,0.5938598907420769,0.7528537103060504
+Dorn,cuda,random_forest_regressor,120,27,"StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42)",0.733092921868536,1.7482046698262685e-21,0.5592532665675518,0.7336398978840515
+Dorn,cuda,gradient_boosting_regressor,120,27,"StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42)",0.7178591457359199,2.801928487884607e-20,0.5625600199316848,0.7620204268775133
+Dorn,cuda,svr,120,27,"StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42)",0.7847669183648802,2.8382474915162134e-26,0.5422287931614367,0.6921843863920124
+Dorn,java,linear_regression,121,27,"StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42)",0.5850335066962505,1.8343792043667584e-12,0.5136062124858478,0.6671826003068713
+Dorn,java,random_forest_regressor,121,27,"StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42)",0.6765738943703237,1.635129598315841e-17,0.4189055924258404,0.5717136676740433
+Dorn,java,gradient_boosting_regressor,121,27,"StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42)",0.679137918770894,1.111173952856479e-17,0.4288534675512285,0.5589399927828447
+Dorn,java,svr,121,27,"StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42)",0.6985447407961864,5.23253434126481e-19,0.41407767883594054,0.562901367302919
+Dorn,python,linear_regression,119,27,"StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42)",0.346966389765134,0.00011072150864052388,0.5817114471026831,0.7288023209208023
+Dorn,python,random_forest_regressor,119,27,"StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42)",0.36542549593750967,4.379308576171011e-05,0.5316219483565808,0.66328049495164
+Dorn,python,gradient_boosting_regressor,119,27,"StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42)",0.32308420899774914,0.00033857784385951233,0.5628169752763212,0.7000273045676595
+Dorn,python,svr,119,27,"StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42)",0.2869386868612165,0.0015567020206961539,0.572060405724471,0.7111058462944603
+Sergeyuk2024,java,linear_regression,120,27,"StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42)",0.2934141455900741,0.0011441686661244792,1.1740300040656244,2.684816505262596
+Sergeyuk2024,java,random_forest_regressor,120,27,"StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42)",0.5097811165657902,2.734427938664837e-09,0.6848920708217773,0.8486469572427779
+Sergeyuk2024,java,gradient_boosting_regressor,120,27,"StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42)",0.4805411164270288,2.7819574244863894e-08,0.6935012012122165,0.8718402645606063
+Sergeyuk2024,java,svr,120,27,"StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42)",0.4961665779574109,8.27444494489014e-09,0.6643961567772,0.8523136407521462

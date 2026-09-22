@@ -1,0 +1,15 @@
+{
+  "generated_at_utc": "2026-06-18T16:32:03.577844+00:00",
+  "dataset": "/ANON/experiment_root/experiments/rq0_viability/data/processed/pooled_313_processed.csv",
+  "features": "/ANON/experiment_root/experiments/rq0_viability/data/processed/features_313.csv",
+  "splits": "/ANON/experiment_root/experiments/rq0_viability/data/splits/split_assignments.csv",
+  "feature_count": 27,
+  "preprocessing_rule": "All imputers and scalers are inside sklearn Pipelines and fit on train split only.",
+  "hyperparameter_rule": "Fixed defaults/configured constants; no test-set tuning.",
+  "gradient_boosting_note": "sklearn GradientBoosting is used as the tree boosting baseline unless XGBoost/LightGBM is added later.",
+  "outputs": {
+    "metrics": "/ANON/experiment_root/experiments/rq0_viability/outputs/classical_baselines/classical_metrics.csv",
+    "predictions": "/ANON/experiment_root/experiments/rq0_viability/outputs/classical_baselines/classical_regression_predictions.csv",
+    "summary": "/ANON/experiment_root/experiments/rq0_viability/outputs/tables/classical_regression_summary.csv"
+  }
+}

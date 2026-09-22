@@ -1,0 +1,21 @@
+{
+  "python_executable": "/ANON/home/miniconda3/bin/python3.13",
+  "python": "3.13.11",
+  "platform": "Linux-5.15.0-163-generic-x86_64-with-glibc2.35",
+  "torch": "2.11.0+cu130",
+  "torch_cuda": "13.0",
+  "transformers": "5.9.0",
+  "accelerate": "1.14.0",
+  "gpu": {
+    "physical_index": "0",
+    "uuid": "GPU-98933e9f-5143-2ea9-2508-16c4aea693f4",
+    "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+    "memory_mib": "97887",
+    "driver": "580.95.05"
+  },
+  "cuda_visible_devices": "0",
+  "visible_cuda_device_count": 1,
+  "visible_cuda_name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "model_key": "qwen3",
+  "model_snapshot": "/ANON/scratch_rq1/hf/models--Qwen--Qwen3-VL-8B-Instruct/snapshots/0c351dd01ed87e9c1b53cbc748cba10e6187ff3b"
+}

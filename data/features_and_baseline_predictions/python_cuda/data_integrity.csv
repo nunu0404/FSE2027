@@ -1,0 +1,5 @@
+dataset_name,language,snippet_count,participant_rows,ratings_total,ratings_per_snippet_min,ratings_per_snippet_median,ratings_per_snippet_max,score_scale,score_column_mapping,invalid_category_rows_excluded,official_ambiguous_snippets
+Dorn,java,121,5468,25932,162,217.0,265,1..5 Likert,numeric snippet IDs sorted ascending; positional score columns,,
+Dorn,python,119,5468,25154,161,220.0,266,1..5 Likert,numeric snippet IDs sorted ascending; positional score columns,,
+Dorn,cuda,120,5468,25655,164,200.0,267,1..5 Likert,numeric snippet IDs sorted ascending; positional score columns,,
+Sergeyuk2024,java,120,390,2486,11,20.0,31,"readable vote proportion [0,1]",snip_id join after removing .png suffix,5.0,11.0

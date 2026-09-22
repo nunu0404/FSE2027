@@ -1,0 +1,46 @@
+model,model_display_name,language,fold,cv_scheme,seed,test_snippets,unique_test_snippets
+multilayer_perceptron,Multilayer Perceptron,CUDA,0,"StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42); formatting hash groups",42,24,24
+multilayer_perceptron,Multilayer Perceptron,CUDA,1,"StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42); formatting hash groups",42,24,24
+multilayer_perceptron,Multilayer Perceptron,CUDA,2,"StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42); formatting hash groups",42,24,24
+multilayer_perceptron,Multilayer Perceptron,CUDA,3,"StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42); formatting hash groups",42,24,24
+multilayer_perceptron,Multilayer Perceptron,CUDA,4,"StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42); formatting hash groups",42,24,24
+multilayer_perceptron,Multilayer Perceptron,Java,0,"predefined pooled_stratified_5fold, seed=42",42,63,63
+multilayer_perceptron,Multilayer Perceptron,Java,1,"predefined pooled_stratified_5fold, seed=42",42,62,62
+multilayer_perceptron,Multilayer Perceptron,Java,2,"predefined pooled_stratified_5fold, seed=42",42,62,62
+multilayer_perceptron,Multilayer Perceptron,Java,3,"predefined pooled_stratified_5fold, seed=42",42,63,63
+multilayer_perceptron,Multilayer Perceptron,Java,4,"predefined pooled_stratified_5fold, seed=42",42,63,63
+multilayer_perceptron,Multilayer Perceptron,Python,0,"StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42); formatting hash groups",42,24,24
+multilayer_perceptron,Multilayer Perceptron,Python,1,"StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42); formatting hash groups",42,24,24
+multilayer_perceptron,Multilayer Perceptron,Python,2,"StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42); formatting hash groups",42,24,24
+multilayer_perceptron,Multilayer Perceptron,Python,3,"StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42); formatting hash groups",42,24,24
+multilayer_perceptron,Multilayer Perceptron,Python,4,"StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42); formatting hash groups",42,23,23
+svr,Support Vector Regression,CUDA,0,"StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42); formatting hash groups",42,24,24
+svr,Support Vector Regression,CUDA,1,"StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42); formatting hash groups",42,24,24
+svr,Support Vector Regression,CUDA,2,"StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42); formatting hash groups",42,24,24
+svr,Support Vector Regression,CUDA,3,"StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42); formatting hash groups",42,24,24
+svr,Support Vector Regression,CUDA,4,"StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42); formatting hash groups",42,24,24
+svr,Support Vector Regression,Java,0,"predefined pooled_stratified_5fold, seed=42",42,63,63
+svr,Support Vector Regression,Java,1,"predefined pooled_stratified_5fold, seed=42",42,62,62
+svr,Support Vector Regression,Java,2,"predefined pooled_stratified_5fold, seed=42",42,62,62
+svr,Support Vector Regression,Java,3,"predefined pooled_stratified_5fold, seed=42",42,63,63
+svr,Support Vector Regression,Java,4,"predefined pooled_stratified_5fold, seed=42",42,63,63
+svr,Support Vector Regression,Python,0,"StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42); formatting hash groups",42,24,24
+svr,Support Vector Regression,Python,1,"StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42); formatting hash groups",42,24,24
+svr,Support Vector Regression,Python,2,"StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42); formatting hash groups",42,24,24
+svr,Support Vector Regression,Python,3,"StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42); formatting hash groups",42,24,24
+svr,Support Vector Regression,Python,4,"StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42); formatting hash groups",42,23,23
+voting_lr_nb_rf,Voting (LR+NB+RF),CUDA,0,"StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42); formatting hash groups",42,24,24
+voting_lr_nb_rf,Voting (LR+NB+RF),CUDA,1,"StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42); formatting hash groups",42,24,24
+voting_lr_nb_rf,Voting (LR+NB+RF),CUDA,2,"StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42); formatting hash groups",42,24,24
+voting_lr_nb_rf,Voting (LR+NB+RF),CUDA,3,"StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42); formatting hash groups",42,24,24
+voting_lr_nb_rf,Voting (LR+NB+RF),CUDA,4,"StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42); formatting hash groups",42,24,24
+voting_lr_nb_rf,Voting (LR+NB+RF),Java,0,"predefined pooled_stratified_5fold, seed=42",42,63,63
+voting_lr_nb_rf,Voting (LR+NB+RF),Java,1,"predefined pooled_stratified_5fold, seed=42",42,62,62
+voting_lr_nb_rf,Voting (LR+NB+RF),Java,2,"predefined pooled_stratified_5fold, seed=42",42,62,62
+voting_lr_nb_rf,Voting (LR+NB+RF),Java,3,"predefined pooled_stratified_5fold, seed=42",42,63,63
+voting_lr_nb_rf,Voting (LR+NB+RF),Java,4,"predefined pooled_stratified_5fold, seed=42",42,63,63
+voting_lr_nb_rf,Voting (LR+NB+RF),Python,0,"StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42); formatting hash groups",42,24,24
+voting_lr_nb_rf,Voting (LR+NB+RF),Python,1,"StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42); formatting hash groups",42,24,24
+voting_lr_nb_rf,Voting (LR+NB+RF),Python,2,"StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42); formatting hash groups",42,24,24
+voting_lr_nb_rf,Voting (LR+NB+RF),Python,3,"StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42); formatting hash groups",42,24,24
+voting_lr_nb_rf,Voting (LR+NB+RF),Python,4,"StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42); formatting hash groups",42,23,23

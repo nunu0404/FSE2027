@@ -1,0 +1,66 @@
+experiment:
+  name: rq0_viability
+  root: experiments/rq0_viability
+  seeds: [1, 7, 21, 42, 100]
+
+labels:
+  main_score: human_score_z_within_dataset
+  pooled_pair_score: human_score_z_within_dataset
+  within_dataset_pair_score: human_score_z_within_dataset
+  strict_tertile_middle_label: discard
+
+splits:
+  within_dataset_folds: 5
+  pooled_folds: 5
+  pooled_stratify_by: dataset_name_plus_tertiary_label
+
+pairs:
+  target_per_difficulty: 1000
+  compact_per_difficulty: 250
+  thresholds:
+    easy_min_abs_z: 1.0
+    medium_min_abs_z: 0.5
+    hard_min_abs_z: 0.2
+
+rendering:
+  default:
+    font_name: ase-2026-v1/rendering/fonts/DejaVuSansMono.ttf
+    font_size: 20
+    style: monokai
+    line_numbers: true
+    wrap_column: 60
+    line_pad: 6
+    image_pad: 10
+    render_mode: pygments
+    tab_width: 4
+  high_legibility:
+    font_name: ase-2026-v1/rendering/fonts/DejaVuSansMono.ttf
+    font_size: 24
+    style: monokai
+    line_numbers: false
+    wrap_column: 80
+    line_pad: 6
+    image_pad: 10
+    render_mode: pygments
+    tab_width: 4
+
+inference:
+  temperature: 0.0
+  top_p: 1.0
+  max_new_tokens: 24
+  dtype: bf16
+  batch_size: 1
+  gpu: 0
+
+stages:
+  compact_viability:
+    seed: 42
+    fold: 0
+    prompt: B
+    pairs_per_difficulty: 250
+  main_viability:
+    prompts: [B]
+    seeds: [1, 7, 21, 42, 100]
+  prompt_sensitivity:
+    prompts: [A, B, C]
+    seeds: [42]

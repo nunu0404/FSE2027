@@ -1,0 +1,4 @@
+pair_id,language,snippet_i,snippet_j,human_preference,winner_uid,loser_uid,same_unordered_endpoints
+ext_dorn_cuda_hard_02718,cuda,dorn_cuda_094,dorn_cuda_105,dorn_cuda_094,dorn_cuda_099,dorn_cuda_059,False
+ext_dorn_python_medium_07974,python,dorn_python_045,dorn_python_115,dorn_python_045,dorn_python_029,dorn_python_054,False
+ext_dorn_python_hard_08056,python,dorn_python_057,dorn_python_065,dorn_python_057,dorn_python_108,dorn_python_063,False

@@ -1,0 +1,12 @@
+{
+  "generated_at_utc": "2026-06-18T16:34:25.961392+00:00",
+  "pairs": "/ANON/experiment_root/experiments/rq0_viability/data/pairs/fixed_pair_sets.csv",
+  "predictions": "/ANON/experiment_root/experiments/rq0_viability/outputs/classical_baselines/classical_regression_predictions.csv",
+  "outputs": {
+    "pair_level": "/ANON/experiment_root/experiments/rq0_viability/outputs/pair_level_results/classical_pairwise_results.csv",
+    "metrics": "/ANON/experiment_root/experiments/rq0_viability/outputs/metrics/classical_pairwise_metrics.csv",
+    "summary": "/ANON/experiment_root/experiments/rq0_viability/outputs/tables/classical_pairwise_summary.csv"
+  },
+  "pair_level_rows": 258300,
+  "metric_rows": 412
+}

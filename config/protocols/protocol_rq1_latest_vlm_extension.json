@@ -1,0 +1,54 @@
+{
+  "run_family": "latest_vlm_extension_20260830",
+  "historical_full_metric_reproduction": "explicitly_omitted_by_author",
+  "historical_sanity_gate": "18 fixed pairs across 3 languages and 3 difficulty bins for two predecessor models",
+  "primary": {
+    "pair_manifest": "results/rq1_model_battery_3lang_20260723/data/rq1_pairs_9000.csv",
+    "pairs": 9000,
+    "languages": ["java", "python", "cuda"],
+    "pairs_per_language": 3000,
+    "pairs_per_language_difficulty": 1000,
+    "orders": ["AB", "BA"],
+    "input": "image_only_two_separate_pngs",
+    "calls_per_model": 18000
+  },
+  "models": {
+    "qwen3": {
+      "id": "Qwen/Qwen3-VL-8B-Instruct",
+      "revision": "0c351dd01ed87e9c1b53cbc748cba10e6187ff3b"
+    },
+    "internvl3_5": {
+      "id": "OpenGVLab/InternVL3_5-8B-HF",
+      "revision": "741a7d03020411e666c6109218ab71e08151ef86"
+    },
+    "gemma4": {
+      "id": "google/gemma-4-12B-it",
+      "revision": "707f0a3b8a3c7ad586ed01e27eafbad8a27dd0f7"
+    }
+  },
+  "generation": {
+    "dtype": "bfloat16",
+    "quantization": "none",
+    "batch_size": 1,
+    "do_sample": false,
+    "temperature_argument": "omitted",
+    "temperature_effective": "not_applicable_under_greedy_decoding",
+    "top_p_argument": "omitted",
+    "top_p_active": false,
+    "max_new_tokens": 24,
+    "seed": 42,
+    "seed_active": false,
+    "thinking": false,
+    "system_prompt": null,
+    "few_shot": false
+  },
+  "gpu_isolation": "Each tmux inference process must have CUDA_VISIBLE_DEVICES set to exactly 0 or 1",
+  "full_run_gate": "Validate expected calls, complete pair/order keys, duplicates, parse failures, and missing logits before the next stage",
+  "deployment": {
+    "source_manifest": "fse2027/external_runs/deploy_v2_logit_20260731/data/F5_FROZEN_PAIRS.csv",
+    "pair_count_from_manifest": 9000,
+    "expected_calls_formula": "2 * pair_count",
+    "expected_calls": 18000,
+    "system": "direct_qwen3_image_only"
+  }
+}

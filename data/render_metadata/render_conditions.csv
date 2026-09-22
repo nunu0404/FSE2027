@@ -1,0 +1,13 @@
+condition,display_mode,style,font_size,wrap_column,line_numbers
+mono_light__fs20__wrap60__lnon,mono_light,bw,20,60,True
+mono_light__fs20__wrap80__lnon,mono_light,bw,20,80,True
+mono_light__fs24__wrap60__lnon,mono_light,bw,24,60,True
+mono_light__fs24__wrap80__lnon,mono_light,bw,24,80,True
+friendly_light__fs20__wrap60__lnon,friendly_light,friendly,20,60,True
+friendly_light__fs20__wrap80__lnon,friendly_light,friendly,20,80,True
+friendly_light__fs24__wrap60__lnon,friendly_light,friendly,24,60,True
+friendly_light__fs24__wrap80__lnon,friendly_light,friendly,24,80,True
+monokai_dark__fs20__wrap60__lnon,monokai_dark,monokai,20,60,True
+monokai_dark__fs20__wrap80__lnon,monokai_dark,monokai,20,80,True
+monokai_dark__fs24__wrap60__lnon,monokai_dark,monokai,24,60,True
+monokai_dark__fs24__wrap80__lnon,monokai_dark,monokai,24,80,True

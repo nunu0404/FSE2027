@@ -1,0 +1,43 @@
+{
+  "experiment": "I_canonical_readability_baselines",
+  "start_utc": "2026-06-30T02:43:39.500466+00:00",
+  "end_utc": "2026-06-30T02:45:11.696565+00:00",
+  "git_commit": null,
+  "seed": 42,
+  "inputs": {
+    "dataset": "/ANON/experiment_root/experiments/rq0_viability/data/processed/pooled_313_processed.csv",
+    "features": "/ANON/experiment_root/experiments/rq0_viability/data/processed/features_313.csv",
+    "splits": "/ANON/experiment_root/experiments/rq0_viability/data/splits/split_assignments.csv",
+    "pairs": "/ANON/experiment_root/experiments/rq0_viability/data/pairs/full_pair_set_rq0.csv",
+    "classical_pair_reference": "/ANON/experiment_root/experiments/rq0_viability/outputs/pair_level_results/full_pair_classical_baseline_pair_level.csv",
+    "vlm_summary": "/ANON/experiment_root/experiments/rq0_viability/outputs/tables/stage3_full_selected_vlm_summary.csv"
+  },
+  "models": [
+    "Logistic Regression",
+    "Naive Bayes",
+    "Scalabrino-LR (replicated, not official tool)",
+    "Multilayer Perceptron",
+    "Voting ensemble (LR+NB+RF)"
+  ],
+  "official_scalabrino_tool_run": false,
+  "official_scalabrino_tool_search_hits": [],
+  "thresholds": {
+    "rule": "dataset-local human_mean_score mean and median; pooled labels use each snippet's own dataset threshold",
+    "dataset_mean": {
+      "Buse": 3.286000500876534,
+      "Dorn": 3.3417271693547566,
+      "Scalabrino": 3.6702508960573477
+    },
+    "dataset_median": {
+      "Buse": 3.363636363636364,
+      "Dorn": 3.367736339569092,
+      "Scalabrino": 3.7777777777777777
+    }
+  },
+  "outputs": {
+    "native_binary_summary": "/ANON/experiment_root/experiments/rq0_viability/outputs/canonical_baselines/canonical_native_binary_summary.csv",
+    "pairwise_summary": "/ANON/experiment_root/experiments/rq0_viability/outputs/canonical_baselines/canonical_pairwise_summary.csv",
+    "pair_level": "/ANON/experiment_root/experiments/rq0_viability/outputs/canonical_baselines/canonical_pair_level.csv",
+    "report": "/ANON/experiment_root/experiments/rq0_viability/outputs/canonical_baselines/CANONICAL_BASELINE_REPORT.md"
+  }
+}

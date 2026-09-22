@@ -1,0 +1,14 @@
+{
+  "generated_at_utc": "2026-07-13T08:03:47.606265+00:00",
+  "seed": 42,
+  "api_calls": 0,
+  "raw_root": "/ANON/experiment_root/data/raw_ratings/official_20260713",
+  "output": "/ANON/experiment_root/results/dataset_extension_20260713",
+  "snippet_count": 480,
+  "feature_count": 27,
+  "render_passed": 480,
+  "pair_count": 12000,
+  "regression_models": 4,
+  "canonical_binary_models": 5,
+  "script": "/ANON/experiment_root/experiments/rq0_viability/scripts/run_dataset_extension_stage1.py"
+}

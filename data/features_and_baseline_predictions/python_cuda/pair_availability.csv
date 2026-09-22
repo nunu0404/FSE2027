@@ -1,0 +1,13 @@
+dataset_name,language,difficulty,available_pairs,sampled_pairs
+Dorn,cuda,easy,3798,1000
+Dorn,cuda,medium,1639,1000
+Dorn,cuda,hard,1013,1000
+Dorn,java,easy,2505,1000
+Dorn,java,medium,2127,1000
+Dorn,java,hard,1555,1000
+Dorn,python,easy,2346,1000
+Dorn,python,medium,2116,1000
+Dorn,python,hard,1476,1000
+Sergeyuk2024,java,easy,3489,1000
+Sergeyuk2024,java,medium,1678,1000
+Sergeyuk2024,java,hard,1153,1000

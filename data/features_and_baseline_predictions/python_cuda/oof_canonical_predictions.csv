@@ -1,0 +1,2401 @@
+snippet_uid,dataset_name,language,model,fold,binary_target,predicted_probability
+dorn_cuda_000,Dorn,cuda,Logistic Regression,4,0,0.3312445335288362
+dorn_cuda_001,Dorn,cuda,Logistic Regression,4,0,0.08448462581026274
+dorn_cuda_010,Dorn,cuda,Logistic Regression,3,0,0.05706680852386844
+dorn_cuda_100,Dorn,cuda,Logistic Regression,0,1,0.9676747568508655
+dorn_cuda_101,Dorn,cuda,Logistic Regression,1,1,0.9806701185497001
+dorn_cuda_102,Dorn,cuda,Logistic Regression,3,0,0.9874628362367603
+dorn_cuda_103,Dorn,cuda,Logistic Regression,4,0,0.4708327810075342
+dorn_cuda_104,Dorn,cuda,Logistic Regression,4,1,0.37744495985272325
+dorn_cuda_105,Dorn,cuda,Logistic Regression,0,1,0.431604685476293
+dorn_cuda_106,Dorn,cuda,Logistic Regression,2,1,0.3843641497191227
+dorn_cuda_107,Dorn,cuda,Logistic Regression,0,1,0.9594302940741687
+dorn_cuda_108,Dorn,cuda,Logistic Regression,4,0,0.01160933595119537
+dorn_cuda_109,Dorn,cuda,Logistic Regression,3,1,0.9898698889644977
+dorn_cuda_011,Dorn,cuda,Logistic Regression,2,0,0.590854269052615
+dorn_cuda_110,Dorn,cuda,Logistic Regression,0,0,0.07229811788648831
+dorn_cuda_111,Dorn,cuda,Logistic Regression,4,1,0.6312257427330054
+dorn_cuda_112,Dorn,cuda,Logistic Regression,0,0,0.8996640740712578
+dorn_cuda_113,Dorn,cuda,Logistic Regression,1,1,0.2142008286475067
+dorn_cuda_114,Dorn,cuda,Logistic Regression,3,0,0.027988184713662562
+dorn_cuda_115,Dorn,cuda,Logistic Regression,3,0,0.01632757048374461
+dorn_cuda_116,Dorn,cuda,Logistic Regression,4,1,0.8092369222745205
+dorn_cuda_117,Dorn,cuda,Logistic Regression,1,1,0.38239675833626646
+dorn_cuda_118,Dorn,cuda,Logistic Regression,2,0,0.09859127729089022
+dorn_cuda_119,Dorn,cuda,Logistic Regression,4,1,0.8998640269693597
+dorn_cuda_012,Dorn,cuda,Logistic Regression,0,1,0.9011463506014069
+dorn_cuda_013,Dorn,cuda,Logistic Regression,4,1,0.7808540203405585
+dorn_cuda_014,Dorn,cuda,Logistic Regression,2,1,0.40383367682228827
+dorn_cuda_015,Dorn,cuda,Logistic Regression,4,1,0.4050819936578326
+dorn_cuda_016,Dorn,cuda,Logistic Regression,0,0,0.10343247416019344
+dorn_cuda_017,Dorn,cuda,Logistic Regression,3,1,0.991021816125768
+dorn_cuda_018,Dorn,cuda,Logistic Regression,3,1,0.6350251710479868
+dorn_cuda_019,Dorn,cuda,Logistic Regression,1,1,0.9798437701437661
+dorn_cuda_002,Dorn,cuda,Logistic Regression,0,1,0.9663603951214426
+dorn_cuda_020,Dorn,cuda,Logistic Regression,4,0,0.3174732544627773
+dorn_cuda_021,Dorn,cuda,Logistic Regression,3,1,0.0369843794385887
+dorn_cuda_022,Dorn,cuda,Logistic Regression,0,1,0.8355130581271968
+dorn_cuda_023,Dorn,cuda,Logistic Regression,3,0,0.08405448210924742
+dorn_cuda_024,Dorn,cuda,Logistic Regression,1,0,0.03356276191351744
+dorn_cuda_025,Dorn,cuda,Logistic Regression,4,0,0.2526647796102927
+dorn_cuda_026,Dorn,cuda,Logistic Regression,4,1,0.06323281571377555
+dorn_cuda_027,Dorn,cuda,Logistic Regression,0,1,0.8064681831793993
+dorn_cuda_028,Dorn,cuda,Logistic Regression,3,1,0.891388617936885
+dorn_cuda_029,Dorn,cuda,Logistic Regression,4,1,0.9314231517408285
+dorn_cuda_003,Dorn,cuda,Logistic Regression,4,0,0.0032194038722120214
+dorn_cuda_030,Dorn,cuda,Logistic Regression,1,0,0.004442912978156956
+dorn_cuda_031,Dorn,cuda,Logistic Regression,1,1,0.9545177906761718
+dorn_cuda_032,Dorn,cuda,Logistic Regression,0,0,0.288597947103527
+dorn_cuda_033,Dorn,cuda,Logistic Regression,3,0,0.018491025832077627
+dorn_cuda_034,Dorn,cuda,Logistic Regression,0,0,0.05047995671303908
+dorn_cuda_035,Dorn,cuda,Logistic Regression,3,0,0.9930049607577147
+dorn_cuda_036,Dorn,cuda,Logistic Regression,2,0,0.28424273695346297
+dorn_cuda_037,Dorn,cuda,Logistic Regression,4,1,0.8461204128556393
+dorn_cuda_038,Dorn,cuda,Logistic Regression,2,0,0.012771373893953908
+dorn_cuda_039,Dorn,cuda,Logistic Regression,2,1,0.952451030768342
+dorn_cuda_004,Dorn,cuda,Logistic Regression,3,1,0.9796508286012323
+dorn_cuda_040,Dorn,cuda,Logistic Regression,2,1,0.7511144196687363
+dorn_cuda_041,Dorn,cuda,Logistic Regression,3,1,0.9935681823608983
+dorn_cuda_042,Dorn,cuda,Logistic Regression,3,1,0.9119726274603261
+dorn_cuda_043,Dorn,cuda,Logistic Regression,2,0,0.18362580216153426
+dorn_cuda_044,Dorn,cuda,Logistic Regression,4,1,0.9427676579791212
+dorn_cuda_045,Dorn,cuda,Logistic Regression,4,0,0.5868040845356988
+dorn_cuda_046,Dorn,cuda,Logistic Regression,2,0,0.8076709029235566
+dorn_cuda_047,Dorn,cuda,Logistic Regression,1,0,0.004159609368705458
+dorn_cuda_048,Dorn,cuda,Logistic Regression,4,1,0.6976574839736176
+dorn_cuda_049,Dorn,cuda,Logistic Regression,2,1,0.6969593075648106
+dorn_cuda_005,Dorn,cuda,Logistic Regression,0,1,0.6283233506942009
+dorn_cuda_050,Dorn,cuda,Logistic Regression,4,0,0.7501788953007353
+dorn_cuda_051,Dorn,cuda,Logistic Regression,3,0,0.3298040239734735
+dorn_cuda_052,Dorn,cuda,Logistic Regression,4,1,0.8128372355686192
+dorn_cuda_053,Dorn,cuda,Logistic Regression,0,0,0.9712638694765924
+dorn_cuda_054,Dorn,cuda,Logistic Regression,2,1,0.9863767168833062
+dorn_cuda_055,Dorn,cuda,Logistic Regression,1,0,0.4058040399820405
+dorn_cuda_056,Dorn,cuda,Logistic Regression,2,0,0.35173203873402004
+dorn_cuda_057,Dorn,cuda,Logistic Regression,1,1,0.541668729189716
+dorn_cuda_058,Dorn,cuda,Logistic Regression,0,0,0.005862352519616419
+dorn_cuda_059,Dorn,cuda,Logistic Regression,1,1,0.024534429568418524
+dorn_cuda_006,Dorn,cuda,Logistic Regression,3,0,0.02339212659632434
+dorn_cuda_060,Dorn,cuda,Logistic Regression,1,1,0.984177390698807
+dorn_cuda_061,Dorn,cuda,Logistic Regression,0,0,0.7255764491880728
+dorn_cuda_062,Dorn,cuda,Logistic Regression,1,1,0.9591617297042148
+dorn_cuda_063,Dorn,cuda,Logistic Regression,3,0,0.6197635739951792
+dorn_cuda_064,Dorn,cuda,Logistic Regression,0,0,0.05047995671303908
+dorn_cuda_065,Dorn,cuda,Logistic Regression,0,1,0.9160905662856211
+dorn_cuda_066,Dorn,cuda,Logistic Regression,1,0,0.9808005725981644
+dorn_cuda_067,Dorn,cuda,Logistic Regression,3,0,0.005075842395721589
+dorn_cuda_068,Dorn,cuda,Logistic Regression,3,1,0.01796198169235837
+dorn_cuda_069,Dorn,cuda,Logistic Regression,2,0,0.1260691741259325
+dorn_cuda_007,Dorn,cuda,Logistic Regression,2,0,0.43411650483664366
+dorn_cuda_070,Dorn,cuda,Logistic Regression,2,1,0.8269728203750182
+dorn_cuda_071,Dorn,cuda,Logistic Regression,2,0,0.2519654164131487
+dorn_cuda_072,Dorn,cuda,Logistic Regression,1,0,0.6832827216234041
+dorn_cuda_073,Dorn,cuda,Logistic Regression,4,1,0.8855782504213191
+dorn_cuda_074,Dorn,cuda,Logistic Regression,3,1,0.24234033616840361
+dorn_cuda_075,Dorn,cuda,Logistic Regression,1,0,0.5904483172468981
+dorn_cuda_076,Dorn,cuda,Logistic Regression,2,1,0.9465511635235112
+dorn_cuda_077,Dorn,cuda,Logistic Regression,1,1,0.3373114373697068
+dorn_cuda_078,Dorn,cuda,Logistic Regression,4,0,0.004352187407421401
+dorn_cuda_079,Dorn,cuda,Logistic Regression,1,0,0.19535596205133524
+dorn_cuda_008,Dorn,cuda,Logistic Regression,2,1,0.5066849725748256
+dorn_cuda_080,Dorn,cuda,Logistic Regression,3,1,0.9374243234194792
+dorn_cuda_081,Dorn,cuda,Logistic Regression,3,0,0.08457584289450489
+dorn_cuda_082,Dorn,cuda,Logistic Regression,1,0,0.009899072376676952
+dorn_cuda_083,Dorn,cuda,Logistic Regression,1,1,0.03974299014505447
+dorn_cuda_084,Dorn,cuda,Logistic Regression,2,0,0.04229148412846168
+dorn_cuda_085,Dorn,cuda,Logistic Regression,0,1,0.8620080576638185
+dorn_cuda_086,Dorn,cuda,Logistic Regression,0,0,0.7957028990303477
+dorn_cuda_087,Dorn,cuda,Logistic Regression,4,0,0.005505468197523712
+dorn_cuda_088,Dorn,cuda,Logistic Regression,0,1,0.9367423952491984
+dorn_cuda_089,Dorn,cuda,Logistic Regression,2,0,0.03253669987641725
+dorn_cuda_009,Dorn,cuda,Logistic Regression,1,1,0.33335025044533845
+dorn_cuda_090,Dorn,cuda,Logistic Regression,2,1,0.9206904019795531
+dorn_cuda_091,Dorn,cuda,Logistic Regression,1,1,0.8136403067351498
+dorn_cuda_092,Dorn,cuda,Logistic Regression,1,0,0.4790740163622681
+dorn_cuda_093,Dorn,cuda,Logistic Regression,2,0,0.031879926935250706
+dorn_cuda_094,Dorn,cuda,Logistic Regression,3,1,0.8693350291648101
+dorn_cuda_095,Dorn,cuda,Logistic Regression,0,1,0.9457862714011338
+dorn_cuda_096,Dorn,cuda,Logistic Regression,0,1,0.7700750612029618
+dorn_cuda_097,Dorn,cuda,Logistic Regression,2,1,0.630292203435159
+dorn_cuda_098,Dorn,cuda,Logistic Regression,0,0,0.07968600540435321
+dorn_cuda_099,Dorn,cuda,Logistic Regression,1,1,0.024534429568418524
+dorn_cuda_000,Dorn,cuda,Naive Bayes,4,0,5.0792748835021095e-05
+dorn_cuda_001,Dorn,cuda,Naive Bayes,4,0,0.9971920939926978
+dorn_cuda_010,Dorn,cuda,Naive Bayes,3,0,2.6363047623712877e-08
+dorn_cuda_100,Dorn,cuda,Naive Bayes,0,1,0.08451258005325579
+dorn_cuda_101,Dorn,cuda,Naive Bayes,1,1,0.9999657375430742
+dorn_cuda_102,Dorn,cuda,Naive Bayes,3,0,0.9993712938457388
+dorn_cuda_103,Dorn,cuda,Naive Bayes,4,0,0.9988419770483774
+dorn_cuda_104,Dorn,cuda,Naive Bayes,4,1,0.27599748083655445
+dorn_cuda_105,Dorn,cuda,Naive Bayes,0,1,0.9997810936143581
+dorn_cuda_106,Dorn,cuda,Naive Bayes,2,1,0.007570925772554163
+dorn_cuda_107,Dorn,cuda,Naive Bayes,0,1,0.9999938823374536
+dorn_cuda_108,Dorn,cuda,Naive Bayes,4,0,6.134674492128104e-15
+dorn_cuda_109,Dorn,cuda,Naive Bayes,3,1,0.999994143234096
+dorn_cuda_011,Dorn,cuda,Naive Bayes,2,0,0.9999449890285432
+dorn_cuda_110,Dorn,cuda,Naive Bayes,0,0,4.823328729199717e-06
+dorn_cuda_111,Dorn,cuda,Naive Bayes,4,1,0.9019369839765411
+dorn_cuda_112,Dorn,cuda,Naive Bayes,0,0,0.0011008729283381374
+dorn_cuda_113,Dorn,cuda,Naive Bayes,1,1,0.000154930179392337
+dorn_cuda_114,Dorn,cuda,Naive Bayes,3,0,1.0221580293511833e-09
+dorn_cuda_115,Dorn,cuda,Naive Bayes,3,0,1.0607264113114813e-11
+dorn_cuda_116,Dorn,cuda,Naive Bayes,4,1,0.9999364685237017
+dorn_cuda_117,Dorn,cuda,Naive Bayes,1,1,7.460845892098947e-12
+dorn_cuda_118,Dorn,cuda,Naive Bayes,2,0,0.11803381043514477
+dorn_cuda_119,Dorn,cuda,Naive Bayes,4,1,0.9997056402735573
+dorn_cuda_012,Dorn,cuda,Naive Bayes,0,1,0.9484796618437163
+dorn_cuda_013,Dorn,cuda,Naive Bayes,4,1,0.9980993801332355
+dorn_cuda_014,Dorn,cuda,Naive Bayes,2,1,0.3897643889051732
+dorn_cuda_015,Dorn,cuda,Naive Bayes,4,1,0.9231462124359798
+dorn_cuda_016,Dorn,cuda,Naive Bayes,0,0,0.28391948025713604
+dorn_cuda_017,Dorn,cuda,Naive Bayes,3,1,0.9996986398234906
+dorn_cuda_018,Dorn,cuda,Naive Bayes,3,1,0.9997918657659649
+dorn_cuda_019,Dorn,cuda,Naive Bayes,1,1,0.9877211163602989
+dorn_cuda_002,Dorn,cuda,Naive Bayes,0,1,0.9999391216021164
+dorn_cuda_020,Dorn,cuda,Naive Bayes,4,0,0.00018235391945451343
+dorn_cuda_021,Dorn,cuda,Naive Bayes,3,1,0.4131872878345208
+dorn_cuda_022,Dorn,cuda,Naive Bayes,0,1,0.9998944296539936
+dorn_cuda_023,Dorn,cuda,Naive Bayes,3,0,3.1728901176863943e-07
+dorn_cuda_024,Dorn,cuda,Naive Bayes,1,0,4.5225900596847523e-07
+dorn_cuda_025,Dorn,cuda,Naive Bayes,4,0,0.00042726353154634014
+dorn_cuda_026,Dorn,cuda,Naive Bayes,4,1,6.872244776885887e-08
+dorn_cuda_027,Dorn,cuda,Naive Bayes,0,1,0.9976117770802577
+dorn_cuda_028,Dorn,cuda,Naive Bayes,3,1,0.0030583486449617917
+dorn_cuda_029,Dorn,cuda,Naive Bayes,4,1,0.9999996255823856
+dorn_cuda_003,Dorn,cuda,Naive Bayes,4,0,3.337728987164163e-09
+dorn_cuda_030,Dorn,cuda,Naive Bayes,1,0,3.613514837528257e-15
+dorn_cuda_031,Dorn,cuda,Naive Bayes,1,1,0.9998936300681011
+dorn_cuda_032,Dorn,cuda,Naive Bayes,0,0,0.8643983876842811
+dorn_cuda_033,Dorn,cuda,Naive Bayes,3,0,0.07860658060802596
+dorn_cuda_034,Dorn,cuda,Naive Bayes,0,0,1.8133835268675097e-27
+dorn_cuda_035,Dorn,cuda,Naive Bayes,3,0,0.9999995200893054
+dorn_cuda_036,Dorn,cuda,Naive Bayes,2,0,0.00021963127573694234
+dorn_cuda_037,Dorn,cuda,Naive Bayes,4,1,0.9798718316895594
+dorn_cuda_038,Dorn,cuda,Naive Bayes,2,0,4.331720846517265e-12
+dorn_cuda_039,Dorn,cuda,Naive Bayes,2,1,0.9999932112616114
+dorn_cuda_004,Dorn,cuda,Naive Bayes,3,1,0.9997760923557157
+dorn_cuda_040,Dorn,cuda,Naive Bayes,2,1,0.999974127730012
+dorn_cuda_041,Dorn,cuda,Naive Bayes,3,1,0.9999977076471451
+dorn_cuda_042,Dorn,cuda,Naive Bayes,3,1,0.30146350626826346
+dorn_cuda_043,Dorn,cuda,Naive Bayes,2,0,0.6090196708413553
+dorn_cuda_044,Dorn,cuda,Naive Bayes,4,1,0.9999797038369294
+dorn_cuda_045,Dorn,cuda,Naive Bayes,4,0,1.0
+dorn_cuda_046,Dorn,cuda,Naive Bayes,2,0,0.3973882643572965
+dorn_cuda_047,Dorn,cuda,Naive Bayes,1,0,6.167628699199908e-26
+dorn_cuda_048,Dorn,cuda,Naive Bayes,4,1,0.9990106687913961
+dorn_cuda_049,Dorn,cuda,Naive Bayes,2,1,0.9685599890494662
+dorn_cuda_005,Dorn,cuda,Naive Bayes,0,1,0.9950058695618038
+dorn_cuda_050,Dorn,cuda,Naive Bayes,4,0,0.108005436666754
+dorn_cuda_051,Dorn,cuda,Naive Bayes,3,0,3.5367149517272155e-08
+dorn_cuda_052,Dorn,cuda,Naive Bayes,4,1,0.9999899276303178
+dorn_cuda_053,Dorn,cuda,Naive Bayes,0,0,0.6642214424905967
+dorn_cuda_054,Dorn,cuda,Naive Bayes,2,1,0.999998098076173
+dorn_cuda_055,Dorn,cuda,Naive Bayes,1,0,0.999993062226029
+dorn_cuda_056,Dorn,cuda,Naive Bayes,2,0,0.9993748380912827
+dorn_cuda_057,Dorn,cuda,Naive Bayes,1,1,0.9518379756188863
+dorn_cuda_058,Dorn,cuda,Naive Bayes,0,0,9.354653733077382e-05
+dorn_cuda_059,Dorn,cuda,Naive Bayes,1,1,3.0904024529975555e-06
+dorn_cuda_006,Dorn,cuda,Naive Bayes,3,0,0.00879357947187069
+dorn_cuda_060,Dorn,cuda,Naive Bayes,1,1,0.9986080929686191
+dorn_cuda_061,Dorn,cuda,Naive Bayes,0,0,0.9980423531244379
+dorn_cuda_062,Dorn,cuda,Naive Bayes,1,1,0.999999334594315
+dorn_cuda_063,Dorn,cuda,Naive Bayes,3,0,0.9999570269707253
+dorn_cuda_064,Dorn,cuda,Naive Bayes,0,0,1.8133835268675097e-27
+dorn_cuda_065,Dorn,cuda,Naive Bayes,0,1,0.9999565539993129
+dorn_cuda_066,Dorn,cuda,Naive Bayes,1,0,0.9999998062437828
+dorn_cuda_067,Dorn,cuda,Naive Bayes,3,0,7.042621678519997e-06
+dorn_cuda_068,Dorn,cuda,Naive Bayes,3,1,0.002058536118001359
+dorn_cuda_069,Dorn,cuda,Naive Bayes,2,0,0.00746731553291012
+dorn_cuda_007,Dorn,cuda,Naive Bayes,2,0,0.0003456012752573338
+dorn_cuda_070,Dorn,cuda,Naive Bayes,2,1,0.9999945590666619
+dorn_cuda_071,Dorn,cuda,Naive Bayes,2,0,0.3239629055688214
+dorn_cuda_072,Dorn,cuda,Naive Bayes,1,0,0.903014210566684
+dorn_cuda_073,Dorn,cuda,Naive Bayes,4,1,0.971604839868618
+dorn_cuda_074,Dorn,cuda,Naive Bayes,3,1,0.9913988082676697
+dorn_cuda_075,Dorn,cuda,Naive Bayes,1,0,0.015071425488030093
+dorn_cuda_076,Dorn,cuda,Naive Bayes,2,1,0.999132126254946
+dorn_cuda_077,Dorn,cuda,Naive Bayes,1,1,0.9673659858093022
+dorn_cuda_078,Dorn,cuda,Naive Bayes,4,0,3.1431828482396863e-19
+dorn_cuda_079,Dorn,cuda,Naive Bayes,1,0,0.0012843085233320058
+dorn_cuda_008,Dorn,cuda,Naive Bayes,2,1,0.9997053604433261
+dorn_cuda_080,Dorn,cuda,Naive Bayes,3,1,0.9999992944983661
+dorn_cuda_081,Dorn,cuda,Naive Bayes,3,0,1.8830927277824704e-13
+dorn_cuda_082,Dorn,cuda,Naive Bayes,1,0,2.8202978307797946e-16
+dorn_cuda_083,Dorn,cuda,Naive Bayes,1,1,1.1251014370001855e-20
+dorn_cuda_084,Dorn,cuda,Naive Bayes,2,0,8.408381198117579e-09
+dorn_cuda_085,Dorn,cuda,Naive Bayes,0,1,0.999284389245162
+dorn_cuda_086,Dorn,cuda,Naive Bayes,0,0,0.014784925207373375
+dorn_cuda_087,Dorn,cuda,Naive Bayes,4,0,3.530770257536781e-07
+dorn_cuda_088,Dorn,cuda,Naive Bayes,0,1,0.9999346443247222
+dorn_cuda_089,Dorn,cuda,Naive Bayes,2,0,1.2488041307605734e-20
+dorn_cuda_009,Dorn,cuda,Naive Bayes,1,1,0.06545776794456387
+dorn_cuda_090,Dorn,cuda,Naive Bayes,2,1,0.8008092219507885
+dorn_cuda_091,Dorn,cuda,Naive Bayes,1,1,0.9999886187238415
+dorn_cuda_092,Dorn,cuda,Naive Bayes,1,0,0.9999039086130869
+dorn_cuda_093,Dorn,cuda,Naive Bayes,2,0,0.00042068887002960767
+dorn_cuda_094,Dorn,cuda,Naive Bayes,3,1,0.00024286592086673339
+dorn_cuda_095,Dorn,cuda,Naive Bayes,0,1,0.9992071062569012
+dorn_cuda_096,Dorn,cuda,Naive Bayes,0,1,0.9989962821974276
+dorn_cuda_097,Dorn,cuda,Naive Bayes,2,1,0.9994059624928243
+dorn_cuda_098,Dorn,cuda,Naive Bayes,0,0,0.9334789156970635
+dorn_cuda_099,Dorn,cuda,Naive Bayes,1,1,3.0904024529975555e-06
+dorn_cuda_000,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",4,0,0.3502863422112082
+dorn_cuda_001,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",4,0,0.09100188604985099
+dorn_cuda_010,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",3,0,0.06284954476879896
+dorn_cuda_100,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",0,1,0.9698451739960475
+dorn_cuda_101,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",1,1,0.9811873777753499
+dorn_cuda_102,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",3,0,0.9888738446122598
+dorn_cuda_103,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",4,0,0.4864154623155184
+dorn_cuda_104,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",4,1,0.3954500447288064
+dorn_cuda_105,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",0,1,0.45014626972143634
+dorn_cuda_106,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",2,1,0.4199636913259551
+dorn_cuda_107,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",0,1,0.9627535277514944
+dorn_cuda_108,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",4,0,0.012157099899729299
+dorn_cuda_109,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",3,1,0.9908415975706205
+dorn_cuda_011,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",2,0,0.6304813789070891
+dorn_cuda_110,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",0,0,0.07523243658311948
+dorn_cuda_111,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",4,1,0.6444145547248733
+dorn_cuda_112,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",0,0,0.9082793074803425
+dorn_cuda_113,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",1,1,0.21929825523057334
+dorn_cuda_114,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",3,0,0.02992434988024269
+dorn_cuda_115,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",3,0,0.017225444957546587
+dorn_cuda_116,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",4,1,0.8232687778438919
+dorn_cuda_117,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",1,1,0.39406825689036246
+dorn_cuda_118,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",2,0,0.10854678166145679
+dorn_cuda_119,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",4,1,0.9106862216473123
+dorn_cuda_012,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",0,1,0.9098339500844246
+dorn_cuda_013,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",4,1,0.7924503039329016
+dorn_cuda_014,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",2,1,0.43578150880643163
+dorn_cuda_015,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",4,1,0.4218338244461273
+dorn_cuda_016,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",0,0,0.10855236352010121
+dorn_cuda_017,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",3,1,0.9920110666073211
+dorn_cuda_018,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",3,1,0.6579927958964253
+dorn_cuda_019,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",1,1,0.9802556071193338
+dorn_cuda_002,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",0,1,0.9698246726489976
+dorn_cuda_020,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",4,0,0.32499262153449265
+dorn_cuda_021,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",3,1,0.04089082208295574
+dorn_cuda_022,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",0,1,0.8489891601268442
+dorn_cuda_023,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",3,0,0.08962885230200802
+dorn_cuda_024,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",1,0,0.034257412961783876
+dorn_cuda_025,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",4,0,0.26033880327450104
+dorn_cuda_026,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",4,1,0.06460138280846546
+dorn_cuda_027,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",0,1,0.8201709160429834
+dorn_cuda_028,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",3,1,0.9013083100320871
+dorn_cuda_029,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",4,1,0.93928562874022
+dorn_cuda_003,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",4,0,0.003387199434446794
+dorn_cuda_030,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",1,0,0.004585186323366479
+dorn_cuda_031,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",1,1,0.9557523419288795
+dorn_cuda_032,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",0,0,0.30274420967120236
+dorn_cuda_033,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",3,0,0.020677467775528514
+dorn_cuda_034,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",0,0,0.05188739486169728
+dorn_cuda_035,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",3,0,0.9938758403134782
+dorn_cuda_036,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",2,0,0.31607242714068845
+dorn_cuda_037,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",4,1,0.8556704006337267
+dorn_cuda_038,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",2,0,0.01404722004160785
+dorn_cuda_039,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",2,1,0.9601555508474162
+dorn_cuda_004,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",3,1,0.981947310153
+dorn_cuda_040,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",2,1,0.7853323724918516
+dorn_cuda_041,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",3,1,0.9943383141618951
+dorn_cuda_042,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",3,1,0.9202023369556742
+dorn_cuda_043,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",2,0,0.19908492460915106
+dorn_cuda_044,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",4,1,0.94834732537991
+dorn_cuda_045,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",4,0,0.5976387139018228
+dorn_cuda_046,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",2,0,0.8338820785626564
+dorn_cuda_047,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",1,0,0.0042428840595938756
+dorn_cuda_048,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",4,1,0.7159123088293794
+dorn_cuda_049,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",2,1,0.7232315324722688
+dorn_cuda_005,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",0,1,0.6590495674967121
+dorn_cuda_050,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",4,0,0.7685746830885475
+dorn_cuda_051,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",3,0,0.35261363281773983
+dorn_cuda_052,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",4,1,0.8295471878866993
+dorn_cuda_053,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",0,0,0.9732164906686102
+dorn_cuda_054,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",2,1,0.9889949480525312
+dorn_cuda_055,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",1,0,0.41667387222235397
+dorn_cuda_056,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",2,0,0.3804006497206258
+dorn_cuda_057,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",1,1,0.5526346359613837
+dorn_cuda_058,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",0,0,0.0061307633252170295
+dorn_cuda_059,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",1,1,0.026257122709725078
+dorn_cuda_006,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",3,0,0.02548110254208583
+dorn_cuda_060,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",1,1,0.9845433121865828
+dorn_cuda_061,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",0,0,0.7413076910278873
+dorn_cuda_062,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",1,1,0.9613624080108446
+dorn_cuda_063,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",3,0,0.6429973030938252
+dorn_cuda_064,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",0,0,0.05188739486169728
+dorn_cuda_065,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",0,1,0.9239981850162242
+dorn_cuda_066,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",1,0,0.98159807357271
+dorn_cuda_067,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",3,0,0.005250191583461966
+dorn_cuda_068,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",3,1,0.020249816892023414
+dorn_cuda_069,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",2,0,0.14242748058825427
+dorn_cuda_007,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",2,0,0.4743466616362466
+dorn_cuda_070,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",2,1,0.8511064803208793
+dorn_cuda_071,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",2,0,0.2750039675484637
+dorn_cuda_072,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",1,0,0.6909932666399264
+dorn_cuda_073,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",4,1,0.8964587011556447
+dorn_cuda_074,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",3,1,0.2739662342706619
+dorn_cuda_075,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",1,0,0.5968235094023815
+dorn_cuda_076,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",2,1,0.9554170264176739
+dorn_cuda_077,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",1,1,0.3504088264582241
+dorn_cuda_078,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",4,0,0.004441658996158521
+dorn_cuda_079,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",1,0,0.20034200055417078
+dorn_cuda_008,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",2,1,0.5421019015477653
+dorn_cuda_080,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",3,1,0.9463359714674022
+dorn_cuda_081,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",3,0,0.08878370591105873
+dorn_cuda_082,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",1,0,0.010352660289177088
+dorn_cuda_083,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",1,1,0.04110544370457482
+dorn_cuda_084,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",2,0,0.04620890566387082
+dorn_cuda_085,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",0,1,0.8742411300450023
+dorn_cuda_086,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",0,0,0.8088078989746934
+dorn_cuda_087,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",4,0,0.005756008362373702
+dorn_cuda_088,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",0,1,0.9427428309679209
+dorn_cuda_089,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",2,0,0.03383164100536769
+dorn_cuda_009,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",1,1,0.34315976016270383
+dorn_cuda_090,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",2,1,0.9331328607399306
+dorn_cuda_091,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",1,1,0.8183734204679524
+dorn_cuda_092,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",1,0,0.4884955573162548
+dorn_cuda_093,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",2,0,0.03551316774778985
+dorn_cuda_094,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",3,1,0.8776614919491873
+dorn_cuda_095,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",0,1,0.9506790496476327
+dorn_cuda_096,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",0,1,0.7900078618498986
+dorn_cuda_097,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",2,1,0.6653836700848087
+dorn_cuda_098,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",0,0,0.08557794947953534
+dorn_cuda_099,Dorn,cuda,"Scalabrino-LR (replicated, not official tool)",1,1,0.026257122709725078
+dorn_cuda_000,Dorn,cuda,Multilayer Perceptron,4,0,0.0018362206623518678
+dorn_cuda_001,Dorn,cuda,Multilayer Perceptron,4,0,0.02474771997655962
+dorn_cuda_010,Dorn,cuda,Multilayer Perceptron,3,0,0.004009788753559664
+dorn_cuda_100,Dorn,cuda,Multilayer Perceptron,0,1,0.9998911801974425
+dorn_cuda_101,Dorn,cuda,Multilayer Perceptron,1,1,0.9998860351924714
+dorn_cuda_102,Dorn,cuda,Multilayer Perceptron,3,0,0.9998915662682583
+dorn_cuda_103,Dorn,cuda,Multilayer Perceptron,4,0,0.0999082387356257
+dorn_cuda_104,Dorn,cuda,Multilayer Perceptron,4,1,0.8336556916669335
+dorn_cuda_105,Dorn,cuda,Multilayer Perceptron,0,1,0.8486091748545768
+dorn_cuda_106,Dorn,cuda,Multilayer Perceptron,2,1,0.3100853509826292
+dorn_cuda_107,Dorn,cuda,Multilayer Perceptron,0,1,0.9968947321086828
+dorn_cuda_108,Dorn,cuda,Multilayer Perceptron,4,0,1.5460867427498186e-06
+dorn_cuda_109,Dorn,cuda,Multilayer Perceptron,3,1,0.9993402455528503
+dorn_cuda_011,Dorn,cuda,Multilayer Perceptron,2,0,0.4783796086269271
+dorn_cuda_110,Dorn,cuda,Multilayer Perceptron,0,0,4.189211243672239e-06
+dorn_cuda_111,Dorn,cuda,Multilayer Perceptron,4,1,0.9997618875256582
+dorn_cuda_112,Dorn,cuda,Multilayer Perceptron,0,0,0.7036810206654565
+dorn_cuda_113,Dorn,cuda,Multilayer Perceptron,1,1,0.0012779164984653068
+dorn_cuda_114,Dorn,cuda,Multilayer Perceptron,3,0,0.00016564100548073935
+dorn_cuda_115,Dorn,cuda,Multilayer Perceptron,3,0,0.0020525533103907534
+dorn_cuda_116,Dorn,cuda,Multilayer Perceptron,4,1,0.9181959930413462
+dorn_cuda_117,Dorn,cuda,Multilayer Perceptron,1,1,0.008180241291759014
+dorn_cuda_118,Dorn,cuda,Multilayer Perceptron,2,0,0.028279534106027803
+dorn_cuda_119,Dorn,cuda,Multilayer Perceptron,4,1,0.7464313253820277
+dorn_cuda_012,Dorn,cuda,Multilayer Perceptron,0,1,0.9531531028742793
+dorn_cuda_013,Dorn,cuda,Multilayer Perceptron,4,1,0.9984363350483261
+dorn_cuda_014,Dorn,cuda,Multilayer Perceptron,2,1,0.9685871706074354
+dorn_cuda_015,Dorn,cuda,Multilayer Perceptron,4,1,0.34945661266184136
+dorn_cuda_016,Dorn,cuda,Multilayer Perceptron,0,0,0.004259707844258688
+dorn_cuda_017,Dorn,cuda,Multilayer Perceptron,3,1,0.9998615108882458
+dorn_cuda_018,Dorn,cuda,Multilayer Perceptron,3,1,0.8722631651763402
+dorn_cuda_019,Dorn,cuda,Multilayer Perceptron,1,1,0.9999903038215969
+dorn_cuda_002,Dorn,cuda,Multilayer Perceptron,0,1,0.8154585593281238
+dorn_cuda_020,Dorn,cuda,Multilayer Perceptron,4,0,0.07773206140613245
+dorn_cuda_021,Dorn,cuda,Multilayer Perceptron,3,1,0.017792832826152856
+dorn_cuda_022,Dorn,cuda,Multilayer Perceptron,0,1,0.9940660798110605
+dorn_cuda_023,Dorn,cuda,Multilayer Perceptron,3,0,0.001475387140687819
+dorn_cuda_024,Dorn,cuda,Multilayer Perceptron,1,0,0.0025187953093693946
+dorn_cuda_025,Dorn,cuda,Multilayer Perceptron,4,0,0.027982748483789482
+dorn_cuda_026,Dorn,cuda,Multilayer Perceptron,4,1,0.0625941492352753
+dorn_cuda_027,Dorn,cuda,Multilayer Perceptron,0,1,0.94059705267623
+dorn_cuda_028,Dorn,cuda,Multilayer Perceptron,3,1,0.9990633627754288
+dorn_cuda_029,Dorn,cuda,Multilayer Perceptron,4,1,0.51947083650404
+dorn_cuda_003,Dorn,cuda,Multilayer Perceptron,4,0,0.0002465037061437879
+dorn_cuda_030,Dorn,cuda,Multilayer Perceptron,1,0,2.6288581702021377e-05
+dorn_cuda_031,Dorn,cuda,Multilayer Perceptron,1,1,0.9946343850837281
+dorn_cuda_032,Dorn,cuda,Multilayer Perceptron,0,0,0.012571450215689424
+dorn_cuda_033,Dorn,cuda,Multilayer Perceptron,3,0,0.002985094204675773
+dorn_cuda_034,Dorn,cuda,Multilayer Perceptron,0,0,2.8205340502711534e-06
+dorn_cuda_035,Dorn,cuda,Multilayer Perceptron,3,0,0.997844323534412
+dorn_cuda_036,Dorn,cuda,Multilayer Perceptron,2,0,0.009904319911064914
+dorn_cuda_037,Dorn,cuda,Multilayer Perceptron,4,1,0.9440363154458271
+dorn_cuda_038,Dorn,cuda,Multilayer Perceptron,2,0,2.8985146519686344e-06
+dorn_cuda_039,Dorn,cuda,Multilayer Perceptron,2,1,0.999719859776056
+dorn_cuda_004,Dorn,cuda,Multilayer Perceptron,3,1,0.9995597583140473
+dorn_cuda_040,Dorn,cuda,Multilayer Perceptron,2,1,0.750991218353468
+dorn_cuda_041,Dorn,cuda,Multilayer Perceptron,3,1,0.9999010394215787
+dorn_cuda_042,Dorn,cuda,Multilayer Perceptron,3,1,0.962309199062782
+dorn_cuda_043,Dorn,cuda,Multilayer Perceptron,2,0,0.4730953409898364
+dorn_cuda_044,Dorn,cuda,Multilayer Perceptron,4,1,0.8474538230602345
+dorn_cuda_045,Dorn,cuda,Multilayer Perceptron,4,0,0.4652301505547561
+dorn_cuda_046,Dorn,cuda,Multilayer Perceptron,2,0,0.6094402884907724
+dorn_cuda_047,Dorn,cuda,Multilayer Perceptron,1,0,7.104541154480172e-07
+dorn_cuda_048,Dorn,cuda,Multilayer Perceptron,4,1,0.6614969852785813
+dorn_cuda_049,Dorn,cuda,Multilayer Perceptron,2,1,0.47695829963525355
+dorn_cuda_005,Dorn,cuda,Multilayer Perceptron,0,1,0.9977178899445738
+dorn_cuda_050,Dorn,cuda,Multilayer Perceptron,4,0,0.48157527032843056
+dorn_cuda_051,Dorn,cuda,Multilayer Perceptron,3,0,0.017774063410950888
+dorn_cuda_052,Dorn,cuda,Multilayer Perceptron,4,1,0.9341176498161307
+dorn_cuda_053,Dorn,cuda,Multilayer Perceptron,0,0,0.9995373295388957
+dorn_cuda_054,Dorn,cuda,Multilayer Perceptron,2,1,0.99660518011224
+dorn_cuda_055,Dorn,cuda,Multilayer Perceptron,1,0,0.5498531328786269
+dorn_cuda_056,Dorn,cuda,Multilayer Perceptron,2,0,0.21055583013431256
+dorn_cuda_057,Dorn,cuda,Multilayer Perceptron,1,1,0.7129881038760553
+dorn_cuda_058,Dorn,cuda,Multilayer Perceptron,0,0,0.0014202654085406828
+dorn_cuda_059,Dorn,cuda,Multilayer Perceptron,1,1,3.793893501889337e-05
+dorn_cuda_006,Dorn,cuda,Multilayer Perceptron,3,0,0.0006142284181176613
+dorn_cuda_060,Dorn,cuda,Multilayer Perceptron,1,1,0.9999818447765365
+dorn_cuda_061,Dorn,cuda,Multilayer Perceptron,0,0,0.7588864548262431
+dorn_cuda_062,Dorn,cuda,Multilayer Perceptron,1,1,0.9883283349954433
+dorn_cuda_063,Dorn,cuda,Multilayer Perceptron,3,0,0.24226720769233595
+dorn_cuda_064,Dorn,cuda,Multilayer Perceptron,0,0,2.8205340502711534e-06
+dorn_cuda_065,Dorn,cuda,Multilayer Perceptron,0,1,0.9234857457432993
+dorn_cuda_066,Dorn,cuda,Multilayer Perceptron,1,0,0.9996888442025216
+dorn_cuda_067,Dorn,cuda,Multilayer Perceptron,3,0,0.00011863258719642085
+dorn_cuda_068,Dorn,cuda,Multilayer Perceptron,3,1,0.0009597382860400351
+dorn_cuda_069,Dorn,cuda,Multilayer Perceptron,2,0,0.0019603300236339448
+dorn_cuda_007,Dorn,cuda,Multilayer Perceptron,2,0,0.16291033620957354
+dorn_cuda_070,Dorn,cuda,Multilayer Perceptron,2,1,0.9494401797251122
+dorn_cuda_071,Dorn,cuda,Multilayer Perceptron,2,0,0.4558293368257965
+dorn_cuda_072,Dorn,cuda,Multilayer Perceptron,1,0,0.17150240544658507
+dorn_cuda_073,Dorn,cuda,Multilayer Perceptron,4,1,0.8674636976437139
+dorn_cuda_074,Dorn,cuda,Multilayer Perceptron,3,1,0.7468309394311976
+dorn_cuda_075,Dorn,cuda,Multilayer Perceptron,1,0,0.9994288276415748
+dorn_cuda_076,Dorn,cuda,Multilayer Perceptron,2,1,0.9977574565552549
+dorn_cuda_077,Dorn,cuda,Multilayer Perceptron,1,1,0.9676307794918314
+dorn_cuda_078,Dorn,cuda,Multilayer Perceptron,4,0,6.614816007792276e-06
+dorn_cuda_079,Dorn,cuda,Multilayer Perceptron,1,0,0.1658430522835046
+dorn_cuda_008,Dorn,cuda,Multilayer Perceptron,2,1,0.32339532759489015
+dorn_cuda_080,Dorn,cuda,Multilayer Perceptron,3,1,0.8935884602703454
+dorn_cuda_081,Dorn,cuda,Multilayer Perceptron,3,0,0.002259607000730229
+dorn_cuda_082,Dorn,cuda,Multilayer Perceptron,1,0,2.5814173197773314e-08
+dorn_cuda_083,Dorn,cuda,Multilayer Perceptron,1,1,9.356442757179739e-05
+dorn_cuda_084,Dorn,cuda,Multilayer Perceptron,2,0,3.956419898915689e-05
+dorn_cuda_085,Dorn,cuda,Multilayer Perceptron,0,1,0.3637189310721318
+dorn_cuda_086,Dorn,cuda,Multilayer Perceptron,0,0,0.9687181358796408
+dorn_cuda_087,Dorn,cuda,Multilayer Perceptron,4,0,0.000373448820033807
+dorn_cuda_088,Dorn,cuda,Multilayer Perceptron,0,1,0.9942795090913121
+dorn_cuda_089,Dorn,cuda,Multilayer Perceptron,2,0,0.628012271543516
+dorn_cuda_009,Dorn,cuda,Multilayer Perceptron,1,1,0.02074021731240337
+dorn_cuda_090,Dorn,cuda,Multilayer Perceptron,2,1,0.9997082918678613
+dorn_cuda_091,Dorn,cuda,Multilayer Perceptron,1,1,0.9925686952737379
+dorn_cuda_092,Dorn,cuda,Multilayer Perceptron,1,0,0.011226682952101644
+dorn_cuda_093,Dorn,cuda,Multilayer Perceptron,2,0,0.0007489877067109135
+dorn_cuda_094,Dorn,cuda,Multilayer Perceptron,3,1,0.9887343006312699
+dorn_cuda_095,Dorn,cuda,Multilayer Perceptron,0,1,0.9960965132015659
+dorn_cuda_096,Dorn,cuda,Multilayer Perceptron,0,1,0.23109956310755125
+dorn_cuda_097,Dorn,cuda,Multilayer Perceptron,2,1,0.070389843747408
+dorn_cuda_098,Dorn,cuda,Multilayer Perceptron,0,0,0.00035128863111345344
+dorn_cuda_099,Dorn,cuda,Multilayer Perceptron,1,1,3.793893501889337e-05
+dorn_cuda_000,Dorn,cuda,Voting ensemble (LR+NB+RF),4,0,0.20056405055816554
+dorn_cuda_001,Dorn,cuda,Voting ensemble (LR+NB+RF),4,0,0.5402202822623626
+dorn_cuda_010,Dorn,cuda,Voting ensemble (LR+NB+RF),3,0,0.04258047935383975
+dorn_cuda_100,Dorn,cuda,Voting ensemble (LR+NB+RF),0,1,0.6171180011902626
+dorn_cuda_101,Dorn,cuda,Voting ensemble (LR+NB+RF),1,1,0.9445082483272212
+dorn_cuda_102,Dorn,cuda,Voting ensemble (LR+NB+RF),3,0,0.9552595248423145
+dorn_cuda_103,Dorn,cuda,Voting ensemble (LR+NB+RF),4,0,0.5713307394577906
+dorn_cuda_104,Dorn,cuda,Voting ensemble (LR+NB+RF),4,1,0.3915901610057733
+dorn_cuda_105,Dorn,cuda,Voting ensemble (LR+NB+RF),0,1,0.7098137782154023
+dorn_cuda_106,Dorn,cuda,Voting ensemble (LR+NB+RF),2,1,0.344385765904633
+dorn_cuda_107,Dorn,cuda,Voting ensemble (LR+NB+RF),0,1,0.9362092933717753
+dorn_cuda_108,Dorn,cuda,Voting ensemble (LR+NB+RF),4,0,0.03103644531706717
+dorn_cuda_109,Dorn,cuda,Voting ensemble (LR+NB+RF),3,1,0.9608382752831292
+dorn_cuda_011,Dorn,cuda,Voting ensemble (LR+NB+RF),2,0,0.6819979008418676
+dorn_cuda_110,Dorn,cuda,Voting ensemble (LR+NB+RF),0,0,0.02937875818285028
+dorn_cuda_111,Dorn,cuda,Voting ensemble (LR+NB+RF),4,1,0.7549087395910128
+dorn_cuda_112,Dorn,cuda,Voting ensemble (LR+NB+RF),0,0,0.5309758818040982
+dorn_cuda_113,Dorn,cuda,Voting ensemble (LR+NB+RF),1,1,0.21038842754547427
+dorn_cuda_114,Dorn,cuda,Voting ensemble (LR+NB+RF),3,0,0.03292463334051163
+dorn_cuda_115,Dorn,cuda,Voting ensemble (LR+NB+RF),3,0,0.056611835667429465
+dorn_cuda_116,Dorn,cuda,Voting ensemble (LR+NB+RF),4,1,0.8432985376734815
+dorn_cuda_117,Dorn,cuda,Voting ensemble (LR+NB+RF),1,1,0.1901798718288615
+dorn_cuda_118,Dorn,cuda,Voting ensemble (LR+NB+RF),2,0,0.10697688109386351
+dorn_cuda_119,Dorn,cuda,Voting ensemble (LR+NB+RF),4,1,0.8322930636841469
+dorn_cuda_012,Dorn,cuda,Voting ensemble (LR+NB+RF),0,1,0.8507906813970517
+dorn_cuda_013,Dorn,cuda,Voting ensemble (LR+NB+RF),4,1,0.8898733557134869
+dorn_cuda_014,Dorn,cuda,Voting ensemble (LR+NB+RF),2,1,0.4245049107980427
+dorn_cuda_015,Dorn,cuda,Voting ensemble (LR+NB+RF),4,1,0.6076977618196305
+dorn_cuda_016,Dorn,cuda,Voting ensemble (LR+NB+RF),0,0,0.2602319565870816
+dorn_cuda_017,Dorn,cuda,Voting ensemble (LR+NB+RF),3,1,0.983592003834938
+dorn_cuda_018,Dorn,cuda,Voting ensemble (LR+NB+RF),3,1,0.6915501233824285
+dorn_cuda_019,Dorn,cuda,Voting ensemble (LR+NB+RF),1,1,0.8792517875648471
+dorn_cuda_002,Dorn,cuda,Voting ensemble (LR+NB+RF),0,1,0.9181183574263715
+dorn_cuda_020,Dorn,cuda,Voting ensemble (LR+NB+RF),4,0,0.1459037213125958
+dorn_cuda_021,Dorn,cuda,Voting ensemble (LR+NB+RF),3,1,0.2661577515248989
+dorn_cuda_022,Dorn,cuda,Voting ensemble (LR+NB+RF),0,1,0.9109268345514021
+dorn_cuda_023,Dorn,cuda,Voting ensemble (LR+NB+RF),3,0,0.050777525725345656
+dorn_cuda_024,Dorn,cuda,Voting ensemble (LR+NB+RF),1,0,0.08344699731676707
+dorn_cuda_025,Dorn,cuda,Voting ensemble (LR+NB+RF),4,0,0.14621586623246485
+dorn_cuda_026,Dorn,cuda,Voting ensemble (LR+NB+RF),4,1,0.10087392444170405
+dorn_cuda_027,Dorn,cuda,Voting ensemble (LR+NB+RF),0,1,0.9057515211447532
+dorn_cuda_028,Dorn,cuda,Voting ensemble (LR+NB+RF),3,1,0.4818897296013564
+dorn_cuda_029,Dorn,cuda,Voting ensemble (LR+NB+RF),4,1,0.8866118252453042
+dorn_cuda_003,Dorn,cuda,Voting ensemble (LR+NB+RF),4,0,0.13062075478426602
+dorn_cuda_030,Dorn,cuda,Voting ensemble (LR+NB+RF),1,0,0.030740230251979455
+dorn_cuda_031,Dorn,cuda,Voting ensemble (LR+NB+RF),1,1,0.9687482513592021
+dorn_cuda_032,Dorn,cuda,Voting ensemble (LR+NB+RF),0,0,0.48489383999099783
+dorn_cuda_033,Dorn,cuda,Voting ensemble (LR+NB+RF),3,0,0.062439942887441924
+dorn_cuda_034,Dorn,cuda,Voting ensemble (LR+NB+RF),0,0,0.02914146705249451
+dorn_cuda_035,Dorn,cuda,Voting ensemble (LR+NB+RF),3,0,0.9354829750971548
+dorn_cuda_036,Dorn,cuda,Voting ensemble (LR+NB+RF),2,0,0.15045041903936293
+dorn_cuda_037,Dorn,cuda,Voting ensemble (LR+NB+RF),4,1,0.8283439756949603
+dorn_cuda_038,Dorn,cuda,Voting ensemble (LR+NB+RF),2,0,0.02710897648461373
+dorn_cuda_039,Dorn,cuda,Voting ensemble (LR+NB+RF),2,1,0.9521110436396141
+dorn_cuda_004,Dorn,cuda,Voting ensemble (LR+NB+RF),3,1,0.9770497143930568
+dorn_cuda_040,Dorn,cuda,Voting ensemble (LR+NB+RF),2,1,0.850177663947731
+dorn_cuda_041,Dorn,cuda,Voting ensemble (LR+NB+RF),3,1,0.9835219633360145
+dorn_cuda_042,Dorn,cuda,Voting ensemble (LR+NB+RF),3,1,0.6513676001317521
+dorn_cuda_043,Dorn,cuda,Voting ensemble (LR+NB+RF),2,0,0.31256700951948174
+dorn_cuda_044,Dorn,cuda,Voting ensemble (LR+NB+RF),4,1,0.8548761047323343
+dorn_cuda_045,Dorn,cuda,Voting ensemble (LR+NB+RF),4,0,0.7969346948452328
+dorn_cuda_046,Dorn,cuda,Voting ensemble (LR+NB+RF),2,0,0.6436863890936176
+dorn_cuda_047,Dorn,cuda,Voting ensemble (LR+NB+RF),1,0,0.02944209201179071
+dorn_cuda_048,Dorn,cuda,Voting ensemble (LR+NB+RF),4,1,0.8286407070063273
+dorn_cuda_049,Dorn,cuda,Voting ensemble (LR+NB+RF),2,1,0.6056439983423251
+dorn_cuda_005,Dorn,cuda,Voting ensemble (LR+NB+RF),0,1,0.8124060363816312
+dorn_cuda_050,Dorn,cuda,Voting ensemble (LR+NB+RF),4,0,0.4513524492801684
+dorn_cuda_051,Dorn,cuda,Voting ensemble (LR+NB+RF),3,0,0.17397965999184792
+dorn_cuda_052,Dorn,cuda,Voting ensemble (LR+NB+RF),4,1,0.8480667263573176
+dorn_cuda_053,Dorn,cuda,Voting ensemble (LR+NB+RF),0,0,0.7018654743594334
+dorn_cuda_054,Dorn,cuda,Voting ensemble (LR+NB+RF),2,1,0.9516619753568634
+dorn_cuda_055,Dorn,cuda,Voting ensemble (LR+NB+RF),1,0,0.703580515550838
+dorn_cuda_056,Dorn,cuda,Voting ensemble (LR+NB+RF),2,0,0.5550726626454713
+dorn_cuda_057,Dorn,cuda,Voting ensemble (LR+NB+RF),1,1,0.7395948275287934
+dorn_cuda_058,Dorn,cuda,Voting ensemble (LR+NB+RF),0,0,0.08981863301898241
+dorn_cuda_059,Dorn,cuda,Voting ensemble (LR+NB+RF),1,1,0.16690668655113705
+dorn_cuda_006,Dorn,cuda,Voting ensemble (LR+NB+RF),3,0,0.04431587027669994
+dorn_cuda_060,Dorn,cuda,Voting ensemble (LR+NB+RF),1,1,0.91725124587856
+dorn_cuda_061,Dorn,cuda,Voting ensemble (LR+NB+RF),0,0,0.853539600770837
+dorn_cuda_062,Dorn,cuda,Voting ensemble (LR+NB+RF),1,1,0.9023896669354888
+dorn_cuda_063,Dorn,cuda,Voting ensemble (LR+NB+RF),3,0,0.6637587188404868
+dorn_cuda_064,Dorn,cuda,Voting ensemble (LR+NB+RF),0,0,0.02914146705249451
+dorn_cuda_065,Dorn,cuda,Voting ensemble (LR+NB+RF),0,1,0.9032379289838669
+dorn_cuda_066,Dorn,cuda,Voting ensemble (LR+NB+RF),1,0,0.9604951880090441
+dorn_cuda_067,Dorn,cuda,Voting ensemble (LR+NB+RF),3,0,0.04295355426505929
+dorn_cuda_068,Dorn,cuda,Voting ensemble (LR+NB+RF),3,1,0.04232165408493472
+dorn_cuda_069,Dorn,cuda,Voting ensemble (LR+NB+RF),2,0,0.12123438544183644
+dorn_cuda_007,Dorn,cuda,Voting ensemble (LR+NB+RF),2,0,0.29834539339532495
+dorn_cuda_070,Dorn,cuda,Voting ensemble (LR+NB+RF),2,1,0.8926928301842637
+dorn_cuda_071,Dorn,cuda,Voting ensemble (LR+NB+RF),2,0,0.2684390702902863
+dorn_cuda_072,Dorn,cuda,Voting ensemble (LR+NB+RF),1,0,0.6524799297776483
+dorn_cuda_073,Dorn,cuda,Voting ensemble (LR+NB+RF),4,1,0.8863202893559049
+dorn_cuda_074,Dorn,cuda,Voting ensemble (LR+NB+RF),3,1,0.6587834185157281
+dorn_cuda_075,Dorn,cuda,Voting ensemble (LR+NB+RF),1,0,0.3903848877899496
+dorn_cuda_076,Dorn,cuda,Voting ensemble (LR+NB+RF),2,1,0.9600425780743005
+dorn_cuda_077,Dorn,cuda,Voting ensemble (LR+NB+RF),1,1,0.6320062310067597
+dorn_cuda_078,Dorn,cuda,Voting ensemble (LR+NB+RF),4,0,0.0246173958024738
+dorn_cuda_079,Dorn,cuda,Voting ensemble (LR+NB+RF),1,0,0.10608379389525945
+dorn_cuda_008,Dorn,cuda,Voting ensemble (LR+NB+RF),2,1,0.7065282591541987
+dorn_cuda_080,Dorn,cuda,Voting ensemble (LR+NB+RF),3,1,0.8640750684064776
+dorn_cuda_081,Dorn,cuda,Voting ensemble (LR+NB+RF),3,0,0.061813640753257515
+dorn_cuda_082,Dorn,cuda,Voting ensemble (LR+NB+RF),1,0,0.06660921460174955
+dorn_cuda_083,Dorn,cuda,Voting ensemble (LR+NB+RF),1,1,0.22017623481025625
+dorn_cuda_084,Dorn,cuda,Voting ensemble (LR+NB+RF),2,0,0.03785642343820689
+dorn_cuda_085,Dorn,cuda,Voting ensemble (LR+NB+RF),0,1,0.8151900748955861
+dorn_cuda_086,Dorn,cuda,Voting ensemble (LR+NB+RF),0,0,0.4425038779205102
+dorn_cuda_087,Dorn,cuda,Voting ensemble (LR+NB+RF),4,0,0.11744638486929425
+dorn_cuda_088,Dorn,cuda,Voting ensemble (LR+NB+RF),0,1,0.9206295599285204
+dorn_cuda_089,Dorn,cuda,Voting ensemble (LR+NB+RF),2,0,0.04871593699584279
+dorn_cuda_009,Dorn,cuda,Voting ensemble (LR+NB+RF),1,1,0.36596775216171346
+dorn_cuda_090,Dorn,cuda,Voting ensemble (LR+NB+RF),2,1,0.8418305624741351
+dorn_cuda_091,Dorn,cuda,Voting ensemble (LR+NB+RF),1,1,0.9025059381159601
+dorn_cuda_092,Dorn,cuda,Voting ensemble (LR+NB+RF),1,0,0.6676619538277638
+dorn_cuda_093,Dorn,cuda,Voting ensemble (LR+NB+RF),2,0,0.04313724230546381
+dorn_cuda_094,Dorn,cuda,Voting ensemble (LR+NB+RF),3,1,0.5138963353989293
+dorn_cuda_095,Dorn,cuda,Voting ensemble (LR+NB+RF),0,1,0.9429977925526783
+dorn_cuda_096,Dorn,cuda,Voting ensemble (LR+NB+RF),0,1,0.7752861268124756
+dorn_cuda_097,Dorn,cuda,Voting ensemble (LR+NB+RF),2,1,0.7069112934045658
+dorn_cuda_098,Dorn,cuda,Voting ensemble (LR+NB+RF),0,0,0.47354880086096607
+dorn_cuda_099,Dorn,cuda,Voting ensemble (LR+NB+RF),1,1,0.16690668655113705
+dorn_java_101,Dorn,java,Logistic Regression,1,1,0.33240548647107687
+dorn_java_102,Dorn,java,Logistic Regression,0,0,0.7568631010306579
+dorn_java_103,Dorn,java,Logistic Regression,4,0,0.04208094733200906
+dorn_java_104,Dorn,java,Logistic Regression,3,1,0.10117546268664362
+dorn_java_105,Dorn,java,Logistic Regression,4,1,0.6996156278615294
+dorn_java_106,Dorn,java,Logistic Regression,0,0,0.2751840878691893
+dorn_java_107,Dorn,java,Logistic Regression,4,0,0.0037474107897404415
+dorn_java_108,Dorn,java,Logistic Regression,2,1,0.22728376122933347
+dorn_java_109,Dorn,java,Logistic Regression,3,1,0.8026261381616785
+dorn_java_110,Dorn,java,Logistic Regression,4,0,0.02504354887376878
+dorn_java_111,Dorn,java,Logistic Regression,4,1,0.2315800567096843
+dorn_java_112,Dorn,java,Logistic Regression,3,1,0.6878351654641903
+dorn_java_113,Dorn,java,Logistic Regression,0,0,0.0764148746263727
+dorn_java_114,Dorn,java,Logistic Regression,1,1,0.9360110616325595
+dorn_java_115,Dorn,java,Logistic Regression,1,1,0.777091181381191
+dorn_java_116,Dorn,java,Logistic Regression,0,0,0.05644132364244598
+dorn_java_117,Dorn,java,Logistic Regression,4,0,0.8854512435467027
+dorn_java_118,Dorn,java,Logistic Regression,3,0,0.9144298736261023
+dorn_java_119,Dorn,java,Logistic Regression,3,0,0.7185445791795214
+dorn_java_120,Dorn,java,Logistic Regression,0,0,0.29619895590759227
+dorn_java_121,Dorn,java,Logistic Regression,2,0,0.0168846098490645
+dorn_java_122,Dorn,java,Logistic Regression,0,1,0.018641154904345016
+dorn_java_123,Dorn,java,Logistic Regression,4,1,0.5194921710979573
+dorn_java_124,Dorn,java,Logistic Regression,3,0,0.26319826860760065
+dorn_java_125,Dorn,java,Logistic Regression,2,1,0.9922390622721976
+dorn_java_126,Dorn,java,Logistic Regression,1,1,0.9203231900587382
+dorn_java_127,Dorn,java,Logistic Regression,3,0,0.10707991670946485
+dorn_java_128,Dorn,java,Logistic Regression,0,1,0.8619205549696529
+dorn_java_129,Dorn,java,Logistic Regression,1,0,0.11589294272654256
+dorn_java_130,Dorn,java,Logistic Regression,2,1,0.7888806447572696
+dorn_java_131,Dorn,java,Logistic Regression,0,0,0.678368704028164
+dorn_java_132,Dorn,java,Logistic Regression,1,1,0.9134734938616378
+dorn_java_133,Dorn,java,Logistic Regression,3,0,0.1974069764617422
+dorn_java_134,Dorn,java,Logistic Regression,2,1,0.9787335313072485
+dorn_java_135,Dorn,java,Logistic Regression,0,0,0.4609498407925214
+dorn_java_136,Dorn,java,Logistic Regression,3,1,0.7929914993344553
+dorn_java_137,Dorn,java,Logistic Regression,0,1,0.9791042145052141
+dorn_java_138,Dorn,java,Logistic Regression,4,0,0.7886607933635705
+dorn_java_139,Dorn,java,Logistic Regression,0,1,0.8165523676829968
+dorn_java_140,Dorn,java,Logistic Regression,1,0,0.7043020959283497
+dorn_java_141,Dorn,java,Logistic Regression,0,1,0.972760607642254
+dorn_java_142,Dorn,java,Logistic Regression,0,1,0.23488707182543228
+dorn_java_143,Dorn,java,Logistic Regression,3,0,0.2765935458747902
+dorn_java_144,Dorn,java,Logistic Regression,1,0,0.23178615015446227
+dorn_java_145,Dorn,java,Logistic Regression,4,0,0.177105573972974
+dorn_java_146,Dorn,java,Logistic Regression,2,1,0.24987016794293004
+dorn_java_147,Dorn,java,Logistic Regression,4,1,0.8287684733115093
+dorn_java_148,Dorn,java,Logistic Regression,4,0,0.31603701765015857
+dorn_java_149,Dorn,java,Logistic Regression,1,0,0.25730359253641644
+dorn_java_150,Dorn,java,Logistic Regression,0,1,0.6399069083659799
+dorn_java_151,Dorn,java,Logistic Regression,0,0,0.6255482429782301
+dorn_java_152,Dorn,java,Logistic Regression,0,0,0.0005243640632620173
+dorn_java_153,Dorn,java,Logistic Regression,4,1,0.3997204301835081
+dorn_java_154,Dorn,java,Logistic Regression,1,1,0.6627530423863313
+dorn_java_155,Dorn,java,Logistic Regression,2,1,0.05322702350402145
+dorn_java_156,Dorn,java,Logistic Regression,3,1,0.3974081205621307
+dorn_java_157,Dorn,java,Logistic Regression,1,0,0.03745697132026534
+dorn_java_158,Dorn,java,Logistic Regression,3,1,0.9530498374107435
+dorn_java_159,Dorn,java,Logistic Regression,2,1,0.5755937655555448
+dorn_java_160,Dorn,java,Logistic Regression,0,1,0.9983996581281924
+dorn_java_161,Dorn,java,Logistic Regression,4,0,0.7835183711441224
+dorn_java_162,Dorn,java,Logistic Regression,2,0,0.13025347065511694
+dorn_java_163,Dorn,java,Logistic Regression,3,1,0.977518950810415
+dorn_java_164,Dorn,java,Logistic Regression,2,0,0.17654267037300841
+dorn_java_165,Dorn,java,Logistic Regression,4,0,0.18467816249402122
+dorn_java_166,Dorn,java,Logistic Regression,3,1,0.7124091793143043
+dorn_java_167,Dorn,java,Logistic Regression,1,0,0.07252769044220225
+dorn_java_168,Dorn,java,Logistic Regression,4,1,0.9661484454095014
+dorn_java_169,Dorn,java,Logistic Regression,4,1,0.8690653191036912
+dorn_java_170,Dorn,java,Logistic Regression,0,1,0.814178542390999
+dorn_java_171,Dorn,java,Logistic Regression,2,1,0.7816158809894912
+dorn_java_172,Dorn,java,Logistic Regression,3,1,0.4192847647765738
+dorn_java_173,Dorn,java,Logistic Regression,4,0,0.004207438502030107
+dorn_java_174,Dorn,java,Logistic Regression,4,1,0.36852400464314805
+dorn_java_175,Dorn,java,Logistic Regression,2,0,0.7536027732558237
+dorn_java_176,Dorn,java,Logistic Regression,2,1,0.875504819306161
+dorn_java_177,Dorn,java,Logistic Regression,2,0,0.8906420011713556
+dorn_java_178,Dorn,java,Logistic Regression,2,0,0.5797144589071542
+dorn_java_179,Dorn,java,Logistic Regression,4,1,0.8574167970565133
+dorn_java_180,Dorn,java,Logistic Regression,2,0,0.3314240135535019
+dorn_java_181,Dorn,java,Logistic Regression,0,1,0.32747975545246516
+dorn_java_182,Dorn,java,Logistic Regression,1,1,0.911515357321718
+dorn_java_183,Dorn,java,Logistic Regression,3,0,0.6705119833694181
+dorn_java_184,Dorn,java,Logistic Regression,3,1,0.5254204450799168
+dorn_java_185,Dorn,java,Logistic Regression,1,0,0.8496913631456527
+dorn_java_186,Dorn,java,Logistic Regression,2,0,0.7591511922691572
+dorn_java_187,Dorn,java,Logistic Regression,2,0,0.31127101836132076
+dorn_java_188,Dorn,java,Logistic Regression,4,0,0.5796623858007395
+dorn_java_189,Dorn,java,Logistic Regression,0,1,0.9283610499676372
+dorn_java_190,Dorn,java,Logistic Regression,1,1,0.9810902640263905
+dorn_java_191,Dorn,java,Logistic Regression,1,1,0.9097107391193348
+dorn_java_192,Dorn,java,Logistic Regression,2,1,0.34354544436646073
+dorn_java_193,Dorn,java,Logistic Regression,0,0,0.013924099207249838
+dorn_java_194,Dorn,java,Logistic Regression,1,0,0.0026881804589304636
+dorn_java_195,Dorn,java,Logistic Regression,1,0,0.04719552698970932
+dorn_java_196,Dorn,java,Logistic Regression,3,1,0.8815832914800058
+dorn_java_197,Dorn,java,Logistic Regression,1,1,0.10521122225765615
+dorn_java_198,Dorn,java,Logistic Regression,3,0,0.001198685120756911
+dorn_java_199,Dorn,java,Logistic Regression,2,1,0.66654144817724
+dorn_java_200,Dorn,java,Logistic Regression,1,1,0.938158632488784
+dorn_java_201,Dorn,java,Logistic Regression,3,0,0.890005106601226
+dorn_java_202,Dorn,java,Logistic Regression,3,1,0.3810179910039067
+dorn_java_203,Dorn,java,Logistic Regression,4,1,0.5638250951983519
+dorn_java_204,Dorn,java,Logistic Regression,2,0,0.4520635581308354
+dorn_java_205,Dorn,java,Logistic Regression,1,0,0.017570225980114148
+dorn_java_206,Dorn,java,Logistic Regression,0,0,0.05801626675587707
+dorn_java_207,Dorn,java,Logistic Regression,4,1,0.8946386085757623
+dorn_java_208,Dorn,java,Logistic Regression,0,1,0.7315706226154315
+dorn_java_209,Dorn,java,Logistic Regression,3,1,0.4964975421379426
+dorn_java_210,Dorn,java,Logistic Regression,0,0,0.017090404512859887
+dorn_java_211,Dorn,java,Logistic Regression,0,1,0.48627278806461427
+dorn_java_212,Dorn,java,Logistic Regression,3,1,0.6254582680788606
+dorn_java_213,Dorn,java,Logistic Regression,1,1,0.9364804182201345
+dorn_java_214,Dorn,java,Logistic Regression,1,0,0.9052250021026874
+dorn_java_215,Dorn,java,Logistic Regression,2,0,0.012318514224213359
+dorn_java_216,Dorn,java,Logistic Regression,4,1,0.9860324938213488
+dorn_java_217,Dorn,java,Logistic Regression,4,0,0.09393960159868542
+dorn_java_218,Dorn,java,Logistic Regression,2,1,0.39813248189956507
+dorn_java_219,Dorn,java,Logistic Regression,2,0,0.7479871885392783
+dorn_java_220,Dorn,java,Logistic Regression,3,0,0.2563297488033113
+dorn_java_221,Dorn,java,Logistic Regression,1,1,0.6326471260907932
+dorn_java_101,Dorn,java,Naive Bayes,1,1,0.0006206795841107012
+dorn_java_102,Dorn,java,Naive Bayes,0,0,0.00039935801003453803
+dorn_java_103,Dorn,java,Naive Bayes,4,0,3.2952061580242267e-06
+dorn_java_104,Dorn,java,Naive Bayes,3,1,5.117129340187438e-05
+dorn_java_105,Dorn,java,Naive Bayes,4,1,0.9797003121678638
+dorn_java_106,Dorn,java,Naive Bayes,0,0,2.9768020049434286e-15
+dorn_java_107,Dorn,java,Naive Bayes,4,0,4.453966957810892e-13
+dorn_java_108,Dorn,java,Naive Bayes,2,1,4.2568016364761245e-08
+dorn_java_109,Dorn,java,Naive Bayes,3,1,0.999988446036304
+dorn_java_110,Dorn,java,Naive Bayes,4,0,7.111902428080066e-12
+dorn_java_111,Dorn,java,Naive Bayes,4,1,0.0005805223174325328
+dorn_java_112,Dorn,java,Naive Bayes,3,1,0.5814535359533229
+dorn_java_113,Dorn,java,Naive Bayes,0,0,7.930496939106e-06
+dorn_java_114,Dorn,java,Naive Bayes,1,1,0.9831681955333326
+dorn_java_115,Dorn,java,Naive Bayes,1,1,0.9973086385954838
+dorn_java_116,Dorn,java,Naive Bayes,0,0,4.486587499380216e-06
+dorn_java_117,Dorn,java,Naive Bayes,4,0,0.9988005681036451
+dorn_java_118,Dorn,java,Naive Bayes,3,0,0.9999999997883506
+dorn_java_119,Dorn,java,Naive Bayes,3,0,0.45091191930632524
+dorn_java_120,Dorn,java,Naive Bayes,0,0,0.02239914597451939
+dorn_java_121,Dorn,java,Naive Bayes,2,0,6.83586301347857e-07
+dorn_java_122,Dorn,java,Naive Bayes,0,1,0.9855393988629451
+dorn_java_123,Dorn,java,Naive Bayes,4,1,0.7262663700879062
+dorn_java_124,Dorn,java,Naive Bayes,3,0,0.998490894804703
+dorn_java_125,Dorn,java,Naive Bayes,2,1,1.0
+dorn_java_126,Dorn,java,Naive Bayes,1,1,0.9999996946414567
+dorn_java_127,Dorn,java,Naive Bayes,3,0,8.799186217297353e-19
+dorn_java_128,Dorn,java,Naive Bayes,0,1,0.9998469969210524
+dorn_java_129,Dorn,java,Naive Bayes,1,0,0.9757775682669362
+dorn_java_130,Dorn,java,Naive Bayes,2,1,0.9999999911671793
+dorn_java_131,Dorn,java,Naive Bayes,0,0,0.11277797533498041
+dorn_java_132,Dorn,java,Naive Bayes,1,1,0.999915431815019
+dorn_java_133,Dorn,java,Naive Bayes,3,0,0.5705602550587635
+dorn_java_134,Dorn,java,Naive Bayes,2,1,0.999999999999666
+dorn_java_135,Dorn,java,Naive Bayes,0,0,0.8460731915213592
+dorn_java_136,Dorn,java,Naive Bayes,3,1,0.9999999566739044
+dorn_java_137,Dorn,java,Naive Bayes,0,1,0.7885828629845942
+dorn_java_138,Dorn,java,Naive Bayes,4,0,0.9274859203066931
+dorn_java_139,Dorn,java,Naive Bayes,0,1,0.8410098971213209
+dorn_java_140,Dorn,java,Naive Bayes,1,0,0.9857008367859525
+dorn_java_141,Dorn,java,Naive Bayes,0,1,0.9999995959830449
+dorn_java_142,Dorn,java,Naive Bayes,0,1,0.634720268893441
+dorn_java_143,Dorn,java,Naive Bayes,3,0,0.9984568344949466
+dorn_java_144,Dorn,java,Naive Bayes,1,0,1.0426497149011809e-05
+dorn_java_145,Dorn,java,Naive Bayes,4,0,1.6538162220073888e-08
+dorn_java_146,Dorn,java,Naive Bayes,2,1,0.00015879687337434756
+dorn_java_147,Dorn,java,Naive Bayes,4,1,0.7965605298702204
+dorn_java_148,Dorn,java,Naive Bayes,4,0,0.26234650241839347
+dorn_java_149,Dorn,java,Naive Bayes,1,0,0.7396167589435333
+dorn_java_150,Dorn,java,Naive Bayes,0,1,0.15286878190175462
+dorn_java_151,Dorn,java,Naive Bayes,0,0,0.9861123646777898
+dorn_java_152,Dorn,java,Naive Bayes,0,0,1.1226594464241394e-14
+dorn_java_153,Dorn,java,Naive Bayes,4,1,0.2992658213984305
+dorn_java_154,Dorn,java,Naive Bayes,1,1,0.11355706304832475
+dorn_java_155,Dorn,java,Naive Bayes,2,1,0.9494995952604786
+dorn_java_156,Dorn,java,Naive Bayes,3,1,0.10908385979156664
+dorn_java_157,Dorn,java,Naive Bayes,1,0,5.886298718508157e-07
+dorn_java_158,Dorn,java,Naive Bayes,3,1,0.9999999930420458
+dorn_java_159,Dorn,java,Naive Bayes,2,1,1.1937111955262624e-07
+dorn_java_160,Dorn,java,Naive Bayes,0,1,1.0
+dorn_java_161,Dorn,java,Naive Bayes,4,0,0.9999942153331014
+dorn_java_162,Dorn,java,Naive Bayes,2,0,1.721765035741417e-05
+dorn_java_163,Dorn,java,Naive Bayes,3,1,1.0
+dorn_java_164,Dorn,java,Naive Bayes,2,0,0.009350486535415238
+dorn_java_165,Dorn,java,Naive Bayes,4,0,2.433444313600844e-05
+dorn_java_166,Dorn,java,Naive Bayes,3,1,0.013778624676885478
+dorn_java_167,Dorn,java,Naive Bayes,1,0,3.3392632299142347e-06
+dorn_java_168,Dorn,java,Naive Bayes,4,1,0.9999999996970814
+dorn_java_169,Dorn,java,Naive Bayes,4,1,0.9997396306330423
+dorn_java_170,Dorn,java,Naive Bayes,0,1,0.8966624609439623
+dorn_java_171,Dorn,java,Naive Bayes,2,1,0.9992354697454504
+dorn_java_172,Dorn,java,Naive Bayes,3,1,0.03184062569282312
+dorn_java_173,Dorn,java,Naive Bayes,4,0,1.1076038574520278e-15
+dorn_java_174,Dorn,java,Naive Bayes,4,1,0.9892345048972994
+dorn_java_175,Dorn,java,Naive Bayes,2,0,0.657432586488625
+dorn_java_176,Dorn,java,Naive Bayes,2,1,0.9997596500218149
+dorn_java_177,Dorn,java,Naive Bayes,2,0,0.0037047711102758778
+dorn_java_178,Dorn,java,Naive Bayes,2,0,0.1031191039109797
+dorn_java_179,Dorn,java,Naive Bayes,4,1,0.9999929424883331
+dorn_java_180,Dorn,java,Naive Bayes,2,0,0.00028041844709660697
+dorn_java_181,Dorn,java,Naive Bayes,0,1,0.5650702826939341
+dorn_java_182,Dorn,java,Naive Bayes,1,1,0.9999961306131061
+dorn_java_183,Dorn,java,Naive Bayes,3,0,0.6543121634495132
+dorn_java_184,Dorn,java,Naive Bayes,3,1,0.9999999999997371
+dorn_java_185,Dorn,java,Naive Bayes,1,0,0.9999816084874763
+dorn_java_186,Dorn,java,Naive Bayes,2,0,0.8004924613231528
+dorn_java_187,Dorn,java,Naive Bayes,2,0,0.0029580970260693912
+dorn_java_188,Dorn,java,Naive Bayes,4,0,0.5886236238028543
+dorn_java_189,Dorn,java,Naive Bayes,0,1,0.9999909153858125
+dorn_java_190,Dorn,java,Naive Bayes,1,1,1.0
+dorn_java_191,Dorn,java,Naive Bayes,1,1,0.9999248344707699
+dorn_java_192,Dorn,java,Naive Bayes,2,1,0.9199743860969289
+dorn_java_193,Dorn,java,Naive Bayes,0,0,3.3758586307029285e-07
+dorn_java_194,Dorn,java,Naive Bayes,1,0,2.262801334292454e-17
+dorn_java_195,Dorn,java,Naive Bayes,1,0,0.9996426205024511
+dorn_java_196,Dorn,java,Naive Bayes,3,1,0.9999374014840161
+dorn_java_197,Dorn,java,Naive Bayes,1,1,0.0009317362981965526
+dorn_java_198,Dorn,java,Naive Bayes,3,0,1.2822089634893018e-28
+dorn_java_199,Dorn,java,Naive Bayes,2,1,0.9917534516490063
+dorn_java_200,Dorn,java,Naive Bayes,1,1,1.0
+dorn_java_201,Dorn,java,Naive Bayes,3,0,0.9999999964481887
+dorn_java_202,Dorn,java,Naive Bayes,3,1,0.0013638578938777682
+dorn_java_203,Dorn,java,Naive Bayes,4,1,0.06422444510166193
+dorn_java_204,Dorn,java,Naive Bayes,2,0,9.087258611093102e-05
+dorn_java_205,Dorn,java,Naive Bayes,1,0,2.641341267262153e-16
+dorn_java_206,Dorn,java,Naive Bayes,0,0,0.0033635872666161154
+dorn_java_207,Dorn,java,Naive Bayes,4,1,0.9996607702788578
+dorn_java_208,Dorn,java,Naive Bayes,0,1,0.9999924343115929
+dorn_java_209,Dorn,java,Naive Bayes,3,1,0.005282393364922213
+dorn_java_210,Dorn,java,Naive Bayes,0,0,3.8447727457573e-14
+dorn_java_211,Dorn,java,Naive Bayes,0,1,0.10950520182972985
+dorn_java_212,Dorn,java,Naive Bayes,3,1,0.029726105917752602
+dorn_java_213,Dorn,java,Naive Bayes,1,1,0.999999876233297
+dorn_java_214,Dorn,java,Naive Bayes,1,0,0.9980195679393564
+dorn_java_215,Dorn,java,Naive Bayes,2,0,5.518793422631559e-09
+dorn_java_216,Dorn,java,Naive Bayes,4,1,0.999999997803279
+dorn_java_217,Dorn,java,Naive Bayes,4,0,2.073975207690989e-05
+dorn_java_218,Dorn,java,Naive Bayes,2,1,0.9493400245579329
+dorn_java_219,Dorn,java,Naive Bayes,2,0,0.48995634016907147
+dorn_java_220,Dorn,java,Naive Bayes,3,0,8.042208128671236e-05
+dorn_java_221,Dorn,java,Naive Bayes,1,1,0.9828205724586755
+dorn_java_101,Dorn,java,"Scalabrino-LR (replicated, not official tool)",1,1,0.35560936669781756
+dorn_java_102,Dorn,java,"Scalabrino-LR (replicated, not official tool)",0,0,0.7746613254337084
+dorn_java_103,Dorn,java,"Scalabrino-LR (replicated, not official tool)",4,0,0.04742626175428634
+dorn_java_104,Dorn,java,"Scalabrino-LR (replicated, not official tool)",3,1,0.10538708668473093
+dorn_java_105,Dorn,java,"Scalabrino-LR (replicated, not official tool)",4,1,0.7269804311541154
+dorn_java_106,Dorn,java,"Scalabrino-LR (replicated, not official tool)",0,0,0.2966780479903437
+dorn_java_107,Dorn,java,"Scalabrino-LR (replicated, not official tool)",4,0,0.0040977802988957385
+dorn_java_108,Dorn,java,"Scalabrino-LR (replicated, not official tool)",2,1,0.2546862430138207
+dorn_java_109,Dorn,java,"Scalabrino-LR (replicated, not official tool)",3,1,0.8138006677702246
+dorn_java_110,Dorn,java,"Scalabrino-LR (replicated, not official tool)",4,0,0.028023512257499078
+dorn_java_111,Dorn,java,"Scalabrino-LR (replicated, not official tool)",4,1,0.2533507634242134
+dorn_java_112,Dorn,java,"Scalabrino-LR (replicated, not official tool)",3,1,0.7028716970098106
+dorn_java_113,Dorn,java,"Scalabrino-LR (replicated, not official tool)",0,0,0.08473798271790514
+dorn_java_114,Dorn,java,"Scalabrino-LR (replicated, not official tool)",1,1,0.9421437183793744
+dorn_java_115,Dorn,java,"Scalabrino-LR (replicated, not official tool)",1,1,0.7924931807541841
+dorn_java_116,Dorn,java,"Scalabrino-LR (replicated, not official tool)",0,0,0.06198179348359631
+dorn_java_117,Dorn,java,"Scalabrino-LR (replicated, not official tool)",4,0,0.9020917559461585
+dorn_java_118,Dorn,java,"Scalabrino-LR (replicated, not official tool)",3,0,0.9192570848552406
+dorn_java_119,Dorn,java,"Scalabrino-LR (replicated, not official tool)",3,0,0.7329688425852512
+dorn_java_120,Dorn,java,"Scalabrino-LR (replicated, not official tool)",0,0,0.3205566527203552
+dorn_java_121,Dorn,java,"Scalabrino-LR (replicated, not official tool)",2,0,0.018925922313564707
+dorn_java_122,Dorn,java,"Scalabrino-LR (replicated, not official tool)",0,1,0.020820696060147564
+dorn_java_123,Dorn,java,"Scalabrino-LR (replicated, not official tool)",4,1,0.554854070928305
+dorn_java_124,Dorn,java,"Scalabrino-LR (replicated, not official tool)",3,0,0.2788516557339642
+dorn_java_125,Dorn,java,"Scalabrino-LR (replicated, not official tool)",2,1,0.9934382257048492
+dorn_java_126,Dorn,java,"Scalabrino-LR (replicated, not official tool)",1,1,0.9265773368187809
+dorn_java_127,Dorn,java,"Scalabrino-LR (replicated, not official tool)",3,0,0.10896569221953716
+dorn_java_128,Dorn,java,"Scalabrino-LR (replicated, not official tool)",0,1,0.8774746804988085
+dorn_java_129,Dorn,java,"Scalabrino-LR (replicated, not official tool)",1,0,0.1249979577358867
+dorn_java_130,Dorn,java,"Scalabrino-LR (replicated, not official tool)",2,1,0.8047330970986457
+dorn_java_131,Dorn,java,"Scalabrino-LR (replicated, not official tool)",0,0,0.6976323168826339
+dorn_java_132,Dorn,java,"Scalabrino-LR (replicated, not official tool)",1,1,0.9218893107925006
+dorn_java_133,Dorn,java,"Scalabrino-LR (replicated, not official tool)",3,0,0.20889951575231605
+dorn_java_134,Dorn,java,"Scalabrino-LR (replicated, not official tool)",2,1,0.9814366918533294
+dorn_java_135,Dorn,java,"Scalabrino-LR (replicated, not official tool)",0,0,0.4892844251651285
+dorn_java_136,Dorn,java,"Scalabrino-LR (replicated, not official tool)",3,1,0.8013393677877296
+dorn_java_137,Dorn,java,"Scalabrino-LR (replicated, not official tool)",0,1,0.9813334168064297
+dorn_java_138,Dorn,java,"Scalabrino-LR (replicated, not official tool)",4,0,0.8149503480134744
+dorn_java_139,Dorn,java,"Scalabrino-LR (replicated, not official tool)",0,1,0.8366891433746767
+dorn_java_140,Dorn,java,"Scalabrino-LR (replicated, not official tool)",1,0,0.7209465405983737
+dorn_java_141,Dorn,java,"Scalabrino-LR (replicated, not official tool)",0,1,0.9753286330277458
+dorn_java_142,Dorn,java,"Scalabrino-LR (replicated, not official tool)",0,1,0.2560559824498421
+dorn_java_143,Dorn,java,"Scalabrino-LR (replicated, not official tool)",3,0,0.29276321096455776
+dorn_java_144,Dorn,java,"Scalabrino-LR (replicated, not official tool)",1,0,0.24346834367879897
+dorn_java_145,Dorn,java,"Scalabrino-LR (replicated, not official tool)",4,0,0.19760673141556678
+dorn_java_146,Dorn,java,"Scalabrino-LR (replicated, not official tool)",2,1,0.2701155668708983
+dorn_java_147,Dorn,java,"Scalabrino-LR (replicated, not official tool)",4,1,0.8498282164027391
+dorn_java_148,Dorn,java,"Scalabrino-LR (replicated, not official tool)",4,0,0.34356478993318523
+dorn_java_149,Dorn,java,"Scalabrino-LR (replicated, not official tool)",1,0,0.2742884567627626
+dorn_java_150,Dorn,java,"Scalabrino-LR (replicated, not official tool)",0,1,0.6670084887067316
+dorn_java_151,Dorn,java,"Scalabrino-LR (replicated, not official tool)",0,0,0.6491556108769275
+dorn_java_152,Dorn,java,"Scalabrino-LR (replicated, not official tool)",0,0,0.0005802741759587525
+dorn_java_153,Dorn,java,"Scalabrino-LR (replicated, not official tool)",4,1,0.4249303241769763
+dorn_java_154,Dorn,java,"Scalabrino-LR (replicated, not official tool)",1,1,0.6885732824105459
+dorn_java_155,Dorn,java,"Scalabrino-LR (replicated, not official tool)",2,1,0.05855251191028027
+dorn_java_156,Dorn,java,"Scalabrino-LR (replicated, not official tool)",3,1,0.4114774674338989
+dorn_java_157,Dorn,java,"Scalabrino-LR (replicated, not official tool)",1,0,0.040173397777881224
+dorn_java_158,Dorn,java,"Scalabrino-LR (replicated, not official tool)",3,1,0.9566446611404777
+dorn_java_159,Dorn,java,"Scalabrino-LR (replicated, not official tool)",2,1,0.6080143857270669
+dorn_java_160,Dorn,java,"Scalabrino-LR (replicated, not official tool)",0,1,0.9985105467435947
+dorn_java_161,Dorn,java,"Scalabrino-LR (replicated, not official tool)",4,0,0.8127341519395456
+dorn_java_162,Dorn,java,"Scalabrino-LR (replicated, not official tool)",2,0,0.14364642449482698
+dorn_java_163,Dorn,java,"Scalabrino-LR (replicated, not official tool)",3,1,0.9784428112379074
+dorn_java_164,Dorn,java,"Scalabrino-LR (replicated, not official tool)",2,0,0.19841709827472268
+dorn_java_165,Dorn,java,"Scalabrino-LR (replicated, not official tool)",4,0,0.20353889617380097
+dorn_java_166,Dorn,java,"Scalabrino-LR (replicated, not official tool)",3,1,0.7232934161487602
+dorn_java_167,Dorn,java,"Scalabrino-LR (replicated, not official tool)",1,0,0.07820816519595478
+dorn_java_168,Dorn,java,"Scalabrino-LR (replicated, not official tool)",4,1,0.9715295208017783
+dorn_java_169,Dorn,java,"Scalabrino-LR (replicated, not official tool)",4,1,0.8830983237279055
+dorn_java_170,Dorn,java,"Scalabrino-LR (replicated, not official tool)",0,1,0.8352901954910996
+dorn_java_171,Dorn,java,"Scalabrino-LR (replicated, not official tool)",2,1,0.807522299497313
+dorn_java_172,Dorn,java,"Scalabrino-LR (replicated, not official tool)",3,1,0.4302901466739823
+dorn_java_173,Dorn,java,"Scalabrino-LR (replicated, not official tool)",4,0,0.004686928181588673
+dorn_java_174,Dorn,java,"Scalabrino-LR (replicated, not official tool)",4,1,0.39805108192796135
+dorn_java_175,Dorn,java,"Scalabrino-LR (replicated, not official tool)",2,0,0.7806764096948828
+dorn_java_176,Dorn,java,"Scalabrino-LR (replicated, not official tool)",2,1,0.8912936183574628
+dorn_java_177,Dorn,java,"Scalabrino-LR (replicated, not official tool)",2,0,0.9033992773268196
+dorn_java_178,Dorn,java,"Scalabrino-LR (replicated, not official tool)",2,0,0.6087225879556767
+dorn_java_179,Dorn,java,"Scalabrino-LR (replicated, not official tool)",4,1,0.8765007287458152
+dorn_java_180,Dorn,java,"Scalabrino-LR (replicated, not official tool)",2,0,0.35992412323944906
+dorn_java_181,Dorn,java,"Scalabrino-LR (replicated, not official tool)",0,1,0.3476156093405843
+dorn_java_182,Dorn,java,"Scalabrino-LR (replicated, not official tool)",1,1,0.9198409213712655
+dorn_java_183,Dorn,java,"Scalabrino-LR (replicated, not official tool)",3,0,0.6846374969516313
+dorn_java_184,Dorn,java,"Scalabrino-LR (replicated, not official tool)",3,1,0.5307231477935445
+dorn_java_185,Dorn,java,"Scalabrino-LR (replicated, not official tool)",1,0,0.8625702897282578
+dorn_java_186,Dorn,java,"Scalabrino-LR (replicated, not official tool)",2,0,0.7805124387222949
+dorn_java_187,Dorn,java,"Scalabrino-LR (replicated, not official tool)",2,0,0.33224839030476244
+dorn_java_188,Dorn,java,"Scalabrino-LR (replicated, not official tool)",4,0,0.6226288289660787
+dorn_java_189,Dorn,java,"Scalabrino-LR (replicated, not official tool)",0,1,0.9346068582775654
+dorn_java_190,Dorn,java,"Scalabrino-LR (replicated, not official tool)",1,1,0.9829997028509568
+dorn_java_191,Dorn,java,"Scalabrino-LR (replicated, not official tool)",1,1,0.9181208680298435
+dorn_java_192,Dorn,java,"Scalabrino-LR (replicated, not official tool)",2,1,0.3748139719940443
+dorn_java_193,Dorn,java,"Scalabrino-LR (replicated, not official tool)",0,0,0.015116924370069637
+dorn_java_194,Dorn,java,"Scalabrino-LR (replicated, not official tool)",1,0,0.002841878183341517
+dorn_java_195,Dorn,java,"Scalabrino-LR (replicated, not official tool)",1,0,0.051771600623708426
+dorn_java_196,Dorn,java,"Scalabrino-LR (replicated, not official tool)",3,1,0.8868847440072692
+dorn_java_197,Dorn,java,"Scalabrino-LR (replicated, not official tool)",1,1,0.1125633197385223
+dorn_java_198,Dorn,java,"Scalabrino-LR (replicated, not official tool)",3,0,0.001219979256775551
+dorn_java_199,Dorn,java,"Scalabrino-LR (replicated, not official tool)",2,1,0.6947091417041945
+dorn_java_200,Dorn,java,"Scalabrino-LR (replicated, not official tool)",1,1,0.9434037868431661
+dorn_java_201,Dorn,java,"Scalabrino-LR (replicated, not official tool)",3,0,0.8949337687655101
+dorn_java_202,Dorn,java,"Scalabrino-LR (replicated, not official tool)",3,1,0.3937304252190604
+dorn_java_203,Dorn,java,"Scalabrino-LR (replicated, not official tool)",4,1,0.5999348797971283
+dorn_java_204,Dorn,java,"Scalabrino-LR (replicated, not official tool)",2,0,0.48594238906667153
+dorn_java_205,Dorn,java,"Scalabrino-LR (replicated, not official tool)",1,0,0.018614815396492897
+dorn_java_206,Dorn,java,"Scalabrino-LR (replicated, not official tool)",0,0,0.06438933290284896
+dorn_java_207,Dorn,java,"Scalabrino-LR (replicated, not official tool)",4,1,0.9106549842737206
+dorn_java_208,Dorn,java,"Scalabrino-LR (replicated, not official tool)",0,1,0.7602323686334054
+dorn_java_209,Dorn,java,"Scalabrino-LR (replicated, not official tool)",3,1,0.5098674496499747
+dorn_java_210,Dorn,java,"Scalabrino-LR (replicated, not official tool)",0,0,0.018776916177869807
+dorn_java_211,Dorn,java,"Scalabrino-LR (replicated, not official tool)",0,1,0.5150650803808029
+dorn_java_212,Dorn,java,"Scalabrino-LR (replicated, not official tool)",3,1,0.6388786815290602
+dorn_java_213,Dorn,java,"Scalabrino-LR (replicated, not official tool)",1,1,0.9412485920247591
+dorn_java_214,Dorn,java,"Scalabrino-LR (replicated, not official tool)",1,0,0.9127141850648065
+dorn_java_215,Dorn,java,"Scalabrino-LR (replicated, not official tool)",2,0,0.013679398257743324
+dorn_java_216,Dorn,java,"Scalabrino-LR (replicated, not official tool)",4,1,0.9882903233949729
+dorn_java_217,Dorn,java,"Scalabrino-LR (replicated, not official tool)",4,0,0.1020207230400234
+dorn_java_218,Dorn,java,"Scalabrino-LR (replicated, not official tool)",2,1,0.42986830038206086
+dorn_java_219,Dorn,java,"Scalabrino-LR (replicated, not official tool)",2,0,0.7736260519467998
+dorn_java_220,Dorn,java,"Scalabrino-LR (replicated, not official tool)",3,0,0.2653407833980271
+dorn_java_221,Dorn,java,"Scalabrino-LR (replicated, not official tool)",1,1,0.6617893268285047
+dorn_java_101,Dorn,java,Multilayer Perceptron,1,1,0.5456579948919207
+dorn_java_102,Dorn,java,Multilayer Perceptron,0,0,0.2075718787633432
+dorn_java_103,Dorn,java,Multilayer Perceptron,4,0,0.0013099872121970055
+dorn_java_104,Dorn,java,Multilayer Perceptron,3,1,0.6226785782981055
+dorn_java_105,Dorn,java,Multilayer Perceptron,4,1,0.949546941431266
+dorn_java_106,Dorn,java,Multilayer Perceptron,0,0,5.452024899670055e-07
+dorn_java_107,Dorn,java,Multilayer Perceptron,4,0,2.1845398682778778e-07
+dorn_java_108,Dorn,java,Multilayer Perceptron,2,1,0.8072474283684659
+dorn_java_109,Dorn,java,Multilayer Perceptron,3,1,0.9450660915316687
+dorn_java_110,Dorn,java,Multilayer Perceptron,4,0,5.7383874485484727e-05
+dorn_java_111,Dorn,java,Multilayer Perceptron,4,1,0.5350929373455025
+dorn_java_112,Dorn,java,Multilayer Perceptron,3,1,0.9960252289833286
+dorn_java_113,Dorn,java,Multilayer Perceptron,0,0,0.0034537459746119656
+dorn_java_114,Dorn,java,Multilayer Perceptron,1,1,0.999394124806976
+dorn_java_115,Dorn,java,Multilayer Perceptron,1,1,0.9231289997848982
+dorn_java_116,Dorn,java,Multilayer Perceptron,0,0,0.0005053615543327747
+dorn_java_117,Dorn,java,Multilayer Perceptron,4,0,0.9030490366072236
+dorn_java_118,Dorn,java,Multilayer Perceptron,3,0,0.9941826578758004
+dorn_java_119,Dorn,java,Multilayer Perceptron,3,0,0.9284914281507062
+dorn_java_120,Dorn,java,Multilayer Perceptron,0,0,0.08275909754271767
+dorn_java_121,Dorn,java,Multilayer Perceptron,2,0,1.7196844309985837e-05
+dorn_java_122,Dorn,java,Multilayer Perceptron,0,1,0.00011409927998776826
+dorn_java_123,Dorn,java,Multilayer Perceptron,4,1,0.7822213384745175
+dorn_java_124,Dorn,java,Multilayer Perceptron,3,0,0.2347488220473429
+dorn_java_125,Dorn,java,Multilayer Perceptron,2,1,0.9999833472516553
+dorn_java_126,Dorn,java,Multilayer Perceptron,1,1,0.8099065659406369
+dorn_java_127,Dorn,java,Multilayer Perceptron,3,0,0.0070645785946165185
+dorn_java_128,Dorn,java,Multilayer Perceptron,0,1,0.999317864656109
+dorn_java_129,Dorn,java,Multilayer Perceptron,1,0,0.7328977485083584
+dorn_java_130,Dorn,java,Multilayer Perceptron,2,1,0.9878810062105821
+dorn_java_131,Dorn,java,Multilayer Perceptron,0,0,0.4252086509465349
+dorn_java_132,Dorn,java,Multilayer Perceptron,1,1,0.9795054228724062
+dorn_java_133,Dorn,java,Multilayer Perceptron,3,0,0.4511444324027166
+dorn_java_134,Dorn,java,Multilayer Perceptron,2,1,0.9998442449973046
+dorn_java_135,Dorn,java,Multilayer Perceptron,0,0,0.015212049844378316
+dorn_java_136,Dorn,java,Multilayer Perceptron,3,1,0.25502133097153457
+dorn_java_137,Dorn,java,Multilayer Perceptron,0,1,0.9871070705215227
+dorn_java_138,Dorn,java,Multilayer Perceptron,4,0,0.6044993491016338
+dorn_java_139,Dorn,java,Multilayer Perceptron,0,1,0.8934878731834854
+dorn_java_140,Dorn,java,Multilayer Perceptron,1,0,0.9986469411141013
+dorn_java_141,Dorn,java,Multilayer Perceptron,0,1,0.999399907117754
+dorn_java_142,Dorn,java,Multilayer Perceptron,0,1,0.024365605097429188
+dorn_java_143,Dorn,java,Multilayer Perceptron,3,0,0.2376161616662208
+dorn_java_144,Dorn,java,Multilayer Perceptron,1,0,6.195086911486322e-08
+dorn_java_145,Dorn,java,Multilayer Perceptron,4,0,0.14228212316144473
+dorn_java_146,Dorn,java,Multilayer Perceptron,2,1,0.24568507922315627
+dorn_java_147,Dorn,java,Multilayer Perceptron,4,1,0.9942908429068074
+dorn_java_148,Dorn,java,Multilayer Perceptron,4,0,2.4742219648661016e-05
+dorn_java_149,Dorn,java,Multilayer Perceptron,1,0,0.048981859107449656
+dorn_java_150,Dorn,java,Multilayer Perceptron,0,1,0.9744846637821556
+dorn_java_151,Dorn,java,Multilayer Perceptron,0,0,0.38984522097050844
+dorn_java_152,Dorn,java,Multilayer Perceptron,0,0,1.029767159003019e-11
+dorn_java_153,Dorn,java,Multilayer Perceptron,4,1,0.6876332148427433
+dorn_java_154,Dorn,java,Multilayer Perceptron,1,1,0.40756394628978426
+dorn_java_155,Dorn,java,Multilayer Perceptron,2,1,1.3926824133583249e-06
+dorn_java_156,Dorn,java,Multilayer Perceptron,3,1,0.9637302118459196
+dorn_java_157,Dorn,java,Multilayer Perceptron,1,0,3.2139594140974922e-06
+dorn_java_158,Dorn,java,Multilayer Perceptron,3,1,0.999972451724579
+dorn_java_159,Dorn,java,Multilayer Perceptron,2,1,0.5573914365053937
+dorn_java_160,Dorn,java,Multilayer Perceptron,0,1,0.9999837481662573
+dorn_java_161,Dorn,java,Multilayer Perceptron,4,0,0.9559279009019954
+dorn_java_162,Dorn,java,Multilayer Perceptron,2,0,0.0202448389304088
+dorn_java_163,Dorn,java,Multilayer Perceptron,3,1,0.999984912051457
+dorn_java_164,Dorn,java,Multilayer Perceptron,2,0,0.00046367450046153237
+dorn_java_165,Dorn,java,Multilayer Perceptron,4,0,0.1266070861580799
+dorn_java_166,Dorn,java,Multilayer Perceptron,3,1,0.9999248796942438
+dorn_java_167,Dorn,java,Multilayer Perceptron,1,0,0.00011246540376272267
+dorn_java_168,Dorn,java,Multilayer Perceptron,4,1,0.9884217981384338
+dorn_java_169,Dorn,java,Multilayer Perceptron,4,1,0.9961058442457049
+dorn_java_170,Dorn,java,Multilayer Perceptron,0,1,0.8888637262615041
+dorn_java_171,Dorn,java,Multilayer Perceptron,2,1,0.8363079819031448
+dorn_java_172,Dorn,java,Multilayer Perceptron,3,1,0.16310087660685416
+dorn_java_173,Dorn,java,Multilayer Perceptron,4,0,5.953314644850527e-09
+dorn_java_174,Dorn,java,Multilayer Perceptron,4,1,0.46994576347541067
+dorn_java_175,Dorn,java,Multilayer Perceptron,2,0,0.9730133451099423
+dorn_java_176,Dorn,java,Multilayer Perceptron,2,1,0.9743134196359177
+dorn_java_177,Dorn,java,Multilayer Perceptron,2,0,0.9998846176408523
+dorn_java_178,Dorn,java,Multilayer Perceptron,2,0,0.9283400566314909
+dorn_java_179,Dorn,java,Multilayer Perceptron,4,1,0.9861533372264378
+dorn_java_180,Dorn,java,Multilayer Perceptron,2,0,0.714877342509647
+dorn_java_181,Dorn,java,Multilayer Perceptron,0,1,0.2416087477521266
+dorn_java_182,Dorn,java,Multilayer Perceptron,1,1,0.9994035442017265
+dorn_java_183,Dorn,java,Multilayer Perceptron,3,0,0.9404771577974416
+dorn_java_184,Dorn,java,Multilayer Perceptron,3,1,0.2543691538298035
+dorn_java_185,Dorn,java,Multilayer Perceptron,1,0,0.9999681111422001
+dorn_java_186,Dorn,java,Multilayer Perceptron,2,0,0.9731526001355397
+dorn_java_187,Dorn,java,Multilayer Perceptron,2,0,0.004787078294455756
+dorn_java_188,Dorn,java,Multilayer Perceptron,4,0,0.8691665910102849
+dorn_java_189,Dorn,java,Multilayer Perceptron,0,1,0.999235483061001
+dorn_java_190,Dorn,java,Multilayer Perceptron,1,1,0.9999994029471097
+dorn_java_191,Dorn,java,Multilayer Perceptron,1,1,0.9500944405583458
+dorn_java_192,Dorn,java,Multilayer Perceptron,2,1,0.8208991783772409
+dorn_java_193,Dorn,java,Multilayer Perceptron,0,0,1.1983526200474202e-07
+dorn_java_194,Dorn,java,Multilayer Perceptron,1,0,1.419605494439658e-07
+dorn_java_195,Dorn,java,Multilayer Perceptron,1,0,0.0023277018735134796
+dorn_java_196,Dorn,java,Multilayer Perceptron,3,1,0.9896699820843275
+dorn_java_197,Dorn,java,Multilayer Perceptron,1,1,0.0044735066972951916
+dorn_java_198,Dorn,java,Multilayer Perceptron,3,0,4.4136857465209275e-10
+dorn_java_199,Dorn,java,Multilayer Perceptron,2,1,0.3751537375753499
+dorn_java_200,Dorn,java,Multilayer Perceptron,1,1,0.9984735694842809
+dorn_java_201,Dorn,java,Multilayer Perceptron,3,0,0.6397816221293573
+dorn_java_202,Dorn,java,Multilayer Perceptron,3,1,0.29788208606627387
+dorn_java_203,Dorn,java,Multilayer Perceptron,4,1,0.7352928950387518
+dorn_java_204,Dorn,java,Multilayer Perceptron,2,0,0.05508832260000465
+dorn_java_205,Dorn,java,Multilayer Perceptron,1,0,4.201180233748937e-05
+dorn_java_206,Dorn,java,Multilayer Perceptron,0,0,9.352949390105675e-05
+dorn_java_207,Dorn,java,Multilayer Perceptron,4,1,0.96970895433625
+dorn_java_208,Dorn,java,Multilayer Perceptron,0,1,0.953353907269995
+dorn_java_209,Dorn,java,Multilayer Perceptron,3,1,0.841327321385419
+dorn_java_210,Dorn,java,Multilayer Perceptron,0,0,1.002208664633847e-05
+dorn_java_211,Dorn,java,Multilayer Perceptron,0,1,0.31940344600118314
+dorn_java_212,Dorn,java,Multilayer Perceptron,3,1,0.7543747833329706
+dorn_java_213,Dorn,java,Multilayer Perceptron,1,1,0.9999998889224088
+dorn_java_214,Dorn,java,Multilayer Perceptron,1,0,0.9858816122853382
+dorn_java_215,Dorn,java,Multilayer Perceptron,2,0,1.1528240992426509e-05
+dorn_java_216,Dorn,java,Multilayer Perceptron,4,1,0.9999403762609423
+dorn_java_217,Dorn,java,Multilayer Perceptron,4,0,0.2045835784331814
+dorn_java_218,Dorn,java,Multilayer Perceptron,2,1,0.9500906064925415
+dorn_java_219,Dorn,java,Multilayer Perceptron,2,0,0.8064984746644794
+dorn_java_220,Dorn,java,Multilayer Perceptron,3,0,0.479995456911269
+dorn_java_221,Dorn,java,Multilayer Perceptron,1,1,0.9755560777613037
+dorn_java_101,Dorn,java,Voting ensemble (LR+NB+RF),1,1,0.24471242572209953
+dorn_java_102,Dorn,java,Voting ensemble (LR+NB+RF),0,0,0.38770917946859057
+dorn_java_103,Dorn,java,Voting ensemble (LR+NB+RF),4,0,0.047824377142351986
+dorn_java_104,Dorn,java,Voting ensemble (LR+NB+RF),3,1,0.15044591503038554
+dorn_java_105,Dorn,java,Voting ensemble (LR+NB+RF),4,1,0.7923367948246125
+dorn_java_106,Dorn,java,Voting ensemble (LR+NB+RF),0,0,0.16056577179413994
+dorn_java_107,Dorn,java,Voting ensemble (LR+NB+RF),4,0,0.020786173967098982
+dorn_java_108,Dorn,java,Voting ensemble (LR+NB+RF),2,1,0.2028631197843018
+dorn_java_109,Dorn,java,Voting ensemble (LR+NB+RF),3,1,0.8892789354734018
+dorn_java_110,Dorn,java,Voting ensemble (LR+NB+RF),4,0,0.029866368145478744
+dorn_java_111,Dorn,java,Voting ensemble (LR+NB+RF),4,1,0.174294267083113
+dorn_java_112,Dorn,java,Voting ensemble (LR+NB+RF),3,1,0.601881948091552
+dorn_java_113,Dorn,java,Voting ensemble (LR+NB+RF),0,0,0.09595574985591875
+dorn_java_114,Dorn,java,Voting ensemble (LR+NB+RF),1,1,0.8282396465685249
+dorn_java_115,Dorn,java,Voting ensemble (LR+NB+RF),1,1,0.792384596076881
+dorn_java_116,Dorn,java,Voting ensemble (LR+NB+RF),0,0,0.08154675155812993
+dorn_java_117,Dorn,java,Voting ensemble (LR+NB+RF),4,0,0.8198220324548778
+dorn_java_118,Dorn,java,Voting ensemble (LR+NB+RF),3,0,0.9029766244714842
+dorn_java_119,Dorn,java,Voting ensemble (LR+NB+RF),3,0,0.6308135418233244
+dorn_java_120,Dorn,java,Voting ensemble (LR+NB+RF),0,0,0.183227145071815
+dorn_java_121,Dorn,java,Voting ensemble (LR+NB+RF),2,0,0.04628716130385211
+dorn_java_122,Dorn,java,Voting ensemble (LR+NB+RF),0,1,0.5155641528430649
+dorn_java_123,Dorn,java,Voting ensemble (LR+NB+RF),4,1,0.6589195137286211
+dorn_java_124,Dorn,java,Voting ensemble (LR+NB+RF),3,0,0.6308205500615968
+dorn_java_125,Dorn,java,Voting ensemble (LR+NB+RF),2,1,0.9221722800166585
+dorn_java_126,Dorn,java,Voting ensemble (LR+NB+RF),1,1,0.9087478398736099
+dorn_java_127,Dorn,java,Voting ensemble (LR+NB+RF),3,0,0.07504515742167346
+dorn_java_128,Dorn,java,Voting ensemble (LR+NB+RF),0,1,0.8929886548630394
+dorn_java_129,Dorn,java,Voting ensemble (LR+NB+RF),1,0,0.5344854084263976
+dorn_java_130,Dorn,java,Voting ensemble (LR+NB+RF),2,1,0.8658147093293137
+dorn_java_131,Dorn,java,Voting ensemble (LR+NB+RF),0,0,0.3974563005284555
+dorn_java_132,Dorn,java,Voting ensemble (LR+NB+RF),1,1,0.9415846683472453
+dorn_java_133,Dorn,java,Voting ensemble (LR+NB+RF),3,0,0.36099525001300803
+dorn_java_134,Dorn,java,Voting ensemble (LR+NB+RF),2,1,0.9264230818642095
+dorn_java_135,Dorn,java,Voting ensemble (LR+NB+RF),0,0,0.5423701113003941
+dorn_java_136,Dorn,java,Voting ensemble (LR+NB+RF),3,1,0.853941596447231
+dorn_java_137,Dorn,java,Voting ensemble (LR+NB+RF),0,1,0.8036827295336398
+dorn_java_138,Dorn,java,Voting ensemble (LR+NB+RF),4,0,0.788179856937707
+dorn_java_139,Dorn,java,Voting ensemble (LR+NB+RF),0,1,0.7134202258342435
+dorn_java_140,Dorn,java,Voting ensemble (LR+NB+RF),1,0,0.8414718770423336
+dorn_java_141,Dorn,java,Voting ensemble (LR+NB+RF),0,1,0.9587877927428244
+dorn_java_142,Dorn,java,Voting ensemble (LR+NB+RF),0,1,0.4034445103983546
+dorn_java_143,Dorn,java,Voting ensemble (LR+NB+RF),3,0,0.6345335483066671
+dorn_java_144,Dorn,java,Voting ensemble (LR+NB+RF),1,0,0.1816085590602373
+dorn_java_145,Dorn,java,Voting ensemble (LR+NB+RF),4,0,0.1674055672074158
+dorn_java_146,Dorn,java,Voting ensemble (LR+NB+RF),2,1,0.18520277663188978
+dorn_java_147,Dorn,java,Voting ensemble (LR+NB+RF),4,1,0.7891096677272432
+dorn_java_148,Dorn,java,Voting ensemble (LR+NB+RF),4,0,0.2649426548376655
+dorn_java_149,Dorn,java,Voting ensemble (LR+NB+RF),1,0,0.4868279478478139
+dorn_java_150,Dorn,java,Voting ensemble (LR+NB+RF),0,1,0.4816831665971813
+dorn_java_151,Dorn,java,Voting ensemble (LR+NB+RF),0,0,0.7547572395890437
+dorn_java_152,Dorn,java,Voting ensemble (LR+NB+RF),0,0,0.016426110772413835
+dorn_java_153,Dorn,java,Voting ensemble (LR+NB+RF),4,1,0.39491208386064613
+dorn_java_154,Dorn,java,Voting ensemble (LR+NB+RF),1,1,0.39036703690855373
+dorn_java_155,Dorn,java,Voting ensemble (LR+NB+RF),2,1,0.480371835884463
+dorn_java_156,Dorn,java,Voting ensemble (LR+NB+RF),3,1,0.2924391257263647
+dorn_java_157,Dorn,java,Voting ensemble (LR+NB+RF),1,0,0.060282149613008686
+dorn_java_158,Dorn,java,Voting ensemble (LR+NB+RF),3,1,0.8828614073290603
+dorn_java_159,Dorn,java,Voting ensemble (LR+NB+RF),2,1,0.4089201838644437
+dorn_java_160,Dorn,java,Voting ensemble (LR+NB+RF),0,1,0.9645106444201558
+dorn_java_161,Dorn,java,Voting ensemble (LR+NB+RF),4,0,0.8352264177146301
+dorn_java_162,Dorn,java,Voting ensemble (LR+NB+RF),2,0,0.1435426103875391
+dorn_java_163,Dorn,java,Voting ensemble (LR+NB+RF),3,1,0.9382920312225193
+dorn_java_164,Dorn,java,Voting ensemble (LR+NB+RF),2,0,0.2079220575938132
+dorn_java_165,Dorn,java,Voting ensemble (LR+NB+RF),4,0,0.1465172344287878
+dorn_java_166,Dorn,java,Voting ensemble (LR+NB+RF),3,1,0.38847529974309497
+dorn_java_167,Dorn,java,Voting ensemble (LR+NB+RF),1,0,0.08132515804995888
+dorn_java_168,Dorn,java,Voting ensemble (LR+NB+RF),4,1,0.9541976298503424
+dorn_java_169,Dorn,java,Voting ensemble (LR+NB+RF),4,1,0.9057868350974297
+dorn_java_170,Dorn,java,Voting ensemble (LR+NB+RF),0,1,0.7649496466142992
+dorn_java_171,Dorn,java,Voting ensemble (LR+NB+RF),2,1,0.8231911909857214
+dorn_java_172,Dorn,java,Voting ensemble (LR+NB+RF),3,1,0.3561290984104339
+dorn_java_173,Dorn,java,Voting ensemble (LR+NB+RF),4,0,0.013902479500677073
+dorn_java_174,Dorn,java,Voting ensemble (LR+NB+RF),4,1,0.6083877571484031
+dorn_java_175,Dorn,java,Voting ensemble (LR+NB+RF),2,0,0.6329932680629643
+dorn_java_176,Dorn,java,Voting ensemble (LR+NB+RF),2,1,0.9268474157019179
+dorn_java_177,Dorn,java,Voting ensemble (LR+NB+RF),2,0,0.5590811992261523
+dorn_java_178,Dorn,java,Voting ensemble (LR+NB+RF),2,0,0.41884531459017166
+dorn_java_179,Dorn,java,Voting ensemble (LR+NB+RF),4,1,0.9083217650334673
+dorn_java_180,Dorn,java,Voting ensemble (LR+NB+RF),2,0,0.24114221807427363
+dorn_java_181,Dorn,java,Voting ensemble (LR+NB+RF),0,1,0.41634207620753
+dorn_java_182,Dorn,java,Voting ensemble (LR+NB+RF),1,1,0.9444958928036714
+dorn_java_183,Dorn,java,Voting ensemble (LR+NB+RF),3,0,0.6150128108444057
+dorn_java_184,Dorn,java,Voting ensemble (LR+NB+RF),3,1,0.7197406774604138
+dorn_java_185,Dorn,java,Voting ensemble (LR+NB+RF),1,0,0.8846052762586621
+dorn_java_186,Dorn,java,Voting ensemble (LR+NB+RF),2,0,0.6987145511974365
+dorn_java_187,Dorn,java,Voting ensemble (LR+NB+RF),2,0,0.23947848819791315
+dorn_java_188,Dorn,java,Voting ensemble (LR+NB+RF),4,0,0.6065582994974942
+dorn_java_189,Dorn,java,Voting ensemble (LR+NB+RF),0,1,0.9209969514141129
+dorn_java_190,Dorn,java,Voting ensemble (LR+NB+RF),1,1,0.9325080421534175
+dorn_java_191,Dorn,java,Voting ensemble (LR+NB+RF),1,1,0.9438600060115164
+dorn_java_192,Dorn,java,Voting ensemble (LR+NB+RF),2,1,0.5892261868740399
+dorn_java_193,Dorn,java,Voting ensemble (LR+NB+RF),0,0,0.023781690571249278
+dorn_java_194,Dorn,java,Voting ensemble (LR+NB+RF),1,0,0.0388881236450403
+dorn_java_195,Dorn,java,Voting ensemble (LR+NB+RF),1,0,0.5600254142434186
+dorn_java_196,Dorn,java,Voting ensemble (LR+NB+RF),3,1,0.8872106013583777
+dorn_java_197,Dorn,java,Voting ensemble (LR+NB+RF),1,1,0.11212172692602497
+dorn_java_198,Dorn,java,Voting ensemble (LR+NB+RF),3,0,0.01756622837358564
+dorn_java_199,Dorn,java,Voting ensemble (LR+NB+RF),2,1,0.7898853369791192
+dorn_java_200,Dorn,java,Voting ensemble (LR+NB+RF),1,1,0.8852160168260673
+dorn_java_201,Dorn,java,Voting ensemble (LR+NB+RF),3,0,0.8735017010164716
+dorn_java_202,Dorn,java,Voting ensemble (LR+NB+RF),3,1,0.24054527238391757
+dorn_java_203,Dorn,java,Voting ensemble (LR+NB+RF),4,1,0.44920169861852316
+dorn_java_204,Dorn,java,Voting ensemble (LR+NB+RF),2,0,0.2798689372231091
+dorn_java_205,Dorn,java,Voting ensemble (LR+NB+RF),1,0,0.028467853104482577
+dorn_java_206,Dorn,java,Voting ensemble (LR+NB+RF),0,0,0.1101001629810427
+dorn_java_207,Dorn,java,Voting ensemble (LR+NB+RF),4,1,0.938488681840429
+dorn_java_208,Dorn,java,Voting ensemble (LR+NB+RF),0,1,0.8551109660656219
+dorn_java_209,Dorn,java,Voting ensemble (LR+NB+RF),3,1,0.3277956927866692
+dorn_java_210,Dorn,java,Voting ensemble (LR+NB+RF),0,0,0.059381986689484634
+dorn_java_211,Dorn,java,Voting ensemble (LR+NB+RF),0,1,0.31901726647271794
+dorn_java_212,Dorn,java,Voting ensemble (LR+NB+RF),3,1,0.39877177545918846
+dorn_java_213,Dorn,java,Voting ensemble (LR+NB+RF),1,1,0.9342897277807735
+dorn_java_214,Dorn,java,Voting ensemble (LR+NB+RF),1,0,0.9014333751991996
+dorn_java_215,Dorn,java,Voting ensemble (LR+NB+RF),2,0,0.03692098806248374
+dorn_java_216,Dorn,java,Voting ensemble (LR+NB+RF),4,1,0.9574367564674685
+dorn_java_217,Dorn,java,Voting ensemble (LR+NB+RF),4,0,0.15389551060898424
+dorn_java_218,Dorn,java,Voting ensemble (LR+NB+RF),2,1,0.6464194069144039
+dorn_java_219,Dorn,java,Voting ensemble (LR+NB+RF),2,0,0.6906015466064869
+dorn_java_220,Dorn,java,Voting ensemble (LR+NB+RF),3,0,0.20787746436894006
+dorn_java_221,Dorn,java,Voting ensemble (LR+NB+RF),1,1,0.7380077513683414
+dorn_python_000,Dorn,python,Logistic Regression,1,0,0.07582568553012604
+dorn_python_001,Dorn,python,Logistic Regression,4,0,0.6110001131810822
+dorn_python_010,Dorn,python,Logistic Regression,1,1,0.61952222544126
+dorn_python_100,Dorn,python,Logistic Regression,2,0,0.3845380421867623
+dorn_python_101,Dorn,python,Logistic Regression,4,1,0.7174735141246442
+dorn_python_102,Dorn,python,Logistic Regression,4,1,0.4320356406990808
+dorn_python_103,Dorn,python,Logistic Regression,2,1,0.6804067231586329
+dorn_python_104,Dorn,python,Logistic Regression,3,0,0.10397634407407602
+dorn_python_105,Dorn,python,Logistic Regression,4,0,0.4512692405442882
+dorn_python_106,Dorn,python,Logistic Regression,2,0,0.0165480740160923
+dorn_python_107,Dorn,python,Logistic Regression,0,1,0.810553069997367
+dorn_python_108,Dorn,python,Logistic Regression,0,1,0.8701220380611802
+dorn_python_109,Dorn,python,Logistic Regression,3,1,0.9757359845820939
+dorn_python_011,Dorn,python,Logistic Regression,4,1,0.9429881536653545
+dorn_python_110,Dorn,python,Logistic Regression,0,0,0.7709322741247652
+dorn_python_111,Dorn,python,Logistic Regression,4,0,0.004988807016354092
+dorn_python_112,Dorn,python,Logistic Regression,4,0,0.2344654985806302
+dorn_python_113,Dorn,python,Logistic Regression,0,1,0.0679218834984944
+dorn_python_114,Dorn,python,Logistic Regression,2,1,0.39346780534657655
+dorn_python_115,Dorn,python,Logistic Regression,3,0,0.76108834502676
+dorn_python_116,Dorn,python,Logistic Regression,2,1,0.7524726558597155
+dorn_python_117,Dorn,python,Logistic Regression,2,0,0.5754721342810825
+dorn_python_118,Dorn,python,Logistic Regression,4,0,0.49461374626872384
+dorn_python_012,Dorn,python,Logistic Regression,2,1,0.7303578440388419
+dorn_python_013,Dorn,python,Logistic Regression,1,0,0.6711400678956941
+dorn_python_014,Dorn,python,Logistic Regression,3,0,0.06843395613274218
+dorn_python_015,Dorn,python,Logistic Regression,4,1,0.8562116882910488
+dorn_python_016,Dorn,python,Logistic Regression,2,0,0.39843265943533374
+dorn_python_017,Dorn,python,Logistic Regression,1,0,0.1516210417739297
+dorn_python_018,Dorn,python,Logistic Regression,4,1,0.9427706258776005
+dorn_python_019,Dorn,python,Logistic Regression,4,0,0.041368723955031335
+dorn_python_002,Dorn,python,Logistic Regression,3,1,0.7167495544877424
+dorn_python_020,Dorn,python,Logistic Regression,0,0,0.25409105620994493
+dorn_python_021,Dorn,python,Logistic Regression,1,1,0.4148778186176123
+dorn_python_022,Dorn,python,Logistic Regression,0,1,0.8692771474141974
+dorn_python_023,Dorn,python,Logistic Regression,1,0,0.31017620369500293
+dorn_python_024,Dorn,python,Logistic Regression,3,1,0.2462638891988486
+dorn_python_025,Dorn,python,Logistic Regression,0,0,0.5849248426565555
+dorn_python_026,Dorn,python,Logistic Regression,4,0,0.1787883638749633
+dorn_python_027,Dorn,python,Logistic Regression,2,1,0.6045718497589754
+dorn_python_028,Dorn,python,Logistic Regression,2,1,0.45670225204958675
+dorn_python_029,Dorn,python,Logistic Regression,1,0,0.258438538382773
+dorn_python_003,Dorn,python,Logistic Regression,0,0,0.03135171504585529
+dorn_python_030,Dorn,python,Logistic Regression,0,1,0.12772335447586136
+dorn_python_031,Dorn,python,Logistic Regression,3,0,0.0947080174663802
+dorn_python_032,Dorn,python,Logistic Regression,2,1,0.36995079118994095
+dorn_python_033,Dorn,python,Logistic Regression,2,0,0.4524093725288435
+dorn_python_034,Dorn,python,Logistic Regression,2,1,0.819227714703421
+dorn_python_035,Dorn,python,Logistic Regression,2,0,0.8216004840991006
+dorn_python_036,Dorn,python,Logistic Regression,1,0,0.7724790661434467
+dorn_python_037,Dorn,python,Logistic Regression,4,0,0.17025767938454292
+dorn_python_038,Dorn,python,Logistic Regression,0,0,0.6309808290420411
+dorn_python_039,Dorn,python,Logistic Regression,2,1,0.41609629798788017
+dorn_python_004,Dorn,python,Logistic Regression,1,0,0.12035158620887973
+dorn_python_040,Dorn,python,Logistic Regression,4,1,0.7518753638744453
+dorn_python_041,Dorn,python,Logistic Regression,3,1,0.43235263709692745
+dorn_python_042,Dorn,python,Logistic Regression,3,1,0.3932563158624651
+dorn_python_043,Dorn,python,Logistic Regression,3,0,0.009056757617608944
+dorn_python_044,Dorn,python,Logistic Regression,1,1,0.8979923495213392
+dorn_python_045,Dorn,python,Logistic Regression,0,1,0.7522665478425196
+dorn_python_046,Dorn,python,Logistic Regression,1,1,0.5299218148071658
+dorn_python_047,Dorn,python,Logistic Regression,1,1,0.9312926722784429
+dorn_python_048,Dorn,python,Logistic Regression,2,1,0.4969238456705041
+dorn_python_049,Dorn,python,Logistic Regression,3,1,0.26036850942438894
+dorn_python_005,Dorn,python,Logistic Regression,3,1,0.5947053976685818
+dorn_python_050,Dorn,python,Logistic Regression,4,0,0.29232139978873095
+dorn_python_051,Dorn,python,Logistic Regression,1,1,0.46934457573213
+dorn_python_052,Dorn,python,Logistic Regression,4,1,0.1533674354440157
+dorn_python_053,Dorn,python,Logistic Regression,3,1,0.4512297869216002
+dorn_python_054,Dorn,python,Logistic Regression,1,0,0.258438538382773
+dorn_python_055,Dorn,python,Logistic Regression,3,1,0.9076232218258814
+dorn_python_056,Dorn,python,Logistic Regression,1,0,0.23201911587149524
+dorn_python_057,Dorn,python,Logistic Regression,0,1,0.5650784565919313
+dorn_python_058,Dorn,python,Logistic Regression,0,1,0.5076258230671931
+dorn_python_059,Dorn,python,Logistic Regression,0,1,0.37244206446514555
+dorn_python_006,Dorn,python,Logistic Regression,3,0,0.821913072935249
+dorn_python_060,Dorn,python,Logistic Regression,4,1,0.5968352494539377
+dorn_python_061,Dorn,python,Logistic Regression,1,1,0.8542051691687756
+dorn_python_062,Dorn,python,Logistic Regression,3,0,0.13425299358463996
+dorn_python_063,Dorn,python,Logistic Regression,0,1,0.8701220380611802
+dorn_python_064,Dorn,python,Logistic Regression,0,0,0.5544518327638166
+dorn_python_065,Dorn,python,Logistic Regression,0,0,0.6666424168503174
+dorn_python_066,Dorn,python,Logistic Regression,1,1,0.5712077671222959
+dorn_python_067,Dorn,python,Logistic Regression,3,1,0.8824630685815236
+dorn_python_068,Dorn,python,Logistic Regression,2,1,0.9232493944117328
+dorn_python_069,Dorn,python,Logistic Regression,3,1,0.9359989550983818
+dorn_python_007,Dorn,python,Logistic Regression,3,0,0.8603745159845184
+dorn_python_070,Dorn,python,Logistic Regression,0,0,0.6660578157552909
+dorn_python_071,Dorn,python,Logistic Regression,2,0,0.7671765922494658
+dorn_python_072,Dorn,python,Logistic Regression,4,0,0.24699247440743086
+dorn_python_073,Dorn,python,Logistic Regression,1,0,0.8654085816302323
+dorn_python_074,Dorn,python,Logistic Regression,2,0,0.8618762501827971
+dorn_python_075,Dorn,python,Logistic Regression,1,1,0.8946993407601631
+dorn_python_076,Dorn,python,Logistic Regression,0,0,0.3497660343793864
+dorn_python_077,Dorn,python,Logistic Regression,0,0,0.5634155084825573
+dorn_python_078,Dorn,python,Logistic Regression,2,0,0.7706418798779363
+dorn_python_079,Dorn,python,Logistic Regression,0,0,0.07732995529083532
+dorn_python_008,Dorn,python,Logistic Regression,3,0,0.9632375081040695
+dorn_python_080,Dorn,python,Logistic Regression,1,0,0.26312510720140153
+dorn_python_081,Dorn,python,Logistic Regression,3,0,0.015158676663325408
+dorn_python_082,Dorn,python,Logistic Regression,0,1,0.9736471183892963
+dorn_python_083,Dorn,python,Logistic Regression,1,1,0.3724058014810385
+dorn_python_084,Dorn,python,Logistic Regression,1,1,0.012531362254092947
+dorn_python_085,Dorn,python,Logistic Regression,4,0,0.12727746208570764
+dorn_python_086,Dorn,python,Logistic Regression,4,1,0.5168674109430615
+dorn_python_087,Dorn,python,Logistic Regression,3,1,0.6679536204780219
+dorn_python_088,Dorn,python,Logistic Regression,3,1,0.2929159837290684
+dorn_python_089,Dorn,python,Logistic Regression,1,1,0.4927831660037118
+dorn_python_009,Dorn,python,Logistic Regression,2,1,0.2756358118702126
+dorn_python_090,Dorn,python,Logistic Regression,1,0,0.29789778614977763
+dorn_python_091,Dorn,python,Logistic Regression,4,0,0.7462745293798646
+dorn_python_092,Dorn,python,Logistic Regression,4,1,0.8299382550837665
+dorn_python_093,Dorn,python,Logistic Regression,2,1,0.5096170216880243
+dorn_python_094,Dorn,python,Logistic Regression,2,0,0.38449800905019954
+dorn_python_095,Dorn,python,Logistic Regression,2,0,0.21222419948294982
+dorn_python_096,Dorn,python,Logistic Regression,3,0,0.5797876552387855
+dorn_python_097,Dorn,python,Logistic Regression,0,1,0.8701220380611802
+dorn_python_098,Dorn,python,Logistic Regression,0,1,0.1285483287961109
+dorn_python_099,Dorn,python,Logistic Regression,4,0,0.47264383371587143
+dorn_python_000,Dorn,python,Naive Bayes,1,0,0.00024403619470587593
+dorn_python_001,Dorn,python,Naive Bayes,4,0,0.9891885602165461
+dorn_python_010,Dorn,python,Naive Bayes,1,1,0.8749847397182893
+dorn_python_100,Dorn,python,Naive Bayes,2,0,0.24993944413525981
+dorn_python_101,Dorn,python,Naive Bayes,4,1,0.9945787240070801
+dorn_python_102,Dorn,python,Naive Bayes,4,1,0.8287737275598145
+dorn_python_103,Dorn,python,Naive Bayes,2,1,0.9960210272745963
+dorn_python_104,Dorn,python,Naive Bayes,3,0,4.796499411059265e-14
+dorn_python_105,Dorn,python,Naive Bayes,4,0,0.9920109505698701
+dorn_python_106,Dorn,python,Naive Bayes,2,0,1.539964306034858e-14
+dorn_python_107,Dorn,python,Naive Bayes,0,1,0.9999703269385999
+dorn_python_108,Dorn,python,Naive Bayes,0,1,0.6902801514789463
+dorn_python_109,Dorn,python,Naive Bayes,3,1,0.9428281475426515
+dorn_python_011,Dorn,python,Naive Bayes,4,1,1.0
+dorn_python_110,Dorn,python,Naive Bayes,0,0,0.9219111807434942
+dorn_python_111,Dorn,python,Naive Bayes,4,0,8.536877883081044e-27
+dorn_python_112,Dorn,python,Naive Bayes,4,0,5.784472841909227e-05
+dorn_python_113,Dorn,python,Naive Bayes,0,1,2.973004116390718e-12
+dorn_python_114,Dorn,python,Naive Bayes,2,1,0.889523516363566
+dorn_python_115,Dorn,python,Naive Bayes,3,0,0.5019285447691423
+dorn_python_116,Dorn,python,Naive Bayes,2,1,0.39365308181177483
+dorn_python_117,Dorn,python,Naive Bayes,2,0,0.25128079269894593
+dorn_python_118,Dorn,python,Naive Bayes,4,0,0.9956378845776879
+dorn_python_012,Dorn,python,Naive Bayes,2,1,0.8582189453525035
+dorn_python_013,Dorn,python,Naive Bayes,1,0,0.9922791122039386
+dorn_python_014,Dorn,python,Naive Bayes,3,0,0.0006212081800854121
+dorn_python_015,Dorn,python,Naive Bayes,4,1,0.9999999736914592
+dorn_python_016,Dorn,python,Naive Bayes,2,0,0.001839252077982052
+dorn_python_017,Dorn,python,Naive Bayes,1,0,4.47202614058294e-09
+dorn_python_018,Dorn,python,Naive Bayes,4,1,0.1847255672464881
+dorn_python_019,Dorn,python,Naive Bayes,4,0,1.3760228285821191e-09
+dorn_python_002,Dorn,python,Naive Bayes,3,1,0.29064835203907013
+dorn_python_020,Dorn,python,Naive Bayes,0,0,0.8265868739015374
+dorn_python_021,Dorn,python,Naive Bayes,1,1,0.9999999971315248
+dorn_python_022,Dorn,python,Naive Bayes,0,1,0.976927481281584
+dorn_python_023,Dorn,python,Naive Bayes,1,0,0.9093255189489793
+dorn_python_024,Dorn,python,Naive Bayes,3,1,0.9656715339236116
+dorn_python_025,Dorn,python,Naive Bayes,0,0,0.998439243724152
+dorn_python_026,Dorn,python,Naive Bayes,4,0,0.6427431090138078
+dorn_python_027,Dorn,python,Naive Bayes,2,1,0.9999891856581207
+dorn_python_028,Dorn,python,Naive Bayes,2,1,0.24444514197946837
+dorn_python_029,Dorn,python,Naive Bayes,1,0,0.8732019366064373
+dorn_python_003,Dorn,python,Naive Bayes,0,0,8.91292211302355e-12
+dorn_python_030,Dorn,python,Naive Bayes,0,1,0.8664462026736445
+dorn_python_031,Dorn,python,Naive Bayes,3,0,8.252513761653454e-07
+dorn_python_032,Dorn,python,Naive Bayes,2,1,0.27818598737773187
+dorn_python_033,Dorn,python,Naive Bayes,2,0,0.00283161094136316
+dorn_python_034,Dorn,python,Naive Bayes,2,1,1.0
+dorn_python_035,Dorn,python,Naive Bayes,2,0,0.9701187605417204
+dorn_python_036,Dorn,python,Naive Bayes,1,0,0.8791633188614664
+dorn_python_037,Dorn,python,Naive Bayes,4,0,0.004511357488008878
+dorn_python_038,Dorn,python,Naive Bayes,0,0,0.9999820287820135
+dorn_python_039,Dorn,python,Naive Bayes,2,1,0.0008032555223626148
+dorn_python_004,Dorn,python,Naive Bayes,1,0,1.278686503734283e-06
+dorn_python_040,Dorn,python,Naive Bayes,4,1,0.6559182411591763
+dorn_python_041,Dorn,python,Naive Bayes,3,1,0.9810836742160435
+dorn_python_042,Dorn,python,Naive Bayes,3,1,6.853703981442517e-05
+dorn_python_043,Dorn,python,Naive Bayes,3,0,1.283186457041353e-13
+dorn_python_044,Dorn,python,Naive Bayes,1,1,0.9592785024506599
+dorn_python_045,Dorn,python,Naive Bayes,0,1,0.9830430195776334
+dorn_python_046,Dorn,python,Naive Bayes,1,1,0.937984546816034
+dorn_python_047,Dorn,python,Naive Bayes,1,1,0.9951833834616821
+dorn_python_048,Dorn,python,Naive Bayes,2,1,0.9999979820493902
+dorn_python_049,Dorn,python,Naive Bayes,3,1,0.0004045462934222339
+dorn_python_005,Dorn,python,Naive Bayes,3,1,0.0002601861681568947
+dorn_python_050,Dorn,python,Naive Bayes,4,0,0.6687801577383213
+dorn_python_051,Dorn,python,Naive Bayes,1,1,0.9868719509522997
+dorn_python_052,Dorn,python,Naive Bayes,4,1,0.5624512997594068
+dorn_python_053,Dorn,python,Naive Bayes,3,1,5.542788385665474e-10
+dorn_python_054,Dorn,python,Naive Bayes,1,0,0.8732019366064373
+dorn_python_055,Dorn,python,Naive Bayes,3,1,0.8409088874940598
+dorn_python_056,Dorn,python,Naive Bayes,1,0,0.3446325350398109
+dorn_python_057,Dorn,python,Naive Bayes,0,1,0.9999938923492309
+dorn_python_058,Dorn,python,Naive Bayes,0,1,0.9882045749068643
+dorn_python_059,Dorn,python,Naive Bayes,0,1,0.9828803418406017
+dorn_python_006,Dorn,python,Naive Bayes,3,0,0.9977401835471291
+dorn_python_060,Dorn,python,Naive Bayes,4,1,0.9692370610438861
+dorn_python_061,Dorn,python,Naive Bayes,1,1,0.9699961917470696
+dorn_python_062,Dorn,python,Naive Bayes,3,0,0.011423562284770473
+dorn_python_063,Dorn,python,Naive Bayes,0,1,0.6902801514789463
+dorn_python_064,Dorn,python,Naive Bayes,0,0,0.013054853761888153
+dorn_python_065,Dorn,python,Naive Bayes,0,0,5.685464454184037e-10
+dorn_python_066,Dorn,python,Naive Bayes,1,1,0.9999997429360878
+dorn_python_067,Dorn,python,Naive Bayes,3,1,0.9979626274967693
+dorn_python_068,Dorn,python,Naive Bayes,2,1,0.9999999661281868
+dorn_python_069,Dorn,python,Naive Bayes,3,1,0.9960832340017238
+dorn_python_007,Dorn,python,Naive Bayes,3,0,0.9970696186193493
+dorn_python_070,Dorn,python,Naive Bayes,0,0,0.9999998348929745
+dorn_python_071,Dorn,python,Naive Bayes,2,0,1.0
+dorn_python_072,Dorn,python,Naive Bayes,4,0,6.98460418244232e-07
+dorn_python_073,Dorn,python,Naive Bayes,1,0,0.9964196625562357
+dorn_python_074,Dorn,python,Naive Bayes,2,0,1.0
+dorn_python_075,Dorn,python,Naive Bayes,1,1,0.854993228573327
+dorn_python_076,Dorn,python,Naive Bayes,0,0,1.3438724378027646e-14
+dorn_python_077,Dorn,python,Naive Bayes,0,0,0.19810863654392646
+dorn_python_078,Dorn,python,Naive Bayes,2,0,0.03754701011650622
+dorn_python_079,Dorn,python,Naive Bayes,0,0,0.010382777022103957
+dorn_python_008,Dorn,python,Naive Bayes,3,0,2.981298730146745e-06
+dorn_python_080,Dorn,python,Naive Bayes,1,0,2.8726520131473305e-05
+dorn_python_081,Dorn,python,Naive Bayes,3,0,8.655864932373511e-18
+dorn_python_082,Dorn,python,Naive Bayes,0,1,0.99999961608665
+dorn_python_083,Dorn,python,Naive Bayes,1,1,0.9491554245749871
+dorn_python_084,Dorn,python,Naive Bayes,1,1,2.755045749090553e-11
+dorn_python_085,Dorn,python,Naive Bayes,4,0,0.0007824641856325746
+dorn_python_086,Dorn,python,Naive Bayes,4,1,0.9959935070344803
+dorn_python_087,Dorn,python,Naive Bayes,3,1,0.000174307149398014
+dorn_python_088,Dorn,python,Naive Bayes,3,1,0.9999999962065544
+dorn_python_089,Dorn,python,Naive Bayes,1,1,0.33739693261727777
+dorn_python_009,Dorn,python,Naive Bayes,2,1,2.5183271249271175e-07
+dorn_python_090,Dorn,python,Naive Bayes,1,0,0.4094107140267795
+dorn_python_091,Dorn,python,Naive Bayes,4,0,0.9994115785004684
+dorn_python_092,Dorn,python,Naive Bayes,4,1,0.996982550376275
+dorn_python_093,Dorn,python,Naive Bayes,2,1,0.9537543957134096
+dorn_python_094,Dorn,python,Naive Bayes,2,0,0.03336826591796784
+dorn_python_095,Dorn,python,Naive Bayes,2,0,0.038797981954360274
+dorn_python_096,Dorn,python,Naive Bayes,3,0,0.007041666322351071
+dorn_python_097,Dorn,python,Naive Bayes,0,1,0.6902801514789463
+dorn_python_098,Dorn,python,Naive Bayes,0,1,0.3326488283486626
+dorn_python_099,Dorn,python,Naive Bayes,4,0,0.5743319508251461
+dorn_python_000,Dorn,python,"Scalabrino-LR (replicated, not official tool)",1,0,0.08093052671858358
+dorn_python_001,Dorn,python,"Scalabrino-LR (replicated, not official tool)",4,0,0.6388337544972907
+dorn_python_010,Dorn,python,"Scalabrino-LR (replicated, not official tool)",1,1,0.6327120421470677
+dorn_python_100,Dorn,python,"Scalabrino-LR (replicated, not official tool)",2,0,0.38934892638114216
+dorn_python_101,Dorn,python,"Scalabrino-LR (replicated, not official tool)",4,1,0.7420959226154585
+dorn_python_102,Dorn,python,"Scalabrino-LR (replicated, not official tool)",4,1,0.4614635975143513
+dorn_python_103,Dorn,python,"Scalabrino-LR (replicated, not official tool)",2,1,0.6845072153476588
+dorn_python_104,Dorn,python,"Scalabrino-LR (replicated, not official tool)",3,0,0.10449636149071438
+dorn_python_105,Dorn,python,"Scalabrino-LR (replicated, not official tool)",4,0,0.4822168601552801
+dorn_python_106,Dorn,python,"Scalabrino-LR (replicated, not official tool)",2,0,0.016822077713616563
+dorn_python_107,Dorn,python,"Scalabrino-LR (replicated, not official tool)",0,1,0.8124964277401571
+dorn_python_108,Dorn,python,"Scalabrino-LR (replicated, not official tool)",0,1,0.8725146906700544
+dorn_python_109,Dorn,python,"Scalabrino-LR (replicated, not official tool)",3,1,0.9759044922274372
+dorn_python_011,Dorn,python,"Scalabrino-LR (replicated, not official tool)",4,1,0.9542345211655451
+dorn_python_110,Dorn,python,"Scalabrino-LR (replicated, not official tool)",0,0,0.7745224858670623
+dorn_python_111,Dorn,python,"Scalabrino-LR (replicated, not official tool)",4,0,0.005853402934390958
+dorn_python_112,Dorn,python,"Scalabrino-LR (replicated, not official tool)",4,0,0.2547164649455098
+dorn_python_113,Dorn,python,"Scalabrino-LR (replicated, not official tool)",0,1,0.06872204529243944
+dorn_python_114,Dorn,python,"Scalabrino-LR (replicated, not official tool)",2,1,0.3982819362943563
+dorn_python_115,Dorn,python,"Scalabrino-LR (replicated, not official tool)",3,0,0.764141456459429
+dorn_python_116,Dorn,python,"Scalabrino-LR (replicated, not official tool)",2,1,0.7562136769968196
+dorn_python_117,Dorn,python,"Scalabrino-LR (replicated, not official tool)",2,0,0.5790522821392314
+dorn_python_118,Dorn,python,"Scalabrino-LR (replicated, not official tool)",4,0,0.5186366674530568
+dorn_python_012,Dorn,python,"Scalabrino-LR (replicated, not official tool)",2,1,0.7335097300159328
+dorn_python_013,Dorn,python,"Scalabrino-LR (replicated, not official tool)",1,0,0.6852726663309341
+dorn_python_014,Dorn,python,"Scalabrino-LR (replicated, not official tool)",3,0,0.0695500985271896
+dorn_python_015,Dorn,python,"Scalabrino-LR (replicated, not official tool)",4,1,0.8670160198238527
+dorn_python_016,Dorn,python,"Scalabrino-LR (replicated, not official tool)",2,0,0.4017166571114498
+dorn_python_017,Dorn,python,"Scalabrino-LR (replicated, not official tool)",1,0,0.16087952520162246
+dorn_python_018,Dorn,python,"Scalabrino-LR (replicated, not official tool)",4,1,0.9474841490103683
+dorn_python_019,Dorn,python,"Scalabrino-LR (replicated, not official tool)",4,0,0.0460578478052166
+dorn_python_002,Dorn,python,"Scalabrino-LR (replicated, not official tool)",3,1,0.7205152165011875
+dorn_python_020,Dorn,python,"Scalabrino-LR (replicated, not official tool)",0,0,0.25849259088304305
+dorn_python_021,Dorn,python,"Scalabrino-LR (replicated, not official tool)",1,1,0.43067180365059266
+dorn_python_022,Dorn,python,"Scalabrino-LR (replicated, not official tool)",0,1,0.8711572109756607
+dorn_python_023,Dorn,python,"Scalabrino-LR (replicated, not official tool)",1,0,0.3251518568441429
+dorn_python_024,Dorn,python,"Scalabrino-LR (replicated, not official tool)",3,1,0.24989942106845883
+dorn_python_025,Dorn,python,"Scalabrino-LR (replicated, not official tool)",0,0,0.5895976854913206
+dorn_python_026,Dorn,python,"Scalabrino-LR (replicated, not official tool)",4,0,0.19526995175189493
+dorn_python_027,Dorn,python,"Scalabrino-LR (replicated, not official tool)",2,1,0.605889083268435
+dorn_python_028,Dorn,python,"Scalabrino-LR (replicated, not official tool)",2,1,0.46118308518230244
+dorn_python_029,Dorn,python,"Scalabrino-LR (replicated, not official tool)",1,0,0.27011079995358983
+dorn_python_003,Dorn,python,"Scalabrino-LR (replicated, not official tool)",0,0,0.032019546989033434
+dorn_python_030,Dorn,python,"Scalabrino-LR (replicated, not official tool)",0,1,0.13019803058035181
+dorn_python_031,Dorn,python,"Scalabrino-LR (replicated, not official tool)",3,0,0.09686101837761149
+dorn_python_032,Dorn,python,"Scalabrino-LR (replicated, not official tool)",2,1,0.37466472094953784
+dorn_python_033,Dorn,python,"Scalabrino-LR (replicated, not official tool)",2,0,0.45640749939106773
+dorn_python_034,Dorn,python,"Scalabrino-LR (replicated, not official tool)",2,1,0.8221750071778491
+dorn_python_035,Dorn,python,"Scalabrino-LR (replicated, not official tool)",2,0,0.8243281564759464
+dorn_python_036,Dorn,python,"Scalabrino-LR (replicated, not official tool)",1,0,0.7817000919778803
+dorn_python_037,Dorn,python,"Scalabrino-LR (replicated, not official tool)",4,0,0.1895708114783849
+dorn_python_038,Dorn,python,"Scalabrino-LR (replicated, not official tool)",0,0,0.634648731810823
+dorn_python_039,Dorn,python,"Scalabrino-LR (replicated, not official tool)",2,1,0.42088785655994865
+dorn_python_004,Dorn,python,"Scalabrino-LR (replicated, not official tool)",1,0,0.1269578258394211
+dorn_python_040,Dorn,python,"Scalabrino-LR (replicated, not official tool)",4,1,0.7756760084735261
+dorn_python_041,Dorn,python,"Scalabrino-LR (replicated, not official tool)",3,1,0.4373819841338541
+dorn_python_042,Dorn,python,"Scalabrino-LR (replicated, not official tool)",3,1,0.39752091495749875
+dorn_python_043,Dorn,python,"Scalabrino-LR (replicated, not official tool)",3,0,0.009147878445360068
+dorn_python_044,Dorn,python,"Scalabrino-LR (replicated, not official tool)",1,1,0.9032535998981162
+dorn_python_045,Dorn,python,"Scalabrino-LR (replicated, not official tool)",0,1,0.7558187934674347
+dorn_python_046,Dorn,python,"Scalabrino-LR (replicated, not official tool)",1,1,0.545709362203412
+dorn_python_047,Dorn,python,"Scalabrino-LR (replicated, not official tool)",1,1,0.9353422958876717
+dorn_python_048,Dorn,python,"Scalabrino-LR (replicated, not official tool)",2,1,0.5015800247300672
+dorn_python_049,Dorn,python,"Scalabrino-LR (replicated, not official tool)",3,1,0.26560888352285833
+dorn_python_005,Dorn,python,"Scalabrino-LR (replicated, not official tool)",3,1,0.6014770960579541
+dorn_python_050,Dorn,python,"Scalabrino-LR (replicated, not official tool)",4,0,0.3181513893583778
+dorn_python_051,Dorn,python,"Scalabrino-LR (replicated, not official tool)",1,1,0.48717057429565613
+dorn_python_052,Dorn,python,"Scalabrino-LR (replicated, not official tool)",4,1,0.17009700277140027
+dorn_python_053,Dorn,python,"Scalabrino-LR (replicated, not official tool)",3,1,0.4573555072926536
+dorn_python_054,Dorn,python,"Scalabrino-LR (replicated, not official tool)",1,0,0.27011079995358983
+dorn_python_055,Dorn,python,"Scalabrino-LR (replicated, not official tool)",3,1,0.9091296164222279
+dorn_python_056,Dorn,python,"Scalabrino-LR (replicated, not official tool)",1,0,0.24351839396999123
+dorn_python_057,Dorn,python,"Scalabrino-LR (replicated, not official tool)",0,1,0.5713806788442508
+dorn_python_058,Dorn,python,"Scalabrino-LR (replicated, not official tool)",0,1,0.5125106063099982
+dorn_python_059,Dorn,python,"Scalabrino-LR (replicated, not official tool)",0,1,0.37709109956357245
+dorn_python_006,Dorn,python,"Scalabrino-LR (replicated, not official tool)",3,0,0.823786514493363
+dorn_python_060,Dorn,python,"Scalabrino-LR (replicated, not official tool)",4,1,0.6250838776931588
+dorn_python_061,Dorn,python,"Scalabrino-LR (replicated, not official tool)",1,1,0.8596523498766007
+dorn_python_062,Dorn,python,"Scalabrino-LR (replicated, not official tool)",3,0,0.13684725818577145
+dorn_python_063,Dorn,python,"Scalabrino-LR (replicated, not official tool)",0,1,0.8725146906700544
+dorn_python_064,Dorn,python,"Scalabrino-LR (replicated, not official tool)",0,0,0.5583711706881657
+dorn_python_065,Dorn,python,"Scalabrino-LR (replicated, not official tool)",0,0,0.6700038054589822
+dorn_python_066,Dorn,python,"Scalabrino-LR (replicated, not official tool)",1,1,0.5867964068616847
+dorn_python_067,Dorn,python,"Scalabrino-LR (replicated, not official tool)",3,1,0.8844146402778129
+dorn_python_068,Dorn,python,"Scalabrino-LR (replicated, not official tool)",2,1,0.9245748000606386
+dorn_python_069,Dorn,python,"Scalabrino-LR (replicated, not official tool)",3,1,0.9365090349021022
+dorn_python_007,Dorn,python,"Scalabrino-LR (replicated, not official tool)",3,0,0.8625058098385453
+dorn_python_070,Dorn,python,"Scalabrino-LR (replicated, not official tool)",0,0,0.6712547556026521
+dorn_python_071,Dorn,python,"Scalabrino-LR (replicated, not official tool)",2,0,0.7707497877009142
+dorn_python_072,Dorn,python,"Scalabrino-LR (replicated, not official tool)",4,0,0.27403982687647555
+dorn_python_073,Dorn,python,"Scalabrino-LR (replicated, not official tool)",1,0,0.8720742943594585
+dorn_python_074,Dorn,python,"Scalabrino-LR (replicated, not official tool)",2,0,0.8628374240279149
+dorn_python_075,Dorn,python,"Scalabrino-LR (replicated, not official tool)",1,1,0.8996384866558038
+dorn_python_076,Dorn,python,"Scalabrino-LR (replicated, not official tool)",0,0,0.3526533792301811
+dorn_python_077,Dorn,python,"Scalabrino-LR (replicated, not official tool)",0,0,0.5670907570486149
+dorn_python_078,Dorn,python,"Scalabrino-LR (replicated, not official tool)",2,0,0.7740683609011143
+dorn_python_079,Dorn,python,"Scalabrino-LR (replicated, not official tool)",0,0,0.07852645486076122
+dorn_python_008,Dorn,python,"Scalabrino-LR (replicated, not official tool)",3,0,0.9642420473734769
+dorn_python_080,Dorn,python,"Scalabrino-LR (replicated, not official tool)",1,0,0.2740006566142931
+dorn_python_081,Dorn,python,"Scalabrino-LR (replicated, not official tool)",3,0,0.015261016113958636
+dorn_python_082,Dorn,python,"Scalabrino-LR (replicated, not official tool)",0,1,0.9741939938117065
+dorn_python_083,Dorn,python,"Scalabrino-LR (replicated, not official tool)",1,1,0.38610339024842544
+dorn_python_084,Dorn,python,"Scalabrino-LR (replicated, not official tool)",1,1,0.012929365842609682
+dorn_python_085,Dorn,python,"Scalabrino-LR (replicated, not official tool)",4,0,0.14245203661468864
+dorn_python_086,Dorn,python,"Scalabrino-LR (replicated, not official tool)",4,1,0.5437397846049369
+dorn_python_087,Dorn,python,"Scalabrino-LR (replicated, not official tool)",3,1,0.6727158211456795
+dorn_python_088,Dorn,python,"Scalabrino-LR (replicated, not official tool)",3,1,0.295392842455298
+dorn_python_089,Dorn,python,"Scalabrino-LR (replicated, not official tool)",1,1,0.5085551287991366
+dorn_python_009,Dorn,python,"Scalabrino-LR (replicated, not official tool)",2,1,0.2793118050256446
+dorn_python_090,Dorn,python,"Scalabrino-LR (replicated, not official tool)",1,0,0.3122973184669821
+dorn_python_091,Dorn,python,"Scalabrino-LR (replicated, not official tool)",4,0,0.764778690465782
+dorn_python_092,Dorn,python,"Scalabrino-LR (replicated, not official tool)",4,1,0.8451788529547818
+dorn_python_093,Dorn,python,"Scalabrino-LR (replicated, not official tool)",2,1,0.5137229527092152
+dorn_python_094,Dorn,python,"Scalabrino-LR (replicated, not official tool)",2,0,0.3911582463453422
+dorn_python_095,Dorn,python,"Scalabrino-LR (replicated, not official tool)",2,0,0.2160649545726258
+dorn_python_096,Dorn,python,"Scalabrino-LR (replicated, not official tool)",3,0,0.5849292065125881
+dorn_python_097,Dorn,python,"Scalabrino-LR (replicated, not official tool)",0,1,0.8725146906700544
+dorn_python_098,Dorn,python,"Scalabrino-LR (replicated, not official tool)",0,1,0.1310781441529621
+dorn_python_099,Dorn,python,"Scalabrino-LR (replicated, not official tool)",4,0,0.4962991206082119
+dorn_python_000,Dorn,python,Multilayer Perceptron,1,0,0.0022354825795030944
+dorn_python_001,Dorn,python,Multilayer Perceptron,4,0,0.4746327289711071
+dorn_python_010,Dorn,python,Multilayer Perceptron,1,1,0.5207494392667992
+dorn_python_100,Dorn,python,Multilayer Perceptron,2,0,0.05177068587382775
+dorn_python_101,Dorn,python,Multilayer Perceptron,4,1,0.9063438876677246
+dorn_python_102,Dorn,python,Multilayer Perceptron,4,1,0.16657875839480998
+dorn_python_103,Dorn,python,Multilayer Perceptron,2,1,0.9539390933483846
+dorn_python_104,Dorn,python,Multilayer Perceptron,3,0,2.9619529821231317e-05
+dorn_python_105,Dorn,python,Multilayer Perceptron,4,0,0.6852252734145532
+dorn_python_106,Dorn,python,Multilayer Perceptron,2,0,2.2791153733556185e-05
+dorn_python_107,Dorn,python,Multilayer Perceptron,0,1,0.9961876295041919
+dorn_python_108,Dorn,python,Multilayer Perceptron,0,1,0.9984528789691154
+dorn_python_109,Dorn,python,Multilayer Perceptron,3,1,0.9987932724119969
+dorn_python_011,Dorn,python,Multilayer Perceptron,4,1,8.529949317335788e-06
+dorn_python_110,Dorn,python,Multilayer Perceptron,0,0,0.9327766928115315
+dorn_python_111,Dorn,python,Multilayer Perceptron,4,0,1.5101649596974171e-05
+dorn_python_112,Dorn,python,Multilayer Perceptron,4,0,7.353850042402883e-05
+dorn_python_113,Dorn,python,Multilayer Perceptron,0,1,0.00015877830345932992
+dorn_python_114,Dorn,python,Multilayer Perceptron,2,1,0.9515846272632347
+dorn_python_115,Dorn,python,Multilayer Perceptron,3,0,0.2884224696200965
+dorn_python_116,Dorn,python,Multilayer Perceptron,2,1,0.909412721775686
+dorn_python_117,Dorn,python,Multilayer Perceptron,2,0,0.7072303589480207
+dorn_python_118,Dorn,python,Multilayer Perceptron,4,0,0.7765041544905559
+dorn_python_012,Dorn,python,Multilayer Perceptron,2,1,0.9901392325592125
+dorn_python_013,Dorn,python,Multilayer Perceptron,1,0,0.654788527254613
+dorn_python_014,Dorn,python,Multilayer Perceptron,3,0,0.00010665002352574319
+dorn_python_015,Dorn,python,Multilayer Perceptron,4,1,0.8867407273772188
+dorn_python_016,Dorn,python,Multilayer Perceptron,2,0,0.022207981071397043
+dorn_python_017,Dorn,python,Multilayer Perceptron,1,0,0.0036703442852808487
+dorn_python_018,Dorn,python,Multilayer Perceptron,4,1,0.997892916957419
+dorn_python_019,Dorn,python,Multilayer Perceptron,4,0,0.0028390435633186524
+dorn_python_002,Dorn,python,Multilayer Perceptron,3,1,0.28037079344682153
+dorn_python_020,Dorn,python,Multilayer Perceptron,0,0,0.010518410915933713
+dorn_python_021,Dorn,python,Multilayer Perceptron,1,1,0.006529881126818509
+dorn_python_022,Dorn,python,Multilayer Perceptron,0,1,0.943894948549322
+dorn_python_023,Dorn,python,Multilayer Perceptron,1,0,0.3677498335180812
+dorn_python_024,Dorn,python,Multilayer Perceptron,3,1,0.010498559158659515
+dorn_python_025,Dorn,python,Multilayer Perceptron,0,0,0.8979734122571336
+dorn_python_026,Dorn,python,Multilayer Perceptron,4,0,0.006205835539598468
+dorn_python_027,Dorn,python,Multilayer Perceptron,2,1,0.0022771511767295974
+dorn_python_028,Dorn,python,Multilayer Perceptron,2,1,0.709019552349199
+dorn_python_029,Dorn,python,Multilayer Perceptron,1,0,0.021169049034608627
+dorn_python_003,Dorn,python,Multilayer Perceptron,0,0,0.00018312225373358327
+dorn_python_030,Dorn,python,Multilayer Perceptron,0,1,0.03299522001294053
+dorn_python_031,Dorn,python,Multilayer Perceptron,3,0,0.5374858627025598
+dorn_python_032,Dorn,python,Multilayer Perceptron,2,1,0.007402402028169383
+dorn_python_033,Dorn,python,Multilayer Perceptron,2,0,0.11879836342003938
+dorn_python_034,Dorn,python,Multilayer Perceptron,2,1,0.42215804418253805
+dorn_python_035,Dorn,python,Multilayer Perceptron,2,0,0.6858971197363488
+dorn_python_036,Dorn,python,Multilayer Perceptron,1,0,0.9272575220674316
+dorn_python_037,Dorn,python,Multilayer Perceptron,4,0,0.004093462434189278
+dorn_python_038,Dorn,python,Multilayer Perceptron,0,0,0.9938656538082506
+dorn_python_039,Dorn,python,Multilayer Perceptron,2,1,0.8744450171329858
+dorn_python_004,Dorn,python,Multilayer Perceptron,1,0,0.4200096081189506
+dorn_python_040,Dorn,python,Multilayer Perceptron,4,1,0.9523362091869316
+dorn_python_041,Dorn,python,Multilayer Perceptron,3,1,0.8211295837885403
+dorn_python_042,Dorn,python,Multilayer Perceptron,3,1,0.8964141758021877
+dorn_python_043,Dorn,python,Multilayer Perceptron,3,0,5.148482696175376e-08
+dorn_python_044,Dorn,python,Multilayer Perceptron,1,1,0.9995260981917133
+dorn_python_045,Dorn,python,Multilayer Perceptron,0,1,0.9490021081225962
+dorn_python_046,Dorn,python,Multilayer Perceptron,1,1,0.9796958817172853
+dorn_python_047,Dorn,python,Multilayer Perceptron,1,1,0.9647486978698557
+dorn_python_048,Dorn,python,Multilayer Perceptron,2,1,2.208386497658397e-06
+dorn_python_049,Dorn,python,Multilayer Perceptron,3,1,0.9946155552042082
+dorn_python_005,Dorn,python,Multilayer Perceptron,3,1,0.9999158974815369
+dorn_python_050,Dorn,python,Multilayer Perceptron,4,0,0.24592691140670364
+dorn_python_051,Dorn,python,Multilayer Perceptron,1,1,0.8691943141857525
+dorn_python_052,Dorn,python,Multilayer Perceptron,4,1,0.00041892506432143105
+dorn_python_053,Dorn,python,Multilayer Perceptron,3,1,0.9701476452355048
+dorn_python_054,Dorn,python,Multilayer Perceptron,1,0,0.021169049034608627
+dorn_python_055,Dorn,python,Multilayer Perceptron,3,1,0.9998527194097244
+dorn_python_056,Dorn,python,Multilayer Perceptron,1,0,0.008123357665799533
+dorn_python_057,Dorn,python,Multilayer Perceptron,0,1,0.08147650216506946
+dorn_python_058,Dorn,python,Multilayer Perceptron,0,1,0.24638515598197108
+dorn_python_059,Dorn,python,Multilayer Perceptron,0,1,0.6999481064678674
+dorn_python_006,Dorn,python,Multilayer Perceptron,3,0,0.99863943574159
+dorn_python_060,Dorn,python,Multilayer Perceptron,4,1,0.9882437836710087
+dorn_python_061,Dorn,python,Multilayer Perceptron,1,1,0.9793641202570492
+dorn_python_062,Dorn,python,Multilayer Perceptron,3,0,0.0004267950400689744
+dorn_python_063,Dorn,python,Multilayer Perceptron,0,1,0.9984528789691154
+dorn_python_064,Dorn,python,Multilayer Perceptron,0,0,0.07453602564997727
+dorn_python_065,Dorn,python,Multilayer Perceptron,0,0,0.0391736416955234
+dorn_python_066,Dorn,python,Multilayer Perceptron,1,1,0.5829861389876573
+dorn_python_067,Dorn,python,Multilayer Perceptron,3,1,0.9846357951208109
+dorn_python_068,Dorn,python,Multilayer Perceptron,2,1,0.9997527630650266
+dorn_python_069,Dorn,python,Multilayer Perceptron,3,1,0.9371561383120912
+dorn_python_007,Dorn,python,Multilayer Perceptron,3,0,0.9907785557751017
+dorn_python_070,Dorn,python,Multilayer Perceptron,0,0,0.8634234194104196
+dorn_python_071,Dorn,python,Multilayer Perceptron,2,0,0.9930909915117757
+dorn_python_072,Dorn,python,Multilayer Perceptron,4,0,0.9840948583395666
+dorn_python_073,Dorn,python,Multilayer Perceptron,1,0,0.8642674226003112
+dorn_python_074,Dorn,python,Multilayer Perceptron,2,0,0.9992649432764779
+dorn_python_075,Dorn,python,Multilayer Perceptron,1,1,0.5643176723887409
+dorn_python_076,Dorn,python,Multilayer Perceptron,0,0,0.002607959569962617
+dorn_python_077,Dorn,python,Multilayer Perceptron,0,0,0.6274551783292007
+dorn_python_078,Dorn,python,Multilayer Perceptron,2,0,0.00016910105653590682
+dorn_python_079,Dorn,python,Multilayer Perceptron,0,0,0.0002567510107246186
+dorn_python_008,Dorn,python,Multilayer Perceptron,3,0,0.9999993939187278
+dorn_python_080,Dorn,python,Multilayer Perceptron,1,0,0.10013913818920954
+dorn_python_081,Dorn,python,Multilayer Perceptron,3,0,9.203734140442318e-08
+dorn_python_082,Dorn,python,Multilayer Perceptron,0,1,0.9660572012813563
+dorn_python_083,Dorn,python,Multilayer Perceptron,1,1,0.8894450485298029
+dorn_python_084,Dorn,python,Multilayer Perceptron,1,1,1.1531389231625837e-07
+dorn_python_085,Dorn,python,Multilayer Perceptron,4,0,0.01272066569920608
+dorn_python_086,Dorn,python,Multilayer Perceptron,4,1,0.6299585169952697
+dorn_python_087,Dorn,python,Multilayer Perceptron,3,1,0.9989380886451964
+dorn_python_088,Dorn,python,Multilayer Perceptron,3,1,0.9998920149592551
+dorn_python_089,Dorn,python,Multilayer Perceptron,1,1,0.9847175331840771
+dorn_python_009,Dorn,python,Multilayer Perceptron,2,1,0.015130916685565132
+dorn_python_090,Dorn,python,Multilayer Perceptron,1,0,0.11459149101144091
+dorn_python_091,Dorn,python,Multilayer Perceptron,4,0,0.5221976964291826
+dorn_python_092,Dorn,python,Multilayer Perceptron,4,1,0.9815186361621138
+dorn_python_093,Dorn,python,Multilayer Perceptron,2,1,0.9635243549255423
+dorn_python_094,Dorn,python,Multilayer Perceptron,2,0,5.814655579634276e-05
+dorn_python_095,Dorn,python,Multilayer Perceptron,2,0,0.1876848862197096
+dorn_python_096,Dorn,python,Multilayer Perceptron,3,0,0.522526457899216
+dorn_python_097,Dorn,python,Multilayer Perceptron,0,1,0.9984528789691154
+dorn_python_098,Dorn,python,Multilayer Perceptron,0,1,0.004669232144193928
+dorn_python_099,Dorn,python,Multilayer Perceptron,4,0,0.04256771311912342
+dorn_python_000,Dorn,python,Voting ensemble (LR+NB+RF),1,0,0.10041742046912384
+dorn_python_001,Dorn,python,Voting ensemble (LR+NB+RF),4,0,0.7133962244658761
+dorn_python_010,Dorn,python,Voting ensemble (LR+NB+RF),1,1,0.6874652846828128
+dorn_python_100,Dorn,python,Voting ensemble (LR+NB+RF),2,0,0.36401101395919255
+dorn_python_101,Dorn,python,Voting ensemble (LR+NB+RF),4,1,0.7763414867846489
+dorn_python_102,Dorn,python,Voting ensemble (LR+NB+RF),4,1,0.6419470380968804
+dorn_python_103,Dorn,python,Voting ensemble (LR+NB+RF),2,1,0.7769177157528754
+dorn_python_104,Dorn,python,Voting ensemble (LR+NB+RF),3,0,0.1213170705996639
+dorn_python_105,Dorn,python,Voting ensemble (LR+NB+RF),4,0,0.7234915451862008
+dorn_python_106,Dorn,python,Voting ensemble (LR+NB+RF),2,0,0.07442343207944331
+dorn_python_107,Dorn,python,Voting ensemble (LR+NB+RF),0,1,0.843915206386063
+dorn_python_108,Dorn,python,Voting ensemble (LR+NB+RF),0,1,0.8118748039207828
+dorn_python_109,Dorn,python,Voting ensemble (LR+NB+RF),3,1,0.7486668800204178
+dorn_python_011,Dorn,python,Voting ensemble (LR+NB+RF),4,1,0.852834675560409
+dorn_python_110,Dorn,python,Voting ensemble (LR+NB+RF),0,0,0.833707077548679
+dorn_python_111,Dorn,python,Voting ensemble (LR+NB+RF),4,0,0.12342484043402276
+dorn_python_112,Dorn,python,Voting ensemble (LR+NB+RF),4,0,0.15308185517709053
+dorn_python_113,Dorn,python,Voting ensemble (LR+NB+RF),0,1,0.10719750614070078
+dorn_python_114,Dorn,python,Voting ensemble (LR+NB+RF),2,1,0.6857471072367142
+dorn_python_115,Dorn,python,Voting ensemble (LR+NB+RF),3,0,0.5354694747291455
+dorn_python_116,Dorn,python,Voting ensemble (LR+NB+RF),2,1,0.5664863570016078
+dorn_python_117,Dorn,python,Voting ensemble (LR+NB+RF),2,0,0.4774943619033957
+dorn_python_118,Dorn,python,Voting ensemble (LR+NB+RF),4,0,0.7460098028747298
+dorn_python_012,Dorn,python,Voting ensemble (LR+NB+RF),2,1,0.749636707574893
+dorn_python_013,Dorn,python,Voting ensemble (LR+NB+RF),1,0,0.7835841711443221
+dorn_python_014,Dorn,python,Voting ensemble (LR+NB+RF),3,0,0.06872209180797957
+dorn_python_015,Dorn,python,Voting ensemble (LR+NB+RF),4,1,0.7981671148407301
+dorn_python_016,Dorn,python,Voting ensemble (LR+NB+RF),2,0,0.23538693346740155
+dorn_python_017,Dorn,python,Voting ensemble (LR+NB+RF),1,0,0.12301389372219691
+dorn_python_018,Dorn,python,Voting ensemble (LR+NB+RF),4,1,0.6304431754858073
+dorn_python_019,Dorn,python,Voting ensemble (LR+NB+RF),4,0,0.11209380791458425
+dorn_python_002,Dorn,python,Voting ensemble (LR+NB+RF),3,1,0.471546215755851
+dorn_python_020,Dorn,python,Voting ensemble (LR+NB+RF),0,0,0.5742577227355735
+dorn_python_021,Dorn,python,Voting ensemble (LR+NB+RF),1,1,0.605672234879342
+dorn_python_022,Dorn,python,Voting ensemble (LR+NB+RF),0,1,0.8817904317874827
+dorn_python_023,Dorn,python,Voting ensemble (LR+NB+RF),1,0,0.6168749128389993
+dorn_python_024,Dorn,python,Voting ensemble (LR+NB+RF),3,1,0.5480128659085449
+dorn_python_025,Dorn,python,Voting ensemble (LR+NB+RF),0,0,0.8094176584231988
+dorn_python_026,Dorn,python,Voting ensemble (LR+NB+RF),4,0,0.4119919724444052
+dorn_python_027,Dorn,python,Voting ensemble (LR+NB+RF),2,1,0.7134145250332119
+dorn_python_028,Dorn,python,Voting ensemble (LR+NB+RF),2,1,0.3927660625599496
+dorn_python_029,Dorn,python,Voting ensemble (LR+NB+RF),1,0,0.5655521160016944
+dorn_python_003,Dorn,python,Voting ensemble (LR+NB+RF),0,0,0.08263575687010792
+dorn_python_030,Dorn,python,Voting ensemble (LR+NB+RF),0,1,0.44950096349427976
+dorn_python_031,Dorn,python,Voting ensemble (LR+NB+RF),3,0,0.13566220683184468
+dorn_python_032,Dorn,python,Voting ensemble (LR+NB+RF),2,1,0.401587920898219
+dorn_python_033,Dorn,python,Voting ensemble (LR+NB+RF),2,0,0.27747450771758214
+dorn_python_034,Dorn,python,Voting ensemble (LR+NB+RF),2,1,0.8038457461709817
+dorn_python_035,Dorn,python,Voting ensemble (LR+NB+RF),2,0,0.7495889545628134
+dorn_python_036,Dorn,python,Voting ensemble (LR+NB+RF),1,0,0.7573023117564879
+dorn_python_037,Dorn,python,Voting ensemble (LR+NB+RF),4,0,0.1297814778993162
+dorn_python_038,Dorn,python,Voting ensemble (LR+NB+RF),0,0,0.8228209526080182
+dorn_python_039,Dorn,python,Voting ensemble (LR+NB+RF),2,1,0.3312813326515624
+dorn_python_004,Dorn,python,Voting ensemble (LR+NB+RF),1,0,0.1496969867111596
+dorn_python_040,Dorn,python,Voting ensemble (LR+NB+RF),4,1,0.6334179741646464
+dorn_python_041,Dorn,python,Voting ensemble (LR+NB+RF),3,1,0.6292830032418898
+dorn_python_042,Dorn,python,Voting ensemble (LR+NB+RF),3,1,0.20990546243127128
+dorn_python_043,Dorn,python,Voting ensemble (LR+NB+RF),3,0,0.07589854883554205
+dorn_python_044,Dorn,python,Voting ensemble (LR+NB+RF),1,1,0.8455479559483384
+dorn_python_045,Dorn,python,Voting ensemble (LR+NB+RF),0,1,0.8608439298807916
+dorn_python_046,Dorn,python,Voting ensemble (LR+NB+RF),1,1,0.6774687872077334
+dorn_python_047,Dorn,python,Voting ensemble (LR+NB+RF),1,1,0.8959602725482957
+dorn_python_048,Dorn,python,Voting ensemble (LR+NB+RF),2,1,0.6413363764357319
+dorn_python_049,Dorn,python,Voting ensemble (LR+NB+RF),3,1,0.1987841402657254
+dorn_python_005,Dorn,python,Voting ensemble (LR+NB+RF),3,1,0.3309488454058971
+dorn_python_050,Dorn,python,Voting ensemble (LR+NB+RF),4,0,0.45321903769420263
+dorn_python_051,Dorn,python,Voting ensemble (LR+NB+RF),1,1,0.704229582968884
+dorn_python_052,Dorn,python,Voting ensemble (LR+NB+RF),4,1,0.4332080969196593
+dorn_python_053,Dorn,python,Voting ensemble (LR+NB+RF),3,1,0.24631733656603375
+dorn_python_054,Dorn,python,Voting ensemble (LR+NB+RF),1,0,0.5655521160016944
+dorn_python_055,Dorn,python,Voting ensemble (LR+NB+RF),3,1,0.8694181105140544
+dorn_python_056,Dorn,python,Voting ensemble (LR+NB+RF),1,0,0.30516695242017083
+dorn_python_057,Dorn,python,Voting ensemble (LR+NB+RF),0,1,0.7127648570544615
+dorn_python_058,Dorn,python,Voting ensemble (LR+NB+RF),0,1,0.6930916141395006
+dorn_python_059,Dorn,python,Voting ensemble (LR+NB+RF),0,1,0.6166974158585294
+dorn_python_006,Dorn,python,Voting ensemble (LR+NB+RF),3,0,0.8622177521607929
+dorn_python_060,Dorn,python,Voting ensemble (LR+NB+RF),4,1,0.7653296590548301
+dorn_python_061,Dorn,python,Voting ensemble (LR+NB+RF),1,1,0.8701411943793559
+dorn_python_062,Dorn,python,Voting ensemble (LR+NB+RF),3,0,0.09476784666546485
+dorn_python_063,Dorn,python,Voting ensemble (LR+NB+RF),0,1,0.8118748039207828
+dorn_python_064,Dorn,python,Voting ensemble (LR+NB+RF),0,0,0.27590037699004977
+dorn_python_065,Dorn,python,Voting ensemble (LR+NB+RF),0,0,0.3163358322613144
+dorn_python_066,Dorn,python,Voting ensemble (LR+NB+RF),1,1,0.6872080589083501
+dorn_python_067,Dorn,python,Voting ensemble (LR+NB+RF),3,1,0.7967583008091664
+dorn_python_068,Dorn,python,Voting ensemble (LR+NB+RF),2,1,0.8436757127725657
+dorn_python_069,Dorn,python,Voting ensemble (LR+NB+RF),3,1,0.7963669025395413
+dorn_python_007,Dorn,python,Voting ensemble (LR+NB+RF),3,0,0.8560898438097548
+dorn_python_070,Dorn,python,Voting ensemble (LR+NB+RF),0,0,0.811621068734607
+dorn_python_071,Dorn,python,Voting ensemble (LR+NB+RF),2,0,0.7904662714905627
+dorn_python_072,Dorn,python,Voting ensemble (LR+NB+RF),4,0,0.23528872958028835
+dorn_python_073,Dorn,python,Voting ensemble (LR+NB+RF),1,0,0.8213104729298809
+dorn_python_074,Dorn,python,Voting ensemble (LR+NB+RF),2,0,0.8401121892143716
+dorn_python_075,Dorn,python,Voting ensemble (LR+NB+RF),1,1,0.7855496395132797
+dorn_python_076,Dorn,python,Voting ensemble (LR+NB+RF),0,0,0.18438497442276292
+dorn_python_077,Dorn,python,Voting ensemble (LR+NB+RF),0,0,0.5224524927866057
+dorn_python_078,Dorn,python,Voting ensemble (LR+NB+RF),2,0,0.40968201095052853
+dorn_python_079,Dorn,python,Voting ensemble (LR+NB+RF),0,0,0.08316350336357237
+dorn_python_008,Dorn,python,Voting ensemble (LR+NB+RF),3,0,0.43532090387500727
+dorn_python_080,Dorn,python,Voting ensemble (LR+NB+RF),1,0,0.23918619854209824
+dorn_python_081,Dorn,python,Voting ensemble (LR+NB+RF),3,0,0.10736770703592328
+dorn_python_082,Dorn,python,Voting ensemble (LR+NB+RF),0,1,0.7836428268358975
+dorn_python_083,Dorn,python,Voting ensemble (LR+NB+RF),1,1,0.6428854880504213
+dorn_python_084,Dorn,python,Voting ensemble (LR+NB+RF),1,1,0.0573808244642515
+dorn_python_085,Dorn,python,Voting ensemble (LR+NB+RF),4,0,0.14539299129679598
+dorn_python_086,Dorn,python,Voting ensemble (LR+NB+RF),4,1,0.7400793007015087
+dorn_python_087,Dorn,python,Voting ensemble (LR+NB+RF),3,1,0.28533717517033924
+dorn_python_088,Dorn,python,Voting ensemble (LR+NB+RF),3,1,0.6521783425182235
+dorn_python_089,Dorn,python,Voting ensemble (LR+NB+RF),1,1,0.4372452180588484
+dorn_python_009,Dorn,python,Voting ensemble (LR+NB+RF),2,1,0.16861942864171575
+dorn_python_090,Dorn,python,Voting ensemble (LR+NB+RF),1,0,0.3701451614345137
+dorn_python_091,Dorn,python,Voting ensemble (LR+NB+RF),4,0,0.8047564804045555
+dorn_python_092,Dorn,python,Voting ensemble (LR+NB+RF),4,1,0.8536680462644584
+dorn_python_093,Dorn,python,Voting ensemble (LR+NB+RF),2,1,0.6780576682343403
+dorn_python_094,Dorn,python,Voting ensemble (LR+NB+RF),2,0,0.2465347900687542
+dorn_python_095,Dorn,python,Voting ensemble (LR+NB+RF),2,0,0.20643067423571715
+dorn_python_096,Dorn,python,Voting ensemble (LR+NB+RF),3,0,0.2771230013669397
+dorn_python_097,Dorn,python,Voting ensemble (LR+NB+RF),0,1,0.8118748039207828
+dorn_python_098,Dorn,python,Voting ensemble (LR+NB+RF),0,1,0.31176016349270225
+dorn_python_099,Dorn,python,Voting ensemble (LR+NB+RF),4,0,0.524040869979281
+sergeyuk_java_b10,Sergeyuk2024,java,Logistic Regression,3,0,0.3427314869730673
+sergeyuk_java_b11,Sergeyuk2024,java,Logistic Regression,4,0,0.5099387512573298
+sergeyuk_java_b12,Sergeyuk2024,java,Logistic Regression,1,1,0.41860581037643757
+sergeyuk_java_b13,Sergeyuk2024,java,Logistic Regression,3,1,0.35163243467953803
+sergeyuk_java_b14,Sergeyuk2024,java,Logistic Regression,3,0,0.31416624620000566
+sergeyuk_java_b15,Sergeyuk2024,java,Logistic Regression,1,0,0.8836528787773086
+sergeyuk_java_b17,Sergeyuk2024,java,Logistic Regression,1,1,0.7784190046930923
+sergeyuk_java_b19,Sergeyuk2024,java,Logistic Regression,0,0,0.30358174742172994
+sergeyuk_java_b2,Sergeyuk2024,java,Logistic Regression,2,0,0.5584456220033349
+sergeyuk_java_b20,Sergeyuk2024,java,Logistic Regression,2,0,0.22747166218123166
+sergeyuk_java_b24,Sergeyuk2024,java,Logistic Regression,4,0,0.9748745709392034
+sergeyuk_java_b25,Sergeyuk2024,java,Logistic Regression,0,1,0.44360853995305716
+sergeyuk_java_b30,Sergeyuk2024,java,Logistic Regression,3,0,0.11463203533113817
+sergeyuk_java_b34,Sergeyuk2024,java,Logistic Regression,4,1,0.4823336466890973
+sergeyuk_java_b35,Sergeyuk2024,java,Logistic Regression,2,1,0.3220939179264304
+sergeyuk_java_b37,Sergeyuk2024,java,Logistic Regression,1,0,0.5551757517724795
+sergeyuk_java_b39,Sergeyuk2024,java,Logistic Regression,2,1,0.21908153380131135
+sergeyuk_java_b4,Sergeyuk2024,java,Logistic Regression,3,1,0.32431213385492863
+sergeyuk_java_b40,Sergeyuk2024,java,Logistic Regression,1,1,0.781279458419004
+sergeyuk_java_b41,Sergeyuk2024,java,Logistic Regression,4,1,0.9309304832977228
+sergeyuk_java_b42,Sergeyuk2024,java,Logistic Regression,0,0,0.42576220018325844
+sergeyuk_java_b43,Sergeyuk2024,java,Logistic Regression,2,1,0.7589027354684686
+sergeyuk_java_b44,Sergeyuk2024,java,Logistic Regression,4,1,0.9319992969834798
+sergeyuk_java_b45,Sergeyuk2024,java,Logistic Regression,1,1,0.48233223284641363
+sergeyuk_java_b46,Sergeyuk2024,java,Logistic Regression,3,1,0.2008004299034875
+sergeyuk_java_b47,Sergeyuk2024,java,Logistic Regression,4,1,0.836138737705884
+sergeyuk_java_b5,Sergeyuk2024,java,Logistic Regression,4,1,0.5035907827726056
+sergeyuk_java_b52,Sergeyuk2024,java,Logistic Regression,1,1,0.5798592558814579
+sergeyuk_java_b54,Sergeyuk2024,java,Logistic Regression,1,1,0.43702619432892076
+sergeyuk_java_b55,Sergeyuk2024,java,Logistic Regression,4,1,0.01916938506082036
+sergeyuk_java_b56,Sergeyuk2024,java,Logistic Regression,1,1,0.46400223048317946
+sergeyuk_java_b57,Sergeyuk2024,java,Logistic Regression,3,0,0.408053908986567
+sergeyuk_java_b58,Sergeyuk2024,java,Logistic Regression,3,1,0.7599415780269244
+sergeyuk_java_b59,Sergeyuk2024,java,Logistic Regression,1,0,0.5000522389158009
+sergeyuk_java_b60,Sergeyuk2024,java,Logistic Regression,4,1,0.05469992437900637
+sergeyuk_java_b64,Sergeyuk2024,java,Logistic Regression,1,0,0.548506082610846
+sergeyuk_java_b7,Sergeyuk2024,java,Logistic Regression,2,1,0.392900659145789
+sergeyuk_java_b9,Sergeyuk2024,java,Logistic Regression,2,1,0.5516203961389019
+sergeyuk_java_e11,Sergeyuk2024,java,Logistic Regression,1,0,0.3195222043651508
+sergeyuk_java_e12,Sergeyuk2024,java,Logistic Regression,2,1,0.932108316562865
+sergeyuk_java_e13,Sergeyuk2024,java,Logistic Regression,0,0,0.5124402417495033
+sergeyuk_java_e14,Sergeyuk2024,java,Logistic Regression,0,0,0.5717537350902003
+sergeyuk_java_e17,Sergeyuk2024,java,Logistic Regression,0,1,0.6850137121776034
+sergeyuk_java_e18,Sergeyuk2024,java,Logistic Regression,2,0,0.9376954882544415
+sergeyuk_java_e19,Sergeyuk2024,java,Logistic Regression,0,1,0.2197235709812971
+sergeyuk_java_e2,Sergeyuk2024,java,Logistic Regression,0,0,0.5374828018808545
+sergeyuk_java_e20,Sergeyuk2024,java,Logistic Regression,4,0,0.0772005975657171
+sergeyuk_java_e24,Sergeyuk2024,java,Logistic Regression,0,1,0.43410667746729564
+sergeyuk_java_e25,Sergeyuk2024,java,Logistic Regression,0,0,0.32172832008069085
+sergeyuk_java_e34,Sergeyuk2024,java,Logistic Regression,1,1,0.45686734684063157
+sergeyuk_java_e35,Sergeyuk2024,java,Logistic Regression,1,1,0.59866673486612
+sergeyuk_java_e37,Sergeyuk2024,java,Logistic Regression,1,1,0.8582162130335077
+sergeyuk_java_e39,Sergeyuk2024,java,Logistic Regression,4,1,0.45236047359114273
+sergeyuk_java_e4,Sergeyuk2024,java,Logistic Regression,2,1,0.2187907965171977
+sergeyuk_java_e40,Sergeyuk2024,java,Logistic Regression,1,1,0.8502396899539739
+sergeyuk_java_e41,Sergeyuk2024,java,Logistic Regression,2,1,0.9242817311020637
+sergeyuk_java_e42,Sergeyuk2024,java,Logistic Regression,4,0,0.5585047209028761
+sergeyuk_java_e43,Sergeyuk2024,java,Logistic Regression,0,1,0.9022798254879756
+sergeyuk_java_e44,Sergeyuk2024,java,Logistic Regression,4,0,0.9533711104350675
+sergeyuk_java_e45,Sergeyuk2024,java,Logistic Regression,0,1,0.48372207771206677
+sergeyuk_java_e46,Sergeyuk2024,java,Logistic Regression,4,1,0.7851746595997915
+sergeyuk_java_e47,Sergeyuk2024,java,Logistic Regression,0,1,0.5719281249627731
+sergeyuk_java_e49,Sergeyuk2024,java,Logistic Regression,2,0,0.43137965633485387
+sergeyuk_java_e5,Sergeyuk2024,java,Logistic Regression,3,1,0.3133575079550317
+sergeyuk_java_e51,Sergeyuk2024,java,Logistic Regression,4,1,0.5797148925672557
+sergeyuk_java_e52,Sergeyuk2024,java,Logistic Regression,3,1,0.7575842447097709
+sergeyuk_java_e54,Sergeyuk2024,java,Logistic Regression,3,0,0.3717013866219227
+sergeyuk_java_e56,Sergeyuk2024,java,Logistic Regression,4,0,0.1832447445014325
+sergeyuk_java_e57,Sergeyuk2024,java,Logistic Regression,3,0,0.16890608586834682
+sergeyuk_java_e58,Sergeyuk2024,java,Logistic Regression,1,1,0.39600005622558454
+sergeyuk_java_e59,Sergeyuk2024,java,Logistic Regression,0,1,0.3508673140658865
+sergeyuk_java_e6,Sergeyuk2024,java,Logistic Regression,4,1,0.8496907312741897
+sergeyuk_java_e60,Sergeyuk2024,java,Logistic Regression,3,0,0.47231846638838726
+sergeyuk_java_e63,Sergeyuk2024,java,Logistic Regression,1,0,0.2573038032521881
+sergeyuk_java_e64,Sergeyuk2024,java,Logistic Regression,2,0,0.8813968213529355
+sergeyuk_java_e7,Sergeyuk2024,java,Logistic Regression,0,1,0.478759766729378
+sergeyuk_java_e8,Sergeyuk2024,java,Logistic Regression,2,0,0.406250221491819
+sergeyuk_java_e9,Sergeyuk2024,java,Logistic Regression,2,0,0.2405731885701443
+sergeyuk_java_i10,Sergeyuk2024,java,Logistic Regression,2,0,0.07043730238486165
+sergeyuk_java_i11,Sergeyuk2024,java,Logistic Regression,3,0,0.27094825984902904
+sergeyuk_java_i12,Sergeyuk2024,java,Logistic Regression,4,1,0.7421616640606974
+sergeyuk_java_i13,Sergeyuk2024,java,Logistic Regression,2,1,0.7850375788728107
+sergeyuk_java_i14,Sergeyuk2024,java,Logistic Regression,3,1,0.4102699933705301
+sergeyuk_java_i19,Sergeyuk2024,java,Logistic Regression,0,0,0.24622574950550932
+sergeyuk_java_i2,Sergeyuk2024,java,Logistic Regression,2,0,0.6735816693105248
+sergeyuk_java_i20,Sergeyuk2024,java,Logistic Regression,1,0,0.18662301255562494
+sergeyuk_java_i21,Sergeyuk2024,java,Logistic Regression,4,0,0.471341440814028
+sergeyuk_java_i25,Sergeyuk2024,java,Logistic Regression,2,0,0.35987897292827536
+sergeyuk_java_i3,Sergeyuk2024,java,Logistic Regression,3,0,0.7467141708959442
+sergeyuk_java_i34,Sergeyuk2024,java,Logistic Regression,3,1,0.45488959347704744
+sergeyuk_java_i35,Sergeyuk2024,java,Logistic Regression,4,1,0.5815070535177738
+sergeyuk_java_i36,Sergeyuk2024,java,Logistic Regression,1,0,0.7609980517421443
+sergeyuk_java_i37,Sergeyuk2024,java,Logistic Regression,0,1,0.940250213443701
+sergeyuk_java_i38,Sergeyuk2024,java,Logistic Regression,0,0,0.12396799301258933
+sergeyuk_java_i39,Sergeyuk2024,java,Logistic Regression,3,1,0.7707802960270156
+sergeyuk_java_i4,Sergeyuk2024,java,Logistic Regression,0,0,0.4152441412302441
+sergeyuk_java_i40,Sergeyuk2024,java,Logistic Regression,3,1,0.9100915396233524
+sergeyuk_java_i41,Sergeyuk2024,java,Logistic Regression,4,1,0.9453518716576421
+sergeyuk_java_i42,Sergeyuk2024,java,Logistic Regression,4,0,0.5166397106863946
+sergeyuk_java_i43,Sergeyuk2024,java,Logistic Regression,2,1,0.9809674556586095
+sergeyuk_java_i44,Sergeyuk2024,java,Logistic Regression,4,1,2.4553335619854627e-08
+sergeyuk_java_i45,Sergeyuk2024,java,Logistic Regression,0,1,0.5495085973407491
+sergeyuk_java_i46,Sergeyuk2024,java,Logistic Regression,3,1,0.1999898030981567
+sergeyuk_java_i47,Sergeyuk2024,java,Logistic Regression,3,1,0.7701220695342907
+sergeyuk_java_i49,Sergeyuk2024,java,Logistic Regression,1,0,0.3054570715571375
+sergeyuk_java_i5,Sergeyuk2024,java,Logistic Regression,0,1,0.5595065138861053
+sergeyuk_java_i51,Sergeyuk2024,java,Logistic Regression,2,1,0.1993819867989539
+sergeyuk_java_i52,Sergeyuk2024,java,Logistic Regression,2,0,0.45914958652186366
+sergeyuk_java_i53,Sergeyuk2024,java,Logistic Regression,3,0,0.5736269416177633
+sergeyuk_java_i54,Sergeyuk2024,java,Logistic Regression,0,1,0.49329761105527525
+sergeyuk_java_i56,Sergeyuk2024,java,Logistic Regression,0,0,0.4982314560428578
+sergeyuk_java_i57,Sergeyuk2024,java,Logistic Regression,4,0,0.2883189405386793
+sergeyuk_java_i58,Sergeyuk2024,java,Logistic Regression,1,0,0.23743898710909453
+sergeyuk_java_i59,Sergeyuk2024,java,Logistic Regression,1,0,0.20328594483425075
+sergeyuk_java_i6,Sergeyuk2024,java,Logistic Regression,0,1,0.8111458571633923
+sergeyuk_java_i60,Sergeyuk2024,java,Logistic Regression,3,1,0.06212627191424051
+sergeyuk_java_i64,Sergeyuk2024,java,Logistic Regression,2,0,0.399001018195005
+sergeyuk_java_i7,Sergeyuk2024,java,Logistic Regression,3,1,0.5250379837002722
+sergeyuk_java_i8,Sergeyuk2024,java,Logistic Regression,1,1,0.16086033483133344
+sergeyuk_java_i9,Sergeyuk2024,java,Logistic Regression,2,1,0.5757308891085798
+sergeyuk_java_b10,Sergeyuk2024,java,Naive Bayes,3,0,3.0701025832930694e-05
+sergeyuk_java_b11,Sergeyuk2024,java,Naive Bayes,4,0,0.5841928771586478
+sergeyuk_java_b12,Sergeyuk2024,java,Naive Bayes,1,1,3.5783762205750727e-06
+sergeyuk_java_b13,Sergeyuk2024,java,Naive Bayes,3,1,3.0087865024434083e-05
+sergeyuk_java_b14,Sergeyuk2024,java,Naive Bayes,3,0,0.0024488783929455683
+sergeyuk_java_b15,Sergeyuk2024,java,Naive Bayes,1,0,0.9993604061220603
+sergeyuk_java_b17,Sergeyuk2024,java,Naive Bayes,1,1,0.0021488261197431194
+sergeyuk_java_b19,Sergeyuk2024,java,Naive Bayes,0,0,6.320974520272528e-05
+sergeyuk_java_b2,Sergeyuk2024,java,Naive Bayes,2,0,0.0026774851202022694
+sergeyuk_java_b20,Sergeyuk2024,java,Naive Bayes,2,0,1.3049957501979432e-05
+sergeyuk_java_b24,Sergeyuk2024,java,Naive Bayes,4,0,0.2632551154642741
+sergeyuk_java_b25,Sergeyuk2024,java,Naive Bayes,0,1,0.0005053809328247454
+sergeyuk_java_b30,Sergeyuk2024,java,Naive Bayes,3,0,0.07093001584227625
+sergeyuk_java_b34,Sergeyuk2024,java,Naive Bayes,4,1,0.9686931488628745
+sergeyuk_java_b35,Sergeyuk2024,java,Naive Bayes,2,1,0.00033574430360319756
+sergeyuk_java_b37,Sergeyuk2024,java,Naive Bayes,1,0,1.0
+sergeyuk_java_b39,Sergeyuk2024,java,Naive Bayes,2,1,6.047836838297913e-06
+sergeyuk_java_b4,Sergeyuk2024,java,Naive Bayes,3,1,0.0024198680015091365
+sergeyuk_java_b40,Sergeyuk2024,java,Naive Bayes,1,1,0.9975053397032508
+sergeyuk_java_b41,Sergeyuk2024,java,Naive Bayes,4,1,0.9999914036589891
+sergeyuk_java_b42,Sergeyuk2024,java,Naive Bayes,0,0,0.002359848322022852
+sergeyuk_java_b43,Sergeyuk2024,java,Naive Bayes,2,1,0.9999999999999574
+sergeyuk_java_b44,Sergeyuk2024,java,Naive Bayes,4,1,0.9999702045603867
+sergeyuk_java_b45,Sergeyuk2024,java,Naive Bayes,1,1,0.9999997400542124
+sergeyuk_java_b46,Sergeyuk2024,java,Naive Bayes,3,1,0.00018649077407313254
+sergeyuk_java_b47,Sergeyuk2024,java,Naive Bayes,4,1,0.9999985927451743
+sergeyuk_java_b5,Sergeyuk2024,java,Naive Bayes,4,1,0.6420855354246517
+sergeyuk_java_b52,Sergeyuk2024,java,Naive Bayes,1,1,0.2829337518243452
+sergeyuk_java_b54,Sergeyuk2024,java,Naive Bayes,1,1,3.3905560492375665e-05
+sergeyuk_java_b55,Sergeyuk2024,java,Naive Bayes,4,1,0.3295864663586579
+sergeyuk_java_b56,Sergeyuk2024,java,Naive Bayes,1,1,2.926539043507066e-06
+sergeyuk_java_b57,Sergeyuk2024,java,Naive Bayes,3,0,2.194176644134389e-06
+sergeyuk_java_b58,Sergeyuk2024,java,Naive Bayes,3,1,0.0009126394555655689
+sergeyuk_java_b59,Sergeyuk2024,java,Naive Bayes,1,0,5.181591863854873e-06
+sergeyuk_java_b60,Sergeyuk2024,java,Naive Bayes,4,1,0.9992985570662596
+sergeyuk_java_b64,Sergeyuk2024,java,Naive Bayes,1,0,2.4932821820548782e-05
+sergeyuk_java_b7,Sergeyuk2024,java,Naive Bayes,2,1,6.16808224674555e-06
+sergeyuk_java_b9,Sergeyuk2024,java,Naive Bayes,2,1,0.012265707793013727
+sergeyuk_java_e11,Sergeyuk2024,java,Naive Bayes,1,0,0.0005001554139323312
+sergeyuk_java_e12,Sergeyuk2024,java,Naive Bayes,2,1,0.23114446885485698
+sergeyuk_java_e13,Sergeyuk2024,java,Naive Bayes,0,0,0.0211562300322949
+sergeyuk_java_e14,Sergeyuk2024,java,Naive Bayes,0,0,0.0588227406942378
+sergeyuk_java_e17,Sergeyuk2024,java,Naive Bayes,0,1,0.0036051924839871985
+sergeyuk_java_e18,Sergeyuk2024,java,Naive Bayes,2,0,0.009396005257166126
+sergeyuk_java_e19,Sergeyuk2024,java,Naive Bayes,0,1,1.1198919378202902e-05
+sergeyuk_java_e2,Sergeyuk2024,java,Naive Bayes,0,0,0.002971834259715738
+sergeyuk_java_e20,Sergeyuk2024,java,Naive Bayes,4,0,0.033577612283529186
+sergeyuk_java_e24,Sergeyuk2024,java,Naive Bayes,0,1,6.895842422319239e-12
+sergeyuk_java_e25,Sergeyuk2024,java,Naive Bayes,0,0,0.055886686931719796
+sergeyuk_java_e34,Sergeyuk2024,java,Naive Bayes,1,1,0.008399287996579274
+sergeyuk_java_e35,Sergeyuk2024,java,Naive Bayes,1,1,0.0007825552189909829
+sergeyuk_java_e37,Sergeyuk2024,java,Naive Bayes,1,1,0.999818186390694
+sergeyuk_java_e39,Sergeyuk2024,java,Naive Bayes,4,1,0.10417794691845363
+sergeyuk_java_e4,Sergeyuk2024,java,Naive Bayes,2,1,0.0013580056627496833
+sergeyuk_java_e40,Sergeyuk2024,java,Naive Bayes,1,1,0.3101396046039802
+sergeyuk_java_e41,Sergeyuk2024,java,Naive Bayes,2,1,0.9998158891027958
+sergeyuk_java_e42,Sergeyuk2024,java,Naive Bayes,4,0,0.36229143179324697
+sergeyuk_java_e43,Sergeyuk2024,java,Naive Bayes,0,1,0.021079805827112004
+sergeyuk_java_e44,Sergeyuk2024,java,Naive Bayes,4,0,0.9998997023992287
+sergeyuk_java_e45,Sergeyuk2024,java,Naive Bayes,0,1,0.9938369660921096
+sergeyuk_java_e46,Sergeyuk2024,java,Naive Bayes,4,1,0.15632045338413614
+sergeyuk_java_e47,Sergeyuk2024,java,Naive Bayes,0,1,0.0009160893535958642
+sergeyuk_java_e49,Sergeyuk2024,java,Naive Bayes,2,0,0.045098717436913904
+sergeyuk_java_e5,Sergeyuk2024,java,Naive Bayes,3,1,0.0003611284667703779
+sergeyuk_java_e51,Sergeyuk2024,java,Naive Bayes,4,1,0.45164771412407306
+sergeyuk_java_e52,Sergeyuk2024,java,Naive Bayes,3,1,0.20341248222850494
+sergeyuk_java_e54,Sergeyuk2024,java,Naive Bayes,3,0,9.01230778387171e-06
+sergeyuk_java_e56,Sergeyuk2024,java,Naive Bayes,4,0,0.009022759495191969
+sergeyuk_java_e57,Sergeyuk2024,java,Naive Bayes,3,0,2.2046275204263158e-05
+sergeyuk_java_e58,Sergeyuk2024,java,Naive Bayes,1,1,0.007660152086401483
+sergeyuk_java_e59,Sergeyuk2024,java,Naive Bayes,0,1,6.012637887612206e-10
+sergeyuk_java_e6,Sergeyuk2024,java,Naive Bayes,4,1,0.7765460433258325
+sergeyuk_java_e60,Sergeyuk2024,java,Naive Bayes,3,0,3.8823808631356346e-06
+sergeyuk_java_e63,Sergeyuk2024,java,Naive Bayes,1,0,4.362906067758357e-06
+sergeyuk_java_e64,Sergeyuk2024,java,Naive Bayes,2,0,0.0013983331649931212
+sergeyuk_java_e7,Sergeyuk2024,java,Naive Bayes,0,1,0.0004820401215765743
+sergeyuk_java_e8,Sergeyuk2024,java,Naive Bayes,2,0,0.9999988156863872
+sergeyuk_java_e9,Sergeyuk2024,java,Naive Bayes,2,0,0.0001415966115725882
+sergeyuk_java_i10,Sergeyuk2024,java,Naive Bayes,2,0,4.6380811950936764e-08
+sergeyuk_java_i11,Sergeyuk2024,java,Naive Bayes,3,0,0.00010789186027074548
+sergeyuk_java_i12,Sergeyuk2024,java,Naive Bayes,4,1,0.049656603673813964
+sergeyuk_java_i13,Sergeyuk2024,java,Naive Bayes,2,1,0.07694400913089526
+sergeyuk_java_i14,Sergeyuk2024,java,Naive Bayes,3,1,0.00011351864258110698
+sergeyuk_java_i19,Sergeyuk2024,java,Naive Bayes,0,0,6.973866909067631e-10
+sergeyuk_java_i2,Sergeyuk2024,java,Naive Bayes,2,0,0.0009667981914195146
+sergeyuk_java_i20,Sergeyuk2024,java,Naive Bayes,1,0,2.8910682043753622e-06
+sergeyuk_java_i21,Sergeyuk2024,java,Naive Bayes,4,0,0.020207625000670384
+sergeyuk_java_i25,Sergeyuk2024,java,Naive Bayes,2,0,0.006781165698161297
+sergeyuk_java_i3,Sergeyuk2024,java,Naive Bayes,3,0,0.00016137548720862382
+sergeyuk_java_i34,Sergeyuk2024,java,Naive Bayes,3,1,8.197860220920132e-05
+sergeyuk_java_i35,Sergeyuk2024,java,Naive Bayes,4,1,0.53089354204568
+sergeyuk_java_i36,Sergeyuk2024,java,Naive Bayes,1,0,0.8514303357646354
+sergeyuk_java_i37,Sergeyuk2024,java,Naive Bayes,0,1,0.9999999982108392
+sergeyuk_java_i38,Sergeyuk2024,java,Naive Bayes,0,0,2.058429898379577e-05
+sergeyuk_java_i39,Sergeyuk2024,java,Naive Bayes,3,1,0.010543526531915296
+sergeyuk_java_i4,Sergeyuk2024,java,Naive Bayes,0,0,0.1817358142768516
+sergeyuk_java_i40,Sergeyuk2024,java,Naive Bayes,3,1,0.9639675763370813
+sergeyuk_java_i41,Sergeyuk2024,java,Naive Bayes,4,1,0.9999950007295887
+sergeyuk_java_i42,Sergeyuk2024,java,Naive Bayes,4,0,0.2850706766290854
+sergeyuk_java_i43,Sergeyuk2024,java,Naive Bayes,2,1,0.9999999999577582
+sergeyuk_java_i44,Sergeyuk2024,java,Naive Bayes,4,1,0.0
+sergeyuk_java_i45,Sergeyuk2024,java,Naive Bayes,0,1,0.022027843562145218
+sergeyuk_java_i46,Sergeyuk2024,java,Naive Bayes,3,1,0.00015973518577568765
+sergeyuk_java_i47,Sergeyuk2024,java,Naive Bayes,3,1,0.9758069856153515
+sergeyuk_java_i49,Sergeyuk2024,java,Naive Bayes,1,0,3.8518989138878465e-06
+sergeyuk_java_i5,Sergeyuk2024,java,Naive Bayes,0,1,0.1662131926297689
+sergeyuk_java_i51,Sergeyuk2024,java,Naive Bayes,2,1,1.673920089503956e-05
+sergeyuk_java_i52,Sergeyuk2024,java,Naive Bayes,2,0,0.04325194074469491
+sergeyuk_java_i53,Sergeyuk2024,java,Naive Bayes,3,0,0.054998127405439794
+sergeyuk_java_i54,Sergeyuk2024,java,Naive Bayes,0,1,0.00010102442862043206
+sergeyuk_java_i56,Sergeyuk2024,java,Naive Bayes,0,0,0.0010553600471628012
+sergeyuk_java_i57,Sergeyuk2024,java,Naive Bayes,4,0,0.009824767788383678
+sergeyuk_java_i58,Sergeyuk2024,java,Naive Bayes,1,0,3.793341368919806e-05
+sergeyuk_java_i59,Sergeyuk2024,java,Naive Bayes,1,0,1.7657323523876505e-06
+sergeyuk_java_i6,Sergeyuk2024,java,Naive Bayes,0,1,0.002425652403708412
+sergeyuk_java_i60,Sergeyuk2024,java,Naive Bayes,3,1,0.9999999991536299
+sergeyuk_java_i64,Sergeyuk2024,java,Naive Bayes,2,0,3.290536627250638e-05
+sergeyuk_java_i7,Sergeyuk2024,java,Naive Bayes,3,1,1.6188374204077218e-05
+sergeyuk_java_i8,Sergeyuk2024,java,Naive Bayes,1,1,0.0019323763693869169
+sergeyuk_java_i9,Sergeyuk2024,java,Naive Bayes,2,1,0.0027190783876856186
+sergeyuk_java_b10,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",3,0,0.39645827547982937
+sergeyuk_java_b11,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",4,0,0.5568654861535938
+sergeyuk_java_b12,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",1,1,0.4787633433090517
+sergeyuk_java_b13,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",3,1,0.41498499099167657
+sergeyuk_java_b14,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",3,0,0.3695388625336863
+sergeyuk_java_b15,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",1,0,0.9068073976769231
+sergeyuk_java_b17,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",1,1,0.8273603550243955
+sergeyuk_java_b19,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",0,0,0.3583023054371013
+sergeyuk_java_b2,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",2,0,0.626563170805518
+sergeyuk_java_b20,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",2,0,0.27731486702629515
+sergeyuk_java_b24,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",4,0,0.975940126761462
+sergeyuk_java_b25,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",0,1,0.4884239972211264
+sergeyuk_java_b30,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",3,0,0.14546294656604153
+sergeyuk_java_b34,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",4,1,0.5251401226375101
+sergeyuk_java_b35,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",2,1,0.3968546501042267
+sergeyuk_java_b37,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",1,0,0.6188356417884959
+sergeyuk_java_b39,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",2,1,0.2825267261718608
+sergeyuk_java_b4,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",3,1,0.3799372112092733
+sergeyuk_java_b40,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",1,1,0.831057801938642
+sergeyuk_java_b41,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",4,1,0.9439504698426333
+sergeyuk_java_b42,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",0,0,0.4850425224221866
+sergeyuk_java_b43,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",2,1,0.8249402211293144
+sergeyuk_java_b44,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",4,1,0.9448049526660252
+sergeyuk_java_b45,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",1,1,0.5521725762214237
+sergeyuk_java_b46,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",3,1,0.24653839149580128
+sergeyuk_java_b47,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",4,1,0.8599757587670788
+sergeyuk_java_b5,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",4,1,0.5498838733495478
+sergeyuk_java_b52,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",1,1,0.653291190173847
+sergeyuk_java_b54,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",1,1,0.5110430959337182
+sergeyuk_java_b55,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",4,1,0.02180160739255747
+sergeyuk_java_b56,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",1,1,0.5329055944580279
+sergeyuk_java_b57,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",3,0,0.4651978697447284
+sergeyuk_java_b58,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",3,1,0.7974866384120409
+sergeyuk_java_b59,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",1,0,0.5772340436353581
+sergeyuk_java_b60,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",4,1,0.06526995592845784
+sergeyuk_java_b64,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",1,0,0.6145462631640354
+sergeyuk_java_b7,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",2,1,0.47018260772497966
+sergeyuk_java_b9,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",2,1,0.6320300394873066
+sergeyuk_java_e11,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",1,0,0.3807230633152027
+sergeyuk_java_e12,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",2,1,0.9477223558788493
+sergeyuk_java_e13,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",0,0,0.5717542105723138
+sergeyuk_java_e14,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",0,0,0.6200707062227594
+sergeyuk_java_e17,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",0,1,0.7380054423791899
+sergeyuk_java_e18,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",2,0,0.9493379736779873
+sergeyuk_java_e19,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",0,1,0.2745105827797392
+sergeyuk_java_e2,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",0,0,0.5899589845082395
+sergeyuk_java_e20,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",4,0,0.09159535800246241
+sergeyuk_java_e24,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",0,1,0.4997111767960434
+sergeyuk_java_e25,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",0,0,0.3694217775656075
+sergeyuk_java_e34,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",1,1,0.5271117847328766
+sergeyuk_java_e35,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",1,1,0.6810359714405825
+sergeyuk_java_e37,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",1,1,0.8935726060214003
+sergeyuk_java_e39,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",4,1,0.5056808197118472
+sergeyuk_java_e4,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",2,1,0.2785199463679919
+sergeyuk_java_e40,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",1,1,0.8863011366972802
+sergeyuk_java_e41,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",2,1,0.9466666138421491
+sergeyuk_java_e42,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",4,0,0.6058666962885466
+sergeyuk_java_e43,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",0,1,0.9286289888222492
+sergeyuk_java_e44,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",4,0,0.9626644137134586
+sergeyuk_java_e45,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",0,1,0.537093062524026
+sergeyuk_java_e46,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",4,1,0.8072649575193847
+sergeyuk_java_e47,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",0,1,0.6401911829961703
+sergeyuk_java_e49,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",2,0,0.5296427219821868
+sergeyuk_java_e5,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",3,1,0.3675167288305161
+sergeyuk_java_e51,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",4,1,0.6238816949326634
+sergeyuk_java_e52,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",3,1,0.7944100184349546
+sergeyuk_java_e54,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",3,0,0.4339606861399907
+sergeyuk_java_e56,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",4,0,0.21692104047948227
+sergeyuk_java_e57,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",3,0,0.2021222867576748
+sergeyuk_java_e58,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",1,1,0.46888072976667217
+sergeyuk_java_e59,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",0,1,0.4139995545041518
+sergeyuk_java_e6,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",4,1,0.8723443836048707
+sergeyuk_java_e60,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",3,0,0.5312843945841141
+sergeyuk_java_e63,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",1,0,0.3312912480636236
+sergeyuk_java_e64,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",2,0,0.9021982914252445
+sergeyuk_java_e7,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",0,1,0.5393033283310424
+sergeyuk_java_e8,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",2,0,0.4963104448770553
+sergeyuk_java_e9,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",2,0,0.3087943985934999
+sergeyuk_java_i10,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",2,0,0.08868263506781965
+sergeyuk_java_i11,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",3,0,0.3253241825783634
+sergeyuk_java_i12,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",4,1,0.772452647257416
+sergeyuk_java_i13,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",2,1,0.832516434912594
+sergeyuk_java_i14,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",3,1,0.4741556998100556
+sergeyuk_java_i19,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",0,0,0.3027387991287012
+sergeyuk_java_i2,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",2,0,0.734117676379617
+sergeyuk_java_i20,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",1,0,0.23284696487062334
+sergeyuk_java_i21,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",4,0,0.5115655591860978
+sergeyuk_java_i25,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",2,0,0.44040403156780306
+sergeyuk_java_i3,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",3,0,0.7879303236194761
+sergeyuk_java_i34,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",3,1,0.5160762767647058
+sergeyuk_java_i35,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",4,1,0.6240372327643631
+sergeyuk_java_i36,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",1,0,0.8127323906444676
+sergeyuk_java_i37,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",0,1,0.9528361265135455
+sergeyuk_java_i38,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",0,0,0.15536024132148604
+sergeyuk_java_i39,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",3,1,0.8099817601961973
+sergeyuk_java_i4,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",0,0,0.46717765853259036
+sergeyuk_java_i40,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",3,1,0.9268664195647724
+sergeyuk_java_i41,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",4,1,0.9552954130197177
+sergeyuk_java_i42,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",4,0,0.5633746240596544
+sergeyuk_java_i43,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",2,1,0.9863725217916123
+sergeyuk_java_i44,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",4,1,9.234576856411534e-09
+sergeyuk_java_i45,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",0,1,0.5996329420264582
+sergeyuk_java_i46,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",3,1,0.24522572732826356
+sergeyuk_java_i47,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",3,1,0.807783620643515
+sergeyuk_java_i49,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",1,0,0.3654906510392663
+sergeyuk_java_i5,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",0,1,0.6180084989053032
+sergeyuk_java_i51,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",2,1,0.2560737388541028
+sergeyuk_java_i52,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",2,0,0.5395865276244288
+sergeyuk_java_i53,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",3,0,0.631526551722715
+sergeyuk_java_i54,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",0,1,0.5565951919040136
+sergeyuk_java_i56,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",0,0,0.5562611911448934
+sergeyuk_java_i57,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",4,0,0.35351641678157947
+sergeyuk_java_i58,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",1,0,0.28786665086629226
+sergeyuk_java_i59,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",1,0,0.25462138685203556
+sergeyuk_java_i6,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",0,1,0.8442457634741064
+sergeyuk_java_i60,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",3,1,0.08530160910166061
+sergeyuk_java_i64,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",2,0,0.47097808354008935
+sergeyuk_java_i7,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",3,1,0.5921156631994743
+sergeyuk_java_i8,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",1,1,0.19872581992043753
+sergeyuk_java_i9,Sergeyuk2024,java,"Scalabrino-LR (replicated, not official tool)",2,1,0.6509207652447077
+sergeyuk_java_b10,Sergeyuk2024,java,Multilayer Perceptron,3,0,0.9634883139210799
+sergeyuk_java_b11,Sergeyuk2024,java,Multilayer Perceptron,4,0,0.16978088201455316
+sergeyuk_java_b12,Sergeyuk2024,java,Multilayer Perceptron,1,1,0.07736900673452085
+sergeyuk_java_b13,Sergeyuk2024,java,Multilayer Perceptron,3,1,0.9865695206665747
+sergeyuk_java_b14,Sergeyuk2024,java,Multilayer Perceptron,3,0,0.9215099248360038
+sergeyuk_java_b15,Sergeyuk2024,java,Multilayer Perceptron,1,0,0.9999982076255468
+sergeyuk_java_b17,Sergeyuk2024,java,Multilayer Perceptron,1,1,0.9992856430449006
+sergeyuk_java_b19,Sergeyuk2024,java,Multilayer Perceptron,0,0,0.001825409270084819
+sergeyuk_java_b2,Sergeyuk2024,java,Multilayer Perceptron,2,0,0.0014309736837607324
+sergeyuk_java_b20,Sergeyuk2024,java,Multilayer Perceptron,2,0,0.0015279261642021328
+sergeyuk_java_b24,Sergeyuk2024,java,Multilayer Perceptron,4,0,0.9999319653212395
+sergeyuk_java_b25,Sergeyuk2024,java,Multilayer Perceptron,0,1,0.872635358166242
+sergeyuk_java_b30,Sergeyuk2024,java,Multilayer Perceptron,3,0,0.03823793939084
+sergeyuk_java_b34,Sergeyuk2024,java,Multilayer Perceptron,4,1,0.9714609565331163
+sergeyuk_java_b35,Sergeyuk2024,java,Multilayer Perceptron,2,1,0.43514404294753695
+sergeyuk_java_b37,Sergeyuk2024,java,Multilayer Perceptron,1,0,0.5519999991480878
+sergeyuk_java_b39,Sergeyuk2024,java,Multilayer Perceptron,2,1,0.6819892129307741
+sergeyuk_java_b4,Sergeyuk2024,java,Multilayer Perceptron,3,1,0.892334909354691
+sergeyuk_java_b40,Sergeyuk2024,java,Multilayer Perceptron,1,1,0.11853012390000327
+sergeyuk_java_b41,Sergeyuk2024,java,Multilayer Perceptron,4,1,0.9994283015945745
+sergeyuk_java_b42,Sergeyuk2024,java,Multilayer Perceptron,0,0,0.10398257332063726
+sergeyuk_java_b43,Sergeyuk2024,java,Multilayer Perceptron,2,1,0.9999960531198752
+sergeyuk_java_b44,Sergeyuk2024,java,Multilayer Perceptron,4,1,0.9994021424394326
+sergeyuk_java_b45,Sergeyuk2024,java,Multilayer Perceptron,1,1,0.8318835981531284
+sergeyuk_java_b46,Sergeyuk2024,java,Multilayer Perceptron,3,1,0.026892789566821635
+sergeyuk_java_b47,Sergeyuk2024,java,Multilayer Perceptron,4,1,0.9993558129554748
+sergeyuk_java_b5,Sergeyuk2024,java,Multilayer Perceptron,4,1,0.07897853359058501
+sergeyuk_java_b52,Sergeyuk2024,java,Multilayer Perceptron,1,1,0.7269456661213128
+sergeyuk_java_b54,Sergeyuk2024,java,Multilayer Perceptron,1,1,0.32528310832837637
+sergeyuk_java_b55,Sergeyuk2024,java,Multilayer Perceptron,4,1,0.002348136360500608
+sergeyuk_java_b56,Sergeyuk2024,java,Multilayer Perceptron,1,1,0.2075793575828424
+sergeyuk_java_b57,Sergeyuk2024,java,Multilayer Perceptron,3,0,0.00856441667045704
+sergeyuk_java_b58,Sergeyuk2024,java,Multilayer Perceptron,3,1,0.63973998923535
+sergeyuk_java_b59,Sergeyuk2024,java,Multilayer Perceptron,1,0,0.059148202181981094
+sergeyuk_java_b60,Sergeyuk2024,java,Multilayer Perceptron,4,1,0.001604759818845218
+sergeyuk_java_b64,Sergeyuk2024,java,Multilayer Perceptron,1,0,0.7230362700317162
+sergeyuk_java_b7,Sergeyuk2024,java,Multilayer Perceptron,2,1,0.01894686351370309
+sergeyuk_java_b9,Sergeyuk2024,java,Multilayer Perceptron,2,1,0.999779711076104
+sergeyuk_java_e11,Sergeyuk2024,java,Multilayer Perceptron,1,0,0.03824301894457794
+sergeyuk_java_e12,Sergeyuk2024,java,Multilayer Perceptron,2,1,0.9999692747774996
+sergeyuk_java_e13,Sergeyuk2024,java,Multilayer Perceptron,0,0,0.8781589029844558
+sergeyuk_java_e14,Sergeyuk2024,java,Multilayer Perceptron,0,0,0.9544241541464471
+sergeyuk_java_e17,Sergeyuk2024,java,Multilayer Perceptron,0,1,0.09997490692079092
+sergeyuk_java_e18,Sergeyuk2024,java,Multilayer Perceptron,2,0,0.9992900635346726
+sergeyuk_java_e19,Sergeyuk2024,java,Multilayer Perceptron,0,1,0.9992996274872575
+sergeyuk_java_e2,Sergeyuk2024,java,Multilayer Perceptron,0,0,0.5870009389526714
+sergeyuk_java_e20,Sergeyuk2024,java,Multilayer Perceptron,4,0,0.007708701534583561
+sergeyuk_java_e24,Sergeyuk2024,java,Multilayer Perceptron,0,1,0.0016253385361303923
+sergeyuk_java_e25,Sergeyuk2024,java,Multilayer Perceptron,0,0,0.0011719729842127708
+sergeyuk_java_e34,Sergeyuk2024,java,Multilayer Perceptron,1,1,0.9907448037855513
+sergeyuk_java_e35,Sergeyuk2024,java,Multilayer Perceptron,1,1,0.06089495501230068
+sergeyuk_java_e37,Sergeyuk2024,java,Multilayer Perceptron,1,1,0.9680219948682327
+sergeyuk_java_e39,Sergeyuk2024,java,Multilayer Perceptron,4,1,0.906587557523807
+sergeyuk_java_e4,Sergeyuk2024,java,Multilayer Perceptron,2,1,0.2185440073924622
+sergeyuk_java_e40,Sergeyuk2024,java,Multilayer Perceptron,1,1,0.921361999306799
+sergeyuk_java_e41,Sergeyuk2024,java,Multilayer Perceptron,2,1,0.9945133162168153
+sergeyuk_java_e42,Sergeyuk2024,java,Multilayer Perceptron,4,0,0.3311256256182487
+sergeyuk_java_e43,Sergeyuk2024,java,Multilayer Perceptron,0,1,0.019878358047328227
+sergeyuk_java_e44,Sergeyuk2024,java,Multilayer Perceptron,4,0,0.9422569366993425
+sergeyuk_java_e45,Sergeyuk2024,java,Multilayer Perceptron,0,1,0.9306708127601235
+sergeyuk_java_e46,Sergeyuk2024,java,Multilayer Perceptron,4,1,0.8322605459299176
+sergeyuk_java_e47,Sergeyuk2024,java,Multilayer Perceptron,0,1,0.718793248758307
+sergeyuk_java_e49,Sergeyuk2024,java,Multilayer Perceptron,2,0,0.72709249093523
+sergeyuk_java_e5,Sergeyuk2024,java,Multilayer Perceptron,3,1,0.9712249997018964
+sergeyuk_java_e51,Sergeyuk2024,java,Multilayer Perceptron,4,1,0.9997126310218621
+sergeyuk_java_e52,Sergeyuk2024,java,Multilayer Perceptron,3,1,0.9076151928000991
+sergeyuk_java_e54,Sergeyuk2024,java,Multilayer Perceptron,3,0,0.5358084518231364
+sergeyuk_java_e56,Sergeyuk2024,java,Multilayer Perceptron,4,0,0.06446263646199198
+sergeyuk_java_e57,Sergeyuk2024,java,Multilayer Perceptron,3,0,2.7550716868932267e-05
+sergeyuk_java_e58,Sergeyuk2024,java,Multilayer Perceptron,1,1,0.008227687577680474
+sergeyuk_java_e59,Sergeyuk2024,java,Multilayer Perceptron,0,1,1.2498181145034238e-05
+sergeyuk_java_e6,Sergeyuk2024,java,Multilayer Perceptron,4,1,0.9968009009878109
+sergeyuk_java_e60,Sergeyuk2024,java,Multilayer Perceptron,3,0,0.0012022206116710874
+sergeyuk_java_e63,Sergeyuk2024,java,Multilayer Perceptron,1,0,0.0004904425741314108
+sergeyuk_java_e64,Sergeyuk2024,java,Multilayer Perceptron,2,0,0.9948971293689004
+sergeyuk_java_e7,Sergeyuk2024,java,Multilayer Perceptron,0,1,0.7910444958087747
+sergeyuk_java_e8,Sergeyuk2024,java,Multilayer Perceptron,2,0,0.42854882776747666
+sergeyuk_java_e9,Sergeyuk2024,java,Multilayer Perceptron,2,0,0.8069462331661792
+sergeyuk_java_i10,Sergeyuk2024,java,Multilayer Perceptron,2,0,1.2618962384202665e-08
+sergeyuk_java_i11,Sergeyuk2024,java,Multilayer Perceptron,3,0,0.932256094981066
+sergeyuk_java_i12,Sergeyuk2024,java,Multilayer Perceptron,4,1,0.2753378488487624
+sergeyuk_java_i13,Sergeyuk2024,java,Multilayer Perceptron,2,1,0.9995549494853377
+sergeyuk_java_i14,Sergeyuk2024,java,Multilayer Perceptron,3,1,0.849704440570389
+sergeyuk_java_i19,Sergeyuk2024,java,Multilayer Perceptron,0,0,3.2582023180200984e-07
+sergeyuk_java_i2,Sergeyuk2024,java,Multilayer Perceptron,2,0,0.9326576921887658
+sergeyuk_java_i20,Sergeyuk2024,java,Multilayer Perceptron,1,0,0.00017023750178221891
+sergeyuk_java_i21,Sergeyuk2024,java,Multilayer Perceptron,4,0,0.0699568750877055
+sergeyuk_java_i25,Sergeyuk2024,java,Multilayer Perceptron,2,0,0.7403576684399585
+sergeyuk_java_i3,Sergeyuk2024,java,Multilayer Perceptron,3,0,0.9380426417538232
+sergeyuk_java_i34,Sergeyuk2024,java,Multilayer Perceptron,3,1,0.7934821040263051
+sergeyuk_java_i35,Sergeyuk2024,java,Multilayer Perceptron,4,1,0.8621573906375476
+sergeyuk_java_i36,Sergeyuk2024,java,Multilayer Perceptron,1,0,0.007026063801933974
+sergeyuk_java_i37,Sergeyuk2024,java,Multilayer Perceptron,0,1,0.9999834812289777
+sergeyuk_java_i38,Sergeyuk2024,java,Multilayer Perceptron,0,0,0.007040972817319069
+sergeyuk_java_i39,Sergeyuk2024,java,Multilayer Perceptron,3,1,0.4232512513037953
+sergeyuk_java_i4,Sergeyuk2024,java,Multilayer Perceptron,0,0,0.5787822617765859
+sergeyuk_java_i40,Sergeyuk2024,java,Multilayer Perceptron,3,1,0.9945952426501898
+sergeyuk_java_i41,Sergeyuk2024,java,Multilayer Perceptron,4,1,0.999910146046818
+sergeyuk_java_i42,Sergeyuk2024,java,Multilayer Perceptron,4,0,0.3554975557097081
+sergeyuk_java_i43,Sergeyuk2024,java,Multilayer Perceptron,2,1,0.9997729914790042
+sergeyuk_java_i44,Sergeyuk2024,java,Multilayer Perceptron,4,1,1.0
+sergeyuk_java_i45,Sergeyuk2024,java,Multilayer Perceptron,0,1,0.9835708747402532
+sergeyuk_java_i46,Sergeyuk2024,java,Multilayer Perceptron,3,1,0.022085776658196235
+sergeyuk_java_i47,Sergeyuk2024,java,Multilayer Perceptron,3,1,0.9451357734763505
+sergeyuk_java_i49,Sergeyuk2024,java,Multilayer Perceptron,1,0,0.00559394863553457
+sergeyuk_java_i5,Sergeyuk2024,java,Multilayer Perceptron,0,1,0.7404368604836326
+sergeyuk_java_i51,Sergeyuk2024,java,Multilayer Perceptron,2,1,0.27522300858545007
+sergeyuk_java_i52,Sergeyuk2024,java,Multilayer Perceptron,2,0,0.9990740653992956
+sergeyuk_java_i53,Sergeyuk2024,java,Multilayer Perceptron,3,0,0.9313241953955812
+sergeyuk_java_i54,Sergeyuk2024,java,Multilayer Perceptron,0,1,0.8340247511701373
+sergeyuk_java_i56,Sergeyuk2024,java,Multilayer Perceptron,0,0,0.41629657145192495
+sergeyuk_java_i57,Sergeyuk2024,java,Multilayer Perceptron,4,0,0.018439505657930403
+sergeyuk_java_i58,Sergeyuk2024,java,Multilayer Perceptron,1,0,0.00023507766243267448
+sergeyuk_java_i59,Sergeyuk2024,java,Multilayer Perceptron,1,0,0.001786136333416558
+sergeyuk_java_i6,Sergeyuk2024,java,Multilayer Perceptron,0,1,0.9997447045978436
+sergeyuk_java_i60,Sergeyuk2024,java,Multilayer Perceptron,3,1,0.10288036259453223
+sergeyuk_java_i64,Sergeyuk2024,java,Multilayer Perceptron,2,0,0.5917299564137658
+sergeyuk_java_i7,Sergeyuk2024,java,Multilayer Perceptron,3,1,0.8824614927802352
+sergeyuk_java_i8,Sergeyuk2024,java,Multilayer Perceptron,1,1,0.01946898825641835
+sergeyuk_java_i9,Sergeyuk2024,java,Multilayer Perceptron,2,1,0.9999931600253883
+sergeyuk_java_b10,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),3,0,0.19716147007370746
+sergeyuk_java_b11,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),4,0,0.47114175973654276
+sergeyuk_java_b12,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),1,1,0.2600867274678173
+sergeyuk_java_b13,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),3,1,0.23781343344078013
+sergeyuk_java_b14,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),3,0,0.3335568933828357
+sergeyuk_java_b15,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),1,0,0.7726750632204246
+sergeyuk_java_b17,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),1,1,0.5478374250857599
+sergeyuk_java_b19,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),0,0,0.19979435080167596
+sergeyuk_java_b2,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),2,0,0.29570770237451244
+sergeyuk_java_b20,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),2,0,0.09823564478698528
+sergeyuk_java_b24,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),4,0,0.5851014298593601
+sergeyuk_java_b25,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),0,1,0.3131583439989977
+sergeyuk_java_b30,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),3,0,0.2582376149414028
+sergeyuk_java_b34,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),4,1,0.7284533762951017
+sergeyuk_java_b35,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),2,1,0.2944024800026038
+sergeyuk_java_b37,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),1,0,0.7568628167283927
+sergeyuk_java_b39,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),2,1,0.2100000933502827
+sergeyuk_java_b4,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),3,1,0.28929955617436814
+sergeyuk_java_b40,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),1,1,0.8750949327074182
+sergeyuk_java_b41,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),4,1,0.936548036392978
+sergeyuk_java_b42,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),0,0,0.2871914764858874
+sergeyuk_java_b43,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),2,1,0.8487744567963537
+sergeyuk_java_b44,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),4,1,0.9338910684158567
+sergeyuk_java_b45,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),1,1,0.736110657633542
+sergeyuk_java_b46,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),3,1,0.1350511957814091
+sergeyuk_java_b47,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),4,1,0.8343570642949737
+sergeyuk_java_b5,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),4,1,0.5469062154131951
+sergeyuk_java_b52,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),1,1,0.44729475918235767
+sergeyuk_java_b54,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),1,1,0.2855200332964711
+sergeyuk_java_b55,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),4,1,0.241307506028715
+sergeyuk_java_b56,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),1,1,0.2714117719174605
+sergeyuk_java_b57,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),3,0,0.21735203438773706
+sergeyuk_java_b58,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),3,1,0.5133429402190312
+sergeyuk_java_b59,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),1,0,0.2991117327618142
+sergeyuk_java_b60,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),4,1,0.5263328271484219
+sergeyuk_java_b64,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),1,0,0.35243626440348147
+sergeyuk_java_b7,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),2,1,0.28941338685378964
+sergeyuk_java_b9,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),2,1,0.33389060607254334
+sergeyuk_java_e11,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),1,0,0.17762782363006477
+sergeyuk_java_e12,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),2,1,0.6589850554567009
+sergeyuk_java_e13,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),0,0,0.4538469720754142
+sergeyuk_java_e14,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),0,0,0.4537847511874053
+sergeyuk_java_e17,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),0,1,0.427937783035345
+sergeyuk_java_e18,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),2,0,0.4710675348742395
+sergeyuk_java_e19,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),0,1,0.19704121959652135
+sergeyuk_java_e2,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),0,0,0.45115154538019014
+sergeyuk_java_e20,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),4,0,0.08412977365345246
+sergeyuk_java_e24,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),0,1,0.21668106180356647
+sergeyuk_java_e25,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),0,0,0.25944309757556544
+sergeyuk_java_e34,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),1,1,0.3940042221944142
+sergeyuk_java_e35,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),1,1,0.27424235595429625
+sergeyuk_java_e37,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),1,1,0.920159614622882
+sergeyuk_java_e39,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),4,1,0.4089572512809765
+sergeyuk_java_e4,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),2,1,0.24952975945680786
+sergeyuk_java_e40,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),1,1,0.656536484429371
+sergeyuk_java_e41,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),2,1,0.9416489421846886
+sergeyuk_java_e42,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),4,0,0.4806780826447394
+sergeyuk_java_e43,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),0,1,0.5396516231367752
+sergeyuk_java_e44,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),4,0,0.9370532339077283
+sergeyuk_java_e45,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),0,1,0.7044059246543021
+sergeyuk_java_e46,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),4,1,0.5503414045043428
+sergeyuk_java_e47,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),0,1,0.3185538915446097
+sergeyuk_java_e49,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),2,0,0.2528102515747162
+sergeyuk_java_e5,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),3,1,0.33446838145276997
+sergeyuk_java_e51,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),4,1,0.6064727207489614
+sergeyuk_java_e52,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),3,1,0.5708825068630232
+sergeyuk_java_e54,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),3,0,0.25166272556916147
+sergeyuk_java_e56,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),4,0,0.14526509392480072
+sergeyuk_java_e57,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),3,0,0.1061982662700726
+sergeyuk_java_e58,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),1,1,0.28914864086590014
+sergeyuk_java_e59,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),0,1,0.25682614192608716
+sergeyuk_java_e6,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),4,1,0.7887641100518593
+sergeyuk_java_e60,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),3,0,0.2783481903304909
+sergeyuk_java_e63,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),1,0,0.15178261623264613
+sergeyuk_java_e64,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),2,0,0.46509838483930954
+sergeyuk_java_e7,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),0,1,0.36683986154291076
+sergeyuk_java_e8,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),2,0,0.6853554991652221
+sergeyuk_java_e9,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),2,0,0.17555572204469927
+sergeyuk_java_i10,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),2,0,0.0517568940330023
+sergeyuk_java_i11,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),3,0,0.22125945797717403
+sergeyuk_java_i12,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),4,1,0.4122859834247313
+sergeyuk_java_i13,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),2,1,0.5256605293345686
+sergeyuk_java_i14,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),3,1,0.23975746696733338
+sergeyuk_java_i19,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),0,0,0.13621546170784363
+sergeyuk_java_i2,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),2,0,0.4899897008075264
+sergeyuk_java_i20,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),1,0,0.09185678268942458
+sergeyuk_java_i21,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),4,0,0.24293699019220105
+sergeyuk_java_i25,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),2,0,0.33559835308711916
+sergeyuk_java_i3,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),3,0,0.42368073768327313
+sergeyuk_java_i34,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),3,1,0.3336664499523448
+sergeyuk_java_i35,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),4,1,0.5900382937592465
+sergeyuk_java_i36,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),1,0,0.7771983513911488
+sergeyuk_java_i37,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),0,1,0.8971759964774394
+sergeyuk_java_i38,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),0,0,0.07637714481814344
+sergeyuk_java_i39,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),3,1,0.4303486815937177
+sergeyuk_java_i4,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),0,0,0.45510442961347647
+sergeyuk_java_i40,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),3,1,0.8434826682831075
+sergeyuk_java_i41,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),4,1,0.8887232079033275
+sergeyuk_java_i42,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),4,0,0.3880145735496045
+sergeyuk_java_i43,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),2,1,0.9207589931419639
+sergeyuk_java_i44,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),4,1,0.22915080183523887
+sergeyuk_java_i45,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),0,1,0.405812411517896
+sergeyuk_java_i46,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),3,1,0.1452350312798293
+sergeyuk_java_i47,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),3,1,0.8809684152086109
+sergeyuk_java_i49,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),1,0,0.20613776813614412
+sergeyuk_java_i5,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),0,1,0.40740656883862475
+sergeyuk_java_i51,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),2,1,0.22990936369307136
+sergeyuk_java_i52,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),2,0,0.4340147948031386
+sergeyuk_java_i53,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),3,0,0.3585020071347184
+sergeyuk_java_i54,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),0,1,0.3584476933094467
+sergeyuk_java_i56,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),0,0,0.371868092135827
+sergeyuk_java_i57,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),4,0,0.18773308796087282
+sergeyuk_java_i58,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),1,0,0.17910870895733
+sergeyuk_java_i59,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),1,0,0.13828108870738623
+sergeyuk_java_i6,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),0,1,0.4740979105964411
+sergeyuk_java_i60,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),3,1,0.5476346829485494
+sergeyuk_java_i64,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),2,0,0.2442361755786269
+sergeyuk_java_i7,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),3,1,0.35786990921001066
+sergeyuk_java_i8,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),1,1,0.2012298455325153
+sergeyuk_java_i9,Sergeyuk2024,java,Voting ensemble (LR+NB+RF),2,1,0.3774118939273266

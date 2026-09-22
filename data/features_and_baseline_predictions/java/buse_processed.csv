@@ -1,0 +1,859 @@
+rq0_id,snippet_id,dataset_name,raw_code,human_mean_score,human_score_z_within_dataset,human_score_minmax_within_dataset,binary_label_median,binary_label_tertile_strict,tertiary_label,num_annotators,language,LOC,cyclomatic_complexity,min_score,max_score,code_type,exact_code_hash,formatting_normalized_hash,exact_duplicate_group_id,formatting_duplicate_group_id,duplicate_group_id,source_metadata,source_key,source_path,source_row_index
+rq0_0000,1,Buse,"
+			Object ret = body.eval(callstack, interpreter);
+
+			boolean breakout = false;
+			if(ret instanceof ReturnControl)
+			{
+				switch(((ReturnControl)ret).kind )
+				{
+					case RETURN:
+						return ret;
+",2.9917355371900825,-0.4688692505494623,0.46052631578947356,unreadable,discard,mid,,java,8,1,1.0,5.0,Code,1e506b49375e82c2396c0548ac8cefbae24181d640935517daac351f0440a388,82cde93e7c11adebdcfd7f47bfebe2a84d5fde769570ca905cc2d38c4534a4c8,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 0, ""original_snippet_id"": ""1""}",,,0
+rq0_0001,2,Buse,"
+        if (actionList.size() == 1) {
+            ActionMenu menu = actionList.get(0);
+
+            if (menu.getSubItems().length == 0) {
+                return null;
+            }
+
+            if (menu.getSubItems().length == 1) {
+                Action action = menu.getSubItems()[0].getAction();
+
+",3.743801652892562,0.7294408425569501,0.7598684210526316,readable,readable,high,,java,7,1,1.0,5.0,Code,a7168b6e2c4c47e3ebcb777c683618ee6782039ff6a255b97cf7f139717439ad,a73b1ccfa8a0a0cf99bba31518a7179342d24ea788cba14ff2fbc41239e4e267,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 1, ""original_snippet_id"": ""2""}",,,1
+rq0_0002,3,Buse,"		private String compactString(String source) {
+			String result= DELTA_START + source.substring(fPrefix, source.length() - fSuffix + 1) + DELTA_END;
+			if (fPrefix > 0)
+				result= computeCommonPrefix() + result;
+			if (fSuffix > 0)
+				result= result + computeCommonSuffix();
+",2.6942148760330578,-0.9429259906794712,0.34210526315789463,unreadable,unreadable,low,,java,6,1,1.0,5.0,Code,813130b91d9c5a31ac7ea7aed296e7c67e93acad042daeb5444d41bb4baf704e,6e3f02166ee705b174ad4601a1c3102b5316ad65d919aaf2f15423191c8b9d09,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 2, ""original_snippet_id"": ""3""}",,,2
+rq0_0003,4,Buse,"    /**
+     * Constructor, with a argument reference to the PUBLIC User Object which
+     * is null if this is the SYS or PUBLIC user.
+     *
+     * The dependency upon a GranteeManager is undesirable.  Hopefully we
+     * can get rid of this dependency with an IOC or Listener re-design.
+     */
+    Grantee(String name, Grantee inGrantee,
+            GranteeManager man) throws HsqlException {
+
+        rightsMap      = new IntValueHashMap();
+        granteeName    = name;
+        granteeManager = man;}
+",4.033057851239669,1.1903293399055694,0.8749999999999999,readable,readable,high,,java,5,1,1.0,5.0,Code,b4b7fc5cd3dbd13416d7d8578f9b1531d894e343132cc0694fdeea8879536975,54d88a7ce3bca1a4b994b389da4a34760686088ec308eebacaabe8334f1cb723,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 3, ""original_snippet_id"": ""4""}",,,3
+rq0_0004,5,Buse,"    /**
+     * Quits the application without any questions.
+     */
+    public void quit() {
+        getConnectController().quitGame(true);
+        if (!windowed) {
+            gd.setFullScreenWindow(null);
+        }
+        System.exit(0);}
+",4.190082644628099,1.4405259527519627,0.9374999999999998,readable,readable,high,,java,6,2,2.0,5.0,Code,05e77263230d1f98c02ce3b368094afa3704883ca5d55bff5720767f551afc84,cf5ad9f5f15e60b061567fdaf2e4c92c16ac2e4e8efaca8a07eb1e957fab5397,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 4, ""original_snippet_id"": ""5""}",,,4
+rq0_0005,6,Buse,"    xsp = jj_scanpos;
+    if (jj_scan_token(100)) {
+    jj_scanpos = xsp;
+    if (jj_scan_token(101)) return true;
+",2.190082644628099,-1.7461888003442085,0.1414473684210526,unreadable,unreadable,low,,java,4,1,1.0,5.0,Code,fb5047192497b14bb46afab3c1d21d7591e51ce49a6254317cbcbc4cc8ffaab2,f422917e8e44c8114d5f549be01df8d1a12927d6bbe419eab8272ea5272d9663,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 5, ""original_snippet_id"": ""6""}",,,5
+rq0_0006,7,Buse,"  /**
+   * Attention: DO NOT USE THIS!
+   * Under Os/2 it has some problems with calculating the real Date!
+   * 
+   * @deprecated
+   */
+  public Date(int daysSince1970) {
+
+    long l = (long) daysSince1970 * 24 * 60 * 60 * 1000;
+    java.util.Date d = new java.util.Date(l);
+    Calendar cal = Calendar.getInstance();}
+",3.628099173553719,0.545085443617502,0.7138157894736842,readable,discard,mid,,java,4,1,1.0,5.0,Code,436d5b78b4d5d807d4a2314a1a4d8ea54698c2213eadc42e5e23d3f0fbfd1c03,e22b430682bdf127a954e6f2030a7d7f850e82b5f2ed61b0c4cd939dcabeb010,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 6, ""original_snippet_id"": ""7""}",,,6
+rq0_0007,8,Buse,"	public TestMethodRunner(Object test, Method method, RunNotifier notifier, Description description) {
+		super(test.getClass(), Before.class, After.class, test);
+		fTest= test;
+		fMethod= method;
+",2.8595041322314048,-0.6795611350516886,0.40789473684210514,unreadable,unreadable,low,,java,4,1,1.0,5.0,Code,4e67183c67f98fbe104e89208409b8f663a5fb966b298a4c1165e1cfb3b62f6d,5ff7e663c59ab17a1c7de6572b0c10f09c74c1bcaf06a6e3204fe49c1938c19a,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 7, ""original_snippet_id"": ""8""}",,,7
+rq0_0008,9,Buse,"    /**
+     * Returns a vector containing the URI (type + path) for all the databases.
+     */
+    public static Vector getDatabaseURIs() {
+
+        Vector   v  = new Vector();
+        Iterator it = databaseIDMap.values().iterator();
+
+        while (it.hasNext()) {
+            Database db = (Database) it.next();
+",4.132231404958677,1.3483482532822386,0.9144736842105261,readable,readable,high,,java,5,1,2.0,5.0,Code,9be0a4d9c7f2ea6f05f77830b1c4b532eacab50dfb6afa889538b2240d4ad496,0b248475c7c07396848ed88e59bc7c552c0ebfb8c8917278ace7ddd359503b5b,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 8, ""original_snippet_id"": ""9""}",,,8
+rq0_0009,10,Buse,"    private void moveUnit(KeyEvent e) {
+        if (!parent.isMapboardActionsEnabled()) {
+            return;
+        }
+        
+        switch (e.getKeyCode()) {
+        case KeyEvent.VK_ESCAPE:
+            // main menu
+            break;
+        case KeyEvent.VK_NUMPAD1:
+        case KeyEvent.VK_END:
+            inGameController.moveActiveUnit(Map.SW);
+",3.347107438016529,0.0973651890502713,0.6019736842105263,unreadable,discard,mid,,java,10,1,1.0,5.0,Code,d69070d2ec8de4f0a7d9e396ad793c2d4ee1c4eae94a408fbc194714b4748016,e5d28e81804ea9b533870e1c3b8c0d327fbbe764d23bb108fe5dab7509cca325,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 9, ""original_snippet_id"": ""10""}",,,9
+rq0_0010,11,Buse,"
+		if ( clas == null )
+			throw new ClassNotFoundException(
+				""Class: "" + value+ "" not found in namespace"");
+
+		asClass = clas;
+		return asClass;
+",3.644628099173554,0.5714219291802802,0.7203947368421052,readable,discard,mid,,java,5,1,1.0,5.0,Code,6b3d93fd2013ca1f0c27d60b552da9e7a93522877624a085699d816a8f6cde86,fd25de2c0a2922862da11dcfa1f063863146f84328625f0675e0fed428fa1f8f,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 10, ""original_snippet_id"": ""11""}",,,10
+rq0_0011,12,Buse,"
+        
+        btPanel.add(cancel);
+
+        getRootPane().setDefaultButton(ok);
+        
+        panel.add(btPanel, BorderLayout.SOUTH);
+",3.5371900826446283,0.4002347730222216,0.6776315789473685,readable,discard,mid,,java,3,1,1.0,5.0,Code,75a54cf06f0f4eb69d8822c9183e36cc089c62f49778280ebcf8998b5ccefb9a,2718f680703449361f8bb42bd77901ed2f9ab1794849254a475e056e427ffdec,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 11, ""original_snippet_id"": ""12""}",,,11
+rq0_0012,14,Buse,"    Object removeName(String name) throws HsqlException {
+
+        Object owner = nameList.remove(name);
+
+        if (owner == null) {
+
+            // should contain name
+            throw Trace.error(Trace.GENERAL_ERROR);
+        }
+
+        return owner;
+",4.049586776859504,1.2166658254683484,0.8815789473684211,readable,readable,high,,java,6,1,2.0,5.0,Code,067d0f6455aaa054fd34ab08e7d536723a6b426011e12a3082413b3c32bb166b,f0cde504cc848a51ab46886aa24058fdd13e537a53b2ad8e9f0553a8597412b1,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 12, ""original_snippet_id"": ""14""}",,,12
+rq0_0013,15,Buse,"
+        int stepSize = Math.min((option.getMaximumValue() - option.getMinimumValue()) / 10, 1000);
+        spinner = new JSpinner(new SpinnerNumberModel(option.getValue(), option.getMinimumValue(),
+                option.getMaximumValue(), Math.max(1, stepSize)));
+        spinner.setToolTipText(option.getShortDescription());
+",1.834710743801653,-2.3124232399439415,0.0,unreadable,unreadable,low,,java,4,1,1.0,5.0,Code,2489019a1d4140875c8eede5c3c1f9b74fee0c3ff65b65281aabe1342ecce501,1321ce9b740d56c2126ab87f0d34cbe4084390a088031b94c5f2dc8ccbd3689c,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 13, ""original_snippet_id"": ""15""}",,,13
+rq0_0014,16,Buse,"		if ( parent != null )
+			setStrictJava( parent.getStrictJava() );
+		this.sourceFileInfo = sourceFileInfo;
+
+		BshClassManager bcm = BshClassManager.createClassManager( this );
+",2.900826446280992,-0.613719921144742,0.42434210526315796,unreadable,unreadable,low,,java,4,1,1.0,5.0,Code,b153852c78de692548945e8c3d13fd457ee8324cf3e3b5762f6432be862c1c9d,2abfd87b96c1fd42054da9910b8e263f760dfed9b7b49a78af550cbbf01f8e17,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 14, ""original_snippet_id"": ""16""}",,,14
+rq0_0015,17,Buse,"        
+        mDevices = new Vector<DeviceIf>();
+        
+        DeviceFileHandling reader = new DeviceFileHandling();
+
+        for (int i = 0; i < num; i++) {
+            String classname = (String) in.readObject();
+",3.7355371900826446,0.7162725997755606,0.756578947368421,readable,readable,high,,java,4,1,2.0,5.0,Code,46dbcfaf6fe787d18e473004bbb4290ff6cbd9f8516951422738ecaac61d68d2,c1df930da391dbb994dca70c7b58e07e7e28b3af04e433816cead65d13728168,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 15, ""original_snippet_id"": ""17""}",,,15
+rq0_0016,18,Buse,"	/**
+	 * Do not use. Testing purposes only.
+	 */
+	public Result runMain(String... args) {
+		System.out.println(""JUnit version "" + Version.id());
+		List<Class<?>> classes= new ArrayList<Class<?>>();
+		List<Failure> missingClasses= new ArrayList<Failure>();
+",2.471074380165289,-1.2984685457769787,0.2532894736842103,unreadable,unreadable,low,,java,4,1,1.0,5.0,Code,e3b3bd9b116eabe05389f34480d838a592fb8259ad129fa359b057670ccc0456,0159ff71e4f129d26c82a5b775ba7ded989d751ee46a592b89750d9ef627bc2c,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 16, ""original_snippet_id"": ""18""}",,,16
+rq0_0017,19,Buse,"    /**
+     * temp constraint constructor
+     */
+    Constraint(HsqlName name, int[] mainCols, Table refTable, int[] refCols,
+               int type, int deleteAction, int updateAction) {
+
+        core              = new ConstraintCore();
+        constName         = name;
+        constType         = type;
+",3.553719008264463,0.4265712585849998,0.6842105263157895,readable,discard,mid,,java,5,1,1.0,5.0,Code,cbf8ee0807fb071192af03065d3e3a6f28424978d99f9298e9ea8b03ab029ce3,132f1a4a742d10574109bb677b00fa77a5e20c92177ff444243a5f42662efac8,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 17, ""original_snippet_id"": ""19""}",,,17
+rq0_0018,20,Buse,"        int eventId = active? ON : OFF;
+        ActionEvent blinkEvent = new ActionEvent(this,eventId,""blink"");
+        
+        fireActionEvent(blinkEvent);
+",3.2644628099173554,-0.03431723876362037,0.569078947368421,unreadable,discard,mid,,java,3,1,1.0,5.0,Code,3e258ae064f98193932c583a72015e8b10d4d5d874715dbbc7a8593f7558f784,e26e6ca0612d457a752f73823813583a303c0352ad4f7e59fd865e4615bc63e3,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 18, ""original_snippet_id"": ""20""}",,,18
+rq0_0019,21,Buse,"		else if ( isPrimitive( returnType ) ) 
+		{
+			int opcode = IRETURN;
+			String type;
+			String meth;
+",3.727272727272727,0.7031043569941712,0.7532894736842104,readable,readable,high,,java,5,1,1.0,5.0,Code,7407ce7a53f8d8228762ed9966a61f2062a2c4d8dab2c33a232d013f7d73bb7f,34dceecb14b57c63353d982ed2cbe310596ad1ed853e289b237fcd347252fdb8,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 19, ""original_snippet_id"": ""21""}",,,19
+rq0_0020,22,Buse,"    /**
+     * Returns the PluginPanel
+     * @return Panel
+     */
+    public JPanel createSettingsPanel() {
+      mPanel = new CapturePluginPanel(mOwner, mCloneData);
+      mPanel.setBorder(Borders.createEmptyBorder(Sizes.DLUY5,Sizes.DLUX5,Sizes.DLUY5,Sizes.DLUX5));
+      mPanel.setSelectedTab(mCurrentPanel);
+",2.7355371900826446,-0.8770847767725254,0.3585526315789473,unreadable,unreadable,low,,java,4,1,1.0,5.0,Code,31bb516bac5843a16987ad27d8becd1f97ae1e3b38ca687ae9395e324d491e43,ea2a72cdac16d7b329c687e0aa90f79c092b30b0bc80c24c26e46ae18622db37,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 20, ""original_snippet_id"": ""22""}",,,20
+rq0_0021,23,Buse,"	protected void printFailures(Result result) {
+		if (result.getFailureCount() == 0)
+			return;
+		if (result.getFailureCount() == 1)
+			getWriter().println(""There was "" + result.getFailureCount() + "" failure:"");
+		else
+			getWriter().println(""There were "" + result.getFailureCount() + "" failures:"");
+",3.933884297520661,1.0323104265288996,0.8355263157894736,readable,readable,high,,java,7,1,1.0,5.0,Code,ca2d71912697aabbf4db16dc5f8a3459aca8fe0bc62d2b65d103b8e0dffee0e6,930c43ccf59488ca92bce9a187ee72208b6b1994de021ad63a98f6bcf20126aa,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 21, ""original_snippet_id"": ""23""}",,,21
+rq0_0022,24,Buse,"    public static long getNormalisedTime(long t) {
+
+        synchronized (tempCalDefault) {
+            setTimeInMillis(tempCalDefault, t);
+            resetToTime(tempCalDefault);
+
+            return getTimeInMillis(tempCalDefault);
+",3.479338842975207,0.30805707355249756,0.6546052631578948,readable,discard,mid,,java,5,1,1.0,5.0,Code,aab3cdbee72eda4d85545ceb1c88ddf6f411b94d64ea6a86d8028bbeb4e5f953,94f2839ef825650723f08ed2ca92572119e9b6f95f5ea1fa72d49a569a3fe7e7,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 22, ""original_snippet_id"": ""24""}",,,22
+rq0_0023,25,Buse,"
+            public boolean check(Unit u, PathNode p) {
+                if (p.getTile().getSettlement() != null && p.getTile().getSettlement().getOwner() == player
+                        && p.getTile().getSettlement() != inSettlement) {
+                    Settlement s = p.getTile().getSettlement();
+                    int turns = p.getTurns();
+                    destinations.add(new ChoiceItem(s.toString() + "" ("" + turns + "")"", s));
+",2.0991735537190084,-1.891039470939489,0.10526315789473684,unreadable,unreadable,low,,java,6,1,1.0,5.0,Code,a045be0b449abb83f2b1447bc9a602b41aeafa707206ba527bf89c06ddd82298,563e429bfa6c7afac8e21c376230d9bb995280f4e0cc403742290b28610941ba,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 23, ""original_snippet_id"": ""25""}",,,23
+rq0_0024,26,Buse,"
+     if ((bufpos + 1) >= len)
+        System.arraycopy(buffer, bufpos - len + 1, ret, 0, len);
+     else
+     {
+        System.arraycopy(buffer, bufsize - (len - bufpos - 1), ret, 0,
+                                                          len - bufpos - 1);
+        System.arraycopy(buffer, 0, ret, len - bufpos - 1, bufpos + 1);
+",2.3884297520661155,-1.4301509735908695,0.22039473684210514,unreadable,unreadable,low,,java,7,1,1.0,5.0,Code,1253f6f4de763ec094f492bcfd71fc2757794eda94399fc0723a53a67aa24b22,3e753c80b4f4d4e6e2b21af37cdd6f5b29493e4d6dac9ebb2576581042206de4,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 24, ""original_snippet_id"": ""26""}",,,24
+rq0_0025,27,Buse,"    /**
+     * Compute the proper position for a centered window
+     */
+    private Point comuteDisplayPointCentre(Dimension dim) {
+        Dimension screen = Toolkit.getDefaultToolkit().getScreenSize();
+        int x = (screen.width - dim.width) / 2;
+        int y = (screen.height - dim.height) / 2;
+",3.7520661157024793,0.7426090853383388,0.763157894736842,readable,readable,high,,java,4,1,1.0,5.0,Code,593ba0b39ffe4c914628971e32730df56e4b56e0f7574db7e511ba8889ce589e,8a881bb934c668bf0222535aa41acd68d41a8cb0b4eae18e7dd4fbacd6ec0675,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 25, ""original_snippet_id"": ""27""}",,,25
+rq0_0026,28,Buse,"	public void filter(Filter filter) throws NoTestsRemainException {
+		for (Iterator<Runner> iter= fRunners.iterator(); iter.hasNext();) {
+			Runner runner= iter.next();
+			if (filter.shouldRun(runner.getDescription()))
+				filter.apply(runner);
+			else
+				iter.remove();
+",2.8677685950413223,-0.6663928922702992,0.4111842105263157,unreadable,unreadable,low,,java,7,1,1.0,5.0,Code,0acc386c08d6f5ebf4e3adb501282b50531e8f402f5af3bd587eb08d53f122ad,c7d0c6f26491dffa4c6ef1bdef7171032b6a81ea97f875996970dd091c5f9d14,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 26, ""original_snippet_id"": ""28""}",,,26
+rq0_0027,29,Buse,"        boolean    hasReturnValue;
+
+        outlen = parameters.length;
+        offset = 0;
+",3.9421487603305785,1.045478669310289,0.8388157894736842,readable,readable,high,,java,3,1,1.0,5.0,Code,7f8246462de5a18fb9c2ab736a0d6ee438ae377534fdd42411ac734f2e095e28,33b589d6e298efd7a390db9d9430febd1193457db230429272b45a5d1b5ff21c,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 27, ""original_snippet_id"": ""29""}",,,27
+rq0_0028,30,Buse,"    /**
+     * Sets the currently chosen <code>MapTransform</code>.
+     * @param mt The transform that should be applied to a
+     *      <code>Tile</code> that is clicked on the map.
+     */
+    public void setMapTransform(MapTransform mt) {
+        currentMapTransform = mt;
+        MapControlsAction mca = (MapControlsAction) freeColClient.getActionManager().getFreeColAction(MapControlsAction.ID);
+        if (mca.getMapControls() != null) {
+            mca.getMapControls().update(mt);
+",2.793388429752066,-0.7849070773028014,0.381578947368421,unreadable,unreadable,low,,java,5,1,1.0,5.0,Code,10186771c173d4edbd0bdb624d4f2ddd835af2d635c6e997c83f6a3a26c455cc,9e2558b577d33a64dbc8fb1e855252be957a2c07b03c9ef39fcb25b1166761a7,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 28, ""original_snippet_id"": ""30""}",,,28
+rq0_0029,31,Buse,"			
+			if (iterateOverMe instanceof String)
+				return createEnumeration(((String)iterateOverMe).toCharArray());
+			
+			if (iterateOverMe instanceof StringBuffer)
+				return createEnumeration(
+					iterateOverMe.toString().toCharArray());
+
+			throw new IllegalArgumentException(
+				""Cannot enumerate object of type ""+iterateOverMe.getClass());
+",3.2644628099173554,-0.03431723876362037,0.569078947368421,unreadable,discard,mid,,java,7,1,1.0,5.0,Code,4444f095b0483bc817bb5c28e7d6031a6e00982b94ec63194aa6880ea5060947,1b910d28f7d2e1881744956417711fca263fef14f100a4902e4c4da8819ec153,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 29, ""original_snippet_id"": ""31""}",,,29
+rq0_0030,32,Buse,"  /**
+   * Constructs a new Date object, initialized with the current date.
+   */
+  public Date() {
+    Calendar mCalendar = Calendar.getInstance();
+    mYear = mCalendar.get(Calendar.YEAR);
+    mMonth = mCalendar.get(Calendar.MONTH) + 1;
+",4.223140495867769,1.4931989238775205,0.9506578947368421,readable,readable,high,,java,4,1,1.0,5.0,Code,8310aff1dbf142570e42f17cbdcaa3ab9d5733372867011bc0c461ee5af7a492,801573a45b3ef7d88098a074c158a62c2c0041eda951118e3cc74fadec0a2cee,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 30, ""original_snippet_id"": ""32""}",,,30
+rq0_0031,33,Buse,"		/**
+		 * @param contextLength the maximum length for <code>expected</code> and <code>actual</code>. When contextLength 
+		 * is exceeded, the Strings are shortened
+		 * @param expected the expected string value
+		 * @param actual the actual string value
+		 */
+		public ComparisonCompactor(int contextLength, String expected, String actual) {
+			fContextLength= contextLength;
+			fExpected= expected;
+			fActual= actual;
+",4.016528925619835,1.163992854342792,0.868421052631579,readable,readable,high,,java,4,1,1.0,5.0,Code,1ea24a4d3bb0024232e16d3949959848120a7619ebe2b58df3734e05d8a60803,04ff40daa24cc0fbfc5b7e2ffa9197b63971cb2300ff5180dc7e3d7439afa74e,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 31, ""original_snippet_id"": ""33""}",,,31
+rq0_0032,34,Buse,"
+            case CompiledStatement.DELETE :
+                return executeDeleteStatement(cs);
+
+            case CompiledStatement.CALL :
+                return executeCallStatement(cs);
+
+            case CompiledStatement.DDL :
+                return executeDDLStatement(cs);
+",4.347107438016529,1.6907225655983573,1.0,readable,readable,high,,java,6,1,1.0,5.0,Code,6ce4915c078b0364dd33a78b77a00a725d8aee32a8c320f507b21b4b93cd0ff7,034689ffba0de6ca8f516503fae6209b7a8ebda6c7f09f1ac26b38f8c06920f7,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 32, ""original_snippet_id"": ""34""}",,,32
+rq0_0033,35,Buse,"    /**
+     * Creates a new <code>DisbandUnitAction</code>.
+     * 
+     * @param freeColClient The main controller object for the client.
+     */
+    DisbandUnitAction(FreeColClient freeColClient) {
+        super(freeColClient, ""unit.state.8"", null, KeyStroke.getKeyStroke('D', 0));
+        putValue(BUTTON_IMAGE, freeColClient.getImageLibrary().getUnitButtonImageIcon(ImageLibrary.UNIT_BUTTON_DISBAND,
+                0));
+        putValue(BUTTON_ROLLOVER_IMAGE, freeColClient.getImageLibrary().getUnitButtonImageIcon(
+                ImageLibrary.UNIT_BUTTON_DISBAND, 1));
+",2.008264462809917,-2.0358901415347703,0.0690789473684209,unreadable,unreadable,low,,java,6,1,1.0,5.0,Code,732fb5862774f7d2cd6417f0dfae0ae500f891fb7e1771650e0b47d4adccc157,101afa6c3b7577a5e2789afa3081e1799990bfb5540c1fcc40a51386aac7e184,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 33, ""original_snippet_id"": ""35""}",,,33
+rq0_0034,36,Buse,"			Class clas = object.getClass();
+			Field field = Reflect.resolveJavaField( 
+				clas, name, false/*onlyStatic*/ );
+			if ( field != null )
+				return new Variable( 
+					name, field.getType(), new LHS( object, field ) );
+",2.5454545454545454,-1.1799543607444758,0.2828947368421052,unreadable,unreadable,low,,java,6,1,1.0,5.0,Code,cfc0bb340b826f014a476bd545645eef209946b87e1993937e2ce5ad3e8810da,af9f9e23ad1f1411f1e7e12107d65f81f2feb3f86fde52e877c3d607e38aa4a4,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 34, ""original_snippet_id"": ""36""}",,,34
+rq0_0035,37,Buse,"    
+    for(AbstractPluginProgramFormating config : mConfigs)
+      if(config != null && config.isValid())
+        list.add(new ProgramReceiveTarget(this, config.getName(), config.getId()));
+    
+    if(list.isEmpty())
+      list.add(new ProgramReceiveTarget(this, DEFAULT_CONFIG.getName(), DEFAULT_CONFIG.getId()));
+    
+    return list.toArray(new ProgramReceiveTarget[list.size()]);
+",2.5785123966942147,-1.1272813896189193,0.29605263157894723,unreadable,unreadable,low,,java,6,1,1.0,5.0,Code,f12fd5cacee84493c579415cff706b1929ff3bf56037c61bb6170923b74463dc,cec6834f025dc1648a953f700076624bdab3496faa8ae69f947fdd572ca51990,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 35, ""original_snippet_id"": ""37""}",,,35
+rq0_0036,38,Buse,"	Class<? extends Throwable> expectedException(Method method) {
+		Test annotation= method.getAnnotation(Test.class);
+		if (annotation.expected() == None.class)
+			return null;
+		else
+			return annotation.expected();
+",2.7768595041322315,-0.8112435628655795,0.375,unreadable,unreadable,low,,java,6,1,1.0,5.0,Code,41631da949f9236d706c857741093f54d1b1ab28fcc38f8d866d34af5bc2b262,30299fafd38b3bb463b8f55dc5d1fb6726a734a9ba1826df8d66ee0f6af9a535,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 36, ""original_snippet_id"": ""38""}",,,36
+rq0_0037,39,Buse,"            row[1] = ns.getCatalogName(row[0]);
+            row[2] = schema.equals(defschema) ? Boolean.TRUE
+                                              : Boolean.FALSE;
+
+            t.insertSys(row);
+",2.9669421487603307,-0.5083739788936292,0.4506578947368421,unreadable,discard,mid,,java,4,1,1.0,5.0,Code,4816e01c8c9998459b3939956b0cb4e68fb6fcf28c5d652612d43c881a4798af,26e53efc76fe72b05b63d8a1791a0119fd617cae900a718854cc5101b850d948,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 37, ""original_snippet_id"": ""39""}",,,37
+rq0_0038,40,Buse,"    /**
+     * Handles an ""deliverGift""-request.
+     * 
+     * @param element The element (root element in a DOM-parsed XML tree) that
+     *            holds all the information.
+     */
+    private Element deliverGift(Element element) {
+        Element unitElement = Message.getChildElement(element, Unit.getXMLElementTagName());
+
+        Unit unit = (Unit) getGame().getFreeColGameObject(unitElement.getAttribute(""ID""));
+        unit.readFromXMLElement(unitElement);
+",2.909090909090909,-0.6005516783633533,0.4276315789473684,unreadable,unreadable,low,,java,4,1,1.0,5.0,Code,bce5f5e2638939a91dc0a9800025114a6295c74bdd4382e0cbb93cb4d9cd4515,9cb494f6a30cc4e4cda8812e94fc1729fa6da5eeed67067a8c067e7466fc07f4,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 38, ""original_snippet_id"": ""40""}",,,38
+rq0_0039,41,Buse,"      switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
+      case EQ:
+        t = jj_consume_token(EQ);
+        break;
+      case NE:
+        t = jj_consume_token(NE);
+",2.4214876033057853,-1.3774780024653124,0.23355263157894737,unreadable,unreadable,low,,java,6,1,1.0,5.0,Code,118d1b09c364959671332df9c84e1412331096b58775f1b5a942134733bd41a5,6069094bf026ac415b5528236a8d323229ce25f172484c23c0ded84ad033582d,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 39, ""original_snippet_id"": ""41""}",,,39
+rq0_0040,42,Buse,"  public synchronized void removeProgram(Program program) {
+    PluginTreeNode node = findProgramTreeNode(program, false);
+    if (node != null) {
+      mChildNodes.remove(node);
+      if (mMarker != null) {
+        program.unmark(mMarker);
+",3.0826446280991737,-0.3240185799541812,0.4967105263157895,unreadable,discard,mid,,java,6,1,1.0,5.0,Code,5f3e18100ce33498f67b50597f509be79fde4ee7bad720215c19123128770a73,51f2086233d144eef8589cf8e693195c5f59106417d59d4775fa240586152bc5,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 40, ""original_snippet_id"": ""42""}",,,40
+rq0_0041,43,Buse,"		private TestClassRunnerForParameters(Class<?> klass, Object[] parameters, int i) {
+			super(klass);
+			fParameters= parameters;
+			fParameterSetNumber= i;
+",3.289256198347108,0.005187489580547981,0.5789473684210528,unreadable,discard,mid,,java,4,1,1.0,5.0,Code,e5332faba671cbe7ef7a65f72e6c32475b9cb274b8ab36fd846fb3545ed9ab2e,5bd44eaaf26172ec0f68ea1ba54d771aebdaa805a31e5bd712b022a8a151bddd,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 41, ""original_snippet_id"": ""43""}",,,41
+rq0_0042,44,Buse,"        void link(IndexRowIterator other) {
+
+            other.next = next;
+            other.last = this;
+            next.last  = other;
+",4.074380165289257,1.256170553812516,0.8914473684210528,readable,readable,high,,java,4,1,1.0,5.0,Code,df78a3cd472d9dcffb9dc423ed83b9ce6ba91bc3b8735a45e127564deb33d4a5,4662ee2ac2cff6a76e175fcce3d7b23c70086650fabc53ced50d0d39d85969c5,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 42, ""original_snippet_id"": ""44""}",,,42
+rq0_0043,45,Buse,"        final String heightText = Messages.message(""height"");
+        
+        final JTextField inputWidth = new JTextField(Integer.toString(DEFAULT_WIDTH), COLUMNS);
+        final JTextField inputHeight = new JTextField(Integer.toString(DEFAULT_HEIGHT), COLUMNS);
+",3.84297520661157,0.8874597559336193,0.7993421052631577,readable,readable,high,,java,3,1,1.0,5.0,Code,bc192999c56b8d94fa066833dc69d294445781edfb93fc7cd76986d474d1b003,8483478ed51fec27e160ea9c104213071b2616ac4d1cf972bdda085d37dfdcc1,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 43, ""original_snippet_id"": ""45""}",,,43
+rq0_0044,46,Buse,"	/**
+		Get the top level namespace or this namespace if we are the top.
+		Note: this method should probably return type bsh.This to be consistent
+		with getThis();
+	*/
+    public This getGlobal( Interpreter declaringInterpreter )
+    {
+		if ( parent != null )
+			return parent.getGlobal( declaringInterpreter );
+		else
+			return getThis( declaringInterpreter );
+",3.760330578512397,0.7557773281197283,0.7664473684210527,readable,readable,high,,java,9,1,1.0,5.0,Code,92fd9f7e206f41a398524cc0ef112dd2d1227cb8e34670f426c320f28b080bc0,2e3006cecaa6c9dd8cab4a2c5b6e2bab1cf92b7e5d12955d4e14b48fb7c61203,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 44, ""original_snippet_id"": ""46""}",,,44
+rq0_0045,47,Buse,"    /**
+     * Read Settings
+     * @param stream
+     * @throws IOException
+     * @throws ClassNotFoundException
+     */
+    public void readData(ObjectInputStream stream) throws IOException, ClassNotFoundException {
+      int version = stream.readInt();
+      mNumber = stream.readInt();
+      mName = stream.readUTF();
+",3.87603305785124,0.9401327270591763,0.8125,readable,readable,high,,java,4,1,1.0,5.0,Code,9a70f4164c7f0bba447eceecc10a9cbf0c496c7eddbb31c3370dee6050cedcee,36f5f7e6b98c2fd2526c6ce328442b9a609ae637c1a1fc93c346fd1f47d7c4d0,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 45, ""original_snippet_id"": ""47""}",,,45
+rq0_0046,48,Buse,"	/**
+	 * Constructs a comparison failure.
+	 * @param message the identifying message or null
+	 * @param expected the expected string value
+	 * @param actual the actual string value
+	 */
+	public ComparisonFailure (String message, String expected, String actual) {
+		super (message);
+		fExpected= expected;
+		fActual= actual;
+",3.933884297520661,1.0323104265288996,0.8355263157894736,readable,readable,high,,java,4,1,1.0,5.0,Code,46f1f841cfb542552288f489e3d57ca8ad4805a65f13c3366b965fbb7c3d9084,b55f17fa6acbc43ec6446f72198e461c2b2ab32804d4a71df3f7dd1beff19274,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 46, ""original_snippet_id"": ""48""}",,,46
+rq0_0047,49,Buse,"    public void close() {
+
+        if (isClosed) {
+            return;
+        }
+
+        isClosed = true;
+
+        try {
+            resultOut.setResultType(ResultConstants.SQLDISCONNECT);
+",4.049586776859504,1.2166658254683484,0.8815789473684211,readable,readable,high,,java,7,1,1.0,5.0,Code,99f3b7f817a541e27027498675fa344bbb0844a1091349b6c61f78b67df46659,f9c0b18bbd17b96b4898e81f9e8bb0f238f06b8e6de9790301f0cadd8aed1729,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 47, ""original_snippet_id"": ""49""}",,,47
+rq0_0048,50,Buse,"        public void actionPerformed(ActionEvent evt) {
+            if (!hasFocus()) {
+                stopBlinking();
+            }
+
+            if (blinkOn) {
+                setOpaque(false);
+                blinkOn = false;
+",4.1652892561983474,1.4010212244077964,0.9276315789473685,readable,readable,high,,java,7,1,1.0,5.0,Code,2fc00ab96cb8879f64f5224afc00e2f2ae52d0623fa9a0d2f34e95cb756412b1,685cdcebea2d0676dfa5897dbd78d8e0581644e5ee27c38f247a4d5f4e1cffb0,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 48, ""original_snippet_id"": ""50""}",,,48
+rq0_0049,51,Buse,"	private static String getBaseName( String className ) 
+	{
+		int i = className.indexOf(""$"");
+		if ( i == -1 )
+			return className;
+
+		return className.substring(i+1);
+",3.9173553719008254,1.0059739409661201,0.8289473684210521,readable,readable,high,,java,6,1,2.0,5.0,Code,db2f5ae5858a978d63951d79eb4809b74d138bf9a84e4b5649c5e50b7ef89cd3,7fdd26a1953c87ca1bc49282a794f3c61e360e8c5beda2b11b4292c476882ff8,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 49, ""original_snippet_id"": ""51""}",,,49
+rq0_0050,52,Buse,"
+    panel.add(UiUtilities.createHelpTextArea(mLocalizer.msg(""help"",""No endtime defined"")), cc.xy(1,1));
+    
+    mTimePanel = new TimeDateChooserPanel(date);
+    panel.add(mTimePanel, cc.xy(1,3));
+",2.644628099173554,-1.0219354473678057,0.3223684210526316,unreadable,unreadable,low,,java,3,1,1.0,5.0,Code,f047a801d987e87aebd96f88e193e7f86d837492f613687dc823da0ab09875aa,31a09cf49c8c862d5c062af54a5bdab9d540724fbdf2a033237129ebb0f53249,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 50, ""original_snippet_id"": ""52""}",,,50
+rq0_0051,53,Buse,"		try {
+			suiteMethod= klass.getMethod(""suite"");
+			if (! Modifier.isStatic(suiteMethod.getModifiers())) {
+				throw new Exception(klass.getName() + "".suite() must be static"");
+			}
+			suite= (Test) suiteMethod.invoke(null); // static method
+",2.727272727272727,-0.8902530195539149,0.3552631578947367,unreadable,unreadable,low,,java,6,1,1.0,5.0,Code,c4c05f9041d47da27e0700680aa3cb0b5f580823b797df7a66de1b7e5ce8d4c0,4a1825f100f7c2d50e14b63b419d81d834ace980491d56fa3105b8a6a39e9fcf,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 51, ""original_snippet_id"": ""53""}",,,51
+rq0_0052,54,Buse,"
+            // ----------------------------------------------------------------
+            // required
+            // ----------------------------------------------------------------
+            addColumn(t, ""PROCEDURE_CAT"", Types.VARCHAR);
+            addColumn(t, ""PROCEDURE_SCHEM"", Types.VARCHAR);
+            addColumn(t, ""PROCEDURE_NAME"", Types.VARCHAR, false);    // not null
+",3.603305785123967,0.5055807152733344,0.7039473684210525,readable,discard,mid,,java,3,1,1.0,5.0,Code,a3765c1cd406a98a6e1e705c5cbad6067c556e8790e88d996a58fe545ac8dc33,287bac73cafdbab7a2ca739e24e0158b1bd6bbfce39e5c36a6c02460e2b95d80,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 52, ""original_snippet_id"": ""54""}",,,52
+rq0_0053,55,Buse,"
+        if (missionChip == null) {
+            GraphicsConfiguration gc = GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice()
+                    .getDefaultConfiguration();
+            loadMissionChip(gc, color, expertMission);
+
+            if (expertMission) {
+                missionChip = expertMissionChips.get(color);
+",2.71900826446281,-0.9034212623353036,0.35197368421052627,unreadable,unreadable,low,,java,6,1,1.0,5.0,Code,a9f6adb46d333543798b2a24894a2a211bd8396b82f9714429995d588ae2d9fc,1bf9797ac3a30f4924bde47ed1cc394e7d36969900e539c8dc5b532a37ed4269,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 53, ""original_snippet_id"": ""55""}",,,53
+rq0_0054,56,Buse,"	/**
+		Swap in the value as the new top of the stack and return the old
+		value.
+	*/
+	public NameSpace swap( NameSpace newTop ) {
+		NameSpace oldTop = (NameSpace)(stack.elementAt(0));
+		stack.setElementAt( newTop, 0 );
+		return oldTop;
+",3.611570247933885,0.5187489580547245,0.7072368421052634,readable,discard,mid,,java,6,1,1.0,5.0,Code,dce3b95a4640e8d11bae2fa970b135cbb0ed78d73c31e3a249851c5bd6192193,e03ce6eb99f9116ad956a80e2d9d547406ec0245e65ff06599d9eb8f24610402,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 54, ""original_snippet_id"": ""56""}",,,54
+rq0_0055,57,Buse,"      
+      String classname = (String) in.readObject();
+      String devname = (String)in.readObject();
+      
+      DeviceIf dev = DriverFactory.getInstance().createDevice(classname, devname);
+",3.603305785123967,0.5055807152733344,0.7039473684210525,readable,discard,mid,,java,3,1,1.0,5.0,Code,9902988d9e0dbec1dcda1806f36a5204ea6d9445441b33f70e361bc5b5302210,ffc28fc11c1e83b8061273773e511c3a417601fec68742dbc8ca5f9ae367d1c6,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 55, ""original_snippet_id"": ""57""}",,,55
+rq0_0056,58,Buse,"			String simpleName= runnerClass.getSimpleName();
+			InitializationError error= new InitializationError(String.format(
+					CONSTRUCTOR_ERROR_FORMAT, simpleName, simpleName));
+			return Request.errorReport(fTestClass, error).getRunner();
+",2.413223140495868,-1.3906462452467012,0.23026315789473695,unreadable,unreadable,low,,java,4,1,1.0,5.0,Code,82ed16f13a8f59979a6a19e4d9e8eacc2fa4fe02cea99507688f3bbafc437f78,edb96699bd08d7b42d7d849abc3cbd172ad1a50c3b98d61df1393bed1a40a66d,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 56, ""original_snippet_id"": ""58""}",,,56
+rq0_0057,59,Buse,"    public boolean isReadOnly() throws HsqlException {
+
+        Object info = getAttribute(Session.INFO_CONNECTION_READONLY);
+
+        isReadOnly = ((Boolean) info).booleanValue();
+
+        return isReadOnly;
+",3.826446280991736,0.8611232703708418,0.792763157894737,readable,readable,high,,java,4,1,2.0,5.0,Code,5960a9943bff59ae0f4ad5cb37e7dd3412b04cb279436a7d2d9a8b09ad694edf,346bd1df6c2b73f408b4ee2911b08d193b95bf962c501134e851654b5a677af0,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 57, ""original_snippet_id"": ""59""}",,,57
+rq0_0058,60,Buse," 
+        boolean response = warehouseDialog.getResponseBoolean();
+        remove(warehouseDialog);
+        return response;
+",3.884297520661157,0.9533009698405651,0.8157894736842104,readable,readable,high,,java,3,1,1.0,5.0,Code,b198891c7780c122e898489ea57dd2346015d6a6095ad4d7bb00e76c103296be,5ac374eb1aa6098a7c45a361de1dd01d6b8ffe45868a74308389b2a64cf67b4d,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 58, ""original_snippet_id"": ""60""}",,,58
+rq0_0059,61,Buse,"			else if ( returnType.equals(""F"") )
+				opcode = FRETURN;
+			else if ( returnType.equals(""J"") )  //long
+				opcode = LRETURN;
+
+			cv.visitInsn(opcode);
+",3.776859504132232,0.7821138136825072,0.7730263157894738,readable,readable,high,,java,5,1,1.0,5.0,Code,cddf293b20c93f59df56d4f57926c10d1bf592cb6df98b78b453ccaea8139cdd,65cf705c26ace6044c0472dd34747b4e1eb7b467d333aae301a66d844942fc97,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 59, ""original_snippet_id"": ""61""}",,,59
+rq0_0060,62,Buse,"    String channelId;
+    
+    if (version==1) {
+      dataServiceId = (String)in.readObject();
+      channelId=""""+in.readInt();
+",3.471074380165289,0.2948888307711074,0.651315789473684,readable,discard,mid,,java,4,1,1.0,5.0,Code,911e04a6e558f9940a6a1884f5e5250f2bb4a290f605d4da1a8d83728827bb9c,cae6e624004dfd613ab9f9cdc3e4fbe281e913ded30eb6c4bf44f57535839546,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 60, ""original_snippet_id"": ""62""}",,,60
+rq0_0061,63,Buse,"	@Override
+	public Description getDescription() {
+		Description spec= Description.createSuiteDescription(getName());
+		List<Method> testMethods= fTestMethods;
+		for (Method method : testMethods)
+				spec.addChild(methodDescription(method));
+",2.652892561983471,-1.008767204586417,0.325657894736842,unreadable,unreadable,low,,java,6,1,1.0,5.0,Code,62bc1dc17cf12bcba85ea4f9b8657418d8d5a6c169bd050c272de8c3089711fe,db08f87ed2d053bcc7ef777d9bd98fd6a2fb3464897420c8afc4fd945c3c2d44,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 61, ""original_snippet_id"": ""63""}",,,61
+rq0_0062,64,Buse,"
+            while (classNames.hasNext()) {
+                clsName         = (String) classNames.next();
+                clsCat          = ns.getCatalogName(clsName);
+                clsSchem        = ns.getSchemaName(clsName);
+",3.5950413223140494,0.4924124724919449,0.7006578947368419,readable,discard,mid,,java,4,1,1.0,5.0,Code,4e6dcaa063210b786204bba41cabddd782ee7b60616f797d9ee293534811f83c,abd54f9c372f2aec809cbc83a259685a94b4896f945890281560f6d748a17671,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 62, ""original_snippet_id"": ""64""}",,,62
+rq0_0063,65,Buse,"
+        String[] texts = new String[messages.length];
+        ImageIcon[] images = new ImageIcon[messages.length];
+        for (int i = 0; i < messages.length; i++) {
+            String ID = messages[i].getMessageID();
+",3.2148760330578514,-0.11332669545195495,0.5493421052631579,unreadable,discard,mid,,java,4,1,1.0,5.0,Code,8b61ecedcb8993542df224b3750c04e48719e249c0f75ed004715955b50fcd4f,c13245f9355d12ca57cb048cfe727e9626504ecdbfb1c080977f700fb1039056,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 63, ""original_snippet_id"": ""65""}",,,63
+rq0_0064,66,Buse,"
+      mProgramTable.changeSelection(row, 0, false, false);
+
+      Program p = (Program) mProgramTableModel.getValueAt(row, 1);
+
+      JPopupMenu menu = devplugin.Plugin.getPluginManager().createPluginContextMenu(p, CapturePlugin.getInstance());
+",2.603305785123967,-1.0877766612747517,0.30592105263157887,unreadable,unreadable,low,,java,3,1,1.0,5.0,Code,e6396600aa99327df2ce0b1639d29c3596a5a0aee7630dfa056558b20c39d6a5,4d9002328e650bc12c247e035305229ea2cc3bfd799bfdd5ab17f1d7c107f6f5,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 64, ""original_snippet_id"": ""66""}",,,64
+rq0_0065,67,Buse,"  /**
+   * Add one zero if neccessary
+   * @param number
+   * @return
+   */
+  private CharSequence addZero(int number) {
+    StringBuilder builder = new StringBuilder();
+    
+    if (number < 10) {
+      builder.append('0');
+    }
+    
+    builder.append(Integer.toString(number));
+",4.016528925619835,1.163992854342792,0.868421052631579,readable,readable,high,,java,6,1,1.0,5.0,Code,2693a7c31a63d4fd397159c3e9c684ed450342b14cd392ca80e4d31b4cc08352,d641a583f5aac24990c2a79ea5acd7c8462746eda88134d4a6cedaf633603275,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 65, ""original_snippet_id"": ""67""}",,,65
+rq0_0066,68,Buse,"	@Override
+	public void run(RunNotifier notifier) {
+		TestResult result= new TestResult();
+		result.addListener(createAdaptingListener(notifier));
+		fTest.run(result);
+",3.363636363636364,0.1237016746130502,0.6085526315789476,readable,discard,mid,,java,5,1,1.0,5.0,Code,93023544b3a0c30a3e33899afb20f67e453570f0742365afd04b2ad3d9234c95,9dd01456a1bd5522ea363cfa84f4328ce7de38ba7daae760b9c5952abb9f1a67,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 66, ""original_snippet_id"": ""68""}",,,66
+rq0_0067,69,Buse,"        t.checkColumnsMatch(tc.core.mainColArray, tc.core.refTable,
+                            tc.core.refColArray);
+        session.commit();
+
+        TableWorks tableWorks = new TableWorks(session, t);
+",2.925619834710744,-0.5742151928005751,0.43421052631578944,unreadable,discard,mid,,java,4,1,1.0,5.0,Code,470e3c597b9547d178bad4e38ee0b56bbf62ad61533a97e5ca73057054055e25,cce4dd49f35aa75ed8b23b556840a7ee2495f6986bf116092022e755749820af,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 67, ""original_snippet_id"": ""69""}",,,67
+rq0_0068,70,Buse,"        @Override
+        public void mousePressed(MouseEvent e) {
+            if (f.getDesktopPane() == null || f.getDesktopPane().getDesktopManager() == null) {
+                return;
+            }
+            loc = SwingUtilities.convertPoint((Component) e.getSource(), e.getX(), e.getY(), null);
+            f.getDesktopPane().getDesktopManager().beginDraggingFrame(f);
+",2.4049586776859506,-1.4038144880280907,0.22697368421052636,unreadable,unreadable,low,,java,7,1,1.0,5.0,Code,02499cfac438c6cfe713a0332d5016b9a0baf330fc39b1f788624721fe821120,29219d094fb2c7dd35446f8bf99399e7beb89e85e6b2925ff7119f20a5312bbc,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 68, ""original_snippet_id"": ""70""}",,,68
+rq0_0069,71,Buse,"	/**
+		Translate bsh.Modifiers into ASM modifier bitflags.
+	*/
+	static int getASMModifiers( Modifiers modifiers ) 
+	{
+		int mods = 0;
+		if ( modifiers == null )
+			return mods;
+
+		if ( modifiers.hasModifier(""public"") )
+			mods += ACC_PUBLIC;
+",3.6942148760330578,0.6504313858686148,0.7401315789473684,readable,discard,mid,,java,8,1,1.0,5.0,Code,454b632747b5e7330f6063844d79c3c5df413686f55c6c4e8eaedce76a191817,c5281221318dece7dfe5a2b2ed72d59c481c80b8a52b19dcc9a7aa1a82478a5f,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 69, ""original_snippet_id"": ""71""}",,,69
+rq0_0070,72,Buse,"    public Component getListCellRendererComponent(JList list, Object value, int index, boolean isSelected, boolean cellHasFocus) {
+
+        JLabel label = (JLabel) super.getListCellRendererComponent(list, value, index, isSelected, cellHasFocus);
+        
+        String str;
+        
+        if (value instanceof DeviceIf) {
+            DeviceIf device = (DeviceIf)value; 
+",2.8595041322314048,-0.6795611350516886,0.40789473684210514,unreadable,unreadable,low,,java,5,1,1.0,5.0,Code,7e3e1340b05ae425d0421553f7f1dcb4518655a7ce8819aa73a20b9ac2dd2d75,f38faabfa4a9d0cf25e0bff9506773310c5e7f893add5e088516a6d9d4984ec7,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 70, ""original_snippet_id"": ""72""}",,,70
+rq0_0071,73,Buse,"		public String compact(String message) {
+			if (fExpected == null || fActual == null || areStringsEqual())
+				return Assert.format(message, fExpected, fActual);
+
+			findCommonPrefix();
+			findCommonSuffix();
+",3.3801652892561984,0.1500381601758277,0.6151315789473684,readable,discard,mid,,java,5,1,1.0,5.0,Code,5672d31b5f8798731d84d05992efac63fa51ff7f9ea5c6aee73dc7d937d9a1c7,780bb4a85158059f9248b48308700daaebf20c5aa0bf0b1c7c59840ad23c56b0,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 71, ""original_snippet_id"": ""73""}",,,71
+rq0_0072,74,Buse,"
+        classNames = classNameSet.iterator();
+
+        while (classNames.hasNext()) {
+            className = (String) classNames.next();
+            methods   = iterateRoutineMethods(className, andAliases);
+",3.809917355371901,0.8347867848080629,0.7861842105263157,readable,readable,high,,java,4,1,1.0,5.0,Code,904a108e25fd9d5c9d67655c38596aacb2175d37a3609b18dd8a39a85c06fbe7,97782d65da4b2df5bfe3e6ca62cb4557770073c83f28229f253099b1ecaa5bce,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 72, ""original_snippet_id"": ""74""}",,,72
+rq0_0073,75,Buse,"    /**
+     * Generates a color chip image and stores it in memory.
+     * 
+     * @param gc The GraphicsConfiguration is needed to create images that are
+     *            compatible with the local environment.
+     * @param c The color of the color chip to create.
+     */
+    private void loadColorChip(GraphicsConfiguration gc, Color c) {
+        BufferedImage tempImage = gc.createCompatibleImage(11, 17);
+        Graphics g = tempImage.getGraphics();
+        if (c.equals(Color.BLACK)) {
+            g.setColor(Color.WHITE);
+",3.396694214876033,0.1763746457386059,0.6217105263157894,readable,discard,mid,,java,5,1,1.0,5.0,Code,aaa684fa2b759f820f5f6b3eeeb91104d215af70b8fbc6bbe855e0c8ad662fb7,72960ee9177811c61363c32ad5c1185809cee80690045ffe0be1c9021f9dd492,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 73, ""original_snippet_id"": ""75""}",,,73
+rq0_0074,76,Buse,"      
+      out.writeObject(device.getDriver().getClass().getName());
+      out.writeObject(device.getName());
+      
+      device.writeData(out);
+",3.487603305785124,0.3212253163338863,0.6578947368421052,readable,discard,mid,,java,3,1,1.0,5.0,Code,6a62c4ee269d638f94edce0e9f7a315e1a4057ca3bb97a4fdc35337179ff7297,8f60af8ca879006c5a0fd46484155302a826196583928dcffd3dca2a485b63a0,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 74, ""original_snippet_id"": ""76""}",,,74
+rq0_0075,77,Buse,"        
+        File data = new File(Plugin.getPluginManager().getTvBrowserSettings().getTvBrowserUserHome()  + File.separator + 
+                ""CaptureDevices"" + File.separator + mCount + "".dat"");
+        
+        ObjectOutputStream stream = new ObjectOutputStream(new FileOutputStream(data));
+        
+        dev.writeData(stream);
+",2.727272727272727,-0.8902530195539149,0.3552631578947367,unreadable,unreadable,low,,java,4,1,1.0,5.0,Code,9ebda8386e6cb9eb0dd641040dcba0d10cc25f36a727d90651d7602d2dfb5986,c70a8ad660b310aa98a5e28eb5d3f6b5bd7199f65e375db02bfbf44c9bb8a38a,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 75, ""original_snippet_id"": ""77""}",,,75
+rq0_0076,78,Buse,"	private static Class<?>[] getAnnotatedClasses(Class<?> klass) throws InitializationError {
+		SuiteClasses annotation= klass.getAnnotation(SuiteClasses.class);
+		if (annotation == null)
+			throw new InitializationError(String.format(""class '%s' must have a SuiteClasses annotation"", klass.getName()));
+		return annotation.value();
+",2.2975206611570247,-1.57500164418615,0.18421052631578938,unreadable,unreadable,low,,java,5,1,1.0,5.0,Code,5223539534224b93d6a19a1ad11e7517ea3a08dae2f873985089bb5e50e5189b,b1498068e866d28a86509f67dfb059d22bc933b0f0b862167dcf089babfe475b,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 76, ""original_snippet_id"": ""78""}",,,76
+rq0_0077,79,Buse,"
+        for (int j = 0; j < fieldcount; j++) {
+            int i = Column.compare(session.database.collation, a[cols[j]],
+                                   b[cols[j]], coltypes[cols[j]]);
+
+            if (i != 0) {
+                return i;
+            }
+        }
+
+        return 0;
+",3.347107438016529,0.0973651890502713,0.6019736842105263,unreadable,discard,mid,,java,8,2,1.0,5.0,Code,bff54f77166fbac27c5344a54edafe1ecc680186e7cc3efe28798dfe84a1301a,d02a65c78338b7b0b195bfdf2840576fb5fd1994c0a72f7e4f4ae05efd8989c7,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 77, ""original_snippet_id"": ""79""}",,,77
+rq0_0078,80,Buse,"    /**
+     * Closes all panels, changes the background and shows the main menu.
+     */
+    public void returnToTitle() {
+        // TODO: check if the GUI object knows that we're not
+        // inGame. (Retrieve value of GUI::inGame.)  If GUI thinks
+        // we're still in the game then log an error because at this
+        // point the GUI should have been informed.
+        closeMenus();
+        removeInGameComponents();
+        showMainPanel();
+",4.148760330578512,1.3746847388450176,0.9210526315789472,readable,readable,high,,java,4,1,2.0,5.0,Code,acd4370da22f45c37bbe4054fdd8eec4c900259c0bace1f731b2fe93c5a14c4b,653ac2018a5f85ca835dd7475a8763580b77f81504ae118ddc5f338b2171a8c4,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 78, ""original_snippet_id"": ""80""}",,,78
+rq0_0079,81,Buse,"	/**
+		subsequent imports override earlier ones
+	*/
+    public void	importPackage(String name)
+    {
+		if(importedPackages == null)
+			importedPackages = new Vector();
+
+		// If it exists, remove it and add it at the end (avoid memory leak)
+		if ( importedPackages.contains( name ) )
+			importedPackages.remove( name );
+
+		importedPackages.addElement(name);
+",3.933884297520661,1.0323104265288996,0.8355263157894736,readable,readable,high,,java,8,1,1.0,5.0,Code,001afed29c6a224899ad5425523569f1faed87c05d2d16433002ef7db9e9a9c5,bb57f1519fd772e8fc903b6756352c561fccbe1aa0e9c54757c902e05bc11e9a,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 79, ""original_snippet_id"": ""81""}",,,79
+rq0_0080,82,Buse,"        
+        if(dataServiceId.compareTo(cmpDataServiceId) != 0) {
+          return false;
+        }
+        
+        String country = getCountry();
+        String cmpCountry = cmp.getCountry();
+",4.0,1.1376563687800132,0.8618421052631579,readable,readable,high,,java,5,1,1.0,5.0,Code,caee7d7929aed2c601e8cbd3fe70ca1f576a23961965760a5ffdedb61d426144,578817607ae291cec84d91a52533aec1f054bf8a7c7a6ae05e0cf657ef0eb938,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 80, ""original_snippet_id"": ""82""}",,,80
+rq0_0081,83,Buse,"	public void filter(Filter filter) throws NoTestsRemainException {
+		for (Iterator<Method> iter= fTestMethods.iterator(); iter.hasNext();) {
+			Method method= iter.next();
+			if (!filter.shouldRun(methodDescription(method)))
+				iter.remove();
+		}
+		if (fTestMethods.isEmpty())
+			throw new NoTestsRemainException();
+",2.768595041322314,-0.824411805646969,0.3717105263157894,unreadable,unreadable,low,,java,8,1,1.0,5.0,Code,bd7b176ca031bf145ffb4364c83ad513f4e8b9764eb83e081ad1c1e60d03f840,f94c57f3c2a79902d3c77f0137d219c69b0d1514fcd5ef26e3241383d1ab8cfb,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 81, ""original_snippet_id"": ""83""}",,,81
+rq0_0082,84,Buse,"        /* fredt - in FK constraints column lists for iColMain and iColRef have
+           identical sets to visible columns of iMain and iRef respectively
+           but the order of columns can be different and must be preserved
+         */
+        core.mainColArray = mainCols;
+        core.colLen       = core.mainColArray.length;
+        core.refColArray  = refCols;
+",3.9421487603305785,1.045478669310289,0.8388157894736842,readable,readable,high,,java,5,1,1.0,5.0,Code,e85e2443439a1df8ecc3f87faf79f55bfacf79cf80e887090623fd1d655f69f6,463155d3b230efded3ee359d94d7640788ea4e881b10760968ea90b05c1feb26,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 82, ""original_snippet_id"": ""84""}",,,82
+rq0_0083,85,Buse,"    /**
+    * Adds a message to the list of messages that need to be displayed on the GUI.
+    * @param message The message to add.
+    */
+    public synchronized void addMessage(GUIMessage message) {
+        if (getMessageCount() == MESSAGE_COUNT) {
+            messages.remove(0);
+        }
+        messages.add(message);
+
+        freeColClient.getCanvas().repaint(0, 0, getWidth(), getHeight());
+",3.603305785123967,0.5055807152733344,0.7039473684210525,readable,discard,mid,,java,6,1,1.0,5.0,Code,461ab75a356c779c339b85cf3f07720d28039cc9f63c93bdb0a18ac3b1e380d4,160dc6293eb968b25edd92c23d3b7e7b26d832955c46d9d811da8f7f55a00c05,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 83, ""original_snippet_id"": ""85""}",,,83
+rq0_0084,86,Buse,"private static final boolean jjCanMove_1(int hiByte, int i1, int i2, long l1, long l2)
+{
+   switch(hiByte)
+   {
+      case 0:
+         return ((jjbitVec0[i2] & l2) != 0L);
+      default : 
+         if ((jjbitVec1[i1] & l1) != 0L)
+            return true;
+         return false;
+",2.644628099173554,-1.0219354473678057,0.3223684210526316,unreadable,unreadable,low,,java,10,1,1.0,5.0,Code,9454d422acaf6707e370eb0a41e7e9f9c597686e821d23f08e9cc171d123b451,b35767eea30dba83c134e8b5832536ab775326144546a472c81eacd3e717a845,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 84, ""original_snippet_id"": ""86""}",,,84
+rq0_0085,87,Buse,"    private static Date correctTimeZone(final Date date) {
+       Date ret=date;
+       if(java.util.TimeZone.getDefault().useDaylightTime()){
+            if(java.util.TimeZone.getDefault().inDaylightTime(date))
+                ret.setTime(date.getTime()+1*60*60*1000);
+        }
+        return ret;
+",2.87603305785124,-0.6532246494889097,0.4144736842105263,unreadable,unreadable,low,,java,7,1,1.0,5.0,Code,a767bfd3bf01530ea8382be037e706468af40a57ef98ad89e89e53bacd8144e9,2aa1232f04425382b46dca9b1071177b3d8662ba44ea3cf4598b6146dea47ab4,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 85, ""original_snippet_id"": ""87""}",,,85
+rq0_0086,88,Buse,"	@Override
+	public String getMessage() {
+		StringBuilder builder= new StringBuilder();
+		if (fMessage != null)
+			builder.append(fMessage);
+		builder.append(""arrays first differed at element "");
+",3.231404958677686,-0.08699020988917676,0.555921052631579,unreadable,discard,mid,,java,6,1,1.0,5.0,Code,d7c4f5a114eb37750fbf6e8d20fc5f9085409fbf29c2ff2ab4a1a89ea717271a,6b62974ffa637cba5ca09f70e19a4d71b95ad731c7efac5b2419782a68565b21,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 86, ""original_snippet_id"": ""88""}",,,86
+rq0_0087,89,Buse,"    String getStateString() {
+
+        int state = getState();
+
+        switch (state) {
+
+            case DATABASE_CLOSING :
+                return ""DATABASE_CLOSING"";
+
+            case DATABASE_ONLINE :
+                return ""DATABASE_ONLINE"";
+",4.289256198347108,1.5985448661286332,0.9769736842105263,readable,readable,high,,java,7,1,1.0,5.0,Code,e4b54d97fc47d8d42dbee817c67da3a253589f1585742d0227493d9c8b83f59c,fe16122c7ac0357f01f5bf7d95dfceeffbfae3d114d39b1b0b33c86362266580,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 87, ""original_snippet_id"": ""89""}",,,87
+rq0_0088,90,Buse,"    public boolean displayTileCursor(Tile tile, int canvasX, int canvasY) {
+        if (currentMode == ViewMode.VIEW_TERRAIN_MODE) {
+
+            Position selectedTilePos = gui.getSelectedTile();
+            if (selectedTilePos == null)
+                return false;
+
+            if (selectedTilePos.getX() == tile.getX() && selectedTilePos.getY() == tile.getY()) {
+                TerrainCursor cursor = gui.getCursor();
+",3.355371900826446,0.11053343183166005,0.6052631578947367,unreadable,discard,mid,,java,7,1,1.0,5.0,Code,7986320b15d70508e9dce3a4acd7e77c38634c18c0bea1cda0177a9af4c9f9f8,c7ed017d11d4c49afa06b0e8ced1a5a7ebae083984f72c103be697e1426fa4b3,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 88, ""original_snippet_id"": ""90""}",,,88
+rq0_0089,91,Buse,"private final int jjMoveStringLiteralDfa18_0(long old1, long active1, long old2, long active2)
+{
+   if (((active1 &= old1) | (active2 &= old2)) == 0L)
+      return jjStartNfa_0(16, 0L, old1, old2); 
+   try { curChar = input_stream.readChar(); }
+   catch(java.io.IOException e) {
+      jjStopStringLiteralDfa_0(17, 0L, active1, active2);
+",2.090909090909091,-1.9042077137208784,0.10197368421052624,unreadable,unreadable,low,,java,7,1,1.0,5.0,Code,d378c07b32e05fd9d71cc6ed42147c89bb7a9fb90edb6f1dcc104fbc1907da4b,c71a992fae936156c03356fd12578ccdf581328a0f8cd6f6acd13e785f796b93,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 89, ""original_snippet_id"": ""91""}",,,89
+rq0_0090,92,Buse,"    /**
+     * Get the List of all available Channels
+     * 
+     * @return All available Channels
+     */
+    public ElgatoChannel[] getAvailableChannels() {
+        ArrayList<ElgatoChannel> list = new ArrayList<ElgatoChannel>();
+
+        String res = null;
+        try {
+            res = mAppleScript.executeScript(CHANNELLIST);
+",3.363636363636364,0.1237016746130502,0.6085526315789476,readable,discard,mid,,java,5,1,1.0,5.0,Code,e338ec1c649a1a9cbb0640dddffde78344f60420a85311c4690fa4a7767235d0,d178cbe12a30c490eb9f515bf9198ca0874cd3b7315d224d3f92ff953d8ac1c1,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 90, ""original_snippet_id"": ""92""}",,,90
+rq0_0091,93,Buse,"		private Method getParametersMethod() throws Exception {
+			for (Method each : fKlass.getMethods()) {
+				if (Modifier.isStatic(each.getModifiers())) {
+					Annotation[] annotations= each.getAnnotations();
+					for (Annotation annotation : annotations) {
+						if (annotation.annotationType() == Parameters.class)
+							return each;
+					}
+				}
+			}
+			throw new Exception(""No public static parameters method on class ""
+					+ getName());
+",2.355371900826446,-1.482823944716426,0.20723684210526308,unreadable,unreadable,low,,java,12,1,1.0,5.0,Code,6780b0ea3910472d20f4ff077dcb8716aa0d85417f13dd816bacffc619185c8c,4e9508018f3151790c50b5184e5330f59f9b98a771eed5990274fab4601e2326,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 91, ""original_snippet_id"": ""93""}",,,91
+rq0_0092,94,Buse,"
+        Node r = x.getRight();
+
+        if (r != null) {
+            x = r;
+
+            Node l = x.getLeft();
+",4.074380165289257,1.256170553812516,0.8914473684210528,readable,readable,high,,java,4,1,1.0,5.0,Code,f58230e01e7ea363d409404f2f8b5a23a868a5346c153980d4698766b914d232,87178e7ba17c6aab130350d5d587d5967bc5be740202c8ca08a407feca9f42c3,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 92, ""original_snippet_id"": ""94""}",,,92
+rq0_0093,95,Buse,"        InGameInputHandler inGameInputHandler = freeColClient.getInGameInputHandler();
+
+        freeColClient.getClient().setMessageHandler(inGameInputHandler);
+        gui.setInGame(true);
+",3.190082644628099,-0.1528314237961226,0.5394736842105262,unreadable,discard,mid,,java,3,1,1.0,5.0,Code,3a7755dd715cd82c0c86d92d439ef6616cc0f553939959d92bce00b31b5f1f96,add9287794a30649eb6bb2a0418630656857f8797fcabd694e94a14c893efe0a,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 93, ""original_snippet_id"": ""95""}",,,93
+rq0_0094,96,Buse,"    /**
+     * Applies this action.
+     * 
+     * @param e The <code>ActionEvent</code>.
+     */
+    public void actionPerformed(ActionEvent e) {
+        final Game game = freeColClient.getGame();
+        final Map map = game.getMap();
+
+        Parameters p = showParametersDialog();
+",3.809917355371901,0.8347867848080629,0.7861842105263157,readable,readable,high,,java,4,1,2.0,5.0,Code,bf8bb0a713b71a1145f586c22db7566393e5d08eaa04432bfe9f59212bb29023,ec01cb047a97a2896d9662007857c854b555a7246a05a25dc6d2dbc5a363bedd,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 94, ""original_snippet_id"": ""96""}",,,94
+rq0_0095,97,Buse,"    public ActionMenu getButtonAction() {
+        AbstractAction action = new AbstractAction() {
+
+            public void actionPerformed(ActionEvent evt) {
+                showDialog();
+            }
+        };
+        action.putValue(Action.NAME, mLocalizer.msg(""CapturePlugin"", ""Capture Plugin""));
+        action.putValue(Action.SMALL_ICON, createImageIcon(""mimetypes"", ""video-x-generic"", 16));
+",2.909090909090909,-0.6005516783633533,0.4276315789473684,unreadable,unreadable,low,,java,8,1,1.0,5.0,Code,48faf357a86c0f7a464fe6a15b4c807ebc6ee996dd211357ea1328e3d1973135,59c02e16d915e5d6f586b72130f456a867ac671297a1e120eb141fd3fdb5ddae,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 95, ""original_snippet_id"": ""97""}",,,95
+rq0_0096,98,Buse,"			Description description= Description.createSuiteDescription(name);
+			int n= ts.testCount();
+			for (int i= 0; i < n; i++)
+				description.addChild(makeDescription(ts.testAt(i)));
+",3.008264462809917,-0.44253276498668415,0.4671052631578946,unreadable,discard,mid,,java,4,1,1.0,5.0,Code,a5a069278d9ca77a1243563f3487bc79feefc27088cf1d73364dac48e93fdb5f,7a716f3880ea0bf5d0873a2237ffb9f170f9412bb95214d556de9de307327c4b,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 96, ""original_snippet_id"": ""98""}",,,96
+rq0_0097,99,Buse,"
+        if (expression.exprType != VALUE && expression.exprType != COLUMN
+                && expression.exprType != FUNCTION
+                && expression.exprType != ALTERNATIVE
+                && expression.exprType != CASEWHEN
+                && expression.exprType != CONVERT) {
+            StringBuffer temp = new StringBuffer();
+
+            ddl = temp.append('(').append(ddl).append(')').toString();
+        }
+
+        return ddl;
+",2.958677685950413,-0.5215422216750187,0.44736842105263147,unreadable,discard,mid,,java,9,1,1.0,5.0,Code,4a904e5d0719679f562c370df24868908b3b934bbde0ea52e16915d9d086d442,f21b85bf14326db1abd1588ebb73b006e6c065e0cbe07804ad089949e23fc52c,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 97, ""original_snippet_id"": ""99""}",,,97
+rq0_0098,100,Buse,"    private synchronized void purgeOldMessagesFromMessagesToIgnore(int thisTurn) {
+        List<String> keysToRemove = new ArrayList<String>();
+        for (Entry<String, Integer> entry : messagesToIgnore.entrySet()) {
+            if (entry.getValue().intValue() < thisTurn - 1) {
+                if (logger.isLoggable(Level.FINER)) {
+                    logger.finer(""Removing old model message with key "" + entry.getKey() + "" from ignored messages."");
+                }
+                keysToRemove.add(entry.getKey());
+",2.1322314049586777,-1.8383664998139326,0.1184210526315789,unreadable,unreadable,low,,java,8,1,1.0,5.0,Code,0822ecf82800c52dad1383d0216a49f38382aae722b0956fa25dffae0c9e01e1,336ebe05fd2f06658d5ad5b2f9ccccf9d98137958ad1651eb5b453ab7ed2d329,,,,"{""source_key"": NaN, ""source_path"": NaN, ""source_row_index"": 98, ""original_snippet_id"": ""100""}",,,98

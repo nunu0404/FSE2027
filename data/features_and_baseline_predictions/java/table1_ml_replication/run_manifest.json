@@ -1,0 +1,93 @@
+{
+  "artifact": "Table 1 ML baseline evidence",
+  "derivation": "validated extraction from frozen OOF and pair-level assets; no model refit",
+  "seed": 42,
+  "languages": [
+    "Java",
+    "CUDA",
+    "Python"
+  ],
+  "pairs_per_language": 3000,
+  "pair_set": "results/rq1_model_battery_3lang_20260723/data/rq1_pairs_9000.csv",
+  "pair_set_sha256": "e41fc9896dc927b98d35eb57e44a4f7139d2013353d061fbac854470d3733183",
+  "same_pair_set_claim": "Within each language, all three models cover exactly the same 3,000 pair IDs.",
+  "legacy_correction": {
+    "issue": "The old battery ML file joined pre-clean predictions to post-clean pairs by reused pair_id.",
+    "affected_frozen_pairs": {
+      "Java": 0,
+      "CUDA": 1,
+      "Python": 2
+    },
+    "policy": "The primary summary uses stored OOF snippet scores evaluated on the actual frozen clean-pair endpoints.",
+    "audit_file": "legacy_reported_values_audit.csv"
+  },
+  "validation": {
+    "folds": 5,
+    "prediction_mode": "out-of-fold at snippet level; pair direction from endpoint OOF score comparison",
+    "java": "predefined pooled_stratified_5fold assignments, seed 42",
+    "cuda_python": "StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42), grouped by formatting_code_hash"
+  },
+  "metrics": {
+    "valid_accuracy": "correct_pairs / valid_pairs; all deterministic numeric predictions are valid",
+    "effective_accuracy": "correct_pairs / all 3000 pairs; ties receive zero credit",
+    "strict_swap_error": "0 by construction for deterministic snippet scores independent of pair order"
+  },
+  "models": {
+    "multilayer_perceptron": {
+      "estimator": "sklearn.neural_network.MLPClassifier",
+      "pipeline": "median imputation -> StandardScaler -> MLPClassifier",
+      "parameters": {
+        "hidden_layer_sizes": [
+          32
+        ],
+        "alpha": 0.0001,
+        "max_iter": 1000,
+        "random_state": 42
+      },
+      "pair_score": "OOF probability of readable class"
+    },
+    "svr": {
+      "estimator": "sklearn.svm.SVR",
+      "pipeline": "median imputation -> StandardScaler -> SVR",
+      "parameters": {
+        "C": 1.0,
+        "epsilon": 0.1,
+        "kernel": "rbf (sklearn default)"
+      },
+      "pair_score": "OOF predicted within-benchmark readability z-score"
+    },
+    "voting_lr_nb_rf": {
+      "estimator": "sklearn.ensemble.VotingClassifier(voting='soft')",
+      "members": "LogisticRegression + GaussianNB + RandomForestClassifier",
+      "parameters": {
+        "voting": "soft",
+        "n_jobs": 1,
+        "random_state_for_stochastic_members": 42
+      },
+      "pair_score": "OOF ensemble probability of readable class",
+      "definition_source": "experiments/rq0_viability/scripts/run_canonical_baselines.py"
+    }
+  },
+  "software_at_bundle_generation": {
+    "python": "3.13.11",
+    "numpy": "2.5.0",
+    "pandas": "3.0.1",
+    "scikit_learn": "1.9.0"
+  },
+  "source_files": {
+    "results/rq1_model_battery_3lang_20260723/data/rq1_pairs_9000.csv": "e41fc9896dc927b98d35eb57e44a4f7139d2013353d061fbac854470d3733183",
+    "results/rq1_model_battery_3lang_20260723/data/ml_predictions_9models_9000.csv": "09f61f3fcecf5ce022a5f854d07a4e9d6c59ae1c637f9b63f4c68aecf7bf0cdf",
+    "results/python_cuda_missing_experiments_20260716/data/clean_classical_pair_predictions.csv": "4fae73c9f1eb956e211ce8e496ba989786eafa28e0ba4c3adbde0227047290a2",
+    "results/dataset_extension_20260713/data/pairs_seed42.csv": "08cc56c0f87194565386ab2e94ed1b13b45ece809afb5c22b512487497426155",
+    "experiments/rq0_viability/data/splits/split_assignments.csv": "57951e5189362c5f4c5728c94b6720eec4519a08c6f4c3ee12ff47cd06fabe23",
+    "experiments/rq0_viability/outputs/canonical_baselines/canonical_oof_snippet_scores.csv": "755a774fede368e892d89e555035ef62f7ccbc8d78ec2868ec92cdb8a806c78c",
+    "experiments/rq0_viability/outputs/classical_baselines/classical_regression_predictions.csv": "bb8d3093c375c7cfedaa820f136a6c54dce4d0d4fcff78fc7650af6e803cc0a6",
+    "results/dataset_extension_20260713/data/oof_canonical_predictions.csv": "3c114370d4ee5c08e8518fa68cd28a5603dfa81b61f78aef17d578925ed36071",
+    "results/dataset_extension_20260713/data/oof_predictions.csv": "2a4364e82d8b92f71e59122217e686b0dd8e3c1a91a5c023af3d43511a9112d0",
+    "experiments/rq0_viability/scripts/run_canonical_baselines.py": "1206547b1ff9eeac49840ad605fbec3fb144538c3e9286d41129c1a6873cb26e",
+    "experiments/rq0_viability/scripts/train_classical_baselines.py": "e1cd4b1c5017582cc2877e7eb8c5521440e8697c7652025c2dde59766f6eae66",
+    "experiments/rq0_viability/scripts/run_dataset_extension_stage1.py": "399fb364c8a7fe367e220dc0f2673749273319e2d69a92806119b98cb47791ce",
+    "results/rq1_model_battery_3lang_20260723/code/build_prereg_assets.py": "e9a105f7adad6d06b6be0e51c6a5220b02c08582b3a2fc3acd291bd9d0b707d8",
+    "results/rq1_model_battery_3lang_20260723/code/build_table1_ml_replication.py": "9d2c5e1d192486c8347ebe54705706c9186ecdc6371be7afffd3f42a20c95378"
+  }
+}
