@@ -10,7 +10,7 @@ double-blind submission.
 
 *Outstanding:* `LICENSE` is still a placeholder, and
 `data/benchmarks_raw/downloads/` redistributes third-party benchmark archives.
-See README §7.
+See README §10.
 
 ## Functional
 
@@ -27,17 +27,19 @@ Documented, consistent, complete, and exercisable:
 * **Complete.** The full chain is present: published benchmark archives → 552
   standardized snippets → 9,000 pairs → 11,688 rendered PNGs → raw model calls
   with verdict-token logits → pair-level outcomes → figure and table data.
-* **Exercisable.** Two commands reproduce the paper on a laptop with no GPU and
-  no third-party packages:
+* **Exercisable.** Three commands reproduce the paper on a laptop with no GPU
+  and no third-party packages, in under ten seconds of CPU time:
 
   ```bash
   python3 code/99_verification/recompute_headline_numbers.py   # RQ1
   python3 code/99_verification/recompute_rq2_rq3_rq4.py        # RQ2, RQ3, RQ4
+  python3 code/99_verification/audit_parse_failures.py         # parse-failure counts
   ```
 
   The second runs ~90 checks, prints each recomputed value beside the
-  manuscript value, and exits non-zero on any mismatch. Both expected outputs
-  are checked in under `results/verified/`.
+  manuscript value, and exits non-zero on any mismatch. All three expected
+  outputs are checked in under `results/verified/`, so a reviewer can `diff`
+  rather than read the numbers by eye; README §2.6 gives the exact commands.
 
 ### What we verified during assembly
 

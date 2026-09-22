@@ -2,7 +2,7 @@
 
 ## Tier 0 — Verify the reported numbers (no GPU, no network)
 
-Everything in §3 of the README runs here.
+Everything in §2 of the README runs here.
 
 * Python 3.8 or newer, standard library only
 * ~3 GB free disk for the unpacked package
